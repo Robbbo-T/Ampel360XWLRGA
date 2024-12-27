@@ -1,6 +1,3 @@
----
-
-# CPT_0005-ATA_05–Periodic_Inspections_and_Maintenance_Checks.md
 
 *(Adapted for Predictive Maintenance, AGI-Based Anomaly Detection, FTCode Traceability, and Blockchain Integration.)*
 
