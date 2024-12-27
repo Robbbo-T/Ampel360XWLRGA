@@ -1,3 +1,4 @@
+The repository **GAIA AIR - AMPEL-360XWLRGA** is focused on a 100% sustainable aerospace project integrating cutting-edge technologies like quantum optimization, predictive maintenance, and digital twins. It adheres to advanced industry standards (e.g., ATA100, iSPEC2200, S1000D) and aims to create an eco-friendly extra-wide body, long-range green aircraft. The repository provides detailed documentation on objectives, scope, key features, technologies employed, and compliance frameworks.
 
 ---
 
