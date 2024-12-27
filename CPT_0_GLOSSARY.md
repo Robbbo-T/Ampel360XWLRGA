@@ -1,6 +1,5 @@
-Okay, here's the English translation of the provided text, incorporating the suggested improvements from the previous responses (term translation, acronym expansion, etc.):
 
-**CHAPTER 0: GLOSSARY**
+# **CHAPTER 0: GLOSSARY**
 
 This chapter compiles and organizes the key terminology used in the GAIA AIR – AMPEL-360XWLRGA project, offering technical definitions and essential regulatory references for the proper understanding of the documentation. The glossary is divided into thematic sections that cover aeronautical standards and regulations, technological tools, and management methodologies.
 
