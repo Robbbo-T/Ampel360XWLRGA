@@ -1434,16 +1434,8 @@ A flowchart representing the step-by-step process of AE management, from acquisi
 
 A timeline that illustrates the frequency of maintenance activities for AE using placeholder phases.
 
-```mermaid
-gantt
-    title AE Maintenance Schedule
-    dateFormat  YYYY-MM-DD
-    section Maintenance Activities
-    Daily Inspections         :done, a1, Phase 1, 2025-01-01, 1d
-    Weekly Inspections        :done, a2, Phase 2, 2025-01-02, 7d
-    Monthly Maintenance       :active, a3, Phase 3, 2025-02-01, 30d
-    Annual Overhaul           :planned, a4, Phase 4, 2025-03-01, 365d
-```
+![image](https://github.com/user-attachments/assets/d4f0b07a-fd3d-42a8-9af4-5b2cbc62d1cf)
+
 
 **Description:**  
 A timeline illustrating the scheduled maintenance activities for AE, their frequencies, and key milestones throughout the aircraft operational cycle.
