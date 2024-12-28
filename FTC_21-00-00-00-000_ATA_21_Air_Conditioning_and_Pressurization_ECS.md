@@ -892,17 +892,8 @@ Configuration Management (CM) ensures that the **Environmental Control System (E
 
 ### **21.30.3 Integration Points Diagram**
 
-```mermaid
-flowchart TD
-    A[Engine Bleed Air] --> B[Outflow Valves]
-    B --> C[Air Cycle Machines (AC Packs)]
-    C --> D[Heat Exchangers]
-    D --> E[Recirculation Fans]
-    E --> F[Cabin Ducting]
-    F --> G[Cabin Vents]
-    C --> H[ECS Controllers]
-    H --> I[Flight Deck Indications]
-```
+![image](https://github.com/user-attachments/assets/466bc516-2a39-4378-a481-d234ff76d67c)
+
 
 **Description:**  
 This diagram shows the integration points between the ECS and engine bleed air, illustrating the flow from bleed air to pressurization and temperature control, and the connection to flight deck monitoring systems.
