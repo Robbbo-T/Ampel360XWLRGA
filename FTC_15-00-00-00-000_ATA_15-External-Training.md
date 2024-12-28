@@ -827,7 +827,7 @@ This enhanced list contextualizes each reference to your document, helping reade
 
 ### 15.141. External Training Process Flowchart
 
-![![image](https://github.com/user-attachments/assets/075de2cb-d25b-4d24-8939-f4d4d229652d)
+![image](https://github.com/user-attachments/assets/075de2cb-d25b-4d24-8939-f4d4d229652d)
 
 
 **Description:**  
@@ -835,15 +835,15 @@ A flowchart representing the step-by-step process of external training managemen
 
 ### 15.142. Training Schedule Timeline
 
-![![image](https://github.com/user-attachments/assets/3ed43cd0-186a-4728-a0c0-e91d0ce4ecd8)
-)
+![image](https://github.com/user-attachments/assets/3ed43cd0-186a-4728-a0c0-e91d0ce4ecd8)
+
 
 **Description:**  
 A timeline illustrating the scheduled training activities, their frequencies, and key milestones throughout the aircraft operational cycle.
 
 ### 15.143. Organizational Structure for Training Management
 
-![![image](https://github.com/user-attachments/assets/d947de9d-6a20-4c62-a0ce-3e0e403a724c)
+![image](https://github.com/user-attachments/assets/d947de9d-6a20-4c62-a0ce-3e0e403a724c)
 
 
 **Description:**  
