@@ -122,28 +122,3 @@ Below is the **Simplified Technical English** translation of the **ATA (Air Tran
 
 ---
 
-## **Notes:**
-
-- **ATA 02 and ATA 08 Duplication:** Both ATA 02 and ATA 08 are listed as "Weight and Balance." Typically, each ATA number should correspond to a unique chapter. Please verify if ATA 08 should have a different chapter name to avoid duplication.
-
----
-
-## **Usage Instructions**
-
-- **Storage:** Save each section as separate markdown files in your repository with the corresponding filenames:
-  - `05-10_Maintenance_Predictive_Program.md`
-  - `05-20_Schedules_and_Task_Cards.md`
-  - `05-30_Condition_Monitoring.md`
-  - `05-40_Maintenance_Resource_Planning.md`
-  - `05-50_Maintenance_Analytics_and_Reporting.md`
-  - `CPT_0005-ATA_05–Periodic_Inspections_and_Maintenance_Checks.md`
-
-- **Access:** Ensure that sensitive information remains redacted before sharing the documents with external parties.
-
-- **Updates:** When updating the documents, maintain the redaction standards to protect confidential information.
-
----
-
-**Happy Documentation and Best of Luck with Your GAIA AIR Project! 🚀✈️**
-
----
