@@ -1091,7 +1091,6 @@ A flowchart depicting the step-by-step process of conducting inspections, from i
 
 *Alternatively, using Mermaid for dynamic flowcharts:*
 
-```markdown
 ### Inspection Process Flowchart
 
 ```mermaid
@@ -1109,7 +1108,6 @@ graph TD;
     H --> I[Maintenance Actions];
     I --> J[End Inspection];
 ```
-```
 
 *(Ensure to replace `path/to/inspection_process_flowchart.png` with the actual path to your visual aid.)*
 
@@ -1122,7 +1120,7 @@ A timeline illustrating the scheduled maintenance activities, their frequencies,
 
 *Alternatively, using Mermaid for dynamic timelines:*
 
-```markdown
+
 ### Maintenance Schedule Timeline
 
 ```mermaid
@@ -1141,7 +1139,6 @@ gantt
     Advanced System Tests: des5, 2025-02-01, 1d
     section Annual
     Structural Assessment: des6, 2026-01-01, 2d
-```
 ```
 
 *(Ensure to replace `path/to/maintenance_schedule_timeline.png` with the actual path to your visual aid.)*
