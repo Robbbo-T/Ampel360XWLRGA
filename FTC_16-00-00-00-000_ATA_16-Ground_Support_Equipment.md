@@ -1158,19 +1158,17 @@ flowchart TD
 **Description:**  
 A flowchart representing the step-by-step process of GSE management, from acquisition and inventory management to allocation, maintenance, and reporting.
 
-### 16.142. GSE Maintenance Schedule Timeline
-
-A timeline that illustrates the frequency of maintenance activities for GSE using placeholder phases.
+It looks like there was an error rendering the Mermaid diagram. To fix this, ensure that the Mermaid syntax is correctly formatted and supported by the platform you are using. Here is the corrected Mermaid diagram:
 
 ```mermaid
 gantt
     title GSE Maintenance Schedule
     dateFormat  YYYY-MM-DD
     section Maintenance Activities
-    Daily Inspections         :done, a1, Phase 1, 1d
-    Weekly Inspections        :done, a2, Phase 2, 7d
-    Monthly Maintenance       :active, a3, Phase 3, 30d
-    Annual Overhaul           :planned, a4, Phase 4, 365d
+    Daily Inspections         :done, a1, 2024-12-28, 1d
+    Weekly Inspections        :done, a2, 2024-12-29, 7d
+    Monthly Maintenance       :active, a3, 2024-12-30, 30d
+    Annual Overhaul           :planned, a4, 2025-12-28, 365d
 ```
 
 **Description:**  
