@@ -816,13 +816,8 @@ flowchart TD
 ### 18.142. Data Analysis Workflow Diagram
 A graphical representation of typical data processing steps (FFT, time waveform, etc.) and decision points for maintenance actions.
 
-```mermaid
-flowchart LR
-    A[Raw Vibration Data] --> B[Filtering/FFT]
-    B --> C[Advanced Analysis (ML/Wavelets)]
-    C --> D[Interpretation & Fault Diagnosis]
-    D --> E[Maintenance Task Recommendation]
-```
+![image](https://github.com/user-attachments/assets/583ce2ea-0d62-42f3-8a7d-3a43088f1e64)
+
 **Description:** Shows how raw data progresses from filtering and frequency analysis to advanced methods (ML, wavelets), culminating in actionable maintenance recommendations.
 
 ### 18.143. Organizational Structure for Vibration Analysis
