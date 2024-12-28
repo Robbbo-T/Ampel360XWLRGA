@@ -8,13 +8,7 @@
 | **Version** | **Date**       | **Author**                      | **Description**                                                       |
 |-------------|----------------|---------------------------------|-----------------------------------------------------------------------|
 | 1.0         | 2024-12-28     | Amedeo Pelliccia                | Initial creation of the document.                                     |
-| 1.1         | 2025-05-15     | ChatGPT & Amedeo Pelliccia       | Integration of references, annotated sections, and best practices.    |
-| 1.2         | 2025-06-20     | Amedeo Pelliccia                | Updated references and added sections as per feedback.                |
-| 1.3         | 2025-06-24     | Gemini & Amedeo Pelliccia        | Refined and expanded document, added breakdown sections, and addressed potential redundancies. |
-| 1.4         | 2025-06-25     | Amedeo Pelliccia & Gemini        | Further refined to ensure clarity, consistency, added new insights, and comprehensive details. |
-| 1.5         | 2025-06-27     | Amedeo Pelliccia & Gemini        | Added detailed Sample Forms, expanded on Future Trends, and incorporated advanced technologies. |
-| 1.6         | 2025-06-28     | Amedeo Pelliccia & Gemini        | Integrated advanced technologies, expanded sections, and refined existing content. |
-| 1.7         | 2025-07-10     | Amedeo Pelliccia & Gemini        | Incorporated user feedback and further refinements based on suggestions. |
+
 
 ---
 
