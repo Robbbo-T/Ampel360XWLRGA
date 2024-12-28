@@ -6,7 +6,7 @@
 
 | **Version** | **Date**     | **Author**                       | **Description**                                                                         |
 |-------------|--------------|----------------------------------|-----------------------------------------------------------------------------------------|
-| 1.0         | 2025-01-20   | Amedeo Pelliccia                 | Created the initial document.                                                           |
+| 1.0         | 2025-01-20   | Amedeo Pelliccia  &Gemini model               | Created the initial document.                                                           |
 | 1.1         | 2025-01-26   | ChatGPT & Amedeo Pelliccia       | Added detailed sections and structured the document for consistency.                    |
 | 1.2         | 2025-02-02   | Amedeo Pelliccia & ChatGPT        | Included more references, refined procedures, and added placeholders for visuals.       |
 | 1.3         | 2025-02-09   | Amedeo Pelliccia & ChatGPT        | Final edits, added sections on new technologies, training, case studies, and future trends.|
