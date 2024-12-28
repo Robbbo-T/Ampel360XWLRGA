@@ -1158,18 +1158,9 @@ flowchart TD
 **Description:**  
 A flowchart representing the step-by-step process of GSE management, from acquisition and inventory management to allocation, maintenance, and reporting.
 
-It looks like there was an error rendering the Mermaid diagram. To fix this, ensure that the Mermaid syntax is correctly formatted and supported by the platform you are using. Here is the corrected Mermaid diagram:
 
-```mermaid
-gantt
-    title GSE Maintenance Schedule
-    dateFormat  YYYY-MM-DD
-    section Maintenance Activities
-    Daily Inspections         :done, a1, 2024-12-28, 1d
-    Weekly Inspections        :done, a2, 2024-12-29, 7d
-    Monthly Maintenance       :active, a3, 2024-12-30, 30d
-    Annual Overhaul           :planned, a4, 2025-12-28, 365d
-```
+![image](https://github.com/user-attachments/assets/4fef47ab-47aa-479e-a6a3-e44da7795f72)
+
 
 **Description:**  
 A timeline illustrating the scheduled maintenance activities for GSE, their frequencies, and key milestones throughout the aircraft operational cycle.
