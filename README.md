@@ -15,7 +15,7 @@ Compliance with S1000D and ATA Standards: Ensures documentation and procedures a
 The project is hosted on GitHub, where you can find detailed documentation, including system descriptions, operational procedures, maintenance guidelines, and integration strategies for IoT and AI technologies. The repository also outlines the Methods Token Library (MTL) standard specification, which provides a unified system of reusable, version-controlled tokens representing maintenance and operational methods.
 ---
 
-# GAIA AIR – AMPEL A360xWLRGA
+# GAIA AIR – AMPEL A360XWLRGA
 
 ![GAIA AIR Logo](images/gaia_air_logo.png)
 
