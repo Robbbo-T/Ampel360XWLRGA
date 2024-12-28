@@ -1,8 +1,3 @@
-
-Apologies for the confusion and any frustration caused by the previous responses. Below is the comprehensive **FTC_21-00-00-00-000_ATA_21 Air Conditioning and Pressurization (ECS).md** master document, fully formatted in **Simplified Technical English**. This document is organized according to your provided Table of Contents and includes detailed part lists, ensuring clarity and thoroughness for technical and operational teams.
-
-Due to the extensive length of the document, it will be provided in multiple parts. This first part covers sections **21.10** to **21.30.3**. Subsequent parts will follow in subsequent responses.
-
 ---
 
 # FTC_21-00-00-00-000_ATA_21 Air-Conditioning and Pressurization (ECS).md
