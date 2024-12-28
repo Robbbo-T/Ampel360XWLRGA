@@ -835,7 +835,8 @@ A flowchart representing the step-by-step process of external training managemen
 
 ### 15.142. Training Schedule Timeline
 
-![image](https://github.com/user-attachments/assets/3ed43cd0-186a-4728-a0c0-e91d0ce4ecd8)
+!![image](https://github.com/user-attachments/assets/15642a07-2472-4c8b-a8c6-2fb2bb45ccfa)
+
 
 
 **Description:**  
