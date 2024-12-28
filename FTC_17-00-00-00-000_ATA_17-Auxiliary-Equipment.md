@@ -1434,7 +1434,7 @@ A flowchart representing the step-by-step process of AE management, from acquisi
 
 A timeline that illustrates the frequency of maintenance activities for AE using placeholder phases.
 
-![image](https://github.com/user-attachments/assets/d4f0b07a-fd3d-42a8-9af4-5b2cbc62d1cf)
+![image](https://github.com/user-attachments/assets/1b807203-413e-4c6b-9bd8-40e62b40097f)
 
 
 **Description:**  
