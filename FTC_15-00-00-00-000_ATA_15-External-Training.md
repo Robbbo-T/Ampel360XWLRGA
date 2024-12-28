@@ -893,21 +893,24 @@ This section explores future trends that could shape the landscape of external t
 
 ### 15.141. External Training Process Flowchart
 
-![External Training Process Flowchart](path/to/external_training_process_flowchart.png)
+![image](https://github.com/user-attachments/assets/cf7d994e-82b5-4545-bcb2-80640bcf3ec6)
+
 
 **Description:**  
 A flowchart representing the step-by-step process of external training management, from training needs assessment to training evaluation and continuous improvement.
 
 ### 15.142. Training Schedule Timeline
 
-![Training Schedule Timeline](path/to/training_schedule_timeline.png)
+![image](https://github.com/user-attachments/assets/e95ddd79-e3f4-4fd2-bf70-9ad315952a15)
+
 
 **Description:**  
 A timeline illustrating the scheduled training activities, their frequencies, and key milestones throughout the aircraft operational cycle.
 
 ### 15.143. Organizational Structure for Training Management
 
-![Organizational Structure](path/to/organizational_structure_training_management.png)
+![image](https://github.com/user-attachments/assets/e749a801-587c-4e84-9aa1-fcae8c6dcc2f)
+
 
 **Description:**  
 A diagram detailing the organizational structure, specifying the roles and responsibilities of the Training Manager, external trainers, and maintenance personnel involved in external training management.
