@@ -467,36 +467,8 @@ flowchart TD
 
 2. **ECS Electrical Wiring Diagram**
 
-```markdown
-### **ECS Electrical Wiring Diagram**
+![image](https://github.com/user-attachments/assets/8538d4cd-0725-42e6-bee9-a8023fa60c02)
 
-*A block diagram illustrating the electrical connections and control flow within the Environmental Control System (ECS).*
-
-```mermaid
-flowchart TD
-    P1[Main Power Supply] --> C1[Primary Control Module]
-    P2[Backup Power Supply] --> C2[Secondary Control Module]
-    S1[Temperature Sensor] --> C1
-    S2[Pressure Sensor] --> C1
-    S3[Humidity Sensor] --> C2
-    S4[Air Quality Sensor] --> C2
-    C1 --> A1[Outflow Valve Actuator]
-    C2 --> A2[Duct Damper Actuator]
-    C1 --> I1[Flight Deck Indications]
-
-    style P1 fill:#000000,stroke:#00FF00,color:#FFFFFF
-    style P2 fill:#000000,stroke:#00FF00,color:#FFFFFF
-    style C1 fill:#000000,stroke:#00FF00,color:#FFFFFF
-    style C2 fill:#000000,stroke:#00FF00,color:#FFFFFF
-    style S1 fill:#000000,stroke:#00FF00,color:#FFFFFF
-    style S2 fill:#000000,stroke:#00FF00,color:#FFFFFF
-    style S3 fill:#000000,stroke:#00FF00,color:#FFFFFF
-    style S4 fill:#000000,stroke:#00FF00,color:#FFFFFF
-    style A1 fill:#000000,stroke:#00FF00,color:#FFFFFF
-    style A2 fill:#000000,stroke:#00FF00,color:#FFFFFF
-    style I1 fill:#000000,stroke:#00FF00,color:#FFFFFF
-    linkStyle default stroke:#FF69B4,stroke-width:2px
-```
 
 **Explanation:**
 
