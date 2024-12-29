@@ -1036,7 +1036,8 @@ For better clarity, develop detailed diagrams using advanced graphical tools lik
 
 **Graphical Representation:**
 
-![ECS Performance Metrics](https://github.com/user-attachments/assets/7f4f3c1d-461c-43d5-9821-7f30df16850d.png)
+![image](https://github.com/user-attachments/assets/608153c9-8be6-4489-920b-b16298d8f7ea)
+
 
 **Detailed Analysis:**
 - **Temperature Control:** Achieved high accuracy, ensuring passenger comfort without overloading the system.
