@@ -467,7 +467,46 @@ flowchart TD
 
 2. **ECS Electrical Wiring Diagram**
 
-   ![ECS Electrical Wiring Diagram](https://github.com/user-attachments/assets/d6ae96c8-ab0c-41c2-82c3-a044ab8cf7cc.png)
+```markdown
+### **ECS Electrical Wiring Diagram**
+
+*A block diagram illustrating the electrical connections and control flow within the Environmental Control System (ECS).*
+
+```mermaid
+flowchart TD
+    P1[Main Power Supply] --> C1[Primary Control Module]
+    P2[Backup Power Supply] --> C2[Secondary Control Module]
+    S1[Temperature Sensor] --> C1
+    S2[Pressure Sensor] --> C1
+    S3[Humidity Sensor] --> C2
+    S4[Air Quality Sensor] --> C2
+    C1 --> A1[Outflow Valve Actuator]
+    C2 --> A2[Duct Damper Actuator]
+    C1 --> I1[Flight Deck Indications]
+
+    style P1 fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style P2 fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style C1 fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style C2 fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style S1 fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style S2 fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style S3 fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style S4 fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style A1 fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style A2 fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style I1 fill:#000000,stroke:#00FF00,color:#FFFFFF
+    linkStyle default stroke:#FF69B4,stroke-width:2px
+```
+
+**Explanation:**
+
+This diagram showcases the electrical connections within the ECS:
+1. **Main and Backup Power Supplies:** Provide power redundancy for critical operations.
+2. **Control Modules (Primary and Secondary):** Process sensor inputs and control ECS components.
+3. **Sensors:** Monitor real-time conditions, including temperature, pressure, humidity, and air quality.
+4. **Actuators:** Operate components such as outflow valves and duct dampers.
+5. **Flight Deck Indications:** Display ECS performance data for cockpit monitoring.
+
 
    **Diagram Components Explanation:**
 
