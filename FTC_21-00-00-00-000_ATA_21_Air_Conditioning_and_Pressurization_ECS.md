@@ -524,7 +524,8 @@ This diagram showcases the electrical connections within the ECS:
 
 3. **Integration Points Diagram**
 
-   ![Integration Points Diagram](https://github.com/user-attachments/assets/26087e07-c214-497f-83d3-fd64f8a5aff7.png)
+ ![image](https://github.com/user-attachments/assets/aaa2cd84-1812-47a0-82ef-776cc20b0173)
+
 
    ## Integration Points Diagram
 
