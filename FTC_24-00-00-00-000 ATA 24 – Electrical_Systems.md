@@ -5,7 +5,7 @@
 
 | **Version** | **Date**       | **Author**                                 | **Description / Change Notes**                                                                                                       | **Impact on Design** | **Affected Sections** |
 |-------------|----------------|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|----------------------|-----------------------|
-| 1.0         | 202X-XX-XX    | [Author(s)]                                | Creation of the consolidated Electrical Systems document, integrating advanced technologies (AI, Quantum Cybersecurity, Predictive Maintenance, etc.) | High                 | All                   |
+| 1.0         | 2024-29-12    | [AMEDEO PELLICCIA]                                | Creation of the consolidated Electrical Systems document, integrating advanced technologies (AI, Quantum Cybersecurity, Predictive Maintenance, etc.) | High                 | All                   |
 
 ---
 
