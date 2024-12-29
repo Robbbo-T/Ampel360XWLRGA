@@ -431,14 +431,33 @@ flowchart TD
 
 ### **21.40.4 Schematic Diagrams**
 
-*Suggestion:*  
-Include schematics that visualize each subsystem (mechanical and electrical) and their connection points. For example, a wiring diagram showing connections between sensors, actuators, and control modules, or a duct layout diagram illustrating airflow paths.
-
 **Professional Diagrams:**
 
 1. **ECS Mechanical Layout Diagram**
 
-   ![ECS Mechanical Layout Diagram](https://github.com/user-attachments/assets/55a323a3-77bb-499f-ae71-6614be02062e.png)
+
+*A comprehensive block diagram illustrating the integration and airflow paths within the Environmental Control System (ECS).*
+
+```mermaid
+flowchart TD
+    A[Engine Bleed Air] --> B[Air Cycle Machines AC Packs]
+    B --> C[Heat Exchangers]
+    C --> D[Pressurization System]
+    D --> E[Cabin Air Distribution]
+    E --> F[Passenger Cabin Feedback]
+    B --> G[ECS Controllers]
+    G --> H[Flight Deck Indications]
+
+    style A fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style B fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style C fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style D fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style E fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style F fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style G fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style H fill:#000000,stroke:#00FF00,color:#FFFFFF
+    linkStyle default stroke:#FF69B4,stroke-width:2px
+```
 
    **Key Components:**
    - **Air Cycle Machine (ACM):** Includes Compressor, Expansion Valve, and Heat Exchanger.
