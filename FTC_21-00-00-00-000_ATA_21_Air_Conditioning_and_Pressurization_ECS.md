@@ -442,8 +442,6 @@ Include schematics that visualize each subsystem (mechanical and electrical) and
 
    ![image](https://github.com/user-attachments/assets/d6ae96c8-ab0c-41c2-82c3-a044ab8cf7cc)
 
-   
-**Note:** Replace `images/ECS_Electrical_Wiring_Diagram.png` with the actual path where your enhanced diagram image is stored.
 
 ### **Diagram Components Explanation**
 
@@ -487,53 +485,56 @@ Include schematics that visualize each subsystem (mechanical and electrical) and
    - **Data Exchange:** Communication interfaces facilitate data flow between ECS and other aircraft systems.
    - **User Inputs:** User interfaces send inputs to control modules for system adjustments.
 
-### **Enhancing the Diagram**
-
-For a more detailed and professional ECS Electrical Wiring Diagram, consider the following enhancements:
-
-1. **Use Advanced Diagramming Tools:**
-   - **Lucidchart, Microsoft Visio, or Draw.io:** These tools offer extensive libraries of electrical symbols and allow for precise customization.
-   - **Industry-Standard Symbols:** Utilize symbols that conform to electrical engineering standards for clarity and professionalism.
-
-2. **Incorporate Detailed Annotations:**
-   - **Component Specifications:** Add specifications such as voltage ratings, power consumption, and communication protocols.
-   - **Connection Details:** Clearly indicate the types of connections (e.g., wired, wireless) and protocols used (e.g., CAN bus, ARINC 429).
-
-3. **Add Color-Coding and Legends:**
-   - **Color-Coding:** Differentiate between power lines, control signals, data feeds, and safety systems using distinct colors.
-   - **Legend:** Include a legend explaining the color codes and symbols used in the diagram for easy reference.
-
-4. **Include Redundancy Indicators:**
-   - **Backup Systems:** Visually represent redundant components and backup power paths to emphasize system reliability.
-
-5. **Embed the Enhanced Diagram:**
-   - After creating a high-fidelity diagram, export it as an **SVG** or **PNG** file.
-   - Embed the image into your Markdown document as shown earlier for seamless integration.
-
-### **Embedding the Diagram in Markdown**
-
-After creating a high-fidelity diagram using an advanced tool, embed it into your Markdown document as follows:
-
-
-
-
 
 4. **Integration Points Diagram**
 
-   ```mermaid
-   flowchart TD
-       A[Engine Bleed Air] --> B[Outflow Valves]
-       B --> C[Air Cycle Machines (AC Packs)]
-       C --> D[Heat Exchangers]
-       D --> E[Recirculation Fans]
-       E --> F[Cabin Ducting]
-       F --> G[Cabin Vents]
-       C --> H[ECS Controllers]
-       H --> I[Flight Deck Indications]
-   ```
+![image](https://github.com/user-attachments/assets/26087e07-c214-497f-83d3-fd64f8a5aff7)
 
-   **Description:**  
-   This diagram shows the integration points between the ECS and engine bleed air, illustrating the flow from bleed air to pressurization and temperature control, and the connection to flight deck monitoring systems.
+## Integration Points Diagram
+
+*A block diagram illustrating the airflow path from bleed air intake through compressors, intercoolers, heat exchangers, distribution ducts, and outflow valves, highlighting key components and sensors.*
+
+### **Diagram Description**
+
+1. **Engine Bleed Air:**
+    - **Toma de Aire de Derivación del Motor:**
+        - El aire de derivación se extrae del motor y se dirige a las **Outflow Valves (Válvulas de Salida)**.
+
+2. **Outflow Valves:**
+    - **Válvulas de Salida:**
+        - Regulan la liberación de aire presurizado hacia las **Air Cycle Machines (Máquinas de Ciclo de Aire)**.
+
+3. **Air Cycle Machines (AC Packs):**
+    - **Máquinas de Ciclo de Aire (AC Packs):**
+        - Procesan el aire presurizado para controlar la temperatura y la presión dentro de la cabina.
+        - **Flujo Interno:**
+            - El aire pasa por los **Heat Exchangers (Intercoolers)** para reducir la temperatura.
+            - Luego, circula a través de los **Recirculation Fans (Ventiladores de Recirculación)** para distribuir el aire acondicionado.
+
+4. **Heat Exchangers:**
+    - **Intercoolers:**
+        - Transferencia de calor desde el aire comprimido hacia el ambiente externo, enfriando el aire antes de su distribución.
+
+5. **Recirculation Fans:**
+    - **Ventiladores de Recirculación:**
+        - Distribuyen el aire acondicionado a través de los **Cabin Ducting (Conductos de Cabina)** hacia las **Cabin Vents (Ventanas de Cabina)**.
+
+6. **Cabin Ducting:**
+    - **Conductos de Cabina:**
+        - Canalizan el aire acondicionado a diferentes zonas de la cabina, asegurando una distribución uniforme.
+
+7. **Cabin Vents:**
+    - **Ventanas de Cabina:**
+        - Entregan el aire acondicionado a áreas específicas dentro de la cabina de pasajeros.
+
+8. **ECS Controllers:**
+    - **Controladores del ECS:**
+        - Gestionan y regulan las operaciones del ECS, ajustando parámetros en tiempo real para mantener condiciones óptimas en la cabina.
+
+9. **Flight Deck Indications:**
+    - **Indicaciones del Puente de Mando:**
+        - Proporcionan información en tiempo real sobre el estado del ECS al equipo de vuelo, permitiendo ajustes y monitoreo continuo.
+
 
 ---
 
@@ -718,7 +719,26 @@ A detailed list of all parts required for the ECS, including mechanical, electri
 
 **Integration Diagram Example:**
 
-![Engine Interface Diagram](path_to_engine_interface_diagram_image)
+### Engine Interface Diagram
+
+Here is the generated **Engine Interface Diagram** showcasing the integration of the ECS and engine bleed air system with the requested custom styling:
+
+![Engine Interface Diagram](https://supabase.mermaidchart.com/storage/v1/object/public/chatgpt-diagrams/2024-12-29/98d7a97a-825e-450b-bbf3-e6f76875e1bd.png)
+
+#### Key Components:
+1. **Engine Bleed Air** → Supplies compressed air from the engine.
+2. **Isolation Valves** → Control and isolate airflow during maintenance or emergencies.
+3. **Outflow Valves** → Regulate pressure before air enters the system.
+4. **Air Cycle Machines (ACMs)** → Manage temperature and pressure adjustments.
+5. **Heat Exchangers** → Cool the air before it enters the cabin.
+6. **Cabin Ducting** → Distributes air throughout the passenger cabin.
+7. **Cabin Vents** → Deliver conditioned air to specific cabin zones.
+8. **Environmental Control Unit (ECU)** → Monitors and controls system parameters.
+9. **Flight Deck Indications** → Displays ECS status to pilots for real-time monitoring.
+
+[Edit this diagram](https://www.mermaidchart.com/app/mermaid-chart-save/2024-12-29/98d7a97a-825e-450b-bbf3-e6f76875e1bd)
+
+
 
 ### **21.70.2 Integration Testing**
 
@@ -746,14 +766,123 @@ A detailed list of all parts required for the ECS, including mechanical, electri
 
 ### **21.70.3 Integration Diagram**
 
-*Insert here a detailed schematic diagram illustrating the integration between the ECS and the engines, showing bleed air connections, airflow routes, and control signals.*
+## ECS Functional Flow Diagram
 
-**Professional Integration Diagram:**
+*A block diagram illustrating the airflow path from bleed air intake through compressors, intercoolers, heat exchangers, distribution ducts, and outflow valves, highlighting key components and sensors.*
 
-![ECS-Engine Integration](path_to_professional_integration_diagram_image)
+![ECS Functional Flow](https://github.com/user-attachments/assets/0d1338d5-1f32-402a-983e-848f3a7e08e7)
 
-**Description:**  
-This diagram depicts the integration points between the ECS and the aircraft engines, illustrating the flow of bleed air, control signals, and safety mechanisms. It highlights the connections to outflow valves, AC Packs, and ECS controllers, ensuring seamless operation and safety.
+### **Diagram Description**
+
+
+1. **Start Flight**  
+   - At the beginning of each flight, the **Environmental Control System (ECS)** powers on and verifies that all subsystems are operational. This includes initializing sensors, checking baseline temperatures, and confirming readiness for subsequent flight phases.
+
+2. **Engine Bleed Air Intake**  
+   - Once the engines reach their operating conditions, compressed air—known as bleed air—is extracted from designated compression stages. This bleed air is then directed into the ECS for further processing, temperature control, and eventual cabin distribution.
+
+3. **Air Cycle Machine (ACM) Process**  
+   1. **Compression**  
+      - The diverted air is compressed to increase both pressure and temperature, providing the necessary conditions for effective heat exchange.  
+   2. **Heat Exchanger (Intercooler)**  
+      - The now-compressed air flows through a heat exchanger, commonly referred to as an intercooler, which reduces its temperature using ambient or bypassed cooler air.  
+   3. **Expansion Valve**  
+      - A regulated refrigerant flow is maintained by the expansion valve, allowing for precise control of temperature based on in-flight conditions and sensor data.  
+   4. **Evaporation**  
+      - The cooled air undergoes evaporation to further decrease its temperature, optimizing comfort levels before distribution.  
+   5. **Cooling Air Output**  
+      - Finally, the conditioned air is channeled for delivery into the cabin, ensuring a comfortable environment throughout the flight.
+
+4. **Pressurization Control Unit (PS)**  
+   - **Pressurization Control Overview:**  
+     - **Outflow Valves:** Manage the release of pressurized air to maintain a stable cabin environment.  
+     - **Cabin Pressurization:** Guarantees that the interior remains at a safe, comfortable pressure, mitigating the effects of altitude changes on passengers and crew.
+
+5. **Environmental Control Unit (ECU)**  
+   - **Primary Functions:**  
+     - **Advanced Sensors:** Continuously monitor real-time parameters such as temperature, pressure, humidity, and air quality throughout the cabin.  
+     - **AI-Powered Control:** Utilizes artificial intelligence algorithms to interpret sensor data and optimize ECS performance, delivering efficient cooling, pressurization, and air distribution.  
+     - **Adjustments to ACM:** Dynamically refines ACM settings to ensure balanced cooling and pressurization, even under varying flight conditions.  
+     - **Real-Time Monitoring:** Performs ongoing checks of overall system health and automatically corrects any deviations to maintain optimal cabin conditions.
+
+6. **Air Distribution System (ADS)**  
+   - **Key Components:**  
+     - **Air Distribution Ducts:** Carefully routed conduits that transport conditioned air to different sections of the aircraft cabin.  
+     - **Vents and Registers:** Visible outlets through which air is supplied, allowing for zoned or targeted airflow to seats, galley areas, and other compartments.  
+     - **Passenger Cabin Air:** Ensures that travelers experience a consistent and safe environment, upholding standards of comfort and air quality.
+
+7. **Feedback Loop**  
+   - **Continuous Adjustment:**  
+     - As conditions in the passenger cabin change—due to occupancy, external weather, or operational variations—the data is fed back to the **Advanced Sensors**. In response, the **ECU** modifies ECS parameters in real time, guaranteeing optimal performance and passenger comfort.
+
+8. **End Flight**  
+   - **Shut-Down Phase:**  
+     - As the flight concludes, the ECS scales down its operations, transitioning out of its active modes. This stage ensures all systems safely deactivate, preserving mechanical and electrical components for the next flight cycle.
+
+---
+
+### Professional Integration Diagram: ECS-Engine Integration
+
+
+
+![ECS-Engine Integration](https://supabase.mermaidchart.com/storage/v1/object/public/chatgpt-diagrams/2024-12-29/e03e5d03-af20-432b-9f8b-e2d3a5eb6fab.png)
+
+---
+
+### **Diagram Description**
+This diagram illustrates the flow and integration points of the **Environmental Control System (ECS)** with the engine bleed air system.
+
+#### **Key Components**:
+1. **Engine Bleed Air Source** → Supplies compressed air for ECS operations.
+2. **Isolation Valves** → Control airflow and isolate sections for maintenance or safety purposes.
+3. **Outflow Valves** → Regulate air pressure entering the system.
+4. **Air Cycle Machines** → Manage temperature and pressure adjustments for cabin air.
+5. **Heat Exchangers** → Cool compressed air for passenger comfort.
+6. **Cabin Air Ducting** → Distributes air throughout the passenger cabin.
+7. **Cabin Vents** → Deliver conditioned air directly to passengers.
+8. **Environmental Control Unit (ECU)** → Monitors and adjusts system parameters.
+9. **Relief Valves** → Act as safety mechanisms for pressure regulation.
+10. **Flight Deck Indications** → Provide real-time monitoring to the cockpit crew.
+
+[Edit this diagram](https://www.mermaidchart.com/app/mermaid-chart-save/2024-12-29/e03e5d03-af20-432b-9f8b-e2d3a5eb6fab)
+
+
+## **Diagram Description**
+
+This diagram illustrates the flow and integration points of the **Environmental Control System (ECS)** with the **engine bleed air system**, highlighting how compressed air is managed for passenger comfort and safety.
+
+### **Key Components**
+
+- **Engine Bleed Air Source**  
+  Supplies compressed air for ECS operations.
+
+- **Isolation Valves**  
+  Control airflow and isolate sections for maintenance or safety purposes.
+
+- **Outflow Valves**  
+  Regulate the air pressure entering the ECS.
+
+- **Air Cycle Machines**  
+  Adjust temperature and pressure for cabin air conditioning.
+
+- **Heat Exchangers**  
+  Cool compressed air to ensure comfortable cabin temperatures.
+
+- **Cabin Air Ducting**  
+  Distributes conditioned air throughout the passenger cabin.
+
+- **Cabin Vents**  
+  Deliver cooled or heated air directly to passengers.
+
+- **Environmental Control Unit (ECU)**  
+  Monitors sensors, adjusts system parameters, and optimizes ECS performance.
+
+- **Relief Valves**  
+  Serve as safety mechanisms to prevent over-pressurization.
+
+- **Flight Deck Indications**  
+  Provide real-time ECS status to the cockpit crew for oversight and adjustments.
+
 
 ---
 
@@ -1169,7 +1298,8 @@ For better clarity, develop detailed diagrams using advanced graphical tools lik
 
 **Graphical Representation:**
 
-![Testing Results Chart](path_to_testing_results_chart_image)
+![image](https://github.com/user-attachments/assets/7f4f3c1d-461c-43d5-9821-7f30df16850d)
+
 
 **Detailed Analysis:**
 - **Temperature Control:** Achieved high accuracy, ensuring passenger comfort without overloading the system.
