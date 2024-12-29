@@ -101,10 +101,48 @@ The **Environmental Control System (ECS)** in the **GAIA AIR A360-XWLRGA Aircraf
 - **Redundancy:** Designed with redundant components to ensure continuous operation during partial system failures.
 - **Compatibility:** Suitable for various aircraft types, ensuring flexibility and scalability.
 
-*Suggested Diagram:*  
+## ECS Functional Flow Diagram
+
 *A block diagram illustrating the airflow path from bleed air intake through compressors, intercoolers, heat exchangers, distribution ducts, and outflow valves, highlighting key components and sensors.*
 
-![ECS Block Diagram](path_to_diagram_image)
+![ECS Functional Flow](https://github.com/user-attachments/assets/0d1338d5-1f32-402a-983e-848f3a7e08e7)
+
+### **Diagram Description**
+
+1. **Start Flight:**
+    - Initiation of ECS operations at the beginning of the flight.
+
+2. **Engine Bleed Air Intake:**
+    - Bleed air is extracted from the engine and fed into the Air Cycle Machine (ACM).
+
+3. **Air Cycle Machine (ACM) Process:**
+    1. **Compression:** Bleed air is compressed to increase pressure and temperature.
+    2. **Heat Exchanger:** Compressed air passes through a heat exchanger to cool down.
+    3. **Expansion Valve:** Refrigerant flow is regulated for precise temperature control.
+    4. **Evaporation:** Cooled air undergoes evaporation to further reduce temperature.
+    5. **Cooling Air Output:** Conditioned air is outputted for cabin distribution.
+
+4. **Pressurization Control Unit (PS):**
+    - **Outflow Valves:** Regulate the release of pressurized air to maintain cabin pressure.
+    - **Cabin Pressurization:** Ensures the cabin remains at a safe and comfortable pressure level.
+
+5. **Environmental Control Unit (ECU):**
+    - **Advanced Sensors:** Monitor real-time conditions such as temperature, pressure, humidity, and air quality.
+    - **AI-Powered Control:** Utilizes AI algorithms to optimize ECS performance based on sensor data.
+    - **Adjustments to ACM:** Dynamically adjusts ACM settings for optimal cooling and pressurization.
+    - **Real-Time Monitoring:** Continuously monitors system performance and makes necessary adjustments.
+
+6. **Air Distribution System (ADS):**
+    - **Air Distribution Ducts:** Channels conditioned air throughout the cabin.
+    - **Vents and Registers:** Deliver air to specific areas within the passenger cabin.
+    - **Passenger Cabin Air:** Provides a comfortable and safe environment for passengers.
+
+7. **Feedback Loop:**
+    - Passenger Cabin Air conditions feed back into the Advanced Sensors, allowing the ECU to adjust ECS parameters in real-time for optimal performance.
+
+8. **End Flight:**
+    - ECS operations wind down, ensuring all systems are safely deactivated post-flight.
+
 
 ### **21.10.2 Functional Description**
 
@@ -128,7 +166,43 @@ The ECS comprises a combination of mechanical and electronic components that wor
 
 *Flow Diagram Example:*
 
-![ECS Functional Flow](path_to_flow_diagram_image)
+![image](https://github.com/user-attachments/assets/08ae859d-abf5-4ea7-8aaa-4e7e8f640ccd)
+**Diagram Description**
+
+1. **Start Flight:**
+    - Initiation of ECS operations at the beginning of the flight.
+
+2. **Engine Bleed Air Intake:**
+    - Bleed air is extracted from the engine and fed into the Air Cycle Machine (ACM).
+
+3. **Air Cycle Machine (ACM) Process:**
+    1. **Compression:** Bleed air is compressed to increase pressure and temperature.
+    2. **Heat Exchanger:** Compressed air passes through a heat exchanger to cool down.
+    3. **Expansion Valve:** Refrigerant flow is regulated for precise temperature control.
+    4. **Evaporation:** Cooled air undergoes evaporation to further reduce temperature.
+    5. **Cooling Air Output:** Conditioned air is outputted for cabin distribution.
+
+4. **Pressurization Control Unit (PS):**
+    - **Outflow Valves:** Regulate the release of pressurized air to maintain cabin pressure.
+    - **Cabin Pressurization:** Ensures the cabin remains at a safe and comfortable pressure level.
+
+5. **Environmental Control Unit (ECU):**
+    - **Advanced Sensors:** Monitor real-time conditions such as temperature, pressure, humidity, and air quality.
+    - **AI-Powered Control:** Utilizes AI algorithms to optimize ECS performance based on sensor data.
+    - **Adjustments to ACM:** Dynamically adjusts ACM settings for optimal cooling and pressurization.
+    - **Real-Time Monitoring:** Continuously monitors system performance and makes necessary adjustments.
+
+6. **Air Distribution System (ADS):**
+    - **Air Distribution Ducts:** Channels conditioned air throughout the cabin.
+    - **Vents and Registers:** Deliver air to specific areas within the passenger cabin.
+    - **Passenger Cabin Air:** Provides a comfortable and safe environment for passengers.
+
+7. **Feedback Loop:**
+    - Passenger Cabin Air conditions feed back into the Advanced Sensors, allowing the ECU to adjust ECS parameters in real-time for optimal performance.
+
+8. **End Flight:**
+    - ECS operations wind down, ensuring all systems are safely deactivated post-flight.
+
 
 ### **21.10.3 Key Features**
 
@@ -355,13 +429,96 @@ Include schematics that visualize each subsystem (mechanical and electrical) and
 
 1. **ECS Mechanical Layout Diagram**
 
-   ![ECS Mechanical Layout](path_to_mechanical_layout_image)
+  ![image](https://github.com/user-attachments/assets/55a323a3-77bb-499f-ae71-6614be02062e)
+
+###   Key Components:
+**Air Cycle Machine (ACM)**: Includes Compressor, Expansion Valve, and Heat Exchanger.
+**Pressurization System (PS)**: Manages outflow valves and pressure sensors.
+**Environmental Control Unit (ECU)**: Uses control modules, sensors, and algorithms to optimize the ECS.
+**Air Distribution System (ADS)**: Handles air ducts and vents for cabin delivery.
+
 
 2. **ECS Electrical Wiring Diagram**
 
-   ![ECS Electrical Wiring](path_to_electrical_wiring_image)
+   ![image](https://github.com/user-attachments/assets/d6ae96c8-ab0c-41c2-82c3-a044ab8cf7cc)
 
-3. **Integration Points Diagram**
+   
+**Note:** Replace `images/ECS_Electrical_Wiring_Diagram.png` with the actual path where your enhanced diagram image is stored.
+
+### **Diagram Components Explanation**
+
+1. **Environmental Control System (ECS) Electrical System:**
+   - The central hub managing all electrical components and their interactions within the ECS.
+
+2. **Power Supply:**
+   - **Main Power Source:** Provides primary electrical power to ECS components.
+   - **Backup Power Supply (UPS):** Ensures continuous power during main power failures, maintaining system operations.
+
+3. **Control Modules:**
+   - **Control Module 1:** Handles primary ECS operations, processing data from sensors and sending control signals to actuators.
+   - **Control Module 2:** Manages secondary operations, interfaces with AI control algorithms, and provides redundancy.
+
+4. **Sensors:**
+   - **Temperature Sensor:** Monitors cabin and component temperatures.
+   - **Pressure Sensor:** Measures cabin pressure levels.
+   - **Humidity Sensor:** Tracks cabin humidity to maintain comfort.
+   - **Air Quality Sensor:** Detects contaminants and ensures air quality standards are met.
+
+5. **Actuators:**
+   - **Outflow Valve Actuator:** Controls the opening and closing of outflow valves to regulate cabin pressure.
+   - **Duct Damper Actuator:** Adjusts duct dampers to manage airflow distribution and temperature control.
+
+6. **Communication Interfaces:**
+   - **Avionics Interface:** Facilitates data exchange between ECS and the aircraft's avionics systems for integrated monitoring and control.
+   - **AI Control Interface:** Connects to AI-powered control algorithms, enabling advanced system optimization and predictive maintenance.
+
+7. **Safety Systems:**
+   - **Alarm System:** Triggers alerts in case of system anomalies or deviations from normal operating parameters.
+   - **Emergency Shutdown:** Initiates the ECS shutdown process during critical failures to ensure passenger and crew safety.
+
+8. **User Interfaces:**
+   - **Control Panel:** Allows flight crew to monitor and adjust ECS settings during flight.
+   - **Maintenance Interface:** Provides maintenance personnel with access to system diagnostics, controls, and data logs for troubleshooting and repairs.
+
+9. **Wiring Connections:**
+   - **Power Distribution:** Main and backup power supplies feed power to control modules.
+   - **Control Signals:** Control modules send signals to actuators and safety systems to manage ECS operations.
+   - **Data Feeds:** Sensors provide real-time data to control modules for informed decision-making.
+   - **Data Exchange:** Communication interfaces facilitate data flow between ECS and other aircraft systems.
+   - **User Inputs:** User interfaces send inputs to control modules for system adjustments.
+
+### **Enhancing the Diagram**
+
+For a more detailed and professional ECS Electrical Wiring Diagram, consider the following enhancements:
+
+1. **Use Advanced Diagramming Tools:**
+   - **Lucidchart, Microsoft Visio, or Draw.io:** These tools offer extensive libraries of electrical symbols and allow for precise customization.
+   - **Industry-Standard Symbols:** Utilize symbols that conform to electrical engineering standards for clarity and professionalism.
+
+2. **Incorporate Detailed Annotations:**
+   - **Component Specifications:** Add specifications such as voltage ratings, power consumption, and communication protocols.
+   - **Connection Details:** Clearly indicate the types of connections (e.g., wired, wireless) and protocols used (e.g., CAN bus, ARINC 429).
+
+3. **Add Color-Coding and Legends:**
+   - **Color-Coding:** Differentiate between power lines, control signals, data feeds, and safety systems using distinct colors.
+   - **Legend:** Include a legend explaining the color codes and symbols used in the diagram for easy reference.
+
+4. **Include Redundancy Indicators:**
+   - **Backup Systems:** Visually represent redundant components and backup power paths to emphasize system reliability.
+
+5. **Embed the Enhanced Diagram:**
+   - After creating a high-fidelity diagram, export it as an **SVG** or **PNG** file.
+   - Embed the image into your Markdown document as shown earlier for seamless integration.
+
+### **Embedding the Diagram in Markdown**
+
+After creating a high-fidelity diagram using an advanced tool, embed it into your Markdown document as follows:
+
+
+
+
+
+4. **Integration Points Diagram**
 
    ```mermaid
    flowchart TD
