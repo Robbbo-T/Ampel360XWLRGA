@@ -524,55 +524,95 @@ This diagram showcases the electrical connections within the ECS:
 
 3. **Integration Points Diagram**
 
- ![image](https://github.com/user-attachments/assets/aaa2cd84-1812-47a0-82ef-776cc20b0173)
+Here's the revised **Integration Points Diagram** and **Diagram Description** fully translated into English for clarity and professionalism:
 
+---
 
-   ## Integration Points Diagram
+## **Integration Points Diagram**
 
-   *A block diagram illustrating the airflow path from bleed air intake through compressors, intercoolers, heat exchangers, distribution ducts, and outflow valves, highlighting key components and sensors.*
+A block diagram illustrating the airflow path from bleed air intake through compressors, intercoolers, heat exchangers, distribution ducts, and outflow valves, highlighting key components and sensors.
 
-### **Diagram Description**
+```mermaid
+flowchart TD
+    Engine[Engine Bleed Air Intake] --> Outflow[Outflow Valves]
+    Outflow --> ACM[Air Cycle Machines]
+    ACM --> HeatExchanger[Heat Exchangers]
+    HeatExchanger --> RecirculationFans[Recirculation Fans]
+    RecirculationFans --> CabinDucts[Cabin Ducting]
+    CabinDucts --> CabinVents[Cabin Vents]
+    ACM --> ECSControllers[ECS Controllers]
+    ECSControllers --> FlightDeck[Flight Deck Indications]
+
+    %% Styling for Nodes
+    style Engine fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style Outflow fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style ACM fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style HeatExchanger fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style RecirculationFans fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style CabinDucts fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style CabinVents fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style ECSControllers fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style FlightDeck fill:#000000,stroke:#00FF00,color:#FFFFFF
+
+    %% Styling for Links
+    linkStyle default stroke:#FF69B4,stroke-width:2px
+```
+
+---
+
+## **Diagram Description**
+
+### **Key Components**
 
 1. **Engine Bleed Air:**
-    - **Toma de Aire de Derivación del Motor:**
-        - El aire de derivación se extrae del motor y se dirige a las **Outflow Valves (Válvulas de Salida)**.
+   - **Air Intake from the Engine:**  
+     Compressed air is extracted from the engine and directed to the **Outflow Valves**.
 
 2. **Outflow Valves:**
-    - **Válvulas de Salida:**
-        - Regulan la liberación de aire presurizado hacia las **Air Cycle Machines (Máquinas de Ciclo de Aire)**.
+   - **Function:**  
+     Regulate the release of pressurized air towards the **Air Cycle Machines (ACMs)** for further processing.
 
-3. **Air Cycle Machines (AC Packs):**
-    - **Máquinas de Ciclo de Aire (AC Packs):**
-        - Procesan el aire presurizado para controlar la temperatura y la presión dentro de la cabina.
-        - **Flujo Interno:**
-            - El aire pasa por los **Heat Exchangers (Intercoolers)** para reducir la temperatura.
-            - Luego, circula a través de los **Recirculation Fans (Ventiladores de Recirculación)** para distribuir el aire acondicionado.
+3. **Air Cycle Machines (ACMs):**
+   - **Purpose:**  
+     Process pressurized air to regulate cabin temperature and pressure.
+   - **Internal Flow:**  
+     - The air flows through **Heat Exchangers** (intercoolers) to reduce its temperature.
+     - Then, it circulates through **Recirculation Fans** to distribute conditioned air.
 
 4. **Heat Exchangers:**
-    - **Intercoolers:**
-        - Transferencia de calor desde el aire comprimido hacia el ambiente externo, enfriando el aire antes de su distribución.
+   - **Intercoolers:**  
+     Facilitate heat transfer from compressed air to the external environment, cooling the air before distribution.
 
 5. **Recirculation Fans:**
-    - **Ventiladores de Recirculación:**
-        - Distribuyen el aire acondicionado a través de los **Cabin Ducting (Conductos de Cabina)** hacia las **Cabin Vents (Ventanas de Cabina)**.
+   - **Purpose:**  
+     Distribute conditioned air through the **Cabin Ducting** to the **Cabin Vents**.
 
 6. **Cabin Ducting:**
-    - **Conductos de Cabina:**
-        - Canalizan el aire acondicionado a diferentes zonas de la cabina, asegurando una distribución uniforme.
+   - **Ductwork:**  
+     Channels conditioned air to different cabin zones, ensuring uniform distribution.
 
 7. **Cabin Vents:**
-    - **Ventanas de Cabina:**
-        - Entregan el aire acondicionado a áreas específicas dentro de la cabina de pasajeros.
+   - **Vents:**  
+     Deliver conditioned air to specific areas within the passenger cabin.
 
 8. **ECS Controllers:**
-    - **Controladores del ECS:**
-        - Gestionan y regulan las operaciones del ECS, ajustando parámetros en tiempo real para mantener condiciones óptimas en la cabina.
+   - **Control and Regulation:**  
+     Manage and regulate ECS operations, adjusting parameters in real time to maintain optimal cabin conditions.
 
 9. **Flight Deck Indications:**
-    - **Indicaciones del Puente de Mando:**
-        - Proporcionan información en tiempo real sobre el estado del ECS al equipo de vuelo, permitiendo ajustes y monitoreo continuo.
+   - **Monitoring:**  
+     Provide real-time information about the ECS status to the flight crew, enabling continuous monitoring and necessary adjustments.
 
-[Edit this diagram](https://www.mermaidchart.com/app/mermaid-chart-save/2024-12-29/e03e5d03-af20-432b-9f8b-e2d3a5eb6fab)
+---
+
+### **Additional Enhancements:**
+
+1. **Consistent Labeling:**
+   - Match node labels in the diagram with the components described in the text to ensure alignment.
+
+2. **Diagram Validation:**
+   - Test the updated Mermaid diagram in a live editor such as [Mermaid Live Editor](https://mermaid-js.github.io/mermaid-live-editor/) to ensure proper rendering.
+
 
 ---
 
