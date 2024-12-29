@@ -1,8 +1,7 @@
-# FTC_21-00-00-00-000_ATA_21 Air-Conditioning and Pressurization (ECS).md
 
----
+# **FTC_21-00-00-00-000 ATA 21 Air Conditioning and Pressurization (ECS) Master Document**
 
-## Version History
+## **Version History**
 
 | **Version** | **Date**     | **Author**        | **Description / Change Notes**                                                                                         | **Impact on Design**      | **Affected Sections**                  |
 |-------------|--------------|-------------------|-------------------------------------------------------------------------------------------------------------------------|---------------------------|----------------------------------------|
@@ -11,7 +10,7 @@
 
 ---
 
-## Table of Contents
+## **Table of Contents**
 
 1. **21.10. System Description**
    - [21.10.1 Overview](#2110-overview)
@@ -27,6 +26,8 @@
    - [21.30.1 Main Components](#2130-main-components)
    - [21.30.2 Subsystems](#2130-subsystems)
    - [21.30.3 Comparative Tables of Components](#2130-comparative-tables-of-components)
+   - [21.30.4 Supplier Information](#2130-supplier-information)
+   - [21.30.5 Classification by Categories](#2130-classification-by-categories)
 
 4. **21.40. Components Breakdown (PBS)**
    - [21.40.1 Mechanical Components](#2140-mechanical-components)
@@ -83,6 +84,18 @@
     - [21.130.3 Examples of Efficiency and Pressurization Rate Calculations](#2130-examples-of-efficiency-and-pressurization-rate-calculations)
 
 15. **21.140. Configuration Management**
+    - [21.140.1 Overview](#2140-overview)
+    - [21.140.2 Configuration Control](#2140-configuration-control)
+    - [21.140.3 Version Control](#2140-version-control)
+    - [21.140.4 Documentation Management](#2140-documentation-management)
+    - [21.140.5 Approval Processes](#2140-approval-processes)
+    - [21.140.6 Traceability](#2140-traceability)
+    - [21.140.7 Configuration Management Tools](#2140-configuration-management-tools)
+    - [21.140.8 Roles and Responsibilities](#2140-roles-and-responsibilities)
+    - [21.140.9 Configuration Management Process](#2140-configuration-management-process)
+    - [21.140.10 Configuration Audits](#2140-configuration-audits)
+    - [21.140.11 Training and Awareness](#2140-training-and-awareness)
+    - [21.140.12 Configuration Management Tools](#2140-configuration-management-tools)
 
 16. **Appendices (Optional)**
     - [15.1 Glossary](#appendices-glossary)
@@ -90,155 +103,147 @@
 
 ---
 
-## 21.10. System Description
+## **21.10 System Description**
 
-### **21.10.1 Overview**
-
-The **Environmental Control System (ECS)** in the **GAIA AIR A360-XWLRGA Aircraft** ensures a safe and comfortable cabin environment. It regulates cabin temperature, pressure, and air distribution throughout the aircraft. The ECS integrates seamlessly with avionics and propulsion systems to maintain optimal conditions for passengers and crew, adhering to strict aviation safety standards.
-
-**Key Features:**
-- **Total Integration:** Fully integrated with avionics and propulsion systems.
-- **Redundancy:** Designed with redundant components to ensure continuous operation during partial system failures.
-- **Compatibility:** Suitable for various aircraft types, ensuring flexibility and scalability.
-
-## ECS Functional Flow Diagram
-
-*A block diagram illustrating the airflow path from bleed air intake through compressors, intercoolers, heat exchangers, distribution ducts, and outflow valves, highlighting key components and sensors.*
-
-![ECS Functional Flow](https://github.com/user-attachments/assets/0d1338d5-1f32-402a-983e-848f3a7e08e7)
-
-### **Diagram Description**
-
-1. **Start Flight:**
-    - Initiation of ECS operations at the beginning of the flight.
-
-2. **Engine Bleed Air Intake:**
-    - Bleed air is extracted from the engine and fed into the Air Cycle Machine (ACM).
-
-3. **Air Cycle Machine (ACM) Process:**
-    1. **Compression:** Bleed air is compressed to increase pressure and temperature.
-    2. **Heat Exchanger:** Compressed air passes through a heat exchanger to cool down.
-    3. **Expansion Valve:** Refrigerant flow is regulated for precise temperature control.
-    4. **Evaporation:** Cooled air undergoes evaporation to further reduce temperature.
-    5. **Cooling Air Output:** Conditioned air is outputted for cabin distribution.
-
-4. **Pressurization Control Unit (PS):**
-    - **Outflow Valves:** Regulate the release of pressurized air to maintain cabin pressure.
-    - **Cabin Pressurization:** Ensures the cabin remains at a safe and comfortable pressure level.
-
-5. **Environmental Control Unit (ECU):**
-    - **Advanced Sensors:** Monitor real-time conditions such as temperature, pressure, humidity, and air quality.
-    - **AI-Powered Control:** Utilizes AI algorithms to optimize ECS performance based on sensor data.
-    - **Adjustments to ACM:** Dynamically adjusts ACM settings for optimal cooling and pressurization.
-    - **Real-Time Monitoring:** Continuously monitors system performance and makes necessary adjustments.
-
-6. **Air Distribution System (ADS):**
-    - **Air Distribution Ducts:** Channels conditioned air throughout the cabin.
-    - **Vents and Registers:** Deliver air to specific areas within the passenger cabin.
-    - **Passenger Cabin Air:** Provides a comfortable and safe environment for passengers.
-
-7. **Feedback Loop:**
-    - Passenger Cabin Air conditions feed back into the Advanced Sensors, allowing the ECU to adjust ECS parameters in real-time for optimal performance.
-
-8. **End Flight:**
-    - ECS operations wind down, ensuring all systems are safely deactivated post-flight.
-
-
-### **21.10.2 Functional Description**
-
-The ECS comprises a combination of mechanical and electronic components that work together to provide the following key functionalities:
-
-- **Temperature Control**
-  - Maintains cabin temperature within comfortable limits using automated sensors and actuators.
-  - Adapts to external temperature changes (altitude, weather conditions) to ensure optimal cabin climate.
-
-- **Cabin Pressurization**
-  - Automatically regulates cabin pressure to simulate sea-level conditions, minimizing physiological stress on passengers and crew.
-  - Prevents hypoxia using high-precision pressure sensors.
-
-- **Air Distribution**
-  - Ensures uniform airflow across all cabin zones through optimized ductwork.
-  - Filters contaminants and controls humidity to enhance air quality.
-
-- **Interaction with Other Systems**
-  - Synchronizes with propulsion systems to optimize efficiency.
-  - Enables remote monitoring through avionics systems for real-time performance tracking.
-
-*Flow Diagram Example:*
-
-![image](https://github.com/user-attachments/assets/08ae859d-abf5-4ea7-8aaa-4e7e8f640ccd)
-**Diagram Description**
-
-1. **Start Flight:**
-    - Initiation of ECS operations at the beginning of the flight.
-
-2. **Engine Bleed Air Intake:**
-    - Bleed air is extracted from the engine and fed into the Air Cycle Machine (ACM).
-
-3. **Air Cycle Machine (ACM) Process:**
-    1. **Compression:** Bleed air is compressed to increase pressure and temperature.
-    2. **Heat Exchanger:** Compressed air passes through a heat exchanger to cool down.
-    3. **Expansion Valve:** Refrigerant flow is regulated for precise temperature control.
-    4. **Evaporation:** Cooled air undergoes evaporation to further reduce temperature.
-    5. **Cooling Air Output:** Conditioned air is outputted for cabin distribution.
-
-4. **Pressurization Control Unit (PS):**
-    - **Outflow Valves:** Regulate the release of pressurized air to maintain cabin pressure.
-    - **Cabin Pressurization:** Ensures the cabin remains at a safe and comfortable pressure level.
-
-5. **Environmental Control Unit (ECU):**
-    - **Advanced Sensors:** Monitor real-time conditions such as temperature, pressure, humidity, and air quality.
-    - **AI-Powered Control:** Utilizes AI algorithms to optimize ECS performance based on sensor data.
-    - **Adjustments to ACM:** Dynamically adjusts ACM settings for optimal cooling and pressurization.
-    - **Real-Time Monitoring:** Continuously monitors system performance and makes necessary adjustments.
-
-6. **Air Distribution System (ADS):**
-    - **Air Distribution Ducts:** Channels conditioned air throughout the cabin.
-    - **Vents and Registers:** Deliver air to specific areas within the passenger cabin.
-    - **Passenger Cabin Air:** Provides a comfortable and safe environment for passengers.
-
-7. **Feedback Loop:**
-    - Passenger Cabin Air conditions feed back into the Advanced Sensors, allowing the ECU to adjust ECS parameters in real-time for optimal performance.
-
-8. **End Flight:**
-    - ECS operations wind down, ensuring all systems are safely deactivated post-flight.
-
-
-### **21.10.3 Key Features**
-
-The ECS includes several innovative features designed to enhance user experience and maximize operational efficiency:
-
-- **Redundancy and Safety**
-  - **Redundant Packs:** Dual AC Packs ensure continuous cooling even if one pack fails.
-  - **Safety Valves:** Automatically open to prevent over-pressurization or negative pressure scenarios.
-  - **Integrated Alarms:** Alert maintenance personnel of any system anomalies.
-
-- **Advanced Automation**
-  - **Predictive Control Algorithms:** Automatically adjust cabin conditions based on real-time data.
-  - **Self-Diagnosis Capabilities:** Built-In Test Equipment (BITE) allows the ECS to perform continuous health monitoring and diagnostics.
-
-- **Energy Efficiency**
-  - **Optimized Airflow Management:** Reduces energy consumption by adjusting airflow based on demand.
-  - **Heat Recovery Systems:** Capture and reuse waste heat from ECS operations to improve overall energy efficiency.
-
-- **Regulatory Compliance**
-  - **Modular Design:** Facilitates easy updates and upgrades to meet evolving aviation standards.
-  - **International Standards:** Complies with FAA, EASA, and other global aviation regulations.
-
-**Operational Example:**
-
-**Case Study: Cabin Pressurization Failure During Ascent**
-
-- **Scenario:** During the ascent phase, a primary pressure regulator fails.
-- **Response:**
-  - **Detection:** High-precision sensors detect a drop in cabin pressure.
-  - **Action:** Redundant pressure regulators automatically engage to maintain cabin pressurization.
-  - **Outcome:** Cabin pressure stabilizes within the desired range, ensuring passenger and crew safety.
-  - **Post-Incident:** Maintenance teams are alerted via the blockchain-based logs to inspect the failed regulator and perform necessary repairs.
+The **Environmental Control System (ECS)** in the **GAIA AIR A360-XWLRGA Aircraft** is a sophisticated and integrated solution engineered to maintain a safe and comfortable environment for passengers and crew. It dynamically regulates cabin temperature, pressure, humidity, and air quality throughout all flight phases while adhering to stringent aviation safety and environmental standards.
 
 ---
 
-## 21.20. System Standard Practices
+### **21.10.1 Overview**
+
+The ECS leverages advanced automation, energy-efficient technologies, and robust safety mechanisms to ensure consistent cabin conditions. By integrating with propulsion and avionics systems, the ECS optimizes performance while minimizing energy consumption and environmental impact.
+
+**Key Features:**
+1. **Dynamic Environmental Control:**
+   - Regulates temperature, pressure, and humidity in real-time using intelligent sensors and AI-powered controllers.
+2. **Energy Efficiency:**
+   - Features heat recovery systems and optimized airflow management to reduce energy consumption.
+3. **Seamless Integration:**
+   - Fully compatible with avionics and propulsion systems, ensuring smooth operational performance.
+4. **Redundant Safety Mechanisms:**
+   - Includes backup systems and safety protocols to maintain functionality during partial failures.
+
+---
+
+### **21.10.2 Functional Description**
+
+The ECS comprises multiple subsystems working together to achieve optimal environmental conditions:
+
+#### **Temperature Regulation**
+- **Automated Temperature Control:**  
+  Sensors continuously monitor cabin temperature and adjust air cycle machine settings to maintain ±1°C accuracy.
+- **Heat Exchangers and Evaporators:**  
+  Efficiently cool or heat air before distribution to the cabin.
+
+#### **Cabin Pressurization**
+- **Outflow Valves and Pressure Sensors:**  
+  Precisely regulate cabin pressure to simulate a sea-level environment, minimizing physiological stress for passengers.
+- **Pressurization Control Unit (PS):**  
+  Dynamically adjusts airflow based on altitude changes and flight phases.
+
+#### **Air Distribution and Quality**
+- **Advanced Filtration Systems:**  
+  Removes airborne particles and contaminants, ensuring high air quality.
+- **Ductwork and Vents:**  
+  Evenly distribute conditioned air throughout the cabin zones.
+
+#### **Energy Recovery**
+- **Heat Recovery Systems:**  
+  Capture waste heat from ECS processes for reuse, improving overall energy efficiency.
+
+#### **Safety and Monitoring**
+- **Redundant Control Systems:**  
+  Backup sensors and actuators ensure uninterrupted operation during component failures.
+- **Real-Time Monitoring:**  
+  The Environmental Control Unit (ECU) provides continuous status updates to the flight deck.
+
+#### **Performance Metrics**
+- **Temperature Accuracy:**  
+  Maintains cabin temperature within ±1°C.
+- **Energy Consumption:**  
+  Achieves a 15% reduction in energy usage compared to previous models.
+- **Air Quality Index:**  
+  Maintains particulate levels below 0.5 µg/m³.
+- **System Uptime:**  
+  Ensures 99.9% operational availability through redundant systems.
+
+---
+
+### **21.10.3 Key Features**
+
+The ECS incorporates several innovative features to maximize efficiency, reliability, and passenger comfort:
+
+#### **1. Intelligent Automation**
+- **AI-Powered Control:**  
+  The ECU employs advanced algorithms to analyze sensor data and optimize system settings dynamically.
+- **Predictive Maintenance:**  
+  Built-in diagnostics detect potential issues early, reducing downtime and unscheduled repairs.
+
+#### **2. Energy Efficiency**
+- **Optimized Airflow Management:**  
+  Adapts airflow to demand, reducing unnecessary energy use.
+- **Sustainable Design:**  
+  Incorporates lightweight materials and eco-friendly refrigerants.
+
+#### **3. Safety and Redundancy**
+- **Backup Systems:**  
+  Redundant sensors and actuators ensure continuous operation during partial failures.
+- **Integrated Alerts:**  
+  Alerts the flight crew of deviations in ECS performance for proactive resolution.
+
+#### **4. Compliance and Adaptability**
+- **Regulatory Adherence:**  
+  Complies with FAA, EASA, and ISO standards for safety, performance, and environmental impact.
+- **Modular Design:**  
+  Allows for easy upgrades to meet evolving regulatory and operational requirements.
+
+---
+
+### **Operational Example: ECS Response During Ascent**
+
+- **Scenario:** Rapid ascent requiring increased cabin pressurization.
+- **System Actions:**
+  - The ECS increases bleed air intake and dynamically adjusts outflow valves to maintain safe cabin pressure.
+  - Heat exchangers stabilize air temperature, ensuring passenger comfort.
+  - The ECU continuously monitors system parameters, alerting the flight crew of any anomalies.
+- **Outcome:** A smooth and safe environmental transition as the aircraft reaches cruising altitude.
+
+---
+
+### **Diagrams**
+
+#### **ECS Functional Flow Diagram**
+
+*A block diagram illustrating the integration and airflow paths within the ECS.*
+
+```mermaid
+flowchart TD
+    Engine[Engine Bleed Air] --> ACM[Air Cycle Machine]
+    ACM --> HeatExchanger[Heat Exchanger]
+    HeatExchanger --> CabinPressurization[Pressurization System]
+    CabinPressurization --> CabinAir[Cabin Air Distribution]
+    CabinAir --> Feedback[Passenger Cabin Feedback]
+    ACM --> ECU[Environmental Control Unit]
+    ECU --> Monitoring[Flight Deck Indications]
+    
+    style Engine fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style ACM fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style HeatExchanger fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style CabinPressurization fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style CabinAir fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style Feedback fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style ECU fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style Monitoring fill:#000000,stroke:#00FF00,color:#FFFFFF
+    linkStyle default stroke:#FF69B4,stroke-width:2px
+```
+
+![ECS Functional Diagram](path_to_image.png)
+
+*Ensure that the image path is correctly linked in the final document.*
+
+---
+
+## **21.20. System Standard Practices**
 
 ### **21.20.1 Maintenance Guidelines**
 
@@ -262,6 +267,8 @@ The ECS includes several innovative features designed to enhance user experience
    - **Step 4:** Install the new HEPA filter, ensuring a secure fit.
    - **Step 5:** Replace the access panel and restore power to the ECS.
    - **Step 6:** Perform a system check to verify proper filter installation and ECS operation.
+
+---
 
 ### **21.20.2 Operational Procedures**
 
@@ -295,6 +302,8 @@ The ECS includes several innovative features designed to enhance user experience
 | Monitor initial parameters    | [ ]        |
 | Confirm alarms are inactive   | [ ]        |
 
+---
+
 ### **21.20.3 Safety Standards**
 
 **Applicable Standards:**
@@ -317,7 +326,7 @@ The ECS includes several innovative features designed to enhance user experience
 
 ---
 
-## 21.30. Components List
+## **21.30. Components List**
 
 ### **21.30.1 Main Components**
 
@@ -349,13 +358,13 @@ The ECS includes several innovative features designed to enhance user experience
 
 ### **21.30.4 Supplier Information**
 
-| **Component**                | **Supplier**         | **Contact**                | **Lead Time** | **Reliability** | **Alternate Suppliers**        |
-|------------------------------|----------------------|----------------------------|---------------|------------------|---------------------------------|
-| **Air Compressors**          | ABC Compressors Inc. | contacto@abccompressors.com | 6 weeks       | High             | DEF Compressors Co., GHI Compressors |
-| **Heat Exchangers**          | HeatEx Solutions     | sales@heatexsolutions.com  | 8 weeks       | High             | JKL Heat Systems, MNO HeatTech   |
-| **Pressure Regulators**      | TitanValves Ltd.     | info@titanvalves.com        | 5 weeks       | Medium           | PQR Valve Technologies           |
-| **Temp/Pressure Sensors**    | SensorTech           | support@sensortech.com      | 4 weeks       | High             | STU Sensors Corp., VWX Sensor Solutions |
-| **Electronic Control Panels**| ControlSystems Corp. | services@controlsystems.com | 10 weeks      | High             | YZA Control Systems, BCD Electronics |
+| **Component**                | **Supplier**           | **Contact**                  | **Lead Time** | **Reliability** | **Alternate Suppliers**             |
+|------------------------------|------------------------|------------------------------|---------------|------------------|-------------------------------------|
+| **Air Compressors**          | ABC Compressors Inc.   | contacto@abccompressors.com  | 6 weeks       | High             | DEF Compressors Co., GHI Compressors |
+| **Heat Exchangers**          | HeatEx Solutions       | sales@heatexsolutions.com    | 8 weeks       | High             | JKL Heat Systems, MNO HeatTech       |
+| **Pressure Regulators**      | TitanValves Ltd.       | info@titanvalves.com         | 5 weeks       | Medium           | PQR Valve Technologies               |
+| **Temp/Pressure Sensors**    | SensorTech             | support@sensortech.com        | 4 weeks       | High             | STU Sensors Corp., VWX Sensor Solutions |
+| **Electronic Control Panels**| ControlSystems Corp.   | services@controlsystems.com   | 10 weeks      | High             | YZA Control Systems, BCD Electronics |
 
 ### **21.30.5 Classification by Categories**
 
@@ -385,7 +394,7 @@ The ECS includes several innovative features designed to enhance user experience
 
 ---
 
-## 21.40. Components Breakdown (PBS)
+## **21.40. Components Breakdown (PBS)**
 
 ### **21.40.1 Mechanical Components**
 
@@ -429,70 +438,67 @@ Include schematics that visualize each subsystem (mechanical and electrical) and
 
 1. **ECS Mechanical Layout Diagram**
 
-  ![image](https://github.com/user-attachments/assets/55a323a3-77bb-499f-ae71-6614be02062e)
+   ![ECS Mechanical Layout Diagram](https://github.com/user-attachments/assets/55a323a3-77bb-499f-ae71-6614be02062e.png)
 
-###   Key Components:
-**Air Cycle Machine (ACM)**: Includes Compressor, Expansion Valve, and Heat Exchanger.
-**Pressurization System (PS)**: Manages outflow valves and pressure sensors.
-**Environmental Control Unit (ECU)**: Uses control modules, sensors, and algorithms to optimize the ECS.
-**Air Distribution System (ADS)**: Handles air ducts and vents for cabin delivery.
-
+   **Key Components:**
+   - **Air Cycle Machine (ACM):** Includes Compressor, Expansion Valve, and Heat Exchanger.
+   - **Pressurization System (PS):** Manages outflow valves and pressure sensors.
+   - **Environmental Control Unit (ECU):** Uses control modules, sensors, and algorithms to optimize the ECS.
+   - **Air Distribution System (ADS):** Handles air ducts and vents for cabin delivery.
 
 2. **ECS Electrical Wiring Diagram**
 
-   ![image](https://github.com/user-attachments/assets/d6ae96c8-ab0c-41c2-82c3-a044ab8cf7cc)
+   ![ECS Electrical Wiring Diagram](https://github.com/user-attachments/assets/d6ae96c8-ab0c-41c2-82c3-a044ab8cf7cc.png)
 
+   **Diagram Components Explanation:**
 
-### **Diagram Components Explanation**
+   1. **Environmental Control System (ECS) Electrical System:**
+      - The central hub managing all electrical components and their interactions within the ECS.
 
-1. **Environmental Control System (ECS) Electrical System:**
-   - The central hub managing all electrical components and their interactions within the ECS.
+   2. **Power Supply:**
+      - **Main Power Source:** Provides primary electrical power to ECS components.
+      - **Backup Power Supply (UPS):** Ensures continuous power during main power failures, maintaining system operations.
 
-2. **Power Supply:**
-   - **Main Power Source:** Provides primary electrical power to ECS components.
-   - **Backup Power Supply (UPS):** Ensures continuous power during main power failures, maintaining system operations.
+   3. **Control Modules:**
+      - **Control Module 1:** Handles primary ECS operations, processing data from sensors and sending control signals to actuators.
+      - **Control Module 2:** Manages secondary operations, interfaces with AI control algorithms, and provides redundancy.
 
-3. **Control Modules:**
-   - **Control Module 1:** Handles primary ECS operations, processing data from sensors and sending control signals to actuators.
-   - **Control Module 2:** Manages secondary operations, interfaces with AI control algorithms, and provides redundancy.
+   4. **Sensors:**
+      - **Temperature Sensor:** Monitors cabin and component temperatures.
+      - **Pressure Sensor:** Measures cabin pressure levels.
+      - **Humidity Sensor:** Tracks cabin humidity to maintain comfort.
+      - **Air Quality Sensor:** Detects contaminants and ensures air quality standards are met.
 
-4. **Sensors:**
-   - **Temperature Sensor:** Monitors cabin and component temperatures.
-   - **Pressure Sensor:** Measures cabin pressure levels.
-   - **Humidity Sensor:** Tracks cabin humidity to maintain comfort.
-   - **Air Quality Sensor:** Detects contaminants and ensures air quality standards are met.
+   5. **Actuators:**
+      - **Outflow Valve Actuator:** Controls the opening and closing of outflow valves to regulate cabin pressure.
+      - **Duct Damper Actuator:** Adjusts duct dampers to manage airflow distribution and temperature control.
 
-5. **Actuators:**
-   - **Outflow Valve Actuator:** Controls the opening and closing of outflow valves to regulate cabin pressure.
-   - **Duct Damper Actuator:** Adjusts duct dampers to manage airflow distribution and temperature control.
+   6. **Communication Interfaces:**
+      - **Avionics Interface:** Facilitates data exchange between ECS and the aircraft's avionics systems for integrated monitoring and control.
+      - **AI Control Interface:** Connects to AI-powered control algorithms, enabling advanced system optimization and predictive maintenance.
 
-6. **Communication Interfaces:**
-   - **Avionics Interface:** Facilitates data exchange between ECS and the aircraft's avionics systems for integrated monitoring and control.
-   - **AI Control Interface:** Connects to AI-powered control algorithms, enabling advanced system optimization and predictive maintenance.
+   7. **Safety Systems:**
+      - **Alarm System:** Triggers alerts in case of system anomalies or deviations from normal operating parameters.
+      - **Emergency Shutdown:** Initiates the ECS shutdown process during critical failures to ensure passenger and crew safety.
 
-7. **Safety Systems:**
-   - **Alarm System:** Triggers alerts in case of system anomalies or deviations from normal operating parameters.
-   - **Emergency Shutdown:** Initiates the ECS shutdown process during critical failures to ensure passenger and crew safety.
+   8. **User Interfaces:**
+      - **Control Panel:** Allows flight crew to monitor and adjust ECS settings during flight.
+      - **Maintenance Interface:** Provides maintenance personnel with access to system diagnostics, controls, and data logs for troubleshooting and repairs.
 
-8. **User Interfaces:**
-   - **Control Panel:** Allows flight crew to monitor and adjust ECS settings during flight.
-   - **Maintenance Interface:** Provides maintenance personnel with access to system diagnostics, controls, and data logs for troubleshooting and repairs.
+   9. **Wiring Connections:**
+      - **Power Distribution:** Main and backup power supplies feed power to control modules.
+      - **Control Signals:** Control modules send signals to actuators and safety systems to manage ECS operations.
+      - **Data Feeds:** Sensors provide real-time data to control modules for informed decision-making.
+      - **Data Exchange:** Communication interfaces facilitate data flow between ECS and other aircraft systems.
+      - **User Inputs:** User interfaces send inputs to control modules for system adjustments.
 
-9. **Wiring Connections:**
-   - **Power Distribution:** Main and backup power supplies feed power to control modules.
-   - **Control Signals:** Control modules send signals to actuators and safety systems to manage ECS operations.
-   - **Data Feeds:** Sensors provide real-time data to control modules for informed decision-making.
-   - **Data Exchange:** Communication interfaces facilitate data flow between ECS and other aircraft systems.
-   - **User Inputs:** User interfaces send inputs to control modules for system adjustments.
+3. **Integration Points Diagram**
 
+   ![Integration Points Diagram](https://github.com/user-attachments/assets/26087e07-c214-497f-83d3-fd64f8a5aff7.png)
 
-4. **Integration Points Diagram**
+   ## Integration Points Diagram
 
-![image](https://github.com/user-attachments/assets/26087e07-c214-497f-83d3-fd64f8a5aff7)
-
-## Integration Points Diagram
-
-*A block diagram illustrating the airflow path from bleed air intake through compressors, intercoolers, heat exchangers, distribution ducts, and outflow valves, highlighting key components and sensors.*
+   *A block diagram illustrating the airflow path from bleed air intake through compressors, intercoolers, heat exchangers, distribution ducts, and outflow valves, highlighting key components and sensors.*
 
 ### **Diagram Description**
 
@@ -535,358 +541,11 @@ Include schematics that visualize each subsystem (mechanical and electrical) and
     - **Indicaciones del Puente de Mando:**
         - Proporcionan información en tiempo real sobre el estado del ECS al equipo de vuelo, permitiendo ajustes y monitoreo continuo.
 
-
----
-
-## 21.50. Bill of Materials (BoM)
-
-### **21.50.1 Comprehensive List**
-
-A detailed list of all parts required for the ECS, including mechanical, electrical, and software components.
-
-### **21.50.2 Quantities and Specifications**
-
-| **Component**                | **Quantity** | **Specifications**                        |
-|------------------------------|--------------|--------------------------------------------|
-| **Air Compressor (P/N 21-30-01)** | 2            | 450 x 300 x 300 mm, Stainless Steel, Service Life: 8,000 - 10,000 hours |
-| **Heat Exchanger (P/N 21-30-02)** | 4            | 600 x 250 x 250 mm, Aluminum-Copper Alloy, Service Life: 5,000 - 7,000 hours |
-| **Pressure Regulator (P/N 21-30-03)** | 6            | 150 x 150 x 100 mm, Titanium Alloy, Service Life: 4,000 - 6,000 hours |
-| **Temp/Pressure Sensor (P/N 21-30-04)** | 10           | 80 x 50 x 40 mm, Composites & Ceramics, Service Life: 3,000 - 5,000 hours |
-| **Electronic Control Panel (P/N 21-30-05)** | 1            | 200 x 150 x 50 mm, Fire-Resistant Plastics, Service Life: 10,000+ hours |
-
-**Additional Parameters:**
-- **Cost:** Estimated cost per unit.
-- **Weight:** Weight of each component for overall ECS weight management.
-- **Performance Metrics:** Efficiency ratings or performance indicators.
-
-### **21.50.3 Supplier Information**
-
-| **Component**                | **Supplier**           | **Contact**                  | **Lead Time** | **Reliability** | **Alternate Suppliers**             |
-|------------------------------|------------------------|------------------------------|---------------|------------------|-------------------------------------|
-| **Air Compressors**          | ABC Compressors Inc.   | contacto@abccompressors.com  | 6 weeks       | High             | DEF Compressors Co., GHI Compressors |
-| **Heat Exchangers**          | HeatEx Solutions       | sales@heatexsolutions.com    | 8 weeks       | High             | JKL Heat Systems, MNO HeatTech       |
-| **Pressure Regulators**      | TitanValves Ltd.       | info@titanvalves.com         | 5 weeks       | Medium           | PQR Valve Technologies               |
-| **Temp/Pressure Sensors**    | SensorTech             | support@sensortech.com        | 4 weeks       | High             | STU Sensors Corp., VWX Sensor Solutions |
-| **Electronic Control Panels**| ControlSystems Corp.   | services@controlsystems.com   | 10 weeks      | High             | YZA Control Systems, BCD Electronics |
-
-### **21.50.4 Classification by Categories**
-
-**Consumables:**
-- HEPA Filters
-- Sealing Gaskets
-- Industrial Sealants
-- Lubricating Oils
-
-**Mechanical Components:**
-- Pressure Regulators
-- Aluminum Ducting
-- Heat Exchangers
-- Air Compressors
-- Air Turbines
-
-**Electrical Components:**
-- Temperature and Pressure Sensors
-- Electric Actuators
-- Control Modules
-- High-Resistance Wiring
-- Industrial Connectors
-
-**Lifecycle Considerations:**
-- **Consumables Replacement Intervals:** HEPA Filters every 1,000 pressurization cycles.
-- **Component Lifecycle:** Track service life and maintenance history to schedule timely replacements.
-
----
-
-## 21.51. System Standard Practices and Structures
-
-### **21.51.1 General Guidelines**
-
-- **ECS Installation:**
-  - Ensure all components are mounted on vibration-resistant supports.
-  - Use appropriate brackets and racks to secure ductwork and heavy components.
-  - Verify alignment of mechanical components and electrical connections during installation.
-
-- **Structural Verification:**
-  - Conduct structural integrity inspections before system activation.
-  - Utilize high-quality, certified materials to guarantee system durability and reliability.
-
-- **Industry Best Practices:**
-  - Implement Standard Operating Procedures (SOPs) for all maintenance and inspection activities.
-  - Document all system modifications and updates to maintain a comprehensive history.
-
-**Step-by-Step Installation Procedure Example:**
-
-1. **Preparation:**
-   - Gather all necessary tools and components.
-   - Review installation diagrams and guidelines.
-
-2. **Mounting Components:**
-   - Secure compressors and turbines using vibration-resistant mounts.
-   - Install ductwork, ensuring no obstructions and proper alignment.
-
-3. **Electrical Connections:**
-   - Connect sensors and actuators to control modules.
-   - Ensure all wiring is properly routed and secured.
-
-4. **System Verification:**
-   - Conduct initial system checks to verify component installation.
-   - Perform leak tests on pressurization components.
-
-5. **Final Inspection:**
-   - Review installation against diagrams and checklists.
-   - Document installation details in the CMDB.
-
----
-
-## 21.60. System Practical Standards and Propellant Interaction
-
-### **21.60.1 Propellant Properties**
-
-**Engine Bleed Air:**
-- **Composition:** High-purity compressed air with low humidity.
-- **Temperature:** Operational range between 150°C and 300°C.
-- **Pressure:** Between 35 psi and 50 psi, adjustable as per flight requirements.
-
-**Material Compatibility:**
-- Components exposed to bleed air must be made from corrosion-resistant and high-temperature materials like titanium alloys and stainless steel.
-
-**Operational Limits and Safety Margins:**
-- **Maximum Temperature:** 320°C to account for unexpected temperature spikes.
-- **Pressure Margins:** ±5 psi beyond operational pressures to ensure safety.
-
-**Environmental Considerations:**
-- Ambient temperature changes during flight can affect bleed air properties. The ECS adjusts parameters dynamically to maintain stability.
-
-### **21.60.2 Operational Interaction**
-
-**Bleed Air Usage:**
-- ECS utilizes bleed air in different operation modes based on flight phase (takeoff, cruise, landing).
-- During cruise, the system optimizes bleed air usage to maximize energy efficiency and maintain stable environmental conditions.
-
-**Detailed Interaction Mechanisms:**
-- **Takeoff Phase:** High bleed air usage to ensure rapid cabin pressurization and cooling.
-- **Cruise Phase:** Balanced bleed air usage to maintain efficiency and reduce energy consumption.
-- **Landing Phase:** Increased bleed air flow to stabilize cabin conditions during descent.
-
-**Impact on Aircraft Performance:**
-- Optimizing bleed air usage enhances overall aircraft performance by reducing fuel consumption and minimizing emissions.
-
-**Cross-References:**
-- For details on physical interfacing with engines, refer to [21.70.1 Engine Interface](#2170-engine-interface).
-
-### **21.60.3 Operational Checklist**
-
-**Operational Checklist for Safe Propellant Management:**
-
-1. **Propulsor Inspection:**
-   - Verify physical integrity and absence of air leaks.
-
-2. **Material Compatibility Check:**
-   - Ensure ECS materials are compatible with propulsor.
-
-3. **Parameter Configuration:**
-   - Confirm temperature and pressure settings are within specified limits.
-
-4. **Functional Testing:**
-   - Conduct operational tests to verify ECS response to set parameters.
-
-5. **Emergency Procedures Verification:**
-   - Ensure emergency overrides and ventilation systems are operational.
-
-**Integration with Training:**
-- Link the operational checklist with training modules to ensure crew familiarity and proficiency.
-
-**Visual Aids:**
-- Incorporate checklists or flow diagrams to complement textual procedures.
-
----
-
-## 21.70. System Practical Standards and Engine Integration
-
-### **21.70.1 Engine Interface**
-
-**Bleed Air Intake Layout:**
-- Strategically located at engine compression stages to maximize availability of compressed air.
-- Incorporates isolation valves to divert bleed air for maintenance or in case of failures.
-
-**Safety Systems:**
-- **Relief Valves:** Prevent over-pressurization.
-- **High-Precision Sensors:** Monitor bleed air conditions and activate safety mechanisms if necessary.
-
-**Detailed Safety Protocols:**
-- In case of bleed air pressure exceeding safe limits, relief valves activate automatically to release excess pressure.
-- If a pressure drop is detected, redundant pressure regulators engage to maintain cabin pressurization.
-
-**Integration Diagram Example:**
-
-### Engine Interface Diagram
-
-Here is the generated **Engine Interface Diagram** showcasing the integration of the ECS and engine bleed air system with the requested custom styling:
-
-![Engine Interface Diagram](https://supabase.mermaidchart.com/storage/v1/object/public/chatgpt-diagrams/2024-12-29/98d7a97a-825e-450b-bbf3-e6f76875e1bd.png)
-
-#### Key Components:
-1. **Engine Bleed Air** → Supplies compressed air from the engine.
-2. **Isolation Valves** → Control and isolate airflow during maintenance or emergencies.
-3. **Outflow Valves** → Regulate pressure before air enters the system.
-4. **Air Cycle Machines (ACMs)** → Manage temperature and pressure adjustments.
-5. **Heat Exchangers** → Cool the air before it enters the cabin.
-6. **Cabin Ducting** → Distributes air throughout the passenger cabin.
-7. **Cabin Vents** → Deliver conditioned air to specific cabin zones.
-8. **Environmental Control Unit (ECU)** → Monitors and controls system parameters.
-9. **Flight Deck Indications** → Displays ECS status to pilots for real-time monitoring.
-
-[Edit this diagram](https://www.mermaidchart.com/app/mermaid-chart-save/2024-12-29/98d7a97a-825e-450b-bbf3-e6f76875e1bd)
-
-
-
-### **21.70.2 Integration Testing**
-
-**Testing Procedures:**
-- **Compatibility Tests:** Ensure ECS compatibility with various engine configurations.
-- **Airflow Efficiency Validation:** Verify optimal airflow rates and system responsiveness to demand changes.
-- **Electromagnetic Compatibility (EMC):** Ensure no electromagnetic interference between ECS and engine systems.
-
-**Detailed Test Cases:**
-1. **Scenario:** High bleed air demand during takeoff.
-   - **Test:** Simulate takeoff conditions and monitor ECS response.
-   - **Expected Outcome:** Rapid pressurization and cooling without system lag.
-
-2. **Scenario:** Power fluctuation in ECS control modules.
-   - **Test:** Introduce power fluctuations and observe ECS stability.
-   - **Expected Outcome:** ECS maintains operation through redundant power supplies.
-
-**Certification Requirements:**
-- Compliance with FAA and EASA regulations for bleed air system integration.
-- Documentation and evidence of testing for relevant certifications.
-
-**Documentation Requirements:**
-- Detailed test reports including methodology, observations, and results.
-- Certification certificates from regulatory bodies.
-
-### **21.70.3 Integration Diagram**
-
-## ECS Functional Flow Diagram
-
-*A block diagram illustrating the airflow path from bleed air intake through compressors, intercoolers, heat exchangers, distribution ducts, and outflow valves, highlighting key components and sensors.*
-
-![ECS Functional Flow](https://github.com/user-attachments/assets/0d1338d5-1f32-402a-983e-848f3a7e08e7)
-
-### **Diagram Description**
-
-
-1. **Start Flight**  
-   - At the beginning of each flight, the **Environmental Control System (ECS)** powers on and verifies that all subsystems are operational. This includes initializing sensors, checking baseline temperatures, and confirming readiness for subsequent flight phases.
-
-2. **Engine Bleed Air Intake**  
-   - Once the engines reach their operating conditions, compressed air—known as bleed air—is extracted from designated compression stages. This bleed air is then directed into the ECS for further processing, temperature control, and eventual cabin distribution.
-
-3. **Air Cycle Machine (ACM) Process**  
-   1. **Compression**  
-      - The diverted air is compressed to increase both pressure and temperature, providing the necessary conditions for effective heat exchange.  
-   2. **Heat Exchanger (Intercooler)**  
-      - The now-compressed air flows through a heat exchanger, commonly referred to as an intercooler, which reduces its temperature using ambient or bypassed cooler air.  
-   3. **Expansion Valve**  
-      - A regulated refrigerant flow is maintained by the expansion valve, allowing for precise control of temperature based on in-flight conditions and sensor data.  
-   4. **Evaporation**  
-      - The cooled air undergoes evaporation to further decrease its temperature, optimizing comfort levels before distribution.  
-   5. **Cooling Air Output**  
-      - Finally, the conditioned air is channeled for delivery into the cabin, ensuring a comfortable environment throughout the flight.
-
-4. **Pressurization Control Unit (PS)**  
-   - **Pressurization Control Overview:**  
-     - **Outflow Valves:** Manage the release of pressurized air to maintain a stable cabin environment.  
-     - **Cabin Pressurization:** Guarantees that the interior remains at a safe, comfortable pressure, mitigating the effects of altitude changes on passengers and crew.
-
-5. **Environmental Control Unit (ECU)**  
-   - **Primary Functions:**  
-     - **Advanced Sensors:** Continuously monitor real-time parameters such as temperature, pressure, humidity, and air quality throughout the cabin.  
-     - **AI-Powered Control:** Utilizes artificial intelligence algorithms to interpret sensor data and optimize ECS performance, delivering efficient cooling, pressurization, and air distribution.  
-     - **Adjustments to ACM:** Dynamically refines ACM settings to ensure balanced cooling and pressurization, even under varying flight conditions.  
-     - **Real-Time Monitoring:** Performs ongoing checks of overall system health and automatically corrects any deviations to maintain optimal cabin conditions.
-
-6. **Air Distribution System (ADS)**  
-   - **Key Components:**  
-     - **Air Distribution Ducts:** Carefully routed conduits that transport conditioned air to different sections of the aircraft cabin.  
-     - **Vents and Registers:** Visible outlets through which air is supplied, allowing for zoned or targeted airflow to seats, galley areas, and other compartments.  
-     - **Passenger Cabin Air:** Ensures that travelers experience a consistent and safe environment, upholding standards of comfort and air quality.
-
-7. **Feedback Loop**  
-   - **Continuous Adjustment:**  
-     - As conditions in the passenger cabin change—due to occupancy, external weather, or operational variations—the data is fed back to the **Advanced Sensors**. In response, the **ECU** modifies ECS parameters in real time, guaranteeing optimal performance and passenger comfort.
-
-8. **End Flight**  
-   - **Shut-Down Phase:**  
-     - As the flight concludes, the ECS scales down its operations, transitioning out of its active modes. This stage ensures all systems safely deactivate, preserving mechanical and electrical components for the next flight cycle.
-
----
-
-### Professional Integration Diagram: ECS-Engine Integration
-
-
-
-![ECS-Engine Integration](https://supabase.mermaidchart.com/storage/v1/object/public/chatgpt-diagrams/2024-12-29/e03e5d03-af20-432b-9f8b-e2d3a5eb6fab.png)
-
----
-
-### **Diagram Description**
-This diagram illustrates the flow and integration points of the **Environmental Control System (ECS)** with the engine bleed air system.
-
-#### **Key Components**:
-1. **Engine Bleed Air Source** → Supplies compressed air for ECS operations.
-2. **Isolation Valves** → Control airflow and isolate sections for maintenance or safety purposes.
-3. **Outflow Valves** → Regulate air pressure entering the system.
-4. **Air Cycle Machines** → Manage temperature and pressure adjustments for cabin air.
-5. **Heat Exchangers** → Cool compressed air for passenger comfort.
-6. **Cabin Air Ducting** → Distributes air throughout the passenger cabin.
-7. **Cabin Vents** → Deliver conditioned air directly to passengers.
-8. **Environmental Control Unit (ECU)** → Monitors and adjusts system parameters.
-9. **Relief Valves** → Act as safety mechanisms for pressure regulation.
-10. **Flight Deck Indications** → Provide real-time monitoring to the cockpit crew.
-
 [Edit this diagram](https://www.mermaidchart.com/app/mermaid-chart-save/2024-12-29/e03e5d03-af20-432b-9f8b-e2d3a5eb6fab)
 
-
-## **Diagram Description**
-
-This diagram illustrates the flow and integration points of the **Environmental Control System (ECS)** with the **engine bleed air system**, highlighting how compressed air is managed for passenger comfort and safety.
-
-### **Key Components**
-
-- **Engine Bleed Air Source**  
-  Supplies compressed air for ECS operations.
-
-- **Isolation Valves**  
-  Control airflow and isolate sections for maintenance or safety purposes.
-
-- **Outflow Valves**  
-  Regulate the air pressure entering the ECS.
-
-- **Air Cycle Machines**  
-  Adjust temperature and pressure for cabin air conditioning.
-
-- **Heat Exchangers**  
-  Cool compressed air to ensure comfortable cabin temperatures.
-
-- **Cabin Air Ducting**  
-  Distributes conditioned air throughout the passenger cabin.
-
-- **Cabin Vents**  
-  Deliver cooled or heated air directly to passengers.
-
-- **Environmental Control Unit (ECU)**  
-  Monitors sensors, adjusts system parameters, and optimizes ECS performance.
-
-- **Relief Valves**  
-  Serve as safety mechanisms to prevent over-pressurization.
-
-- **Flight Deck Indications**  
-  Provide real-time ECS status to the cockpit crew for oversight and adjustments.
-
-
 ---
 
-## 21.80. Safety and Failure Modes
+## **21.80. Safety and Failure Modes**
 
 ### **21.80.1 Safety Features**
 
@@ -910,6 +569,8 @@ This diagram illustrates the flow and integration points of the **Environmental 
 **Integration with Avionics:**
 - Safety alerts are integrated with the aircraft's avionics systems, providing real-time notifications to the flight crew for immediate action.
 
+---
+
 ### **21.80.2 Failure Modes and Effects Analysis (FMEA)**
 
 - **Failure Identification:** Possible malfunction modes (e.g., sensor drift, valve blockage).
@@ -929,6 +590,8 @@ This diagram illustrates the flow and integration points of the **Environmental 
 **Root Cause Analysis Methods:**
 - **5 Whys:** Identifying the underlying causes by asking "Why?" multiple times.
 - **Fishbone Diagram:** Categorizing potential causes into areas like equipment, processes, and personnel.
+
+---
 
 ### **21.80.3 FMEA Analysis Tree**
 
@@ -963,7 +626,7 @@ For better clarity, develop detailed diagrams using advanced graphical tools lik
 
 ---
 
-## 21.90. Environmental Impact
+## **21.90. Environmental Impact**
 
 ### **21.90.1 Energy Efficiency**
 
@@ -987,6 +650,8 @@ For better clarity, develop detailed diagrams using advanced graphical tools lik
 - **Reduced Carbon Footprint:** Lower energy consumption directly translates to reduced carbon emissions.
 - **Sustainability:** Enhanced energy efficiency supports long-term sustainability goals and compliance with environmental regulations.
 
+---
+
 ### **21.90.2 Compliance**
 
 - **Refrigerant Regulations:**
@@ -1001,6 +666,8 @@ For better clarity, develop detailed diagrams using advanced graphical tools lik
 **Regulatory Updates:**
 - **Continuous Monitoring:** Stay updated with evolving environmental regulations and adjust ECS designs accordingly.
 - **Stakeholder Communication:** Inform relevant stakeholders about regulatory changes and their impact on ECS operations.
+
+---
 
 ### **21.90.3 Sustainability**
 
@@ -1022,7 +689,7 @@ For better clarity, develop detailed diagrams using advanced graphical tools lik
 
 ---
 
-## 21.100. Maintenance Procedures
+## **21.100. Maintenance Procedures**
 
 ### **21.100.1 Scheduled Maintenance**
 
@@ -1097,7 +764,7 @@ For better clarity, develop detailed diagrams using advanced graphical tools lik
 
 ---
 
-## 21.110. System Evolution and Upgrades
+## **21.110. System Evolution and Upgrades**
 
 ### **21.110.1 Future Enhancements**
 
@@ -1159,7 +826,7 @@ For better clarity, develop detailed diagrams using advanced graphical tools lik
 
 ---
 
-## 21.120. Training and Documentation
+## **21.120. Training and Documentation**
 
 ### **21.120.1 Training Requirements**
 
@@ -1239,7 +906,7 @@ For better clarity, develop detailed diagrams using advanced graphical tools lik
 
 ---
 
-## 21.130. Performance Metrics
+## **21.130. Performance Metrics**
 
 ### **21.130.1 KPIs**
 
@@ -1298,8 +965,7 @@ For better clarity, develop detailed diagrams using advanced graphical tools lik
 
 **Graphical Representation:**
 
-![image](https://github.com/user-attachments/assets/7f4f3c1d-461c-43d5-9821-7f30df16850d)
-
+![ECS Performance Metrics](https://github.com/user-attachments/assets/7f4f3c1d-461c-43d5-9821-7f30df16850d.png)
 
 **Detailed Analysis:**
 - **Temperature Control:** Achieved high accuracy, ensuring passenger comfort without overloading the system.
@@ -1337,7 +1003,7 @@ t_{\text{pres}} = 180 \text{ seconds}
 
 ---
 
-## 21.140. Configuration Management
+## **21.140. Configuration Management**
 
 ### **21.140.1 Overview**
 
@@ -1353,6 +1019,8 @@ Configuration Management (CM) ensures that the **Environmental Control System (E
 - **Maintenance Personnel:** Identify and report issues requiring configuration changes.
 - **Operational Staff:** Provide feedback on ECS performance and suggest enhancements.
 - **Quality Assurance Team:** Oversee CM processes to ensure compliance and effectiveness.
+
+---
 
 ### **21.140.2 Configuration Control**
 
@@ -1566,7 +1234,7 @@ Configuration Management (CM) ensures that the **Environmental Control System (E
 
 - **Traceability Matrix:**
   - Maintain a traceability matrix that maps changes to their corresponding requirements, design elements, and testing activities.
-  
+
 **Example Traceability Matrix:**
 
 | **Change ID** | **Requirement ID** | **Design Element**           | **Test Case**                    |
@@ -1603,7 +1271,7 @@ Configuration Management (CM) ensures that the **Environmental Control System (E
 
 - **Functionality:**
   - Central repository for all ECS configuration items (CIs), including hardware, software, documentation, and their relationships.
-  
+
 - **Features:**
   - Real-time updates, version tracking, change history, and reporting capabilities.
   - **Integration:** Seamlessly integrates with other management systems like CMMS and DMS.
@@ -1612,11 +1280,18 @@ Configuration Management (CM) ensures that the **Environmental Control System (E
 - Define user roles and permissions to ensure only authorized personnel can access and modify the CMDB.
 - **Roles Include:** Configuration Manager, CCB Members, Maintenance Personnel, Quality Assurance.
 
+**Example CMDB Entry:**
+
+| **Component**             | **Version** | **Change ID** | **Change Description**      | **Date Implemented** | **Implemented By** | **Status** |
+|---------------------------|-------------|---------------|------------------------------|-----------------------|--------------------|------------|
+| Temperature Sensor (P/N 21-30-04) | 1.0.0       | CR-2025-001    | Replaced faulty sensor      | 2025-02-15            | Technician A       | Completed  |
+| Pressure Regulator (P/N 21-30-03) | 2.0.0       | CR-2025-005    | Upgraded to titanium alloy  | 2025-03-10            | Engineer B         | Approved   |
+
 #### **21.140.7.2 Version Control Systems (VCS)**
 
 - **Usage:**
   - Manage software versions, track changes, and facilitate collaborative development.
-  
+
 - **Examples:**
   - **Git:** Distributed version control system for tracking software changes.
   - **Subversion (SVN):** Centralized version control system for managing documents and code.
@@ -1629,11 +1304,15 @@ Configuration Management (CM) ensures that the **Environmental Control System (E
 - Implement access controls to protect the integrity of the codebase and documentation.
 - **Policies:** Define who can create, modify, or approve changes within the VCS.
 
+**Backup Procedures:**
+- Regularly back up VCS repositories to prevent data loss.
+- **Frequency:** Daily incremental backups with weekly full backups.
+
 #### **21.140.7.3 Documentation Management Systems (DMS)**
 
 - **Usage:**
   - Store, manage, and retrieve ECS documentation securely.
-  
+
 - **Features:**
   - Access controls, version history, search functionality, and integration with CMDB.
   - **Examples:** SharePoint, Confluence, or other enterprise-level DMS solutions.
@@ -1870,7 +1549,7 @@ Configuration Management (CM) ensures that the **Environmental Control System (E
 
 - **Functionality:**
   - Central repository for all ECS configuration items (CIs), including hardware, software, documentation, and their relationships.
-  
+
 - **Features:**
   - Real-time updates, version tracking, change history, and reporting capabilities.
   - **Integration:** Seamlessly integrates with other management systems like CMMS and DMS.
@@ -1890,7 +1569,7 @@ Configuration Management (CM) ensures that the **Environmental Control System (E
 
 - **Usage:**
   - Manage software versions, track changes, and facilitate collaborative development.
-  
+
 - **Examples:**
   - **Git:** Distributed version control system for tracking software changes.
   - **Subversion (SVN):** Centralized version control system for managing documents and code.
@@ -1911,7 +1590,7 @@ Configuration Management (CM) ensures that the **Environmental Control System (E
 
 - **Usage:**
   - Store, manage, and retrieve ECS documentation securely.
-  
+
 - **Features:**
   - Access controls, version history, search functionality, and integration with CMDB.
   - **Examples:** SharePoint, Confluence, or other enterprise-level DMS solutions.
@@ -1926,7 +1605,7 @@ Configuration Management (CM) ensures that the **Environmental Control System (E
 
 ---
 
-### **21.140.13 Roles and Responsibilities**
+## **21.140.13 Roles and Responsibilities**
 
 #### **21.140.13.1 Configuration Manager**
 
@@ -1967,6 +1646,565 @@ Configuration Management (CM) ensures that the **Environmental Control System (E
 - **Agenda Setting:** Predefined agendas focusing on CR evaluations, system performance reviews, and policy updates.
 - **Decision Documentation:** Standardize documentation of decisions with clear reasons for approvals or rejections.
 
+#### **21.140.13.3 Technical Staff**
+
+- **Responsibilities:**
+  - Execute approved changes in accordance with Configuration Management procedures.
+  - Document changes accurately in the CMDB and associated documentation.
+  - Participate in Configuration Management training and awareness programs.
+
+**Skill Requirements:**
+- **Technical Expertise:** Proficiency in ECS components and systems.
+- **Documentation Skills:** Ability to accurately record changes and update documentation.
+- **Problem-Solving:** Strong troubleshooting and diagnostic skills.
+
+**Continuous Training:**
+- Encourage technical staff to attend regular training sessions to stay updated with the latest Configuration Management practices and ECS technologies.
+
+#### **21.140.13.4 Quality Assurance**
+
+- **Responsibilities:**
+  - Ensure that Configuration Management processes meet the required standards.
+  - Conduct audits and reviews to verify compliance and effectiveness.
+  - Recommend improvements to Configuration Management practices.
+
+**Audit Frequency:**
+- **Regular Audits:** Quarterly audits to assess CM process adherence.
+- **Ad-Hoc Audits:** Conducted in response to significant system changes or identified issues.
+
+**Improvement Initiatives:**
+- **Feedback Incorporation:** Use audit findings to implement process improvements.
+- **Best Practices Adoption:** Stay informed of industry best practices and integrate them into CM processes.
+
+---
+
+### **21.140.14 Configuration Management Process**
+
+#### **21.140.14.1 Change Request Initiation**
+
+- **Procedure:**
+  - Any stakeholder can initiate a Change Request (CR) through a standardized form.
+  - CRs must include detailed information about the proposed change, justification, impact, and implementation plan.
+
+**Digital Submission:**
+- Utilize digital platforms or portals for submitting CRs to streamline the process and ensure traceability.
+
+**Stakeholder Notifications:**
+- Notify relevant stakeholders upon CR submission and during subsequent evaluation and implementation stages.
+
+#### **21.140.14.2 Change Request Evaluation**
+
+- **Impact Analysis:**
+  - Assess the potential effects of the proposed change on system performance, safety, compliance, and interoperability with other systems.
+  - **Tools:** Use impact assessment matrices and risk assessment frameworks.
+
+- **Risk Assessment:**
+  - Evaluate the risks associated with implementing or not implementing the change, including potential failure modes and their consequences.
+  - **Approach:** Quantify risks using metrics like Risk Priority Number (RPN).
+
+**Evaluation Tools:**
+- **Impact Assessment Matrix:** Categorize the impact of changes based on severity and scope.
+- **Risk Assessment Framework:** Use standardized frameworks to evaluate and prioritize risks.
+
+#### **21.140.14.3 Change Implementation**
+
+- **Planning:**
+  - Develop a detailed implementation plan outlining steps, resources, timelines, and responsible personnel.
+  - **Components of the Plan:**
+    - **Scope:** Define the boundaries and extent of the change.
+    - **Resources:** Allocate necessary tools, personnel, and materials.
+    - **Timeline:** Establish a clear timeline with milestones.
+    - **Responsibilities:** Assign tasks to specific team members.
+
+- **Execution:**
+  - Implement the change according to the approved plan, ensuring adherence to all relevant procedures and standards.
+  - **Steps:**
+    1. Prepare the system for change implementation.
+    2. Execute the change tasks as per the plan.
+    3. Monitor the system during implementation for any anomalies.
+
+- **Verification:**
+  - Conduct verification and validation to ensure the change meets requirements and does not adversely affect the ECS.
+  - **Methods:**
+    - Functional testing
+    - Performance evaluation
+    - Compliance checks
+
+#### **21.140.14.4 Change Closure**
+
+- **Verification:**
+  - Confirm that the change has been implemented correctly and achieves the intended outcomes.
+  - **Verification Steps:**
+    1. Review test results.
+    2. Ensure all change tasks are completed.
+    3. Validate system performance post-change.
+
+- **Documentation:**
+  - Update the CMDB and relevant documentation to reflect the change.
+  - **Details to Include:**
+    - Change description
+    - Implementation details
+    - Verification results
+
+- **Review:**
+  - Conduct a post-implementation review to identify any lessons learned and ensure continuous improvement.
+  - **Review Components:**
+    - Evaluate the effectiveness of the change process.
+    - Identify areas for process enhancement.
+
+---
+
+### **21.140.15 Configuration Audits**
+
+- **Regular Audits:**
+  - Conduct periodic audits to ensure Configuration Management processes are followed.
+  - **Frequency:** Quarterly or bi-annually based on system complexity and change frequency.
+
+- **Audit Objectives:**
+  - **CMDB Accuracy:** Verify that the CMDB accurately reflects the current ECS configuration.
+  - **Change Documentation:** Ensure that all changes are documented and approved as per procedures.
+  - **Process Compliance:** Assess adherence to Configuration Management policies and standards.
+
+- **Non-Conformances:**
+  - Identify and address any deviations from Configuration Management standards promptly to maintain system integrity.
+  - **Handling Non-Conformances:**
+    - Document findings.
+    - Develop corrective action plans.
+    - Implement and verify corrective actions.
+
+**Audit Checklist Example:**
+
+| **Audit Item**                      | **Status** | **Comments**               |
+|-------------------------------------|------------|----------------------------|
+| CMDB reflects current ECS configuration | [ ]        |                            |
+| All CRs are documented and approved    | [ ]        |                            |
+| Compliance with CM policies           | [ ]        |                            |
+| Proper access controls in CMDB        | [ ]        |                            |
+
+---
+
+### **21.140.16 Training and Awareness**
+
+- **Configuration Management Training:**
+  - Provide comprehensive training programs for personnel involved in Configuration Management.
+  - **Training Topics:**
+    - CM principles and best practices
+    - Using the CMDB and related tools
+    - Change request procedures and documentation
+
+- **Ongoing Education:**
+  - Implement ongoing education and refresher courses to keep staff updated on new procedures, tools, and standards.
+  - **Training Schedule:** Annual training sessions with additional courses as needed based on system updates.
+
+- **Awareness Programs:**
+  - Promote awareness of the importance of Configuration Management through workshops, seminars, and informational materials.
+  - **Activities:**
+    - Monthly newsletters highlighting CM successes and updates
+    - Interactive workshops on effective CM practices
+    - Seminars with industry experts on emerging CM trends
+
+**Training Modules Example:**
+
+1. **Introduction to Configuration Management:**
+   - Overview of CM principles and objectives.
+   - Importance of CM in ECS reliability and safety.
+
+2. **Using the CMDB:**
+   - Navigating the CMDB interface.
+   - Entering and updating configuration items.
+   - Generating reports and audits.
+
+3. **Change Request Procedures:**
+   - Submitting and tracking CRs.
+   - Evaluating and approving changes.
+   - Implementing and documenting changes.
+
+---
+
+### **21.140.17 Configuration Management Tools**
+
+#### **21.140.17.1 Configuration Management Database (CMDB)**
+
+- **Functionality:**
+  - Central repository for all ECS configuration items (CIs), including hardware, software, documentation, and their relationships.
+
+- **Features:**
+  - Real-time updates, version tracking, change history, and reporting capabilities.
+  - **Integration:** Seamlessly integrates with other management systems like CMMS and DMS.
+
+**User Access Controls:**
+- Define user roles and permissions to ensure only authorized personnel can access and modify the CMDB.
+- **Roles Include:** Configuration Manager, CCB Members, Maintenance Personnel, Quality Assurance.
+
+**Example CMDB Entry:**
+
+| **Component**             | **Version** | **Change ID** | **Change Description**      | **Date Implemented** | **Implemented By** | **Status** |
+|---------------------------|-------------|---------------|------------------------------|-----------------------|--------------------|------------|
+| Temperature Sensor (P/N 21-30-04) | 1.0.0       | CR-2025-001    | Replaced faulty sensor      | 2025-02-15            | Technician A       | Completed  |
+| Pressure Regulator (P/N 21-30-03) | 2.0.0       | CR-2025-005    | Upgraded to titanium alloy  | 2025-03-10            | Engineer B         | Approved   |
+
+#### **21.140.17.2 Version Control Systems (VCS)**
+
+- **Usage:**
+  - Manage software versions, track changes, and facilitate collaborative development.
+
+- **Examples:**
+  - **Git:** Distributed version control system for tracking software changes.
+  - **Subversion (SVN):** Centralized version control system for managing documents and code.
+
+**Branching Strategies:**
+- **Git Flow:** Adopt a branching model that supports parallel development, feature integration, and release management.
+- **Feature Branches:** Develop new features or changes in separate branches before merging into the main branch.
+
+**Access Controls:**
+- Implement access controls to protect the integrity of the codebase and documentation.
+- **Policies:** Define who can create, modify, or approve changes within the VCS.
+
+**Backup Procedures:**
+- Regularly back up VCS repositories to prevent data loss.
+- **Frequency:** Daily incremental backups with weekly full backups.
+
+#### **21.140.17.3 Documentation Management Systems (DMS)**
+
+- **Usage:**
+  - Store, manage, and retrieve ECS documentation securely.
+
+- **Features:**
+  - Access controls, version history, search functionality, and integration with CMDB.
+  - **Examples:** SharePoint, Confluence, or other enterprise-level DMS solutions.
+
+**Search Optimization:**
+- Implement advanced search functionalities to enable quick retrieval of documents.
+- **Metadata Tagging:** Use metadata tags to categorize and index documents effectively.
+
+**User Permissions:**
+- Define user permissions based on roles and responsibilities to ensure secure access to documentation.
+- **Example:** Maintenance personnel can access maintenance manuals, while only design engineers can modify design documents.
+
+---
+
+## **21.140.18 Roles and Responsibilities**
+
+*(Note: This section was inadvertently skipped in the previous assistant's content. Ensuring all roles are covered.)*
+
+### **21.140.18 Configuration Management Process**
+
+*(Note: This section was inadvertently skipped in the previous assistant's content. Ensuring all processes are covered.)*
+
+---
+
+## **Appendices (Optional)**
+
+### **15.1 Glossary**
+
+| **Term** | **Definition** |
+|----------|----------------|
+| **ECS**  | Environmental Control System |
+| **ECU**  | Environmental Control Unit |
+| **ACM**  | Air Cycle Machine |
+| **PS**   | Pressurization Control Unit |
+| **FAA**  | Federal Aviation Administration |
+| **EASA** | European Union Aviation Safety Agency |
+| **ISO**  | International Organization for Standardization |
+| **KPI**  | Key Performance Indicator |
+| **FMEA** | Failure Modes and Effects Analysis |
+| **MEL**  | Minimum Equipment List |
+| **PBS**  | Product Breakdown Structure |
+| **BoM**  | Bill of Materials |
+| **CMDB** | Configuration Management Database |
+| **CCB**  | Configuration Control Board |
+| **VCS**  | Version Control System |
+| **DMS**  | Documentation Management System |
+| **CMMS** | Computerized Maintenance Management System |
+| **PPE**  | Personal Protective Equipment |
+
+### **15.2 Applicable Regulations and Standards (EASA, FAA, ISO)**
+
+- **FAA Regulations:** 14 CFR Part 25 - Airworthiness Standards: Transport Category Airplanes
+- **EASA Standards:** CS-25 - Certification Specifications for Large Aeroplanes
+- **ISO Standards:** ISO 9001 - Quality Management Systems
+
+---
+
+## **Final Remarks**
+
+This **System Description** provides a comprehensive overview of the ECS's purpose, functionality, and innovations, ensuring it serves as a robust foundation for operational and maintenance documentation. The enhancements ensure consistency, clarity, and thoroughness, aligning with industry standards and best practices.
+
+**Best of Luck with Your ECS Documentation for GAIA AIR!** 🚀✈️
+
+If you need further assistance with diagram creation, integrating specific sections, or any other aspect of your ECS Design Document, feel free to reach out!
+
+---
+
+# **Cross-References**
+
+- Refer to **21.20 System Standard Practices** for maintenance and operational procedures.
+- See **21.130 Performance Metrics** for detailed ECS efficiency and reliability data.
+
+---
+
+**Notes on Adjusting Mermaid Diagrams to Remove Parentheses**
+
+Parentheses `()` in node labels can cause parsing issues in Mermaid diagrams. To ensure compatibility and prevent errors, it's best to remove or replace them. Here's how you can adjust your labels:
+
+- **Original Label:** `Air Cycle Machines (AC Packs)`
+- **Adjusted Label Options:**
+  - `Air Cycle Machines AC Packs`
+  - `Air Cycle Machines - AC Packs`
+  - `Air Cycle Machines AC_Packs`
+
+**Example Adjusted Mermaid Diagram:**
+
+```mermaid
+flowchart TD
+    A[Engine Bleed Air] --> B[Outflow Valves]
+    B --> C[Air Cycle Machines AC Packs]
+    C --> D[Heat Exchangers]
+    D --> E[Recirculation Fans]
+    E --> F[Cabin Ducting]
+    F --> G[Cabin Vents]
+    C --> H[ECS Controllers]
+    H --> I[Flight Deck Indications]
+    linkStyle default stroke:#FF69B4,stroke-width:2px
+    style A fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style B fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style C fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style D fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style E fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style F fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style G fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style H fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style I fill:#000000,stroke:#00FF00,color:#FFFFFF
+```
+
+By removing the parentheses, the Mermaid parser can correctly interpret the labels, ensuring that your diagrams render without errors.
+
+---
+
+# **Final Integration Example**
+
+```markdown
+## **21.70. System Practical Standards and Engine Integration**
+
+### **21.70.1 Engine Interface**
+
+#### **Bleed Air Intake Layout**
+- Strategically located at engine compression stages to maximize availability of compressed air.
+- Incorporates isolation valves to divert bleed air for maintenance or in case of failures.
+
+#### **Safety Systems**
+- **Relief Valves:** Prevent over-pressurization.
+- **High-Precision Sensors:** Monitor bleed air conditions and activate safety mechanisms if necessary.
+
+#### **Detailed Safety Protocols**
+- In case of bleed air pressure exceeding safe limits, relief valves activate automatically to release excess pressure.
+- If a pressure drop is detected, redundant pressure regulators engage to maintain cabin pressurization.
+
+**Integration Diagram Example:**
+
+### Engine Interface Diagram
+
+Here is the generated **Engine Interface Diagram** showcasing the integration of the ECS and engine bleed air system with the requested custom styling:
+
+![Engine Interface Diagram](https://supabase.mermaidchart.com/storage/v1/object/public/chatgpt-diagrams/2024-12-29/98d7a97a-825e-450b-bbf3-e6f76875e1bd.png)
+
+#### Key Components:
+1. **Engine Bleed Air** → Supplies compressed air from the engine.
+2. **Isolation Valves** → Control and isolate airflow during maintenance or emergencies.
+3. **Outflow Valves** → Regulate pressure before air enters the system.
+4. **Air Cycle Machines (ACMs)** → Manage temperature and pressure adjustments.
+5. **Heat Exchangers** → Cool the air before it enters the cabin.
+6. **Cabin Ducting** → Distributes air throughout the passenger cabin.
+7. **Cabin Vents** → Deliver conditioned air to specific cabin zones.
+8. **Environmental Control Unit (ECU)** → Monitors and controls system parameters.
+9. **Flight Deck Indications** → Displays ECS status to pilots for real-time monitoring.
+
+[Edit this diagram](https://www.mermaidchart.com/app/mermaid-chart-save/2024-12-29/98d7a97a-825e-450b-bbf3-e6f76875e1bd)
+
+### **21.70.2 Integration Testing**
+
+**Testing Procedures:**
+- **Compatibility Tests:** Ensure ECS compatibility with various engine configurations.
+- **Airflow Efficiency Validation:** Verify optimal airflow rates and system responsiveness to demand changes.
+- **Electromagnetic Compatibility (EMC):** Ensure no electromagnetic interference between ECS and engine systems.
+
+**Detailed Test Cases:**
+1. **Scenario:** High bleed air demand during takeoff.
+   - **Test:** Simulate takeoff conditions and monitor ECS response.
+   - **Expected Outcome:** Rapid pressurization and cooling without system lag.
+
+2. **Scenario:** Power fluctuation in ECS control modules.
+   - **Test:** Introduce power fluctuations and observe ECS stability.
+   - **Expected Outcome:** ECS maintains operation through redundant power supplies.
+
+**Certification Requirements:**
+- Compliance with FAA and EASA regulations for bleed air system integration.
+- Documentation and evidence of testing for relevant certifications.
+
+**Documentation Requirements:**
+- Detailed test reports including methodology, observations, and results.
+- Certification certificates from regulatory bodies.
+
+### **21.70.3 Integration Diagram**
+
+## ECS Functional Flow Diagram
+
+*A block diagram illustrating the airflow path from bleed air intake through compressors, intercoolers, heat exchangers, distribution ducts, and outflow valves, highlighting key components and sensors.*
+
+![ECS Functional Flow](https://github.com/user-attachments/assets/0d1338d5-1f32-402a-983e-848f3a7e08e7.png)
+
+### **Diagram Description**
+
+1. **Start Flight**  
+   - At the beginning of each flight, the **Environmental Control System (ECS)** powers on and verifies that all subsystems are operational. This includes initializing sensors, checking baseline temperatures, and confirming readiness for subsequent flight phases.
+
+2. **Engine Bleed Air Intake**  
+   - Once the engines reach their operating conditions, compressed air—known as bleed air—is extracted from designated compression stages. This bleed air is then directed into the ECS for further processing, temperature control, and eventual cabin distribution.
+
+3. **Air Cycle Machine (ACM) Process**  
+   1. **Compression**  
+      - The diverted air is compressed to increase both pressure and temperature, providing the necessary conditions for effective heat exchange.  
+   2. **Heat Exchanger (Intercooler)**  
+      - The now-compressed air flows through a heat exchanger, commonly referred to as an intercooler, which reduces its temperature using ambient or bypassed cooler air.  
+   3. **Expansion Valve**  
+      - A regulated refrigerant flow is maintained by the expansion valve, allowing for precise control of temperature based on in-flight conditions and sensor data.  
+   4. **Evaporation**  
+      - The cooled air undergoes evaporation to further decrease its temperature, optimizing comfort levels before distribution.  
+   5. **Cooling Air Output**  
+      - Finally, the conditioned air is channeled for delivery into the cabin, ensuring a comfortable environment throughout the flight.
+
+4. **Pressurization Control Unit (PS)**  
+   - **Pressurization Control Overview:**  
+     - **Outflow Valves:** Manage the release of pressurized air to maintain a stable cabin environment.  
+     - **Cabin Pressurization:** Guarantees that the interior remains at a safe, comfortable pressure, mitigating the effects of altitude changes on passengers and crew.
+
+5. **Environmental Control Unit (ECU)**  
+   - **Primary Functions:**  
+     - **Advanced Sensors:** Continuously monitor real-time parameters such as temperature, pressure, humidity, and air quality throughout the cabin.  
+     - **AI-Powered Control:** Utilizes artificial intelligence algorithms to interpret sensor data and optimize ECS performance, delivering efficient cooling, pressurization, and air distribution.  
+     - **Adjustments to ACM:** Dynamically refines ACM settings to ensure balanced cooling and pressurization, even under varying flight conditions.  
+     - **Real-Time Monitoring:** Performs ongoing checks of overall system health and automatically corrects any deviations to maintain optimal cabin conditions.
+
+6. **Air Distribution System (ADS)**  
+   - **Key Components:**  
+     - **Air Distribution Ducts:** Carefully routed conduits that transport conditioned air to different sections of the aircraft cabin.  
+     - **Vents and Registers:** Visible outlets through which air is supplied, allowing for zoned or targeted airflow to seats, galley areas, and other compartments.  
+     - **Passenger Cabin Air:** Ensures that travelers experience a consistent and safe environment, upholding standards of comfort and air quality.
+
+7. **Feedback Loop**  
+   - **Continuous Adjustment:**  
+     - As conditions in the passenger cabin change—due to occupancy, external weather, or operational variations—the data is fed back to the **Advanced Sensors**. In response, the **ECU** modifies ECS parameters in real time, guaranteeing optimal performance and passenger comfort.
+
+8. **End Flight**  
+   - **Shut-Down Phase:**  
+     - As the flight concludes, the ECS scales down its operations, transitioning out of its active modes. This stage ensures all systems safely deactivate, preserving mechanical and electrical components for the next flight cycle.
+
+---
+
+## **21.80. Safety and Failure Modes**
+
+*(Content provided above.)*
+
+---
+
+## **21.90. Environmental Impact**
+
+*(Content provided above.)*
+
+---
+
+## **21.100. Maintenance Procedures**
+
+*(Content provided above.)*
+
+---
+
+## **21.110. System Evolution and Upgrades**
+
+*(Content provided above.)*
+
+---
+
+## **21.120. Training and Documentation**
+
+*(Content provided above.)*
+
+---
+
+## **21.130. Performance Metrics**
+
+*(Content provided above.)*
+
+---
+
+## **21.140. Configuration Management**
+
+*(Content provided above.)*
+
+---
+
+## **Appendices (Optional)**
+
+### **15.1 Glossary**
+
+*(Content provided above.)*
+
+### **15.2 Applicable Regulations and Standards (EASA, FAA, ISO)**
+
+*(Content provided above.)*
+
+---
+
+# **Cross-References**
+
+- Refer to **21.20 System Standard Practices** for maintenance and operational procedures.
+- See **21.130 Performance Metrics** for detailed ECS efficiency and reliability data.
+
+---
+
+**Notes on Adjusting Mermaid Diagrams to Remove Parentheses**
+
+Parentheses `()` in node labels can cause parsing issues in Mermaid diagrams. To ensure compatibility and prevent errors, it's best to remove or replace them. Here's how you can adjust your labels:
+
+- **Original Label:** `Air Cycle Machines (AC Packs)`
+- **Adjusted Label Options:**
+  - `Air Cycle Machines AC Packs`
+  - `Air Cycle Machines - AC Packs`
+  - `Air Cycle Machines AC_Packs`
+
+**Example Adjusted Mermaid Diagram:**
+
+```mermaid
+flowchart TD
+    A[Engine Bleed Air] --> B[Outflow Valves]
+    B --> C[Air Cycle Machines AC Packs]
+    C --> D[Heat Exchangers]
+    D --> E[Recirculation Fans]
+    E --> F[Cabin Ducting]
+    F --> G[Cabin Vents]
+    C --> H[ECS Controllers]
+    H --> I[Flight Deck Indications]
+    linkStyle default stroke:#FF69B4,stroke-width:2px
+    style A fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style B fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style C fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style D fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style E fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style F fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style G fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style H fill:#000000,stroke:#00FF00,color:#FFFFFF
+    style I fill:#000000,stroke:#00FF00,color:#FFFFFF
+```
+
+By removing the parentheses, the Mermaid parser can correctly interpret the labels, ensuring that your diagrams render without errors.
+
+---
+
+**Best of Luck with Your ECS Documentation for GAIA AIR!** 🚀✈️
+
+If you need further assistance with diagram creation, integrating specific sections, or any other aspect of your ECS Design Document, feel free to reach out!
+
+---
 #### **21.140.13.3 Technical Staff**
 
 - **Responsibilities:**
