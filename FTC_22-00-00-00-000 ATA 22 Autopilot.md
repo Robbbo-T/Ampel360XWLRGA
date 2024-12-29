@@ -1388,7 +1388,7 @@ Showcase the Autopilot System’s modular, adaptive design—ready to serve larg
 ```mermaid
 graph TD
     A[Core Autopilot System] --> B[Commercial Jets]
-    A --> C[Unmanned Aerial Vehicles (UAVs)]
+    A --> C[Unmanned Aerial Vehicles UAVs]
     A --> D[Hybrid-Electric Aircraft]
     B --> E[High-Throughput Analytics]
     C --> F[Lightweight Footprints]
