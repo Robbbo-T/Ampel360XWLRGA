@@ -1,12 +1,16 @@
----
+
 
 # **FTC_24-00-00-00-000 ATA 24 – Electrical Systems**  
-**Comprehensive Guide for the GAIA AIR – Ampel360XWLRGA Aircraft**
+### **Comprehensive Guide for the GAIA AIR – Ampel360XWLRGA Aircraft**
 
-## **Version History**  
-| **Version** | **Date**       | **Author**                     | **Description / Change Notes**                                                        | **Impact on Design** | **Affected Sections** |
+---
+
+## **Version History**
+
+| **Version** | **Date**       | **Author(s)**                  | **Description / Change Notes**                                                        | **Impact on Design** | **Affected Sections** |
 |-------------|----------------|--------------------------------|---------------------------------------------------------------------------------------|----------------------|-----------------------|
-| 1.0         | 2024-29-12    | [AMEDEO PELLICCIA] ChatGPT, Gemini, Perplexity AI            | Creation of the consolidated Electrical Systems document, integrating advanced technologies (AI, Quantum Cybersecurity, Predictive Maintenance, etc.) | High                 | All                   |
+| 1.0         | 2024-12-29     | Amedeo Pelliccia, ChatGPT, Gemini, Perplexity AI | Creation of the consolidated Electrical Systems document, integrating advanced technologies (AI, Quantum Cybersecurity, Predictive Maintenance, etc.) | High                 | All                   |
+
 
 ---
 
