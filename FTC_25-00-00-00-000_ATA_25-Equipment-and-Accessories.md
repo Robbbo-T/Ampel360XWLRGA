@@ -1,6 +1,99 @@
 # **FTC_25-00-00-00-000 – ATA 25: Equipment and Accessories**
 
-Below is an **interactive Table of Contents** (ToC) in Markdown format for **ATA Chapter 25 – Equipment and Accessories**. Click on any section heading to jump directly to its corresponding subsection. Adjust titles or add/remove entries as needed to fit your project’s specific coverage of ATA 25 topics.
+# **ATA 25 – Equipment & Furnishing**
+
+This document outlines the **Equipment & Furnishing** requirements and standards for aircraft design and operation, focusing on **emergency equipment** and related **regulatory compliance**. It aligns with **EASA** and **FAA** regulations (e.g., **CS-25** for large aircraft) to ensure both **passenger safety** and **operational efficiency**.
+
+---
+
+## **1. Emergency Equipment**
+
+### **1.1 Types of Equipment**
+- **Fire Extinguishers (FireEx)**
+- **Life Rafts**
+- **Escape Slides**
+- **First Aid Kits**
+
+**Note**: The type and quantity of equipment depends on aircraft size (**A/C**) and the number of passengers (**Pax**). These items must be readily accessible, clearly marked, and maintained in accordance with manufacturer and regulatory guidelines.
+
+---
+
+### **1.2 Regulatory Requirements**
+- **Certification Standards (CS)**:
+  - **CS 23**: Standards for smaller (commuter) aircraft.
+  - **CS 25**: Standards for large transport aircraft.
+- **Influencing Factors**:
+  - Aircraft size and configuration.
+  - Passenger capacity and mission profile.
+
+---
+
+### **1.3 Emergency Equipment Specifications**
+- **Location and Accessibility**:
+  - Equipment must be stowed in approved compartments or racks.
+  - Markings must be clear, with instructions for quick retrieval.
+- **Quantity**:
+  - Determined by the aircraft’s passenger capacity and regulatory directives.
+- **Maintenance**:
+  - Regular inspections and replacements (e.g., for expired fire extinguishers, damaged life vests, etc.).
+  - Document all checks in the aircraft’s logbook or CMMS (Computerized Maintenance Management System).
+
+---
+
+## **2. Fire Extinguisher Requirements (CS 25.851)**
+
+### **2.1 Minimum Requirements**
+- **CS 25.851(a)(1)** specifies the number of portable fire extinguishers needed on board based on passenger load.
+- They must be of a type suitable for aviation use (often Halon or approved alternatives).
+
+---
+
+### **2.2 Examples**
+- **For an aircraft with 250 passengers**: **4** fire extinguishers are required.
+- **Reference Table** for fire extinguishers:
+
+| **Passenger Capacity** | **Number of Fire Extinguishers** |
+|------------------------|----------------------------------|
+| 7–30                   | 1                                |
+| 31–60                  | 2                                |
+| 61–200                 | 3                                |
+| 201–300                | 4                                |
+| 301–400                | 5                                |
+| 401–500                | 6                                |
+| 501–600                | 7                                |
+| 601–700                | 8                                |
+
+---
+
+## **3. Additional Requirements (CS 25)**
+
+### **3.1 Emergency Features**
+- **Emergency Doors**: Placement and operation must comply with exit requirements for the passenger configuration.
+- **Seat Belts**: Must meet crashworthiness standards; some seats may require airbags.
+- **Exit Signs**: Illuminated, with proper visibility under normal and emergency lighting.
+- **Emergency Lighting**: Must meet the required level of illumination for evacuation routes.
+- **Life Raft Locations**: Clearly labeled, easily accessible, and fitted with appropriate survival equipment.
+
+---
+
+### **3.2 EASA Certification Standards**
+- Governed by **EASA** regulations for large transport aircraft, particularly focusing on:
+  - **Fire Suppression**: Quick-release systems or extinguishers for specific compartments.
+  - **Crashworthiness**: Ensuring emergency gear remains secured during impact.
+
+---
+
+## **Conclusion**
+Equipping an aircraft according to **ATA 25 – Equipment & Furnishing** standards ensures both **regulatory compliance** and **passenger safety**. Proper **emergency equipment** (including adequate fire extinguishers, life rafts, and first aid kits) along with **robust design** (seat belts, exit signs, and lighting) is crucial for safe operations. Ongoing **maintenance** and **regular inspections** are imperative to keep equipment in ready-to-use condition. 
+
+By adhering to **CS 25** and relevant airworthiness regulations, airlines and operators confirm they have the necessary firefighting, evacuation, and survival equipment for various flight scenarios. Future updates to **safety equipment** will continue to evolve as technology advances, regulatory bodies adapt standards, and industry best practices develop.
+
+**Next Steps**: 
+1. **Maintain up-to-date** references for equipment replacement intervals.  
+2. **Implement training** programs for crew on emergency equipment handling.  
+3. **Regularly review** EASA/FAA directives for potential changes in equipment or seat belt requirements.  
+
+**End of Summary**  
 
 [https://youtu.be/O-90ySb4BMs](https://m.youtube.com/watch?v=O-90ySb4BMs&feature=youtu.be&noapp=1)
 
