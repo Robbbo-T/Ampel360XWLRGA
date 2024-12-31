@@ -1383,20 +1383,20 @@ Some aircraft employ a hybrid approach, blending mechanical and electronic eleme
 4.  **Adaptive Trailing Edge:**
     *   Consider the possibility of using an adaptive trailing edge for the elevator.
 
-**Diagrams:**
+#### Elevator System Overview
 
 ```mermaid
 graph TD
     subgraph Mechanical Elevator System
-        A[Pilot Control Column] --> B[Cables & Pulleys]
+        A[Pilot Control Column] --> B[Cables and Pulleys]
         B --> C[Rods/Bellcranks]
         C --> D[Elevator Control Surface]
     end
     subgraph FBW Elevator System
-        E[Pilot Control Column] --> F[Sensors (LVDT/RVDT)]
+        E[Pilot Control Column] --> F[Sensors (LVDT RVDT)]
         F --> G[Flight Control Computers (FCCs)]
         G --> H[Control Laws]
-        H --> I[Actuators (EHAs/EMAs)]
+        H --> I[Actuators (EHAs EMAs)]
         I --> J[Elevator Control Surface]
         K[Aircraft Sensors] --> G
         L[Adaptive Surface Data] --> G
@@ -1422,23 +1422,25 @@ graph TD
         AD[Solar Panel Data] --> U
     end
 
-    style A fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style E fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style G fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style I fill:#ffcccc,stroke:#ff0000,stroke-width:2px
-    style L fill:#ccffff,stroke:#0000ff,stroke-width:2px
-    style M fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style O fill:#ffcccc,stroke:#ff0000,stroke-width:2px
-    style S fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style U fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style V fill:#ccffff,stroke:#0000ff,stroke-width:2px
-    style X fill:#ffcccc,stroke:#ff0000,stroke-width:2px
-    style Z fill:#ffcccc,stroke:#ff0000,stroke-width:2px
-    style Y fill:#f0f0f0,stroke:#000000,stroke-width:1px
-    style AA fill:#f0f0f0,stroke:#000000,stroke-width:1px
+    style A fill:#ccffcc,stroke:#00aa00,stroke-width:2px,color:#000
+    style E fill:#ccffcc,stroke:#00aa00,stroke-width:2px,color:#000
+    style G fill:#cceeff,stroke:#00aaff,stroke-width:2px,color:#000
+    style I fill:#ffcccc,stroke:#ff0000,stroke-width:2px,color:#000
+    style L fill:#ccffff,stroke:#0000ff,stroke-width:2px,color:#000
+    style M fill:#ccffcc,stroke:#00aa00,stroke-width:2px,color:#000
+    style O fill:#ffcccc,stroke:#ff0000,stroke-width:2px,color:#000
+    style S fill:#ccffcc,stroke:#00aa00,stroke-width:2px,color:#000
+    style U fill:#cceeff,stroke:#00aaff,stroke-width:2px,color:#000
+    style V fill:#ccffff,stroke:#0000ff,stroke-width:2px,color:#000
+    style X fill:#ffcccc,stroke:#ff0000,stroke-width:2px,color:#000
+    style Z fill:#ffcccc,stroke:#ff0000,stroke-width:2px,color:#000
+    style Y fill:#f0f0f0,stroke:#000000,stroke-width:1px,color:#000
+    style AA fill:#f0f0f0,stroke:#000000,stroke-width:1px,color:#000
 ```
 
 *Mermaid diagram illustrating the differences between mechanical, FBW, hybrid, and the GAIA AIR AMPEL360 elevator systems.*
+
+#### Horizontal Stabilizer Types
 
 ```mermaid
 graph TD
@@ -1454,13 +1456,12 @@ graph TD
         D[Horizontal Stabilizer] -- Twist Actuators --> E{Variable Twist Along Span}
     end
 
-    style A fill:#ccffcc, stroke:#00aa00, stroke-width:2px
-    style B fill:#f0f0f0, stroke:#000000, stroke-width:1px
-    style C fill:#ccffcc, stroke:#00aa00, stroke-width:2px
-    style D fill:#ccffcc, stroke:#00aa00, stroke-width:2px
-    style E fill:#f0f0f0, stroke:#000000, stroke-width:1px
+    style A fill:#ccffcc, stroke:#00aa00, stroke-width:2px,color:#000
+    style B fill:#f0f0f0, stroke:#000000, stroke-width:1px,color:#000
+    style C fill:#ccffcc, stroke:#00aa00, stroke-width:2px,color:#000
+    style D fill:#ccffcc, stroke:#00aa00, stroke-width:2px,color:#000
+    style E fill:#f0f0f0, stroke:#000000, stroke-width:1px,color:#000
 ```
-
 *Mermaid diagram illustrating different elevator configurations: conventional, all-moving stabilizer, and actively twisting stabilizer.*
 
 ---
@@ -1584,12 +1585,7 @@ graph TD
   - **Transition Between Flight Modes:** eVTOLs need to transition smoothly between vertical and horizontal flight, requiring sophisticated control algorithms and potentially novel control surface configurations.
   - **Compact and Lightweight Designs:** UAM vehicles require compact and lightweight flight control systems to maximize payload and range.
   - **Increased Autonomy:** UAM concepts often involve higher levels of autonomy, requiring advanced flight control systems capable of autonomous operation.
-```
 
----
-
-## **Conclusion**
-Aileron systems have transitioned from fundamental mechanical designs to sophisticated fly-by-wire and adaptive aerostructures, as exemplified by the **GAIA AIR AMPEL360**. Understanding these systems is essential for pilots, engineers, and aviation enthusiasts. As technology advances—particularly in **active aeroelastic control** and **AI-driven optimization**—we can anticipate safer, more efficient, and more capable aircraft in the future.
 
 ### **27.240 Autonomous Flight Control Algorithms**
 
