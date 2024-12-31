@@ -586,6 +586,7 @@ EASA publishes **AMC** and **GM** documents to guide manufacturers in demonstrat
    - **Structural Resistance**: Evaluate performance under aerodynamic loads, hail, and other environmental stresses.  
    - **EMI/EMC Compliance**: Ensure no interference with avionics or flight controls.
 
+
 ```mermaid
 graph TD
     subgraph EASA Regulations
@@ -598,7 +599,7 @@ graph TD
         A --> G[25.683 Operation Tests]
         A --> H[25.629 Aeroelastic Stability]
     end
-    subgraph AMC/GM
+    subgraph AMC/GM Guidance
         I[AMC 25.671]
         I --> B
         J[AMC 25.672]
@@ -613,14 +614,14 @@ graph TD
         N --> G
     end
     subgraph Certification Process
-        O[Type Cert (TC)]
-        P[Suppl Type Cert (STC)]
+        O[Type Certificate (TC)]
+        P[Supplemental Type Certificate (STC)]
         Q[Major Changes]
-        R[CRIs for Novel Tech]
+        R[CRIs for Novel Technologies]
     end
-    subgraph GAIA AIR AMPEL360
+    subgraph GAIA AIR AMPEL360 Innovations
         S[AI-Augmented Controls]
-        T[Adaptive Aero- structures]
+        T[Adaptive Aerostructures]
         U[Solar Integration]
     end
     A --> O
@@ -634,6 +635,34 @@ graph TD
     style I fill:#cceeff,stroke:#00aaff,stroke-width:2px
     style O fill:#ffcccc,stroke:#ff0000,stroke-width:2px
     style S fill:#ccffff,stroke:#0000ff,stroke-width:2px
+```
+
+---
+
+### Steps to View:
+
+1. Copy the code above.
+2. Open [Mermaid Live Editor](https://mermaid-js.github.io/mermaid-live-editor/).
+3. Paste the code into the editor.
+4. Click "Preview" to render the diagram.
+
+---
+
+### Diagram Overview:
+
+1. **EASA Regulations (CS-25)**  
+   Key sections like stability augmentation, aeroelastic stability, and operational tests are highlighted.
+
+2. **AMC/GM Guidance:**  
+   Aligns compliance and guidance with each CS-25 regulation.
+
+3. **Certification Process:**  
+   Shows pathways like Type Certificate (TC), Supplemental Type Certificate (STC), and considerations for novel technologies.
+
+4. **GAIA AIR AMPEL360 Innovations:**  
+   Highlights advanced features such as AI-Augmented Controls, Adaptive Aerostructures, and Solar Integration.
+
+Let me know if you need further assistance!
 ```
 
 *Mermaid diagram illustrating the relationship between CS-25 regulations, AMC/GM guidance, certification pathways, and the **AMPEL360**’s advanced features.*
