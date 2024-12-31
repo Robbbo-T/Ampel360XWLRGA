@@ -407,7 +407,7 @@ To elaborate on how solar energy is harvested via the **AMPEL360**’s solar pan
    - Real-time health checks of solar arrays to isolate faulty panels.
    - Automatic re-routing of power flow if panels degrade or fail.
 
-
+x
 ```mermaid
 flowchart LR
     P["Pilot Input"] -->|Commands| FCS["Flight Control Computers"]
@@ -420,6 +420,20 @@ flowchart LR
     AI -->|Suggestions/Decisions| PD["Pilot Display"]
     PD --> P
 ```
+
+### Diagram Description
+This diagram demonstrates the interaction between the pilot and the automation systems in controlling an aircraft:
+
+1. **Pilot Input:** The process begins with commands issued by the pilot.
+2. **Flight Control Computers (FCS):** The pilot's commands are processed and routed to appropriate control systems.
+3. **Autonomy/AI Logic:** The AI layer optimizes these commands based on flight parameters and conditions.
+4. **Adaptive Surfaces/Controls:** The optimized commands are sent to the aircraft's control surfaces or adaptive systems for execution.
+5. **Aircraft Motion/Response:** Adjustments result in physical changes to the aircraft’s trajectory or behavior.
+6. **Flight Data (Sensors):** Real-time sensor feedback monitors the aircraft's response and sends data back to the AI.
+7. **Pilot Display:** The AI provides real-time decisions, suggestions, or system statuses to the pilot, ensuring they remain informed and in control.
+
+This workflow ensures seamless interaction between the human operator and the automated systems, prioritizing safety and performance.
+
 
 ### **Diagram Description**
 This flowchart illustrates the **Pilot-Automation Synergy** workflow:
