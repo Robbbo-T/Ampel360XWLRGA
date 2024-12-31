@@ -585,9 +585,8 @@ EASA publishes **AMC** and **GM** documents to guide manufacturers in demonstrat
    - **Electrical Safety**: Panels must meet standards for wiring, insulation, and power distribution.  
    - **Structural Resistance**: Evaluate performance under aerodynamic loads, hail, and other environmental stresses.  
    - **EMI/EMC Compliance**: Ensure no interference with avionics or flight controls.
-
-
-```mermaid
+     
+```marmeid
 graph TD
     subgraph EASA Regulations
         A[CS-25]
@@ -614,8 +613,8 @@ graph TD
         N --> G
     end
     subgraph Certification Process
-        O[Type Certificate (TC)]
-        P[Supplemental Type Certificate (STC)]
+        O[Type Certificate - TC]
+        P[Supplemental Type Certificate - STC]
         Q[Major Changes]
         R[CRIs for Novel Technologies]
     end
@@ -639,15 +638,6 @@ graph TD
 
 ---
 
-### Steps to View:
-
-1. Copy the code above.
-2. Open [Mermaid Live Editor](https://mermaid-js.github.io/mermaid-live-editor/).
-3. Paste the code into the editor.
-4. Click "Preview" to render the diagram.
-
----
-
 ### Diagram Overview:
 
 1. **EASA Regulations (CS-25)**  
@@ -663,7 +653,7 @@ graph TD
    Highlights advanced features such as AI-Augmented Controls, Adaptive Aerostructures, and Solar Integration.
 
 Let me know if you need further assistance!
-```
+
 
 *Mermaid diagram illustrating the relationship between CS-25 regulations, AMC/GM guidance, certification pathways, and the **AMPEL360**’s advanced features.*
 
