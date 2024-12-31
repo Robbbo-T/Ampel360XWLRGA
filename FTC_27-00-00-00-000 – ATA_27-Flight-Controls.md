@@ -9,7 +9,7 @@
 <br />
 
 ---
-### **Index (Expanded at ~20% Completion)**
+### **Index (Expanded at ~30% Completion)**
 
 1.  [27.10 Introduction](#2710-introduction)
 2.  [27.20 Scope and Objectives](#2720-scope-and-objectives)
