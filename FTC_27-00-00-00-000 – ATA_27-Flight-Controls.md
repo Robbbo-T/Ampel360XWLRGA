@@ -1245,16 +1245,16 @@ graph TD
         I --> J[Aileron Control Surface]
     end
 
-    style A fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style B fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style C fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style D fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style E fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style F fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style G fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style H fill:#ffcccc,stroke:#ff0000,stroke-width:2px
-    style I fill:#ffcccc,stroke:#ff0000,stroke-width:2px
-    style J fill:#ffcccc,stroke:#ff0000,stroke-width:2px
+    style A fill:#ccffcc,stroke:#00aa00,stroke-width:2px,color:#000
+    style B fill:#ccffcc,stroke:#00aa00,stroke-width:2px,color:#000
+    style C fill:#ccffcc,stroke:#00aa00,stroke-width:2px,color:#000
+    style D fill:#ccffcc,stroke:#00aa00,stroke-width:2px,color:#000
+    style E fill:#ccffcc,stroke:#00aa00,stroke-width:2px,color:#000
+    style F fill:#cceeff,stroke:#00aaff,stroke-width:2px,color:#000
+    style G fill:#cceeff,stroke:#00aaff,stroke-width:2px,color:#000
+    style H fill:#ffcccc,stroke:#ff0000,stroke-width:2px,color:#000
+    style I fill:#ffcccc,stroke:#ff0000,stroke-width:2px,color:#000
+    style J fill:#ffcccc,stroke:#ff0000,stroke-width:2px,color:#000
 ```
 
 
