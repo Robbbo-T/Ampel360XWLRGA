@@ -1229,28 +1229,59 @@ Some aircraft combine mechanical and FBW elements, such as:
 
 ---
 
+Here's an updated and corrected **Mermaid diagram** representing the **Mechanical Aileron System** and **Fly-By-Wire (FBW) Aileron System**. This diagram visually compares the traditional mechanical system with the advanced FBW system, ensuring proper syntax for rendering.
+
+---
+
+### **Corrected Diagram Code**
+
 ```mermaid
 graph TD
-    subgraph Mechanical Aileron System
+    subgraph Mechanical_Aileron_System
         A[Pilot Stick/Yoke] --> B[Cables & Pulleys]
         B --> C[Bellcranks/Linkages]
         C --> D[Aileron Control Surface]
     end
-    subgraph FBW Aileron System
-        E[Pilot Stick/Yoke] --> F[Sensors (LVDT/RVDT)]
+
+    subgraph FBW_Aileron_System
+        E[Pilot Stick/Yoke] --> F[Sensors (Position: LVDT/RVDT)]
         F --> G[Flight Control Computers]
         G --> H[Control Laws]
         H --> I[Actuators]
         I --> J[Aileron Control Surface]
     end
+
     style A fill:#ccffcc,stroke:#00aa00,stroke-width:2px
     style B fill:#ccffcc,stroke:#00aa00,stroke-width:2px
     style C fill:#ccffcc,stroke:#00aa00,stroke-width:2px
+    style D fill:#ccffcc,stroke:#00aa00,stroke-width:2px
     style E fill:#ccffcc,stroke:#00aa00,stroke-width:2px
+    style F fill:#cceeff,stroke:#00aaff,stroke-width:2px
     style G fill:#cceeff,stroke:#00aaff,stroke-width:2px
+    style H fill:#ffcccc,stroke:#ff0000,stroke-width:2px
     style I fill:#ffcccc,stroke:#ff0000,stroke-width:2px
+    style J fill:#ffcccc,stroke:#ff0000,stroke-width:2px
 ```
-*Mermaid diagram illustrating a mechanical aileron system and a simplified fly-by-wire aileron system.*
+
+---
+
+### **Diagram Explanation**
+
+1. **Mechanical Aileron System (Green):**
+   - **Pilot Stick/Yoke:** Directly manipulates the ailerons via physical linkages.
+   - **Cables & Pulleys:** Transfer pilot input to the control surfaces.
+   - **Bellcranks/Linkages:** Mechanically amplify and transmit forces.
+   - **Aileron Control Surface:** Adjusts to change the aircraft's roll.
+
+2. **Fly-By-Wire Aileron System (Blue/Red):**
+   - **Pilot Stick/Yoke:** Inputs are sensed electronically rather than mechanically.
+   - **Sensors (LVDT/RVDT):** Detect the position of the yoke or stick.
+   - **Flight Control Computers:** Process input data and calculate control surface adjustments.
+   - **Control Laws:** Algorithms ensure smooth, stable control responses.
+   - **Actuators:** Electrically manipulate the ailerons based on computer commands.
+   - **Aileron Control Surface:** Executes precise movements for roll adjustments.
+
+---
 
 ---
 
