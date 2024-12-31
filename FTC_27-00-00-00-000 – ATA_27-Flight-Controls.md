@@ -2407,6 +2407,8 @@ FBW technology has significantly advanced the design and functionality of Human-
 
 ---
 
+To change the text color to black for the diagram, you can update the mermaid styles to include `color:#000` for the text. Here is the updated code:
+
 #### **P. Diagram: Fly-by-Wire System Architecture**
 
 ##### **1. Comprehensive FBW Architecture Including GAIA AIR AMPEL360 Enhancements:**
@@ -2471,39 +2473,39 @@ graph TD
     end
 
     %% Styles for better readability
-    style PilotInput fill:#eef,stroke:#000,stroke-width:1px
-    style SignalProcessing fill:#eef,stroke:#000,stroke-width:1px
-    style FlightControlComputers fill:#eef,stroke:#000,stroke-width:1px
-    style Actuation fill:#eef,stroke:#000,stroke-width:1px
-    style CrossChannelDataLinks fill:#eef,stroke:#000,stroke-width:1px
-    style FeedbackLoop fill:#eef,stroke:#000,stroke-width:1px
-    style GAIAEnhancements fill:#ffccff,stroke:#000,stroke-width:1px
-    style A fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style B fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style C fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style D fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style E fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style F fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style G fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style H fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style I fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style J fill:#ccffff,stroke:#0000ff,stroke-width:2px
-    style K fill:#ccffff,stroke:#0000ff,stroke-width:2px
-    style L fill:#ccffff,stroke:#0000ff,stroke-width:2px
-    style M fill:#ccffff,stroke:#0000ff,stroke-width:2px
-    style N fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style O fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style P fill:#ffcccc,stroke:#ff0000,stroke-width:2px
-    style Q fill:#ffcccc,stroke:#ff0000,stroke-width:2px
-    style R fill:#ffcccc,stroke:#ff0000,stroke-width:2px
-    style S fill:#f0f0f0,stroke:#000000,stroke-width:1px
-    style T fill:#ffcccc,stroke:#ff0000,stroke-width:2px
-    style U fill:#f0f0f0,stroke:#000000,stroke-width:1px
-    style V fill:#ccffff,stroke:#0000ff,stroke-width:2px
-    style W fill:#ccffff,stroke:#0000ff,stroke-width:2px
-    style X fill:#fbf,stroke:#aaff00,stroke-width:2px
-    style Y fill:#fbf,stroke:#aaff00,stroke-width:2px
-    style Z fill:#fbf,stroke:#aaff00,stroke-width:2px
+    style PilotInput fill:#eef,stroke:#000,stroke-width:1px,color:#000
+    style SignalProcessing fill:#eef,stroke:#000,stroke-width:1px,color:#000
+    style FlightControlComputers fill:#eef,stroke:#000,stroke-width:1px,color:#000
+    style Actuation fill:#eef,stroke:#000,stroke-width:1px,color:#000
+    style CrossChannelDataLinks fill:#eef,stroke:#000,stroke-width:1px,color:#000
+    style FeedbackLoop fill:#eef,stroke:#000,stroke-width:1px,color:#000
+    style GAIAEnhancements fill:#ffccff,stroke:#000,stroke-width:1px,color:#000
+    style A fill:#ccffcc,stroke:#00aa00,stroke-width:2px,color:#000
+    style B fill:#ccffcc,stroke:#00aa00,stroke-width:2px,color:#000
+    style C fill:#cceeff,stroke:#00aaff,stroke-width:2px,color:#000
+    style D fill:#cceeff,stroke:#00aaff,stroke-width:2px,color:#000
+    style E fill:#cceeff,stroke:#00aaff,stroke-width:2px,color:#000
+    style F fill:#cceeff,stroke:#00aaff,stroke-width:2px,color:#000
+    style G fill:#cceeff,stroke:#00aaff,stroke-width:2px,color:#000
+    style H fill:#cceeff,stroke:#00aaff,stroke-width:2px,color:#000
+    style I fill:#cceeff,stroke:#00aaff,stroke-width:2px,color:#000
+    style J fill:#ccffff,stroke:#0000ff,stroke-width:2px,color:#000
+    style K fill:#ccffff,stroke:#0000ff,stroke-width:2px,color:#000
+    style L fill:#ccffff,stroke:#0000ff,stroke-width:2px,color:#000
+    style M fill:#ccffff,stroke:#0000ff,stroke-width:2px,color:#000
+    style N fill:#cceeff,stroke:#00aaff,stroke-width:2px,color:#000
+    style O fill:#cceeff,stroke:#00aaff,stroke-width:2px,color:#000
+    style P fill:#ffcccc,stroke:#ff0000,stroke-width:2px,color:#000
+    style Q fill:#ffcccc,stroke:#ff0000,stroke-width:2px,color:#000
+    style R fill:#ffcccc,stroke:#ff0000,stroke-width:2px,color:#000
+    style S fill:#f0f0f0,stroke:#000000,stroke-width:1px,color:#000
+    style T fill:#ffcccc,stroke:#ff0000,stroke-width:2px,color:#000
+    style U fill:#f0f0f0,stroke:#000000,stroke-width:1px,color:#000
+    style V fill:#ccffff,stroke:#0000ff,stroke-width:2px,color:#000
+    style W fill:#ccffff,stroke:#0000ff,stroke-width:2px,color:#000
+    style X fill:#fbf,stroke:#aaff00,stroke-width:2px,color:#000
+    style Y fill:#fbf,stroke:#aaff00,stroke-width:2px,color:#000
+    style Z fill:#fbf,stroke:#aaff00,stroke-width:2px,color:#000
 ```
 
 **Description:**  
@@ -2524,20 +2526,19 @@ graph TD
         H --> D
     end
 
-    style CoreFBWSystem fill:#e0f7fa,stroke:#006064,stroke-width:2px
-    style A fill:#ccffcc,stroke:#00aa00,stroke-width:1px
-    style B fill:#cceeff,stroke:#00aaff,stroke-width:1px
-    style C fill:#cceeff,stroke:#00aaff,stroke-width:1px
-    style D fill:#cceeff,stroke:#00aaff,stroke-width:1px
-    style E fill:#ccffff,stroke:#0000ff,stroke-width:1px
-    style F fill:#ffcccc,stroke:#ff0000,stroke-width:1px
-    style G fill:#f0f0f0,stroke:#000000,stroke-width:1px
-    style H fill:#ccffff,stroke:#0000ff,stroke-width:1px
+    style CoreFBWSystem fill:#e0f7fa,stroke:#006064,stroke-width:2px,color:#000
+    style A fill:#ccffcc,stroke:#00aa00,stroke-width:1px,color:#000
+    style B fill:#cceeff,stroke:#00aaff,stroke-width:1px,color:#000
+    style C fill:#cceeff,stroke:#00aaff,stroke-width:1px,color:#000
+    style D fill:#cceeff,stroke:#00aaff,stroke-width:1px,color:#000
+    style E fill:#ccffff,stroke:#0000ff,stroke-width:1px,color:#000
+    style F fill:#ffcccc,stroke:#ff0000,stroke-width:1px,color:#000
+    style G fill:#f0f0f0,stroke:#000000,stroke-width:1px,color:#000
+    style H fill:#ccffff,stroke:#0000ff,stroke-width:1px,color:#000
 ```
 
 **Description:**  
 This simplified diagram focuses on the core components of a Fly-by-Wire system, showcasing the essential flow from pilot inputs through signal processing to control surface actuation and feedback. It highlights the bidirectional feedback loop essential for precise and responsive aircraft control.
-
 ---
 
 ### **Conclusion**
