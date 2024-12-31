@@ -1763,55 +1763,70 @@ Some aircraft use hybrid systems that combine mechanical and FBW elements:
 **Diagram:**
 
 ```mermaid
-graph TD
-    subgraph Mechanical Rudder System
-        A[Rudder Pedals] --> B[Cables & Pulleys]
-        B --> C[Linkages & Bellcranks]
-        C --> D[Rudder Control Surface]
-    end
-    subgraph FBW Rudder System
-        E[Rudder Pedals] --> F[Sensors]
-        F --> G[Flight Control Computers (FCCs)]
-        G --> H[Control Laws]
-        H --> I[Actuators (EHAs/EMAs)]
-        I --> J[Rudder Control Surface]
-        K[Aircraft Sensors] --> G
-        L[Yaw Rate Gyro] --> G
-    end
-    subgraph Hybrid System
-        M[Rudder Pedals] --> N[Mechanical Linkages]
-        N --> O[Hydraulic Actuators with Electronic Control]
-        O --> P[Rudder Control Surface]
-        Q[Sensors] --> R[Flight Control Computer]
-        R --> O
-    end
-    subgraph GAIA AIR AMPEL360
-        S[Rudder Pedals] --> T[Sensors]
-        T --> U[Flight Control Computers (FCCs)]
-        U --> V[AI Algorithms]
-        V --> W[Control Laws]
-        W --> X[Rudder Actuators]
-        X --> Y[Rudder Control Surface]
-        W --> Z[Adaptive Surface Actuators]
-        Z --> AA[Adaptive Aerostructures]
-        AB[Aircraft Sensors] --> U
-        AC[Adaptive Surface Sensors] --> U
-    end
+flowchart TD
 
-    style A fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style E fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style G fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style I fill:#ffcccc,stroke:#ff0000,stroke-width:2px
-    style L fill:#ccffff,stroke:#0000ff,stroke-width:2px
-    style M fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style O fill:#ffcccc,stroke:#ff0000,stroke-width:2px
-    style S fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style U fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style V fill:#ccffff,stroke:#0000ff,stroke-width:2px
-    style X fill:#ffcccc,stroke:#ff0000,stroke-width:2px
-    style Z fill:#ffcccc,stroke:#ff0000,stroke-width:2px
-    style Y fill:#f0f0f0,stroke:#000000,stroke-width:1px
-    style AA fill:#f0f0f0,stroke:#000000,stroke-width:1px
+  %% Style Definitions for Quadrant Backgrounds
+  style MechanicalRudderSystem fill:#334466,stroke:#ffffff,stroke-width:2px
+  style FBWRudderSystem fill:#334466,stroke:#ffffff,stroke-width:2px
+  style HybridSystem fill:#334466,stroke:#ffffff,stroke-width:2px
+  style GAIAAirAMPEL360 fill:#334466,stroke:#ffffff,stroke-width:2px
+
+  %% Background Subgraph for Mechanical System
+  subgraph MechanicalRudderSystem
+      A[Rudder Pedals] --> B[Cables & Pulleys]
+      B --> C[Linkages & Bellcranks]
+      C --> D[Rudder Control Surface]
+  end
+
+  %% Background Subgraph for FBW System
+  subgraph FBWRudderSystem
+      E[Rudder Pedals] --> F[Sensors]
+      F --> G[Flight Control Computers]
+      G --> H[Control Laws]
+      H --> I[Actuators]
+      I --> J[Rudder Control Surface]
+      K[Aircraft Sensors] --> G
+      L[Yaw Rate Gyro] --> G
+  end
+
+  %% Background Subgraph for Hybrid System
+  subgraph HybridSystem
+      M[Rudder Pedals] --> N[Mechanical Linkages]
+      N --> O[Hydraulic Actuators with Electronic Control]
+      O --> P[Rudder Control Surface]
+      Q[Sensors] --> R[Flight Control Computer]
+      R --> O
+  end
+
+  %% Background Subgraph for GAIA AIR AMPEL360 System
+  subgraph GAIAAirAMPEL360
+      S[Rudder Pedals] --> T[Sensors]
+      T --> U[Flight Control Computers]
+      U --> V[AI Algorithms]
+      V --> W[Control Laws]
+      W --> X[Rudder Actuators]
+      X --> Y[Rudder Control Surface]
+      W --> Z[Adaptive Surface Actuators]
+      Z --> AA[Adaptive Aerostructures]
+      AB[Aircraft Sensors] --> U
+      AC[Adaptive Surface Sensors] --> U
+  end
+
+  %% Styles for Nodes
+  style A fill:#ccffcc,stroke:#00aa00,stroke-width:2px
+  style E fill:#ccffcc,stroke:#00aa00,stroke-width:2px
+  style G fill:#cceeff,stroke:#00aaff,stroke-width:2px
+  style I fill:#ffcccc,stroke:#ff0000,stroke-width:2px
+  style L fill:#ccffff,stroke:#0000ff,stroke-width:2px
+  style M fill:#ccffcc,stroke:#00aa00,stroke-width:2px
+  style O fill:#ffcccc,stroke:#ff0000,stroke-width:2px
+  style S fill:#ccffcc,stroke:#00aa00,stroke-width:2px
+  style U fill:#cceeff,stroke:#00aaff,stroke-width:2px
+  style V fill:#ccffff,stroke:#0000ff,stroke-width:2px
+  style X fill:#ffcccc,stroke:#ff0000,stroke-width:2px
+  style Z fill:#ffcccc,stroke:#ff0000,stroke-width:2px
+  style Y fill:#f0f0f0,stroke:#000000,stroke-width:1px
+  style AA fill:#f0f0f0,stroke:#000000,stroke-width:1px
 ```
 
 *Mermaid diagram illustrating the differences between mechanical, FBW, hybrid, and the GAIA AIR AMPEL360 rudder systems.*
