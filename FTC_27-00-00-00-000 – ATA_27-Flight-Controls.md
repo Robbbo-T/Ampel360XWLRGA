@@ -354,9 +354,8 @@ To describe the algorithms and decision-making processes that enable autonomous 
    - Redundancy and fallback strategies if autonomous algorithms detect anomalies or fail to converge on a safe decision.
 4. **Integration with Adaptive Aerostructures:**  
    - Specific considerations for the **AMPEL360**, ensuring the distributed control surfaces align with autonomous flight goals.
-Your Mermaid syntax needs slight adjustments to ensure compatibility with the parser. Below is the corrected and validated diagram:
 
-### **Corrected Mermaid Syntax**
+
 ```mermaid
 flowchart TD
     A["Sensor Input (Weather, Traffic, etc.)"] --> B["Autonomy Engine"]
@@ -408,17 +407,33 @@ To elaborate on how solar energy is harvested via the **AMPEL360**’s solar pan
    - Real-time health checks of solar arrays to isolate faulty panels.
    - Automatic re-routing of power flow if panels degrade or fail.
 
+
 ```mermaid
-flowchart TB
-    SP[Solar Panels] -->|Harvest Energy| SE[Energy Storage]
-    SE -->|Converted Power| PM[Power Management Unit]
-    PM -->|Distribute| FC[Flight Control Systems]
-    PM -->|Supply| AUX[Aux Systems]
-    FC --> SURF[Control Surfaces/Adaptive Panels]
-    AUX -->|Emergency Backup| EBU[Back-up Batteries]
+flowchart LR
+    P["Pilot Input"] -->|Commands| FCS["Flight Control Computers"]
+    FCS --> AI["Autonomy/AI Logic"]
+    AI -->|Optimize| FCS
+    FCS --> SURF["Adaptive Surfaces/Controls"]
+    SURF --> AC["Aircraft Motion/Response"]
+    AC --> FD["Flight Data (Sensors)"]
+    FD --> AI
+    AI -->|Suggestions/Decisions| PD["Pilot Display"]
+    PD --> P
 ```
 
-*Mermaid diagram showing the flow of solar energy into storage, power management, and ultimately flight control usage.*
+### **Diagram Description**
+This flowchart illustrates the **Pilot-Automation Synergy** workflow:
+1. **Pilot Input:** Commands from the pilot are processed by the Flight Control Computers (FCS).
+2. **Autonomy/AI Logic:** The AI optimizes flight control commands and sends suggestions or automated decisions back to the FCS.
+3. **Adaptive Surfaces/Controls:** Adjustments are made to the aircraft's control surfaces or adaptive systems.
+4. **Aircraft Motion/Response:** The physical response of the aircraft, influenced by the control inputs.
+5. **Flight Data Sensors:** Real-time data from sensors monitor the aircraft's motion and environment.
+6. **Feedback Loop:** Sensor data is fed back into the AI to refine decisions.
+7. **Pilot Display:** Suggestions and system feedback are displayed for the pilot’s review, enabling further input or override.
+
+This diagram emphasizes the collaborative dynamics between human input and automated systems, ensuring safety, efficiency, and adaptability during flight operations.
+
+
 
 ---
 
