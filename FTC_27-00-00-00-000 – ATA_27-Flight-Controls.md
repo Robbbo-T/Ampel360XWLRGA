@@ -304,6 +304,9 @@ The primary objectives governing ATA 27 — and especially the **AMPEL360**’s 
 ### **27.20.3 Diagram**
 
 Below is an **optional** high-level diagram depicting how the **AMPEL360**’s advanced aerostructures, solar power management, and AI-driven flight control objectives integrate within ATA 27’s overall framework:
+It appears there is a parsing error in the diagram syntax. The issue lies in the label `Adaptability (AI, Morphing)`, as parentheses `()` may cause rendering issues. To resolve this, replace the parentheses with alternative characters like `-` or `_`.
+
+Here’s the corrected syntax:
 
 ```mermaid
 flowchart LR
@@ -321,8 +324,8 @@ flowchart LR
         G[Regulatory Compliance]
         H[Performance Optimization]
         I[Integration]
-        J[Adaptability (AI, Morphing)]
-        K[Efficiency (Solar, Materials)]
+        J[Adaptability - AI, Morphing]
+        K[Efficiency - Solar, Materials]
         L[Human Factors]
     end
 
@@ -356,6 +359,7 @@ flowchart LR
     style K fill:#cceeff,stroke:#00aaff,stroke-width:2px
     style L fill:#cceeff,stroke:#00aaff,stroke-width:2px
 ```
+
 
 **Diagram Explanation**:
 
