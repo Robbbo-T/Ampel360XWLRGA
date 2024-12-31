@@ -3548,8 +3548,6 @@ Trim systems are essential components of an aircraft's flight control suite, des
 * **Biomimetic Trim:**  
   Inspired by birds, shape-shifting surfaces might replace discrete trim tabs altogether.
 
----
-
 ```mermaid
 graph TD
     subgraph Elevator Trim System
@@ -3577,26 +3575,25 @@ graph TD
     end
 
     %% Styles for Elevator Trim System
-    style A fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style B fill:#ffffcc,stroke:#ffcc00,stroke-width:2px
-    style C fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style D fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style E fill:#ffcccc,stroke:#ff0000,stroke-width:2px
-    style F fill:#f0f0f0,stroke:#000000,stroke-width:1px
-    style G fill:#cce0ff,stroke:#3366cc,stroke-width:2px
-    style H fill:#cceeff,stroke:#00aaff,stroke-width:2px
+    style A fill:#ccffcc,stroke:#00aa00,stroke-width:2px,color:#000
+    style B fill:#ffffcc,stroke:#ffcc00,stroke-width:2px,color:#000
+    style C fill:#cceeff,stroke:#00aaff,stroke-width:2px,color:#000
+    style D fill:#cceeff,stroke:#00aaff,stroke-width:2px,color:#000
+    style E fill:#ffcccc,stroke:#ff0000,stroke-width:2px,color:#000
+    style F fill:#f0f0f0,stroke:#000000,stroke-width:1px,color:#000
+    style G fill:#cce0ff,stroke:#3366cc,stroke-width:2px,color:#000
+    style H fill:#cceeff,stroke:#00aaff,stroke-width:2px,color:#000
 
     %% Styles for Rudder Trim System
-    style I fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style J fill:#ffffcc,stroke:#ffcc00,stroke-width:2px
-    style K fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style L fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style M fill:#ffcccc,stroke:#ff0000,stroke-width:2px
-    style N fill:#f0f0f0,stroke:#000000,stroke-width:1px
-    style O fill:#cce0ff,stroke:#3366cc,stroke-width:2px
-    style P fill:#cceeff,stroke:#00aaff,stroke-width:2px
+    style I fill:#ccffcc,stroke:#00aa00,stroke-width:2px,color:#000
+    style J fill:#ffffcc,stroke:#ffcc00,stroke-width:2px,color:#000
+    style K fill:#cceeff,stroke:#00aaff,stroke-width:2px,color:#000
+    style L fill:#cceeff,stroke:#00aaff,stroke-width:2px,color:#000
+    style M fill:#ffcccc,stroke:#ff0000,stroke-width:2px,color:#000
+    style N fill:#f0f0f0,stroke:#000000,stroke-width:1px,color:#000
+    style O fill:#cce0ff,stroke:#3366cc,stroke-width:2px,color:#000
+    style P fill:#cceeff,stroke:#00aaff,stroke-width:2px,color:#000
 ```
-
 *Diagram:* Example trim system layout showing **manual** or **electric** actuation, integration with **autopilot**, and **position indicators**.
 
 ---
