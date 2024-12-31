@@ -436,62 +436,17 @@ Beyond **FAR Part 25** and ACs, the FAA often references additional industry sta
 - **RTCA DO-178C**: Software considerations for airborne systems (software criticality levels).  
 - **RTCA DO-254**: Hardware design assurance (electronic hardware compliance).
 
-```mermaid
-graph TD
-    subgraph FAA Regulations
-        A[FAR Part 25]
-        A --> B[25.671 General]
-        A --> C[25.672 Stability Augmentation]
-        A --> D[25.675 Stops/Limit Devices]
-        A --> E[25.677 Trim Systems]
-        A --> F[25.679 Malfunctions]
-        A --> G[25.683 Operation Tests]
-    end
-    subgraph Advisory Circulars
-        H[AC 25.671-1]
-        I[AC 25.672-1]
-        J[AC 25.675-1]
-        K[AC 25.677-1]
-        L[AC 25.679-1]
-        M[AC 25.683-1]
-    end
-    subgraph Advanced Tech (AMPEL360)
-        N[AI Certification]
-        O[Adaptive Aerostructures]
-        P[Solar Panel Integration]
-    end
-    subgraph Cross-Referenced Standards
-        Q[SAE ARP4754A]
-        R[SAE ARP4761]
-        S[RTCA DO-178C]
-        T[RTCA DO-254]
-    end
-    A --> N
-    A --> O
-    A --> P
-    H --> B
-    I --> C
-    J --> D
-    K --> E
-    L --> F
-    M --> G
-    N --> Q
-    N --> R
-    N --> S
-    O --> Q
-    O --> R
-    O --> S
-    P --> Q
-    P --> R
-    P --> S
-    style A fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style H fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style N fill:#ffcccc,stroke:#ff0000,stroke-width:2px
-    style Q fill:#ffffcc,stroke:#ffcc00,stroke-width:2px
-```
+![image](https://github.com/user-attachments/assets/c6e08658-3dcb-4286-93d3-5dbafcf60578)
+
 
 *Mermaid diagram illustrating the relationship between FAR Part 25 regulations, Advisory Circulars, certification of advanced technologies, and cross-referenced industry standards.*
 
+**Diagram Overview:**
+- FAA Regulations: Lists FAR Part 25 regulations, including sections for stability, trim systems, and operational tests.  
+- Advisory Circulars: Links specific circulars to corresponding FAR regulations.
+- Advanced Tech - AMPEL360: Shows emerging technology certifications and adaptations, such as AI certification, adaptive aerostructures, and solar panel integration.  
+- Cross-Referenced Standards: Highlights connections to SAE and RTCA standards, including ARP4754A and DO-178C
+  
 ---
 
 ### **Key Takeaways for the GAIA AIR AMPEL360**
