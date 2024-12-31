@@ -2717,120 +2717,6 @@ Fly-by-Wire systems have revolutionized aircraft control by leveraging electroni
 This refined **27.40.4 Fly-by-Wire Fundamentals** section incorporates the suggested enhancements, providing a more detailed and comprehensive understanding of FBW systems. The additions clarify critical aspects such as filtering in signal processing, voting mechanisms in redundancy, benefits of distributed architecture, and advanced control loops. Furthermore, connections to human factors and expanded future directions underscore the innovative advancements shaping the future of FBW technology, particularly in cutting-edge aircraft like the **GAIA AIR AMPEL360**.
 
 
-
-
-### **27.240 Autonomous Flight Control Algorithms**
-
-*(Exploring the increasing role of autonomy in flight control decisions.)*
-
-**Purpose:**  
-To describe the algorithms and decision-making processes that enable autonomous or semi-autonomous flight control, focusing on how these systems integrate pilot authority, AI-based logic, and safety protocols.
-
-**Key Topics:**
-1. **Autonomous Mode Transition:**  
-   - How the system transitions between manual, semi-autonomous, and fully autonomous control modes.
-   - Pilot override procedures to ensure human authority remains paramount.
-2. **Decision-Tree Analysis / State Machines:**  
-   - The use of logic trees or state machines for dynamic flight path adjustments under changing conditions.
-3. **Fail-Safe Mechanisms:**  
-   - Redundancy and fallback strategies if autonomous algorithms detect anomalies or fail to converge on a safe decision.
-4. **Integration with Adaptive Aerostructures:**  
-   - Specific considerations for the **AMPEL360**, ensuring the distributed control surfaces align with autonomous flight goals.
-
-
-```mermaid
-flowchart TD
-    A["Sensor Input (Weather, Traffic, etc.)"] --> B["Autonomy Engine"]
-    B --> C{"Decision Node: Change Flight Path?"}
-    C -- "Yes" --> D["Execute Autonomous Maneuvers"]
-    C -- "No" --> E["Maintain Current Path"]
-    D --> F{"Check Pilot Override?"}
-    F -- "Yes" --> G["Pilot in Command"]
-    F -- "No" --> H["Fully Autonomous Action"]
-    H --> E
-```
-
-### **Rendered Diagram**
-![Autonomy Engine Workflow](https://supabase.mermaidchart.com/storage/v1/object/public/chatgpt-diagrams/2024-12-31/corrected-autonomy-engine-diagram.png)
-
-### **Diagram Description**
-This flowchart depicts the workflow of an **Autonomy Engine** for an aircraft:
-1. **Sensor Inputs:** Weather conditions, traffic data, and other inputs feed into the autonomy engine.
-2. **Decision Node:** The engine determines whether to change the flight path.
-3. **Execution:** 
-   - If a change is required, autonomous maneuvers are executed.
-   - If no change is needed, the current flight path is maintained.
-4. **Pilot Override Check:** Post-maneuver, the system verifies if the pilot wishes to override the autonomy.
-   - If the pilot overrides, they resume command.
-   - If not, the system proceeds with fully autonomous actions.
-
-This architecture ensures a balance between pilot authority and autonomous decision-making, enhancing safety and efficiency.
-
----
-
-### **27.250 Solar Energy Harvesting and Management in Flight Controls**
-
-*(Detailing how solar power is integrated and utilized within flight control systems.)*
-
-**Purpose:**  
-To elaborate on how solar energy is harvested via the **AMPEL360**’s solar panel-embedded aerostructures and channeled into flight control operations, addressing storage, distribution, and redundancy.
-
-**Key Topics:**
-1. **Energy Flow Management:**  
-   - Balancing solar-derived power with traditional sources (e.g., APU, batteries).
-   - Priority rules (flight controls vs. non-critical systems) under various flight phases.
-2. **Storage and Conversion:**  
-   - Inverters or DC-DC converters ensuring stable voltage supply to actuators and avionics.
-   - Battery or supercapacitor buffers for peak demand management.
-3. **Efficiency Considerations:**  
-   - Minimizing losses during power conversion.
-   - Adaptive shading or “smart skin” technology to maintain optimal solar panel angles.
-4. **Monitoring and Fault Detection:**  
-   - Real-time health checks of solar arrays to isolate faulty panels.
-   - Automatic re-routing of power flow if panels degrade or fail.
-
-x
-```mermaid
-flowchart LR
-    P["Pilot Input"] -->|Commands| FCS["Flight Control Computers"]
-    FCS --> AI["Autonomy/AI Logic"]
-    AI -->|Optimize| FCS
-    FCS --> SURF["Adaptive Surfaces/Controls"]
-    SURF --> AC["Aircraft Motion/Response"]
-    AC --> FD["Flight Data (Sensors)"]
-    FD --> AI
-    AI -->|Suggestions/Decisions| PD["Pilot Display"]
-    PD --> P
-```
-
-### Diagram Description
-This diagram demonstrates the interaction between the pilot and the automation systems in controlling an aircraft:
-
-1. **Pilot Input:** The process begins with commands issued by the pilot.
-2. **Flight Control Computers (FCS):** The pilot's commands are processed and routed to appropriate control systems.
-3. **Autonomy/AI Logic:** The AI layer optimizes these commands based on flight parameters and conditions.
-4. **Adaptive Surfaces/Controls:** The optimized commands are sent to the aircraft's control surfaces or adaptive systems for execution.
-5. **Aircraft Motion/Response:** Adjustments result in physical changes to the aircraft’s trajectory or behavior.
-6. **Flight Data (Sensors):** Real-time sensor feedback monitors the aircraft's response and sends data back to the AI.
-7. **Pilot Display:** The AI provides real-time decisions, suggestions, or system statuses to the pilot, ensuring they remain informed and in control.
-
-This workflow ensures seamless interaction between the human operator and the automated systems, prioritizing safety and performance.
-
-
-### **Diagram Description**
-This flowchart illustrates the **Pilot-Automation Synergy** workflow:
-1. **Pilot Input:** Commands from the pilot are processed by the Flight Control Computers (FCS).
-2. **Autonomy/AI Logic:** The AI optimizes flight control commands and sends suggestions or automated decisions back to the FCS.
-3. **Adaptive Surfaces/Controls:** Adjustments are made to the aircraft's control surfaces or adaptive systems.
-4. **Aircraft Motion/Response:** The physical response of the aircraft, influenced by the control inputs.
-5. **Flight Data Sensors:** Real-time data from sensors monitor the aircraft's motion and environment.
-6. **Feedback Loop:** Sensor data is fed back into the AI to refine decisions.
-7. **Pilot Display:** Suggestions and system feedback are displayed for the pilot’s review, enabling further input or override.
-
-This diagram emphasizes the collaborative dynamics between human input and automated systems, ensuring safety, efficiency, and adaptability during flight operations.
-
----
-
 ## **27.50 Secondary Flight Controls**
 
 ### **27.50.1 Flaps and Slats**
@@ -3094,6 +2980,120 @@ flowchart TD
 4. **Maintenance & Inspection**: Regular checks for **wear/corrosion**, proper lubrication, and potential use of **NDT** methods. Predictive strategies rely on sensor data and **AI** diagnostics.  
 5. **AMPEL360 Integration**: Potential to *replace or augment* conventional flaps and slats with **adaptive aerostructures**. AI can optimize flap/slat usage in real time, seamlessly balancing performance, fuel efficiency, environmental impact, and noise abatement.  
 6. **Future Outlook**: **Morphing wings**, **active flow control**, and **digital twin** technologies may revolutionize how aircraft generate and manage lift, reshaping the role and design of flaps and slats.
+
+
+### **27.240 Autonomous Flight Control Algorithms**
+
+*(Exploring the increasing role of autonomy in flight control decisions.)*
+
+**Purpose:**  
+To describe the algorithms and decision-making processes that enable autonomous or semi-autonomous flight control, focusing on how these systems integrate pilot authority, AI-based logic, and safety protocols.
+
+**Key Topics:**
+1. **Autonomous Mode Transition:**  
+   - How the system transitions between manual, semi-autonomous, and fully autonomous control modes.
+   - Pilot override procedures to ensure human authority remains paramount.
+2. **Decision-Tree Analysis / State Machines:**  
+   - The use of logic trees or state machines for dynamic flight path adjustments under changing conditions.
+3. **Fail-Safe Mechanisms:**  
+   - Redundancy and fallback strategies if autonomous algorithms detect anomalies or fail to converge on a safe decision.
+4. **Integration with Adaptive Aerostructures:**  
+   - Specific considerations for the **AMPEL360**, ensuring the distributed control surfaces align with autonomous flight goals.
+
+
+```mermaid
+flowchart TD
+    A["Sensor Input (Weather, Traffic, etc.)"] --> B["Autonomy Engine"]
+    B --> C{"Decision Node: Change Flight Path?"}
+    C -- "Yes" --> D["Execute Autonomous Maneuvers"]
+    C -- "No" --> E["Maintain Current Path"]
+    D --> F{"Check Pilot Override?"}
+    F -- "Yes" --> G["Pilot in Command"]
+    F -- "No" --> H["Fully Autonomous Action"]
+    H --> E
+```
+
+### **Rendered Diagram**
+![Autonomy Engine Workflow](https://supabase.mermaidchart.com/storage/v1/object/public/chatgpt-diagrams/2024-12-31/corrected-autonomy-engine-diagram.png)
+
+### **Diagram Description**
+This flowchart depicts the workflow of an **Autonomy Engine** for an aircraft:
+1. **Sensor Inputs:** Weather conditions, traffic data, and other inputs feed into the autonomy engine.
+2. **Decision Node:** The engine determines whether to change the flight path.
+3. **Execution:** 
+   - If a change is required, autonomous maneuvers are executed.
+   - If no change is needed, the current flight path is maintained.
+4. **Pilot Override Check:** Post-maneuver, the system verifies if the pilot wishes to override the autonomy.
+   - If the pilot overrides, they resume command.
+   - If not, the system proceeds with fully autonomous actions.
+
+This architecture ensures a balance between pilot authority and autonomous decision-making, enhancing safety and efficiency.
+
+---
+
+### **27.250 Solar Energy Harvesting and Management in Flight Controls**
+
+*(Detailing how solar power is integrated and utilized within flight control systems.)*
+
+**Purpose:**  
+To elaborate on how solar energy is harvested via the **AMPEL360**’s solar panel-embedded aerostructures and channeled into flight control operations, addressing storage, distribution, and redundancy.
+
+**Key Topics:**
+1. **Energy Flow Management:**  
+   - Balancing solar-derived power with traditional sources (e.g., APU, batteries).
+   - Priority rules (flight controls vs. non-critical systems) under various flight phases.
+2. **Storage and Conversion:**  
+   - Inverters or DC-DC converters ensuring stable voltage supply to actuators and avionics.
+   - Battery or supercapacitor buffers for peak demand management.
+3. **Efficiency Considerations:**  
+   - Minimizing losses during power conversion.
+   - Adaptive shading or “smart skin” technology to maintain optimal solar panel angles.
+4. **Monitoring and Fault Detection:**  
+   - Real-time health checks of solar arrays to isolate faulty panels.
+   - Automatic re-routing of power flow if panels degrade or fail.
+
+x
+```mermaid
+flowchart LR
+    P["Pilot Input"] -->|Commands| FCS["Flight Control Computers"]
+    FCS --> AI["Autonomy/AI Logic"]
+    AI -->|Optimize| FCS
+    FCS --> SURF["Adaptive Surfaces/Controls"]
+    SURF --> AC["Aircraft Motion/Response"]
+    AC --> FD["Flight Data (Sensors)"]
+    FD --> AI
+    AI -->|Suggestions/Decisions| PD["Pilot Display"]
+    PD --> P
+```
+
+### Diagram Description
+This diagram demonstrates the interaction between the pilot and the automation systems in controlling an aircraft:
+
+1. **Pilot Input:** The process begins with commands issued by the pilot.
+2. **Flight Control Computers (FCS):** The pilot's commands are processed and routed to appropriate control systems.
+3. **Autonomy/AI Logic:** The AI layer optimizes these commands based on flight parameters and conditions.
+4. **Adaptive Surfaces/Controls:** The optimized commands are sent to the aircraft's control surfaces or adaptive systems for execution.
+5. **Aircraft Motion/Response:** Adjustments result in physical changes to the aircraft’s trajectory or behavior.
+6. **Flight Data (Sensors):** Real-time sensor feedback monitors the aircraft's response and sends data back to the AI.
+7. **Pilot Display:** The AI provides real-time decisions, suggestions, or system statuses to the pilot, ensuring they remain informed and in control.
+
+This workflow ensures seamless interaction between the human operator and the automated systems, prioritizing safety and performance.
+
+
+### **Diagram Description**
+This flowchart illustrates the **Pilot-Automation Synergy** workflow:
+1. **Pilot Input:** Commands from the pilot are processed by the Flight Control Computers (FCS).
+2. **Autonomy/AI Logic:** The AI optimizes flight control commands and sends suggestions or automated decisions back to the FCS.
+3. **Adaptive Surfaces/Controls:** Adjustments are made to the aircraft's control surfaces or adaptive systems.
+4. **Aircraft Motion/Response:** The physical response of the aircraft, influenced by the control inputs.
+5. **Flight Data Sensors:** Real-time data from sensors monitor the aircraft's motion and environment.
+6. **Feedback Loop:** Sensor data is fed back into the AI to refine decisions.
+7. **Pilot Display:** Suggestions and system feedback are displayed for the pilot’s review, enabling further input or override.
+
+This diagram emphasizes the collaborative dynamics between human input and automated systems, ensuring safety, efficiency, and adaptability during flight operations.
+
+---
+
 
 
 ---
