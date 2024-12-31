@@ -586,56 +586,63 @@ EASA publishes **AMC** and **GM** documents to guide manufacturers in demonstrat
    - **Structural Resistance**: Evaluate performance under aerodynamic loads, hail, and other environmental stresses.  
    - **EMI/EMC Compliance**: Ensure no interference with avionics or flight controls.
      
-```marmeid
+
+```mermaid
 graph TD
-    subgraph EASA Regulations
+    subgraph EASA_Regulations
         A[CS-25]
-        A --> B[25.671 General]
-        A --> C[25.672 Stability Augmentation]
-        A --> D[25.675 Stops]
-        A --> E[25.677 Trim]
-        A --> F[25.679 Malfunctions]
-        A --> G[25.683 Operation Tests]
-        A --> H[25.629 Aeroelastic Stability]
+        B[25.671 General]
+        C[25.672 Stability Augmentation]
+        D[25.675 Stops]
+        E[25.677 Trim]
+        F[25.679 Malfunctions]
+        G[25.683 Operation Tests]
+        H[25.629 Aeroelastic Stability]
+        A --> B
+        A --> C
+        A --> D
+        A --> E
+        A --> F
+        A --> G
+        A --> H
     end
-    subgraph AMC/GM Guidance
+    subgraph AMC_GM_Guidance
         I[AMC 25.671]
-        I --> B
         J[AMC 25.672]
-        J --> C
         K[AMC 25.675]
-        K --> D
         L[AMC 25.677]
-        L --> E
         M[AMC 25.679]
-        M --> F
         N[AMC 25.683]
+        I --> B
+        J --> C
+        K --> D
+        L --> E
+        M --> F
         N --> G
     end
-    subgraph Certification Process
+    subgraph Certification_Process
         O[Type Certificate - TC]
         P[Supplemental Type Certificate - STC]
         Q[Major Changes]
         R[CRIs for Novel Technologies]
+        A --> O
+        A --> P
+        A --> Q
+        A --> R
     end
-    subgraph GAIA AIR AMPEL360 Innovations
+    subgraph GAIA_AIR_AMPEL360_Innovations
         S[AI-Augmented Controls]
         T[Adaptive Aerostructures]
         U[Solar Integration]
+        C --> S
+        D --> T
+        B --> U
     end
-    A --> O
-    A --> P
-    A --> Q
-    A --> R
-    C --> S
-    D --> T
-    B --> U
     style A fill:#ccffcc,stroke:#00aa00,stroke-width:2px
     style I fill:#cceeff,stroke:#00aaff,stroke-width:2px
     style O fill:#ffcccc,stroke:#ff0000,stroke-width:2px
     style S fill:#ccffff,stroke:#0000ff,stroke-width:2px
 ```
-
 ---
 
 ### Diagram Overview:
