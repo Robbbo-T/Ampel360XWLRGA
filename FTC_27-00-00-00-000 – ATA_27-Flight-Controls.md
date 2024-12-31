@@ -1229,12 +1229,6 @@ Some aircraft combine mechanical and FBW elements, such as:
 
 ---
 
-Here's an updated and corrected **Mermaid diagram** representing the **Mechanical Aileron System** and **Fly-By-Wire (FBW) Aileron System**. This diagram visually compares the traditional mechanical system with the advanced FBW system, ensuring proper syntax for rendering.
-
----
-
-### **Corrected Diagram Code**
-
 ```mermaid
 graph TD
     subgraph Mechanical_Aileron_System
@@ -1244,7 +1238,7 @@ graph TD
     end
 
     subgraph FBW_Aileron_System
-        E[Pilot Stick/Yoke] --> F[Sensors (Position: LVDT/RVDT)]
+        E[Pilot Stick/Yoke] --> F[Sensors (Position: LVDT or RVDT)]
         F --> G[Flight Control Computers]
         G --> H[Control Laws]
         H --> I[Actuators]
@@ -1263,7 +1257,6 @@ graph TD
     style J fill:#ffcccc,stroke:#ff0000,stroke-width:2px
 ```
 
----
 
 ### **Diagram Explanation**
 
