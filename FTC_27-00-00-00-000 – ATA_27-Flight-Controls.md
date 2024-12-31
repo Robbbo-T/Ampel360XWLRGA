@@ -303,62 +303,7 @@ The primary objectives governing ATA 27 — and especially the **AMPEL360**’s 
 
 ### **27.20.3 Diagram**
 
-Below is an **optional** high-level diagram depicting how the **AMPEL360**’s advanced aerostructures, solar power management, and AI-driven flight control objectives integrate within ATA 27’s overall framework:
-It appears there is a parsing error in the diagram syntax. The issue lies in the label `Adaptability (AI, Morphing)`, as parentheses `()` may cause rendering issues. To resolve this, replace the parentheses with alternative characters like `-` or `_`.
-
-Here’s the corrected syntax:
-
-```mermaid
-flowchart LR
-
-    subgraph ATA_27_Scope
-        A(Primary Controls)
-        B(Secondary Controls)
-        C(Advanced Features)
-        D(AMPEL360 Adaptations)
-    end
-
-    subgraph ATA_27_Objectives
-        E[Safety]
-        F[Reliability]
-        G[Regulatory Compliance]
-        H[Performance Optimization]
-        I[Integration]
-        J[Adaptability - AI, Morphing]
-        K[Efficiency - Solar, Materials]
-        L[Human Factors]
-    end
-
-    A --> E
-    A --> F
-    A --> G
-    B --> E
-    B --> F
-    B --> G
-    C --> E
-    C --> F
-    C --> G
-    C --> H
-    D --> J
-    D --> K
-    D --> L
-    H --> I
-    I --> J
-    J --> K
-
-    style A fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style B fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style C fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style D fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style E fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style F fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style G fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style H fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style I fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style J fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style K fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style L fill:#cceeff,stroke:#00aaff,stroke-width:2px
-```
+![image](https://github.com/user-attachments/assets/135ca0f3-9921-4fed-90d0-780310085dd7)
 
 
 **Diagram Explanation**:
