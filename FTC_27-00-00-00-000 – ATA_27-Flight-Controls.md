@@ -1387,12 +1387,12 @@ Some aircraft employ a hybrid approach, blending mechanical and electronic eleme
 
 ```mermaid
 graph TD
-    subgraph Mechanical Elevator System
+    subgraph Mechanical_Elevator_System
         A[Pilot Control Column] --> B[Cables and Pulleys]
-        B --> C[Rods-Bellcranks]
+        B --> C[Rods and Bellcranks]
         C --> D[Elevator Control Surface]
     end
-    subgraph FBW Elevator System
+    subgraph FBW_Elevator_System
         E[Pilot Control Column] --> F[Sensors LVDT RVDT]
         F --> G[Flight Control Computers FCCs]
         G --> H[Control Laws]
@@ -1401,16 +1401,16 @@ graph TD
         K[Aircraft Sensors] --> G
         L[Adaptive Surface Data] --> G
     end
-    subgraph Hybrid System
+    subgraph Hybrid_System
         M[Pilot Control Column] --> N[Mechanical Linkages]
         N --> O[Hydraulic Actuators with Electronic Control]
         O --> P[Elevator Control Surface]
         Q[Sensors] --> R[Flight Control Computer]
         R --> O
     end
-    subgraph GAIA AIR AMPEL360
+    subgraph GAIA_AIR_AMPEL360
         S[Pilot Control Column] --> T[Sensors]
-        T --> U[Flight Control Computers (FCCs)]
+        T --> U[Flight Control Computers FCCs]
         U --> V[AI Algorithms]
         V --> W[Control Laws]
         W --> X[Elevator Actuators]
