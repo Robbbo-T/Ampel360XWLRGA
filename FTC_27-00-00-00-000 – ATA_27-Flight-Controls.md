@@ -3065,13 +3065,13 @@ flowchart TD
     B --> G["Reduced Lift"]
 
     %% Styling elements for visual differentiation
-    style A fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style B fill:#ffcccc,stroke:#ff0000,stroke-width:2px
-    style C stroke:#0000ff,stroke-width:2px,stroke-dasharray:5 5, font-style:italic
-    style D fill:#e0e0e0,stroke:#0000ff,stroke-width:2px, font-style:italic
-    style E fill:#e0e0e0,stroke:#0000ff,stroke-width:2px,stroke-dasharray:2 2, font-style:italic
-    style F fill:#cce0ff,stroke:#0066cc,stroke-width:2px
-    style G fill:#cce0ff,stroke:#0066cc,stroke-width:2px
+    style A fill:#ccffcc,stroke:#00aa00,stroke-width:2px,color:#000
+    style B fill:#ffcccc,stroke:#ff0000,stroke-width:2px,color:#000
+    style C stroke:#0000ff,stroke-width:2px,stroke-dasharray:5 5, font-style:italic,color:#000
+    style D fill:#e0e0e0,stroke:#0000ff,stroke-width:2px, font-style:italic,color:#000
+    style E fill:#e0e0e0,stroke:#0000ff,stroke-width:2px,stroke-dasharray:2 2, font-style:italic,color:#000
+    style F fill:#cce0ff,stroke:#0066cc,stroke-width:2px,color:#000
+    style G fill:#cce0ff,stroke:#0066cc,stroke-width:2px,color:#000
 ```
 
 *Mermaid diagram illustrating spoiler deployment and its effect on airflow, drag, and lift.*
@@ -3092,14 +3092,14 @@ graph TD
     end
 
     %% Node styles for visual clarity and emphasis
-    style A fill:#ccffcc,stroke:#00aa00,stroke-width:2px, font-weight:bold
-    style B fill:#cce0ff,stroke:#0066cc,stroke-width:2px 
-    style C fill:#ffcccc,stroke:#ff0000,stroke-width:2px
-    style D fill:#cce0ff,stroke:#0066cc,stroke-width:2px
-    style E fill:#ccffcc,stroke:#00aa00,stroke-width:2px, font-weight:bold
-    style F fill:#ccffcc,stroke:#00aa00,stroke-width:2px, font-weight:bold
-    style G fill:#cce0ff,stroke:#0066cc,stroke-width:2px
-    style H fill:#e0e0e0,stroke:#333,stroke-width:2px, font-weight:bold
+    style A fill:#ccffcc,stroke:#00aa00,stroke-width:2px, font-weight:bold,color:#000
+    style B fill:#cce0ff,stroke:#0066cc,stroke-width:2px,color:#000
+    style C fill:#ffcccc,stroke:#ff0000,stroke-width:2px,color:#000
+    style D fill:#cce0ff,stroke:#0066cc,stroke-width:2px,color:#000
+    style E fill:#ccffcc,stroke:#00aa00,stroke-width:2px, font-weight:bold,color:#000
+    style F fill:#ccffcc,stroke:#00aa00,stroke-width:2px, font-weight:bold,color:#000
+    style G fill:#cce0ff,stroke:#0066cc,stroke-width:2px,color:#000
+    style H fill:#e0e0e0,stroke:#333,stroke-width:2px, font-weight:bold,color:#000
 ```
 
 *Mermaid diagram illustrating the role of ground spoilers in the landing sequence.*
