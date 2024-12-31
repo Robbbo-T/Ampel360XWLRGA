@@ -3834,7 +3834,16 @@ Hydraulic actuators have long served as the workhorse of aircraft actuation, tra
 
 ### **H. Diagrams (Recommended)**
 
-**Diagram 1: Classic Hydraulic Layout**  
+# 27.60.1 Hydraulic Actuators (Enhanced Version)
+
+Hydraulic actuators will continue to play an essential role in aviation, even as **electromechanical** and **adaptive** systems gain prominence. Innovations like **EHAs** (Electrohydrostatic Actuators), advanced fluid management, and integrated AI-driven monitoring ensure that hydraulics remain both relevant and efficient—perfectly complementing the evolving design philosophy of aircraft like **GAIA AIR AMPEL360**.
+
+---
+
+## Diagrams (Recommended)
+
+### Diagram 1: Classic Hydraulic Layout
+
 ```mermaid
 flowchart LR
     A[Engine or Electric Pump] --> B[Reservoir/Filter]
@@ -3843,45 +3852,55 @@ flowchart LR
     D --> E[Actuators]
     E --> F[Return Lines]
     F --> B
-
+```
 Figure 1: A simplified schematic of a traditional hydraulic system, showing how fluid flows from the pump and reservoir, through filters and pressure lines, to various valves and actuators, before returning via return lines.
 
 Diagram 2: EHA Schematic
 
+```marmeid
 flowchart LR
     M[Electric Motor] --> N[Mini Hydraulic Pump]
     N --> O[Local Reservoir]
     O --> P[Actuator Cylinder]
 ```
+### Figure 2: Electrohydrostatic Actuator (EHA) System
 
-Figure 2: A high-level depiction of an Electrohydrostatic Actuator (EHA). The electric motor drives a mini pump, pressurizing fluid in a local reservoir to power an actuator cylinder—independent from the main aircraft hydraulic lines.
+**Figure 2:** A high-level depiction of an Electrohydrostatic Actuator (EHA). The electric motor drives a mini pump, pressurizing fluid in a local reservoir to power an actuator cylinder—independent from the main aircraft hydraulic lines.
 
-I. Key Takeaways
-	1.	High Power Density & Proven Track Record
-      •   Hydraulic actuators remain indispensable for many large commercial and military aircraft due to their robustness and instantaneous force capacity.
-	2.	Future of Hydraulics
-      •   EHAs and localized loops reduce extensive plumbing, lowering weight and improving reliability.
-      •   A full transition to EMAs in all areas is not immediate; hybrid approaches will persist to handle certain high-load demands.
-	3.	Comparison to EMAs
-      •   Hydraulics: Typically heavier infrastructure (lines, pumps, reservoirs), but excel in continuous high-force operations with quick response.
-      •   EMAs: Simpler installation (just power + data lines), but can generate excessive heat under constant load and may be heavier at high force outputs.
-      •   Many next-gen aircraft (including AMPEL360) may adopt a mixed approach based on each system’s load requirements, redundancy strategies, and cost considerations.
-	4.	Environmental & Sustainability Dimensions
-      •   Fluid disposal and potential toxicity are ongoing concerns. Green fluids and advanced seal materials are emerging solutions.
-      •   Combining hydraulic technology with solar power and AI ensures that aircraft like AMPEL360 can remain energy-efficient and maintain robust actuation for critical flight operations.
-	5.	Maintenance & Safety
-      •   Rigorous contamination control and redundant design are vital to safe operation.
-      •   Emergent technologies like digital twins and AI-based diagnostics can predict failures before they occur, greatly enhancing reliability and minimizing downtime.
+---
 
-Final Thoughts
+## Key Takeaways
 
-Hydraulic actuators will continue to play an essential role in aviation, even as electromechanical and adaptive systems gain prominence. Innovations like EHAs, advanced fluid management, and integrated AI-driven monitoring ensure that hydraulics remain both relevant and efficient—perfectly complementing the evolving design philosophy of aircraft like GAIA AIR AMPEL360.
+1. **High Power Density & Proven Track Record**
+   - Hydraulic actuators remain indispensable for many large commercial and military aircraft due to their robustness and instantaneous force capacity.
 
+2. **Future of Hydraulics**
+   - EHAs and localized loops reduce extensive plumbing, lowering weight and improving reliability.
+   - A full transition to EMAs in all areas is not immediate; hybrid approaches will persist to handle certain high-load demands.
+
+3. **Comparison to EMAs**
+   - **Hydraulics:** Typically heavier infrastructure (lines, pumps, reservoirs), but excel in continuous high-force operations with quick response.
+   - **EMAs:** Simpler installation (just power + data lines), but can generate excessive heat under constant load and may be heavier at high force outputs.
+   - Many next-gen aircraft (including AMPEL360) may adopt a mixed approach based on each system’s load requirements, redundancy strategies, and cost considerations.
+
+4. **Environmental & Sustainability Dimensions**
+   - Fluid disposal and potential toxicity are ongoing concerns. Green fluids and advanced seal materials are emerging solutions.
+   - Combining hydraulic technology with solar power and AI ensures that aircraft like AMPEL360 can remain energy-efficient and maintain robust actuation for critical flight operations.
+
+5. **Maintenance & Safety**
+   - Rigorous contamination control and redundant design are vital to safe operation.
+   - Emergent technologies like digital twins and AI-based diagnostics can predict failures before they occur, greatly enhancing reliability and minimizing downtime.
+
+---
+
+## Final Thoughts
+
+Hydraulic actuators will continue to play an essential role in aviation, even as electromechanical and adaptive systems gain prominence. Innovations like EHAs, advanced fluid management, and integrated AI-driven monitoring ensure that hydraulics remain both relevant and efficient—perfectly complementing the evolving design philosophy of aircraft like **GAIA AIR AMPEL360**.
 Side-by-Side Comparison of a Traditional Hydraulic System vs. EHA System
 
-Below is the Mermaid code for a simple, side-by-side comparison of a Traditional Hydraulic System and an Electrohydrostatic Actuator (EHA) system. You can paste this code into a Mermaid-compatible environment (such as the Mermaid Live Editor) to view the rendered diagram.
+Below is the Mermaid code for a simple, side-by-side comparison of a Traditional Hydraulic System and an Electrohydrostatic Actuator (EHA) system. You can paste this code into a Mermaid-compatible environment (such as the Mermaid Live Editor) to view the rendered diagram:
 
-```marmeid
+```mermaid
 flowchart TB
     subgraph Traditional_Hydraulic_System
         direction LR
@@ -3905,23 +3924,24 @@ flowchart TB
     style Electrohydrostatic_Actuator_System fill:#bbf,stroke:#333,stroke-width:2px;
 ```
 
-Diagram Explanation
-	1.	Traditional Hydraulic System (Pink Subgraph)
-      •   Engine or Electric Pump: Drives hydraulic fluid into the system.
-      •   Reservoir: Stores the fluid, ensuring adequate supply.
-      •   Filter: Removes contaminants before fluid enters the main lines.
-      •   Pressure Lines: Transport pressurized fluid to valves and actuators.
-      •   Valves: Direct fluid flow and control actuator movement.
-      •   Actuators: Convert fluid pressure into mechanical force (e.g., for flight control surfaces, landing gear).
-      •   Return Lines: Carry fluid back to the reservoir for recirculation.
-	2.	Electrohydrostatic Actuator System (Blue Subgraph)
-      •   Electric Motor: Provides power locally rather than relying on long hydraulic lines.
-      •   Mini Hydraulic Pump: Pressurizes fluid on-demand within a localized loop.
-      •   Local Reservoir: Maintains fluid supply solely for the EHA.
-      •   Actuator Cylinder: Converts the pressurized fluid’s energy into mechanical motion—similar to a traditional actuator, but self-contained.
+### Diagram Explanation
 
-By comparing the two subgraphs, you can see how EHAs reduce extensive hydraulic plumbing by integrating pumps, reservoirs, and actuators into localized modules. This simplifies maintenance and can improve reliability for certain aircraft applications, particularly in “more electric aircraft” architectures.
+#### 1. Traditional Hydraulic System (Pink Subgraph)
+- **Engine or Electric Pump:** Drives hydraulic fluid into the system.
+- **Reservoir:** Stores the fluid, ensuring adequate supply.
+- **Filter:** Removes contaminants before fluid enters the main lines.
+- **Pressure Lines:** Transport pressurized fluid to valves and actuators.
+- **Valves:** Direct fluid flow and control actuator movement.
+- **Actuators:** Convert fluid pressure into mechanical force (e.g., for flight control surfaces, landing gear).
+- **Return Lines:** Carry fluid back to the reservoir for recirculation.
 
+#### 2. Electrohydrostatic Actuator System (Blue Subgraph)
+- **Electric Motor:** Provides power locally rather than relying on long hydraulic lines.
+- **Mini Hydraulic Pump:** Pressurizes fluid on-demand within a localized loop.
+- **Local Reservoir:** Maintains fluid supply solely for the EHA.
+- **Actuator Cylinder:** Converts the pressurized fluid’s energy into mechanical motion—similar to a traditional actuator, but self-contained.
+
+By comparing the two subgraphs, you can see how **EHAs** reduce extensive hydraulic plumbing by integrating pumps, reservoirs, and actuators into localized modules. This simplifies maintenance and can improve reliability for certain aircraft applications, particularly in “more electric aircraft” architectures.
 
 ### **27.240 Autonomous Flight Control Algorithms**
 
