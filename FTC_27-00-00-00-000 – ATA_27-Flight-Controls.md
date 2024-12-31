@@ -2413,63 +2413,71 @@ FBW technology has significantly advanced the design and functionality of Human-
 
 ```mermaid
 graph TD
-    subgraph Pilot Input
+    subgraph PilotInput
         A[Control Stick/Yoke] --> B[Rudder Pedals]
-        A --> C[Sensors (LVDTs, RVDTs)]
+        A --> C[Sensors]
         B --> C
     end
 
-    subgraph Signal Processing
+    subgraph SignalProcessing
         C --> D[Signal Conditioning]
-        D --> E[Analog-to-Digital Conversion]
-        E --> F[Data Buses (ARINC 429, MIL-STD-1553, ARINC 664 (AFDX))]
+        D --> E[A to D Conversion]
+        E --> F[Data Buses]
     end
 
-    subgraph Flight Control Computers (FCCs)
+    subgraph FlightControlComputers
         F --> G[FCC 1]
         F --> H[FCC 2]
         F --> I[FCC 3]
-        G --> J[Control Law Computation]
+        G --> J[Control Laws]
         H --> J
         I --> J
         K[Aircraft Sensors] --> J
-        L[Adaptive Aerostructure Sensors] --> J
+        L[Adaptive Struct Sensors] --> J
         M[Solar Panel Data] --> J
-        J --> N[Redundancy Management]
+        J --> N[Redundancy Mgmt]
         J --> O[System Monitoring]
     end
 
     subgraph Actuation
         N --> P[Actuator Commands]
-        P --> Q[Electro-Hydraulic Actuators (EHAs)]
-        P --> R[Electromechanical Actuators (EMAs)]
+        P --> Q[Electro-Hydraulic]
+        P --> R[Electromechanical]
         Q --> S[Control Surfaces]
         R --> S
-        P --> T[Adaptive Surface Actuators]
-        T --> U[Adaptive Aerostructures]
+        P --> T[Adaptive Surface]
+        T --> U[Adaptive Structs]
     end
 
-    subgraph Cross-Channel Data Links (CCDLs)
+    subgraph CrossChannelDataLinks
         G <--> H
         H <--> I
         G <--> I
     end
 
-    subgraph Feedback Loop
+    subgraph FeedbackLoop
         S --> V[Position Sensors]
-        U --> W[Adaptive Surface Sensors]
+        U --> W[Adaptive Snsrs]
         V --> J
         W --> J
     end
 
-    subgraph GAIA AIR AMPEL360 Enhancements
+    subgraph GAIAEnhancements
         J --> X[AI Algorithms]
-        X --> Y[Predictive Yaw Management]
-        X --> Z[Adaptive Control Laws]
+        X --> Y[Pred Yaw Mgmt]
+        X --> Z[Adapt Control]
         Y --> P
         Z --> P
     end
 
+    %% Styles for better readability
+    style PilotInput fill:#eef,stroke:#000,stroke-width:1px
+    style SignalProcessing fill:#eef,stroke:#000,stroke-width:1px
+    style FlightControlComputers fill:#eef,stroke:#000,stroke-width:1px
+    style Actuation fill:#eef,stroke:#000,stroke-width:1px
+    style CrossChannelDataLinks fill:#eef,stroke:#000,stroke-width:1px
+    style FeedbackLoop fill:#eef,stroke:#000,stroke-width:1px
+    style GAIAEnhancements fill:#ffccff,stroke:#000,stroke-width:1px
     style A fill:#ccffcc,stroke:#00aa00,stroke-width:2px
     style B fill:#ccffcc,stroke:#00aa00,stroke-width:2px
     style C fill:#cceeff,stroke:#00aaff,stroke-width:2px
@@ -2505,10 +2513,10 @@ This diagram illustrates the comprehensive architecture of a Fly-by-Wire system,
 
 ```mermaid
 graph TD
-    subgraph Core FBW System
+    subgraph CoreFBWSystem
         A[Pilot Controls] --> B[Input Sensors]
         B --> C[Signal Conditioning]
-        C --> D[Flight Control Computers (FCCs)]
+        C --> D[Flight Control Computers]
         D --> E[Control Laws]
         E --> F[Actuators]
         F --> G[Control Surfaces]
@@ -2516,7 +2524,15 @@ graph TD
         H --> D
     end
 
-    style Core FBW System fill:#e0f7fa,stroke:#006064,stroke-width:2px
+    style CoreFBWSystem fill:#e0f7fa,stroke:#006064,stroke-width:2px
+    style A fill:#ccffcc,stroke:#00aa00,stroke-width:1px
+    style B fill:#cceeff,stroke:#00aaff,stroke-width:1px
+    style C fill:#cceeff,stroke:#00aaff,stroke-width:1px
+    style D fill:#cceeff,stroke:#00aaff,stroke-width:1px
+    style E fill:#ccffff,stroke:#0000ff,stroke-width:1px
+    style F fill:#ffcccc,stroke:#ff0000,stroke-width:1px
+    style G fill:#f0f0f0,stroke:#000000,stroke-width:1px
+    style H fill:#ccffff,stroke:#0000ff,stroke-width:1px
 ```
 
 **Description:**  
