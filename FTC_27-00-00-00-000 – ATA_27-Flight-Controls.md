@@ -1389,14 +1389,14 @@ Some aircraft employ a hybrid approach, blending mechanical and electronic eleme
 graph TD
     subgraph Mechanical Elevator System
         A[Pilot Control Column] --> B[Cables and Pulleys]
-        B --> C[Rods/Bellcranks]
+        B --> C[Rods-Bellcranks]
         C --> D[Elevator Control Surface]
     end
     subgraph FBW Elevator System
-        E[Pilot Control Column] --> F[Sensors (LVDT RVDT)]
-        F --> G[Flight Control Computers (FCCs)]
+        E[Pilot Control Column] --> F[Sensors LVDT RVDT]
+        F --> G[Flight Control Computers FCCs]
         G --> H[Control Laws]
-        H --> I[Actuators (EHAs EMAs)]
+        H --> I[Actuators EHAs EMAs]
         I --> J[Elevator Control Surface]
         K[Aircraft Sensors] --> G
         L[Adaptive Surface Data] --> G
