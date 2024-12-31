@@ -182,7 +182,7 @@ From the Wright brothers' simple yet effective mechanical controls to the advanc
 
 Below is the **comprehensive Scope and Objectives section** for **ATA 27 – Flight Controls**, now fully integrated with considerations specific to the **GAIA AIR AMPEL360**. At the end, you'll find an **optional diagram** that further illustrates how AMPEL360’s adaptive aerostructures, solar power integration, and AI-based control fit into the overarching goals of ATA 27.
 
-```markdown
+
 ## **27.20 Scope and Objectives**
 
 This section defines the scope of **ATA Chapter 27 – Flight Controls**, outlining the systems, components, and functions encompassed within this chapter. It also establishes the primary objectives that guide the design, implementation, maintenance, and operation of flight control systems, with particular attention to the innovations introduced by the **GAIA AIR AMPEL360**.
@@ -300,7 +300,6 @@ The primary objectives governing ATA 27 — and especially the **AMPEL360**’s 
     - **Minimized Workload**: Managing distributed surfaces without overwhelming the crew.  
     - **Comprehensive Training**: Educating pilots/maintenance staff on advanced features.
 
----
 
 ### **27.20.3 Diagram**
 
