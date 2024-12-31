@@ -3943,6 +3943,172 @@ flowchart TB
 
 By comparing the two subgraphs, you can see how **EHAs** reduce extensive hydraulic plumbing by integrating pumps, reservoirs, and actuators into localized modules. This simplifies maintenance and can improve reliability for certain aircraft applications, particularly in “more electric aircraft” architectures.
 
+## **27.60.2 – Electro-Hydrostatic Actuators (EHAs)**
+
+Electro-Hydrostatic Actuators (EHAs) represent a significant advancement in aircraft actuation technology, combining elements of traditional hydraulic systems with the benefits of electric power. By eliminating the need for extensive central hydraulic lines, EHAs allow localized power generation, thereby reducing weight and improving efficiency. They are particularly well-suited for “More Electric Aircraft” architectures and can play a critical role in advanced designs such as the **GAIA AIR AMPEL360**.
+
+---
+
+### **A. Principle of Operation**
+
+1. **Electric Power Input**  
+   The EHA receives electrical power from the aircraft’s electrical system (AC or DC bus).
+
+2. **Local Hydraulic Power Generation**  
+   An electric motor drives a small hydraulic pump, creating hydraulic pressure in a localized, closed-circuit system.
+
+3. **Actuator Movement**  
+   The pressurized fluid drives a hydraulic actuator (linear or rotary), producing mechanical force or movement for flight control surfaces or other systems.
+
+4. **Closed-Loop Control**  
+   Sensors (e.g., position, pressure) and an electronic control unit (ECU) provide constant feedback, adjusting the motor’s operation to ensure precise actuator movement.
+
+```mermaid
+flowchart TD
+    A("Electric Power Input") --> B("Local Hydraulic Power Generation") --> C("Actuator Movement") --> D("Closed-Loop Control")
+
+    style A fill:#ffffff, color:#000000, stroke:#000000, stroke-width:1px
+    style B fill:#ffffff, color:#000000, stroke:#000000, stroke-width:1px
+    style C fill:#ffffff, color:#000000, stroke:#000000, stroke-width:1px
+    style D fill:#ffffff, color:#000000, stroke:#000000, stroke-width:1px
+```
+### Figure: Simplified flow (in black text) illustrating EHA operation.
+
+### **B. Key Components**
+
+1. **Electric Motor**
+   - Converts electrical energy into mechanical power to drive the pump.
+   - Often a brushless DC (BLDC) motor for high efficiency and controllability.
+
+2. **Hydraulic Pump**
+   - Generates local hydraulic pressure.
+   - Common types include gear pumps or axial piston pumps sized for the EHA’s required operating range.
+
+3. **Local Hydraulic Reservoir**
+   - Contains sufficient hydraulic fluid for the localized circuit.
+   - Compensates for fluid expansion and contraction under varying temperatures.
+
+4. **Actuator (Linear or Rotary)**
+   - Converts hydraulic pressure into mechanical force or motion.
+   - **Linear Actuator:** Extends and retracts a rod for straight-line movement.
+   - **Rotary Actuator:** Produces rotational movement using a vane or gear mechanism.
+   - Integrated sensors (e.g., LVDTs, encoders) provide position feedback.
+
+5. **Electronic Control Unit (ECU)**
+   - Processes sensor data and regulates motor speed/direction.
+   - Interfaces with the aircraft’s flight control system or other avionics.
+
+6. **Accumulator (Optional)**
+   - Damps pressure fluctuations and can provide a limited emergency power source.
+
+### **C. Advantages of EHAs**
+
+- **Weight Reduction**
+  Eliminates extensive hydraulic lines and large central reservoirs/pumps, reducing overall system mass.
+
+- **Improved Efficiency**
+  Generates hydraulic power only when needed, minimizing energy losses compared to constant-flow hydraulic systems.
+
+- **Enhanced Reliability and Fault Tolerance**
+  Each EHA operates autonomously; a failure in one unit typically does not compromise the entire hydraulic network.
+  - In critical systems like flight controls, multiple EHAs can be used on a single control surface to provide redundancy and ensure continued operation even if one unit fails.
+
+- **Modularity and Simplified Maintenance**
+  Self-contained design simplifies installation, inspection, and replacement of each actuator assembly.
+
+- **Synergy with “More Electric Aircraft”**
+  Aligns with the industry trend toward increased electrical power use, reducing reliance on large hydraulic systems and moving toward a more electric architecture.
+  - In “More Electric Aircraft,” many traditionally hydraulic or pneumatic systems are replaced by electrically powered alternatives, improving overall efficiency and control.
+
+### **D. Disadvantages and Challenges**
+
+- **Heat Generation**
+  Compact integration can lead to thermal buildup, requiring robust cooling strategies (e.g., heat exchangers, advanced cooling channels).
+
+- **Cost and Complexity**
+  EHAs can have higher initial costs and more complex designs than traditional hydraulic actuators.
+
+- **Scalability**
+  Meeting very high force demands may require carefully scaling or combining EHAs with other actuation methods. Currently, EHAs are more readily scaled for smaller or moderate-force applications.
+
+- **Software and Certification**
+  Increased reliance on digital controls necessitates rigorous testing (e.g., RTCA DO-178C for software) and careful regulatory approval.
+
+### **E. Typical Applications**
+
+1. **Primary Flight Controls**
+   - Ailerons, elevators, rudders, and spoilers can benefit from localized hydraulic power, reducing weight and improving reliability.
+
+2. **Secondary Flight Controls**
+   - Flaps, slats, and speed brakes can also employ EHAs, further eliminating the need for extensive hydraulic plumbing.
+
+3. **Landing Gear Systems**
+   - Retraction/extension and landing gear door actuation can utilize EHAs, though very high load requirements may still favor centralized hydraulics in some designs.
+
+4. **Utility and Cargo Systems**
+   - Cargo doors, lifts, and other ancillary systems can be operated by independent EHAs, simplifying their power and control needs.
+
+### **F. Thermal Management**
+
+- **Heat Exchangers**
+  Passive or active coolers (e.g., fans, liquid loops) dissipate excess heat generated by the motor and pump.
+
+- **Advanced Cooling Channels**
+  Internal passages and optimized fluid flow reduce thermal hotspots.
+
+- **Material Selection**
+  High thermal conductivity alloys (e.g., aluminum) can improve heat dissipation.
+
+- **Duty Cycle Considerations**
+  Sizing the EHA with adequate thermal margins is essential to prevent overheating under the expected flight profile.
+
+### **G. EHAs in the GAIA AIR AMPEL360**
+
+1. **Adaptive Aerostructures**
+   - The AMPEL360’s morphing wing surfaces and intelligent control panels can be actuated via EHAs, providing precise control and localized power.
+
+2. **Distributed Power**
+   - Self-contained EHAs eliminate the need for large hydraulic lines, aligning with the AMPEL360’s goal of modular efficiency.
+
+3. **Fault Tolerance**
+   - Independent EHAs enhance safety. If one fails, others remain fully operational, reducing the likelihood of a total system failure.
+
+4. **Weight and Maintenance Savings**
+   - Reduced hydraulic infrastructure translates to lower weight and simpler upkeep.
+
+### **H. Future Trends**
+
+1. **All-Electric Aircraft**
+   - EHAs fit into the drive towards “More Electric Aircraft,” potentially replacing central hydraulics in large commercial or military platforms.
+
+2. **Smart Diagnostics and AI**
+   - Embedded sensors, AI-driven analytics, and predictive maintenance algorithms can further optimize EHA performance and reliability.
+
+3. **Advanced Materials and 3D Printing**
+   - Lightweight composites, additive manufacturing, and new alloys can reduce EHA mass while enhancing structural integrity.
+
+4. **Hybrid Architectures**
+   - EHAs may be complemented by traditional hydraulic or electromechanical actuators (EMAs) for high-load systems, combining benefits from each technology.
+
+### **I. Conclusion**
+
+**Electro-Hydrostatic Actuators (EHAs)** mark a pivotal shift in aircraft actuation strategy, offering localized hydraulic power generation, reduced weight, and improved efficiency compared to traditional centralized hydraulic setups. Their self-contained, modular nature aligns especially well with the **GAIA AIR AMPEL360**, where each section of the aircraft can house its own actuator unit—improving reliability and fault tolerance.
+
+#### **Advantages**
+- **Localized Hydraulic Power** – On-demand actuation reduces energy losses.
+- **Reduced Weight** – Eliminating central hydraulics can lower overall mass.
+- **Enhanced Reliability & Redundancy** – Independent EHAs improve fault tolerance.
+- **Synergy with More Electric Aircraft** – Perfect for future architectures focusing on electric power.
+
+#### **Limitations**
+- **Thermal Management** – Compact design demands careful heat dissipation.
+- **Cost & Complexity** – Higher initial expense and more intricate design.
+- **Scalability** – Larger surfaces may require multiple EHAs or supplementary methods.
+- **Software & Certification** – Digital controls necessitate stringent testing (e.g., DO-178C).
+
+Although EHAs demand robust thermal management, higher upfront costs, and thorough certification, their benefits—in modernization, efficiency, and fault tolerance—make them a highly attractive solution for next-generation aircraft designs. As the aviation industry embraces more electric and distributed power systems, EHAs stand at the forefront of a more efficient and resilient future for aircraft actuation.
+
+
 ### **27.240 Autonomous Flight Control Algorithms**
 
 *(Exploring the increasing role of autonomy in flight control decisions.)*
