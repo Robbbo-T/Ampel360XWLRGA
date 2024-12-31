@@ -820,20 +820,21 @@ graph TD
     I --> K
     I --> L
 
-    style A fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style B fill:#cceeff,stroke:#00aaff,stroke-width:2px
-    style C fill:#ffffcc,stroke:#ffcc00,stroke-width:2px
-    style D fill:#fffacd,stroke:#daa520,stroke-width:2px
-    style E fill:#fffacd,stroke:#daa520,stroke-width:2px
-    style F fill:#fffacd,stroke:#daa520,stroke-width:2px
-    style G fill:#fffacd,stroke:#daa520,stroke-width:2px
-    style H fill:#fffacd,stroke:#daa520,stroke-width:2px
-    style J fill:#ccffff,stroke:#0000ff,stroke-width:2px
-    style K fill:#ccffff,stroke:#0000ff,stroke-width:2px
-    style L fill:#ccffff,stroke:#0000ff,stroke-width:2px
+    style A fill:#ccffcc,stroke:#00aa00,stroke-width:2px,color:#000
+    style B fill:#cceeff,stroke:#00aaff,stroke-width:2px,color:#000
+    style C fill:#ffffcc,stroke:#ffcc00,stroke-width:2px,color:#000
+    style D fill:#fffacd,stroke:#daa520,stroke-width:2px,color:#000
+    style E fill:#fffacd,stroke:#daa520,stroke-width:2px,color:#000
+    style F fill:#fffacd,stroke:#daa520,stroke-width:2px,color:#000
+    style G fill:#fffacd,stroke:#daa520,stroke-width:2px,color:#000
+    style H fill:#fffacd,stroke:#daa520,stroke-width:2px,color:#000
+    style I fill:#cceeff,stroke:#00aaff,stroke-width:2px,color:#000
+    style J fill:#ccffff,stroke:#0000ff,stroke-width:2px,color:#000
+    style K fill:#ccffff,stroke:#0000ff,stroke-width:2px,color:#000
+    style L fill:#ccffff,stroke:#0000ff,stroke-width:2px,color:#000
 ```
 
-*Mermaid diagram showing how ICAO Annex 8 shapes flight control design principles and influences the GAIA AIR AMPEL360’s innovations.*
+*Mermaid diagram showing how ICAO Annex 8 shapes flight control design principles and influences the GAIA AIR AMPEL360’s innovations. All text is now styled in black.*
 
 ---
 
