@@ -354,20 +354,36 @@ To describe the algorithms and decision-making processes that enable autonomous 
    - Redundancy and fallback strategies if autonomous algorithms detect anomalies or fail to converge on a safe decision.
 4. **Integration with Adaptive Aerostructures:**  
    - Specific considerations for the **AMPEL360**, ensuring the distributed control surfaces align with autonomous flight goals.
+Your Mermaid syntax needs slight adjustments to ensure compatibility with the parser. Below is the corrected and validated diagram:
 
+### **Corrected Mermaid Syntax**
 ```mermaid
 flowchart TD
-    A[Sensor Input (Weather, Traffic, etc.)] --> B(Autonomy Engine)
-    B --> C{Decision Node: Change Flight Path?}
-    C -- Yes --> D[Execute Autonomous Maneuvers]
-    C -- No --> E[Maintain Current Path]
-    D --> F(Check Pilot Override?)
-    F -- Yes --> G[Pilot in Command]
-    F -- No --> H[Fully Autonomous Action]
+    A["Sensor Input (Weather, Traffic, etc.)"] --> B["Autonomy Engine"]
+    B --> C{"Decision Node: Change Flight Path?"}
+    C -- "Yes" --> D["Execute Autonomous Maneuvers"]
+    C -- "No" --> E["Maintain Current Path"]
+    D --> F{"Check Pilot Override?"}
+    F -- "Yes" --> G["Pilot in Command"]
+    F -- "No" --> H["Fully Autonomous Action"]
     H --> E
 ```
 
-*Mermaid diagram illustrating how sensor inputs feed into an autonomy engine, resulting in possible changes to flight path.*
+### **Rendered Diagram**
+![Autonomy Engine Workflow](https://supabase.mermaidchart.com/storage/v1/object/public/chatgpt-diagrams/2024-12-31/corrected-autonomy-engine-diagram.png)
+
+### **Diagram Description**
+This flowchart depicts the workflow of an **Autonomy Engine** for an aircraft:
+1. **Sensor Inputs:** Weather conditions, traffic data, and other inputs feed into the autonomy engine.
+2. **Decision Node:** The engine determines whether to change the flight path.
+3. **Execution:** 
+   - If a change is required, autonomous maneuvers are executed.
+   - If no change is needed, the current flight path is maintained.
+4. **Pilot Override Check:** Post-maneuver, the system verifies if the pilot wishes to override the autonomy.
+   - If the pilot overrides, they resume command.
+   - If not, the system proceeds with fully autonomous actions.
+
+This architecture ensures a balance between pilot authority and autonomous decision-making, enhancing safety and efficiency.
 
 ---
 
