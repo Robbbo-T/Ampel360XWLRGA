@@ -472,18 +472,7 @@ To explore how pilots and automated systems share control in advanced aircraft l
    - Strategies to prevent over-reliance on or mistrust of automation.
    - Display design ensuring pilot awareness of automation decisions.
 
-```mermaid
-flowchart LR
-    P[Pilot Input] -->|Commands| FCS[Flight Control Computers]
-    FCS --> AI[Autonomy/AI Logic]
-    AI -->|Optimize| FCS
-    FCS --> SURF[Adaptive Surfaces/Controls]
-    SURF --> AC[Aircraft Motion/Response]
-    AC --> FD[Flight Data (Sensors)]
-    FD --> AI
-    AI -->|Suggestions/Decisions| PD[Pilot Display]
-    PD --> P
-```
+![image](https://github.com/user-attachments/assets/1f5c48b4-f495-446e-a0c0-49e3df407127)
 
 *Mermaid diagram illustrating pilot-automation synergy in controlling adaptive surfaces and responding to flight data.*
 
