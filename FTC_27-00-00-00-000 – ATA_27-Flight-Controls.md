@@ -3052,21 +3052,24 @@ Spoilers are secondary flight control surfaces mounted on the upper surface of t
 #### **F. Diagrams**
 
 ```mermaid
-graph TD
+flowchart TD
+    %% Subgraph to represent the wing system
     subgraph Wing
-        A[Spoiler Panel (Retracted)]
-        A --> B[Spoiler Panel (Deployed)]
-        C[Airflow over Wing]
-        C -- Undisturbed --> D[Smooth Airflow]
-        C -- Disrupted by B --> E[Turbulent Airflow]
+        A["Spoiler Panel (Retracted)"] --> B["Spoiler Panel (Deployed)"]
+        C["Airflow over Wing"] -- Undisturbed --> D["Smooth Airflow"]
+        C -- Disrupted by Spoiler --> E["Turbulent Airflow"]
     end
-    B --> F[Increased Drag]
-    B --> G[Reduced Lift]
+    
+    %% Effects of deploying the spoiler
+    B --> F["Increased Drag"]
+    B --> G["Reduced Lift"]
+
+    %% Styling elements for visual differentiation
     style A fill:#ccffcc,stroke:#00aa00,stroke-width:2px
     style B fill:#ffcccc,stroke:#ff0000,stroke-width:2px
-    style C stroke:#0000ff,stroke-width:2px,stroke-dasharray:5 5
-    style D stroke:#0000ff,stroke-width:2px
-    style E stroke:#0000ff,stroke-width:2px,stroke-dasharray:2 2
+    style C stroke:#0000ff,stroke-width:2px,stroke-dasharray:5 5, font-style:italic
+    style D fill:#e0e0e0,stroke:#0000ff,stroke-width:2px, font-style:italic
+    style E fill:#e0e0e0,stroke:#0000ff,stroke-width:2px,stroke-dasharray:2 2, font-style:italic
     style F fill:#cce0ff,stroke:#0066cc,stroke-width:2px
     style G fill:#cce0ff,stroke:#0066cc,stroke-width:2px
 ```
@@ -3075,7 +3078,9 @@ graph TD
 
 ```mermaid
 graph TD
-    subgraph Landing Sequence
+
+    %% Subgraph highlighting the sequential landing process
+    subgraph Landing_Sequence
         A[Aircraft on Approach] --> B{Touchdown}
         B --> C[Automatic Ground Spoiler Deployment]
         C --> D[Weight-on-Wheels Sensors Activated]
@@ -3085,13 +3090,16 @@ graph TD
         F --> G
         G --> H[Aircraft Stops]
     end
-    style A fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style B fill:#cce0ff,stroke:#0066cc,stroke-width:2px
+
+    %% Node styles for visual clarity and emphasis
+    style A fill:#ccffcc,stroke:#00aa00,stroke-width:2px, font-weight:bold
+    style B fill:#cce0ff,stroke:#0066cc,stroke-width:2px 
     style C fill:#ffcccc,stroke:#ff0000,stroke-width:2px
     style D fill:#cce0ff,stroke:#0066cc,stroke-width:2px
-    style E fill:#ccffcc,stroke:#00aa00,stroke-width:2px
-    style F fill:#ccffcc,stroke:#00aa00,stroke-width:2px
+    style E fill:#ccffcc,stroke:#00aa00,stroke-width:2px, font-weight:bold
+    style F fill:#ccffcc,stroke:#00aa00,stroke-width:2px, font-weight:bold
     style G fill:#cce0ff,stroke:#0066cc,stroke-width:2px
+    style H fill:#e0e0e0,stroke:#333,stroke-width:2px, font-weight:bold
 ```
 
 *Mermaid diagram illustrating the role of ground spoilers in the landing sequence.*
