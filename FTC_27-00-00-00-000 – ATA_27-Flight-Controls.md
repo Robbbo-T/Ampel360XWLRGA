@@ -1232,13 +1232,13 @@ Some aircraft combine mechanical and FBW elements, such as:
 ```mermaid
 graph TD
     subgraph Mechanical_Aileron_System
-        A[Pilot Stick/Yoke] --> B[Cables & Pulleys]
-        B --> C[Bellcranks/Linkages]
+        A[Pilot Stick Yoke] --> B[Cables and Pulleys]
+        B --> C[Bellcranks Linkages]
         C --> D[Aileron Control Surface]
     end
 
     subgraph FBW_Aileron_System
-        E[Pilot Stick/Yoke] --> F[Sensors (Position: LVDT or RVDT)]
+        E[Pilot Stick Yoke] --> F[Sensors LVDT and RVDT]
         F --> G[Flight Control Computers]
         G --> H[Control Laws]
         H --> I[Actuators]
