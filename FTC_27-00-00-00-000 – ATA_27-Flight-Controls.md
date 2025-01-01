@@ -4324,6 +4324,9 @@ graph TD
 
 ---
 
+![image](https://github.com/user-attachments/assets/6df17e8f-2918-4bc9-9202-99c2beec08b5)
+
+
 ## **Related Questions**
 
 1. **How do EMAs compare to traditional hydraulic actuators in terms of efficiency?**  
