@@ -4326,7 +4326,276 @@ graph TD
 
 ![image](https://github.com/user-attachments/assets/6df17e8f-2918-4bc9-9202-99c2beec08b5)
 
+# System: ATA Chapter 27 - Flight Controls
 
+## Subsystem: 71.60 - Actuation Systems
+This subsystem manages the actuation of flight control surfaces. It ensures precise movement and stability using advanced actuation technologies.
+
+## Component: 71.63 - Electromechanical Actuators (EMAs)
+Electromechanical Actuators provide efficient, reliable, and maintenance-friendly solutions for moving flight control surfaces. They replace hydraulic actuators with electric-driven mechanisms.
+
+---
+# System: ATA Chapter 27 – Flight Controls
+
+## Subsystem: 27.60 – Actuation Systems (AMPEL360 Specific)
+This subsystem manages the actuation of flight control surfaces on the GAIA AIR AMPEL360 aircraft, ensuring precise movement and stability. It leverages advanced Electromechanical Actuators (EMAs) for both primary and secondary flight control surfaces, improving overall efficiency, reducing weight, and simplifying maintenance compared to traditional hydraulic systems.
+
+---
+
+## Component: 27.63 – Electromechanical Actuators (EMAs)
+Electromechanical Actuators (EMAs) provide an efficient, reliable, and maintenance-friendly solution for moving flight control surfaces. They replace hydraulic actuators with electrically driven mechanisms, aligning with the AMPEL360’s “more-electric aircraft” architecture.
+
+---
+
+### 71-63-01-100: Electric Motor Assembly
+**Function**:  
+The core of the EMA, providing the rotational force necessary to drive the actuation mechanism. It consists of a high-performance Permanent Magnet Synchronous Motor (PMSM) and associated support components.
+
+#### 71-63-01-101: Electric Motor (PMSM)
+- **Detailed Description**  
+  A high-efficiency, brushless PMSM offering precise torque control and a compact design. It plays a pivotal role in the AMPEL360’s EMA system by contributing to the aircraft’s overall energy efficiency and advanced flight control capabilities.
+
+- **Key Parameters**  
+  | Parameter     | Value | Unit | Notes                                                       |
+  |:------------- |:----- |:---- |:----------------------------------------------------------- |
+  | Rated Power   | TBD   | kW   | Determined by application requirements                      |
+  | Voltage       | TBD   | VDC  | Nominal operating voltage                                   |
+  | Max Speed     | TBD   | RPM  | Maximum rotational speed                                    |
+  | Stall Torque  | TBD   | Nm   | Maximum torque at zero speed                                |
+  | Peak Torque   | TBD   | Nm   | Short-duration torque for maneuvers                        |
+  | Efficiency    | TBD   | %    | Typical efficiency at rated power                          |
+  | Torque Const. | TBD   | Nm/A | Relationship between current and torque                    |
+  | Weight        | TBD   | kg   | Weight of the motor assembly                               |
+
+- **Cooling**  
+  *(Example)*: “Air-cooled via integrated fan” or “Liquid-cooled through an external heat exchanger.”
+
+- **Redundancy**  
+  Dual, independent stator windings for critical redundancy, ensuring continued operation in case of a single winding failure.
+
+- **Control**  
+  Field-Oriented Control (FOC) for precise torque and speed management.
+
+#### 71-63-01-102: Motor Housing
+- **Description**  
+  Provides structural support and protection for the motor’s internal components. Constructed from a lightweight yet durable material, such as an aluminum alloy or composite.
+
+- **Function**  
+  Shields the motor from environmental factors (moisture, dust, debris, EMI). May also aid in heat dissipation.
+
+- **Mounting**  
+  Designed for secure and precise mounting within the EMA assembly, minimizing vibration and ensuring proper alignment.
+
+#### 71-63-01-103: Stator Winding
+- **Description**  
+  Precisely wound copper coils arranged around the stator core. When energized, they generate a rotating magnetic field that interacts with the rotor’s permanent magnets to produce torque.
+
+- **Insulation**  
+  Class H insulation for high thermal resistance, ensuring reliable operation at elevated temperatures.
+
+- **Connection**  
+  *(Example)*: “Star (Y) connection for optimal torque” or “Delta connection for higher speed capability.”
+
+#### 71-63-01-104: Rotor Assembly
+- **Description**  
+  The rotating component of the motor, featuring high-strength permanent magnets (e.g., NdFeB) arranged around a core.
+
+- **Magnets**  
+  *(Example)*: “High-energy Neodymium-Iron-Boron (NdFeB) magnets for maximum power density.”
+
+- **Balancing**  
+  Dynamically balanced to ensure smooth operation and minimize vibration.
+
+#### 71-63-01-105: Bearing Set
+- **Description**  
+  High-precision bearings that support the rotor shaft, enabling smooth, low-friction rotation.
+
+- **Type**  
+  *(Example)*: “Deep-groove ball bearings for radial and axial load capacity” or “Angular contact ball bearings for high-speed operation.”
+
+- **Lubrication**  
+  Grease-packed for reduced maintenance and extended lifespan.
+
+- **Sealing**  
+  *(Example)*: “Double-sealed to prevent contaminant ingress and lubricant leakage.”
+
+---
+
+### 71-63-01-200: Electronic Control Unit (ECU)
+**Function**:  
+The “brain” of the EMA, responsible for controlling motor speed, torque, and position based on commands from the flight control computer and sensor feedback.
+
+#### 71-63-01-201: Microprocessor
+- **Description**  
+  A high-performance, real-time microprocessor that executes sophisticated control algorithms for precise actuator performance.
+
+- **Type**  
+  *(Example)*: “ARM Cortex-M7 based microcontroller” (or specify exact model).
+
+- **Clock Speed**  
+  *(Example)*: “300 MHz.”
+
+- **Memory**  
+  *(Example)*: “2 MB Flash, 512 KB RAM.”
+
+#### 71-63-01-202: Power Supply Module
+- **Description**  
+  Converts the aircraft’s main power supply (e.g., 270 VDC or 28 VDC) to the voltages and currents required by the motor and ECU.
+
+- **Input Voltage**  
+  *(Example)*: “270 VDC nominal.”
+
+- **Output Voltages**  
+  *(Example)*: “+15 VDC for analog, +5 VDC for digital logic, 48 VDC for motor drive.”
+
+- **Protection Features**  
+  Overvoltage, overcurrent, short-circuit, and thermal protection ensure system safety and reliability.
+
+#### 71-63-01-203: Communication Interface
+- **Description**  
+  Enables communication between the ECU and the aircraft’s flight control computer (FCC) and other systems.
+
+- **Protocol**  
+  *(Example)*: “Dual-redundant CAN bus” or “ARINC 429.”
+
+- **Data Rate**  
+  *(Example)*: “1 Mbps CAN bus.”
+
+#### 71-63-01-204: Input/Output Circuitry
+- **Description**  
+  Interfaces the ECU with sensors (resolver, encoder, load cell) and the motor windings.
+
+- **Analog Inputs**  
+  *(Example)*: Multiple 12-bit ADC channels for high-resolution sensor readings.
+
+- **Digital I/O**  
+  Multiple lines for discrete signals and control.
+
+- **Signal Conditioning**  
+  Includes filters and amplifiers for sensor inputs to ensure signal integrity.
+
+---
+
+### 71-63-01-300: Transmission Mechanism
+**Function**:  
+Converts the motor’s high-speed, low-torque output into the low-speed, high-torque motion needed for flight control surfaces. Often involves transforming rotary motion into linear motion.
+
+#### 71-63-01-310: Gearbox Assembly
+- **Description**  
+  A multi-stage gear reduction system for high efficiency, minimal backlash, and reliable torque transmission.
+
+##### 71-63-01-311: Planetary Gear Set
+- **Description**  
+  A compact gear arrangement with a sun gear, planet gears, ring gear, and carrier. Provides high torque density and smooth operation.
+
+- **Ratio**  
+  *(Example)*: “20:1.”
+
+- **Material**  
+  *(Example)*: “High-strength alloy steel.”
+
+- **Lubrication**  
+  *(Example)*: “Sealed for life with high-performance grease.”
+
+#### 71-63-01-320: Ball Screw Assembly
+- **Description**  
+  Converts rotary motion into linear motion with high precision and minimal friction.
+
+##### 71-63-01-321: Ball Screw Shaft
+- **Description**  
+  A precision-ground shaft with helical grooves to accommodate recirculating ball bearings.
+
+- **Material**  
+  *(Example)*: “Hardened and ground alloy steel.”
+
+- **Diameter and Lead**  
+  *(Example)*: “25 mm diameter, 5 mm lead.”
+
+- **Accuracy Grade**  
+  *(Example)*: “ISO C5.”
+
+#### 71-63-01-330: Planetary Roller Screw Assembly
+- **Description**  
+  An alternative to the ball screw, offering higher load capacity, improved stiffness, and longer service life in demanding applications.
+
+---
+
+### 71-63-01-400: Sensors
+**Function**:  
+Provide feedback on position, speed, and load to the ECU for closed-loop control and system performance monitoring.
+
+#### 71-63-01-410: Resolver
+- **Description**  
+  An electromagnetic sensor providing absolute angular position of the motor shaft, known for robustness in harsh environments.
+
+- **Type**  
+  *(Example)*: “Single-speed” or “Multi-speed” resolver.
+
+- **Accuracy**  
+  *(Example)*: “±10 arc-minutes.”
+
+#### 71-63-01-420: Encoder
+- **Description**  
+  An optical or magnetic sensor offering digital position feedback, typically used for high-resolution control.
+
+- **Type**  
+  *(Example)*: “Incremental optical encoder” or “Absolute magnetic encoder.”
+
+- **Resolution**  
+  *(Example)*: “10,000 pulses per revolution.”
+
+#### 71-63-01-430: LVDT/RVDT
+- **Description**  
+  A Linear (LVDT) or Rotary (RVDT) Variable Differential Transformer for precise measurement of linear or rotary displacement.
+
+- **Range**  
+  *(Example)*: “±25 mm” for LVDT, “0–180°” for RVDT.
+
+- **Accuracy**  
+  *(Example)*: “0.1% of full scale.”
+
+#### 71-63-01-440: Load Cell
+- **Description**  
+  Measures the force applied to the actuator, crucial for load limiting, jam detection, and health monitoring.
+
+- **Type**  
+  *(Example)*: “Strain gauge-based load cell.”
+
+- **Capacity**  
+  *(Example)*: “10 kN.”
+
+- **Accuracy**  
+  *(Example)*: “0.5% of full scale.”
+
+---
+
+## Further Considerations
+- **Redundancy**  
+  Critical flight control systems may use dual or triple redundant components (motors, sensors, ECUs) for fail-safe operation.
+
+- **Software Compliance**  
+  ECU software developed per RTCA DO-178C (or equivalent) to ensure reliability and safety.
+
+- **Testing**  
+  Rigorous validation (environmental testing for temperature, vibration, humidity; endurance testing; FMEA) to ensure the EMA meets all performance and safety requirements.
+
+---
+
+## Suggestions for Improvement
+1. **Tables**  
+   Use tables (like the PMSM table above) to organize key parameters throughout the document.
+2. **TBD Values**  
+   Fill in the “TBD” placeholders as design requirements and test data become available.
+3. **Diagrams**  
+   Include assembly diagrams (motor, gearbox, sensor placements) for visual clarity.
+4. **Material Specifications**  
+   Provide specific details (e.g., aluminum alloy 7075-T6, steel grade 4340).
+5. **Performance Curves**  
+   Include torque-speed and efficiency curves for the motor and overall EMA performance (e.g., force-speed curves).
+
+This document serves as a living reference for the AMPEL360 EMA system design. It should be updated continually as the project evolves and new data emerges.
+
+---
 ## **Related Questions**
 
 1. **How do EMAs compare to traditional hydraulic actuators in terms of efficiency?**  
