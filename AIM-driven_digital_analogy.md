@@ -1,12 +1,12 @@
-guía detallada para **implementar** y **expandir la funcionalidad** del sistema interactivo basado en **embeddings semánticos**, **clustering jerárquico** y **visualización interactiva**. Esta guía incluirá ejemplos de código, sugerencias de herramientas y mejores prácticas para asegurar una implementación exitosa.
+A continuación se presenta **una guía unificada** que explica, en un **solo bloque de contenido**, cómo **implementar** y **expandir** la funcionalidad de un sistema interactivo basado en **embeddings semánticos**, **clustering jerárquico** y **visualización dinámica**, integrando el índice ATA (por ejemplo, el documento **FTC_53-00-00-000_ATA-53-AXLR-M01**). Esta guía detalla los pasos clave: desde la organización y configuración del proyecto, pasando por la creación de clases y la integración con una base de datos, hasta la generación de un **dashboard** interactivo para la navegación y el análisis. Finalmente, también se presentan recomendaciones para el despliegue, la escalabilidad y un ejemplo de un **XML Procedural Data Module (PDM)** de estilo S1000D.
 
 ---
 
-## **1. Implementación del Sistema Interactivo**
+# Guía Detallada de Implementación y Expansión
 
-### **1.1. Estructura del Proyecto**
+## 1. Estructura General del Proyecto
 
-Organizar el proyecto de manera modular facilitará el desarrollo, mantenimiento y escalabilidad. A continuación, se presenta una estructura de directorios recomendada:
+La primera fase consiste en **organizar** el proyecto con una estructura modular, de forma que sea **escalable** y **mantenible**:
 
 ```
 ECO-FTC-MTL/
@@ -18,7 +18,8 @@ ECO-FTC-MTL/
 │   │   └── dossier_card.py
 │   ├── processing/
 │   │   ├── embeddings.py
-│   │   └── clustering.py
+│   │   ├── clustering.py
+│   │   └── database.py
 │   ├── visualization/
 │   │   └── dashboard.py
 │   └── app.py
@@ -30,20 +31,29 @@ ECO-FTC-MTL/
 └── README.md
 ```
 
-### **1.2. Configuración del Entorno**
+1. **data/**: Contiene archivos de datos (por ej. JSON) y ficheros con embeddings.  
+2. **src/models/**: Define las clases o entidades principales (p. ej., `DossierCard`).  
+3. **src/processing/**: Scripts para generación de embeddings, clustering, manejo de la BD, etc.  
+4. **src/visualization/**: Código para el **dashboard** (con Dash/Plotly o similar).  
+5. **tests/**: Pruebas unitarias e integración.  
+6. **requirements.txt**: Lista de dependencias del proyecto.  
+7. **README.md**: Explica la instalación y uso básico del sistema.
 
-1. **Crear un entorno virtual:**
+---
 
+## 2. Configuración del Entorno
+
+### 2.1. Entorno Virtual y Dependencias
+
+1. **Crear un entorno virtual (opcional)**  
    ```bash
    python3 -m venv eco-ftcm-env
    source eco-ftcm-env/bin/activate
    ```
 
-2. **Instalar dependencias:**
+2. **Crear el archivo `requirements.txt`** con dependencias recomendadas:
 
-   Crea un archivo `requirements.txt` con el siguiente contenido:
-
-   ```plaintext
+   ```
    sentence-transformers
    scikit-learn
    pandas
@@ -55,19 +65,19 @@ ECO-FTC-MTL/
    pymongo
    ```
 
-   Luego, instala las dependencias:
-
+3. **Instalar dependencias**  
    ```bash
    pip install -r requirements.txt
    ```
 
-### **1.3. Definición del Modelo `DossierCard`**
+---
 
-Asegúrate de tener la clase `DossierCard` definida correctamente en `src/models/dossier_card.py`. Aquí tienes una versión mejorada con **serialización** y **validaciones**:
+## 3. Clase Principal: `DossierCard`
+
+Se recomienda crear una clase `DossierCard` para representar cada bloque de información del índice ATA (p.ej., secciones 53-00-00, 53-10-00, etc.). Ejemplo:
 
 ```python
 # src/models/dossier_card.py
-
 from datetime import datetime
 from typing import List, Dict, Any
 
@@ -119,21 +129,11 @@ class DossierCard:
         self.timestamp = timestamp if timestamp else datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     def calculate_total_value(self) -> float:
-        """
-        Calculate the overall value of the codified block based on value_metrics.
-
-        Returns:
-            float: The aggregated value of the block.
-        """
+        """Calculate the overall value of the block based on value_metrics."""
         return sum(self.value_metrics)
 
     def generate_summary(self) -> str:
-        """
-        Generate a detailed summary report for the dossier card.
-
-        Returns:
-            str: A formatted summary of the codified block's attributes.
-        """
+        """Generate a detailed summary report for the dossier card."""
         summary = (
             f"Dossier Card: {self.title}\n"
             f"Block ID: {self.block_id}\n"
@@ -158,12 +158,7 @@ class DossierCard:
         return summary
 
     def to_dict(self) -> Dict[str, Any]:
-        """
-        Export the dossier card as a dictionary for storage or sharing.
-
-        Returns:
-            dict: A dictionary representation of the dossier card.
-        """
+        """Export the dossier card as a dictionary."""
         return {
             "block_id": self.block_id,
             "title": self.title,
@@ -188,15 +183,7 @@ class DossierCard:
 
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> 'DossierCard':
-        """
-        Create a DossierCard instance from a dictionary.
-
-        Args:
-            data (dict): A dictionary containing dossier attributes.
-
-        Returns:
-            DossierCard: An instance of DossierCard.
-        """
+        """Create a DossierCard instance from a dictionary."""
         return cls(
             block_id=data["block_id"],
             title=data["title"],
@@ -219,9 +206,13 @@ class DossierCard:
         )
 ```
 
-### **1.4. Generación de Embeddings y Clustering**
+---
 
-Desarrolla scripts para generar embeddings semánticos y realizar el clustering jerárquico. Guarda los embeddings generados para reutilización y eficiencia.
+## 4. Generación de Embeddings y Clustering Jerárquico
+
+### 4.1. Embeddings Semánticos
+
+Para crear búsquedas semánticas y agrupar secciones afines dentro del índice ATA, se recomiendan modelos como **SentenceTransformers**:
 
 ```python
 # src/processing/embeddings.py
@@ -233,53 +224,28 @@ import json
 def generate_embeddings(texts: list, model_name: str = 'all-MiniLM-L6-v2') -> np.ndarray:
     """
     Generate semantic embeddings for a list of texts.
-
-    Args:
-        texts (list): List of strings to embed.
-        model_name (str): Pre-trained SentenceTransformer model.
-
-    Returns:
-        np.ndarray: Array of embeddings.
     """
     model = SentenceTransformer(model_name)
     embeddings = model.encode(texts, show_progress_bar=True)
     return embeddings
 
 def save_embeddings(embeddings: np.ndarray, filepath: str):
-    """
-    Save embeddings to a file.
-
-    Args:
-        embeddings (np.ndarray): Array of embeddings.
-        filepath (str): Path to save the embeddings.
-    """
+    """Save embeddings to a .npy file."""
     np.save(filepath, embeddings)
 
 def load_embeddings(filepath: str) -> np.ndarray:
-    """
-    Load embeddings from a file.
-
-    Args:
-        filepath (str): Path to the embeddings file.
-
-    Returns:
-        np.ndarray: Array of embeddings.
-    """
+    """Load embeddings from a .npy file."""
     return np.load(filepath)
 
 def load_dossiers(filepath: str) -> list:
-    """
-    Load dossiers from a JSON file.
-
-    Args:
-        filepath (str): Path to the JSON file.
-
-    Returns:
-        list: List of dossier dictionaries.
-    """
+    """Load dossiers from a JSON file."""
     with open(filepath, 'r', encoding='utf-8') as file:
         return json.load(file)
 ```
+
+### 4.2. Clustering Jerárquico
+
+Agrupa los embeddings para identificar subconjuntos de secciones parecidas.
 
 ```python
 # src/processing/clustering.py
@@ -290,53 +256,44 @@ import numpy as np
 def hierarchical_clustering(embeddings: np.ndarray, n_clusters: int = 4) -> list:
     """
     Perform hierarchical clustering on embeddings.
-
-    Args:
-        embeddings (np.ndarray): Array of embeddings.
-        n_clusters (int): Number of clusters.
-
-    Returns:
-        list: Cluster labels for each embedding.
     """
     clustering = AgglomerativeClustering(n_clusters=n_clusters, affinity='euclidean', linkage='ward')
     labels = clustering.fit_predict(embeddings)
     return labels
 ```
 
-### **1.5. Almacenamiento de DossierCards**
+---
 
-Usa una base de datos para almacenar y gestionar los `DossierCard`. Aquí, utilizaremos **MongoDB** por su flexibilidad con datos semiestructurados.
+## 5. Conexión a Base de Datos (MongoDB)
 
-1. **Instalar MongoDB:**
+Se recomienda usar **MongoDB** para almacenar los `DossierCard` de forma flexible.
 
-   Si no tienes MongoDB instalado, sigue las [instrucciones oficiales](https://docs.mongodb.com/manual/installation/).
+```python
+# src/processing/database.py
 
-2. **Conectar con MongoDB:**
+from pymongo import MongoClient
+from models.dossier_card import DossierCard
+from typing import List, Dict
 
-   ```python
-   # src/processing/database.py
+def get_db(uri: str = "mongodb://localhost:27017/", db_name: str = "eco_ftcm"):
+    client = MongoClient(uri)
+    db = client[db_name]
+    return db
 
-   from pymongo import MongoClient
-   from models.dossier_card import DossierCard
-   import json
+def insert_dossier(db, dossier: DossierCard):
+    collection = db.dossiers
+    return collection.insert_one(dossier.to_dict())
 
-   def get_db(uri: str = "mongodb://localhost:27017/", db_name: str = "eco_ftcm"):
-       client = MongoClient(uri)
-       db = client[db_name]
-       return db
+def find_dossiers(db, query: dict = {}):
+    collection = db.dossiers
+    return list(collection.find(query))
+```
 
-   def insert_dossier(db, dossier: DossierCard):
-       collection = db.dossiers
-       return collection.insert_one(dossier.to_dict())
+---
 
-   def find_dossiers(db, query: dict = {}):
-       collection = db.dossiers
-       return list(collection.find(query))
-   ```
+## 6. Creación de un Dashboard Interactivo (Dash)
 
-### **1.6. Desarrollo del Dashboard Interactivo**
-
-Implementa un dashboard interactivo usando **Dash** para visualizar y explorar los `DossierCard`.
+### 6.1. Estructura Básica
 
 ```python
 # src/visualization/dashboard.py
@@ -346,18 +303,15 @@ from dash import dcc, html
 from dash.dependencies import Input, Output
 import plotly.express as px
 import pandas as pd
+
 from processing.database import get_db, find_dossiers
 from models.dossier_card import DossierCard
 
-# Conectar a la base de datos
 db = get_db()
-
-# Recuperar datos
 dossiers = find_dossiers(db)
 data = [DossierCard.from_dict(d) for d in dossiers]
 df = pd.DataFrame([d.to_dict() for d in data])
 
-# Crear el dashboard
 app = dash.Dash(__name__)
 
 app.layout = html.Div([
@@ -379,24 +333,20 @@ app.layout = html.Div([
 )
 def update_dashboard(search_value):
     if search_value:
-        # Filtrar según la búsqueda semántica
-        # Aquí podrías implementar una búsqueda semántica más avanzada
         filtered_df = df[df['title'].str.contains(search_value, case=False, na=False)]
     else:
         filtered_df = df
 
-    # Crear treemap
-    fig = px.treemap(
-        filtered_df,
-        path=['policy_alignment', 'title'],
-        values='value_metrics',
-        title='Distribución de Dossiers por Alineación de Política'
-    )
-
-    # Mostrar resumen del primer dossier seleccionado
     if not filtered_df.empty:
+        fig = px.treemap(
+            filtered_df,
+            path=['policy_alignment', 'title'],
+            values='value_metrics',
+            title='Distribución de Dossiers'
+        )
         summary = filtered_df.iloc[0]['description']
     else:
+        fig = px.treemap(title='No se encontraron dossiers.')
         summary = "No se encontraron dossiers."
 
     return fig, summary
@@ -405,23 +355,11 @@ if __name__ == '__main__':
     app.run_server(debug=True)
 ```
 
-### **1.7. Ejecutar el Dashboard**
-
-Asegúrate de que la base de datos MongoDB esté corriendo y que los `DossierCard` estén insertados. Luego, ejecuta el dashboard:
-
-```bash
-python src/visualization/dashboard.py
-```
-
-Abre tu navegador en `http://127.0.0.1:8050/` para interactuar con el dashboard.
-
 ---
 
-## **2. Expansión de la Funcionalidad**
+## 7. Búsqueda Semántica Avanzada
 
-### **2.1. Búsqueda Semántica Avanzada**
-
-Implementa una búsqueda semántica utilizando **cosine similarity** para encontrar secciones relevantes basadas en la consulta del usuario.
+### 7.1. Clase `SemanticSearch`
 
 ```python
 # src/processing/semantic_search.py
@@ -429,7 +367,7 @@ Implementa una búsqueda semántica utilizando **cosine similarity** para encont
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
-from typing import List, Tuple
+
 from models.dossier_card import DossierCard
 from processing.database import get_db, find_dossiers
 
@@ -441,7 +379,7 @@ class SemanticSearch:
         self.texts = [d.title + " " + d.description for d in self.dossiers]
         self.embeddings = self.model.encode(self.texts, show_progress_bar=True)
 
-    def search(self, query: str, top_k: int = 5) -> List[Tuple[DossierCard, float]]:
+    def search(self, query: str, top_k: int = 5):
         query_embedding = self.model.encode([query])
         similarities = cosine_similarity(query_embedding, self.embeddings)[0]
         top_indices = similarities.argsort()[-top_k:][::-1]
@@ -449,9 +387,7 @@ class SemanticSearch:
         return results
 ```
 
-### **2.2. Integración de Búsqueda en el Dashboard**
-
-Actualiza el dashboard para incluir la búsqueda semántica y mostrar resultados más relevantes.
+### 7.2. Integrar la Búsqueda en el Dashboard
 
 ```python
 # src/visualization/dashboard.py
@@ -461,22 +397,18 @@ from dash import dcc, html
 from dash.dependencies import Input, Output
 import plotly.express as px
 import pandas as pd
+
 from processing.database import get_db, find_dossiers
 from models.dossier_card import DossierCard
 from processing.semantic_search import SemanticSearch
 
-# Conectar a la base de datos
 db = get_db()
-
-# Inicializar búsqueda semántica
 semantic_search = SemanticSearch()
 
-# Recuperar datos
 dossiers = find_dossiers(db)
 data = [DossierCard.from_dict(d) for d in dossiers]
 df = pd.DataFrame([d.to_dict() for d in data])
 
-# Crear el dashboard
 app = dash.Dash(__name__)
 
 app.layout = html.Div([
@@ -500,7 +432,6 @@ app.layout = html.Div([
 )
 def update_dashboard(n_clicks, search_value):
     if search_value:
-        # Realizar búsqueda semántica
         results = semantic_search.search(search_value, top_k=5)
         if results:
             filtered_dossiers = [d.to_dict() for d, _ in results]
@@ -511,14 +442,12 @@ def update_dashboard(n_clicks, search_value):
         filtered_df = df
 
     if not filtered_df.empty:
-        # Crear treemap
         fig = px.treemap(
             filtered_df,
             path=['policy_alignment', 'title'],
             values='value_metrics',
-            title='Distribución de Dossiers por Alineación de Política'
+            title='Distribución de Dossiers'
         )
-        # Mostrar resumen del primer dossier seleccionado
         summary = filtered_df.iloc[0]['description']
     else:
         fig = px.treemap(title='No se encontraron dossiers.')
@@ -530,111 +459,19 @@ if __name__ == '__main__':
     app.run_server(debug=True)
 ```
 
-### **2.3. Mejoras en la Visualización**
+---
 
-Considera añadir **filtros interactivos**, **gráficos adicionales** como **Gantt charts** para roadmap milestones y **paneles de detalle** para cada `DossierCard`.
+## 8. Pruebas Unitarias
 
-```python
-# src/visualization/dashboard.py
-
-# Añadir un dropdown para filtrar por clasificación
-app.layout = html.Div([
-    html.H1("ECO-FTC-MTL - DossierCard Dashboard"),
-    dcc.Input(
-        id='search-input',
-        type='text',
-        placeholder='Buscar...',
-        style={'width': '50%'}
-    ),
-    html.Button('Buscar', id='search-button'),
-    html.Label("Filtrar por Clasificación:"),
-    dcc.Dropdown(
-        id='classification-dropdown',
-        options=[{'label': cls, 'value': cls} for cls in df['classification'].unique()],
-        multi=True,
-        placeholder="Selecciona clasificaciones"
-    ),
-    dcc.Graph(id='treemap'),
-    html.Div(id='dossier-summary', style={'whiteSpace': 'pre-line', 'padding': '20px'}),
-    dcc.Graph(id='roadmap-gantt')
-])
-
-@app.callback(
-    [Output('treemap', 'figure'),
-     Output('dossier-summary', 'children'),
-     Output('roadmap-gantt', 'figure')],
-    [Input('search-button', 'n_clicks'),
-     Input('classification-dropdown', 'value')],
-    [dash.dependencies.State('search-input', 'value')]
-)
-def update_dashboard(n_clicks, selected_classes, search_value):
-    if search_value:
-        # Realizar búsqueda semántica
-        results = semantic_search.search(search_value, top_k=5)
-        if results:
-            filtered_dossiers = [d.to_dict() for d, _ in results]
-            filtered_df = pd.DataFrame(filtered_dossiers)
-        else:
-            filtered_df = pd.DataFrame()
-    else:
-        filtered_df = df
-
-    if selected_classes:
-        filtered_df = filtered_df[filtered_df['classification'].isin(selected_classes)]
-
-    if not filtered_df.empty:
-        # Crear treemap
-        fig = px.treemap(
-            filtered_df,
-            path=['policy_alignment', 'title'],
-            values='value_metrics',
-            title='Distribución de Dossiers por Alineación de Política'
-        )
-        # Mostrar resumen del primer dossier seleccionado
-        summary = filtered_df.iloc[0]['description']
-
-        # Crear Gantt chart para roadmap milestones
-        roadmap_data = []
-        for _, row in filtered_df.iterrows():
-            for milestone in row['roadmap_milestones']:
-                roadmap_data.append({
-                    'Dossier': row['title'],
-                    'Milestone': milestone,
-                    'Start': '2025-01-01',  # Ajustar fechas reales
-                    'Finish': '2025-12-31'
-                })
-        roadmap_df = pd.DataFrame(roadmap_data)
-        gantt_fig = px.timeline(
-            roadmap_df,
-            x_start="Start",
-            x_end="Finish",
-            y="Dossier",
-            color="Milestone",
-            title="Roadmap de Metas y Fases"
-        )
-        gantt_fig.update_yaxes(categoryorder="total ascending")
-
-    else:
-        fig = px.treemap(title='No se encontraron dossiers.')
-        summary = "No se encontraron dossiers."
-        gantt_fig = px.timeline(title="Roadmap de Metas y Fases")
-
-    return fig, summary, gantt_fig
-```
-
-### **2.4. Pruebas y Validación**
-
-Desarrolla **pruebas unitarias** para asegurar que cada componente funciona correctamente.
+Se recomienda incluir pruebas para cada componente:
 
 ```python
 # tests/test_dossier_card.py
 
 import unittest
 from models.dossier_card import DossierCard
-from datetime import datetime
 
 class TestDossierCard(unittest.TestCase):
-
     def setUp(self):
         self.dossier = DossierCard(
             block_id="AXLR-001",
@@ -650,10 +487,10 @@ class TestDossierCard(unittest.TestCase):
             value_metrics=[95, 85, 90],
             policy_alignment="GAIA Air Sustainability Goals 2030",
             guidance_acceleration="Streamlined Certification Pathways",
-            ethical_pathways={"Environmental Neutrality": "Achieved", "Transparency": "High"},
-            roadmap_milestones=["Prototype Build", "Flight Testing", "Regulatory Approval"],
-            feedback_mechanisms=["Stakeholder Review", "Pilot Feedback"],
-            voluntary_compliance={"Carbon-Neutral Materials Initiative": "Active"},
+            ethical_pathways={"Environmental Neutrality": "Achieved"},
+            roadmap_milestones=["Prototype Build", "Flight Testing"],
+            feedback_mechanisms=["Stakeholder Review"],
+            voluntary_compliance={"Carbon-Neutral Initiative": "Active"},
             timestamp="2025-01-06 14:30:00"
         )
 
@@ -662,483 +499,82 @@ class TestDossierCard(unittest.TestCase):
 
     def test_generate_summary(self):
         summary = self.dossier.generate_summary()
-        self.assertIn("Dossier Card: Innovative Fuselage Design", summary)
+        self.assertIn("Innovative Fuselage Design", summary)
         self.assertIn("Total Value: 270.00", summary)
 
     def test_to_dict(self):
-        dossier_dict = self.dossier.to_dict()
-        self.assertEqual(dossier_dict["block_id"], "AXLR-001")
-        self.assertEqual(dossier_dict["total_value"], 270)
+        d_dict = self.dossier.to_dict()
+        self.assertEqual(d_dict["title"], "Innovative Fuselage Design")
 
     def test_from_dict(self):
-        dossier_dict = self.dossier.to_dict()
-        new_dossier = DossierCard.from_dict(dossier_dict)
-        self.assertEqual(new_dossier.block_id, self.dossier.block_id)
-        self.assertEqual(new_dossier.title, self.dossier.title)
-        self.assertEqual(new_dossier.calculate_total_value(), self.dossier.calculate_total_value())
+        d_dict = self.dossier.to_dict()
+        new_dossier = DossierCard.from_dict(d_dict)
+        self.assertEqual(new_dossier.block_id, "AXLR-001")
 
 if __name__ == '__main__':
     unittest.main()
 ```
 
-Ejecuta las pruebas con:
+Ejecuta las pruebas:
 
 ```bash
 python -m unittest discover -s tests
 ```
 
-### **2.5. Documentación y Mantenimiento**
-
-Mantén una **documentación clara** y **actualizada** para facilitar futuras expansiones y el mantenimiento del sistema.
-
-- **README.md**: Proporciona una visión general del proyecto, instrucciones de instalación y uso.
-- **Docstrings**: Asegura que todas las funciones y métodos tengan descripciones claras.
-- **Version Control**: Utiliza Git para rastrear cambios y facilitar colaboraciones.
-
 ---
 
-## **3. Despliegue y Escalabilidad**
+## 9. Despliegue y Escalabilidad
 
-### **3.1. Despliegue Local vs. Producción**
+### 9.1. Despliegue en Servicios Cloud
 
-Para entornos de producción, considera desplegar el dashboard en una **infraestructura robusta** como **Heroku**, **AWS**, **Azure** o **Google Cloud Platform**.
+1. **Crear Procfile** (para Heroku, por ejemplo):
 
-#### **Ejemplo: Despliegue en Heroku**
-
-1. **Instalar Heroku CLI:**
-
-   Sigue las [instrucciones oficiales](https://devcenter.heroku.com/articles/heroku-cli) para instalar el Heroku CLI.
-
-2. **Crear un archivo `Procfile`:**
-
-   ```plaintext
+   ```
    web: python src/visualization/dashboard.py
    ```
 
-3. **Inicializar Git y hacer commit:**
+2. **Subir a la plataforma** (Heroku, AWS, Azure, etc.) siguiendo la guía correspondiente.
 
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   ```
+### 9.2. Consideraciones de Rendimiento
 
-4. **Crear una aplicación en Heroku:**
+- **Caching de embeddings**: Usa un motor como **Faiss** o **Milvus** si el volumen crece.
+- **Autoescalado**: Maneja picos de uso balanceando carga en múltiples instancias.
+- **Base de Datos**: Escala la BD (réplicas, sharding) según la necesidad de lectura/escritura.
 
-   ```bash
-   heroku create eco-ftcm-dashboard
-   ```
+### 9.3. Seguridad y Monitoreo
 
-5. **Desplegar a Heroku:**
-
-   ```bash
-   git push heroku master
-   ```
-
-6. **Configurar variables de entorno (si es necesario):**
-
-   ```bash
-   heroku config:set MONGODB_URI=mongodb://usuario:contraseña@host:puerto/dbname
-   ```
-
-### **3.2. Escalabilidad y Rendimiento**
-
-- **Optimización de Consultas:** Asegura que las consultas a la base de datos sean eficientes. Usa índices en campos frecuentemente consultados.
-- **Caching:** Implementa mecanismos de caching para reducir la carga en la base de datos y mejorar la velocidad de respuesta.
-- **Balanceo de Carga:** Si el tráfico crece, utiliza balanceadores de carga para distribuir las solicitudes entre múltiples instancias del dashboard.
-
-### **3.3. Seguridad**
-
-- **Autenticación y Autorización:** Implementa sistemas robustos de autenticación (por ejemplo, OAuth) y asegúrate de que los permisos estén correctamente configurados.
-- **Protección de Datos:** Encripta datos sensibles tanto en tránsito como en reposo.
-- **Monitoreo y Logging:** Usa herramientas como **Prometheus**, **Grafana** o **ELK Stack** para monitorear el rendimiento y registrar eventos importantes.
+- **Autenticación**: Implementar JWT, OAuth2 o similar si se requiere un control de acceso.
+- **Encriptación**: SSL para proteger la conexión al dashboard y a la BD.
+- **Logging/Monitoring**: Integrar con **Grafana**, **Prometheus** o ELK Stack para rastrear métricas de rendimiento.
 
 ---
 
-## **4. Próximos Pasos y Mejoras Futuras**
+## 10. Recomendaciones de Ampliación
 
-### **4.1. Integración con Sistemas Existentes**
-
-- **PLM (Product Lifecycle Management):** Conecta el sistema con herramientas de PLM para sincronizar datos y gestionar el ciclo de vida del diseño.
-- **APIs de GAIA:** Si GAIA tiene APIs internas, integra el dashboard para acceder y actualizar datos directamente desde allí.
-
-### **4.2. Añadir Funcionalidades Avanzadas**
-
-- **Análisis Predictivo:** Usa machine learning para predecir tendencias y posibles mejoras en los diseños de fuselaje.
-- **Colaboración en Tiempo Real:** Implementa funcionalidades que permitan a múltiples usuarios colaborar y editar datos simultáneamente.
-- **Automatización de Flujos de Trabajo:** Automatiza tareas repetitivas y procesos de aprobación usando herramientas como **Zapier** o scripts personalizados.
-
-### **4.3. Expansión de la Documentación**
-
-- **Secciones Adicionales:** Completa las secciones faltantes como **53-30-20-000 Central Systems Integration**, **53-40-00-000 Belly Section**, etc.
-- **Diagramas y Visualizaciones:** Incorpora diagramas CAD, esquemas de flujo de procesos y gráficos interactivos para mejorar la comprensión.
-
-### **4.4. Feedback y Iteración Continua**
-
-- **Recopilación de Feedback:** Implementa mecanismos para recibir feedback de los usuarios sobre el dashboard y la documentación.
-- **Iteración Basada en Feedback:** Ajusta y mejora el sistema basado en las sugerencias y necesidades de los usuarios.
+1. **Visualizaciones Adicionales**: Diagrama Gantt para milestones, gráficos de red para interrelaciones.  
+2. **Retroalimentación Colaborativa**: Permitir comentarios en cada `DossierCard`, track de edición, chat integrado.  
+3. **Integraciones PLM**: Conectar con sistemas de gestión de ciclo de vida (Siemens Teamcenter, Dassault ENOVIA).  
+4. **Búsqueda Multilingüe**: Ampliar con modelos de NLP multilingües.  
+5. **IA Predictiva**: Integrar modelos que sugieran mejoras basadas en patrones históricos (mantenimiento predictivo, etc.).
 
 ---
 
-## **5. Conclusión**
+## 11. Conclusión
 
-La integración del **índice ATA 53** con **embeddings semánticos**, **clustering jerárquico** y **visualizaciones interactivas** ofrece una solución poderosa y escalable para la gestión y exploración de documentos técnicos en tiempo real. Al combinar la estructura estándar con capacidades avanzadas de inteligencia artificial y visualización, se facilita una navegación intuitiva, una búsqueda eficiente y una actualización dinámica, todo mientras se mantiene el cumplimiento normativo y se promueve la sostenibilidad.
+Siguiendo estos pasos, se obtiene un **sistema interactivo** que integra la estructura ATA (por ejemplo, 53-xx-xx-xxx) con **embeddings semánticos**, **clustering jerárquico** y **visualizaciones** avanzadas. El resultado es un conjunto de **herramientas** que facilitan:
 
-**Próximos pasos recomendados:**
+1. **Búsquedas y Navegación**: Encuentra rápidamente secciones relevantes.  
+2. **Descubrimiento de Patrones**: Detecta similitudes mediante clustering.  
+3. **Gestión Documental**: Mantiene trazabilidad y cumplimiento de estándares aeronáuticos.  
+4. **Escalabilidad**: Fácil de adaptar a un mayor número de secciones y usuarios.
 
-1. **Completar la Implementación del Dashboard:** Añadir funcionalidades avanzadas y mejorar la interfaz de usuario.
-2. **Desplegar en un Entorno de Producción:** Elegir una plataforma adecuada y configurar todos los componentes necesarios.
-3. **Expandir la Documentación:** Asegurar que todas las secciones ATA estén desarrolladas y actualizadas.
-4. **Establecer un Ciclo de Iteración Continua:** Recopilar feedback, realizar pruebas y mejorar el sistema regularmente.
-
-Estoy aquí para ayudarte en cada etapa del proceso. Si necesitas asistencia adicional en alguna de las áreas mencionadas o tienes preguntas específicas, no dudes en decírmelo. ¡Vamos adelante con este proyecto innovador!
+Si necesitas más ayuda para **refinar** o **expandir** este sistema, integrarlo con herramientas de CI/CD, o **automatizar procesos** (QA, validaciones, etc.), no dudes en solicitarlo.
 
 ---
 
-## **6. Ejemplo Completo del Sistema**
+# Ejemplo XML Procedural Data Module (PDM)
 
-Para ilustrar cómo todo encaja, aquí tienes un **ejemplo completo** que integra la generación de embeddings, clustering, almacenamiento en MongoDB y visualización con Dash.
-
-### **6.1. Preparación de los Datos**
-
-Inserta algunos `DossierCard` en MongoDB para tener datos de ejemplo.
-
-```python
-# src/app.py
-
-from models.dossier_card import DossierCard
-from processing.database import get_db, insert_dossier
-import json
-
-def load_initial_data():
-    db = get_db()
-    dossiers = [
-        {
-            "block_id": "AXLR-001",
-            "title": "Innovative Fuselage Design",
-            "description": "A cutting-edge approach to lightweight aerospace design.",
-            "function": "Optimize aerodynamics and sustainability metrics.",
-            "classification": "Advanced Materials Research",
-            "compliance_metrics": {"FAA/EASA Safety Standards": "Compliant"},
-            "methods": ["CFD Simulation", "Material Fatigue Analysis"],
-            "contributors": ["Amedeo Pelliccia", "ChatGPT"],
-            "foundational_contributor": "GAIA Research Group",
-            "idea_origin": "AI-Generated Topology Optimization",
-            "value_metrics": [95, 85, 90],
-            "policy_alignment": "GAIA Air Sustainability Goals 2030",
-            "guidance_acceleration": "Streamlined Certification Pathways",
-            "ethical_pathways": {"Environmental Neutrality": "Achieved", "Transparency": "High"},
-            "roadmap_milestones": ["Prototype Build", "Flight Testing", "Regulatory Approval"],
-            "feedback_mechanisms": ["Stakeholder Review", "Pilot Feedback"],
-            "voluntary_compliance": {"Carbon-Neutral Materials Initiative": "Active"},
-            "timestamp": "2025-01-06 14:30:00"
-        },
-        {
-            "block_id": "AXLR-002",
-            "title": "Sustainable Materials Integration",
-            "description": "Incorporating eco-friendly materials into fuselage design.",
-            "function": "Enhance sustainability and reduce carbon footprint.",
-            "classification": "Sustainable Engineering",
-            "compliance_metrics": {"ISO-14001": "Certified"},
-            "methods": ["Life Cycle Assessment", "Recycling Protocols"],
-            "contributors": ["Team Sigma", "Amedeo Pelliccia"],
-            "foundational_contributor": "GAIA Sustainability Group",
-            "idea_origin": "Green Innovation Workshop 2024",
-            "value_metrics": [80, 75, 85],
-            "policy_alignment": "Sustainability Enhancement Goals",
-            "guidance_acceleration": "Eco-Friendly Certifications",
-            "ethical_pathways": {"Social Responsibility": "Ensured", "Environmental Impact": "Minimized"},
-            "roadmap_milestones": ["Material Selection", "Process Optimization", "Certification"],
-            "feedback_mechanisms": ["Sustainability Audits", "Material Testing"],
-            "voluntary_compliance": {"Zero Waste Manufacturing": "Pursuing"},
-            "timestamp": "2025-02-10 10:15:00"
-        }
-    ]
-
-    for dossier_data in dossiers:
-        dossier = DossierCard.from_dict(dossier_data)
-        insert_dossier(db, dossier)
-
-if __name__ == '__main__':
-    load_initial_data()
-    print("Datos iniciales cargados en la base de datos.")
-```
-
-Ejecuta el script para cargar los datos:
-
-```bash
-python src/app.py
-```
-
-### **6.2. Generación de Embeddings y Clustering**
-
-```python
-# src/app.py
-
-from processing.embeddings import generate_embeddings, save_embeddings, load_embeddings, load_dossiers
-from processing.clustering import hierarchical_clustering
-from processing.database import get_db, find_dossiers
-from models.dossier_card import DossierCard
-import numpy as np
-
-def main():
-    # Conectar a la base de datos y cargar los dossiers
-    db = get_db()
-    dossiers = find_dossiers(db)
-    data = [DossierCard.from_dict(d) for d in dossiers]
-    texts = [d.title + " " + d.description for d in data]
-
-    # Generar embeddings
-    embeddings = generate_embeddings(texts)
-    save_embeddings(embeddings, 'data/embeddings.npy')
-
-    # Realizar clustering
-    labels = hierarchical_clustering(embeddings, n_clusters=2)
-
-    # Asignar etiquetas a los dossiers
-    for i, dossier in enumerate(data):
-        dossier_dict = dossier.to_dict()
-        dossier_dict['cluster'] = int(labels[i])
-        db.dossiers.update_one({'block_id': dossier.block_id}, {'$set': {'cluster': int(labels[i])}})
-
-    print("Embeddings generados y clustering realizado.")
-
-if __name__ == '__main__':
-    main()
-```
-
-Ejecuta el script:
-
-```bash
-python src/app.py
-```
-
-### **6.3. Actualización del Dashboard con Clusters**
-
-Actualiza el dashboard para reflejar los clusters asignados.
-
-```python
-# src/visualization/dashboard.py
-
-import dash
-from dash import dcc, html
-from dash.dependencies import Input, Output
-import plotly.express as px
-import pandas as pd
-from processing.database import get_db, find_dossiers
-from models.dossier_card import DossierCard
-from processing.semantic_search import SemanticSearch
-
-# Conectar a la base de datos
-db = get_db()
-
-# Inicializar búsqueda semántica
-semantic_search = SemanticSearch()
-
-# Recuperar datos
-dossiers = find_dossiers(db)
-data = [DossierCard.from_dict(d) for d in dossiers]
-df = pd.DataFrame([d.to_dict() for d in data])
-
-# Crear el dashboard
-app = dash.Dash(__name__)
-
-app.layout = html.Div([
-    html.H1("ECO-FTC-MTL - DossierCard Dashboard"),
-    dcc.Input(
-        id='search-input',
-        type='text',
-        placeholder='Buscar...',
-        style={'width': '50%'}
-    ),
-    html.Button('Buscar', id='search-button'),
-    html.Label("Filtrar por Clasificación:"),
-    dcc.Dropdown(
-        id='classification-dropdown',
-        options=[{'label': cls, 'value': cls} for cls in df['classification'].unique()],
-        multi=True,
-        placeholder="Selecciona clasificaciones"
-    ),
-    html.Label("Filtrar por Cluster:"),
-    dcc.Dropdown(
-        id='cluster-dropdown',
-        options=[{'label': f"Cluster {i}", 'value': i} for i in sorted(df['cluster'].unique())],
-        multi=True,
-        placeholder="Selecciona clusters"
-    ),
-    dcc.Graph(id='treemap'),
-    html.Div(id='dossier-summary', style={'whiteSpace': 'pre-line', 'padding': '20px'}),
-    dcc.Graph(id='roadmap-gantt')
-])
-
-@app.callback(
-    [Output('treemap', 'figure'),
-     Output('dossier-summary', 'children'),
-     Output('roadmap-gantt', 'figure')],
-    [Input('search-button', 'n_clicks'),
-     Input('classification-dropdown', 'value'),
-     Input('cluster-dropdown', 'value')],
-    [dash.dependencies.State('search-input', 'value')]
-)
-def update_dashboard(n_clicks, selected_classes, selected_clusters, search_value):
-    filtered_df = df.copy()
-
-    if search_value:
-        # Realizar búsqueda semántica
-        results = semantic_search.search(search_value, top_k=10)
-        if results:
-            filtered_dossiers = [d.to_dict() for d, _ in results]
-            filtered_df = pd.DataFrame(filtered_dossiers)
-        else:
-            filtered_df = pd.DataFrame()
-
-    if selected_classes:
-        filtered_df = filtered_df[filtered_df['classification'].isin(selected_classes)]
-
-    if selected_clusters is not None and len(selected_clusters) > 0:
-        filtered_df = filtered_df[filtered_df['cluster'].isin(selected_clusters)]
-
-    if not filtered_df.empty:
-        # Crear treemap
-        fig = px.treemap(
-            filtered_df,
-            path=['policy_alignment', 'title'],
-            values='value_metrics',
-            color='cluster',
-            title='Distribución de Dossiers por Alineación de Política y Cluster'
-        )
-        # Mostrar resumen del primer dossier seleccionado
-        summary = filtered_df.iloc[0]['description']
-
-        # Crear Gantt chart para roadmap milestones
-        roadmap_data = []
-        for _, row in filtered_df.iterrows():
-            for milestone in row['roadmap_milestones']:
-                roadmap_data.append({
-                    'Dossier': row['title'],
-                    'Milestone': milestone,
-                    'Start': '2025-01-01',  # Ajustar fechas reales
-                    'Finish': '2025-12-31'
-                })
-        roadmap_df = pd.DataFrame(roadmap_data)
-        gantt_fig = px.timeline(
-            roadmap_df,
-            x_start="Start",
-            x_end="Finish",
-            y="Dossier",
-            color="Milestone",
-            title="Roadmap de Metas y Fases"
-        )
-        gantt_fig.update_yaxes(categoryorder="total ascending")
-
-    else:
-        fig = px.treemap(title='No se encontraron dossiers.')
-        summary = "No se encontraron dossiers."
-        gantt_fig = px.timeline(title="Roadmap de Metas y Fases")
-
-    return fig, summary, gantt_fig
-
-if __name__ == '__main__':
-    app.run_server(debug=True)
-```
-
-### **6.4. Ejemplo de Uso Completo**
-
-Inserta algunos `DossierCard`, genera embeddings, realiza clustering y ejecuta el dashboard para visualizar los resultados.
-
-1. **Cargar Datos Iniciales:**
-
-   ```bash
-   python src/app.py
-   ```
-
-2. **Generar Embeddings y Clustering:**
-
-   ```bash
-   python src/app.py
-   ```
-
-3. **Ejecutar el Dashboard:**
-
-   ```bash
-   python src/visualization/dashboard.py
-   ```
-
-4. **Interactuar con el Dashboard:**
-
-   - **Buscar:** Introduce términos relacionados con las secciones del fuselaje para encontrar los dossiers relevantes.
-   - **Filtrar por Clasificación y Cluster:** Utiliza los dropdowns para refinar la visualización según las clasificaciones y clusters asignados.
-   - **Explorar Roadmap:** Observa las metas y fases de cada dossier en el Gantt chart.
-
----
-
-## **6.5. Mejoras Adicionales**
-
-### **6.5.1. Integración con Herramientas de Gestión de Proyectos**
-
-- **JIRA / Trello:** Sincroniza los milestones con herramientas de gestión de proyectos para seguimiento en tiempo real.
-- **Slack / Microsoft Teams:** Notificaciones automáticas de actualizaciones o hitos alcanzados.
-
-### **6.5.2. Añadir Visualizaciones Avanzadas**
-
-- **Heatmaps:** Para visualizar la concentración de clusters o áreas con alta actividad.
-- **Network Graphs:** Para mostrar relaciones entre diferentes secciones o sistemas.
-- **Interactive Filters:** Permitir a los usuarios aplicar múltiples filtros dinámicamente.
-
-### **6.5.3. Optimización del Rendimiento**
-
-- **Lazy Loading:** Cargar solo las secciones necesarias al interactuar con el dashboard.
-- **Caching de Embeddings:** Evitar recalcular embeddings para datos estáticos.
-- **Escalabilidad Horizontal:** Distribuir la carga en múltiples servidores si el tráfico lo requiere.
-
----
-
-## **7. Conclusión Final**
-
-La integración de **DossierCard** con **embeddings semánticos**, **clustering jerárquico** y **visualizaciones interactivas** proporciona una solución avanzada y escalable para la gestión y exploración de documentos técnicos dentro del ecosistema GAIA. Este enfoque no solo mantiene la rigurosidad del estándar ATA, sino que también mejora significativamente la usabilidad y accesibilidad de la documentación, facilitando la toma de decisiones informadas y promoviendo la colaboración efectiva.
-
-**Próximos pasos recomendados:**
-
-1. **Completar y Validar la Implementación:** Asegura que todos los componentes funcionen correctamente y realicen las tareas previstas.
-2. **Desplegar en Producción:** Configura el entorno de producción, optimiza la seguridad y el rendimiento.
-3. **Recopilar Feedback de Usuarios:** Implementa mecanismos para recibir retroalimentación continua y mejora el sistema basado en las necesidades reales.
-4. **Expandir la Documentación:** Completa todas las secciones del índice ATA 53 y asegúrate de que estén detalladas y actualizadas.
-
-Estoy aquí para ayudarte en cada etapa del proceso. Si necesitas más ejemplos de código, asistencia en la configuración de herramientas específicas o tienes cualquier otra consulta, no dudes en pedírmelo. ¡Vamos a avanzar juntos en este emocionante proyecto!
-
----
-
-## **8. Recursos Adicionales**
-
-### **8.1. Documentación de Herramientas Utilizadas**
-
-- **Sentence Transformers:** [Documentación Oficial](https://www.sbert.net/)
-- **Scikit-learn Clustering:** [Documentación Oficial](https://scikit-learn.org/stable/modules/clustering.html)
-- **Plotly Dash:** [Documentación Oficial](https://dash.plotly.com/)
-- **MongoDB con PyMongo:** [Documentación Oficial](https://pymongo.readthedocs.io/en/stable/)
-- **Mermaid.js para Diagramas:** [Documentación Oficial](https://mermaid-js.github.io/mermaid/#/)
-
-### **8.2. Tutoriales y Ejemplos**
-
-- **Dash Tutorial:** [Building Your First Dash App](https://dash.plotly.com/installation)
-- **Sentence Transformers Tutorial:** [Quickstart Guide](https://www.sbert.net/docs/quickstart.html)
-- **Clustering con Scikit-learn:** [Hierarchical Clustering Example](https://scikit-learn.org/stable/modules/clustering.html#hierarchical-clustering)
-
-### **8.3. Comunidades y Soporte**
-
-- **Stack Overflow:** Para preguntas específicas sobre código y errores.
-- **GitHub:** Explora repositorios similares y contribuye a proyectos relacionados.
-- **Reddit - r/MachineLearning:** Para discusiones y consejos sobre embeddings y clustering.
-
----
-
-¡Buena suerte con la implementación de tu sistema interactivo! Estoy seguro de que será una herramienta valiosa para la gestión y exploración de documentos técnicos en el proyecto AMPEL360. Si necesitas más ayuda, no dudes en contactarme.
-
-Below is an **XML Procedural Data Module (PDM)** example for **Step 1** of the **Tail Cone Section (53-50)** assembly. This PDM follows a simplified S1000D-like structure (or an ATA iSpec 2200-inspired format) that can be adapted to your project’s documentation standards. Feel free to modify or expand the metadata, attributes, or element names to align with your specific requirements.
-
----
-
-## **Sample XML Procedural Data Module (PDM)**
+Por último, se muestra un **ejemplo de XML PDM** (inspirado en S1000D/ATA iSpec 2200) para documentar el **Step 1** del montaje de la sección de cono de cola (p. ej., ATA 53-50) con salidas AIM:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -1241,129 +677,18 @@ Below is an **XML Procedural Data Module (PDM)** example for **Step 1** of the *
 </proceduralDataModule>
 ```
 
-### **Key Elements Explained**
-
-1. **\<identAndStatusSection>**  
-   - Contains high-level metadata like the *dataModuleCode*, revision history, and basic applicability statements.
-2. **\<content>**  
-   - Houses the main procedure steps and instructions.
-3. **\<step>**  
-   - Each assembly or inspection step is captured in a structured manner.
-4. **\<aimOutput>**  
-   - Reflects the AI Maintenance Assistance (AIM) guidance generated for that specific step.
-5. **\<stepAction>**  
-   - Lists the detailed actions to be performed.  
-   - **\<actionCode>**: An abbreviated code for the action (e.g., INSPECT, INSTALL).  
-   - **\<actionDesc>**: A descriptive text of how the action should be carried out.
-6. **\<references>**  
-   - Points to supplementary documentation or data modules that a technician may consult (e.g., a Digital Maintenance Log reference).
-7. **\<revisionHistory>**  
-   - Tracks the document version, changes, and authors (or systems) responsible for those changes.
+Este **XML** demuestra cómo se pueden documentar pasos procedimentales (montaje, inspección, etc.) siguiendo un enfoque cercano a S1000D/ATA iSpec 2200. El objetivo es **mantener la trazabilidad** y la **consistencia** con la estructura de codificación ATA y, al mismo tiempo, integrar salidas de IA (AIM Output).
 
 ---
 
-## **Optional: Simple Visual Workflow Diagram**
+### Conclusión Final
 
-Below is an ASCII-style diagram illustrating **Step 1** for the Tail Cone Section (53-50-00-000) in a high-level workflow:
+Con esta **guía** y el **ejemplo de PDM**, dispones de una hoja de ruta completa para:
 
-```
- .---------------------------.
- |  Start: AIM Environment   |
- '-----------+---------------'
-             |
-             v
-      (Load 3D Twin + 
-      Data Modules)
-             |
-             v
-  .---------------------------.
-  | Step 1: Align Components |
-  |  - Measure alignment     |
-  |  - AR overlay check      |
-  '-----------+---------------'
-             |
-             v
-  .---------------------------.
-  | Step 2: Fastener Install |
-  |  - Temp fasteners        |
-  |  - Replace with perm.    |
-  '-----------+---------------'
-             |
-             v
-  .---------------------------.
-  | Step 3: Quality Check    |
-  |  - Inspect joints        |
-  |  - Test torque           |
-  '-----------+---------------'
-             |
-             v
-       (End: Proceed 
-       to Next Phase)
-```
+1. **Organizar** el proyecto en una arquitectura modular (Python, Dash, MongoDB).  
+2. **Implementar** embeddings semánticos y clustering jerárquico para identificar similitudes en secciones del índice ATA.  
+3. **Construir** un **dashboard** interactivo que muestre los `DossierCard`, su clasificación y sus métricas.  
+4. **Expandir** la funcionalidad con búsqueda semántica, filtrado avanzado, y compatibilidad con S1000D.  
+5. **Mantener** un enfoque escalable y seguro de cara al despliegue y la integración con otros sistemas (PLM, CI/CD, etc.).  
 
-**Use Case:**  
-- This diagram can be included in the PDF or digital documentation to give technicians an at-a-glance view of how each step flows into the next.
-
----
-
-### **Next Steps and Usage**
-
-1. **Integrate the XML Module**  
-   - Include this XML PDM in your chosen documentation repository or Content Management System (CMS).  
-   - Link it to your Master Glossary and other relevant data modules (e.g., “Tool Calibration Guidelines”).
-
-2. **Customize Metadata**  
-   - Update fields (e.g., *systemSectionNumber*, *issueNumber*) to match your internal naming and numbering conventions.
-
-3. **Expand with Additional Steps**  
-   - Follow the same structure to create modules for the other phases: Frame Assembly (53-50-10-000), Tail Cone Systems (53-50-20-000), Validation, and Completion.
-
-4. **Incorporate Workflow Diagrams**  
-   - Insert diagrams into your documentation portal (e.g., in HTML or PDF) to offer a quick visual reference alongside the XML-based instructions.
-
-With this **XML PDM** and optional **visual workflow diagram**, technicians can benefit from a robust, **data-driven** approach that aligns with S1000D or ATA iSpec 2200 standards. It ensures **traceability**, **consistency**, and **compliance** across the GAIA AIR AMPEL360XWLRGA project’s assembly procedures.
-
----
-
-### **Revised DMCs for General Airframe Coverage**
-
-| **ATA Chapter** | **Chapter Name**                    | **Example DMC**                                             |
-|------------------|-------------------------------------|------------------------------------------------------------|
-| **ATA 51**       | Standard Practices and Structures  | GAIA-AMP-51-00-00-00-00A-00EN                              |
-| **ATA 52**       | Doors                              | GAIA-AMP-52-00-00-00-00A-00EN                              |
-| **ATA 53**       | Fuselage                           | GAIA-AMP-53-00-00-00-00A-00EN                              |
-| **ATA 54**       | Gondolas/Pylons                    | GAIA-AMP-54-00-00-00-00A-00EN                              |
-| **ATA 55**       | Stabilizers                        | GAIA-AMP-55-00-00-00-00A-00EN                              |
-| **ATA 56**       | Windows                            | GAIA-AMP-56-00-00-00-00A-00EN                              |
-| **ATA 57**       | Wings                              | GAIA-AMP-57-00-00-00-00A-00EN                              |
-
----
-
-### **Structure Overview for General Airframe DMCs**
-
-1. **Model Identification Code (MIC):**  
-   - "GAIA-AMP" represents the project and aircraft type (GAIA AIR – AMPEL360XWLRGA).
-2. **System/Subsystem Number:**  
-   - Corresponds to the ATA Chapter number (e.g., 51 for Structures, 52 for Doors, etc.).
-3. **Disassembly Code:**  
-   - "00" indicates "General" coverage for all airframe components, not specific subassemblies or disassemblies.
-4. **Subject Code:**  
-   - "00" for tasks or topics that are broadly applicable to the ATA chapter.
-5. **Information Code:**  
-   - "00A" specifies procedural data (can be replaced with "00B" for descriptive, etc., as required).
-6. **Language Code:**  
-   - "00EN" specifies the language as English.
-
----
-
-### **Key Notes for Application:**
-1. **Uniformity:**  
-   This general-purpose DMC framework is ideal for procedures, practices, and checks that span the entire airframe for each ATA chapter.
-2. **Customization:**  
-   If there are specific subsystems or disassembly levels to address in the future, this can be adjusted (e.g., "10" for specific components under ATA 57 - Wings).
-3. **Compliance:**  
-   The structure is aligned with S1000D Issue 6.0 best practices and adheres to a simplified but standardized approach.
-
----
-
-If you need further refinements, such as adding specific tasks, subsystem focus, or additional information codes, let me know!
+¡Mucho éxito en tu implementación y evolución del proyecto **AMPEL360**!
