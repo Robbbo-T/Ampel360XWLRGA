@@ -1,5 +1,6 @@
 ![Minimalist Digital Logo With Gradient Diamonds On Navy Background (1)](https://github.com/user-attachments/assets/dfa9158d-0307-48af-9db7-d82cf35d8bca)
 
+```
 # AMPEL360: the project
 ## **GAIA-AIR AMPEL360 and e.G.A.I.As: Merging Sustainable Aviation with Embodied, Evolving, Extended Intelligence**
 
@@ -776,7 +777,7 @@ graph LR
         style CU fill:#ffc,stroke:#222,stroke-width:2px
         style AEHCS fill:#eee,stroke:#222,stroke-width:1px
     end
-
+```
     %% Interactive placeholders (for web-based implementation)
     click PS "showTooltip('Particle Source: Generates specific particles for entanglement<br>Type: [Proprietary]<br>Material: [Proprietary]<br>Emission Rate: [Proprietary]', 'https://link.to/PS_docs')"
     click PG "showTooltip('Photon Generator: Generates Photons for Entanglement<br>Type: [Proprietary]<br>Wavelength: 405 nm<br>Power: [Proprietary]', 'https://link.to/PG_docs')"
