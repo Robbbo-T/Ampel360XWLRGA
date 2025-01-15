@@ -1,6 +1,5 @@
 ![Minimalist Digital Logo With Gradient Diamonds On Navy Background (1)](https://github.com/user-attachments/assets/dfa9158d-0307-48af-9db7-d82cf35d8bca)
 
-```
 # AMPEL360: the project
 ## **GAIA-AIR AMPEL360 and e.G.A.I.As: Merging Sustainable Aviation with Embodied, Evolving, Extended Intelligence**
 
@@ -798,7 +797,7 @@ Diagram 71-QP-03-02: AEHCS-Q-01 Interface - Schematic.
 Diagram 71-QP-04-01: Thrust Vectoring System - Mechanical Design.
 Diagram 71-QP-04-02: Thrust Vectoring System - Control System Integration.
 **Nota:** Estos diagramas son altamente confidenciales y están disponibles por separado bajo acceso controlado.
-
+```
 ### 71.100.03 Reference Standards and Documents
 
 - **FAR Part 25:** Airworthiness Standards: Transport Category Airplanes.
@@ -921,7 +920,7 @@ Esta sección proporciona información suplementaria para apoyar el documento pr
 
 * **Diagram 71-QP-00-01:** Q-01 Quantum Propulsion System - Overall System Architecture (Refer to Figure en la Sección 71.20.05).
 * **Diagram 71-QP-01-01:** Quantum Entanglement Engine (QEE) - Schematic Diagram.
-
+```
 ```mermaid
 graph LR
     subgraph "71-QP-01-01: QEE - Schematic Diagram"
@@ -986,7 +985,7 @@ Diagram 71-QP-03-02: AEHCS-Q-01 Interface - Schematic.
 Diagram 71-QP-04-01: Thrust Vectoring System - Mechanical Design.
 Diagram 71-QP-04-02: Thrust Vectoring System - Control System Integration.
 **Nota:** Estos diagramas son altamente confidenciales y están disponibles por separado bajo acceso controlado.
-
+```
 ### 71.100.03 Reference Standards and Documents
 
 - **FAR Part 25:** Airworthiness Standards: Transport Category Airplanes.
@@ -1118,7 +1117,7 @@ Esta sección proporciona información suplementaria para apoyar el documento pr
 * **Diagram 71-QP-04-02:** Thrust Vectoring System - Control System Integration.
 
 **Nota:** Estos diagramas son altamente confidenciales y están disponibles por separado bajo acceso controlado.
-
+```
 ```
 ```mermaid
 graph LR
@@ -1649,7 +1648,7 @@ Diagram 71-QP-03-02: AEHCS-Q-01 Interface - Schematic.
 Diagram 71-QP-04-01: Thrust Vectoring System - Mechanical Design.
 Diagram 71-QP-04-02: Thrust Vectoring System - Control System Integration.
 **Nota:** Estos diagramas son altamente confidenciales y están disponibles por separado bajo acceso controlado.
-
+```
 ### 71.100.03 Reference Standards and Documents
 
 - **FAR Part 25:** Airworthiness Standards: Transport Category Airplanes.
