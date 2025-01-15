@@ -1119,6 +1119,7 @@ Esta sección proporciona información suplementaria para apoyar el documento pr
 
 **Nota:** Estos diagramas son altamente confidenciales y están disponibles por separado bajo acceso controlado.
 
+```
 ```mermaid
 graph LR
     subgraph "71-QP-01-01: QEE - Schematic Diagram"
@@ -1184,6 +1185,7 @@ Diagram 71-QP-04-01: Thrust Vectoring System - Mechanical Design.
 Diagram 71-QP-04-02: Thrust Vectoring System - Control System Integration.
 **Nota:** Estos diagramas son altamente confidenciales y están disponibles por separado bajo acceso controlado.
 
+```
 ### 71.100.03 Reference Standards and Documents
 
 - **FAR Part 25:** Airworthiness Standards: Transport Category Airplanes.
