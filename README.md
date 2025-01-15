@@ -776,7 +776,7 @@ graph LR
         style CU fill:#ffc,stroke:#222,stroke-width:2px
         style AEHCS fill:#eee,stroke:#222,stroke-width:1px
     end
-```
+
     %% Interactive placeholders (for web-based implementation)
     click PS "showTooltip('Particle Source: Generates specific particles for entanglement<br>Type: [Proprietary]<br>Material: [Proprietary]<br>Emission Rate: [Proprietary]', 'https://link.to/PS_docs')"
     click PG "showTooltip('Photon Generator: Generates Photons for Entanglement<br>Type: [Proprietary]<br>Wavelength: 405 nm<br>Power: [Proprietary]', 'https://link.to/PG_docs')"
@@ -789,6 +789,7 @@ graph LR
     click QSM "showTooltip('Quantum State Modulator: Precisely modulates entangled states<br>Technology: [Proprietary]<br>Accuracy: >99%<br>Response Time: <1 ns')"
     click CU "showTooltip('Control Unit: Manages QEE operations, interfaces with FADEC<br>Software: [Proprietary]<br>Redundancy: Triple-redundant')"
     click AEHCS "showTooltip('Atmospheric Energy Harvesting System: Supplements QEE power<br>Technology: [Proprietary]<br>Efficiency: [Proprietary]')"
+```
 Diagram 71-QP-01-02: QEE - Entanglement Generation Process Flowchart.
 Diagram 71-QP-02-01: Quantum State Modulator (QSM) - Functional Block Diagram.
 Diagram 71-QP-02-02: QSM - Control System Architecture.
@@ -797,7 +798,7 @@ Diagram 71-QP-03-02: AEHCS-Q-01 Interface - Schematic.
 Diagram 71-QP-04-01: Thrust Vectoring System - Mechanical Design.
 Diagram 71-QP-04-02: Thrust Vectoring System - Control System Integration.
 **Nota:** Estos diagramas son altamente confidenciales y están disponibles por separado bajo acceso controlado.
-```
+
 ### 71.100.03 Reference Standards and Documents
 
 - **FAR Part 25:** Airworthiness Standards: Transport Category Airplanes.
@@ -920,7 +921,7 @@ Esta sección proporciona información suplementaria para apoyar el documento pr
 
 * **Diagram 71-QP-00-01:** Q-01 Quantum Propulsion System - Overall System Architecture (Refer to Figure en la Sección 71.20.05).
 * **Diagram 71-QP-01-01:** Quantum Entanglement Engine (QEE) - Schematic Diagram.
-```
+
 ```mermaid
 graph LR
     subgraph "71-QP-01-01: QEE - Schematic Diagram"
@@ -964,7 +965,7 @@ graph LR
         style CU fill:#ffc,stroke:#222,stroke-width:2px
         style AEHCS fill:#eee,stroke:#222,stroke-width:1px
     end
-
+```
     %% Interactive placeholders (for web-based implementation)
     click PS "showTooltip('Particle Source: Generates specific particles for entanglement<br>Type: [Proprietary]<br>Material: [Proprietary]<br>Emission Rate: [Proprietary]', 'https://link.to/PS_docs')"
     click PG "showTooltip('Photon Generator: Generates Photons for Entanglement<br>Type: [Proprietary]<br>Wavelength: 405 nm<br>Power: [Proprietary]', 'https://link.to/PG_docs')"
@@ -977,6 +978,7 @@ graph LR
     click QSM "showTooltip('Quantum State Modulator: Precisely modulates entangled states<br>Technology: [Proprietary]<br>Accuracy: >99%<br>Response Time: <1 ns')"
     click CU "showTooltip('Control Unit: Manages QEE operations, interfaces with FADEC<br>Software: [Proprietary]<br>Redundancy: Triple-redundant')"
     click AEHCS "showTooltip('Atmospheric Energy Harvesting System: Supplements QEE power<br>Technology: [Proprietary]<br>Efficiency: [Proprietary]')"
+  ```
 Diagram 71-QP-01-02: QEE - Entanglement Generation Process Flowchart.
 Diagram 71-QP-02-01: Quantum State Modulator (QSM) - Functional Block Diagram.
 Diagram 71-QP-02-02: QSM - Control System Architecture.
@@ -1627,7 +1629,7 @@ graph LR
         style CU fill:#ffc,stroke:#222,stroke-width:2px
         style AEHCS fill:#eee,stroke:#222,stroke-width:1px
     end
-
+```
     %% Interactive placeholders (for web-based implementation)
     click PS "showTooltip('Particle Source: Generates specific particles for entanglement<br>Type: [Proprietary]<br>Material: [Proprietary]<br>Emission Rate: [Proprietary]', 'https://link.to/PS_docs')"
     click PG "showTooltip('Photon Generator: Generates Photons for Entanglement<br>Type: [Proprietary]<br>Wavelength: 405 nm<br>Power: [Proprietary]', 'https://link.to/PG_docs')"
@@ -1640,6 +1642,7 @@ graph LR
     click QSM "showTooltip('Quantum State Modulator: Precisely modulates entangled states<br>Technology: [Proprietary]<br>Accuracy: >99%<br>Response Time: <1 ns')"
     click CU "showTooltip('Control Unit: Manages QEE operations, interfaces with FADEC<br>Software: [Proprietary]<br>Redundancy: Triple-redundant')"
     click AEHCS "showTooltip('Atmospheric Energy Harvesting System: Supplements QEE power<br>Technology: [Proprietary]<br>Efficiency: [Proprietary]')"
+    ```
 Diagram 71-QP-01-02: QEE - Entanglement Generation Process Flowchart.
 Diagram 71-QP-02-01: Quantum State Modulator (QSM) - Functional Block Diagram.
 Diagram 71-QP-02-02: QSM - Control System Architecture.
@@ -1648,7 +1651,7 @@ Diagram 71-QP-03-02: AEHCS-Q-01 Interface - Schematic.
 Diagram 71-QP-04-01: Thrust Vectoring System - Mechanical Design.
 Diagram 71-QP-04-02: Thrust Vectoring System - Control System Integration.
 **Nota:** Estos diagramas son altamente confidenciales y están disponibles por separado bajo acceso controlado.
-```
+
 ### 71.100.03 Reference Standards and Documents
 
 - **FAR Part 25:** Airworthiness Standards: Transport Category Airplanes.
@@ -1665,7 +1668,6 @@ Diagram 71-QP-04-02: Thrust Vectoring System - Control System Integration.
 ---
 
 **Descargar GAIA_AIR_Documentation.md:** [Enlace de descarga](#)
-```
 
 ---
 ## Instructions for Implementing Interactive Tooltips for the 'PS' Node in the Mermaid Diagram
