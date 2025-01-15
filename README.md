@@ -732,40 +732,57 @@ A comprehensive risk assessment ensures that potential risks associated with eac
 **Example Layout Description:**
 Here is the same diagram rendered using Graphviz's DOT language:
 
-```dot
-digraph G {
-    node [shape=box, style=filled];
+```mermaid
+flowchart TD
+    %% Class definitions for vibrant colors
+    classDef engines fill:#f9f,stroke:#333,stroke-width:2px;
+    classDef airframe fill:#b3e6ff,stroke:#1a75ff,stroke-width:2px;
+    classDef energy fill:#ffd9b3,stroke:#ff6600,stroke-width:2px;
+    classDef mechanics fill:#b3ffb3,stroke:#33cc33,stroke-width:2px;
+    classDef quantum fill:#ffe6ff,stroke:#cc33cc,stroke-width:2px;
+    classDef control fill:#e6e600,stroke:#b3b300,stroke-width:2px;
+    classDef security fill:#ff6666,stroke:#ff0000,stroke-width:2px;
+    classDef aerodynamics fill:#ffcc99,stroke:#e68a00,stroke-width:2px;
+    classDef backup fill:#ccccff,stroke:#6666ff,stroke-width:2px;
+    classDef cabin fill:#99ffcc,stroke:#33cc99,stroke-width:2px;
+    classDef cockpit fill:#e6b3cc,stroke:#cc6699,stroke-width:2px;
+    classDef avionics fill:#b3b3cc,stroke:#6666b3,stroke-width:2px;
+    classDef architectures fill:#d9b3b3,stroke:#994d4d,stroke-width:2px;
+    classDef central fill:#c2d6d6,stroke:#5c8a8a,stroke-width:2px;
+    classDef supporting fill:#d9d9d9,stroke:#8c8c8c,stroke-width:2px;
 
-    EDM [label="Engines Data Modules", fillcolor="#f9f"];
-    AAMDM [label="Airframe Architectures and Materials Data Modules", fillcolor="#b3e6ff"];
-    EnDM [label="Energy Data Modules", fillcolor="#ffd9b3"];
-    MPRDM [label="Mechanics, Printers, Robotics, and Intelligent Actuation Data Modules", fillcolor="#b3ffb3"];
-    QECM [label="Quantum Enhanced Communication Data Modules", fillcolor="#ffe6ff"];
-    ACFATM [label="Autonomous Control, Flight, and Air Traffic Management Data Modules", shape=ellipse, fillcolor="#e6e600"];
-    STDMS [label="Security and Traceability Data Modules", fillcolor="#ff6666"];
-    ATHMHCDRM [label="Aerodynamics, Thermal Management, Hydromagnetic Systems, and Carbon Dioxide Regeneration Data Modules", fillcolor="#ffcc99"];
-    BAAM [label="Backup and Auxiliary Data Modules", fillcolor="#ccccff"];
-    CSDM [label="Cabin Sustainable Data Modules", fillcolor="#99ffcc"];
-    CPAPESYS [label="Cockpit Passenger Entertainment Systems", fillcolor="#e6b3cc"];
-    GASS [label="Global Avionics, Schematics, Sensing, Central-Linked Interconnection, and Supporting Data Modules", fillcolor="#b3b3cc"];
-    GAISARs [label="Global Air and Space Architectures Data Modules", fillcolor="#d9b3b3"];
-    CCU [label="Central Control Unit", fillcolor="#c2d6d6"];
-    SS [label="Supporting Systems (Emergency, Maintenance, User Interfaces)", fillcolor="#d9d9d9"];
+    %% Nodes with labels and class assignments
+    EDM["Engines Data Modules"]:::engines
+    AAMDM["Airframe Architectures and Materials Data Modules"]:::airframe
+    EnDM["Energy Data Modules"]:::energy
+    MPRDM["Mechanics, Printers, Robotics, and Intelligent Actuation Data Modules"]:::mechanics
+    QECM["Quantum Enhanced Communication Data Modules"]:::quantum
+    ACFATM{"Autonomous Control, Flight, and Air Traffic Management Data Modules"}:::control
+    STDMS["Security and Traceability Data Modules"]:::security
+    ATHMHCDRM["Aerodynamics, Thermal Management, Hydromagnetic Systems, and Carbon Dioxide Regeneration Data Modules"]:::aerodynamics
+    BAAM["Backup and Auxiliary Data Modules"]:::backup
+    CSDM["Cabin Sustainable Data Modules"]:::cabin
+    CPAPESYS["Cockpit Passenger Entertainment Systems"]:::cockpit
+    GASS["Global Avionics, Schematics, Sensing, Central-Linked Interconnection, and Supporting Data Modules"]:::avionics
+    GAISARs["Global Air and Space Architectures Data Modules"]:::architectures
+    CCU["Central Control Unit"]:::central
+    SS["Supporting Systems (Emergency, Maintenance, User Interfaces)"]:::supporting
 
-    EDM -> AAMDM;
-    AAMDM -> EnDM;
-    AAMDM -> MPRDM;
-    MPRDM -> QECM;
-    QECM -> ACFATM;
-    ACFATM -> STDMS;
-    ATHMHCDRM -> BAAM;
-    BAAM -> CSDM;
-    CSDM -> CPAPESYS;
-    CPAPESYS -> GASS;
-    GASS -> GAISARs;
-    GAISARs -> CCU;
-    CCU -> SS;
-}
+    %% Connections between nodes
+    EDM --> AAMDM
+    AAMDM --> EnDM
+    AAMDM --> MPRDM
+    MPRDM --> QECM
+    QECM --> ACFATM
+    ACFATM --> STDMS
+    ATHMHCDRM --> BAAM
+    BAAM --> CSDM
+    CSDM --> CPAPESYS
+    CPAPESYS --> GASS
+    GASS --> GAISARs
+    GAISARs --> CCU
+    CCU --> SS
+
 ```
 
 
