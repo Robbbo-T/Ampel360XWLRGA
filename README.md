@@ -1016,35 +1016,45 @@ A comprehensive risk assessment ensures that potential risks associated with eac
 
 **Example Layout Description:**
 
+**mermaid**
 ```
-                    [Engines Data Modules (EDM)]
-                               |
-                               |
-             [Airframe Architectures and Materials Data Modules (AAMDM)] --- [Energy Data Modules (EnDM)]
-                               |                                      |
-                               |                                      |
-    [Mechanics, Printers, Robotics, and Intelligent Actuation Data Modules (MPRDM)] --- [Quantum Enhanced Communication Data Modules (QECM)]
-                               |                                      |
-                               |                                      |
-            [Autonomous Control, Flight, and Air Traffic Management Data Modules (ACFATM)] --- [Security and Traceability Data Modules (STDMS)]
-                               |                                      |
-                               |                                      |
-             [Aerodynamics, Thermal Management, Hydromagnetic Systems, and Carbon Dioxide Regeneration Data Modules (ATHMHCDRM)] --- [Backup and Auxiliary Data Modules (BAAM)]
-                               |                                      |
-                               |                                      |
-                     [Cabin Sustainable Data Modules (CSDM)] --- [Cockpit Passenger Entertainment Systems (CPAPESYS)]
-                               |                                      |
-                               |                                      |
-          [Global Avionics, Schematics, Sensing, Central-Linked Interconnection, and Supporting Data Modules (GASS)]
-                               |
-                               |
-    [Airframe Architectures and Materials Data Modules (AAMDM)] --- [Global Air and Space Architectures Data Modules (GAISARs)]
-                               |
-                               |
-                           [Central Control Unit (CCU)]
-                               |
-                               |
-                    [Supporting Systems (Emergency, Maintenance, User Interfaces)]
+flowchart TD
+    %% Nodes with different shapes and colors
+    EDM(["Engines Data Modules (EDM)"]):::engines
+    AAMDM(["Airframe Architectures and Materials Data Modules (AAMDM)"]):::airframe
+    EnDM(["Energy Data Modules (EnDM)"]):::energy
+    MPRDM(["Mechanics, Printers, Robotics, and Intelligent Actuation Data Modules (MPRDM)"]):::mechanics
+    QECM(["Quantum Enhanced Communication Data Modules (QECM)"]):::quantum
+    ACFATM{{"Autonomous Control, Flight, and Air Traffic Management Data Modules (ACFATM)"}}:::control
+    STDMS(["Security and Traceability Data Modules (STDMS)"]):::security
+    ATHMHCDRM(["Aerodynamics, Thermal Management, Hydromagnetic Systems, and Carbon Dioxide Regeneration Data Modules (ATHMHCDRM)"]):::aerodynamics
+    BAAM(["Backup and Auxiliary Data Modules (BAAM)"]):::backup
+    CSDM(["Cabin Sustainable Data Modules (CSDM)"]):::cabin
+    CPAPESYS(["Cockpit Passenger Entertainment Systems (CPAPESYS)"]):::cockpit
+    GASS(["Global Avionics, Schematics, Sensing, Central-Linked Interconnection, and Supporting Data Modules (GASS)"]):::avionics
+    GAISARs(["Global Air and Space Architectures Data Modules (GAISARs)"]):::architectures
+    CCU(["Central Control Unit (CCU)"]):::central
+    SS(["Supporting Systems (Emergency, Maintenance, User Interfaces)"]):::supporting
+
+    %% Connections between nodes
+    EDM --> AAMDM
+    AAMDM --> EnDM
+    AAMDM --> MPRDM
+    MPRDM --> QECM
+    QECM --> ACFATM
+    ACFATM --> STDMS
+    ATHMHCDRM --> BAAM
+    BAAM --> CSDM
+    CSDM --> CPAPESYS
+    CPAPESYS --> GASS
+    GASS --> GAISARs
+    GAISARs --> CCU
+    CCU --> SS
+    
+    %% Alternative connections
+    AAMDM -- Linked --> ATHMHCDRM 
+    GAISARs -- Additional Connection --> GASS
+
 ```
 
 ---
