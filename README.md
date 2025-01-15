@@ -730,36 +730,58 @@ A comprehensive risk assessment ensures that potential risks associated with eac
 6. **Legend:** Explaining color codes and line styles.
 
 **Example Layout Description:**
-
+mermaid
 ```
-                    [Engines Data Modules (EDM)]
-                               |
-                               |
-             [Airframe Architectures and Materials Data Modules (AAMDM)] --- [Energy Data Modules (EnDM)]
-                               |                                      |
-                               |                                      |
-    [Mechanics, Printers, Robotics, and Intelligent Actuation Data Modules (MPRDM)] --- [Quantum Enhanced Communication Data Modules (QECM)]
-                               |                                      |
-                               |                                      |
-            [Autonomous Control, Flight, and Air Traffic Management Data Modules (ACFATM)] --- [Security and Traceability Data Modules (STDMS)]
-                               |                                      |
-                               |                                      |
-             [Aerodynamics, Thermal Management, Hydromagnetic Systems, and Carbon Dioxide Regeneration Data Modules (ATHMHCDRM)] --- [Backup and Auxiliary Data Modules (BAAM)]
-                               |                                      |
-                               |                                      |
-                     [Cabin Sustainable Data Modules (CSDM)] --- [Cockpit Passenger Entertainment Systems (CPAPESYS)]
-                               |                                      |
-                               |                                      |
-          [Global Avionics, Schematics, Sensing, Central-Linked Interconnection, and Supporting Data Modules (GASS)]
-                               |
-                               |
-    [Airframe Architectures and Materials Data Modules (AAMDM)] --- [Global Air and Space Architectures Data Modules (GAISARs)]
-                               |
-                               |
-                           [Central Control Unit (CCU)]
-                               |
-                               |
-                    [Supporting Systems (Emergency, Maintenance, User Interfaces)]
+        flowchart TD
+    %% Style definitions
+    classDef engines fill:#f9f,stroke:#333,stroke-width:2px;
+    classDef airframe fill:#b3e6ff,stroke:#1a75ff,stroke-width:2px;
+    classDef energy fill:#ffd9b3,stroke:#ff6600,stroke-width:2px;
+    classDef mechanics fill:#b3ffb3,stroke:#33cc33,stroke-width:2px;
+    classDef quantum fill:#ffe6ff,stroke:#cc33cc,stroke-width:2px;
+    classDef control fill:#e6e600,stroke:#b3b300,stroke-width:2px;
+    classDef security fill:#ff6666,stroke:#ff0000,stroke-width:2px;
+    classDef aerodynamics fill:#ffcc99,stroke:#e68a00,stroke-width:2px;
+    classDef backup fill:#ccccff,stroke:#6666ff,stroke-width:2px;
+    classDef cabin fill:#99ffcc,stroke:#33cc99,stroke-width:2px;
+    classDef cockpit fill:#e6b3cc,stroke:#cc6699,stroke-width:2px;
+    classDef avionics fill:#b3b3cc,stroke:#6666b3,stroke-width:2px;
+    classDef architectures fill:#d9b3b3,stroke:#994d4d,stroke-width:2px;
+    classDef central fill:#c2d6d6,stroke:#5c8a8a,stroke-width:2px;
+    classDef supporting fill:#d9d9d9,stroke:#8c8c8c,stroke-width:2px;
+
+    %% Nodes with different shapes
+    EDM["Engines Data Modules"]:::engines
+    AAMDM["Airframe Architectures and Materials Data Modules"]:::airframe
+    EnDM["Energy Data Modules"]:::energy
+    MPRDM["Mechanics, Printers, Robotics, and Intelligent Actuation Data Modules"]:::mechanics
+    QECM["Quantum Enhanced Communication Data Modules"]:::quantum
+    ACFATM{{"Autonomous Control, Flight, and Air Traffic Management Data Modules"}}:::control
+    STDMS["Security and Traceability Data Modules"]:::security
+    ATHMHCDRM["Aerodynamics, Thermal Management, Hydromagnetic Systems, and Carbon Dioxide Regeneration Data Modules"]:::aerodynamics
+    BAAM["Backup and Auxiliary Data Modules"]:::backup
+    CSDM["Cabin Sustainable Data Modules"]:::cabin
+    CPAPESYS["Cockpit Passenger Entertainment Systems"]:::cockpit
+    GASS["Global Avionics, Schematics, Sensing, Central-Linked Interconnection, and Supporting Data Modules"]:::avionics
+    GAISARs["Global Air and Space Architectures Data Modules"]:::architectures
+    CCU["Central Control Unit"]:::central
+    SS["Supporting Systems (Emergency, Maintenance, User Interfaces)"]:::supporting
+
+    %% Connections between nodes
+    EDM --> AAMDM
+    AAMDM --> EnDM
+    AAMDM --> MPRDM
+    MPRDM --> QECM
+    QECM --> ACFATM
+    ACFATM --> STDMS
+    ATHMHCDRM --> BAAM
+    BAAM --> CSDM
+    CSDM --> CPAPESYS
+    CPAPESYS --> GASS
+    GASS --> GAISARs
+    GAISARs --> CCU
+    CCU --> SS
+
 ```
 
 ---
