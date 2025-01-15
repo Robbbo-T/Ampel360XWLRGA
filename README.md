@@ -731,6 +731,8 @@ Esta sección proporciona información suplementaria para apoyar el documento pr
 * **Diagram 71-QP-00-01:** Q-01 Quantum Propulsion System - Overall System Architecture (Refer to Figure en la Sección 71.20.05).
 * **Diagram 71-QP-01-01:** Quantum Entanglement Engine (QEE) - Schematic Diagram.
 
+  # NOT SHOWN (PROPRIETARY INFORMATIOPN)
+
 ```mermaid
 graph LR
     subgraph "71-QP-01-01: QEE - Schematic Diagram"
