@@ -1018,61 +1018,7 @@ A comprehensive risk assessment ensures that potential risks associated with eac
 
 **Example Layout Description:**
 
-**mermaid**
-```flowchart TD
-    %% Class definitions for vibrant colors
-    classDef engines fill:#33A1FD,stroke:#1E90FF,stroke-width:2px;
-    classDef airframe fill:#FFD700,stroke:#FFC300,stroke-width:2px;
-    classDef energy fill:#7CFC00,stroke:#32CD32,stroke-width:2px;
-    classDef mechanics fill:#FF6347,stroke:#FF4500,stroke-width:2px;
-    classDef quantum fill:#BA55D3,stroke:#8A2BE2,stroke-width:2px;
-    classDef control fill:#F08080,stroke:#CD5C5C,stroke-width:2px;
-    classDef security fill:#FF69B4,stroke:#FF1493,stroke-width:2px;
-    classDef aerodynamics fill:#00CED1,stroke:#20B2AA,stroke-width:2px;
-    classDef backup fill:#FFB6C1,stroke:#FF69B4,stroke-width:2px;
-    classDef cabin fill:#F5DEB3,stroke:#D2B48C,stroke-width:2px;
-    classDef cockpit fill:#FFE4C4,stroke:#DEB887,stroke-width:2px;
-    classDef avionics fill:#AFEEEE,stroke:#40E0D0,stroke-width:2px;
-    classDef architectures fill:#DDA0DD,stroke:#DA70D6,stroke-width:2px;
-    classDef central fill:#98FB98,stroke:#00FA9A,stroke-width:2px;
-    classDef supporting fill:#E6E6FA,stroke:#D8BFD8,stroke-width:2px;
-
-    %% Nodes with different shapes and colors
-    EDM(["Engines Data Modules (EDM)"]):::engines
-    AAMDM(["Airframe Architectures and Materials Data Modules (AAMDM)"]):::airframe
-    EnDM(["Energy Data Modules (EnDM)"]):::energy
-    MPRDM(["Mechanics, Printers, Robotics, and Intelligent Actuation Data Modules (MPRDM)"]):::mechanics
-    QECM(["Quantum Enhanced Communication Data Modules (QECM)"]):::quantum
-    ACFATM{{"Autonomous Control, Flight, and Air Traffic Management Data Modules (ACFATM)"}}:::control
-    STDMS(["Security and Traceability Data Modules (STDMS)"]):::security
-    ATHMHCDRM(["Aerodynamics, Thermal Management, Hydromagnetic Systems, and Carbon Dioxide Regeneration Data Modules (ATHMHCDRM)"]):::aerodynamics
-    BAAM(["Backup and Auxiliary Data Modules (BAAM)"]):::backup
-    CSDM(["Cabin Sustainable Data Modules (CSDM)"]):::cabin
-    CPAPESYS(["Cockpit Passenger Entertainment Systems (CPAPESYS)"]):::cockpit
-    GASS(["Global Avionics, Schematics, Sensing, Central-Linked Interconnection, and Supporting Data Modules (GASS)"]):::avionics
-    GAISARs(["Global Air and Space Architectures Data Modules (GAISARs)"]):::architectures
-    CCU(["Central Control Unit (CCU)"]):::central
-    SS(["Supporting Systems (Emergency, Maintenance, User Interfaces)"]):::supporting
-
-    %% Connections between nodes
-    EDM --> AAMDM
-    AAMDM --> EnDM
-    AAMDM --> MPRDM
-    MPRDM --> QECM
-    QECM --> ACFATM
-    ACFATM --> STDMS
-    ATHMHCDRM --> BAAM
-    BAAM --> CSDM
-    CSDM --> CPAPESYS
-    CPAPESYS --> GASS
-    GASS --> GAISARs
-    GAISARs --> CCU
-    CCU --> SS
-    
-    %% Alternative connections
-    AAMDM -- Linked --> ATHMHCDRM 
-    GAISARs -- Additional Connection --> GASS
-```
+![mermaid-ai-diagram-2025-01-15-235604](https://github.com/user-attachments/assets/1381a76a-1414-4c70-8cb6-d2d45a68fd18)
 
 ---
 
