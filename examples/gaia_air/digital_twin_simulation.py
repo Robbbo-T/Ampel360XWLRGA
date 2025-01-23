@@ -26,6 +26,13 @@ class DigitalTwin:
         ax.set_zlabel('Z')
         plt.show()
 
+    def integrate_real_time_data(self, real_time_data):
+        if self.sensor_data is None:
+            raise ValueError("Sensor data not loaded")
+        # Integrate real-time data into the simulation
+        integrated_data = np.concatenate((self.sensor_data, real_time_data), axis=0)
+        return integrated_data
+
 # Example usage
 if __name__ == "__main__":
     # Load a 3D model (placeholder)
@@ -45,3 +52,10 @@ if __name__ == "__main__":
 
     # Visualize the results
     dt.visualize_results(simulated_data)
+
+    # Integrate real-time data (placeholder)
+    real_time_data = np.random.rand(50, 3)
+    integrated_data = dt.integrate_real_time_data(real_time_data)
+
+    # Visualize the integrated data
+    dt.visualize_results(integrated_data)

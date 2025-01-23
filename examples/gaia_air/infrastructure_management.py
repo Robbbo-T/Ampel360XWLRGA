@@ -35,6 +35,18 @@ class InfrastructureManagement:
         print("All maintenance tasks automated.")
         return maintenance_tasks
 
+    def manage_qps_infrastructure(self, qps_components):
+        for component in qps_components:
+            print(f"Managing QPS component: {component['id']}")
+            time.sleep(1)  # Simulate time taken for management
+        print("All QPS components managed.")
+        return qps_components
+
+    def allocate_ground_support(self, support_tasks):
+        allocated_tasks = sorted(support_tasks, key=lambda x: x['priority'], reverse=True)
+        print("Allocated ground support tasks:", allocated_tasks)
+        return allocated_tasks
+
 # Example usage
 if __name__ == "__main__":
     im = InfrastructureManagement()
@@ -66,3 +78,18 @@ if __name__ == "__main__":
         {"id": "M3", "description": "Test emergency systems"}
     ]
     im.automate_maintenance(maintenance_tasks)
+
+    # Manage QPS infrastructure
+    qps_components = [
+        {"id": "QPS-CMP-001", "status": "Operational"},
+        {"id": "QPS-CMP-002", "status": "Maintenance Required"}
+    ]
+    im.manage_qps_infrastructure(qps_components)
+
+    # Allocate ground support
+    support_tasks = [
+        {"id": "S1", "priority": 2},
+        {"id": "S2", "priority": 1},
+        {"id": "S3", "priority": 3}
+    ]
+    im.allocate_ground_support(support_tasks)

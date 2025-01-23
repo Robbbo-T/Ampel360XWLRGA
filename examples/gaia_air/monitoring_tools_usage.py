@@ -43,6 +43,13 @@ class MonitoringTools:
                     print(alert)
         return alerts
 
+    def monitor_qps_components(self, qps_components):
+        for component in qps_components:
+            self.collect_telemetry(component)
+        aggregated_data = self.aggregate_telemetry()
+        self.visualize_telemetry(aggregated_data)
+        self.generate_alerts(aggregated_data)
+
 # Example usage
 if __name__ == "__main__":
     mt = MonitoringTools()
@@ -62,3 +69,7 @@ if __name__ == "__main__":
 
     # Generate alerts
     mt.generate_alerts(aggregated_data)
+
+    # Monitor QPS components
+    qps_components = ["QPS-CMP-001", "QPS-CMP-002", "QPS-CMP-003"]
+    mt.monitor_qps_components(qps_components)

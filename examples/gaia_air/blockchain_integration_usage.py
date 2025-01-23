@@ -22,12 +22,15 @@ class Blockchain:
         self.chain.append(block)
         return block
 
-    def new_transaction(self, sender, recipient, amount):
-        self.current_transactions.append({
+    def new_transaction(self, sender, recipient, amount, maintenance_record=None):
+        transaction = {
             'sender': sender,
             'recipient': recipient,
             'amount': amount,
-        })
+        }
+        if maintenance_record:
+            transaction['maintenance_record'] = maintenance_record
+        self.current_transactions.append(transaction)
         return self.last_block['index'] + 1
 
     @staticmethod
@@ -82,7 +85,7 @@ def new_transaction():
     required = ['sender', 'recipient', 'amount']
     if not all(k in values for k in required):
         return 'Missing values', 400
-    index = blockchain.new_transaction(values['sender'], values['recipient'], values['amount'])
+    index = blockchain.new_transaction(values['sender'], values['recipient'], values['amount'], values.get('maintenance_record'))
     response = {'message': f'Transaction will be added to Block {index}'}
     return jsonify(response), 201
 
