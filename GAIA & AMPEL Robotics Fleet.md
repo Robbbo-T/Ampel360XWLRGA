@@ -99,7 +99,6 @@ Aquí tienes un desarrollo más extenso de la sección 4.2, que se centra en los
 
 **Example:  Detailed IN for Welding Procedures and Standards (GPAM-GAR-C-0402-04-001-001):**
 
-```
     IN: GPAM-GAR-C-0402-04-001-001 - Welding Procedures and Standards
 
     Document: GPAM-GAR-C-0402-04-001-A-001 - Welding Procedures and Standards
@@ -154,7 +153,7 @@ Aquí tienes un desarrollo más extenso de la sección 4.2, que se centra en los
 
         10.  Revision History:
             *   Version 1.0: Initial release (2025-03-15)
-```
+
 
 **Diagram Example (Mermaid):**
 
@@ -236,7 +235,7 @@ El objetivo de este documento es unificar la documentación COAFI, S1000D y la a
 
 ### **Antes:**
 
-```plaintext
+
 ### IV. ROBBBO-T Robotics Family
 
 - [4.1 ROBBBO-T-C (Construction and Maintenance)](./robbbo_t/construction.md) (Status: In Development, TRL: 4, Last Updated: 2025-03-01)
@@ -247,11 +246,11 @@ El objetivo de este documento es unificar la documentación COAFI, S1000D y la a
     - [4.1.2 ROBBBO-T-C Deployment and Operation](./robbbo_t/construction/operation.md)
         - [4.1.2.1 Use Cases (Welding, Assembly, Inspection)]
         - [4.1.2.2 Integration with Digital Twin]
-```
+
 
 ### **Después: GAIA & AMPEL Robotics Fleet (GAR Fleet) y COROBOCART**
 
-```plaintext
+
 ### IV. GAIA & AMPEL Robotics Fleet (GAR Fleet)
 
 - [4.1 GAR Fleet Overview](./gar_fleet/overview.md) (Status: In Development, TRL: 4, Last Updated: 2025-03-15)
@@ -397,7 +396,6 @@ El objetivo de este documento es unificar la documentación COAFI, S1000D y la a
 | **Task Coordination**               | El Digital Twin coordina las tareas asignadas a COROBOCART, optimizando la distribución de recursos y la eficiencia operativa. |
 | **Performance Monitoring**          | Monitorea el desempeño de COROBOCART, detectando desviaciones y proporcionando alertas para intervenciones necesarias. |
 
----
 
 ## **V. Cápsulas VTOL Teledirigidas (CVT)**
 
@@ -429,7 +427,7 @@ Reclasificadas desde "AirCar Ships", se ubican en:
 - **Optimización de Rutas**: El QGDC, con la ayuda de la computación cuántica, optimiza las rutas de vuelo de las CVTs para la eficiencia y la seguridad.
 - **Suministro de Energía**: El QGDC podría, en el futuro, dirigir haces de energía a las CVTs a través de microondas o láser, utilizando la infraestructura del PLAN TELESCOPE.
 
----
+
 
 ## **VI. Diagrama de Integración (Mermaid)**
 
@@ -567,13 +565,6 @@ Con esta actualización, el proyecto **GAIA AIR** obtiene una visión unificada 
 - **Redactar Módulos S1000D** para cada división, comenzando por GAR-C, GAR-P, GAR-A, GAR-S o COROBOCART.
 - **Crear Documentación de Integración** para asegurar la interoperabilidad entre GAR Fleet, COROBOCART, CVTs y otros sistemas de GAIA AIR.
 
-¡Listos para cualquier sección o diagrama que requieras profundizar!
-
-**Disclaimer:**  
-ChatGPT puede cometer errores. Considera verificar la información importante.
-```
-
----
 
 # **Renaming Reference: "COROBOCART"**
 
@@ -1469,8 +1460,5 @@ Con esta actualización, el proyecto **GAIA AIR** obtiene una visión unificada 
 
 ¡Listos para cualquier sección o diagrama que requieras profundizar!
 
-**Disclaimer:**  
-ChatGPT puede cometer errores. Considera verificar la información importante.
-```
 
 ---
