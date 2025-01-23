@@ -33,6 +33,13 @@ class DigitalTwin:
         integrated_data = np.concatenate((self.sensor_data, real_time_data), axis=0)
         return integrated_data
 
+    def simulate_qps_behavior(self, qps_data):
+        if self.sensor_data is None:
+            raise ValueError("Sensor data not loaded")
+        # Simulate QPS behavior using sensor data and QPS data
+        simulated_qps_data = self.sensor_data * qps_data * np.random.normal(1, 0.05, self.sensor_data.shape)
+        return simulated_qps_data
+
 # Example usage
 if __name__ == "__main__":
     # Load a 3D model (placeholder)
@@ -59,3 +66,10 @@ if __name__ == "__main__":
 
     # Visualize the integrated data
     dt.visualize_results(integrated_data)
+
+    # Simulate QPS behavior (placeholder)
+    qps_data = np.random.rand(100, 3)
+    simulated_qps_data = dt.simulate_qps_behavior(qps_data)
+
+    # Visualize the QPS behavior simulation results
+    dt.visualize_results(simulated_qps_data)

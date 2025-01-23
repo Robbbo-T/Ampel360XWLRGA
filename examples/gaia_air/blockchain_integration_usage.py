@@ -97,5 +97,21 @@ def full_chain():
     }
     return jsonify(response), 200
 
+# Example of smart contract for maintenance records
+@app.route('/maintenance', methods=['POST'])
+def maintenance_record():
+    values = request.get_json()
+    required = ['component_id', 'maintenance_action', 'timestamp']
+    if not all(k in values for k in required):
+        return 'Missing values', 400
+    maintenance_record = {
+        'component_id': values['component_id'],
+        'maintenance_action': values['maintenance_action'],
+        'timestamp': values['timestamp']
+    }
+    index = blockchain.new_transaction(sender="maintenance_system", recipient="qps", amount=0, maintenance_record=maintenance_record)
+    response = {'message': f'Maintenance record will be added to Block {index}'}
+    return jsonify(response), 201
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)

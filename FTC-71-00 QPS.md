@@ -555,4 +555,4 @@ A comprehensive list of abbreviations and technical terms used throughout the do
 | CFD                         | Computational Fluid Dynamics                                                                                                                             |
 | FEA                         | Finite Element Analysis                                                                                                                                 |
 | MIL-STD-1553                | Military Standard for digital communication                                                                                                              |
-| ARINC 429                  
+| ARINC 429

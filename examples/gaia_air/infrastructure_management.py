@@ -47,6 +47,11 @@ class InfrastructureManagement:
         print("Allocated ground support tasks:", allocated_tasks)
         return allocated_tasks
 
+    def manage_qps_infrastructure_and_ground_support(self, qps_components, support_tasks):
+        managed_qps = self.manage_qps_infrastructure(qps_components)
+        allocated_support = self.allocate_ground_support(support_tasks)
+        return managed_qps, allocated_support
+
 # Example usage
 if __name__ == "__main__":
     im = InfrastructureManagement()
@@ -93,3 +98,8 @@ if __name__ == "__main__":
         {"id": "S3", "priority": 3}
     ]
     im.allocate_ground_support(support_tasks)
+
+    # Manage QPS infrastructure and ground support
+    managed_qps, allocated_support = im.manage_qps_infrastructure_and_ground_support(qps_components, support_tasks)
+    print("Managed QPS components:", managed_qps)
+    print("Allocated ground support tasks:", allocated_support)
