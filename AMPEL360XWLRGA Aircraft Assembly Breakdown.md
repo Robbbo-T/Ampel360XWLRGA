@@ -1,4 +1,3 @@
-
 # AMPEL360XWLRGA Aircraft Assembly Breakdown
 
 This document provides a comprehensive hierarchical assembly breakdown of the **AMPEL360XWLRGA Aircraft**, incorporating essential geometric parameters (volumes, dimensions, surface areas) and **nominal weights free of payload** for each major subassembly and their respective components. Additionally, examples of parametric data integration using the **S1000D** standard are included.
@@ -1158,4 +1157,3 @@ In conclusion, the AMPEL360XWLRGA project, with its comprehensive hierarchical a
 
 Feel free to request further elaboration on specific subassemblies, additional **S1000D** data modules, or deeper dives into parametric workflows and integrations!
 
-```
