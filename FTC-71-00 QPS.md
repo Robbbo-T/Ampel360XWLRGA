@@ -1609,9 +1609,9 @@ The following diagram shows the internal components of the QSM, its electrical c
 
 ```mermaid
 graph LR
-    A["Fuente de Energía"] --> B["Unidad de Suministro de Energía (PSU)"]
-    B --> C["Modulador de Estado Cuántico (QSM)"]
-    C --> D["Control y Monitoreo (CMS)"]
+    A["Fuente de Energía"] --> B["Unidad de Suministro de Energía PSU"]
+    B --> C["Modulador de Estado Cuántico QSM"]
+    C --> D["Control y Monitoreo CMS"]
     C --> E["Sistema de Vacío"]
     C --> F["Módulo de Blindaje"]
     D --> G["Interfaz FADEC"]
@@ -1627,7 +1627,7 @@ The following diagram details the thrust generation process through quantum enta
 
 ```mermaid
 flowchart TD
-    A["Control y Monitoreo (CMS)"] --> B["Quantum Entanglement Engine (QEE)"]
+    A["Control y Monitoreo CMS"] --> B["Quantum Entanglement Engine QEE"]
     B --> C["Generación de Empuje"]
     C --> D["Thrust Output"]
     B --> E["Generación de Entrelazamiento"]
@@ -1642,8 +1642,8 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    A["Unidad Cryocooler"] --> B["Modulador de Estado Cuántico (QSM)"]
-    A --> C["Quantum Entanglement Engine (QEE)"]
+    A["Unidad Cryocooler"] --> B["Modulador de Estado Cuántico QSM"]
+    A --> C["Quantum Entanglement Engine QEE"]
     A --> D["Sistema de Vacío"]
     A --> E["Módulo de Blindaje"]
 ```
@@ -1652,12 +1652,12 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    QSM["Modulador de Estado Cuántico (QSM)"] -->|Datos de Estado| QEE["Quantum Entanglement Engine (QEE)"]
-    QSM -->|Datos de Control| CMS["Sistema de Control y Monitoreo (CMS)"]
+    QSM["Modulador de Estado Cuántico QSM"] -->|Datos de Estado| QEE["Quantum Entanglement Engine QEE"]
+    QSM -->|Datos de Control| CMS["Sistema de Control y Monitoreo CMS"]
     QEE -->|Datos de Empuje| FADEC["Interfaz FADEC"]
-    CMS -->|Comandos| PSU["Unidad de Suministro de Energía (PSU)"]
+    CMS -->|Comandos| PSU["Unidad de Suministro de Energía PSU"]
     PSU --> QSM
-    CMS -->|Datos de Supervisión| AEHCS["Sistema Avanzado de Manejo y Control de Energía (AEHCS)"]
+    CMS -->|Datos de Supervisión| AEHCS["Sistema Avanzado de Manejo y Control de Energía AEHCS"]
     AEHCS --> QSM
     AEHCS --> QEE
 ```
