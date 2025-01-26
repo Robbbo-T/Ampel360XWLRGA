@@ -112,6 +112,35 @@ graph LR
     style SH fill:#ddd,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5
 ```
 
+```mermaid
+graph TD
+    subgraph PowerDistribution
+        AEHCS[Atmospheric Energy Harvesting/Conversion System] --> ECU[Energy Conditioning Unit]
+        BPS[Backup Power Systems] --> ECU
+        ECU -- Conditioned Power --> QSM[Quantum State Modulator]
+        ECU -- Conditioned Power --> QEE[Quantum Entanglement Engine]
+        ECU -- Power --> CCS[Cryogenic Cooling System]
+    end
+
+    subgraph DataCommunication
+        ECU -- Data --> DMS[Diagnostics & Monitoring System]
+        DMS -- Diagnostics --> FADEC[Full Authority Digital Engine Control]
+        QSM -- Data --> CU[Control Unit]
+        QEE -- Status Data --> CU
+    end
+
+    subgraph ControlSignals
+        CU -- Control --> QSM
+        CU -- Control --> QEE
+        CU -- Feedback --> TVS[Thrust Vectoring System]
+    end
+
+    subgraph SensorsFeedback
+        Sensors -- Environmental Data --> DMS
+        DMS -- Alert Status --> FADEC
+    end
+```
+
 # FTC-71-00 QPS Breakdown Components and DM Blocks
 **
 **Version**: 1.0  
@@ -4133,7 +4162,670 @@ graph LR
 | **ARINC 429**                       | Aeronautical Radio, Incorporated specification for aircraft communication and data transmission   | [ARINC 429](https://standards.globalspec.com/std/996367/arinc-429)          |
 | **MIL-STD-1553**                    | Military Standard for Digital Time Division Command/Response Multiplex Data Bus                  | [MIL-STD-1553](https://quicksearch.dla.mil/)                                 |
 
+
+Below is a **merged, expanded PDR** section that integrates your refined “Coolant Line Specifications” (**Section 4**) into the overarching documentation. It also weaves in the detailed diagrams, subsystem layouts, and vibration isolation guidance from the **Mounting and Interface** sections. This consolidated version keeps a logical structure and references relevant internal documents, test plans, and technical guidelines. Where possible, Mermaid diagram snippets are provided to illustrate top-level concepts.
+
 ---
+
+# **Preliminary Design Review (PDR) – Q-01 Quantum Propulsion System**
+
+**P/N**: PDR-GAIAPULSE-AMPEL-0201-71-01-001  
+**Related IN**: GPAM-AMPEL-0201-71-01-001 - Q-01 Mounting, Interface, and Coolant Specifications (S1000D)  
+**System/Component**: Q-01 Quantum Propulsion System (QPS)  
+**Aircraft**: AMPEL360XWLRGA  
+**Version**: 1.0  
+**Date**: 2025-01-22  
+**Author**: Amedeo Pelliccia & AI Collaboration  
+**Status**: Draft
+
+---
+
+## **1. Introduction**
+
+This document presents the **Preliminary Design Review** for the **Q-01 Quantum Propulsion System** (QPS), focusing on:
+
+1. **Mounting and Interface Design**: How the Q-01 is physically integrated and secured within the AMPEL360XWLRGA.  
+2. **Coolant Line Specifications**: The design and performance requirements for transporting liquid helium (LHe) in the superfluid phase.  
+3. **Detailed Diagrams & CAD Models**: Conceptual representations of frame layouts, sub-assembly exploded views, and vibration-isolation strategies.
+
+Supporting references and test plans are included to ensure compliance with structural, thermal, cryogenic, and regulatory requirements.
+
+---
+
+## **2. Design Objectives**
+
+1. **Structural Integrity**: Securely mount Q-01 in the tail cone (ATA 53-50-00-000) with a safety factor of 1.6 on thrust loads (up to 1000 kN).  
+2. **Precise Alignment**: Maintain ±0.1° orientation.  
+3. **Thermal Management**: Provide cryogenic coolant lines (LHe at 20 mK) with minimal heat leak (< 5 W/m).  
+4. **Vibration Dampening**: Incorporate active isolators that mitigate vibration to protect quantum coherence.  
+5. **Maintainability**: Integrate quick-disconnect interfaces for coolant lines, power, and data harnesses.  
+6. **EMI Shielding**: Comply with MIL-STD-461F at ≥90 dB attenuation for 1–10 GHz range.  
+7. **Weight & Aerodynamics**: Keep mounting hardware under 150 kg, with negligible drag increase (< 0.005 ΔCD).  
+8. **Safety and Redundancy**: Provide robust pressure relief, leak detection, and emergency shutdown systems.
+
+---
+
+## **3. Mounting System**
+
+### 3.1 Mounting Location
+
+- **Placement**: Aft section of the tail cone (Section 53-50-00-000).  
+- **Rationale**:  
+  - Optimal thrust vectoring (pitch/yaw).  
+  - Helps maintain aircraft CG balance.  
+  - Facilitates maintenance access (including robotic systems, e.g., GAR-C).
+
+### 3.2 Primary & Secondary Frames
+
+- **Primary Frame (MTG-FRAME-Q1-001)**  
+  - **Material**: Ti-6Al-4V ELI lattice/truss structure.  
+  - **Load Capacity**: Up to 1600 kN (including safety factor).  
+  - **FEA Validation**: Reference GPAM-AMPEL-0201-53-50-FEA-001.
+
+- **Secondary Support Beams**  
+  - **Function**: Distribute out-of-plane loads, reduce torsional flex.  
+  - **Arrangement**: Three radial beams integrated with tail cone hardpoints.
+
+### 3.3 Vibration-Isolating Mounts
+
+- **Mount Quantity**: 3 or 4.  
+- **Technology**: Magnetostrictive actuators + piezoelectric sensors.  
+- **Performance**: <10 Hz natural frequency, damping ratio > 0.5.  
+- **Control System**: ML-P-based control loop for real-time vibration cancellation.  
+- **Alignment Mechanisms**: Fine-adjust screws/piezo actuators for post-installation alignment (±0.05°).
+
+### 3.4 Example Diagram (High-Level Mounting)
+
+```mermaid
+flowchart LR
+    A((Tail Cone Bulkhead))
+    B[Primary Frame<br>(MTG-FRAME-Q1-001)]
+    C[Secondary Support Beams]
+    D[Q-01<br>Subsystems]
+
+    A --Bolted--> B
+    B --Reinforced--> C
+    B --Mounting Pads--> D
+```
+
+**Explanation**: The tail cone bulkhead (A) anchors the primary frame (B). Secondary support beams (C) reinforce the structure. The Q-01 subsystem (D) then mounts via isolators.
+
+---
+
+## **4. Coolant Line Specifications**
+
+The **cryogenic coolant lines** are essential for maintaining the Q-01 in its operational temperature range (20 mK ± 5 mK). They transport liquid helium (LHe) in its superfluid phase from the Cryogenic Cooling System (CCS) to Q-01 and back.
+
+### 4.1 Line Segments
+
+1. **Supply Line (CCS → Q-01)**  
+   - Routed along the keel beam to minimize length and bends.  
+   - Color-coded **blue**, labeled “QPS-CL-SUPPLY” every meter.  
+   - Unique ID tags (e.g., QPS-CL-SUPPLY-001, -002, …).
+
+2. **Return Line (Q-01 → CCS)**  
+   - Runs parallel to supply line for thermal symmetry.  
+   - Color-coded **green**, labeled “QPS-CL-RETURN” every meter.  
+   - Unique ID tags.
+
+3. **Vent Line (Q-01 → Vent)**  
+   - Provides pressure relief for gaseous helium.  
+   - Routed externally, color-coded **yellow**, labeled “QPS-CL-VENT.”
+
+### 4.2 Material & Construction
+
+- **Inner Line**: Seamless 316LVM stainless steel tubing (e.g., TUBE-SS316LVM-25MM for supply).  
+  - **Surface Finish**: Ra < 0.4 μm, orbital TIG welded with helium leak checks.  
+- **Outer Vacuum Jacket**: 316L stainless steel (e.g., TUBE-SS316L-35MM).  
+  - **Vacuum Level**: < 1×10^-7 Torr in the annular space.  
+  - **Getter Material**: Zeolite pellets (P/N GETTER-ZEO-001).  
+  - **Multilayer Insulation (MLI)**: 50 layers of double-aluminized Mylar, target effective thermal conductivity < 0.01 W/m·K.
+
+| **Line**   | **Inner Ø (mm)** | **Outer Ø (mm)** | **Wall (mm)** | **Length (m)** | **Pressure Drop (kPa)** | **Weight (kg/m)** |
+|------------|------------------|------------------|---------------|----------------|-------------------------|-------------------|
+| Supply     | 25               | 35               | 1.5           | 3.5            | 5                       | 0.25              |
+| Return     | 30               | 40               | 1.5           | 3.5            | 3                       | 0.28              |
+| Vent       | 10               | 15               | 1.0           | 4.0            | Negligible              | 0.10              |
+
+### 4.3 Flexibility & Bending
+
+- **Min Bend Radius**: 150 mm to prevent kinking.  
+- **Bellows Sections**: 316L bellows (±15 mm flex) near Q-01 interface.  
+- **Vibration Testing**: Reference GPAM-AMPEL-0201-71-VIB-001 to ensure lines withstand flight vibration profiles.
+
+### 4.4 Thermal Performance
+
+- **Heat Leak Target**: < 5 W/m.  
+- **Temperature Rise**: < 2 mK from CCS exit to Q-01 inlet.  
+- **Thermal Modeling**: FEA and CFD (GPAM-AMPEL-0201-71-THERM-001).
+
+### 4.5 Connectors (Cryo-Couplings)
+
+- **Type**: CCTAP-25 (Cryo Connectors Inc.), P/N CRYO-CON-Q1-001.  
+- **Leak Rate**: < 10^-9 mbar·L/s at 4 K.  
+- **Sealing**: Indium wire gasket, metal-to-metal.  
+- **Locking**: Bayonet quick connect/disconnect, safety latch.  
+- **Placement**:  
+  - Supply: 2 (CCS & Q-01 ends)  
+  - Return: 2 (Q-01 & CCS)  
+  - Vent: 2 (Q-01 & external vent port)
+
+### 4.6 Installation & Routing
+
+- **Support Brackets**: CL-BRACKET-Q1-001 spaced every ~1 m.  
+- **Insulation**: Double-aluminized Mylar, 50 layers, parted by silk net or dimpled Kapton.  
+- **Cleaning**: Ultrasonic, solvent flush, vacuum bake-out prior to final assembly.  
+- **Testing**: Helium leak test, flow test, thermal performance test.  
+- **Maintenance**:  
+  - **Inspection Interval**: [Specify Hours]  
+  - **Getter Replacement**: [Specify Interval]  
+  - **Periodic Leak Checks**: Helium leak detection.
+
+---
+
+## **5. Interface Specifications**
+
+### 5.1 Mechanical Interface
+
+- **Mounting Points**: 4 hardpoints on the Q-01 interface ring (1.5 m diameter).  
+- **Fasteners**: M24 Ti-alloy bolts (BOLT-TI-Q1-001), torqued 800±5% Nm.  
+- **Tolerances**: ±0.05 mm on mounting surfaces.  
+- **Load Capacity**: 500 kN shear per mounting point.
+
+### 5.2 Electrical Interface
+
+- **Power Supply**: 400V DC from AEHCS (HTS lines), up to 1000 A peak.  
+- **Connector**: MIL-DTL-38999 Series III, 37-pin, shielded.  
+- **Data**: Redundant MIL-STD-1553B, 1 Mbps.  
+  - Thrust Setpoint, Vector Angles, Engine Mode, QSM/QEE Status, Diagnostics.
+
+### 5.3 Cryogenic Interface
+
+*(See Section 4 for coolant line details.)*
+
+### 5.4 FADEC Interface
+
+- **Protocol**: MIL-STD-1553B.  
+- **Control Signals**: Thrust setpoint (0–100%), vector angles, engine mode.  
+- **Status**: QSM operational/fault, QEE entanglement rate, cryogenic data.
+
+---
+
+## **6. Detailed Diagrams & CAD Models**
+
+### 6.1 Subsystem Exploded View
+
+```mermaid
+flowchart TB
+    subgraph A[Mounting Frame (Primary + Secondary)]
+        A1[Main Lattice Frame]
+        A2[Radial Beams]
+        A3[Mounting Pads/Brackets]
+    end
+
+    subgraph B[Q-01 Internals]
+        B1[QSM Assembly<br>(Housing + QSMMA)]
+        B2[QEE Core<br>(Entanglement Chamber)]
+        B3[Cryo Lines<br>(Vacuum-jacketed)]
+        B4[Power & Data Harnesses]
+    end
+
+    A1 --> B1
+    A2 --> B2
+    A3 --> B3 & B4
+```
+
+**Explanation**:  
+- Frame Sub-Assembly in center.  
+- QSM & QEE offset for clarity.  
+- Cryo lines and harnesses shown in an ‘exploded’ arrangement.
+
+### 6.2 Vibration Isolation Concept
+
+```mermaid
+graph LR
+    subgraph FrameMounts
+        MF1([Mount #1])
+        MF2([Mount #2])
+        MF3([Mount #3])
+    end
+
+    subgraph Q01Subsystem[Q-01 Subsystem]
+        QSM[QSM]
+        QEE[QEE]
+    end
+
+    MF1 --Active Damping--> Q01Subsystem
+    MF2 --Active Damping--> Q01Subsystem
+    MF3 --Active Damping--> Q01Subsystem
+
+    subgraph VIBCU[Mount Control Unit]
+        S1((Piezo Sensor Input))
+        S2((Actuator Command))
+    end
+
+    MF1 --Sensor Data--> S1
+    S2 --> MF1
+    MF2 --Sensor Data--> S1
+    S2 --> MF2
+    MF3 --Sensor Data--> S1
+    S2 --> MF3
+```
+
+**Key Notes**:  
+- Active feedback damping to mitigate high-frequency vibrations from QEE thrust.
+
+### 6.3 CAD Implementation
+
+1. **Software**: Siemens NX/CATIA for main structures; SOLIDWORKS/Creo optional for sub-assemblies.  
+2. **File Structure**:  
+   - Q01-MNT-FRM-ASM  
+   - Q01-VIB-ISO-ASM  
+   - Q01-CRYO-LINE-ASM  
+   - Q01-ELEC-IO-ASM  
+3. **Version Control**: PDM/PLM environment (Teamcenter, Windchill).  
+4. **Tolerancing**: ±0.05 mm critical, ±0.1 mm secondary.  
+5. **Cross-Disciplinary Reviews**: Structures, Avionics, Thermal, Manufacturing, Maintenance.
+
+---
+
+## **7. Structural & Thermal Analysis**
+
+### 7.1 FEA (Structural)
+
+- **Software**: ANSYS Mechanical.  
+- **Loading Conditions**:  
+  - Static thrust (1000 kN).  
+  - Dynamic loads (maneuvers, vibration).  
+  - Thermal stresses (cryogenic lines).  
+- **Margin**: ≥1.6 safety factor.  
+- **Report**: GPAM-AMPEL-0201-53-50-FEA-001.
+
+### 7.2 CFD / Thermal Modeling
+
+- **Software**: ANSYS Fluent.  
+- **Focus**: Heat leak in coolant lines, airflow around tail cone.  
+- **Goal**: Keep LHe within 2 mK temperature rise.  
+- **Report**: GPAM-AMPEL-0201-53-50-CFD-001, GPAM-AMPEL-0201-71-THERM-001.
+
+### 7.3 EMI Analysis
+
+- **Standard**: MIL-STD-461F.  
+- **Tool**: ANSYS HFSS or CST Studio.  
+- **Goal**: ≥90 dB attenuation.  
+- **Report**: GPAM-AMPEL-0201-53-50-EMI-001.
+
+---
+
+## **8. Safety Considerations**
+
+1. **Emergency Shutdown**  
+   - Automatic triggers for cryogenic leak, vacuum loss, or QEE fault.  
+   - Manual kill switch accessible by flight crew.
+
+2. **Redundancy**  
+   - Dual QSM or QEE modules possible in parallel.  
+   - Redundant cryocoolers and control units.
+
+3. **Radiation**  
+   - Shielding integrated if QEE has ionizing radiation components (TBD by QEE design).
+
+4. **Pressure Relief**  
+   - Burst disk and relief valve on vent line.  
+   - Overpressure triggers alarms and system shutdown.
+
+5. **FMEA**  
+   - Document: GPPM-QPROP-0401-05-001-A.
+
+---
+
+## **9. Testing & Validation**
+
+1. **Leak Testing** (Coolant Lines)  
+   - Helium mass spectrometer test <10^-9 mbar·L/s.
+
+2. **Thermal Performance**  
+   - Confirm <5 W/m heat leak, <2 mK rise.  
+   - Cryogenic test chamber: GPAM-AMPEL-0201-71-CL-TEST-002.
+
+3. **Vibration Testing**  
+   - Validate mount damping, line flex sections.  
+   - Reference: GPAM-AMPEL-0201-71-VIB-001.
+
+4. **Integration Test**  
+   - System-level test with FADEC, AEHCS, and QPS operational.  
+   - Evaluate thrust vectoring, data flows, EM emissions.
+
+---
+
+## **10. Maintenance & Accessibility**
+
+- **Modular Design**: Q-01 can be removed for overhaul.  
+- **Access Panels**: Tail cone panels for coolant, harness servicing.  
+- **S1000D Documentation**:  
+  - Maintenance tasks, step-by-step procedures.  
+  - Vacuum re-pumping instructions.  
+  - MLI inspection guidelines.
+
+---
+
+## **11. Future Developments**
+
+1. **Improved MLI**: Investigating lower outgassing materials, better layering.  
+2. **Active Cooling on Lines**: Minimizing any local heat infiltration.  
+3. **Smart Sensors**: Real-time cryo line health monitoring, leak detection.  
+4. **Weight Reduction**: Using advanced alloys or composites for secondary frames.
+
+---
+
+## **12. Documentation References**
+
+- **GPAM-AMPEL-0201-71-CL-ROUTE-001**: Routing details for coolant lines.  
+- **GPAM-AMPEL-0201-71-NDT-001**: NDT procedures for welded sections.  
+- **GPAM-AMPEL-0201-71-THERM-001**: Thermal modeling & analysis.  
+- **GPAM-AMPEL-0201-71-CL-TEST-001**: Helium leak testing.  
+- **GPAM-AMPEL-0201-71-CL-TEST-002**: Thermal performance testing.  
+- **GPAM-AMPEL-0201-71-CL-TEST-003**: Flow testing.  
+- **GPAM-AMPEL-0201-71-VIB-001**: Vibration test plan & results.  
+- **GPPM-QPROP-0401-01-002-A**: Q-01 Principles of Operation.  
+- **GPPM-QPROP-0401-05-001-A**: Q-01 FMEA.  
+- **PDR-GAIAPULSE-AMPEL-0201-71-QP-01-CRYO-CON**: Connector design review.
+
+---
+
+## **13. Revision History**
+
+| Version | Date       | Author(s)                | Description                                                                   |
+|:-------:|:----------:|:------------------------:|:------------------------------------------------------------------------------|
+| 1.0     | 2025-01-22 | Amedeo Pelliccia & AI    | Initial consolidated PDR with expanded coolant specs, mounting, & interface.  |
+
+---
+
+# **Conclusion**
+
+This **PDR document** provides a comprehensive view of the **Q-01 Quantum Propulsion System** design for the AMPEL360XWLRGA:
+
+- **Mounting System**: Lattice titanium frame, active vibration mounts, and precise alignment.  
+- **Coolant Lines**: Vacuum-jacketed LHe lines with MLI insulation, robust sealing, and minimal heat leak.  
+- **Diagrams/CAD**: High-level conceptual layouts that guide further 3D modeling and assembly.  
+- **Testing & Safety**: FEA, CFD, vibration, thermal leak, and redundant fail-safes ensure reliability and compliance.
+
+By proceeding with **detailed CAD assemblies**, **structural/thermal validation**, and **cross-functional design reviews**, the team can finalize the Q-01 integration. All relevant documents should be updated in the **S1000D** and **Cosmic Index** repositories to maintain project traceability. 
+
+**Next Steps**:
+
+1. **Complete Detailed CAD/FEA**  
+2. **Develop Final Manufacturing Drawings**  
+3. **Conduct Integration & System-Level Tests**  
+4. **Document Revisions & Approvals** (Version-controlled updates in PDM/PLM)  
+5. **Prepare for Final Certification** (Following DO-178C, DO-254, EASA/FAA guidelines as applicable)
+
+Below is an **expanded design section** focusing on **detailed diagrams, subsystem layouts, and vibration isolation**. The text includes suggested **Mermaid** diagram code blocks for high-level representations, as well as recommendations on how a CAD-based exploded view might be structured to depict each sub-assembly. 
+
+Of course, these diagrams are **conceptual** when rendered in text or Mermaid; for actual design work, you would use a CAD platform (e.g., CATIA, Siemens NX, SOLIDWORKS) to produce precise 3D models, assemblies, and exploded views.
+
+---
+
+# **Detailed Diagrams & CAD Models**
+
+This section expands on Section 10.0 of the PDR (“Preliminary Design Diagrams”) by providing more **in-depth representations** of the Q-01’s mounting frame, subsystem layout, and vibration isolation mounts. The goal is to give engineering teams and review boards a **clear visualization** of how the various components physically integrate.
+
+## 1. Mounting System CAD Overview
+
+### 1.1 Mounting Frame Architecture
+
+- **Primary Frame (MTG-FRAME-Q1-001)**  
+  - **Material**: Ti-6Al-4V ELI  
+  - **Geometry**: Reinforced lattice or truss-type structure, designed to carry thrust loads up to 1600 kN (safety factor included).  
+  - **Connection Points**: Four corner brackets with integrated load sensors for real-time stress monitoring.  
+  - **Mounting Pads**: Precision-machined surfaces (±0.05 mm tolerance) for contact with secondary vibration-isolating mounts.
+
+- **Secondary Support Beams**  
+  - **Arrangement**: Typically three radial beams surrounding the primary frame.  
+  - **Function**: Distribute out-of-plane loads and dampen vibrations that pass through the primary mounts.
+
+- **FEA-Verified Regions**  
+  - **High-Stress Zones**: Corner bracket areas and the perimeter that mates to the tail cone.  
+  - **Low-Stress Zones**: Central lattice region, which is weight-optimized.
+
+### 1.2 Example Mermaid Diagram (Top-Level Mounting Layout)
+
+```mermaid
+flowchart LR
+    A((Tail Cone Bulkhead))
+    B[Primary Frame<br>(MTG-FRAME-Q1-001)]
+    C[Secondary Support Beams]
+    D[Q-01<br>Subsystems]
+
+    A --Bolted--> B
+    B --Reinforced--> C
+    B --Mounting Pads--> D
+```
+
+<details>
+<summary><strong>Explanation</strong></summary>
+
+- **Tail Cone Bulkhead (A)**  
+  The structural anchor in the aircraft’s aft section.  
+- **Primary Frame (B)**  
+  A robust lattice/truss structure that bolts to (A).  
+- **Secondary Support Beams (C)**  
+  Attached peripherally to reduce torsional flex and provide additional load paths.  
+- **Q-01 Subsystems (D)**  
+  Mounted onto the frame via the vibration-isolating mounts and alignment hardware.
+</details>
+
+### 1.3 CAD Modeling Recommendations
+
+1. **Assembly Hierarchy**  
+   - **Top Assembly**: “Q01_Mounting_Assembly.SLDASM” (or similar naming in your CAD environment).  
+   - **Sub-Assemblies**:  
+     - “PrimaryFrame.SLDPRT” or “PrimaryFrame.asm”  
+     - “VibrationMounts.asm”  
+     - “Q01_Structure.asm” (the quantum propulsion subsystem shell/housing)  
+
+2. **Coordinate System**  
+   - Keep the coordinate origin aligned with the aircraft fuselage reference.  
+   - Ensure **Z-axis** runs vertically, **X-axis** along the aircraft’s longitudinal axis, and **Y-axis** laterally.
+
+3. **Design Tables**  
+   - Use design tables (e.g., in SOLIDWORKS) or parametric sketches to manage adjustable parameters (e.g., mount spacing, bolt hole diameter, bracket angles).
+
+---
+
+## 2. Subsystem Layout (Exploded Views)
+
+The Q-01 consists of multiple sub-assemblies: the **Quantum State Modulator (QSM)**, **Quantum Entanglement Engine (QEE)**, cryogenic lines, and integrated power/data harnesses. An **exploded view** clarifies how each sub-assembly **physically** attaches to the mounting frame.
+
+### 2.1 Exploded View Concept
+
+1. **QSM Housing**  
+   - Bolts to the center region of the primary frame with an orientation that aligns the QSM’s main axis to the aircraft’s longitudinal axis (±0.1°).
+2. **QEE Core**  
+   - Positioned immediately aft of the QSM.  
+   - Interfaced with the QSM via an alignment ring (±0.05 mm radial tolerance).  
+   - Ties into secondary brackets for lateral support.
+3. **Cryogenic Lines**  
+   - Flexible, vacuum-jacketed lines routing from the forward cryogenic supply (Section 21) into the QEE and QSM inlets.  
+   - Typically anchored via small clamp brackets every 0.5 m to reduce line vibration.
+4. **Power & Data Harnesses**  
+   - **MIL-DTL-38999** connectors housed on the lower portion of the frame for easy access.  
+   - Bundled harness routing ensures minimal EMI coupling.
+
+### 2.2 Example Mermaid Diagram (Subsystem Exploded Concept)
+
+```mermaid
+flowchart TB
+    subgraph A[Mounting Frame (Primary + Secondary)]
+        A1[Main Lattice Frame]
+        A2[Radial Beams]
+        A3[Mounting Pads/Brackets]
+    end
+
+    subgraph B[Q-01 Internals]
+        B1[QSM Assembly<br>(Housing + Internal QSMMA)]
+        B2[QEE Core<br>(Entanglement Chamber, Photon Source)]
+        B3[Cryo Lines<br>(Vacuum-jacketed)]
+        B4[Power & Data Harnesses<br>(MIL-DTL-38999 + Cables)]
+    end
+
+    A1 --> B1
+    A2 --> B2
+    A3 --> B3 & B4
+```
+
+<details>
+<summary><strong>How This Translates to a CAD Exploded View</strong></summary>
+
+1. **Frame Sub-Assembly**: Shown in the center as the “anchor.”  
+2. **QSM & QEE**: Moved outward radially in the exploded view to reveal connection points and hardware.  
+3. **Cryo Lines & Harnesses**: Pulled away from final positions to clearly illustrate clamp locations, bend radii, and connector positions.
+</details>
+
+---
+
+## 3. Vibration Isolation Diagram
+
+The Q-01’s thrust and cryogenic equipment can induce significant vibration. **Active vibration-isolating mounts** help stabilize the system, protecting both the Q-01 internals and the airframe from excessive oscillation or resonance.
+
+### 3.1 Mount Configuration
+
+- **Mount Quantity**: Typically three or four isolation mounts arranged in a triangular (or quadrilateral) pattern around the Q-01’s perimeter.  
+- **Active Components**:  
+  - **Piezoelectric Sensors** at mount bases to measure real-time displacement or acceleration.  
+  - **Magnetostrictive Actuators** that counteract measured vibrations by expanding/contracting in microseconds.  
+- **Control Loop**:  
+  - The mount control unit (part of the QSM or dedicated sub-module) calculates corrective signals using a **PID** or advanced ML-based approach.
+
+### 3.2 Diagram (Vibration Isolation Layout)
+
+```mermaid
+graph LR
+    subgraph FrameMounts
+        MF1([Mount #1])
+        MF2([Mount #2])
+        MF3([Mount #3])
+        MF4([Mount #4 - optional])
+    end
+
+    subgraph Q01Subsystem[Q-01 Subsystem]
+        QSM[QSM]
+        QEE[QEE]
+    end
+
+    MF1 --Active Damping--> Q01Subsystem
+    MF2 --Active Damping--> Q01Subsystem
+    MF3 --Active Damping--> Q01Subsystem
+    MF4 --Active Damping--> Q01Subsystem
+
+    subgraph VIBCU[Mount Control Unit]
+        S1((Piezo Sensor Input))
+        S2((Actuator Command))
+    end
+
+    MF1 --Sensor Data--> S1
+    S2 --> MF1
+    MF2 --Sensor Data--> S1
+    S2 --> MF2
+    MF3 --Sensor Data--> S1
+    S2 --> MF3
+    MF4 --Sensor Data--> S1
+    S2 --> MF4
+
+    Q01Subsystem -. vibration feedback .-> VIBCU
+    VIBCU --control loop--> S1 & S2
+```
+
+<details>
+<summary><strong>Key Notes</strong></summary>
+
+- **Mount #1, #2, #3, and #4**: Each mount has an internal sensor-actuator system.  
+- **Sensor Data** travels to the **Mount Control Unit** (VIBCU), which processes signals in real time.  
+- **Actuator Command** signals are sent back to each mount to dampen vibrations.  
+- If fewer than four mounts are used, the concept remains the same; the geometry might shift from a quadrilateral to a triangular arrangement.
+</details>
+
+### 3.3 CAD Detailing
+
+1. **Mount Models**:  Each vibration isolator can be modeled as a sub-assembly with a **housing, spring/damping element, sensor, and actuator** parts.  
+2. **Mount-to-Frame Interfaces**:  
+   - Holes or brackets on the primary frame sized for the base of each mount.  
+   - Precisely machined seats to maintain alignment with the Q-01’s center of gravity.  
+3. **Material Considerations**:  
+   - **Housing**: Possibly a composite or aluminum-lithium alloy for weight savings.  
+   - **Seals/Gaskets**: Must maintain performance at cryogenic temperatures.  
+4. **Exploded Render**: Show each mount’s internal components (piezo stack, magnetostrictive rods, sensors) and how they connect to wiring harnesses.
+
+---
+
+# **CAD Implementation Guidelines**
+
+## Software & File Structure
+
+1. **Software**:  
+   - **Siemens NX** or **Dassault Systèmes CATIA** for primary structure design, supporting advanced surfacing and large assemblies.  
+   - **SOLIDWORKS** or **PTC Creo** can also be used if they integrate well with your PLM environment.
+2. **File Naming Convention**:  
+   - **Q01-MNT-FRM-ASM:** Primary Frame Assembly.  
+   - **Q01-VIB-ISO-ASM:** Vibration Isolation Assembly.  
+   - **Q01-CRYO-LINE-ASM:** Cryogenic Lines.  
+   - **Q01-ELEC-IO-ASM:** Electrical/IO harnesses.  
+3. **Version Control**:  
+   - Maintain each sub-assembly in the company’s PDM/PLM system (e.g., Teamcenter, Windchill) with revision logs.  
+   - Cross-reference part numbers to your S1000D or EXDDM data modules.
+
+## Tolerancing & Annotation
+
+- **Dimensional Tolerances**:  
+  - ±0.05 mm for critical mount surfaces.  
+  - ±0.1 mm for secondary, non-critical bracket features.  
+- **Geometric Tolerancing**:  
+  - Flatness and parallelism specs on mount pads.  
+  - True Position for bolt holes to ensure alignment.  
+- **Weld Symbols (if used)**: If the frame has welded joints, ensure all weld symbols and lengths are specified per AWS D17.1 or equivalent aerospace standard.
+
+## Collaboration & Cross-Disciplinary Reviews
+
+- **Structural Team**: Ensures load paths and FEA correlation.  
+- **Systems & Avionics Team**: Verifies harness routing and data interface positioning.  
+- **Thermal/Cryo Team**: Confirms insulation, cryo line standoff distances, and minimal conduction paths.  
+- **Manufacturing**: Checks feasibility for machining or welding titanium frames, and tolerances for alignment features.  
+- **Maintenance/Operations**: Provides input on access panels, clearance for robotic arms, and quick-disconnect features.
+
+---
+
+# **Summary**
+
+The above details provide a **comprehensive approach** to modeling and depicting the **Q-01 Quantum Propulsion System** in your CAD environment:
+
+1. **Mounting System CAD**: Illustrates robust, weight-optimized frames and sub-assemblies in a parametric, FEA-validated design.  
+2. **Subsystem Layout**: Offers exploded views clarifying how QSM, QEE, cryogenic lines, and harnesses align physically.  
+3. **Vibration Isolation**: Highlights the sensor-actuator placements and real-time damping principles, ensuring minimal harmonic transfer to the aircraft structure.
+
+When transitioning from these conceptual Mermaid diagrams to actual CAD assemblies, it’s vital to maintain **consistent reference planes**, rigorous dimensioning/tolerancing, and **revision-controlled** part files. Periodic design reviews and integration tests will help ensure that the final hardware meets all **structural, thermal, EMI, and maintenance** requirements stated in the PDR.
+
+---
+
+## Next Steps
+
+1. **Develop Detailed CAD Assemblies**:
+   - Start with the **Primary Frame** model.  
+   - Integrate **Vibration Mounts** as sub-assemblies.  
+   - Incorporate **Q-01** subsystems with correct mass and center-of-gravity data.
+
+2. **Perform Updated FEA/CFD**:
+   - Use the near-final CAD geometry for **structural** and **thermal** analysis, refining any design elements.
+
+3. **Create Manufacturing Drawings**:
+   - With production-level detail, including part numbers, material specs, weld details (if any), and finishing instructions.
+
+4. **Update Documentation**:
+   - Incorporate all changes into your S1000D or EXDDM data modules, ensuring complete cross-referencing and version control.
+
+5. **Coordinate Cross-Functional Reviews**:
+   - Schedule design reviews with **Structures**, **Avionics**, **Thermal**, **Manufacturing**, and **Maintenance** teams to finalize the design.
+
+Feel free to let me know if you need **specific sample CAD files**, further **Mermaid** expansions, or more **detailed tables** (e.g., a hardware BOM, exploded parts lists, or mount performance data). I am here to help refine each aspect of your Q-01 mounting and interface design.
 
 ## Appendices and Additional Resources
 
@@ -4166,3 +4858,4 @@ For **further expansions**, additional details, or integration with broader COAF
 ---
 
 > **Disclaimer**: This document may contain proprietary or sensitive details. Please consult the project’s confidentiality guidelines before sharing externally.
+
