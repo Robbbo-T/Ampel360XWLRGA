@@ -1,3 +1,116 @@
+```mermaid
+graph LR
+
+    subgraph "71.QP-00 Q-01 Quantum Propulsion System"
+        
+        subgraph "71.QP-01 Quantum Entanglement Engine (QEE)"
+            PS[Particle Source]
+            PG{{"Photon Generator"}}
+            ND[Nonlinear Crystal]
+            EC{{"Entanglement Chamber"}}
+            FAS[Focusing & Alignment System]
+            SH[Shielding]
+        end
+
+        subgraph "71.QP-02 Quantum State Modulator (QSM)"
+            QM["Qubit Measurement"]
+            CU[Control Unit]
+            QSMMA[QSM Modulation Array]
+        end
+
+        subgraph "71.QP-03 Energy Source and Management"
+            ECU[Energy Conditioning Unit]
+            ESB[Energy Storage Buffer]
+        end
+
+        subgraph "71.QP-04 Thrust Vectoring System (TVS)"
+            TVSM[Vectoring Mechanism]
+            TVSCU[TVS Control Unit]
+        end
+
+        subgraph "71.QP-05 QuantumGenProTerz Algorithm"
+            DAM[Data Acquisition Module]
+            OE[Optimization Engine]
+        end
+
+        subgraph "71.QP-06 Supporting Systems"
+            CCS[Cryogenic Cooling System]
+        end
+
+        subgraph "71.QP-07 Control and Interface"
+            FADECI[FADEC Interface]
+            DMS[Diagnostics & Monitoring System]
+        end
+
+        subgraph "External Systems"
+            AEHCS[Atmospheric Energy Harvesting/Conversion]
+            FADEC[Full Authority Digital Engine Control]
+            BPS[Backup Power Systems]
+        end
+
+        %% Particle flow
+        PS -- Elec/Optical Control --> PG
+        PG -- Photon Stream --> ND
+        ND -- Entangled Photon Pairs --> EC
+        EC -- Entangled Pairs --> FAS
+        FAS -- Aligned Pairs --> QM
+
+        %% Quantum measurement/feedback
+        QM -- Measurement Data --> CU
+        CU -- Control Signals --> EC
+        CU -- Control Signals --> FAS
+        CU -- Control Signals --> QSMMA
+
+        %% Shielding & Cooling
+        SH -. Contains .-> EC
+        EC -.-> CCS
+        CCS -.-> QSMMA
+
+        QSMMA -- State Modulation --> QM
+
+        %% Power/Energy
+        AEHCS -- Power --> ECU
+        BPS -- Power --> ECU
+        ECU -- Power --> PS
+        ECU -- Power --> PG
+        ECU -- Power --> QEE
+        ECU -- Power --> QSM
+        ECU -- Power --> CCS
+        ECU -- Power --> TVS
+        ESB -- Power --> ECU
+
+        %% Optimization
+        DAM -- Data --> OE
+        OE -- Control Params --> CU
+        QM -- Data --> DAM
+
+        %% Diagnostics
+        EC -- Status --> DMS
+        QM -- Status --> DMS
+        QSMMA -- Status --> DMS
+        CCS -- Status --> DMS
+        ECU -- Status --> DMS
+        TVSM -- Status --> DMS
+        TVSCU -- Status --> DMS
+
+        %% Thrust Vectoring
+        CU -- Control --> TVSCU
+        TVSCU -- Control --> TVSM
+
+        %% FADEC Interface
+        FADECI -- Commands/Data --> CU
+        CU -- Data/Status --> FADECI
+        FADEC <--> FADECI
+    end
+
+    %% Styling for clarity
+    style PS fill:#f9f,stroke:#333,stroke-width:2px
+    style PG fill:#f9f,stroke:#333,stroke-width:2px
+    style ND fill:#f9f,stroke:#333,stroke-width:2px
+    style EC fill:#cff,stroke:#333,stroke-width:3px
+    style FAS fill:#f9f,stroke:#333,stroke-width:2px
+    style SH fill:#ddd,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5
+```
 
 # FTC-71-00 QPS Breakdown Components and DM Blocks
 **
