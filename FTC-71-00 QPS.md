@@ -406,17 +406,17 @@ This grouping facilitates streamlined documentation, easier maintenance, and eff
 Data Flow Diagrams (DFDs) illustrate how information and control signals move within the QPS and between the QPS and external systems. Below is an example using Mermaid syntax for a high-level data flow.
 
 ```mermaid
-graph TD
-    A[Power Supply Unit (PSU)] --> B[Quantum State Modulator (QSM)]
-    B --> C[Quantum Entanglement Engine (QEE)]
-    C --> D[Thrust Output]
-    B --> E[Control and Monitoring System (CMS)]
+flowchart TD
+    A["Power Supply Unit (PSU)"] --> B["Quantum State Modulator (QSM)"]
+    B --> C["Quantum Entanglement Engine (QEE)"]
+    C --> D["Thrust Output"]
+    B --> E["Control and Monitoring System (CMS)"]
     C --> E
-    F[Cryogenic Cooling System] --> B
+    F["Cryogenic Cooling System"] --> B
     F --> C
-    E --> G[Full Authority Digital Engine Control (FADEC)]
+    E --> G["Full Authority Digital Engine Control (FADEC)"]
     G --> A
-    H[AEHCS Interface] --> B
+    H["AEHCS Interface"] --> B
     H --> C
 
     style A fill:#cff,stroke:#333,stroke-width:1px
