@@ -1604,71 +1604,63 @@ Para llevar a cabo las pruebas descritas, se requieren los siguientes equipos y 
 
 ### 8.1 Diagrama Técnico del QSM
 
-El siguiente diagrama muestra los componentes internos del QSM, sus conexiones eléctricas y rutas de datos.
+The following diagram shows the internal components of the QSM, its electrical connections, and data routes:
+
 
 ```mermaid
 graph LR
-    A[Fuente de Energía] --> B[Unidad de Suministro de Energía (PSU)]
-    B --> C[Modulador de Estado Cuántico (QSM)]
-    C --> D[Control y Monitoreo (CMS)]
-    C --> E[Sistema de Vacío]
-    C --> F[Módulo de Blindaje]
-    D --> G[Interfaz FADEC]
-    E --> H[Unidad Cryocooler]
-    F --> I[Módulo de Blindaje Externo]
+    A["Fuente de Energía"] --> B["Unidad de Suministro de Energía (PSU)"]
+    B --> C["Modulador de Estado Cuántico (QSM)"]
+    C --> D["Control y Monitoreo (CMS)"]
+    C --> E["Sistema de Vacío"]
+    C --> F["Módulo de Blindaje"]
+    D --> G["Interfaz FADEC"]
+    E --> H["Unidad Cryocooler"]
+    F --> I["Módulo de Blindaje Externo"]
 ```
 
-> **Nota:** Este diagrama debe renderizarse en un formato gráfico adecuado (SVG, PNG) para mayor claridad.
+## 8.2 Diagrama Técnico del QEE
 
-### 8.2 Diagrama Técnico del QEE
+The following diagram details the thrust generation process through quantum entanglement in the QEE:
 
-El siguiente diagrama detalla el proceso de generación de empuje a través del entrelazamiento cuántico en el QEE.
+
 
 ```mermaid
-graph TD
-    A[Control y Monitoreo (CMS)] --> B[Quantum Entanglement Engine (QEE)]
-    B --> C[Generación de Empuje]
-    C --> D[Thrust Output]
-    B --> E[Generación de Entrelazamiento]
-    E --> F[Interacción Espacio-Temporal]
+flowchart TD
+    A["Control y Monitoreo (CMS)"] --> B["Quantum Entanglement Engine (QEE)"]
+    B --> C["Generación de Empuje"]
+    C --> D["Thrust Output"]
+    B --> E["Generación de Entrelazamiento"]
+    E --> F["Interacción Espacio-Temporal"]
     F --> C
 ```
 
-> **Nota:** Este diagrama debe incluirse en el documento en formato gráfico para mayor claridad.
+## 8.3 Diagrama Técnico del Sistema Criogénico
+
 
 ### 8.3 Diagrama Técnico del Sistema Criogénico
 
-El siguiente diagrama representa los componentes del sistema de enfriamiento criogénico y sus interconexiones.
-
 ```mermaid
-graph LR
-    A[Unidad Cryocooler] --> B[Modulador de Estado Cuántico (QSM)]
-    A --> C[Quantum Entanglement Engine (QEE)]
-    A --> D[Sistema de Vacío]
-    A --> E[Módulo de Blindaje]
+flowchart LR
+    A["Unidad Cryocooler"] --> B["Modulador de Estado Cuántico (QSM)"]
+    A --> C["Quantum Entanglement Engine (QEE)"]
+    A --> D["Sistema de Vacío"]
+    A --> E["Módulo de Blindaje"]
 ```
-
-> **Nota:** Este diagrama debe incluirse en el documento en formato gráfico para mayor claridad.
 
 ### 8.4 Diagrama de Flujo de Datos Entre Componentes
 
-Este diagrama visualiza cómo la información fluye entre los diferentes componentes del QPS, incluyendo interfaces con sistemas externos.
-
 ```mermaid
-graph LR
-    QSM[Modulador de Estado Cuántico (QSM)] -->|Datos de Estado| QEE[Quantum Entanglement Engine (QEE)]
-    QSM -->|Datos de Control| CMS[Sistema de Control y Monitoreo (CMS)]
-    QEE -->|Datos de Empuje| FADEC[Interfaz FADEC]
-    CMS -->|Comandos| PSU[Unidad de Suministro de Energía (PSU)]
+flowchart LR
+    QSM["Modulador de Estado Cuántico (QSM)"] -->|Datos de Estado| QEE["Quantum Entanglement Engine (QEE)"]
+    QSM -->|Datos de Control| CMS["Sistema de Control y Monitoreo (CMS)"]
+    QEE -->|Datos de Empuje| FADEC["Interfaz FADEC"]
+    CMS -->|Comandos| PSU["Unidad de Suministro de Energía (PSU)"]
     PSU --> QSM
-    CMS -->|Datos de Supervisión| AEHCS[Sistema Avanzado de Manejo y Control de Energía (AEHCS)]
+    CMS -->|Datos de Supervisión| AEHCS["Sistema Avanzado de Manejo y Control de Energía (AEHCS)"]
     AEHCS --> QSM
     AEHCS --> QEE
 ```
-
-> **Nota:** Este diagrama debe incluirse en el documento en formato gráfico para mayor claridad.
-
----
 
 ## 9. Conclusión
 
