@@ -4350,22 +4350,23 @@ The **cryogenic coolant lines** are essential for maintaining the Q-01 in its op
 
 ```mermaid
 flowchart TB
-    subgraph A[Mounting Frame (Primary + Secondary)]
-        A1[Main Lattice Frame]
-        A2[Radial Beams]
-        A3[Mounting Pads/Brackets]
+    subgraph A["Mounting Frame (Primary + Secondary)"]
+        A1["Main Lattice Frame"]
+        A2["Radial Beams"]
+        A3["Mounting Pads/Brackets"]
     end
 
-    subgraph B[Q-01 Internals]
-        B1[QSM Assembly<br>(Housing + QSMMA)]
-        B2[QEE Core<br>(Entanglement Chamber)]
-        B3[Cryo Lines<br>(Vacuum-jacketed)]
-        B4[Power & Data Harnesses]
+    subgraph B["Q-01 Internals"]
+        B1["QSM Assembly<br>(Housing + QSMMA)"]
+        B2["QEE Core<br>(Entanglement Chamber)"]
+        B3["Cryo Lines<br>(Vacuum-jacketed)"]
+        B4["Power & Data Harnesses"]
     end
 
     A1 --> B1
     A2 --> B2
-    A3 --> B3 & B4
+    A3 --> B3
+    A3 --> B4
 ```
 
 **Explanation**:  
@@ -4383,7 +4384,7 @@ graph LR
         MF3([Mount #3])
     end
 
-    subgraph Q01Subsystem[Q-01 Subsystem]
+    subgraph Q01Subsystem["Q-01 Subsystem"]
         QSM[QSM]
         QEE[QEE]
     end
@@ -4392,7 +4393,7 @@ graph LR
     MF2 --Active Damping--> Q01Subsystem
     MF3 --Active Damping--> Q01Subsystem
 
-    subgraph VIBCU[Mount Control Unit]
+    subgraph VIBCU["Mount Control Unit"]
         S1((Piezo Sensor Input))
         S2((Actuator Command))
     end
@@ -4586,9 +4587,9 @@ This section expands on Section 10.0 of the PDR (â€œPreliminary Design Diagramsâ
 ```mermaid
 flowchart LR
     A((Tail Cone Bulkhead))
-    B[Primary Frame<br>(MTG-FRAME-Q1-001)]
-    C[Secondary Support Beams]
-    D[Q-01<br>Subsystems]
+    B["Primary Frame<br>(MTG-FRAME-Q1-001)"]
+    C["Secondary Support Beams"]
+    D["Q-01<br>Subsystems"]
 
     A --Bolted--> B
     B --Reinforced--> C
