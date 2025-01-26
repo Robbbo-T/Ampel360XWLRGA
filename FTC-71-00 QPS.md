@@ -141,6 +141,56 @@ graph TD
     end
 ```
 
+#### Flow diagram for Vibration Isolation System
+
+```mermaid
+graph LR
+    subgraph FrameMounts
+        MF1([Mount #1])
+        MF2([Mount #2])
+        MF3([Mount #3])
+        MF4([Mount #4 - optional])
+    end
+
+    subgraph Q01Subsystem[Q-01 Subsystem]
+        QSM[QSM]
+        QEE[QEE]
+    end
+
+    MF1 --Active Damping--> Q01Subsystem
+    MF2 --Active Damping--> Q01Subsystem
+    MF3 --Active Damping--> Q01Subsystem
+    MF4 --Active Damping--> Q01Subsystem
+
+    subgraph VIBCU[Mount Control Unit]
+        S1((Piezo Sensor Input))
+        S2((Actuator Command))
+    end
+
+    MF1 --Sensor Data--> S1
+    S2 --> MF1
+    MF2 --Sensor Data--> S1
+    S2 --> MF2
+    MF3 --Sensor Data--> S1
+    S2 --> MF3
+    MF4 --Sensor Data--> S1
+    S2 --> MF4
+
+    Q01Subsystem -. vibration feedback .-> VIBCU
+    VIBCU --control loop--> S1 & S2
+```
+
+### File-Level Changes
+
+| Change | Details | Files |
+| ------ | ------- | ----- |
+| Added a detailed Preliminary Design Review (PDR) section for the Q-01 Quantum Propulsion System. | <ul><li>Included mounting system details.</li><li>Added coolant line specifications.</li><li>Added interface specifications.</li><li>Included detailed diagrams and CAD models.</li><li>Added structural and thermal analysis.</li><li>Included safety considerations.</li><li>Added testing and validation information.</li><li>Included maintenance and accessibility information.</li><li>Added future development plans.</li></ul> | `FTC-71-00 QPS.md` |
+| Added a Mermaid diagram for the power distribution. | <ul><li>Added a Mermaid diagram for the power distribution.</li></ul> | `FTC-71-00 QPS.md` |
+| Added a Mermaid diagram for the high-level mounting. | <ul><li>Added a Mermaid diagram for the high-level mounting.</li></ul> | `FTC-71-00 QPS.md` |
+| Added a Mermaid diagram for the subsystem exploded view. | <ul><li>Added a Mermaid diagram for the subsystem exploded view.</li></ul> | `FTC-71-00 QPS.md` |
+| Added a Mermaid diagram for the vibration isolation concept. | <ul><li>Added a Mermaid diagram for the vibration isolation concept.</li></ul> | `FTC-71-00 QPS.md` |
+
+
 # FTC-71-00 QPS Breakdown Components and DM Blocks
 **
 **Version**: 1.0  
