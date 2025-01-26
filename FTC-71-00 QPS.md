@@ -1189,7 +1189,6 @@ To move forward and populate the "real-world application" aspects of the QPS doc
 
 Below is the detailed markdown document for **GPPM-QPROP-0401-02-001 (Especificaciones del QSM)**, incorporating your optimization suggestions and focusing on real-world application.
 
-```markdown
 # GPPM-QPROP-0401-02-001 Especificaciones del QSM
 
 **Version**: 1.0  
@@ -1436,9 +1435,9 @@ El siguiente diagrama muestra los componentes internos del QSM, sus conexiones e
 
 ```mermaid
 graph LR
-    A[Fuente de Energía] --> B[Unidad de Suministro de Energía (PSU)]
-    B --> C[Modulador de Estado Cuántico (QSM)]
-    C --> D[Control y Monitoreo (CMS)]
+    A[Fuente de Energía] --> B[Unidad de Suministro de Energía PSU]
+    B --> C[Modulador de Estado Cuántico QSM]
+    C --> D[Control y Monitoreo CMS]
     C --> E[Sistema de Vacío]
     C --> F[Módulo de Blindaje]
     D --> G[Interfaz FADEC]
@@ -1454,7 +1453,7 @@ El siguiente diagrama detalla el proceso de generación de empuje a través del 
 
 ```mermaid
 graph TD
-    A[Control y Monitoreo (CMS)] --> B[Quantum Entanglement Engine (QEE)]
+    A[Control y Monitoreo CMS] --> B[Quantum Entanglement Engine QEE]
     B --> C[Generación de Empuje]
     C --> D[Thrust Output]
     B --> E[Generación de Entrelazamiento]
@@ -1470,8 +1469,8 @@ El siguiente diagrama representa los componentes del sistema de enfriamiento cri
 
 ```mermaid
 graph LR
-    A[Unidad Cryocooler] --> B[Modulador de Estado Cuántico (QSM)]
-    A --> C[Quantum Entanglement Engine (QEE)]
+    A[Unidad Cryocooler] --> B[Modulador de Estado Cuántico QSM]
+    A --> C[Quantum Entanglement Engine QEE]
     A --> D[Sistema de Vacío]
     A --> E[Módulo de Blindaje]
 ```
@@ -1484,12 +1483,12 @@ Este diagrama visualiza cómo la información fluye entre los diferentes compone
 
 ```mermaid
 graph LR
-    QSM[Modulador de Estado Cuántico (QSM)] -->|Datos de Estado| QEE[Quantum Entanglement Engine (QEE)]
-    QSM -->|Datos de Control| CMS[Sistema de Control y Monitoreo (CMS)]
+    QSM[Modulador de Estado Cuántico (QSM)] -->|Datos de Estado| QEE[Quantum Entanglement Engine QEE]
+    QSM -->|Datos de Control| CMS[Sistema de Control y Monitoreo CMS]
     QEE -->|Datos de Empuje| FADEC[Interfaz FADEC]
-    CMS -->|Comandos| PSU[Unidad de Suministro de Energía (PSU)]
+    CMS -->|Comandos| PSU[Unidad de Suministro de Energía PSU]
     PSU --> QSM
-    CMS -->|Datos de Supervisión| AEHCS[Sistema Avanzado de Manejo y Control de Energía (AEHCS)]
+    CMS -->|Datos de Supervisión| AEHCS[Sistema Avanzado de Manejo y Control de Energía AEHCS]
     AEHCS --> QSM
     AEHCS --> QEE
 ```
@@ -2485,11 +2484,11 @@ This dossier provides a structured and detailed framework for documenting the **
 graph LR
     subgraph "71.QP-00 Q-01 Quantum Propulsion System"
         
-        subgraph "71.QP-01 Quantum Entanglement Engine (QEE)"
+        subgraph "71.QP-01 Quantum Entanglement Engine QEE"
             PS[Particle Source]
             PG{{"Photon Generator"}}
             ND[Nonlinear Crystal]
-            EC{{"Entanglement Chamber"}}
+            EC{{"Entanglement Chamber")}
             FAS[Focusing & Alignment System]
             SH[Shielding]
         end
