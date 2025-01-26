@@ -4649,22 +4649,23 @@ The Q-01 consists of multiple sub-assemblies: the **Quantum State Modulator (QSM
 
 ```mermaid
 flowchart TB
-    subgraph A[Mounting Frame (Primary + Secondary)]
-        A1[Main Lattice Frame]
-        A2[Radial Beams]
-        A3[Mounting Pads/Brackets]
+    subgraph A["Mounting Frame Primary + Secondary"]
+        A1["Main Lattice Frame"]
+        A2["Radial Beams"]
+        A3["Mounting Pads/Brackets"]
     end
 
-    subgraph B[Q-01 Internals]
-        B1[QSM Assembly<br>(Housing + Internal QSMMA)]
-        B2[QEE Core<br>(Entanglement Chamber, Photon Source)]
-        B3[Cryo Lines<br>(Vacuum-jacketed)]
-        B4[Power & Data Harnesses<br>(MIL-DTL-38999 + Cables)]
+    subgraph B["Q-01 Internals"]
+        B1["QSM Assembly<br>(Housing + Internal QSMMA)"]
+        B2["QEE Core<br>(Entanglement Chamber, Photon Source)"]
+        B3["Cryo Lines<br>(Vacuum-jacketed)"]
+        B4["Power & Data Harnesses<br>(MIL-DTL-38999 + Cables)"]
     end
 
     A1 --> B1
     A2 --> B2
-    A3 --> B3 & B4
+    A3 --> B3
+    A3 --> B4
 ```
 
 <details>
