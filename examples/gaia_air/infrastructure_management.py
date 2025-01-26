@@ -1,12 +1,26 @@
 import json
 import time
 from datetime import datetime
+import dash
+import dash_core_components as dcc
+import dash_html_components as html
+from dash.dependencies import Input, Output
 
 class InfrastructureManagement:
     def __init__(self):
         self.air_traffic_control = {}
         self.airport_facilities = {}
         self.ground_support_systems = {}
+        self.app = dash.Dash(__name__)
+        self.app.layout = html.Div(children=[
+            html.H1(children='Infrastructure Management'),
+            dcc.Graph(id='resource-allocation-graph'),
+            dcc.Interval(id='interval-component', interval=1*1000, n_intervals=0)
+        ])
+        self.app.callback(
+            Output('resource-allocation-graph', 'figure'),
+            [Input('interval-component', 'n_intervals')]
+        )(self.update_graph)
 
     def monitor_component(self, component_id, status):
         timestamp = datetime.now().isoformat()
@@ -34,6 +48,26 @@ class InfrastructureManagement:
             time.sleep(1)  # Simulate time taken for maintenance
         print("All maintenance tasks automated.")
         return maintenance_tasks
+
+    def update_graph(self, n_intervals):
+        resources = [
+            {"id": "R1", "priority": 2},
+            {"id": "R2", "priority": 1},
+            {"id": "R3", "priority": 3}
+        ]
+        optimized_resources = self.optimize_resource_allocation(resources)
+        figure = {
+            'data': [
+                {'x': [res['id'] for res in optimized_resources], 'y': [res['priority'] for res in optimized_resources], 'type': 'bar', 'name': 'Resource Allocation'}
+            ],
+            'layout': {
+                'title': 'Optimized Resource Allocation'
+            }
+        }
+        return figure
+
+    def visualize_resource_allocation(self):
+        self.app.run_server(debug=True)
 
 # Example usage
 if __name__ == "__main__":
@@ -66,3 +100,6 @@ if __name__ == "__main__":
         {"id": "M3", "description": "Test emergency systems"}
     ]
     im.automate_maintenance(maintenance_tasks)
+
+    # Visualize resource allocation
+    im.visualize_resource_allocation()
