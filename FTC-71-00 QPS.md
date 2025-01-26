@@ -3315,34 +3315,34 @@ Supplementary technical diagrams that provide visual support to the main content
 ```mermaid
 graph LR
     subgraph "Compliance Standards"
-        A[FAA FAR Part 33]
-        B[EASA CS-E §33]
-        C[DO-178C]
-        D[DO-254]
-        E[ISO 9001]
-        F[ASTM D3039]
-        G[FAA FAR Part 25]
-        H[ISO 14001]
-        I[OSHA Standards]
-        J[ISO 10218]
-        K[GDPR]
-        L[ISO/IEC 27001]
-        M[EU AI Act]
-        N[IEEE Standards]
-        O[ASME Standards]
-        P[ASTM E1444]
+        A["FAA FAR Part 33"]
+        B["EASA CS-E §33"]
+        C["DO-178C"]
+        D["DO-254"]
+        E["ISO 9001"]
+        F["ASTM D3039"]
+        G["FAA FAR Part 25"]
+        H["ISO 14001"]
+        I["OSHA Standards"]
+        J["ISO 10218"]
+        K["GDPR"]
+        L["ISO/IEC 27001"]
+        M["EU AI Act"]
+        N["IEEE Standards"]
+        O["ASME Standards"]
+        P["ASTM E1444"]
     end
 
     subgraph "Systems/Components"
-        Q[Quantum Propulsion Engine (Q-01)]
-        R[Advanced Avionics Suite]
-        S[Structural Fuselage (CFRP)]
-        T[Thrust Vectoring System (TVS)]
-        U[Energy Harvesting and Conversion System (AEHCS)]
-        V[ROBBBO-T Construction Robots]
-        W[Digital Twin Platform]
-        X[AI-Driven Analytics Platform]
-        Y[Maintenance and Inspection Tools (NDT)]
+        Q["Quantum Propulsion Engine Q-01"]
+        R["Advanced Avionics Suite"]
+        S["Structural Fuselage CFRP"]
+        T["Thrust Vectoring System TVS"]
+        U["Energy Harvesting and Conversion System AEHCS"]
+        V["ROBBBO-T Construction Robots"]
+        W["Digital Twin Platform"]
+        X["AI-Driven Analytics Platform"]
+        Y["Maintenance and Inspection Tools NDT"]
     end
 
     A --> Q
@@ -3362,6 +3362,7 @@ graph LR
     N --> R
     O --> S
     P --> Y
+
 ```
 
 **Features Illustrated:**
@@ -3375,70 +3376,51 @@ graph LR
 
 ```mermaid
 flowchart TB
-    subgraph "Quantum Propulsion Engine (Q-01)"
-        A1[Type: Quantum Entanglement Engine]
-        A2[Material Composition: High-strength, non-reactive alloys]
-        A3[Dimensions: 3m x 1.5m x 2m]
-        A4[Power Output: 500 kN thrust]
-        A5[Efficiency: >90% energy-to-thrust]
-        A6[Operating Temperature: <4K]
-        A7[Lifespan: 20,000 hours]
+    %% Quantum Propulsion Engine Section
+    subgraph Quantum_Propulsion_Engine_Q_01
+        direction TB
+        A1["Type: Quantum Entanglement Engine"]
+        A2["Material Composition: High-strength, non-reactive alloys"]
+        A3["Dimensions: 3m x 1.5m x 2m"]
+        A4["Power Output: 500 kN thrust"]
+        A5["Efficiency: >90% energy-to-thrust"]
+        A6["Operating Temperature: <4K"]
+        A7["Lifespan: 20,000 hours"]
+
+        A1 --> A2 --> A3 --> A4 --> A5 --> A6 --> A7
+    end
+    
+    %% Advanced Avionics Suite Section
+    subgraph Advanced_Avionics_Suite
+        direction TB
+        B1["Components: Flight control computers, navigation systems"]
+        B2["Processor: Multi-core quantum processors"]
+        B3["Memory: 256 GB Quantum RAM"]
+        B4["Operating System: Real-time Quantum Operating System (RQOS)"]
+        B5["Interfaces: CAN bus, ARINC 429, Ethernet"]
+        B6["Redundancy: Triple-redundant systems"]
+        B7["Security: Encrypted communication channels"]
+        B8["Power Consumption: 5 kW"]
+        B9["Size: Compact modular units"]
+        B10["Weight: 2,500 kg"]
+
+        B1 --> B2 --> B3 --> B4 --> B5 --> B6 --> B7 --> B8 --> B9 --> B10
     end
 
-    subgraph "Advanced Avionics Suite"
-        B1[Components: Flight control computers, navigation systems]
-        B2[Processor: Multi-core quantum processors]
-        B3[Memory: 256 GB Quantum RAM]
-        B4[Operating System: Real-time Quantum Operating System (RQOS)]
-        B5[Interfaces: CAN bus, ARINC 429, Ethernet]
-        B6[Redundancy: Triple-redundant systems]
-        B7[Security: Encrypted communication channels]
-        B8[Power Consumption: 5 kW]
-        B9[Size: Compact modular units]
-        B10[Weight: 2,500 kg]
+    %% Thrust Vectoring System Section
+    subgraph Thrust_Vectoring_System_TVS
+        direction TB
+        C1["Type: Modular Thrust Vectoring Units"]
+        C2["Material Composition: Lightweight, heat-resistant alloys"]
+        C3["Dimensions: 1.2m x 1m x 0.8m"]
+        C4["Weight: 1,500 kg per unit"]
+        C5["Vectoring Range: ±30 degrees"]
+        C6["Actuation Speed: <0.05 seconds"]
+        C7["Thrust-to-Weight Ratio: >2:1"]
+        C8["Control Interface: Integrated"]
+        
+        C1 --> C2 --> C3 --> C4 --> C5 --> C6 --> C7 --> C8
     end
-
-    subgraph "Thrust Vectoring System (TVS)"
-        C1[Type: Modular Thrust Vectoring Units]
-        C2[Material Composition: Lightweight, heat-resistant alloys]
-        C3[Dimensions: 1.2m x 1m x 0.8m]
-        C4[Weight: 1,500 kg per unit]
-        C5[Vectoring Range: ±30 degrees]
-        C6[Actuation Speed: <0.05 seconds]
-        C7[Thrust-to-Weight Ratio: >2:1]
-        C8[Control Interface: Integrated with FADEC]
-        C9[Power Supply: Dedicated power conditioning unit]
-        C10[Cooling Requirements: Active cooling with liquid helium]
-        C11[Safety Features: Fail-safe mechanisms, real-time monitoring]
-    end
-
-    A1 --> A2
-    A2 --> A3
-    A3 --> A4
-    A4 --> A5
-    A5 --> A6
-    A6 --> A7
-
-    B1 --> B2
-    B2 --> B3
-    B3 --> B4
-    B4 --> B5
-    B5 --> B6
-    B6 --> B7
-    B7 --> B8
-    B8 --> B9
-    B9 --> B10
-
-    C1 --> C2
-    C2 --> C3
-    C3 --> C4
-    C4 --> C5
-    C5 --> C6
-    C6 --> C7
-    C7 --> C8
-    C8 --> C9
-    C9 --> C10
-    C10 --> C11
 ```
 
 **Features Illustrated:**
