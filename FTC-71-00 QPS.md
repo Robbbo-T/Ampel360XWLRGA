@@ -1483,7 +1483,7 @@ Este diagrama visualiza cómo la información fluye entre los diferentes compone
 
 ```mermaid
 graph LR
-    QSM[Modulador de Estado Cuántico (QSM)] -->|Datos de Estado| QEE[Quantum Entanglement Engine QEE]
+    QSM[Modulador de Estado Cuántico QSM] -->|Datos de Estado| QEE[Quantum Entanglement Engine QEE]
     QSM -->|Datos de Control| CMS[Sistema de Control y Monitoreo CMS]
     QEE -->|Datos de Empuje| FADEC[Interfaz FADEC]
     CMS -->|Comandos| PSU[Unidad de Suministro de Energía PSU]
