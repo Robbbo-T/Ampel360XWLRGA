@@ -4593,7 +4593,7 @@ This section expands on Section 10.0 of the PDR (â€œPreliminary Design Diagramsâ
 ```mermaid
 flowchart LR
     A((Tail Cone Bulkhead))
-    B["Primary Frame<br>(MTG-FRAME-Q1-001)"]
+    B["Primary Frame<br> MTG-FRAME-Q1-001"]
     C["Secondary Support Beams"]
     D["Q-01<br>Subsystems"]
 
