@@ -180,6 +180,29 @@ graph LR
     VIBCU --control loop--> S1 & S2
 ```
 
+```mermaid
+graph LR
+    subgraph "Cryogenic Cooling System (CCS)"
+        R[Reservoir]
+        P[Pump]
+        HX[Heat Exchanger]
+    end
+
+    subgraph "Q-01 Engine"
+        QSM[QSM]
+        QEE[QEE]
+        V[Vent]
+    end
+
+    R --> P --> HX --> S[Supply Line] --> QSM
+    QSM --> QEE
+    QEE --> RT[Return Line] --> HX
+    QEE --> V
+
+    style S fill:#ccf,stroke:#333
+    style RT fill:#cfc,stroke:#333
+```
+
 ### File-Level Changes
 
 | Change | Details | Files |
