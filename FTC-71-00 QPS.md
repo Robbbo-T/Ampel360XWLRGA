@@ -2488,7 +2488,7 @@ graph LR
             PS[Particle Source]
             PG{{"Photon Generator"}}
             ND[Nonlinear Crystal]
-            EC{{"Entanglement Chamber")}
+            EC{{"Entanglement Chamber"}}
             FAS[Focusing & Alignment System]
             SH[Shielding]
         end
@@ -2607,6 +2607,7 @@ graph LR
     style FADECI fill:#ffc,stroke:#333,stroke-width:2px
     style DMS fill:#ffc,stroke:#333,stroke-width:2px
     style FADEC fill:#eee,stroke:#333,stroke-width:1px
+
 ```
 
 **Enhancements:**
