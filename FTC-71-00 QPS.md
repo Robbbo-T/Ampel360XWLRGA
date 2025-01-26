@@ -4238,7 +4238,7 @@ Supporting references and test plans are included to ensure compliance with stru
 ```mermaid
 flowchart LR
     A((Tail Cone Bulkhead))
-    B[Primary Frame<br>(MTG-FRAME-Q1-001)]
+    B[Primary Frame<br>MTG-FRAME-Q1-001]
     C[Secondary Support Beams]
     D[Q-01<br>Subsystems]
 
