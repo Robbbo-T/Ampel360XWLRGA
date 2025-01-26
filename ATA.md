@@ -175,7 +175,7 @@ gitGraph
     branch FDR
     checkout FDR
     commit id: "Realizar Final Design Review (FDR)"
-    checkout master
+    checkout main
     merge SRS id: "Integrar SRS en Master"
     merge SRH id: "Integrar SRH en Master"
     merge FDR id: "Finalizar FDR y Merge en Master"
@@ -183,20 +183,20 @@ gitGraph
     branch AMM
     checkout AMM
     commit id: "Crear Aircraft Maintenance Manual (AMM)"
-    checkout master
+    checkout main
     merge AMM id: "Integrar AMM en Master"
     
     branch TSM
     checkout TSM
     commit id: "Crear Troubleshooting Manual (TSM)"
-    checkout master
-    merge TSM id: "Integrar TSM en Master"
+    checkout main
+    merge TSM id: "Integrar TSM en Main"
     
     branch APP
     checkout APP
     commit id: "Crear Approval Documentation (APP)"
-    checkout master
-    merge APP id: "Integrar APP en Master"
+    checkout main
+    merge APP id: "Integrar APP en Main"
 ```
 
 ---
