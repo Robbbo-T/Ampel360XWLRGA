@@ -1039,6 +1039,664 @@ Hydrogen-Electric Propulsion, Bio-Composites, e.G.A.I.As, GAIA, Digital Twins, S
                         *   [BOM: BOM-GAIAPULSE-AMPEL-0201-80-001](#bom-bom-gaiapulse-ampel-0201-80-001)
                     *   **(Note:** This section might be renamed to "Q-01 Activation and Initialization" or similar to better reflect the unique nature of the quantum propulsion system.)
 
+
+# GAIA AIR - AMPEL360XWLRGA: Comprehensive Documentation Structure (S1000D)
+
+**Part Number: GPAM-AMPEL-0201-ATA**
+
+---
+
+## **1. Introduction**
+
+This document serves as a comprehensive index and guide to the documentation structure for the GAIA AIR – AMPEL360XWLRGA aircraft, adhering to S1000D standards. It outlines the organization of documentation across all relevant ATA Chapters, encompassing both physical components and digital/avionics systems. This structure ensures consistency, traceability, and ease of access for all stakeholders involved in the aircraft's lifecycle.
+
+---
+
+## **2. Documentation Elements Key**
+
+For each ATA Chapter and its sub-sections, the following documentation elements are defined and cross-referenced:
+
+-   **P/N:** Part Number - Unique identifier for the ATA Chapter section.
+-   **IN:** Information Number - S1000D Information Number for specific topics within each ATA chapter.
+-   **DMC:** Data Module Code - S1000D Data Module Code for each IN, ensuring compliance and interoperability.
+-   **Document:** Document Title - Descriptive title of the S1000D Document associated with each IN.
+-   **PDR:** Preliminary Design Review - Reference to the PDR document for the specific component or system (if applicable).
+-   **PBS:** Product Breakdown Structure - Reference to the PBS document outlining the hierarchical breakdown of the component or system (if applicable).
+-   **BOM:** Bill of Materials - Reference to the BOM listing components, parts, and materials (if applicable).
+-   **SRS:** Software Requirements Specification - Specific to digital systems, detailing software requirements (if applicable).
+-   **WBS:** Work Breakdown Structure - Specific to digital systems, outlining project tasks and deliverables (if applicable).
+-   **EPOCHS:** Engineering Phases/Milestones - Specific to digital systems, defining key development phases and milestones (if applicable).
+
+---
+
+## **3. ATA Chapter Index & Documentation Breakdown**
+
+This section provides a detailed index of the documentation structure, organized by ATA Chapters relevant to the AMPEL360XWLRGA aircraft.
+
+### **2.1.1 GPAM-AMPEL-0201-ATA - ATA Chapters 05-57 & 70-80**
+
+#### **2.1.1.A ATA 05 – Time Limits / Maintenance Checks**
+**P/N: GPAM-AMPEL-0201-05**
+
+| **IN**                                      | **DMC**                                                     | **Document**                                      |
+|--------------------------------------------|-------------------------------------------------------------|---------------------------------------------------|
+| **GPAM-AMPEL-0201-05-001** – Scheduled Maintenance Program (S1000D)   | DMC-GAIAPULSE-AMPEL-0201-05-001-A-001-00_EN-US               | GPAM-AMPEL-0201-05-001-A – Scheduled Maintenance Program |
+| **GPAM-AMPEL-0201-05-002** – Maintenance Time Limits (S1000D)        | DMC-GAIAPULSE-AMPEL-0201-05-002-A-001-00_EN-US               | GPAM-AMPEL-0201-05-002-A – Maintenance Time Limits        |
+| **GPAM-AMPEL-0201-05-003** – Airworthiness Limitations (S1000D)      | DMC-GAIAPULSE-AMPEL-0201-05-003-A-001-00_EN-US               | GPAM-AMPEL-0201-05-003-A – Airworthiness Limitations       |
+
+---
+
+#### **2.1.1.B ATA 06 – Dimensions and Areas**
+**P/N: GPAM-AMPEL-0201-06**
+
+| **IN**                                      | **DMC**                                                     | **Document**                                      | **PDR**                                   | **PBS**                                   | **BOM**                                   |
+|--------------------------------------------|-------------------------------------------------------------|---------------------------------------------------|-------------------------------------------|-------------------------------------------|-------------------------------------------|
+| **GPAM-AMPEL-0201-06-001** – Aircraft Dimensions and Stations (S1000D)  | DMC-GAIAPULSE-AMPEL-0201-06-001-A-001-00_EN-US               | GPAM-AMPEL-0201-06-001-A – Aircraft Dimensions & Stations | PDR-GAIAPULSE-AMPEL-0201-06-001 | PBS-GAIAPULSE-AMPEL-0201-06-001 | BOM-GAIAPULSE-AMPEL-0201-06-001 |
+| **GPAM-AMPEL-0201-06-002** – Compartment Layout and Dimensions (S1000D) | DMC-GAIAPULSE-AMPEL-0201-06-002-A-001-00_EN-US               | GPAM-AMPEL-0201-06-002-A – Compartment Layout & Dimensions | PDR-GAIAPULSE-AMPEL-0201-06-002 | PBS-GAIAPULSE-AMPEL-0201-06-002 | BOM-GAIAPULSE-AMPEL-0201-06-002 |
+
+---
+
+#### **2.1.1.C ATA 07 – Lifting and Shoring**
+**P/N:** GPAM-AMPEL-0201-07
+
+| **IN**                                      | **DMC**                                                     | **Document**                                   | **PDR**                                  | **PBS**                                  | **BOM**                                  |
+|--------------------------------------------|-------------------------------------------------------------|-----------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|
+| **GPAM-AMPEL-0201-07-001** – Lifting Procedures and Diagrams (S1000D)   | DMC-GAIAPULSE-AMPEL-0201-07-001-A-001-00_EN-US               | GPAM-AMPEL-0201-07-001-A – Lifting Procedures & Diagrams   | PDR-GAIAPULSE-AMPEL-0201-07-001 | PBS-GAIAPULSE-AMPEL-0201-07-001 | BOM-GAIAPULSE-AMPEL-0201-07-001 |
+| **GPAM-AMPEL-0201-07-002** – Shoring Procedures and Diagrams (S1000D)   | DMC-GAIAPULSE-AMPEL-0201-07-002-A-001-00_EN-US               | GPAM-AMPEL-0201-07-002-A – Shoring Procedures & Diagrams   | PDR-GAIAPULSE-AMPEL-0201-07-002 | PBS-GAIAPULSE-AMPEL-0201-07-002 | BOM-GAIAPULSE-AMPEL-0201-07-002 |
+
+---
+
+#### **2.1.1.D ATA 08 – Leveling and Weighing**
+**P/N:** GPAM-AMPEL-0201-08
+
+| **IN**                                      | **DMC**                                                     | **Document**                               | **PDR**                                 | **PBS**                                 | **BOM**                                 |
+|--------------------------------------------|-------------------------------------------------------------|-------------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
+| **GPAM-AMPEL-0201-08-001** – Leveling Procedures (S1000D)             | DMC-GAIAPULSE-AMPEL-0201-08-001-A-001-00_EN-US               | GPAM-AMPEL-0201-08-001-A – Leveling Procedures            | PDR-GAIAPULSE-AMPEL-0201-08-001 | PBS-GAIAPULSE-AMPEL-0201-08-001 | BOM-GAIAPULSE-AMPEL-0201-08-001 |
+| **GPAM-AMPEL-0201-08-002** – Aircraft Weighing Procedures (S1000D)    | DMC-GAIAPULSE-AMPEL-0201-08-002-A-001-00_EN-US               | GPAM-AMPEL-0201-08-002-A – Aircraft Weighing Procedures   | PDR-GAIAPULSE-AMPEL-0201-08-002 | PBS-GAIAPULSE-AMPEL-0201-08-002 | BOM-GAIAPULSE-AMPEL-0201-08-002 |
+
+---
+
+#### **2.1.1.E ATA 09 – Towing and Taxiing**
+**P/N:** GPAM-AMPEL-0201-09
+
+| **IN**                                      | **DMC**                                                     | **Document**                            | **PDR**                                | **PBS**                                | **BOM**                                |
+|--------------------------------------------|-------------------------------------------------------------|-----------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|
+| **GPAM-AMPEL-0201-09-001** – Towing Procedures (S1000D)      | DMC-GAIAPULSE-AMPEL-0201-09-001-A-001-00_EN-US               | GPAM-AMPEL-0201-09-001-A – Towing Procedures     | PDR-GAIAPULSE-AMPEL-0201-09-001 | PBS-GAIAPULSE-AMPEL-0201-09-001 | BOM-GAIAPULSE-AMPEL-0201-09-001 |
+| **GPAM-AMPEL-0201-09-002** – Taxiing Procedures (S1000D)     | DMC-GAIAPULSE-AMPEL-0201-09-002-A-001-00_EN-US               | GPAM-AMPEL-0201-09-002-A – Taxiing Procedures    | PDR-GAIAPULSE-AMPEL-0201-09-002 | PBS-GAIAPULSE-AMPEL-0201-09-002 | BOM-GAIAPULSE-AMPEL-0201-09-002 |
+
+---
+
+#### **2.1.1.F ATA 10 – Parking, Mooring, Storage, and Return to Service**
+**P/N:** GPAM-AMPEL-0201-10
+
+| **IN**                                      | **DMC**                                                     | **Document**                               |
+|--------------------------------------------|-------------------------------------------------------------|-------------------------------------------|
+| **GPAM-AMPEL-0201-10-001** – Parking Procedures (S1000D)         | DMC-GAIAPULSE-AMPEL-0201-10-001-A-001-00_EN-US               | GPAM-AMPEL-0201-10-001-A – Parking Procedures         |
+| **GPAM-AMPEL-0201-10-002** – Mooring Procedures (S1000D)         | DMC-GAIAPULSE-AMPEL-0201-10-002-A-001-00_EN-US               | GPAM-AMPEL-0201-10-002-A – Mooring Procedures         |
+| **GPAM-AMPEL-0201-10-003** – Storage Procedures (S1000D)         | DMC-GAIAPULSE-AMPEL-0201-10-003-A-001-00_EN-US               | GPAM-AMPEL-0201-10-003-A – Storage Procedures         |
+| **GPAM-AMPEL-0201-10-004** – Return to Service Procedures (S1000D)| DMC-GAIAPULSE-AMPEL-0201-10-004-A-001-00_EN-US               | GPAM-AMPEL-0201-10-004-A – Return to Service Procedures|
+
+*(Associated PDR/PBS/BOM references as needed.)*
+
+---
+
+#### **2.1.1.G ATA 11 – Placards and Markings**
+**P/N:** GPAM-AMPEL-0201-11
+
+| **IN**                                      | **DMC**                                                     | **Document**                                     |
+|--------------------------------------------|-------------------------------------------------------------|--------------------------------------------------|
+| **GPAM-AMPEL-0201-11-001** – Exterior Placards & Markings (S1000D) | DMC-GAIAPULSE-AMPEL-0201-11-001-A-001-00_EN-US               | GPAM-AMPEL-0201-11-001-A – Exterior Placards & Markings |
+| **GPAM-AMPEL-0201-11-002** – Interior Placards & Markings (S1000D) | DMC-GAIAPULSE-AMPEL-0201-11-002-A-001-00_EN-US               | GPAM-AMPEL-0201-11-002-A – Interior Placards & Markings |
+
+---
+
+#### **2.1.1.H ATA 12 – Servicing**
+**P/N:** GPAM-AMPEL-0201-12
+
+| **IN**                                      | **DMC**                                                     | **Document**                                 |
+|--------------------------------------------|-------------------------------------------------------------|---------------------------------------------|
+| **GPAM-AMPEL-0201-12-001** – Servicing Procedures (S1000D)        | DMC-GAIAPULSE-AMPEL-0201-12-001-A-001-00_EN-US               | GPAM-AMPEL-0201-12-001-A – Servicing Procedures          |
+| **GPAM-AMPEL-0201-12-002** – Servicing Equipment List (S1000D)    | DMC-GAIAPULSE-AMPEL-0201-12-002-A-001-00_EN-US               | GPAM-AMPEL-0201-12-002-A – Servicing Equipment List      |
+
+---
+
+#### **2.1.1.I ATA 20 – Standard Practices – Airframe**
+**P/N:** GPAM-AMPEL-0201-20
+
+| **IN**                                      | **DMC**                                                     | **Document**                                          |
+|--------------------------------------------|-------------------------------------------------------------|-------------------------------------------------------|
+| **GPAM-AMPEL-0201-20-001** – Torque Values & Procedures (S1000D)   | DMC-GAIAPULSE-AMPEL-0201-20-001-A-001-00_EN-US               | GPAM-AMPEL-0201-20-001-A – Torque Values & Procedures   |
+| **GPAM-AMPEL-0201-20-002** – Electrical Bonding Procedures (S1000D)| DMC-GAIAPULSE-AMPEL-0201-20-002-A-001-00_EN-US               | GPAM-AMPEL-0201-20-002-A – Electrical Bonding Procedures|
+
+---
+
+#### **2.1.1.J ATA 21 – Air Conditioning**
+**P/N:** GPAM-AMPEL-0201-21
+
+| **IN**                                      | **DMC**                                                     | **Document**                                       |
+|--------------------------------------------|-------------------------------------------------------------|----------------------------------------------------|
+| **GPAM-AMPEL-0201-21-001** – Air Conditioning System Schematics (S1000D) | DMC-GAIAPULSE-AMPEL-0201-21-001-A-001-00_EN-US               | GPAM-AMPEL-0201-21-001-A – Air Conditioning System Schematics |
+| **GPAM-AMPEL-0201-21-002** – Cabin Temperature Control System (S1000D)   | DMC-GAIAPULSE-AMPEL-0201-21-002-A-001-00_EN-US               | GPAM-AMPEL-0201-21-002-A – Cabin Temperature Control System    |
+
+---
+
+#### **2.1.1.K ATA 22 – Auto Flight**
+**P/N:** GPAM-AMPEL-0201-22
+
+| **IN**                                      | **DMC**                                                     | **Document**                                      |
+|--------------------------------------------|-------------------------------------------------------------|---------------------------------------------------|
+| **GPAM-AMPEL-0201-22-001** – Flight Control Computer Specs (S1000D) | DMC-GAIAPULSE-AMPEL-0201-22-001-A-001-00_EN-US               | GPAM-AMPEL-0201-22-001-A – Flight Control Computer Specs |
+| **GPAM-AMPEL-0201-22-002** – Autopilot Modes & Functions (S1000D)   | DMC-GAIAPULSE-AMPEL-0201-22-002-A-001-00_EN-US               | GPAM-AMPEL-0201-22-002-A – Autopilot Modes & Functions     |
+| **GPAM-AMPEL-0201-22-003** – Flight Director System Description (S1000D)| DMC-GAIAPULSE-AMPEL-0201-22-003-A-001-00_EN-US            | GPAM-AMPEL-0201-22-003-A – Flight Director System Description |
+
+---
+
+#### **2.1.1.L ATA 23 – Communications**
+**P/N:** GPAM-AMPEL-0201-23
+
+| **IN**                                      | **DMC**                                                     | **Document**                                          |
+|--------------------------------------------|-------------------------------------------------------------|-------------------------------------------------------|
+| **GPAM-AMPEL-0201-23-001** – VHF/UHF Radio Specs (S1000D)    | DMC-GAIAPULSE-AMPEL-0201-23-001-A-001-00_EN-US               | GPAM-AMPEL-0201-23-001-A – VHF/UHF Radio Specifications     |
+| **GPAM-AMPEL-0201-23-002** – Satellite Communication System (S1000D) | DMC-GAIAPULSE-AMPEL-0201-23-002-A-001-00_EN-US               | GPAM-AMPEL-0201-23-002-A – Satellite Communication System   |
+
+---
+
+#### **2.1.1.M ATA 24 – Electrical Power**
+**P/N:** GPAM-AMPEL-0201-24
+*(Previously summarized with references to primary power generation, emergency power system, and distribution schematics.)*
+
+---
+
+#### **2.1.1.N ATA 25 – Equipment / Furnishings**
+**P/N:** GPAM-AMPEL-0201-25
+
+| **IN**                                      | **DMC**                                                    | **Document**                                  |
+|--------------------------------------------|------------------------------------------------------------|-----------------------------------------------|
+| **GPAM-AMPEL-0201-25-001** – Passenger Seat Specs (S1000D)      | DMC-GAIAPULSE-AMPEL-0201-25-001-A-001-00_EN-US              | GPAM-AMPEL-0201-25-001-A – Passenger Seat Specs       |
+| **GPAM-AMPEL-0201-25-002** – Galley Equipment Specs (S1000D)     | DMC-GAIAPULSE-AMPEL-0201-25-002-A-001-00_EN-US              | GPAM-AMPEL-0201-25-002-A – Galley Equipment Specs      |
+| **GPAM-AMPEL-0201-25-003** – Lavatory System Specifications (S1000D)| DMC-GAIAPULSE-AMPEL-0201-25-003-A-001-00_EN-US           | GPAM-AMPEL-0201-25-003-A – Lavatory System Specifications|
+
+---
+
+#### **2.1.1.O ATA 26 – Fire Protection**
+**P/N:** GPAM-AMPEL-0201-26
+
+| **IN**                                      | **DMC**                                                    | **Document**                                 |
+|--------------------------------------------|------------------------------------------------------------|----------------------------------------------|
+| **GPAM-AMPEL-0201-26-001** – Fire Detection System Description (S1000D)  | DMC-GAIAPULSE-AMPEL-0201-26-001-A-001-00_EN-US              | GPAM-AMPEL-0201-26-001-A – Fire Detection System Description  |
+| **GPAM-AMPEL-0201-26-002** – Fire Suppression System Description (S1000D)| DMC-GAIAPULSE-AMPEL-0201-26-002-A-001-00_EN-US              | GPAM-AMPEL-0201-26-002-A – Fire Suppression System Description |
+| **GPAM-AMPEL-0201-26-003** – Engine Fire Protection System (S1000D)     | DMC-GAIAPULSE-AMPEL-0201-26-003-A-001-00_EN-US              | GPAM-AMPEL-0201-26-003-A – Engine Fire Protection System      |
+
+---
+
+#### **2.1.1.P ATA 27 – Flight Controls**
+**P/N:** GPAM-AMPEL-0201-27
+
+| **IN**                                        | **DMC**                                                        | **Document**                                         |
+|----------------------------------------------|----------------------------------------------------------------|------------------------------------------------------|
+| **GPAM-AMPEL-0201-27-001** – Primary Flight Control System Description (S1000D)   | DMC-GAIAPULSE-AMPEL-0201-27-001-A-001-00_EN-US                  | GPAM-AMPEL-0201-27-001-A – Primary Flight Control System Description   |
+| **GPAM-AMPEL-0201-27-002** – Secondary Flight Control System Description (S1000D) | DMC-GAIAPULSE-AMPEL-0201-27-002-A-001-00_EN-US                  | GPAM-AMPEL-0201-27-002-A – Secondary Flight Control System Description |
+| **GPAM-AMPEL-0201-27-003** – High-Lift System Description (S1000D)                | DMC-GAIAPULSE-AMPEL-0201-27-003-A-001-00_EN-US                  | GPAM-AMPEL-0201-27-003-A – High-Lift System Description                |
+
+---
+
+## **2.1.1.Q ATA 28 – Fuel System**
+**P/N:** GPAM-AMPEL-0201-28
+
+| **IN**                                   | **DMC**                                              | **Document**                                  | **PDR**                                | **PBS**                                | **BOM**                                |
+|-----------------------------------------|------------------------------------------------------|-----------------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|
+| GPAM-AMPEL-0201-28-001 - Fuel Lines     | DMC-GAIAPULSE-AMPEL-0201-28-001-A-001-00_EN-US       | GPAM-AMPEL-0201-28-001-A - Fuel Lines         | PDR-GAIAPULSE-AMPEL-0201-28-001        | PBS-GAIAPULSE-AMPEL-0201-28-001        | BOM-GAIAPULSE-AMPEL-0201-28-001        |
+| GPAM-AMPEL-0201-28-002 - Fuel Storage Tanks | DMC-GAIAPULSE-AMPEL-0201-28-002-A-001-00_EN-US    | GPAM-AMPEL-0201-28-002-A - Fuel Storage Tanks | PDR-GAIAPULSE-AMPEL-0201-28-002        | PBS-GAIAPULSE-AMPEL-0201-28-002        | BOM-GAIAPULSE-AMPEL-0201-28-002        |
+| GPAM-AMPEL-0201-28-003 - Fuel Pump Specifications | DMC-GAIAPULSE-AMPEL-0201-28-003-A-001-00_EN-US | GPAM-AMPEL-0201-28-003-A - Fuel Pump Specs    | PDR-GAIAPULSE-AMPEL-0201-28-003        | PBS-GAIAPULSE-AMPEL-0201-28-003        | BOM-GAIAPULSE-AMPEL-0201-28-003        |
+
+*Additional “Q2/Q4/Q5/Q6/Q7/Q8/Q9” Lines for TENGs, Piezo Harvesters, Concave Solar Panels, Cryogenic System Integration, Battery Management, AI Control, etc.*
+
+---
+
+## **2.1.1.R ATA 29 – Hydraulic Power**
+
+**P/N: GPAM-AMPEL-0201-29**
+
+| **IN**                                           | **DMC**                                               | **Document**                                              | **PDR**                                | **PBS**                                | **BOM**                                |
+|-------------------------------------------------|-------------------------------------------------------|-----------------------------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|
+| GPAM-AMPEL-0201-29-001 - Hydraulic System Schematics       | DMC-GAIAPULSE-AMPEL-0201-29-001-A-001-00_EN-US         | GPAM-AMPEL-0201-29-001-A - Hydraulic System Schematics    | PDR-GAIAPULSE-AMPEL-0201-29-001        | PBS-GAIAPULSE-AMPEL-0201-29-001        | BOM-GAIAPULSE-AMPEL-0201-29-001        |
+| GPAM-AMPEL-0201-29-002 - Hydraulic Pump Specifications    | DMC-GAIAPULSE-AMPEL-0201-29-002-A-001-00_EN-US         | GPAM-AMPEL-0201-29-002-A - Hydraulic Pump Specifications   | PDR-GAIAPULSE-AMPEL-0201-29-002        | PBS-GAIAPULSE-AMPEL-0201-29-002        | BOM-GAIAPULSE-AMPEL-0201-29-002        |
+| GPAM-AMPEL-0201-29-003 - Hydraulic Actuator Specifications | DMC-GAIAPULSE-AMPEL-0201-29-003-A-001-00_EN-US         | GPAM-AMPEL-0201-29-003-A - Hydraulic Actuator Specifications | PDR-GAIAPULSE-AMPEL-0201-29-003      | PBS-GAIAPULSE-AMPEL-0201-29-003        | BOM-GAIAPULSE-AMPEL-0201-29-003        |
+
+---
+
+## **2.1.1.S ATA 30 – Ice and Rain Protection**
+
+**P/N: GPAM-AMPEL-0201-30**
+
+| **IN**                                           | **DMC**                                               | **Document**                                               | **PDR**                                | **PBS**                                | **BOM**                                |
+|-------------------------------------------------|-------------------------------------------------------|------------------------------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|
+| GPAM-AMPEL-0201-30-001 - Anti-Icing System Description | DMC-GAIAPULSE-AMPEL-0201-30-001-A-001-00_EN-US         | GPAM-AMPEL-0201-30-001-A - Anti-Icing System Description   | PDR-GAIAPULSE-AMPEL-0201-30-001        | PBS-GAIAPULSE-AMPEL-0201-30-001        | BOM-GAIAPULSE-AMPEL-0201-30-001        |
+| GPAM-AMPEL-0201-30-002 - De-Icing System Description   | DMC-GAIAPULSE-AMPEL-0201-30-002-A-001-00_EN-US         | GPAM-AMPEL-0201-30-002-A - De-Icing System Description     | PDR-GAIAPULSE-AMPEL-0201-30-002        | PBS-GAIAPULSE-AMPEL-0201-30-002        | BOM-GAIAPULSE-AMPEL-0201-30-002        |
+| GPAM-AMPEL-0201-30-003 - Rain Repellent System Specifications | DMC-GAIAPULSE-AMPEL-0201-30-003-A-001-00_EN-US      | GPAM-AMPEL-0201-30-003-A - Rain Repellent System Specs     | PDR-GAIAPULSE-AMPEL-0201-30-003        | PBS-GAIAPULSE-AMPEL-0201-30-003        | BOM-GAIAPULSE-AMPEL-0201-30-003        |
+
+---
+
+## **2.1.1.T ATA 31 – Instruments**
+
+**P/N: GPAM-AMPEL-0201-31**
+
+| **IN**                                                | **DMC**                                                   | **Document**                                         | **PDR**                                | **PBS**                                | **BOM**                                |
+|------------------------------------------------------|-----------------------------------------------------------|------------------------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|
+| GPAM-AMPEL-0201-31-001 - Flight Instrument Calibration Procedures | DMC-GAIAPULSE-AMPEL-0201-31-001-A-001-00_EN-US  | GPAM-AMPEL-0201-31-001-A - Flight Instrument Calibration | PDR-GAIAPULSE-AMPEL-0201-31-001  | PBS-GAIAPULSE-AMPEL-0201-31-001        | BOM-GAIAPULSE-AMPEL-0201-31-001        |
+| GPAM-AMPEL-0201-31-002 - Instrument Panel Layout Diagrams        | DMC-GAIAPULSE-AMPEL-0201-31-002-A-001-00_EN-US  | GPAM-AMPEL-0201-31-002-A - Instrument Panel Layout  | PDR-GAIAPULSE-AMPEL-0201-31-002  | PBS-GAIAPULSE-AMPEL-0201-31-002        | BOM-GAIAPULSE-AMPEL-0201-31-002        |
+
+---
+
+## **2.1.1.U ATA 32 – Landing Gear**
+
+**P/N: GPAM-AMPEL-0201-32**
+
+| **IN**                                                | **DMC**                                                   | **Document**                                          | **PDR**                                | **PBS**                                | **BOM**                                |
+|-------------------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|
+| GPAM-AMPEL-0201-32-001 - Landing Gear Design and Operation       | DMC-GAIAPULSE-AMPEL-0201-32-001-A-001-00_EN-US  | GPAM-AMPEL-0201-32-001-A - Landing Gear Design & Operation | PDR-GAIAPULSE-AMPEL-0201-32-001 | PBS-GAIAPULSE-AMPEL-0201-32-001        | BOM-GAIAPULSE-AMPEL-0201-32-001        |
+| GPAM-AMPEL-0201-32-002 - Landing Gear Retraction System          | DMC-GAIAPULSE-AMPEL-0201-32-002-A-001-00_EN-US  | GPAM-AMPEL-0201-32-002-A - Landing Gear Retraction System   | PDR-GAIAPULSE-AMPEL-0201-32-002 | PBS-GAIAPULSE-AMPEL-0201-32-002        | BOM-GAIAPULSE-AMPEL-0201-32-002        |
+| GPAM-AMPEL-0201-32-003 - Landing Gear Emergency Procedures       | DMC-GAIAPULSE-AMPEL-0201-32-003-A-001-00_EN-US  | GPAM-AMPEL-0201-32-003-A - Landing Gear Emergency Procedures| PDR-GAIAPULSE-AMPEL-0201-32-003 | PBS-GAIAPULSE-AMPEL-0201-32-003        | BOM-GAIAPULSE-AMPEL-0201-32-003        |
+
+---
+
+## **2.1.1.V ATA 33 – Lights**
+
+**P/N: GPAM-AMPEL-0201-33**
+
+| **IN**                                                | **DMC**                                                   | **Document**                                      | **PDR**                                | **PBS**                                | **BOM**                                |
+|-------------------------------------------------------|-----------------------------------------------------------|---------------------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|
+| GPAM-AMPEL-0201-33-001 - Exterior Lighting System Design | DMC-GAIAPULSE-AMPEL-0201-33-001-A-001-00_EN-US  | GPAM-AMPEL-0201-33-001-A - Exterior Lighting System | PDR-GAIAPULSE-AMPEL-0201-33-001 | PBS-GAIAPULSE-AMPEL-0201-33-001        | BOM-GAIAPULSE-AMPEL-0201-33-001        |
+| GPAM-AMPEL-0201-33-002 - Interior Lighting System Design  | DMC-GAIAPULSE-AMPEL-0201-33-002-A-001-00_EN-US  | GPAM-AMPEL-0201-33-002-A - Interior Lighting System | PDR-GAIAPULSE-AMPEL-0201-33-002 | PBS-GAIAPULSE-AMPEL-0201-33-002        | BOM-GAIAPULSE-AMPEL-0201-33-002        |
+| GPAM-AMPEL-0201-33-003 - Emergency Lighting System        | DMC-GAIAPULSE-AMPEL-0201-33-003-A-001-00_EN-US  | GPAM-AMPEL-0201-33-003-A - Emergency Lighting System | PDR-GAIAPULSE-AMPEL-0201-33-003 | PBS-GAIAPULSE-AMPEL-0201-33-003        | BOM-GAIAPULSE-AMPEL-0201-33-003        |
+
+---
+
+## **2.1.1.W ATA 34 – Navigation**
+
+**P/N: GPAM-AMPEL-0201-34**
+
+| **IN**                                                | **DMC**                                                   | **Document**                                      | **SRS**                                     | **WBS**                                    | **EPOCHS**                                |
+|-------------------------------------------------------|-----------------------------------------------------------|---------------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| GPAM-AMPEL-0201-34-W1-001 - GPS Receiver Specifications        | DMC-GAIAPULSE-AMPEL-0201-34-W1-001-A-001-00_EN-US  | GPAM-AMPEL-0201-34-W1-001-A - GPS Receiver Specifications | SRS-GAIAPULSE-AMPEL-0201-34-W1-001        | WBS-GAIAPULSE-AMPEL-0201-34-W1-001        | EPOCH-GAIAPULSE-AMPEL-0201-34-W1-001      |
+| GPAM-AMPEL-0201-34-W1-002 - GPS Antenna Design               | DMC-GAIAPULSE-AMPEL-0201-34-W1-002-A-001-00_EN-US  | GPAM-AMPEL-0201-34-W1-002-A - GPS Antenna Design        | SRS-GAIAPULSE-AMPEL-0201-34-W1-002        | WBS-GAIAPULSE-AMPEL-0201-34-W1-002        | EPOCH-GAIAPULSE-AMPEL-0201-34-W1-002      |
+| GPAM-AMPEL-0201-34-W2-001 - INS Specifications               | DMC-GAIAPULSE-AMPEL-0201-34-W2-001-A-001-00_EN-US  | GPAM-AMPEL-0201-34-W2-001-A - INS Specifications        | SRS-GAIAPULSE-AMPEL-0201-34-W2-001        | WBS-GAIAPULSE-AMPEL-0201-34-W2-001        | EPOCH-GAIAPULSE-AMPEL-0201-34-W2-001      |
+| GPAM-AMPEL-0201-34-W2-002 - Quantum Enhancement for INS      | DMC-GAIAPULSE-AMPEL-0201-34-W2-002-A-001-00_EN-US  | GPAM-AMPEL-0201-34-W2-002-A - Quantum Enhancement for INS| SRS-GAIAPULSE-AMPEL-0201-34-W2-002        | WBS-GAIAPULSE-AMPEL-0201-34-W2-002        | EPOCH-GAIAPULSE-AMPEL-0201-34-W2-002      |
+| GPAM-AMPEL-0201-34-W3-001 - RNAV System Description          | DMC-GAIAPULSE-AMPEL-0201-34-W3-001-A-001-00_EN-US  | GPAM-AMPEL-0201-34-W3-001-A - RNAV System Description    | SRS-GAIAPULSE-AMPEL-0201-34-W3-001        | WBS-GAIAPULSE-AMPEL-0201-34-W3-001        | EPOCH-GAIAPULSE-AMPEL-0201-34-W3-001      |
+| GPAM-AMPEL-0201-34-W3-002 - RNP Approach Procedures          | DMC-GAIAPULSE-AMPEL-0201-34-W3-002-A-001-00_EN-US  | GPAM-AMPEL-0201-34-W3-002-A - RNP Approach Procedures    | SRS-GAIAPULSE-AMPEL-0201-34-W3-002        | WBS-GAIAPULSE-AMPEL-0201-34-W3-002        | EPOCH-GAIAPULSE-AMPEL-0201-34-W3-002      |
+| GPAM-AMPEL-0201-34-W4-001 - Q-01 Navigation Interface Protocols | DMC-GAIAPULSE-AMPEL-0201-34-W4-001-A-001-00_EN-US  | GPAM-AMPEL-0201-34-W4-001-A - Q-01 Nav Interface Protocols| SRS-GAIAPULSE-AMPEL-0201-34-W4-001        | WBS-GAIAPULSE-AMPEL-0201-34-W4-001        | EPOCH-GAIAPULSE-AMPEL-0201-34-W4-001      |
+| GPAM-AMPEL-0201-34-W4-002 - Navigation Algorithms for Q-01 Integration | DMC-GAIAPULSE-AMPEL-0201-34-W4-002-A-001-00_EN-US  | GPAM-AMPEL-0201-34-W4-002-A - Navigation Algorithms for Q-01 Integration| SRS-GAIAPULSE-AMPEL-0201-34-W4-002        | WBS-GAIAPULSE-AMPEL-0201-34-W4-002        | EPOCH-GAIAPULSE-AMPEL-0201-34-W4-002      |
+
+---
+
+## **2.1.1.X ATA 35 – Oxygen**
+
+**P/N: GPAM-AMPEL-0201-35**
+
+| **IN**                                      | **DMC**                                                     | **Document**                                  | **SRS**                                     | **WBS**                                    | **EPOCHS**                                |
+|--------------------------------------------|-------------------------------------------------------------|-----------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| GPAM-AMPEL-0201-35-001 - Crew Oxygen System (S1000D)    | DMC-GAIAPULSE-AMPEL-0201-35-001-A-001-00_EN-US         | GPAM-AMPEL-0201-35-001-A - Crew Oxygen System    | SRS-GAIAPULSE-AMPEL-0201-35-001        | WBS-GAIAPULSE-AMPEL-0201-35-001        | EPOCH-GAIAPULSE-AMPEL-0201-35-001      |
+| GPAM-AMPEL-0201-35-002 - Passenger Oxygen System (S1000D) | DMC-GAIAPULSE-AMPEL-0201-35-002-A-001-00_EN-US         | GPAM-AMPEL-0201-35-002-A - Passenger Oxygen System | SRS-GAIAPULSE-AMPEL-0201-35-002        | WBS-GAIAPULSE-AMPEL-0201-35-002        | EPOCH-GAIAPULSE-AMPEL-0201-35-002      |
+
+---
+
+## **2.1.1.Y ATA 36 – Pneumatic**
+
+**P/N: GPAM-AMPEL-0201-36**
+
+| **IN**                                      | **DMC**                                                     | **Document**                                          | **SRS**                                     | **WBS**                                    | **EPOCHS**                                |
+|--------------------------------------------|-------------------------------------------------------------|-------------------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| GPAM-AMPEL-0201-36-001 - Pneumatic System Design and Schematics (S1000D) | DMC-GAIAPULSE-AMPEL-0201-36-001-A-001-00_EN-US  | GPAM-AMPEL-0201-36-001-A - Pneumatic System Design & Schematics | SRS-GAIAPULSE-AMPEL-0201-36-001        | WBS-GAIAPULSE-AMPEL-0201-36-001        | EPOCH-GAIAPULSE-AMPEL-0201-36-001      |
+| GPAM-AMPEL-0201-36-002 - Bleed Air System Specifications (S1000D)    | DMC-GAIAPULSE-AMPEL-0201-36-002-A-001-00_EN-US  | GPAM-AMPEL-0201-36-002-A - Bleed Air System Specifications    | SRS-GAIAPULSE-AMPEL-0201-36-002        | WBS-GAIAPULSE-AMPEL-0201-36-002        | EPOCH-GAIAPULSE-AMPEL-0201-36-002      |
+
+---
+
+## **2.1.1.Z ATA 38 – Water / Waste**
+
+**P/N: GPAM-AMPEL-0201-38**
+
+| **IN**                                      | **DMC**                                                     | **Document**                                       | **SRS**                                     | **WBS**                                    | **EPOCHS**                                |
+|--------------------------------------------|-------------------------------------------------------------|----------------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| GPAM-AMPEL-0201-38-001 - Potable Water System Design (S1000D)       | DMC-GAIAPULSE-AMPEL-0201-38-001-A-001-00_EN-US         | GPAM-AMPEL-0201-38-001-A - Potable Water System Design       | SRS-GAIAPULSE-AMPEL-0201-38-001        | WBS-GAIAPULSE-AMPEL-0201-38-001        | EPOCH-GAIAPULSE-AMPEL-0201-38-001      |
+| GPAM-AMPEL-0201-38-002 - Waste Water System Design (S1000D)        | DMC-GAIAPULSE-AMPEL-0201-38-002-A-001-00_EN-US         | GPAM-AMPEL-0201-38-002-A - Waste Water System Design        | SRS-GAIAPULSE-AMPEL-0201-38-002        | WBS-GAIAPULSE-AMPEL-0201-38-002        | EPOCH-GAIAPULSE-AMPEL-0201-38-002      |
+| GPAM-AMPEL-0201-38-003 - Water System Servicing Procedures (S1000D) | DMC-GAIAPULSE-AMPEL-0201-38-003-A-001-00_EN-US         | GPAM-AMPEL-0201-38-003-A - Water System Servicing Procedures | SRS-GAIAPULSE-AMPEL-0201-38-003        | WBS-GAIAPULSE-AMPEL-0201-38-003        | EPOCH-GAIAPULSE-AMPEL-0201-38-003      |
+
+---
+
+## **2.1.1.AA ATA 45 – Central Maintenance System**
+
+**P/N: GPAM-AMPEL-0201-45**
+
+| **IN**                                                | **DMC**                                                   | **Document**                                          | **SRS**                                     | **WBS**                                    | **EPOCHS**                                |
+|-------------------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| GPAM-AMPEL-0201-45-001 - Central Maintenance Computer (CMC) Specifications (S1000D) | DMC-GAIAPULSE-AMPEL-0201-45-001-A-001-00_EN-US  | GPAM-AMPEL-0201-45-001-A - CMC Specifications        | SRS-GAIAPULSE-AMPEL-0201-45-001        | WBS-GAIAPULSE-AMPEL-0201-45-001        | EPOCH-GAIAPULSE-AMPEL-0201-45-001      |
+| GPAM-AMPEL-0201-45-002 - Diagnostics and Troubleshooting Procedures (S1000D) | DMC-GAIAPULSE-AMPEL-0201-45-002-A-001-00_EN-US  | GPAM-AMPEL-0201-45-002-A - Diagnostics & Troubleshooting Procedures | SRS-GAIAPULSE-AMPEL-0201-45-002        | WBS-GAIAPULSE-AMPEL-0201-45-002        | EPOCH-GAIAPULSE-AMPEL-0201-45-002      |
+
+---
+
+## **2.1.1.AB ATA 46 – Information Systems**
+
+**P/N: GPAM-AMPEL-0201-46**
+
+| **IN**                                                | **DMC**                                                   | **Document**                                          | **SRS**                                     | **WBS**                                    | **EPOCHS**                                |
+|-------------------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| GPAM-AMPEL-0201-46-001 - Data Network Architecture (S1000D)          | DMC-GAIAPULSE-AMPEL-0201-46-001-A-001-00_EN-US  | GPAM-AMPEL-0201-46-001-A - Data Network Architecture    | SRS-GAIAPULSE-AMPEL-0201-46-001        | WBS-GAIAPULSE-AMPEL-0201-46-001        | EPOCH-GAIAPULSE-AMPEL-0201-46-001      |
+| GPAM-AMPEL-0201-46-002 - Software Specifications for Information Systems (S1000D) | DMC-GAIAPULSE-AMPEL-0201-46-002-A-001-00_EN-US  | GPAM-AMPEL-0201-46-002-A - Software Specs for Info Systems | SRS-GAIAPULSE-AMPEL-0201-46-002        | WBS-GAIAPULSE-AMPEL-0201-46-002        | EPOCH-GAIAPULSE-AMPEL-0201-46-002      |
+
+---
+
+## **2.1.1.AC ATA 49 – Airborne Auxiliary Power**
+
+**P/N: GPAM-AMPEL-0201-49**
+
+| **IN**                                                | **DMC**                                                   | **Document**                                          | **SRS**                                     | **WBS**                                    | **EPOCHS**                                |
+|-------------------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| GPAM-AMPEL-0201-49-001 - APU Integration and Operation (S1000D)      | DMC-GAIAPULSE-AMPEL-0201-49-001-A-001-00_EN-US  | GPAM-AMPEL-0201-49-001-A - APU Integration & Operation | SRS-GAIAPULSE-AMPEL-0201-49-001        | WBS-GAIAPULSE-AMPEL-0201-49-001        | EPOCH-GAIAPULSE-AMPEL-0201-49-001      |
+| GPAM-AMPEL-0201-49-002 - Emergency Power System Design (S1000D)      | DMC-GAIAPULSE-AMPEL-0201-49-002-A-001-00_EN-US  | GPAM-AMPEL-0201-49-002-A - Emergency Power System Design | SRS-GAIAPULSE-AMPEL-0201-49-002        | WBS-GAIAPULSE-AMPEL-0201-49-002        | EPOCH-GAIAPULSE-AMPEL-0201-49-002      |
+
+---
+
+## **2.1.1.AD ATA 51 – Standard Practices and Structures**
+
+**P/N: GPAM-AMPEL-0201-51**
+
+| **IN**                                                | **DMC**                                                   | **Document**                                          | **SRS**                                     | **WBS**                                    | **EPOCHS**                                |
+|-------------------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| GPAM-AMPEL-0201-51-001 - Structural Repair Manual (SRM) (S1000D)        | DMC-GAIAPULSE-AMPEL-0201-51-001-A-001-00_EN-US  | GPAM-AMPEL-0201-51-001-A - Structural Repair Manual (SRM) | SRS-GAIAPULSE-AMPEL-0201-51-001        | WBS-GAIAPULSE-AMPEL-0201-51-001        | EPOCH-GAIAPULSE-AMPEL-0201-51-001      |
+| GPAM-AMPEL-0201-51-002 - Corrosion Prevention and Control Program (S1000D) | DMC-GAIAPULSE-AMPEL-0201-51-002-A-001-00_EN-US  | GPAM-AMPEL-0201-51-002-A - Corrosion Prevention & Control Program | SRS-GAIAPULSE-AMPEL-0201-51-002        | WBS-GAIAPULSE-AMPEL-0201-51-002        | EPOCH-GAIAPULSE-AMPEL-0201-51-002      |
+
+---
+
+## **2.1.1.AE ATA 52 – Doors**
+
+**P/N: GPAM-AMPEL-0201-52**
+
+#### 2.1.1.AE.1 Door Design and Operation
+
+| **IN**                                                | **DMC**                                                   | **Document**                                          | **SRS**                                     | **WBS**                                    | **EPOCHS**                                |
+|-------------------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| GPAM-AMPEL-0201-52-01-001 - Door Mechanical Design Specifications (S1000D) | DMC-GAIAPULSE-AMPEL-0201-52-01-001-A-001-00_EN-US  | GPAM-AMPEL-0201-52-01-001-A - Door Mechanical Design Specs | SRS-GAIAPULSE-AMPEL-0201-52-01-001        | WBS-GAIAPULSE-AMPEL-0201-52-01-001        | EPOCH-GAIAPULSE-AMPEL-0201-52-01-001      |
+| GPAM-AMPEL-0201-52-01-002 - Door Electrical and Control Systems (S1000D) | DMC-GAIAPULSE-AMPEL-0201-52-01-002-A-001-00_EN-US  | GPAM-AMPEL-0201-52-01-002-A - Door Electrical & Control Systems | SRS-GAIAPULSE-AMPEL-0201-52-01-002        | WBS-GAIAPULSE-AMPEL-0201-52-01-002        | EPOCH-GAIAPULSE-AMPEL-0201-52-01-002      |
+| GPAM-AMPEL-0201-52-01-003 - Door Seals and Insulation Materials (S1000D) | DMC-GAIAPULSE-AMPEL-0201-52-01-003-A-001-00_EN-US  | GPAM-AMPEL-0201-52-01-003-A - Door Seals & Insulation Materials| SRS-GAIAPULSE-AMPEL-0201-52-01-003        | WBS-GAIAPULSE-AMPEL-0201-52-01-003        | EPOCH-GAIAPULSE-AMPEL-0201-52-01-003      |
+
+#### 2.1.1.AE.2 Safety and Locking Mechanisms
+
+| **IN**                                                | **DMC**                                                   | **Document**                                          | **SRS**                                     | **WBS**                                    | **EPOCHS**                                |
+|-------------------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| GPAM-AMPEL-0201-52-02-001 - Primary Locking Mechanism Specifications (S1000D) | DMC-GAIAPULSE-AMPEL-0201-52-02-001-A-001-00_EN-US  | GPAM-AMPEL-0201-52-02-001-A - Primary Locking Mechanism Specs | SRS-GAIAPULSE-AMPEL-0201-52-02-001        | WBS-GAIAPULSE-AMPEL-0201-52-02-001        | EPOCH-GAIAPULSE-AMPEL-0201-52-02-001      |
+| GPAM-AMPEL-0201-52-02-002 - Redundant Locking System Design (S1000D)        | DMC-GAIAPULSE-AMPEL-0201-52-02-002-A-001-00_EN-US  | GPAM-AMPEL-0201-52-02-002-A - Redundant Locking System Design | SRS-GAIAPULSE-AMPEL-0201-52-02-002        | WBS-GAIAPULSE-AMPEL-0201-52-02-002        | EPOCH-GAIAPULSE-AMPEL-0201-52-02-002      |
+| GPAM-AMPEL-0201-52-02-003 - Anti-Tampering Security Measures (S1000D)    | DMC-GAIAPULSE-AMPEL-0201-52-02-003-A-001-00_EN-US  | GPAM-AMPEL-0201-52-02-003-A - Anti-Tampering Security Measures| SRS-GAIAPULSE-AMPEL-0201-52-02-003        | WBS-GAIAPULSE-AMPEL-0201-52-02-003        | EPOCH-GAIAPULSE-AMPEL-0201-52-02-003      |
+
+#### 2.1.1.AE.3 Emergency Exits and Evacuation Procedures
+
+| **IN**                                                | **DMC**                                                   | **Document**                                          | **SRS**                                     | **WBS**                                    | **EPOCHS**                                |
+|-------------------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| GPAM-AMPEL-0201-52-03-001 - Emergency Exit Design and Operation (S1000D) | DMC-GAIAPULSE-AMPEL-0201-52-03-001-A-001-00_EN-US  | GPAM-AMPEL-0201-52-03-001-A - Emergency Exit Design & Operation | SRS-GAIAPULSE-AMPEL-0201-52-03-001        | WBS-GAIAPULSE-AMPEL-0201-52-03-001        | EPOCH-GAIAPULSE-AMPEL-0201-52-03-001      |
+| GPAM-AMPEL-0201-52-03-002 - Evacuation Slide Deployment System (S1000D) | DMC-GAIAPULSE-AMPEL-0201-52-03-002-A-001-00_EN-US  | GPAM-AMPEL-0201-52-03-002-A - Evacuation Slide Deployment System | SRS-GAIAPULSE-AMPEL-0201-52-03-002        | WBS-GAIAPULSE-AMPEL-0201-52-03-002        | EPOCH-GAIAPULSE-AMPEL-0201-52-03-002      |
+| GPAM-AMPEL-0201-52-03-003 - Emergency Lighting and Signage (S1000D)    | DMC-GAIAPULSE-AMPEL-0201-52-03-003-A-001-00_EN-US  | GPAM-AMPEL-0201-52-03-003-A - Emergency Lighting and Signage| SRS-GAIAPULSE-AMPEL-0201-52-03-003        | WBS-GAIAPULSE-AMPEL-0201-52-03-003        | EPOCH-GAIAPULSE-AMPEL-0201-52-03-003      |
+
+#### 2.1.1.AE.4 Maintenance and Inspection
+
+| **IN**                                                | **DMC**                                                   | **Document**                                          | **SRS**                                     | **WBS**                                    | **EPOCHS**                                |
+|-------------------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| GPAM-AMPEL-0201-52-04-001 - Routine Inspection Procedures (S1000D) | DMC-GAIAPULSE-AMPEL-0201-52-04-001-A-001-00_EN-US  | GPAM-AMPEL-0201-52-04-001-A - Routine Inspection Procedures | SRS-GAIAPULSE-AMPEL-0201-52-04-001        | WBS-GAIAPULSE-AMPEL-0201-52-04-001        | EPOCH-GAIAPULSE-AMPEL-0201-52-04-001      |
+| GPAM-AMPEL-0201-52-04-002 - Repair Procedures (S1000D)           | DMC-GAIAPULSE-AMPEL-0201-52-04-002-A-001-00_EN-US  | GPAM-AMPEL-0201-52-04-002-A - Repair Procedures          | SRS-GAIAPULSE-AMPEL-0201-52-04-002        | WBS-GAIAPULSE-AMPEL-0201-52-04-002        | EPOCH-GAIAPULSE-AMPEL-0201-52-04-002      |
+| GPAM-AMPEL-0201-52-04-003 - Component Replacement Guidelines (S1000D) | DMC-GAIAPULSE-AMPEL-0201-52-04-003-A-001-00_EN-US  | GPAM-AMPEL-0201-52-04-003-A - Component Replacement Guidelines| SRS-GAIAPULSE-AMPEL-0201-52-04-003        | WBS-GAIAPULSE-AMPEL-0201-52-04-003        | EPOCH-GAIAPULSE-AMPEL-0201-52-04-003      |
+
+---
+markdown
+## **2.1.1.AF ATA 53 – Fuselage**
+
+**P/N: GPAM-AMPEL-0201-53**
+
+#### 2.1.1.AF.1  53-10-00-000 Nose Section
+
+| **IN**                                                | **DMC**                                                   | **Document**                                          | **SRS**                                     | **WBS**                                    | **EPOCHS**                                |
+|-------------------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| GPAM-AMPEL-0201-53-10-000-001 - Nose Section Structural Design (S1000D) | DMC-GAIAPULSE-AMPEL-0201-53-10-000-001-A-001-00_EN-US  | GPAM-AMPEL-0201-53-10-000-001-A - Nose Section Structural Design | SRS-GAIAPULSE-AMPEL-0201-53-10-000-001        | WBS-GAIAPULSE-AMPEL-0201-53-10-000-001        | EPOCH-GAIAPULSE-AMPEL-0201-53-10-000-001      |
+| GPAM-AMPEL-0201-53-10-000-002 - Nose Section Material Specifications (S1000D) | DMC-GAIAPULSE-AMPEL-0201-53-10-000-002-A-001-00_EN-US  | GPAM-AMPEL-0201-53-10-000-002-A - Nose Section Material Specifications | SRS-GAIAPULSE-AMPEL-0201-53-10-000-002        | WBS-GAIAPULSE-AMPEL-0201-53-10-000-002        | EPOCH-GAIAPULSE-AMPEL-0201-53-10-000-002      |
+
+#### 2.1.1.AF.2  53-20-00-000 Forward Section
+
+| **IN**                                                | **DMC**                                                   | **Document**                                          | **SRS**                                     | **WBS**                                    | **EPOCHS**                                |
+|-------------------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| GPAM-AMPEL-0201-53-20-000-001 - Forward Section Structural Design (S1000D) | DMC-GAIAPULSE-AMPEL-0201-53-20-000-001-A-001-00_EN-US  | GPAM-AMPEL-0201-53-20-000-001-A - Forward
+markdown
+Section Structural Design | SRS-GAIAPULSE-AMPEL-0201-53-20-000-001        | WBS-GAIAPULSE-AMPEL-0201-53-20-000-001        | EPOCH-GAIAPULSE-AMPEL-0201-53-20-000-001      |
+| GPAM-AMPEL-0201-53-20-000-002 - Forward Section Compartment Layout (S1000D) | DMC-GAIAPULSE-AMPEL-0201-53-20-000-002-A-001-00_EN-US  | GPAM-AMPEL-0201-53-20-000-002-A - Forward Section Compartment Layout | SRS-GAIAPULSE-AMPEL-0201-53-20-000-002        | WBS-GAIAPULSE-AMPEL-0201-53-20-000-002        | EPOCH-GAIAPULSE-AMPEL-0201-53-20-000-002      |
+
+#### 2.1.1.AF.3  53-30-00-000 Central Section
+
+| **IN**                                                | **DMC**                                                   | **Document**                                          | **SRS**                                     | **WBS**                                    | **EPOCHS**                                |
+|-------------------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| GPAM-AMPEL-0201-53-30-000-001 - Central Section Structural Design (S1000D) | DMC-GAIAPULSE-AMPEL-0201-53-30-000-001-A-001-00_EN-US  | GPAM-AMPEL-0201-53-30-000-001-A - Central Section Structural Design | SRS-GAIAPULSE-AMPEL-0201-53-30-000-001        | WBS-GAIAPULSE-AMPEL-0201-53-30-000-001        | EPOCH-GAIAPULSE-AMPEL-0201-53-30-000-001      |
+| GPAM-AMPEL-0201-53-30-000-002 - Central Section Systems Integration (S1000D) | DMC-GAIAPULSE-AMPEL-0201-53-30-000-002-A-001-00_EN-US  | GPAM-AMPEL-0201-53-30-000-002-A - Central Section Systems Integration | SRS-GAIAPULSE-AMPEL-0201-53-30-000-002        | WBS-GAIAPULSE-AMPEL-0201-53-30-000-002        | EPOCH-GAIAPULSE-AMPEL-0201-53-30-000-002      |
+
+#### 2.1.1.AF.4  53-40-00-000 Belly Section
+
+| **IN**                                                | **DMC**                                                   | **Document**                                          | **SRS**                                     | **WBS**                                    | **EPOCHS**                                |
+|-------------------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| GPAM-AMPEL-0201-53-40-000-001 - Belly Section Structural Design (S1000D) | DMC-GAIAPULSE-AMPEL-0201-53-40-000-001-A-001-00_EN-US  | GPAM-AMPEL-0201-53-40-000-001-A - Belly Section Structural Design | SRS-GAIAPULSE-AMPEL-0201-53-40-000-001        | WBS-GAIAPULSE-AMPEL-0201-53-40-000-001        | EPOCH-GAIAPULSE-AMPEL-0201-53-40-000-001      |
+| GPAM-AMPEL-0201-53-40-000-002 - Belly Section Systems Integration (S1000D) | DMC-GAIAPULSE-AMPEL-0201-53-40-000-002-A-001-00_EN-US  | GPAM-AMPEL-0201-53-40-000-002-A - Belly Section Systems Integration | SRS-GAIAPULSE-AMPEL-0201-53-40-000-002        | WBS-GAIAPULSE-AMPEL-0201-53-40-000-002        | EPOCH-GAIAPULSE-AMPEL-0201-53-40-000-002      |
+
+#### 2.1.1.AF.5  53-50-00-000 Tail Cone Section
+
+| **IN**                                                | **DMC**                                                   | **Document**                                          | **SRS**                                     | **WBS**                                    | **EPOCHS**                                |
+|-------------------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| GPAM-AMPEL-0201-53-50-000-001 - Tail Cone Structural Design (S1000D) | DMC-GAIAPULSE-AMPEL-0201-53-50-000-001-A-001-00_EN-US  | GPAM-AMPEL-0201-53-50-000-001-A - Tail Cone Structural Design | SRS-GPAM-AMPEL-0201-53-50-000-001        | WBS-GPAM-AMPEL-0201-53-50-000-001        | EPOCH-GPAM-AMPEL-0201-53-50-000-001      |
+| GPAM-AMPEL-0201-53-50-000-002 - Tail Cone Material Specifications (S1000D) | DMC-GAIAPULSE-AMPEL-0201-53-50-000-002-A-001-00_EN-US  | GPAM-AMPEL-0201-53-50-000-002-A - Tail Cone Material Specifications | SRS-GPAM-AMPEL-0201-53-50-000-002        | WBS-GPAM-AMPEL-0201-53-50-000-002        | EPOCH-GPAM-AMPEL-0201-53-50-000-002      |
+| GPAM-AMPEL-0201-53-50-000-003 - Generative Design Process for Tail Cone (S1000D) | DMC-GAIAPULSE-AMPEL-0201-53-50-000-003-A-001-00_EN-US  | GPAM-AMPEL-0201-53-50-000-003-A - Generative Design Process for Tail Cone | SRS-GPAM-AMPEL-0201-53-50-000-003        | WBS-GPAM-AMPEL-0201-53-50-000-003        | EPOCH-GPAM-AMPEL-0201-53-50-000-003      |
+| GPAM-AMPEL-0201-53-50-FEA-001 - FEA Report for Tail Cone (S1000D)        | DMC-GAIAPULSE-AMPEL-0201-53-50-FEA-001-A-001-00_EN-US   | GPAM-AMPEL-0201-53-50-FEA-001-A - FEA Report for Tail Cone        | SRS-GPAM-AMPEL-0201-53-50-FEA-001        | WBS-GPAM-AMPEL-0201-53-50-FEA-001        | EPOCH-GPAM-AMPEL-0201-53-50-FEA-001      |
+| GPAM-AMPEL-0201-53-50-CFD-001 - CFD Analysis for Tail Cone (S1000D)        | DMC-GAIAPULSE-AMPEL-0201-53-50-CFD-001-A-001-00_EN-US   | GPAM-AMPEL-0201-53-50-CFD-001-A - CFD Analysis for Tail Cone        | SRS-GPAM-AMPEL-0201-53-50-CFD-001        | WBS-GPAM-AMPEL-0201-53-50-CFD-001        | EPOCH-GPAM-AMPEL-0201-53-50-CFD-001      |
+| GPAM-AMPEL-0201-53-50-TEST-001 - Wind Tunnel Test Report (S1000D)     | DMC-GAIAPULSE-AMPEL-0201-53-50-TEST-001-A-001-00_EN-US  | GPAM-AMPEL-0201-53-50-TEST-001-A - Wind Tunnel Test Report     | SRS-GPAM-AMPEL-0201-53-50-TEST-001        | WBS-GPAM-AMPEL-0201-53-50-TEST-001        | EPOCH-GPAM-AMPEL-0201-53-50-TEST-001      |
+
+#### 2.1.1.AF.6  53-60-00-000 APU Compartment
+
+| **IN**                                                | **DMC**                                                   | **Document**                                          | **SRS**                                     | **WBS**                                    | **EPOCHS**                                |
+|-------------------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| GPAM-AMPEL-0201-53-60-000-001 - APU Compartment Structural Design (S1000D) | DMC-GAIAPULSE-AMPEL-0201-53-60-000-001-A-001-00_EN-US  | GPAM-AMPEL-0201-53-60-000-001-A - APU Compartment Structural Design | SRS-GPAM-AMPEL-0201-53-60-000-001        | WBS-GPAM-AMPEL-0201-53-60-000-001        | EPOCH-GPAM-AMPEL-0201-53-60-000-001      |
+| GPAM-AMPEL-0201-53-60-000-002 - APU Integration and Support Systems (S1000D) | DMC-GAIAPULSE-AMPEL-0201-53-60-000-002-A-001-00_EN-US  | GPAM-AMPEL-0201-53-60-000-002-A - APU Integration and Support Systems | SRS-GPAM-AMPEL-0201-53-60-000-002        | WBS-GPAM-AMPEL-0201-53-60-000-002        | EPOCH-GPAM-AMPEL-0201-53-60-000-002      |
+
+#### 2.1.1.AF.7  53-70-00-000 Additional Stations (Reserved for Future Use)
+
+| **IN**                                                | **DMC**                                                   | **Document**                                          | **SRS**                                     | **WBS**                                    | **EPOCHS**                                |
+|-------------------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| GPAM-AMPEL-0201-53-70-000-001 - Future Station Design Concepts (S1000D) | DMC-GAIAPULSE-AMPEL-0201-53-70-000-001-A-001-00_EN-US  | GPAM-AMPEL-0201-53-70-000-001-A - Future Station Design Concepts | SRS-GPAM-AMPEL-0201-53-70-000-001        | WBS-GPAM-AMPEL-0201-53-70-000-001        | EPOCH-GPAM-AMPEL-0201-53-70-000-001      |
+
+#### 2.1.1.AF.8  53-80-00-000 Auxiliary Stations (Reserved for Future Use)
+
+| **IN**                                                | **DMC**                                                   | **Document**                                          | **SRS**                                     | **WBS**                                    | **EPOCHS**                                |
+|-------------------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| GPAM-AMPEL-0201-53-80-000-001 - Auxiliary Station Design Concepts (S1000D) | DMC-GAIAPULSE-AMPEL-0201-53-80-000-001-A-001-00_EN-US  | GPAM-AMPEL-0201-53-80-000-001-A - Auxiliary Station Design Concepts | SRS-GPAM-AMPEL-0201-53-80-000-001        | WBS-GPAM-AMPEL-0201-53-80-000-001        | EPOCH-GPAM-AMPEL-0201-53-80-000-001      |
+
+#### 2.1.1.AF.9  53-99-99-000 User Guide
+
+| **IN**                                                | **DMC**                                                   | **Document**                                          | **SRS**                                     | **WBS**                                    | **EPOCHS**                                |
+|-------------------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| GPAM-AMPEL-0201-53-99-000-001 - User Guide for Fuselage Systems (S1000D) | DMC-GAIAPULSE-AMPEL-0201-53-99-000-001-A-001-00_EN-US  | GPAM-AMPEL-0201-53-99-000-001-A - User Guide for Fuselage Systems | SRS-GPAM-AMPEL-0201-53-99-000-001        | WBS-GPAM-AMPEL-0201-53-99-000-001        | EPOCH-GPAM-AMPEL-0201-53-99-000-001      |
+
+---
+
+## **2.1.1.AG ATA 54 – Nacelles / Pylons**
+
+**P/N: GPAM-AMPEL-0201-54**
+
+| **IN**                                      | **DMC**                                                     | **Document**                                          | **SRS**                                     | **WBS**                                    | **EPOCHS**                                |
+|--------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| GPAM-AMPEL-0201-54-001 - Nacelle Design and Construction (S1000D) | DMC-GAIAPULSE-AMPEL-0201-54-001-A-001-00_EN-US  | GPAM-AMPEL-0201-54-001-A - Nacelle Design and Construction | SRS-GPAM-AMPEL-0201-54-001        | WBS-GPAM-AMPEL-0201-54-001        | EPOCH-GPAM-AMPEL-0201-54-001      |
+| GPAM-AMPEL-0201-54-002 - Pylon Design and Construction (S1000D)   | DMC-GAIAPULSE-AMPEL-0201-54-002-A-001-00_EN-US  | GPAM-AMPEL-0201-54-002-A - Pylon Design and Construction   | SRS-GPAM-AMPEL-0201-54-002        | WBS-GPAM-AMPEL-0201-54-002        | EPOCH-GPAM-AMPEL-0201-54-002      |
+
+---
+
+## **2.1.1.AH ATA 55 – Empennage**
+
+**P/N: GPAM-AMPEL-0201-55**
+
+| **IN**                                      | **DMC**                                                     | **Document**                                          | **SRS**                                     | **WBS**                                    | **EPOCHS**                                |
+|--------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| GPAM-AMPEL-0201-55-001 - Empennage Structural Design (S1000D) | DMC-GAIAPULSE-AMPEL-0201-55-001-A-001-00_EN-US  | GPAM-AMPEL-0201-55-001-A - Empennage Structural Design | SRS-GPAM-AMPEL-0201-55-001        | WBS-GPAM-AMPEL-0201-55-001        | EPOCH-GPAM-AMPEL-0201-55-001      |
+| GPAM-AMPEL-0201-55-002 - Control Surface Integration (S1000D) | DMC-GAIAPULSE-AMPEL-0201-55-002-A-001-00_EN-US  | GPAM-AMPEL-0201-55-002-A - Control Surface Integration | SRS-GPAM-AMPEL-0201-55-002        | WBS-GPAM-AMPEL-0201-55-002        | EPOCH-GPAM-AMPEL-0201-55-002      |
+
+---
+
+## **
+markdown
+---
+## **2.1.1.AI ATA 56 – Windows**
+**P/N: GPAM-AMPEL-0201-56**
+
+| **IN**                                      | **DMC**                                                     | **Document**                                          | **SRS**                                     | **WBS**                                    | **EPOCHS**                                |
+|--------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| GPAM-AMPEL-0201-56-001 - Cockpit Window Design (S1000D) | DMC-GAIAPULSE-AMPEL-0201-56-001-A-001-00_EN-US  | GPAM-AMPEL-0201-56-001-A - Cockpit Window Design | SRS-GAIAPULSE-AMPEL-0201-56-001        | WBS-GAIAPULSE-AMPEL-0201-56-001        | EPOCH-GAIAPULSE-AMPEL-0201-56-001      |
+| GPAM-AMPEL-0201-56-002 - Cabin Window Specifications (S1000D) | DMC-GAIAPULSE-AMPEL-0201-56-002-A-001-00_EN-US  | GPAM-AMPEL-0201-56-002-A - Cabin Window Specifications | SRS-GAIAPULSE-AMPEL-0201-56-002        | WBS-GAIAPULSE-AMPEL-0201-56-002        | EPOCH-GAIAPULSE-AMPEL-0201-56-002      |
+
+---
+
+## **2.1.1.AJ ATA 57 – Wings**
+**P/N: GPAM-AMPEL-0201-57**
+
+| **IN**                                      | **DMC**                                                     | **Document**                                          | **SRS**                                     | **WBS**                                    | **EPOCHS**                                |
+|--------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------|---------------------------------------------|-------------------------------------------|-------------------------------------------|
+| GPAM-AMPEL-0201-57-001 - Wing Structural Design (S1000D)  | DMC-GAIAPULSE-AMPEL-0201-57-001-A-001-00_EN-US  | GPAM-AMPEL-0201-57-001-A - Wing Structural Design | SRS-GAIAPULSE-AMPEL-0201-57-001        | WBS-GAIAPULSE-AMPEL-0201-57-001        | EPOCH-GAIAPULSE-AMPEL-0201-57-001      |
+| GPAM-AMPEL-0201-57-002 - Wing Aerodynamic Design (S1000D) | DMC-GAIAPULSE-AMPEL-0201-57-002-A-001-00_EN-US  | GPAM-AMPEL-0201-57-002-A - Wing Aerodynamic Design  | SRS-GAIAPULSE-AMPEL-0201-57-002        | WBS-GAIAPULSE-AMPEL-0201-57-002        | EPOCH-GAIAPULSE-AMPEL-0201-57-002      |
+| GPAM-AMPEL-0201-57-003 - Winglet Integration (S1000D)    | DMC-GAIAPULSE-AMPEL-0201-57-003-A-001-00_EN-US  | GPAM-AMPEL-0201-57-003-A - Winglet Integration     | SRS-GAIAPULSE-AMPEL-0201-57-003        | WBS-GAIAPULSE-AMPEL-0201-57-003        | EPOCH-GAIAPULSE-AMPEL-0201-57-003      |
+    | GPAM-AMPEL-0201-57-004 - Wing Assembly and Installation (S1000D)   | DMC-GAIAPULSE-AMPEL-0201-57-004-A-001-00_EN-US  | GPAM-AMPEL-0201-57-004-A - Wing Assembly and Installation     | SRS-GAIAPULSE-AMPEL-0201-57-004        | WBS-GAIAPULSE-AMPEL-0201-57-004        | EPOCH-GAIAPULSE-AMPEL-0201-57-004      |
+| GPAM-AMPEL-0201-57-005 - Wing Inspection and Maintenance (S1000D)     | DMC-GAIAPULSE-AMPEL-0201-57-005-A-001-00_EN-US  | GPAM-AMPEL-0201-57-005-A - Wing Inspection and Maintenance    | SRS-GAIAPULSE-AMPEL-0201-57-005        | WBS-GAIAPULSE-AMPEL-0201-57-005        | EPOCH-GAIAPULSE-AMPEL-0201-57-005      |
+
+**(Note:** ATA chapters 60-67 are typically for rotorcraft. Since the AMPEL360XWLRGA is a fixed-wing aircraft, these chapters would not be applicable.)
+
+---
+
+## **2.1.1.AS ATA 70 – Standard Practices - Engine**
+
+**P/N: GPAM-AMPEL-0201-70**
+
+There are no specific INs for ATA 70 since its generally a placeholder.
+
+---
+
+## **2.1.1.AT ATA 71 – Powerplant**
+
+**P/N: GPAM-AMPEL-0201-71**
+
+#### 2.1.1.AT.1 Q-01 Quantum Propulsion System Integration
+
+| **IN**                                                    | **DMC**                                                            | **Document**                                                   | **SRS**                                                | **WBS**                                               | **EPOCHS**                                               |
+|-----------------------------------------------------------|--------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------------------------------|------------------------------------------------------|----------------------------------------------------------|
+| GPAM-AMPEL-0201-71-01-001 – Q-01 Mounting and Interface Specifications (S1000D)  | DMC-GAIAPULSE-AMPEL-0201-71-01-001-A-001-00_EN-US        | GPAM-AMPEL-0201-71-01-001-A – Q-01 Mounting and Interface Specifications   | SRS-GAIAPULSE-AMPEL-0201-71-01-001         | WBS-GAIAPULSE-AMPEL-0201-71-01-001        | EPOCH-GAIAPULSE-AMPEL-0201-71-01-001        |
+| GPAM-AMPEL-0201-71-01-002 – Q-01 Integration with Aircraft Systems (S1000D) | DMC-GAIAPULSE-AMPEL-0201-71-01-002-A-001-00_EN-US        | GPAM-AMPEL-0201-71-01-002-A – Q-01 Integration with Aircraft Systems | SRS-GAIAPULSE-AMPEL-0201-71-01-002        | WBS-GAIAPULSE-AMPEL-0201-71-01-002        | EPOCH-GAIAPULSE-AMPEL-0201-71-01-002        |
+
+#### 2.1.1.AT.2 Propulsion System Control and Monitoring
+
+| **IN**                                                    | **DMC**                                                            | **Document**                                                   | **SRS**                                                | **WBS**                                               | **EPOCHS**                                               |
+|-----------------------------------------------------------|--------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------------------------------|------------------------------------------------------|----------------------------------------------------------|
+| GPAM-AMPEL-0201-71-02-001 – Propulsion Control System Design (S1000D)  | DMC-GAIAPULSE-AMPEL-0201-71-02-001-A-001-00_EN-US        | GPAM-AMPEL-0201-71-02-001-A – Propulsion Control System Design   | SRS-GAIAPULSE-AMPEL-0201-71-02-001         | WBS-GAIAPULSE-AMPEL-0201-71-02-001        | EPOCH-GAIAPULSE-AMPEL-0201-71-02-001        |
+| GPAM-AMPEL-0201-71-02-002 – Real-Time Monitoring and Diagnostics (S1000D) | DMC-GAIAPULSE-AMPEL-0201-71-02-002-A-001-00_EN-US        | GPAM-AMPEL-0201-71-02-002-A – Real-Time Monitoring and Diagnostics | SRS-GAIAPULSE-AMPEL-0201-71-02-002        | WBS-GAIAPULSE-AMPEL-0201-71-02-002        | EPOCH-GAIAPULSE-AMPEL-0201-71-02-002      |
+
+#### 2.1.1.AT.3 Interface with AEHCS
+
+| **IN**                                                    | **DMC**                                                            | **Document**                                                   | **SRS**                                                | **WBS**                                               | **EPOCHS**                                               |
+|-----------------------------------------------------------|--------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------------------------------|------------------------------------------------------|----------------------------------------------------------|
+| GPAM-AMPEL-0201-71-03-001 - AEHCS Power Integration with Q-01 (S1000D) | DMC-GAIAPULSE-AMPEL-0201-71-03-001-A-001-00_EN-US        | GPAM-AMPEL-0201-71-03-001-A - AEHCS Power Integration with Q-01  | SRS-GAIAPULSE-AMPEL-0201-71-03-001        | WBS-GAIAPULSE-AMPEL-0201-71-03-001        | EPOCH-GAIAPULSE-AMPEL-0201-71-03-001      |
+| GPAM-AMPEL-0201-71-03-002 - Energy Management Protocols (S1000D)  | DMC-GAIAPULSE-AMPEL-0201-71-03-002-A-001-00_EN-US        | GPAM-AMPEL-0201-71-03-002-A - Energy Management Protocols | SRS-GAIAPULSE-AMPEL-0201-71-03-002        | WBS-GAIAPULSE-AMPEL-0201-71-03-002        | EPOCH-GAIAPULSE-AMPEL-0201-71-03-002      |
+
+---
+
+## **2.1.1.AU ATA 72 – Engine (Q-01):**
+
+**P/N: GPAM-AMPEL-0201-72**
+
+| **IN**                                                    | **DMC**                                                            | **Document**                                                   | **SRS**                                                | **WBS**                                               | **EPOCHS**                                               |
+|-----------------------------------------------------------|--------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------------------------------|------------------------------------------------------|----------------------------------------------------------|
+| GPAM-AMPEL-0201-72-001 - Engine General Description (Q-01) (S1000D) | DMC-GAIAPULSE-AMPEL-0201-72-001-A-001-00_EN-US  | GPAM-AMPEL-0201-72-001-A - Engine General Description (Q-01)   | SRS-GAIAPULSE-AMPEL-0201-72-001         | WBS-GAIAPULSE-AMPEL-0201-72-001        | EPOCH-GAIAPULSE-AMPEL-0201-72-001        |
+| GPAM-AMPEL-0201-72-002 - QSM Design and Operation (S1000D) | DMC-GAIAPULSE-AMPEL-0201-72-002-A-001-00_EN-US  | GPAM-AMPEL-0201-72-002-A - Quantum State Modulator (QSM) Design & Operation| SRS-GAIAPULSE-AMPEL-0201-72-002        | WBS-GAIAPULSE-AMPEL-0201-72-002        | EPOCH-GAIAPULSE-AMPEL-0201-72-002        |
+| GPAM-AMPEL-0201-72-003 - QEE Design and Operation (S1000D) | DMC-GAIAPULSE-AMPEL-0201-72-003-A-001-00_EN-US  | GPAM-AMPEL-0201-72-003-A - Quantum Entanglement Engine (QEE) Design & Operation | SRS-GAIAPULSE-AMPEL-0201-72-003        | WBS-GAIAPULSE-AMPEL-0201-72-003        | EPOCH-GAIAPULSE-AMPEL-0201-72-003        |
+| GPAM-AMPEL-0201-72-004 - Cryogenic System Integration for Engine (S1000D)    | DMC-GAIAPULSE-AMPEL-0201-72-004-A-001-00_EN-US  | GPAM-AMPEL-0201-72-004-A - Cryogenic System Integration for Engine  | SRS-GAIAPULSE-AMPEL-0201-72-004        | WBS-GAIAPULSE-AMPEL-0201-72-004        | EPOCH-GAIAPULSE-AMPEL-0201-72-004        |
+| GPAM-AMPEL-0201-72-005 - Engine Performance Parameters (S1000D)  | DMC-GAIAPULSE-AMPEL-0201-72-005-A-001-00_EN-US  | GPAM-AMPEL-0201-72-005-A - Engine Performance Parameters | SRS-GAIAPULSE-AMPEL-0201-72-005        | WBS-GAIAPULSE-AMPEL-0201-72-005        | EPOCH-GAIAPULSE-AMPEL-0201-72-005        |
+| GPAM-AMPEL-0201-72-006 - Engine Safety Features (S1000D) | DMC-GAIAPULSE-AMPEL-0201-72-006-A-001-00_EN-US  | GPAM-AMPEL-0201-72-006-A - Engine Safety Features  | SRS-GAIAPULSE-AMPEL-0201-72-006        | WBS-GAIAPULSE-AMPEL-0201-72-006        | EPOCH-GAIAPULSE-AMPEL-0201-72-006        |
+
+---
+
+## **2.1.1.AV ATA 73 – Engine Fuel and Control**
+**P/N: GPAM-AMPEL-0201-73**
+
+| **IN**                                                        | **DMC**                                                               | **Document**                                                            | **SRS**                                                         | **WBS**                                                        | **EPOCHS**                                                        |
+|---------------------------------------------------------------|-----------------------------------------------------------------------|-------------------------------------------------------------------------|------------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|
+| GPAM-AMPEL-0201-73-001 - Q-01 Fuel System Description (If Applicable) (S1000D) | DMC-GAIAPULSE-AMPEL-0201-73-001-A-001-00_EN-US  | GPAM-AMPEL-0201-73-001-A - Q-01 Fuel System Description | SRS-GAIAPULSE-AMPEL-0201-73-001        | WBS-GAIAPULSE-AMPEL-0201-73-001        | EPOCH-GAIAPULSE-AMPEL-0201-73-001 |
+**(Note:** This section may need modification or omission if the Q-01 system is truly "fuel-less." If a unique energy coupling mechanism is used instead of traditional fuel, this should be reflected here.)
+
+---
+
+## **2.1.1.AW ATA 74 – Ignition**
+**P/N: GPAM-AMPEL-0201-74**
+
+| **IN**                                                    | **DMC**                                                            | **Document**                                                   | **SRS**                                                | **WBS**                                               | **EPOCHS**                                               |
+|-----------------------------------------------------------|--------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------------------------------|------------------------------------------------------|----------------------------------------------------------|
+| GPAM-AMPEL-0201-74-001 - Ignition System for Q-01 (If Applicable) (S1000D) | DMC-GAIAPULSE-AMPEL-0201-74-001-A-001-00_EN-US        | GPAM-AMPEL-0201-74-001-A - Ignition System for Q-01         | SRS-GAIAPULSE-AMPEL-0201-74-001        | WBS-GAIAPULSE-AMPEL-0201-74-001        | EPOCH-GAIAPULSE-AMPEL-0201-74-001        |
+**(Note:** This section might be renamed to "Q-01 Activation System" or similar, depending on Q-01 design.)
+
+---
+
+## **2.1.1.AX ATA 75 – Air**
+**P/N: GPAM-AMPEL-0201-75**
+
+| **IN**                                                    | **DMC**                                                            | **Document**                                                   | **SRS**                                                | **WBS**                                               | **EPOCHS**                                               |
+|-----------------------------------------------------------|--------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------------------------------|------------------------------------------------------|----------------------------------------------------------|
+| GPAM-AMPEL-0201-75-001 - Air Systems Integration for Q-01 (S1000D) | DMC-GAIAPULSE-AMPEL-0201-75-001-A-001-00_EN-US | GPAM-AMPEL-0201-75-001-A - Air Systems Integration for Q-01 | SRS-GAIAPULSE-AMPEL-0201-75-001        | WBS-GAIAPULSE-AMPEL-0201-75-001        | EPOCH-GAIAPULSE-AMPEL-0201-75-001        |
+**(Note:** This section may need refinement to specify how "air systems" interact with the Q-01, e.g., cooling or ventilation needs.)
+
+---
+
+## **2.1.1.AY ATA 76 – Engine Controls**
+**P/N: GPAM-AMPEL-0201-76**
+
+| **IN**                                                    | **DMC**                                                            | **Document**                                                   | **SRS**                                                | **WBS**                                               | **EPOCHS**                                               |
+|-----------------------------------------------------------|--------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------------------------------|------------------------------------------------------|----------------------------------------------------------|
+| GPAM-AMPEL-0201-76-001 - Engine Control System Integration with Q-01 (S1000D) | DMC-GAIAPULSE-AMPEL-0201-76-001-A-001-00_EN-US  | GPAM-AMPEL-0201-76-001-A - Engine Control System Integration with Q-01| SRS-GAIAPULSE-AMPEL-0201-76-001        | WBS-GAIAPULSE-AMPEL-0201-76-001        | EPOCH-GAIAPULSE-AMPEL-0201-76-001        |
+
+---
+
+## **2.1.1.AZ ATA 77 – Engine Indicating**
+**P/N: GPAM-AMPEL-0201-77**
+
+| **IN**                                                    | **DMC**                                                            | **Document**                                                   | **SRS**                                                | **WBS**                                               | **EPOCHS**                                               |
+|-----------------------------------------------------------|--------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------------------------------|------------------------------------------------------|----------------------------------------------------------|
+| GPAM-AMPEL-0201-77-001 - Engine Indicating System for Q-01 (S1000D) | DMC-GAIAPULSE-AMPEL-0201-77-001-A-001-00_EN-US  | GPAM-AMPEL-0201-77-001-A - Engine Indicating System for Q-01 | SRS-GAIAPULSE-AMPEL-0201-77-001        | WBS-GAIAPULSE-AMPEL-0201-77-001        | EPOCH-GAIAPULSE-AMPEL-0201-77-001        |
+
+---
+
+## **2.1.1.BA ATA 78 – Exhaust**
+**P/N: GPAM-AMPEL-0201-78**
+
+| **IN**                                                    | **DMC**                                                            | **Document**                                                   | **SRS**                                                | **WBS**                                               | **EPOCHS**                                               |
+|-----------------------------------------------------------|--------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------------------------------|------------------------------------------------------|----------------------------------------------------------|
+| GPAM-AMPEL-0201-78-001 - Exhaust System for Q-01 (If Applicable) (S1000D)  | DMC-GAIAPULSE-AMPEL-0201-78-001-A-001-00_EN-US  | GPAM-AMPEL-0201-78-001-A - Exhaust System for Q-01         | SRS-GAIAPULSE-AMPEL-0201-78-001        | WBS-GAIAPULSE-AMPEL-0201-78-001        | EPOCH-GAIAPULSE-AMPEL-0201-78-001        |
+*(Note: This section might be significantly different for the Q-01 if it doesn't produce exhaust in the traditional sense. It could be repurposed to document any energy or particle emissions.)*
+
+---
+
+## **2.1.1.BB ATA 79 – Oil**
+**P/N: GPAM-AMPEL-0201-79**
+
+| **IN**                                                    | **DMC**                                                            | **Document**                                                   | **SRS**                                                | **WBS**                                               | **EPOCHS**                                               |
+|-----------------------------------------------------------|--------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------------------------------|------------------------------------------------------|----------------------------------------------------------|
+| GPAM-AMPEL-0201-79-001 - Oil System for Q-01 (If Applicable) (S1000D)    | DMC-GAIAPULSE-AMPEL-0201-79-001-A-001-00_EN-US  | GPAM-AMPEL-0201-79-001-A - Oil System for Q-01       | SRS-GAIAPULSE-AMPEL-0201-79-001        | WBS-GAIAPULSE-AMPEL-0201-79-001        | EPOCH-GAIAPULSE-AMPEL-0201-79-001        |
+**(Note:** This section may not be applicable to the Q-01 system unless there are specific lubrication requirements for certain components.)
+
+---
+
+## **2.1.1.BC ATA 80 – Starting**
+**P/N: GPAM-AMPEL-0201-80**
+
+| **IN**                                                    | **DMC**                                                            | **Document**                                                   | **SRS**                                                | **WBS**                                               | **EPOCHS**                                               |
+|-----------------------------------------------------------|--------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------------------------------|------------------------------------------------------|----------------------------------------------------------|
+| GPAM-AMPEL-0201-80-001 - Starting System for Q-01 (S1000D)      | DMC-GAIAPULSE-AMPEL-0201-80-001-A-001-00_EN-US   | GPAM-AMPEL-0201-80-001-A - Starting System for Q-01           | SRS-GAIAPULSE-AMPEL-0201-80-001        | WBS-GAIAPULSE-AMPEL-0201-80-001        | EPOCH-GAIAPULSE-AMPEL-0201-80-001        |
+**(Note:** This section might be renamed to "Q-01 Activation and Initialization" or similar to better reflect the unique nature of the quantum propulsion system.)
+
+---
+This comprehensive listing presents a clear, structured, and S1000D-compliant documentation framework. Let me know if you'd like me to refine any of these listings or proceed to develop any specific documents based on this outline.
+
+
                 *   [2.1.1.CA ATA 91 - Charts](#211ca-ata-91---charts)
                     *   [P/N: GPAM-AMPEL-0201-91](#pn-gpam-ampel-0201-91)
                     *   [IN: GPAM-AMPEL-0201-91-001 - Performance Charts for Q-01 Propulsion System (S1000D)](#in-gpam-ampel-0201-91-001---performance-charts-for-q-01-propulsion-system-s1000d)
