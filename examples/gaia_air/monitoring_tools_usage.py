@@ -1,10 +1,23 @@
 import random
 import time
-import matplotlib.pyplot as plt
+import dash
+import dash_core_components as dcc
+import dash_html_components as html
+from dash.dependencies import Input, Output
 
 class MonitoringTools:
     def __init__(self):
         self.telemetry_data = []
+        self.app = dash.Dash(__name__)
+        self.app.layout = html.Div(children=[
+            html.H1(children='Telemetry Data Visualization'),
+            dcc.Graph(id='telemetry-graph'),
+            dcc.Interval(id='interval-component', interval=1*1000, n_intervals=0)
+        ])
+        self.app.callback(
+            Output('telemetry-graph', 'figure'),
+            [Input('interval-component', 'n_intervals')]
+        )(self.update_graph)
 
     def collect_telemetry(self, source):
         data = {
@@ -24,14 +37,21 @@ class MonitoringTools:
             aggregated_data[source].append(data['value'])
         return aggregated_data
 
+    def update_graph(self, n_intervals):
+        aggregated_data = self.aggregate_telemetry()
+        figure = {
+            'data': [
+                {'x': list(range(len(values))), 'y': values, 'type': 'line', 'name': source}
+                for source, values in aggregated_data.items()
+            ],
+            'layout': {
+                'title': 'Telemetry Data Visualization'
+            }
+        }
+        return figure
+
     def visualize_telemetry(self, aggregated_data):
-        for source, values in aggregated_data.items():
-            plt.plot(values, label=source)
-        plt.xlabel('Time')
-        plt.ylabel('Value')
-        plt.title('Telemetry Data Visualization')
-        plt.legend()
-        plt.show()
+        self.app.run_server(debug=True)
 
     def generate_alerts(self, aggregated_data, threshold=80):
         alerts = []
