@@ -2074,11 +2074,11 @@ Para una visualización rápida de la arquitectura del QPS, se proporciona un es
 
 ```mermaid
 graph LR
-    QSM[Modulador de Estado Cuántico (QSM)]
-    QEE[Motor de Entrelazamiento Cuántico (QEE)]
+    QSM[Modulador de Estado Cuántico QSM]
+    QEE[Motor de Entrelazamiento Cuántico QEE]
     CCS[Sistema de Enfriamiento Criogénico]
-    FADEC[Sistema de Control Digital de Motor de Plena Autoridad (FADEC)]
-    AEHCS[Sistema Avanzado de Manejo y Control de Energía Atmosférica (AEHCS)]
+    FADEC[Sistema de Control Digital de Motor de Plena Autoridad FADEC]
+    AEHCS[Sistema Avanzado de Manejo y Control de Energía Atmosférica AEHCS]
     NeuronBit[NeuronBit Building Environment]
     ChatQuantum[CHATQUANTUM Interoperating System]
 
