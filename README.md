@@ -884,21 +884,17 @@ Due to the text-based nature of this platform, a detailed visual diagram cannot 
 - **Redundancy Indicators:** Double lines or parallel lines to indicate redundant pathways.
 - **Legend:** Explaining color codes and line styles.
 
-#### **Example Layout Description:**
-
-Here is the same diagram rendered using **Mermaid's DOT language**:
-
 ```mermaid
 graph LR
-    QSM[Quantum State Modulator (QSM)]
-    QEE[Quantum Entanglement Engine (QEE)]
+    QSM[Quantum State Modulator]
+    QEE[Quantum Entanglement Engine]
     CCS[Cryogenic Cooling System]
-    FADEC[Full Authority Digital Engine Control (FADEC)]
-    AEHCS[Advanced Electrical Handling and Control System (AEHCS)]
+    FADEC[Full Authority Digital Engine Control]
+    AEHCS[Advanced Electrical Handling and Control System]
     NeuronBit[NeuronBit Building Environment]
     ChatQuantum[CHATQUANTUM Interoperating System]
-    eGAIA[eGAIA (Contextual Intelligence)]
-    GAGI[GAGI (Global Artificial General Intelligence)]
+    eGAIA[eGAIA Contextual Intelligence]
+    GAGI[GAGI Global Artificial General Intelligence]
 
     QSM -->|Controls| QEE 
     QSM --> CCS 
@@ -911,6 +907,7 @@ graph LR
     eGAIA --> QSM
     eGAIA --> GAGI
     GAGI --> ChatQuantum
+``` GAGI --> ChatQuantum
 ```
 
 ---
