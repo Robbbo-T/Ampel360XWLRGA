@@ -907,11 +907,7 @@ graph LR
     eGAIA --> QSM
     eGAIA --> GAGI
     GAGI --> ChatQuantum
-``` GAGI --> ChatQuantum
 ```
-
----
-
 ### **Appendices**
 
 #### **71.100.01 Glossary of Terms**
@@ -1372,7 +1368,7 @@ This repository is licensed under the **MIT License** or an internal license *(c
 
 ---
 
-```
+
 # AMPEL360: the project
 ## **GAIA-AIR AMPEL360 and e.G.A.I.As: Merging Sustainable Aviation with Embodied, Evolving, Extended Intelligence**
 
