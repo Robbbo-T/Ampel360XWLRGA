@@ -5445,19 +5445,25 @@ Aunque la Sección 9 (Definiciones de Acrónimos) cubre los acrónimos clave, la
 
 Para una visualización rápida de la arquitectura del **QPS** y su integración con **eGAIA** y **GAGI**, se proporciona un esquema simplificado adicional junto al diagrama principal de mermaid:
 
-```mermaid
+```MARMEID
 graph TD
-    QSM[Quantum State Modulator (QSM)]
-    QEE[Quantum Entanglement Engine (QEE)]
-    ForceVector[Force Vector (Propulsion)]
-    eGAIA[eGAIA (Contextual Intelligence)]
-    GAGI[GAGI (Global Artificial General Intelligence)]
-    AI-Modules[AI-Driven Modules]
-    IoT-Sensors[Robbbo-Tx IoT Sensors]
-    NewMaterials[Self-Healing Composite Materials]
-    DigitalTwins[Digital Twin Integration]
+    %% Quantum and Propulsion Systems
+    QSM[Quantum State Modulator as QSM]
+    QEE[Quantum Entanglement Engine as QEE]
+    ForceVector[Force Vector as Propulsion]
+
+    %% Intelligence and Cognitive Systems
+    eGAIA[eGAIA as Contextual Intelligence]
+    GAGI[GAGI as Global Artificial General Intelligence]
     CognitiveAI[Cognitive Computing Systems]
 
+    %% AI and Integration Elements
+    AI-Modules[AI-Driven Modules]
+    IoT-Sensors[Robbbo-Tx IoT Sensors]
+    DigitalTwins[Digital Twin Integration]
+    NewMaterials[Self-Healing Composite Materials]
+
+    %% Connections
     QSM --> QEE
     QEE --> ForceVector
     eGAIA --> QSM
