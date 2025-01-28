@@ -6999,7 +6999,7 @@ graph LR
     click QSM "showTooltip('Quantum State Modulator: Precisely modulates entangled states<br>Technology: [Proprietary]<br>Accuracy: >99%<br>Response Time: <1 ns')"
     click CU "showTooltip('Control Unit: Manages QEE operations, interfaces with FADEC<br>Software: [Proprietary]<br>Redundancy: Triple-redundant')"
     click AEHCS "showTooltip('Atmospheric Energy Harvesting System: Supplements QEE power<br>Technology: [Proprietary]<br>Efficiency: [Proprietary]')"
-  
+```  
 Diagram 71-QP-01-02: QEE - Entanglement Generation Process Flowchart.
 Diagram 71-QP-02-01: Quantum State Modulator (QSM) - Functional Block Diagram.
 Diagram 71-QP-02-02: QSM - Control System Architecture.
@@ -7008,7 +7008,7 @@ Diagram 71-QP-03-02: AEHCS-Q-01 Interface - Schematic.
 Diagram 71-QP-04-01: Thrust Vectoring System - Mechanical Design.
 Diagram 71-QP-04-02: Thrust Vectoring System - Control System Integration.
 **Nota:** Estos diagramas son altamente confidenciales y están disponibles por separado bajo acceso controlado.
-```
+
 ### 71.100.03 Reference Standards and Documents
 
 - **FAR Part 25:** Airworthiness Standards: Transport Category Airplanes.
@@ -7197,7 +7197,7 @@ graph LR
     click QSM "showTooltip('Quantum State Modulator: Precisely modulates entangled states<br>Technology: [Proprietary]<br>Accuracy: >99%<br>Response Time: <1 ns')"
     click CU "showTooltip('Control Unit: Manages QEE operations, interfaces with FADEC<br>Software: [Proprietary]<br>Redundancy: Triple-redundant')"
     click AEHCS "showTooltip('Atmospheric Energy Harvesting System: Supplements QEE power<br>Technology: [Proprietary]<br>Efficiency: [Proprietary]')"
-
+````
 Diagram 71-QP-01-02: QEE - Entanglement Generation Process Flowchart.
 Diagram 71-QP-02-01: Quantum State Modulator (QSM) - Functional Block Diagram.
 Diagram 71-QP-02-02: QSM - Control System Architecture.
@@ -7206,7 +7206,7 @@ Diagram 71-QP-03-02: AEHCS-Q-01 Interface - Schematic.
 Diagram 71-QP-04-01: Thrust Vectoring System - Mechanical Design.
 Diagram 71-QP-04-02: Thrust Vectoring System - Control System Integration.
 **Nota:** Estos diagramas son altamente confidenciales y están disponibles por separado bajo acceso controlado.
-````
+
 ### 71.100.03 Reference Standards and Documents
 
 - **FAR Part 25:** Airworthiness Standards: Transport Category Airplanes.
@@ -7590,7 +7590,7 @@ Esta sección proporciona información suplementaria para apoyar el documento pr
 | **Qubit**                             | Quantum Bit - the basic unit of quantum information                                                                                                                                          |
 | **HIL Testing**                       | Hardware-in-the-Loop Testing                                                                                                                                                                |
 | **IETM**                              | Interactive Electronic Technical Manual                                                                                                                                                       |
-````
+
 ### 71.100.02 Technical Diagrams
 
 * **Diagram 71-QP-00-01:** Q-01 Quantum Propulsion System - Overall System Architecture (Refer to Figure en la Sección 71.20.05).
@@ -7661,7 +7661,7 @@ graph LR
     click QSM "showTooltip('Quantum State Modulator: Precisely modulates entangled states<br>Technology: [Proprietary]<br>Accuracy: >99%<br>Response Time: <1 ns')"
     click CU "showTooltip('Control Unit: Manages QEE operations, interfaces with FADEC<br>Software: [Proprietary]<br>Redundancy: Triple-redundant')"
     click AEHCS "showTooltip('Atmospheric Energy Harvesting System: Supplements QEE power<br>Technology: [Proprietary]<br>Efficiency: [Proprietary]')"
-
+````
 
 Diagram 71-QP-01-02: QEE - Entanglement Generation Process Flowchart.
 Diagram 71-QP-02-01: Quantum State Modulator (QSM) - Functional Block Diagram.
@@ -7671,7 +7671,7 @@ Diagram 71-QP-03-02: AEHCS-Q-01 Interface - Schematic.
 Diagram 71-QP-04-01: Thrust Vectoring System - Mechanical Design.
 Diagram 71-QP-04-02: Thrust Vectoring System - Control System Integration.
 **Nota:** Estos diagramas son altamente confidenciales y están disponibles por separado bajo acceso controlado.
-````
+
 ### 71.100.03 Reference Standards and Documents
 
 - **FAR Part 25:** Airworthiness Standards: Transport Category Airplanes.
