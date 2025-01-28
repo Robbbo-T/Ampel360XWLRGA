@@ -1,0 +1,93 @@
+site_name: 'GAIA AIR Documentation'
+theme:
+  name: 'material'
+nav:
+  - Home: index.md
+  - Introducción:
+      - Bienvenida: introduccion/bienvenida.md
+      - Objetivos: introduccion/objetivos.md
+  - Estructura General:
+      - Arquitectura Modular: estructura/arquitectura_modular.md
+      - Componentes Clave: estructura/componentes_clave.md
+  - Especificaciones Técnicas:
+      - Nivelación y Pesaje: especificaciones/nivelacion_pesaje.md
+      - Remolque y Rodaje: especificaciones/remolque_rodaje.md
+      - ATA 10 - Estacionamiento: especificaciones/ata10_estacionamiento.md
+      - ATA 11 - Placards: especificaciones/ata11_placards.md
+      - ATA 12 - Servicing: especificaciones/ata12_servicing.md
+      - ATA 20 - Prácticas Estándar: especificaciones/ata20_practicas_estandar.md
+      - ATA 21 - Aire Acondicionado: especificaciones/ata21_aire_acondicionado.md
+      - ATA 22 - Autoflight: especificaciones/ata22_autoflight.md
+      - ATA 23 - Comunicaciones: especificaciones/ata23_comunicaciones.md
+      - ATA 24 - Alimentación Eléctrica: especificaciones/ata24_alimentacion_electrica.md
+      - ATA 25 - Equipamiento: especificaciones/ata25_equipamiento.md
+      - ATA 26 - Fire Protection: especificaciones/ata26_fire_protection.md
+      - ATA 27 - Controles de Vuelo: especificaciones/ata27_controles_vuelo.md
+      - ATA 28 - AEHCS: especificaciones/ata28_aehcs.md
+      - ATA 29 - Hidráulico: especificaciones/ata29_hidraulico.md
+      - ATA 30 - Ice/Rain: especificaciones/ata30_ice_rain.md
+      - ATA 31 - Instrumentos: especificaciones/ata31_instrumentos.md
+      - ATA 32 - Landing Gear: especificaciones/ata32_landing_gear.md
+      - ATA 33 - Lights: especificaciones/ata33_lights.md
+      - ATA 34 - Navegación: especificaciones/ata34_navegacion.md
+      - ATA 35 - Oxígeno: especificaciones/ata35_oxigeno.md
+      - ATA 36 - Pneumatic: especificaciones/ata36_pneumatic.md
+      - ATA 38 - Agua/Desechos: especificaciones/ata38_agua_desechos.md
+      - ATA 45 - Central Maintenance: especificaciones/ata45_central_maintenance.md
+      - ATA 46 - Information Systems: especificaciones/ata46_information_systems.md
+      - ATA 47 - Inert Gas: especificaciones/ata47_inert_gas.md
+      - ATA 49 - Aux Power: especificaciones/ata49_aux_power.md
+      - ATA 51 - Structures: especificaciones/ata51_structures.md
+      - ATA 52 - Doors: especificaciones/ata52_doors.md
+      - ATA 53 - Fuselaje: especificaciones/ata53_fuselaje.md
+      - ATA 54 - Nacelles: especificaciones/ata54_nacelles.md
+      - ATA 55 - Empennage: especificaciones/ata55_empennage.md
+      - ATA 56 - Windows: especificaciones/ata56_windows.md
+      - ATA 57 - Alas: especificaciones/ata57_alas.md
+      - ATA 71 - Powerplant Q01: especificaciones/ata71_powerplant_q01.md
+      - ATA 72 - Q01 Engine: especificaciones/ata72_q01_engine.md
+      - ATA 73 - Fuel Control: especificaciones/ata73_fuel_control.md
+      - ATA 74 - Ignition: especificaciones/ata74_ignition.md
+      - ATA 75 - Engine Air: especificaciones/ata75_engine_air.md
+      - ATA 76 - Engine Controls: especificaciones/ata76_engine_controls.md
+      - ATA 77 - Engine Indicating: especificaciones/ata77_engine_indicating.md
+      - ATA 78 - Exhaust: especificaciones/ata78_exhaust.md
+      - ATA 79 - Oil: especificaciones/ata79_oil.md
+      - ATA 80 - Starting: especificaciones/ata80_starting.md
+      - ATA 91 - Charts: especificaciones/ata91_charts.md
+      - ATA 92 - Sistemas Mantenimiento: especificaciones/ata92_sistemas_mantenimiento.md
+      - ATA 93 - Powerplant Maintenance: especificaciones/ata93_powerplant_maintenance.md
+      - ATA 94 - Diagnóstico y Monitoreo Predictivo: especificaciones/ata94_diagnostico_monitor.md
+      - ATA 95 - Sistemas de Simulación y Pruebas: especificaciones/ata95_simulacion_pruebas.md
+      - ATA 96 - Evaluación de Impacto Ambiental: especificaciones/ata96_evaluacion_ambiental.md
+      - ATA 97 - Seguridad y Protocolos de Recuperación: especificaciones/ata97_seguridad_recuperacion.md
+      - ATA 98 - Sistemas Avanzados de Climatización: especificaciones/ata98_climatizacion_cabina.md
+      - ATA 99 - Gestión de Datos en la Nube: especificaciones/ata99_datos_nube.md
+      - ATA 100 - General: especificaciones/ata100_coafi_user_manual.md
+      - ATA 101 - Tecnologías Avanzadas de Propulsión: especificaciones/ata101_adv_propulsion_qintegration.md
+      - ATA 102 - Almacenamiento y Gestión de Energía: especificaciones/ata102_energy_storage.md
+      - ATA 103 - Integración de Energía Renovable: especificaciones/ata103_renewable_energy.md
+      - ATA 104 - Sistemas de Gestión Térmica: especificaciones/ata104_thermal_management.md
+      - ATA 105 - Optimización y Eficiencia del Sistema: especificaciones/ata105_system_optimization.md
+      - Quantum State Modulator (QSM): especificaciones/qsm.md
+      - FIONDA: Fields Intersections Orchestrating by Nuclear Architecture:
+          - [71.QP-01-01 Particle Source (PS)](especificaciones/71_QP-01-01_Particle_Source_PS.md)
+          - [Energy Input to Distortion Ratio (EIDR)](especificaciones/eidr.md)
+          - [Coherence Time](especificaciones/coherence_time.md)
+          - [fionda.md](especificaciones/fionda.md)
+  - AQRM:
+      - Resumen Conceptual: aqrm/resumen_conceptual.md
+      - Detalles Técnicos: aqrm/detalles_tecnicos.md
+      - Integración con Sistemas Cuánticos: aqrm/integracion_sistemas.md
+  - Casos de Uso:
+      - Escenario 1: casos_de_uso/escenario1.md
+      - Escenario 2: casos_de_uso/escenario2.md
+  - FAQs: faqs/faqs.md
+  - Blog:
+      - Lanzamiento del Q-01: blog/lanzamiento_q01.md
+      - Integración del AQRM: blog/integracion_aqrm.md
+  - Referencias y Recursos:
+      - Glosario: referencias/glossary.md
+      - Fuentes y Referencias: referencias/fuentes_citadas.md
+  - Contacto:
+      - Información de Contacto: contacto/contacto.md
