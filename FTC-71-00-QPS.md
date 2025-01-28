@@ -1,5 +1,6 @@
 # Quantum Propulsion System
 <iframe src="https://capgemini-my.sharepoint.com/personal/amedeo_pelliccia_capgemini_com/_layouts/15/Doc.aspx?sourcedoc={22455851-bae2-4655-a2d6-716dfed7b64b}&amp;action=embedview&amp;wdStartOn=1" width="476px" height="288px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+
 ```mermaid
 graph LR
 
