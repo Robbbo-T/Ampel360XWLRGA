@@ -1442,12 +1442,12 @@ For a quick visualization of the **QPS architecture** and its integration with *
 
 ```mermaid
 graph TD
-    QSM[Quantum State Modulator QSM]
-    QEE[Quantum Entanglement Engine QEE)
-    ForceVector[Force Vector Propulsion]
+    QSM[Quantum State Modulator as QSM]
+    QEE[Quantum Entanglement Engine as QEE]
+    ForceVector[Force Vector as Propulsion]
     eGAIA[eGAIA Contextual Intelligence]
-    GAGI[GAGI Global Artificial General Intelligence]
-    AI-Modules[AI-Driven Modules]
+    GAGI[GAGI as Global Artificial General Intelligence]
+    AI-Modules[ML driven Modules]
     IoT-Sensors[Robbbo-Tx IoT Sensors]
     NewMaterials[Self-Healing Composite Materials]
     DigitalTwins[Digital Twin Integration]
