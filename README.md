@@ -665,11 +665,11 @@ CHATQUANTUM INTEROPERATING SYSTEM: A robust operating system that enables effect
 
 ```mermaid
 graph LR
-    QSM[Quantum State Modulator (QSM)]
-    QEE[Quantum Entanglement Engine (QEE)]
+    QSM[Quantum State Modulator QSM]
+    QEE[Quantum Entanglement Engine QEE]
     CCS[Cryogenic Cooling System]
-    FADEC[Full Authority Digital Engine Control (FADEC)]
-    AEHCS[Advanced Electrical Handling and Control System (AEHCS)]
+    FADEC[Full Authority Digital Engine Control FADEC]
+    AEHCS[Advanced Electrical Handling and Control System AEHCS]
     NeuronBit[NeuronBit Building Environment]
     ChatQuantum[CHATQUANTUM Interoperating System]
 
