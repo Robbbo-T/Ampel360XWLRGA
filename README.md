@@ -7206,8 +7206,7 @@ Diagram 71-QP-03-02: AEHCS-Q-01 Interface - Schematic.
 Diagram 71-QP-04-01: Thrust Vectoring System - Mechanical Design.
 Diagram 71-QP-04-02: Thrust Vectoring System - Control System Integration.
 **Nota:** Estos diagramas son altamente confidenciales y están disponibles por separado bajo acceso controlado.
-```
-
+````
 ### 71.100.03 Reference Standards and Documents
 
 - **FAR Part 25:** Airworthiness Standards: Transport Category Airplanes.
@@ -7553,7 +7552,6 @@ Al entender la ToC general y las prácticas estándar delineadas anteriormente, 
 
 Si necesitas ejemplos más específicos, secciones detalladas o asistencia con un manual en particular, ¡no dudes en pedirlo!
 
----
 
 ## 71.100 Appendices
 
@@ -7592,7 +7590,7 @@ Esta sección proporciona información suplementaria para apoyar el documento pr
 | **Qubit**                             | Quantum Bit - the basic unit of quantum information                                                                                                                                          |
 | **HIL Testing**                       | Hardware-in-the-Loop Testing                                                                                                                                                                |
 | **IETM**                              | Interactive Electronic Technical Manual                                                                                                                                                       |
-
+````
 ### 71.100.02 Technical Diagrams
 
 * **Diagram 71-QP-00-01:** Q-01 Quantum Propulsion System - Overall System Architecture (Refer to Figure en la Sección 71.20.05).
@@ -7604,7 +7602,7 @@ Esta sección proporciona información suplementaria para apoyar el documento pr
 * **Diagram 71-QP-03-02:** AEHCS-Q-01 Interface - Schematic.
 * **Diagram 71-QP-04-01:** Thrust Vectoring System - Mechanical Design.
 * **Diagram 71-QP-04-02:** Thrust Vectoring System - Control System Integration.
-
+  
 **Nota:** Estos diagramas son altamente confidenciales y están disponibles por separado bajo acceso controlado.
 
 ```mermaid
@@ -7672,9 +7670,8 @@ Diagram 71-QP-03-01: Energy Source and Management System - Power Flow Diagram.
 Diagram 71-QP-03-02: AEHCS-Q-01 Interface - Schematic.
 Diagram 71-QP-04-01: Thrust Vectoring System - Mechanical Design.
 Diagram 71-QP-04-02: Thrust Vectoring System - Control System Integration.
-
 **Nota:** Estos diagramas son altamente confidenciales y están disponibles por separado bajo acceso controlado.
-```
+````
 ### 71.100.03 Reference Standards and Documents
 
 - **FAR Part 25:** Airworthiness Standards: Transport Category Airplanes.
