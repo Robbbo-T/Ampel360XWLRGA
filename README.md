@@ -1193,8 +1193,8 @@ For a quick visualization of the **QPS architecture** and its integration with *
 
 ```mermaid
 graph TD
-    QSM[Quantum State Modulator (QSM)]
-    QEE[Quantum Entanglement Engine (QEE)]
+    QSM[Quantum State Modulator QSM]
+    QEE[Quantum Entanglement Engine QEE)
     ForceVector[Force Vector (Propulsion)]
     eGAIA[eGAIA (Contextual Intelligence)]
     GAGI[GAGI (Global Artificial General Intelligence)]
