@@ -555,7 +555,7 @@ graph TD
     
     %% Nivel 3: Sub-sistemas Fly-by-Wire
     A --> K[27-40-12-1 Sensor de Entrada Fly-by-Wire]
-    A --> L[27-40-12-2 Flight Control Computer (FCC)]
+    A --> L[27-40-12-2 Flight Control Computer FCC]
     A --> M[27-40-12-3 Actuador Electrónico Izquierdo]
     A --> N[27-40-12-4 Actuador Electrónico Derecho]
     A --> O[27-40-12-5 Sensor de Posición Izquierdo]
