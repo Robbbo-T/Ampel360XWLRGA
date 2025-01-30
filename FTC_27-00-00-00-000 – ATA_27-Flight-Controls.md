@@ -191,7 +191,7 @@ Cada parte dentro de **ATA 27 - Flight Controls** se identifica siguiendo la nom
     ```mermaid
     graph TD
         A[Flight Control Computer] --> B[ECU]
-        B --> C[Electric Motor (PMSM/BLDC)]
+        B --> C[Electric Motor PMSM BLDC]
         C --> D[Gearbox]
         D --> E[Ball Screw]
         E --> F[Actuator]
