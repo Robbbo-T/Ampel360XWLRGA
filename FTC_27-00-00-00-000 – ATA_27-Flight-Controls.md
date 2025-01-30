@@ -541,7 +541,7 @@ A continuación, se presenta un **diagrama técnico explotado** utilizando **Mer
 ```mermaid
 graph TD
     %% Nivel 1: Sistema Completo
-    A[Sistema de Alerones de Control de Vuelo Primario (AIL-27.40.1)] --> B[27-40-1-1 Palanca de Control Mecánico]
+    A[Sistema de Alerones de Control de Vuelo Primario AIL 27-40-1] --> B[27-40-1-1 Palanca de Control Mecánico]
     A --> C[27-40-1-2 Cables de Control Mecánico Izquierdo]
     A --> D[27-40-1-3 Cables de Control Mecánico Derecho]
     A --> E[27-40-1-4 Polea Izquierda]
@@ -576,7 +576,7 @@ graph TD
     A --> Z[27-40-22 Alerones Frise]
     A --> AA[27-40-23 Spoilers Integrados]
     A --> AB[27-40-24 Flaperones]
-    A --> AC[27-40-25 Flutter y Protección en Pérdidas (Stalls & Spins)]
+    A --> AC[27-40-25 Flutter y Protección en Pérdidas Stalls & Spins]
     
     %% Detalle Alerones Diferenciales
     Y --> Y1[27-40-21-1 Actuador Izquierdo Alerón Arriba]
