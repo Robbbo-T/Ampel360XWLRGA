@@ -539,7 +539,7 @@ A continuación, se presenta una vista explotada detallada del **Sistema de Aler
 A continuación, se presenta un **diagrama técnico explotado** utilizando **Mermaid** para ilustrar la relación entre las partes numeradas del **Sistema de Alerones de Control de Vuelo Primario (AIL-27.40.1)**.
 
 ```mermaid
-graph TD
+flowchart LR
     %% Nivel 1: Sistema Completo
     A[Sistema de Alerones de Control de Vuelo Primario AIL 27-40-1] --> B[27-40-1-1 Palanca de Control Mecánico]
     A --> C[27-40-1-2 Cables de Control Mecánico Izquierdo]
