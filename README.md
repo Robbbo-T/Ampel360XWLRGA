@@ -1,5 +1,7 @@
 **Ei**
+
 <span style="color: #800080;">Robotics</span> Neural Teams showcase how these components integrate and collaborate for smarter robotics.
+
 ```mermaid
 flowchart TD
     %% Main System
