@@ -1,4 +1,76 @@
-![Minimalist Digital Logo With Gradient Diamonds On Navy Background (1)](https://github.com/user-attachments/assets/dfa9158d-0307-48af-9db7-d82cf35d8bca)
+**Ei**
+<span style="color: #800080;">Robotics</span> Neural Teams showcase how these components integrate and collaborate for smarter robotics.
+```mermaid
+flowchart TD
+    %% Main System
+    A[Evolutive Intelligence and Control Systems] -- Neural Learning --> B(Robotics Neural Teams)
+    
+    %% Sub-components of Evolutive Intelligence
+    subgraph AI_System [Evolutive Intelligence]
+        C1[Self-learning Algorithms]
+        C2[Neural Network Optimization]
+        C3[Decision Making Process]
+    end
+    
+    %% Sub-components of Mechanics
+    subgraph Mechanics
+        D1[Robotic Joints and Actuators]
+        D2[Sensors Integration]
+    end
+    
+    %% Sub-components of Adaptive Materials
+    subgraph Adaptive_Materials [Adaptive Materials]
+        E1[Shape Memory Alloys]
+        E2[Reactive Polymers]
+    end
+    
+    %% Sub-components of Machines
+    subgraph Machines
+        F1[Machine Configuration]
+        F2[Dynamic Response Control]
+    end
+    
+    %% Connections
+    C1 --> A
+    C2 --> A
+    C3 --> A
+    
+    A --> D1
+    A --> D2
+    
+    D1 --> B
+    D2 --> B
+    
+    B --> F1
+    B --> F2
+    
+    E1 --> D1
+    E2 --> D2
+    D1 -. influences .-> E1
+    D2 -. influences .-> E2
+    
+    %% Styles
+    classDef AI_System fill:#ffe6e6,stroke:#ff0000,stroke-width:2px
+    classDef Mechanics fill:#e6f2ff,stroke:#0056b3,stroke-width:2px
+    classDef Adaptive_Materials fill:#e6ffe6,stroke:#009933,stroke-width:2px
+    classDef Machines fill:#ffffe6,stroke:#b38f00,stroke-width:2px
+    class AI_System,Mechanics,Adaptive_Materials,Machines fill:lightgray,stroke-width:0px;
+```
+**Descriptions**:
+
+#### Evolutive Intelligence focuses on the computational intelligence involved in the system.
+#### Mechanics addresses the physical and sensor integration aspects for robotics.
+#### Adaptive Materials includes materials that react dynamically to environmental factors.
+#### Machines delves into physical configuration and dynamic control.
+#### Robotics Neural Teams showcase how these components integrate and collaborate for smarter robotics.
+
+** Representing AI processes and learning mechanisms.
+Mechanics - Covering physical aspects of robotic systems.
+Adaptive Materials - Highlighting materials that change properties in response to conditions.
+Machines - Encompassing the physical, mechanistic parts of the robots.
+Robotics Neural Teams - Focusing on collaborative processes among robotic systems.
+Here is a draft of how this conceptual diagram may look in Mermaid syntax **
+
 
 # AMPEL360: the project
 ## **GAIA-AIR AMPEL360 and e.G.A.I.As: Merging Sustainable Aviation with Embodied, Evolving, Extended Intelligence**
