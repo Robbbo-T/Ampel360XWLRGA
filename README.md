@@ -1,6 +1,7 @@
 # **AMPEL360XWLRGA: A Revolutionary Aircraft Design for the GAIA AIR Ecosystem**
 
 **Prefacio** 
+
 El **AMPEL360XWLRGA** es un proyecto revolucionario dentro del ecosistema **GAIA AIR**, diseñado para redefinir la aviación mediante tecnologías avanzadas, sostenibilidad y propulsión cuántica. Su enfoque integra principios de **diseño aerodinámico optimizado, eficiencia energética y nuevas metodologías de vuelo**, buscando una transformación radical en el transporte aéreo.
 
 Este documento describe su propósito, alcance y arquitectura, proporcionando un marco detallado sobre su desarrollo, retos tecnológicos y aplicaciones en el futuro de la aviación. Se centra en la innovación en **sistemas de propulsión**, en especial con la implementación del **Quantum Propulsion System (QPS)**, una tecnología que permitirá alcanzar nuevas fronteras en la aviación y la exploración espacial sin depender de combustibles fósiles.
