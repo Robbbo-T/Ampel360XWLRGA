@@ -390,16 +390,165 @@ Explanation of Sections
 DM Status Information
 
 dmAddress: Defines the Data Module Code (COAFI-ATA22-FCC-ALG-001), version, date, and origin.
-dmTitle: Title or short name: “Algoritmo de Control de Vuelo en Tiempo Real (QPSO-v1.2)”.
-dmStatus: Classification, originator, product name, language, references, revision flags, etc.
-Content
 
-Introduction / Description: Explains the overall purpose of QPSO-v1.2 for flight control.
-Functional Requirements & Performance: Detailed bullet points on real-time constraints, CPU usage, convergence speed, etc.
-Verification & Validation: Outlines the test approach, from hardware-in-the-loop up to flight tests and regulatory compliance.
-Safety & Compliance: Summaries of fallback strategy, mention of DO-178C/DO-254, etc.
-References: Points to any SRS, PDR, or cosmic index nodes.
-Next Steps: Roadmap for finalizing integration and certification.
+Below is a **concise S1000D-style Data Module** snippet for **“Algoritmo de Control de Vuelo en Tiempo Real (QPSO‑v1.2)”**, focusing specifically on the **dmStatus** information and the **Content** sections you outlined. You can expand each section as needed or integrate it into a larger S1000D document.
+
+---
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<dmData>
+
+  <!-- ========== DM Status Information ========== -->
+  <identAndStatusSection>
+    <dmAddress>
+      <dmIdent>
+        <!-- Data Module Code -->
+        <language>ES-ES</language>
+        <geographicalLocation>GLOBAL</geographicalLocation>
+        <modelIdentification>AMPEL360XWLRGA</modelIdentification>
+        <systemDiffCode>ATA22</systemDiffCode>
+        <subSubSystemDiffCode>FCC</subSubSystemDiffCode>
+        <disassemblyCodeALG>ALG</disassemblyCodeALG>
+        <disassemblyCodeVariant001>001</disassemblyCodeVariant001>
+        <infoCodeCOAFI>COAFI</infoCodeCOAFI>
+        <itemLocationCode>QPSO-v1.2</itemLocationCode>
+      </dmIdent>
+      <dmAddressItems>
+        <issueNumber>001</issueNumber>
+        <issueDate>2025-08-10</issueDate>
+        <issueType>New Issue</issueType>
+      </dmAddressItems>
+    </dmAddress>
+    
+    <dmTitle>
+      <techName>Algoritmo de Control de Vuelo en Tiempo Real (QPSO-v1.2)</techName>
+      <infoName>COAFI-ATA22-FCC-ALG-001</infoName>
+    </dmTitle>
+    
+    <dmStatus>
+      <securityClassification>Unclassified</securityClassification>
+      <originator>GAIA AIR - COAFI Project</originator>
+      <product>AMPEL360XWLRGA</product>
+      <languageISOcode>ES</languageISOcode>
+      <changeIndicator>Original Issue</changeIndicator>
+      <applicCrossRef>
+        <!-- References to relevant docs or cosmic index nodes -->
+        <applicRef>Ref. Node: COAFI-ATA22-FCC-ALG-001</applicRef>
+        <applicRef>Ref. SRS-GAIAPULSE-AMPEL-0201-22-FCC-ALG-001</applicRef>
+        <applicRef>Ref. PDR–GAIAPULSE–AutoFlight–QPSO</applicRef>
+      </applicCrossRef>
+    </dmStatus>
+  </identAndStatusSection>
+
+  <!-- ========== Content ========== -->
+  <content>
+
+    <!-- 1. Introduction / Description -->
+    <contentSection>
+      <title>1. Introduction / Description</title>
+      <para>
+        Este Data Module describe el algoritmo QPSO-v1.2, parte del sistema de control de vuelo 
+        en tiempo real (Auto Flight, ATA 22) para la aeronave AMPEL360XWLRGA. 
+        QPSO (Quantum Particle Swarm Optimization) proporciona ajustes adaptativos de 
+        superficies de control (roll, pitch, yaw) con alta eficiencia y respuesta rápida 
+        ante cambios de actitud o turbulencia.
+      </para>
+    </contentSection>
+
+    <!-- 2. Functional Requirements & Performance -->
+    <contentSection>
+      <title>2. Functional Requirements &amp; Performance</title>
+      <para>
+        <b>FR-FCC-001:</b> El algoritmo debe procesar datos de sensores de vuelo (IMU, Air Data) 
+        a una frecuencia mínima de 100 Hz.
+      </para>
+      <para>
+        <b>FR-FCC-002:</b> Debe converger en ≤ 10 iteraciones de la partícula cuántica 
+        para cambios de actitud de ±10° bajo turbulencia moderada.
+      </para>
+      <para>
+        <b>PR-FCC-100:</b> Uso de CPU ≤ 30% en el módulo de control (CPIOM).
+      </para>
+      <para>
+        <b>PR-FCC-110:</b> Latencia de cálculo ≤ 5 ms por ciclo de realimentación.
+      </para>
+    </contentSection>
+
+    <!-- 3. Verification & Validation -->
+    <contentSection>
+      <title>3. Verification &amp; Validation</title>
+      <para>
+        <b>Pruebas en Tierra (HIL):</b> Verificar convergencia QPSO en simulador hardware-in-the-loop 
+        con modelos de aviónica. Comparar con fallback PID.
+      </para>
+      <para>
+        <b>Pruebas de Simulación:</b> Usar gemelo digital en XPlane/Simulink para escenarios 
+        de ráfagas de viento y fallas de sensores, evaluando estabilidad del control.
+      </para>
+      <para>
+        <b>Pruebas de Vuelo:</b> Análisis de datos reales (pitch, roll, yaw) a alta frecuencia; 
+        comprobar cumplimiento DO-178C para software crítico de vuelo.
+      </para>
+    </contentSection>
+
+    <!-- 4. Safety & Compliance -->
+    <contentSection>
+      <title>4. Safety &amp; Compliance</title>
+      <para>
+        - Fallback Strategy: Conmutar automáticamente a modo PID si QPSO excede 
+          el tiempo de respuesta.
+      </para>
+      <para>
+        - DO-178C &amp; DO-254: Validación de integridad del software y hardware. 
+          FAA/EASA (FAR Part 25, CS-25) para sistemas de control de vuelo.
+      </para>
+    </contentSection>
+
+    <!-- 5. References -->
+    <contentSection>
+      <title>5. References</title>
+      <para>
+        [1] Cosmic Index Node: COAFI-ATA22-FCC-ALG-001<br/>
+        [2] SRS–GAIAPULSE-AMPEL-0201-22-FCC-ALG-001<br/>
+        [3] PDR–GAIAPULSE–AutoFlight–QPSO<br/>
+        [4] DO-178C, DO-254 Standards
+      </para>
+    </contentSection>
+
+    <!-- 6. Next Steps -->
+    <contentSection>
+      <title>6. Next Steps</title>
+      <para>
+        1. Completar pruebas de simulación (flight dynamics RL).  
+        2. Ejecutar campaña de vuelos de prueba en AMPEL360XWLRGA para 
+           certificar la respuesta del algoritmo QPSO.  
+        3. Integrar dashboards de cumplimiento en pipeline CI/CD.  
+        4. Revisar cumplimiento DO-178C final y obtener aprobación regulatoria.
+      </para>
+    </contentSection>
+
+  </content>
+</dmData>
+```
+
+---
+
+### **Explanation**
+
+1. **dmStatus**:  
+   - Shows classification, originator, product, language, references, revision status, etc.  
+   - Ties the doc to the *Cosmic Index* (COAFI-ATA22-FCC-ALG-001), SRS doc, and PDR reference.
+
+2. **Content**:  
+   - **Introduction / Description**: Purpose and context of QPSO-v1.2 in flight control.  
+   - **Functional Requirements & Performance**: Real-time constraints, CPU usage, iteration speed.  
+   - **Verification & Validation**: Summarizes ground, simulation, flight tests, mention of DO-178C.  
+   - **Safety & Compliance**: Fallback strategy (PID) if QPSO fails.  
+   - **References**: Points to cosmic index, DO-178C, etc.  
+   - **Next Steps**: Roadmap for final integration, test, certification.
+
+You can **adjust or expand** each section to match your exact technical details, additional performance specs, or advanced test approaches. This snippet is minimal but demonstrates how to structure the **Data Module** for your “Algoritmo de Control de Vuelo en Tiempo Real (QPSO-v1.2)”.
 
 ### **2. Digital Twin & Simulation Testing**
 
