@@ -1228,3 +1228,71 @@ All revisions done by **Amedeo Pelliccia** and **ChatGPT 01-mini** are completed
 ---
 
 If you need any further customization, specific examples, additional visual aids, or other enhancements, feel free to ask! I'm here to ensure that your project documentation is precise, comprehensive, and highly effective.
+
+## Regenerative Prompts and Tracking
+
+**Purpose and Benefits**  
+- Regenerative prompts facilitate continuous iteration on both technical and documentation content.  
+- They encourage dynamic feedback loops and can reduce silos between engineering, operational, and research teams.
+
+**Tracking Mechanisms**  
+1. **Commit and Issue Tracking**  
+   - Dedicate labels for regenerative prompt tasks to easily filter and manage them.  
+   - Document changes in commit messages referencing this approach.
+
+2. **Submissions and Publications**  
+   - Track any formal or informal outputs (white papers, conference abstracts) that stem from prompt-based discussions.  
+   - Encourage a referencing system pointing from publications back to the relevant issues or PRs for transparency.
+
+3. **Industry and Institutional Communication**  
+   - Summarize prompt-driven innovations in internal or partner newsletters.  
+   - Provide real-world examples of improved maintenance or design outcomes thanks to prompt usage.
+
+4. **Implementation Monitoring**  
+   - Use analytics (e.g., GitHub Insights, custom scripts) to measure frequency and impact of regenerative prompts.  
+   - Gather user feedback to refine or expand prompt usage guidelines.
+
+## Integrative Design Prompts
+
+**Purpose and Benefits**  
+- Integrative design prompts encourage collaboration and iterative content generation by fostering continuous improvement of documentation, code, and operational procedures.
+
+**Tracking Mechanisms**  
+1. **Commit and Issue Tracking**  
+   - Use GitHub's issue tracking and commit messages to document changes related to integrative design prompts.  
+   - Label issues with tags like `design-prompt` to monitor progress.
+
+2. **Submissions and Publications**  
+   - Record any papers, articles, or presentations that emerge from integrative design prompt workflows in a dedicated directory like `docs/papers/`.  
+   - Reference the pull requests or issues that triggered the publication.
+
+3. **Industry and Institutional Communication**  
+   - Maintain a log of how the newly integrated prompts benefit operational or academic partners.  
+   - Share summaries of key adoption steps with relevant committees or standards bodies.
+
+4. **Implementation Monitoring**  
+   - Create dedicated status boards or Kanban columns to track how integrative design prompts are adopted in daily tasks.  
+   - Use analytics tools like GitHub Insights or custom scripts to measure frequency and impact.  
+   - Gather user feedback to refine or expand prompt usage guidelines.
+
+## Block Progression Prompts
+
+**Purpose and Benefits**  
+- Block progression prompts facilitate continuous iteration on both technical and documentation content by encouraging dynamic feedback loops and reducing silos between engineering, operational, and research teams.
+
+**Tracking Mechanisms**  
+1. **Commit and Issue Tracking**  
+   - Dedicate labels for block progression prompt tasks to easily filter and manage them.  
+   - Document changes in commit messages referencing this approach.
+
+2. **Submissions and Publications**  
+   - Track any formal or informal outputs (white papers, conference abstracts) that stem from block progression prompt-based discussions.  
+   - Encourage a referencing system pointing from publications back to the relevant issues or PRs for transparency.
+
+3. **Industry and Institutional Communication**  
+   - Summarize prompt-driven innovations in internal or partner newsletters.  
+   - Provide real-world examples of improved maintenance or design outcomes thanks to block progression prompt usage.
+
+4. **Implementation Monitoring**  
+   - Use analytics (e.g., GitHub Insights, custom scripts) to measure frequency and impact of block progression prompts.  
+   - Gather user feedback to refine or expand prompt usage guidelines.
