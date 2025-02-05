@@ -1228,3 +1228,26 @@ All revisions done by **Amedeo Pelliccia** and **ChatGPT 01-mini** are completed
 ---
 
 If you need any further customization, specific examples, additional visual aids, or other enhancements, feel free to ask! I'm here to ensure that your project documentation is precise, comprehensive, and highly effective.
+
+## Regenerative Prompts and Tracking
+
+**Purpose and Benefits**  
+- Regenerative prompts facilitate continuous iteration on both technical and documentation content.  
+- They encourage dynamic feedback loops and can reduce silos between engineering, operational, and research teams.
+
+**Tracking Mechanisms**  
+1. **Commit and Issue Tracking**  
+   - Dedicate labels for regenerative prompt tasks to easily filter and manage them.  
+   - Document changes in commit messages referencing this approach.
+
+2. **Submissions and Publications**  
+   - Track any formal or informal outputs (white papers, conference abstracts) that stem from prompt-based discussions.  
+   - Encourage a referencing system pointing from publications back to the relevant issues or PRs for transparency.
+
+3. **Industry and Institutional Communication**  
+   - Summarize prompt-driven innovations in internal or partner newsletters.  
+   - Provide real-world examples of improved maintenance or design outcomes thanks to prompt usage.
+
+4. **Implementation Monitoring**  
+   - Use analytics (e.g., GitHub Insights, custom scripts) to measure frequency and impact of regenerative prompts.  
+   - Gather user feedback to refine or expand prompt usage guidelines.
