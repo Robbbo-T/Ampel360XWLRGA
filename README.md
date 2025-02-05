@@ -386,7 +386,7 @@ The integration of regenerative prompts and tracking mechanisms into the GAIA AI
    - Use platforms like GitHub to track changes, issues, and milestones.
 
 2. **Submissions and Publications:**
-   - Track submissions to scientific forums such as ArXiv, IEEE, NeurIPS, and OpenAI.
+   - Track submissions to scientific forums such as arXiv, IEEE, NeurIPS, and OpenAI.
    - Monitor the status of discussions on Quantum AI, AGI Governance, and Aerospace Digital Twin applications.
 
 3. **Industry and Institutional Communication:**
