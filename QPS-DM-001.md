@@ -1,4 +1,3 @@
-
 ---
 **QPS-DM-001: Quantum State Modulator (QSM) - Specifications, Design, and Testing**
 
@@ -620,7 +619,175 @@ The Block Diagram visually represents the flow of optical and electrical signals
 *   **Labels:** `Clear and Concise`
 *   **Arrows:** `Directional Flow`
 *   **I/O Markings:**  QSM Inputs (Left), Outputs (Right) clearly marked.
-```
+  ---
+
+# **Mathematical Formalization of the Quantum State Modulator (QSM)**
+
+## **1. Theoretical Model for Quantum State Evolution in the QSM**
+
+### **1.1 Schrödinger Equation for Photon State Evolution**
+The **Quantum State Modulator (QSM)** operates by **generating and controlling entangled photon states**. The **evolution of these quantum states** is governed by the **time-dependent Schrödinger equation**:
+
+\[
+i \hbar \frac{\partial}{\partial t} |\psi(t)\rangle = \hat{H} |\psi(t)\rangle
+\]
+
+where:
+- \( |\psi(t)\rangle \) is the **quantum state** of the photon pair at time \( t \),
+- \( \hat{H} \) is the **Hamiltonian operator** describing the energy interactions in the system,
+- \( \hbar \) is **Planck’s reduced constant**.
+
+For the **QSM photon pair generation system**, the Hamiltonian includes:
+\[
+\hat{H} = \hbar \omega_0 \hat{a}^\dagger \hat{a} + \lambda \hat{a}^\dagger \hat{b}^\dagger + \lambda^* \hat{a} \hat{b}
+\]
+
+where:
+- \( \omega_0 \) is the **optical angular frequency** of the photons,
+- \( \hat{a}^\dagger \) and \( \hat{b}^\dagger \) are the **creation operators** for the signal and idler photons,
+- \( \lambda \) is the **nonlinear interaction coefficient** related to **Spontaneous Parametric Down-Conversion (SPDC)** in the nonlinear BBO crystal.
+
+This Hamiltonian **governs the entanglement generation process**, ensuring coherent photon pair creation.
 
 ---
+
+### **1.2 Entangled Photon State Representation**
+A **maximally entangled photon state**, also known as a **Bell state**, is generated in the QSM via **SPDC**:
+
+\[
+|\Phi^+\rangle = \frac{1}{\sqrt{2}} (|H\rangle_s |V\rangle_i + |V\rangle_s |H\rangle_i)
+\]
+
+where:
+- \( |H\rangle_s, |V\rangle_s \) are the **horizontal and vertical polarization states** of the **signal photon**,
+- \( |H\rangle_i, |V\rangle_i \) are the **horizontal and vertical polarization states** of the **idler photon**.
+
+The QSM applies **unitary transformations** to these states using **Electro-Optic Modulators (EOMs)**:
+
+\[
+U_{\text{EOM}} (\theta) = \begin{bmatrix} \cos \theta & i \sin \theta \\ i \sin \theta & \cos \theta \end{bmatrix}
+\]
+
+which allows for **precise polarization control**, crucial for optimizing **thrust characteristics** in the **Quantum Entanglement Engine (QEE)**.
+
+---
+
+## **2. Lagrangian Formulation for Quantum State Evolution**
+
+To analyze the **stability and control properties** of the QSM, we introduce a **Lagrangian formalism** describing the **dynamics of entangled photon states**.
+
+### **2.1 Lagrangian for Quantum State Evolution**
+We define a **Lagrangian functional** for the entangled state:
+
+\[
+\mathcal{L} = \frac{i}{2} \left( \langle \psi | \frac{d}{dt} |\psi\rangle - \frac{d}{dt} \langle \psi | \psi \rangle \right) - \langle \psi | \hat{H} | \psi \rangle
+\]
+
+Using the **Euler-Lagrange equation**:
+
+\[
+\frac{d}{dt} \left( \frac{\partial \mathcal{L}}{\partial (\frac{d}{dt} \psi)} \right) - \frac{\partial \mathcal{L}}{\partial \psi} = 0
+\]
+
+we recover the **Schrödinger equation**, but now within an **action-minimization framework**.
+
+This formulation allows us to explore **control optimization techniques** for stabilizing the **quantum coherence** of entangled photon pairs.
+
+---
+
+## **3. Quantum Entanglement Fidelity and Decoherence Effects**
+
+### **3.1 Fidelity Measure for Quantum State Control**
+The fidelity of the entangled state is given by:
+
+\[
+F = |\langle \psi_{\text{ideal}} | \psi(t) \rangle|^2
+\]
+
+where \( \psi_{\text{ideal}} \) is the **perfectly entangled state**.
+
+Using **quantum information entropy**, the **decoherence rate** due to thermal noise is modeled as:
+
+\[
+S(t) = - \text{Tr}(\rho \ln \rho), \quad \rho = \text{Tr}_{\text{env}} (|\psi(t) \rangle \langle \psi(t)|)
+\]
+
+where \( \rho \) is the **reduced density matrix** of the entangled photons.
+
+### **3.2 Decoherence Model with Temperature Effects**
+The coherence function \( C(t) \) follows an **exponential decay**:
+
+\[
+C(t) = C_0 e^{-t/T_2}
+\]
+
+where \( T_2 \) is the **coherence time**, which depends on temperature \( T \):
+
+\[
+T_2 \approx \frac{\hbar}{k_B T} \frac{1}{\Gamma}
+\]
+
+where \( \Gamma \) represents the **thermal fluctuation rate**.
+
+This model is critical in defining the **cooling requirements** for the QSM.
+
+---
+
+## **4. Control Optimization for Quantum State Modulation**
+
+### **4.1 Control Function and Cost Optimization**
+The QSM uses a **feedback control system** to maximize entanglement fidelity. The **control function** \( U_{\text{QSM}} \) is designed to minimize the deviation from the desired quantum state:
+
+\[
+J = \sum_{i=1}^{N} w_i \left| \mathcal{P}_i - \mathcal{P}_{i,\text{ref}} \right|^2
+\]
+
+where:
+- \( \mathcal{P}_i \) is the **observed entanglement parameter**,
+- \( \mathcal{P}_{i,\text{ref}} \) is the **desired entanglement parameter**.
+
+The **optimal control law** follows **Pontryagin’s minimum principle**:
+
+\[
+\frac{d}{dt} \lambda = - \frac{\partial H}{\partial x}, \quad \frac{d}{dt} x = \frac{\partial H}{\partial \lambda}
+\]
+
+where:
+- \( x \) represents the **quantum state parameters**,
+- \( \lambda \) are the **Lagrange multipliers** for state constraints.
+
+This approach ensures **real-time modulation of entangled photons**, maintaining coherence over extended operational periods.
+
+---
+
+## **5. Thrust Model for QSM-QEE Interaction**
+
+### **5.1 Quantum Thrust Estimate**
+The interaction of the entangled photons with the **Quantum Entanglement Engine (QEE)** is modeled using **metric perturbations** in spacetime:
+
+\[
+\Delta g_{\mu\nu} = \alpha T_{\mu\nu}^{\text{QEE}}
+\]
+
+where:
+- \( T_{\mu\nu}^{\text{QEE}} \) is the **energy-momentum tensor** of the entangled photons,
+- \( \alpha \) is the **coupling coefficient** between the QEE and QSM.
+
+The thrust \( F \) is estimated as:
+
+\[
+F = \frac{\partial}{\partial t} \left( \int \Delta g_{00} \, d^3x \right)
+\]
+
+which depends on the **rate of entanglement interactions** and their impact on local spacetime.
+
+---
+
+## **Conclusion**
+This document establishes a **mathematical foundation** for the **Quantum State Modulator (QSM)**, providing models for **quantum state evolution, decoherence effects, control optimization, and thrust estimation**. Next steps include:
+
+✔ **Simulation Implementation:** Validate models using Qiskit & MATLAB simulations.  
+✔ **Prototype Testing:** Develop QSM laboratory prototypes for entanglement fidelity measurement.  
+✔ **Cooling System Optimization:** Refine cryogenic system parameters to extend coherence time \( T_2 \).  
+
 
