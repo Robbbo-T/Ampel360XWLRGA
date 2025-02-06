@@ -497,7 +497,130 @@
 
 **5. Conclusion**
 
-The **QPS-DM-001** document provides a comprehensive framework for the design, testing, and validation of the **Quantum State Modulator (QSM)**. By adhering to the outlined specifications and testing procedures, the QSM will achieve the required performance for integration into the **Quantum Propulsion System (QPS)**. Future revisions will incorporate additional details, diagrams, and test results as the design progresses.
+
+**Figure 2-1: QSM Block Diagram Description (Markdown)**
+
+**Overall Layout:**
+
+The Block Diagram visually represents the flow of optical and electrical signals within the QSM, using standard block diagram conventions.
+
+*   **Optical Paths:** Solid lines
+*   **Electrical Control Paths:** Dashed lines
+*   **Signal Flow:** Left to Right
+*   **Input/Output Interfaces:** Clearly marked at diagram boundaries.
+
+**Functional Blocks (Left to Right Signal Flow):**
+
+1.  **Pump Laser:**
+    *   **Shape:** Rectangle/Block
+    *   **Label:** `Pump Laser (532 nm, 1W)`
+    *   **Inputs (Left):**
+        *   `Electrical Power` (Dashed line, from `PSU - Power Supply Unit`)
+        *   `Control Signals` (Dashed line, from `Control Electronics`)
+    *   **Outputs (Right):**
+        *   `Pump Beam (532 nm)` (Solid line) - Connects to `Nonlinear Crystal (BBO) - SPDC` input.
+
+2.  **Nonlinear Crystal (BBO) - SPDC:**
+    *   **Shape:** Diamond/Rhombus or Rectangle
+    *   **Label:** `Nonlinear Crystal (BBO) - SPDC`
+    *   **Inputs (Left):**
+        *   `Pump Beam (532 nm)` (Solid line, from `Pump Laser`)
+        *   `Temperature Control` (Dashed line, from `Control Electronics`)
+    *   **Outputs (Right):**
+        *   `Entangled Photons (1064 nm)` (Solid line) - Splits and connects to both `Electro-Optic Modulators (EOMs)` inputs.
+
+3.  **Electro-Optic Modulators (EOMs) (x2, Parallel):**
+    *   **Shape:** Rectangle/Block
+    *   **Label:** `Electro-Optic Modulator (EOM)` (x2)
+    *   **Inputs (Left):**
+        *   `Entangled Photons (1064 nm)` (Solid line, from `Nonlinear Crystal (BBO) - SPDC`)
+        *   `Control Signals` (Dashed line, from `Control Electronics`)
+    *   **Outputs (Right):**
+        *   `Polarization-Modulated Photons` (Solid line) - Each connects to a `Waveplates` input.
+
+4.  **Waveplates (x2, Parallel, after EOMs):**
+    *   **Shape:** Rectangle/Block
+    *   **Label:** `Waveplates (Quarter & Half)` (x2)
+    *   **Inputs (Left):**
+        *   `Polarization-Modulated Photons` (Solid line, from corresponding `Electro-Optic Modulator (EOM)`)
+    *   **Outputs (Right):**
+        *   `Polarization-Controlled Photons` (Solid line) - Each connects to an `Optical Filters` input.
+
+5.  **Optical Filters (x2, Parallel, after Waveplates):**
+    *   **Shape:** Rectangle/Block
+    *   **Label:** `Optical Filters (1064 nm Bandpass)` (x2)
+    *   **Inputs (Left):**
+        *   `Polarization-Controlled Photons` (Solid line, from corresponding `Waveplates`)
+    *   **Outputs (Right):**
+        *   `Filtered Entangled Photons (1064 nm)` (Solid line) - Merges, then splits to `Detectors` and `QEE Interface`.
+
+6.  **Detectors (Single-photon) (x2, Branching from Optical Filters):**
+    *   **Shape:** Circle/Detector Symbol
+    *   **Label:** `Detectors (Single-photon)` (x2)
+    *   **Inputs (Left):**
+        *   `Filtered Entangled Photons (1064 nm)` (Solid line, from `Optical Filters`)
+        *   `Temperature Control` (Dashed line, from `Control Electronics`)
+    *   **Outputs (Bottom/Downwards):**
+        *   `Detection Signals/Photon Counts` (Dashed line) - Merges and connects to `Control Electronics` input.
+
+7.  **Control Electronics:**
+    *   **Shape:** Rectangle/Block (Larger)
+    *   **Label:** `Control Electronics (FPGA-based)`
+    *   **Inputs:**
+        *   `Detection Signals/Photon Counts` (Dashed line, from `Detectors (Single-photon)`)
+        *   `QSM Component Status` (Dashed lines, from Pump Laser, EOMs, Detectors, Cryocooler)
+        *   `Control Commands` (Dashed line, labeled `MIL-STD-1553`, from `CMS - Control and Monitoring System`)
+    *   **Outputs:**
+        *   `Control Signals` (Dashed line, to Pump Laser, EOMs)
+        *   `Temperature Control` (Dashed line, to Nonlinear Crystal & Detectors)
+        *   `Cooling System Control & Monitoring` (Dashed line, to `Cryogenic Cooling System Interface`)
+        *   `Power Management` (Dashed line, to `Power Supply Unit Interface`)
+        *   `Status Data` (Dashed line, labeled `MIL-STD-1553`, to `CMS - Control and Monitoring System`)
+
+8.  **Cryogenic Cooling System Interface:**
+    *   **Shape:** Connector/Block
+    *   **Label:** `Cryogenic Cooling System Interface`
+    *   **Inputs (Left):**
+        *   `Cooling System Control & Monitoring` (Dashed line, from `Control Electronics`)
+        *   `Cooling Fluid (Liquid Helium)` (Solid line, from `Cryogenic Cooling System`)
+    *   **Outputs (Right):**
+        *   `Cooling Fluid (Return)` (Solid line, to `Cryogenic Cooling System`)
+        *   `Cooling to QSM Components` (Implied internal, connections to Nonlinear Crystal, EOMs, Detectors)
+
+9.  **Power Supply Unit (PSU) Interface:**
+    *   **Shape:** Connector/Block
+    *   **Label:** `Power Supply Unit (PSU) Interface`
+    *   **Inputs (Left):**
+        *   `Power Management` (Dashed line, from `Control Electronics`)
+        *   `Electrical Power (24V DC)` (Solid line, from `Power Supply Unit`)
+    *   **Outputs (Right):**
+        *   `Electrical Power` (Dashed line, to Pump Laser, Control Electronics).
+
+10. **Control and Monitoring System (CMS) Interface:**
+    *   **Shape:** Connector/Block
+    *   **Label:** `Control and Monitoring System (CMS) Interface`
+    *   **Inputs (Left):**
+        *   `Status Data` (Dashed line, labeled `MIL-STD-1553`, from `Control Electronics`)
+    *   **Outputs (Right):**
+        *   `Control Commands` (Dashed line, labeled `MIL-STD-1553`, to `Control Electronics`)
+
+11. **Quantum Entanglement Engine (QEE) Interface (Output):**
+    *   **Shape:** Connector/Block
+    *   **Label:** `Quantum Entanglement Engine (QEE) Interface`
+    *   **Inputs (Left):**
+        *   `Filtered Entangled Photons (1064 nm)` (Solid line, from `Optical Filters`)
+    *   **Outputs (Right):**
+        *   `Entangled Photons to QEE` (Solid line, to `Quantum Entanglement Engine (QEE)`)
+
+**Visual Cues:**
+
+*   **Optical Paths:** `Solid Lines`
+*   **Electrical Signals/Power:** `Dashed Lines`
+*   **Color Coding:** *(Optional)* Different colors for optical, electrical, cryogenic lines.
+*   **Labels:** `Clear and Concise`
+*   **Arrows:** `Directional Flow`
+*   **I/O Markings:**  QSM Inputs (Left), Outputs (Right) clearly marked.
+```
 
 ---
 
