@@ -1,3 +1,4 @@
+
 site_name: 'GAIA AIR Documentation'
 theme:
   name: 'material'
@@ -70,11 +71,13 @@ nav:
       - ATA 104 - Sistemas de Gestión Térmica: especificaciones/ata104_thermal_management.md
       - ATA 105 - Optimización y Eficiencia del Sistema: especificaciones/ata105_system_optimization.md
       - Quantum State Modulator (QSM): especificaciones/qsm.md
-      - FIONDA: Fields Intersections Orchestrating by Nuclear Architecture:
-          - [71.QP-01-01 Particle Source (PS)](especificaciones/71_QP-01-01_Particle_Source_PS.md)
-          - [Energy Input to Distortion Ratio (EIDR)](especificaciones/eidr.md)
-          - [Coherence Time](especificaciones/coherence_time.md)
-          - [fionda.md](especificaciones/fionda.md)
+- FIONDA:
+    description: "Fields Intersections Orchestrating by Nuclear Architecture"
+    items:
+      - [71.QP-01-01 Particle Source (PS)](especificaciones/71_QP-01-01_Particle_Source_PS.md)
+      - [Energy Input to Distortion Ratio (EIDR)](especificaciones/eidr.md)
+      - [Coherence Time](especificaciones/coherence_time.md)
+      - [fionda.md](especificaciones/fionda.md)
   - AQRM:
       - Resumen Conceptual: aqrm/resumen_conceptual.md
       - Detalles Técnicos: aqrm/detalles_tecnicos.md
