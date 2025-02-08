@@ -33,7 +33,7 @@ PointData = [
 ["D","D-AftFuselageLower","Aft Fuselage - Lower Profile",28.00,1.50,-1.75],
 ["D","D-AftFuselageUpper","Aft Fuselage - Upper Profile",28.00,1.50,1.75],
 ["D","D-TailEnd","Tail End",33.00,0.00,0.00],
-["F","F-NoseFrame","Nose Frame",-4.00,0.00,0.00],
+["F","F-NoseFrame","Nose Frame",-5.00,0.00,0.00],
 ["F","F-ForwardFrame","Forward Frame",0.00,0.00,0.00],
 ["F","F-CentralFrame","Central Frame",8.00,0.00,0.00],
 ["F","F-AftFrame","Aft Frame",23.00,0.00,0.00],
