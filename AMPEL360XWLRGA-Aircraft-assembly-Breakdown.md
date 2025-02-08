@@ -2049,98 +2049,267 @@ The incorporated geometric and weight parameters are utilized in various aspects
 
 ---
 
-| Point ID | Section             | X (m)  | Y (m)  | Z (m)  | Description                                     | Notes                                                                                                                                                                                                                |
-| :------- | :------------------ | :----- | :----- | :----- | :---------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| AP1      | Nose                | 0.00   | 0.00   | 0.00   | Nose Tip (Origin)                                | Refined to be coordinate system origin (0, 0, 0) as per definition in GPAM-AMPEL-0201-06-003-A.                                                                                                          |
-| AP2      | Nose                | 0.00   | 0.00   | 0.00   | Nose Tip (Origin)                                | Refined to be coordinate system origin (0, 0, 0) as per definition in GPAM-AMPEL-0201-06-003-A.                                                                                                          |
-| C11       | Wing Root          | 13.74  | 2.28   | 1.80   | Wing Root Leading Edge (Port)                    |                                                                                                                                                                                                                    |
-| C12      | Wing Root          | 13.74  | -2.28  | 1.80   | Wing Root Leading Edge (Starboard)             |                                                                                                                                                                                                                    |
-| C21      | Wing               | 22.41  | 8.63   | 2.42   | Wing Point (Port)                               |                                                                                                                                                                                                                    |
-| C22      | Wing               | 22.41  | -8.63  | 2.42   | Wing Point (Starboard)                          |
-| C31       | Wing               | 28.73  | 15.87  | 2.50    | Wing Point (Port)    |
-| C32      | Wing               | 28.73 | -15.87  | 2.50    | Wing Point (Starboard)    |
-| D11      | Fuselage           | 11.48  | 1.69   | 1.70   | Fuselage/Landing Gear Point (Port)               |
-| D12      | Fuselage           | 11.48  | -1.69  | 1.70   | Fuselage/Landing Gear Point (Starboard)          |
-| D21      | Fuselage           | 17.66  | 1.70   | 1.70   | Fuselage/Landing Gear Point (Port)               |
-| D22      | Fuselage           | 17.66  | -1.70  | 1.70   | Fuselage/Landing Gear Point (Starboard)          |
-| D31      | Fuselage           | 24.03  | 1.83   | 1.70   | Fuselage/Landing Gear Point (Port)               |
-| D32      | Fuselage           | 24.03  | -1.83  | 1.70   | Fuselage/Landing Gear Point (Starboard)          |
-| D41      | Fuselage           | 28.85  | 1.87   | 1.70   | Fuselage/Landing Gear Point (Port)               |
-| D42      | Fuselage           | 28.85  | -1.87  | 1.70   | Fuselage/Landing Gear Point (Starboard)           |
-| D51      | Fuselage           | 35.46  | 2.06   | 1.85   | Fuselage/Landing Gear Point (Port)               |
-| D52      | Fuselage           | 35.46  | -2.06  | 1.85   | Fuselage/Landing Gear Point (Starboard)           |
-| F11       | Fuselage           | 10.30   | 1.56   | 3.79   | Fuselage Point (Port)                        |
-| F12       | Fuselage           | 10.30   | -1.56  | 3.79   | Fuselage Point (Starboard)                    |
-| F21       | Fuselage           | 15.41  | 1.94   | 4.18   | Fuselage Point (Port)                        |
-| F22       | Fuselage           | 15.41  | -1.94  | 4.18   | Fuselage Point (Starboard)                    |
-| F31       | Fuselage           | 37.00    | 1.69   | 3.40   | Aft Fuselage Point (Port)                        |
-| F32       | Fuselage           | 37.00    | -1.69  | 3.40   | Aft Fuselage Point (Starboard)                   |
-| F41       | Fuselage           | 42.05  | 1.42   | 3.25   | Aft Fuselage Point (Port)                        |
-| F42       | Fuselage           | 42.05  | -1.42  | 3.25   | Aft Fuselage Point (Starboard)                   |
-| FT11      | H. Stab.           | 39.45  | 2.65   | 4.60   | Horizontal Stabilizer Point (Port)             |
-| FT12      | H. Stab.           | 39.45  | -2.65  | 4.60   | Horizontal Stabilizer Point (Starboard)        |
-| FT21      | H. Stab.           | 40.25  | 5.74   | 4.88   | Horizontal Stabilizer Point (Port)             |
-| FT22      | H. Stab.           | 40.25  | -5.74  | 4.88   | Horizontal Stabilizer Point (Starboard)        |
-| FT31      | H. Stab.           | 40.68  | 8.98   | 4.73   | Horizontal Stabilizer Point (Port)             |
-| FT32      | H. Stab.           | 40.68  | -8.98  | 4.73   | Horizontal Stabilizer Point (Starboard)        |
-| HT1       | V. Stab.           | 41.47  | 0.00   | 7.67   | Vertical Stabilizer Point                       |
-| HT2       | V. Stab.           | 41.47  | 0.00   | 7.60   | Vertical Stabilizer Point                       |
-| RD11      | Rudder             | 42.76  | 0.96   | 1.11   | Rudder/Ground Clearance Point (Port)            |
-| RD12      | Rudder             | 42.76  | -0.96  | 1.11   | Rudder/Ground Clearance Point (Starboard)       |
-| VT1       | V. Tail            | 43.69  | 0.00   | 7.76   | Vertical Tail Point                             |
-| VT2       | V. Tail            | 43.69  | 0.00   | 7.69   | Vertical Tail Point                             |
-| BF11      | Belly Fairing     | 11.00    | 3.05    | 1.60    | Belly Fairing (Port)                           |
-| BF12      | Belly Fairing     | 11.00    | -3.05   | 1.60    | Belly Fairing (Starboard)                        |
-| BF21      | Belly Fairing     | 17.00    | 3.05   | 1.60    | Belly Fairing (Port)                           |
-| BF22      | Belly Fairing     | 17.00   | -3.05   | 1.60    | Belly Fairing (Starboard)                        |
-| BF31      | Belly Fairing     | 23.50   | 3.05  | 1.60   | Belly Fairing (Port)                           |
-| BF32      | Belly Fairing     | 23.50   | -3.05   | 1.60    | Belly Fairing (Starboard)                        |
-| WL11      | Water Line         | *ANY*  | *ANY*  | 9.40   | Water Line 1 - Placeholder Point                 |
-| WL12      | Water Line         | *ANY*  | *ANY*  | 9.37   | Water Line 1 - Placeholder Point                 |
-| WL21      | Water Line         | *ANY*  | *ANY*  | 6.98   | Water Line 2 - Placeholder Point                 |
-| WL22      | Water Line         | *ANY*  | *ANY*  | 6.96   | Water Line 2 - Placeholder Point                 |
-| CP11      | Cockpit          | 5.84   |  1.5   |  2.8   | Cockpit element (Port)                           |
-| CP12      | Cockpit          | 5.90   | -1.5  |  2.8   | Cockpit element (Starboard)                      |
-| FDL      | Datum Line         | *ANY*  | 0.00   | 0.00   | Fuselage Datum Line                              |
-| MRW      | Misc.              |        |        |        | Maximum Ramp Weight (135,000 kg / 268,900 kg) | *Note: Not a coordinate*                           |
-];
+Below is an **updated measurement point table** reflecting your **refined coordinates** for AMPEL360XWLRGA, along with a **matching OpenSCAD “Revision 4”** script to visualize these points in 3D. This should replace your previous measurement point array and supersede earlier “Revision 2” or “Revision 3” versions.
+
+---
+
+| Point ID | Section             | X (m)  | Y (m)  | Z (m)  | Description                                     | Notes                                                                                                  |
+| :------- | :------------------ | :----- | :----- | :----- | :---------------------------------------------- | :------------------------------------------------------------------------------------------------------- |
+| AP1      | Nose                | 0.00   | 0.00   | 0.00   | Nose Tip (Origin)                              | Refined to be coordinate system origin per GPAM-AMPEL-0201-06-003-A.                                     |
+| AP2      | Nose                | 0.00   | 0.00   | 0.00   | Nose Tip (Origin)                              | Also set to (0,0,0), effectively coincident with AP1.                                                   |
+| C11      | Wing Root          | 13.74  | 2.28   | 1.80   | Wing Root Leading Edge (Port)                  |                                                                                                         |
+| C12      | Wing Root          | 13.74  | -2.28  | 1.80   | Wing Root Leading Edge (Starboard)             |                                                                                                         |
+| C21      | Wing               | 22.41  | 8.63   | 2.42   | Wing Point (Port)                              |                                                                                                         |
+| C22      | Wing               | 22.41  | -8.63  | 2.42   | Wing Point (Starboard)                         |                                                                                                         |
+| C31      | Wing               | 28.73  | 15.87  | 2.50   | Wing Point (Port)                              |                                                                                                         |
+| C32      | Wing               | 28.73  | -15.87 | 2.50   | Wing Point (Starboard)                         |                                                                                                         |
+| D11      | Fuselage           | 11.48  | 1.69   | 1.70   | Fuselage/Landing Gear Point (Port)             |                                                                                                         |
+| D12      | Fuselage           | 11.48  | -1.69  | 1.70   | Fuselage/Landing Gear Point (Starboard)        |                                                                                                         |
+| D21      | Fuselage           | 17.66  | 1.70   | 1.70   | Fuselage/Landing Gear Point (Port)             |                                                                                                         |
+| D22      | Fuselage           | 17.66  | -1.70  | 1.70   | Fuselage/Landing Gear Point (Starboard)        |                                                                                                         |
+| D31      | Fuselage           | 24.03  | 1.83   | 1.70   | Fuselage/Landing Gear Point (Port)             |                                                                                                         |
+| D32      | Fuselage           | 24.03  | -1.83  | 1.70   | Fuselage/Landing Gear Point (Starboard)        |                                                                                                         |
+| D41      | Fuselage           | 28.85  | 1.87   | 1.70   | Fuselage/Landing Gear Point (Port)             |                                                                                                         |
+| D42      | Fuselage           | 28.85  | -1.87  | 1.70   | Fuselage/Landing Gear Point (Starboard)        |                                                                                                         |
+| D51      | Fuselage           | 35.46  | 2.06   | 1.85   | Fuselage/Landing Gear Point (Port)             |                                                                                                         |
+| D52      | Fuselage           | 35.46  | -2.06  | 1.85   | Fuselage/Landing Gear Point (Starboard)        |                                                                                                         |
+| F11      | Fuselage           | 10.30  | 1.56   | 3.79   | Fuselage Point (Port)                          |                                                                                                         |
+| F12      | Fuselage           | 10.30  | -1.56  | 3.79   | Fuselage Point (Starboard)                     |                                                                                                         |
+| F21      | Fuselage           | 15.41  | 1.94   | 4.18   | Fuselage Point (Port)                          |                                                                                                         |
+| F22      | Fuselage           | 15.41  | -1.94  | 4.18   | Fuselage Point (Starboard)                     |                                                                                                         |
+| F31      | Fuselage           | 37.00  | 1.69   | 3.40   | Aft Fuselage Point (Port)                      |                                                                                                         |
+| F32      | Fuselage           | 37.00  | -1.69  | 3.40   | Aft Fuselage Point (Starboard)                 |                                                                                                         |
+| F41      | Fuselage           | 42.05  | 1.42   | 3.25   | Aft Fuselage Point (Port)                      |                                                                                                         |
+| F42      | Fuselage           | 42.05  | -1.42  | 3.25   | Aft Fuselage Point (Starboard)                 |                                                                                                         |
+| FT11     | H. Stab.           | 39.45  | 2.65   | 4.60   | Horizontal Stabilizer Point (Port)             |                                                                                                         |
+| FT12     | H. Stab.           | 39.45  | -2.65  | 4.60   | Horizontal Stabilizer Point (Starboard)        |                                                                                                         |
+| FT21     | H. Stab.           | 40.25  | 5.74   | 4.88   | Horizontal Stabilizer Point (Port)             |                                                                                                         |
+| FT22     | H. Stab.           | 40.25  | -5.74  | 4.88   | Horizontal Stabilizer Point (Starboard)        |                                                                                                         |
+| FT31     | H. Stab.           | 40.68  | 8.98   | 4.73   | Horizontal Stabilizer Point (Port)             |                                                                                                         |
+| FT32     | H. Stab.           | 40.68  | -8.98  | 4.73   | Horizontal Stabilizer Point (Starboard)        |                                                                                                         |
+| HT1      | V. Stab.           | 41.47  | 0.00   | 7.67   | Vertical Stabilizer Point                      |                                                                                                         |
+| HT2      | V. Stab.           | 41.47  | 0.00   | 7.60   | Vertical Stabilizer Point                      |                                                                                                         |
+| RD11     | Rudder             | 42.76  | 0.96   | 1.11   | Rudder/Ground Clearance Point (Port)           |                                                                                                         |
+| RD12     | Rudder             | 42.76  | -0.96  | 1.11   | Rudder/Ground Clearance Point (Starboard)      |                                                                                                         |
+| VT1      | V. Tail            | 43.69  | 0.00   | 7.76   | Vertical Tail Point                            |                                                                                                         |
+| VT2      | V. Tail            | 43.69  | 0.00   | 7.69   | Vertical Tail Point                            |                                                                                                         |
+| BF11     | Belly Fairing      | 11.00  | 3.05   | 1.60   | Belly Fairing (Port)                           |                                                                                                         |
+| BF12     | Belly Fairing      | 11.00  | -3.05  | 1.60   | Belly Fairing (Starboard)                      |                                                                                                         |
+| BF21     | Belly Fairing      | 17.00  | 3.05   | 1.60   | Belly Fairing (Port)                           |                                                                                                         |
+| BF22     | Belly Fairing      | 17.00  | -3.05  | 1.60   | Belly Fairing (Starboard)                      |                                                                                                         |
+| BF31     | Belly Fairing      | 23.50  | 3.05   | 1.60   | Belly Fairing (Port)                           |                                                                                                         |
+| BF32     | Belly Fairing      | 23.50  | -3.05  | 1.60   | Belly Fairing (Starboard)                      |                                                                                                         |
+| WL11     | Water Line         | *ANY*  | *ANY*  | 9.40   | Water Line 1 - Placeholder Point               |                                                                                                         |
+| WL12     | Water Line         | *ANY*  | *ANY*  | 9.37   | Water Line 1 - Placeholder Point               |                                                                                                         |
+| WL21     | Water Line         | *ANY*  | *ANY*  | 6.98   | Water Line 2 - Placeholder Point               |                                                                                                         |
+| WL22     | Water Line         | *ANY*  | *ANY*  | 6.96   | Water Line 2 - Placeholder Point               |                                                                                                         |
+| CP11     | Cockpit            | 5.84   | 1.50   | 2.80   | Cockpit element (Port)                         |                                                                                                         |
+| CP12     | Cockpit            | 5.90   | -1.50  | 2.80   | Cockpit element (Starboard)                    |                                                                                                         |
+| FDL      | Datum Line         | *ANY*  | 0.00   | 0.00   | Fuselage Datum Line                            |                                                                                                         |
+| MRW      | Misc.              |        |        |        | Maximum Ramp Weight (135,000 kg / 268,900 kg)  | *Not a coordinate*                                                                                      |
 
 
-// --- Generate Points from Data ---
-for (i = [0 : len(measurement_points) - 1]) {
-    point_id       = measurement_points[i][0];
-    section        = measurement_points[i][1];
-    x_coord        = measurement_points[i][2];
-    y_coord        = measurement_points[i][3];
-    z_coord        = measurement_points[i][4];
-    description    = measurement_points[i][5];
+## 2. Updated OpenSCAD Script (Revision 4)
 
-    if (section != "Misc.") { // Skip "Misc." section as it's not a point
-        point(x_coord, y_coord, z_coord, point_id);
+Here is a **sample OpenSCAD script** that uses your **new table** data. As with previous revisions, you can copy/paste this into your `.scad` file, render it, and verify the updated 3D layout.
+
+```scad
+// AMPEL360XWLRGA - Preliminary Point Cloud Visualization - Revision 4
+// GAIA AIR Project - COAFI Framework
+// Document Reference: GPAM-AMPEL-0201-06-003-A (Updated Coordinates)
+// Data Source: GPAM-AMPEL-0201-06-003-A (Estimated Values - 2025-02-16, with new refined coordinates)
+
+// Coordinate System (Defined in GPAM-AMPEL-0201-06-003-A):
+// Origin: Nose Tip (AP)
+// X-axis: Positive towards Tail
+// Y-axis: Positive towards Left Wingtip (viewed from tail)
+// Z-axis: Positive Downwards
+// Units: Meters
+
+// --- Configuration ---
+point_radius = 0.05;        // Sphere radius for each point
+label_offset_x = 0.2;       // Offset for labels in X direction
+label_size = 0.15;          // Font size for point labels
+axis_length = 50;           // Length of coordinate axes in the 3D visualization
+
+// --- Function to create a labeled point ---
+module point(x, y, z, point_id="") {
+    color("red")
+    translate([x, y, z])
+        sphere(r = point_radius);
+
+    if (point_id != "") {
+        color("black")
+        translate([x + label_offset_x, y, z])
+            linear_extrude(0.01) // Thin extrusion for labels
+                text(point_id, size = label_size);
     }
 }
 
-// --- Coordinate System Axes (for visual reference) ---
+// --- Updated Measurement Points (Revision 4) ---
+measurement_points = [
+    // Format: [ Point ID, Section, X, Y, Z, Description ]
+
+    // Nose (Origin)
+    ["AP1", "Nose", 0.00, 0.00, 0.00, "Nose Tip (Origin) - AP1"],
+    ["AP2", "Nose", 0.00, 0.00, 0.00, "Nose Tip (Origin) - AP2"],
+
+    // Wing Root
+    ["C11","Wing Root",13.74, 2.28,1.80,"Wing Root Leading Edge (Port)"],
+    ["C12","Wing Root",13.74,-2.28,1.80,"Wing Root Leading Edge (Starboard)"],
+
+    // Wing
+    ["C21","Wing",22.41, 8.63,2.42,"Wing Point (Port)"],
+    ["C22","Wing",22.41,-8.63,2.42,"Wing Point (Starboard)"],
+    ["C31","Wing",28.73,15.87,2.50,"Wing Point (Port)"],
+    ["C32","Wing",28.73,-15.87,2.50,"Wing Point (Starboard)"],
+
+    // Fuselage / Landing Gear
+    ["D11","Fuselage",11.48, 1.69,1.70,"Fuselage/Landing Gear (Port)"],
+    ["D12","Fuselage",11.48,-1.69,1.70,"Fuselage/Landing Gear (Starboard)"],
+    ["D21","Fuselage",17.66, 1.70,1.70,"Fuselage/Landing Gear (Port)"],
+    ["D22","Fuselage",17.66,-1.70,1.70,"Fuselage/Landing Gear (Starboard)"],
+    ["D31","Fuselage",24.03, 1.83,1.70,"Fuselage/Landing Gear (Port)"],
+    ["D32","Fuselage",24.03,-1.83,1.70,"Fuselage/Landing Gear (Starboard)"],
+    ["D41","Fuselage",28.85, 1.87,1.70,"Fuselage/Landing Gear (Port)"],
+    ["D42","Fuselage",28.85,-1.87,1.70,"Fuselage/Landing Gear (Starboard)"],
+    ["D51","Fuselage",35.46, 2.06,1.85,"Fuselage/Landing Gear (Port)"],
+    ["D52","Fuselage",35.46,-2.06,1.85,"Fuselage/Landing Gear (Starboard)"],
+
+    // Fuselage Points
+    ["F11","Fuselage",10.30, 1.56,3.79,"Fuselage Point (Port)"],
+    ["F12","Fuselage",10.30,-1.56,3.79,"Fuselage Point (Starboard)"],
+    ["F21","Fuselage",15.41, 1.94,4.18,"Fuselage Point (Port)"],
+    ["F22","Fuselage",15.41,-1.94,4.18,"Fuselage Point (Starboard)"],
+    ["F31","Fuselage",37.00, 1.69,3.40,"Aft Fuselage Point (Port)"],
+    ["F32","Fuselage",37.00,-1.69,3.40,"Aft Fuselage Point (Starboard)"],
+    ["F41","Fuselage",42.05, 1.42,3.25,"Aft Fuselage Point (Port)"],
+    ["F42","Fuselage",42.05,-1.42,3.25,"Aft Fuselage Point (Starboard)"],
+
+    // Horizontal Stabilizer
+    ["FT11","H. Stab.",39.45, 2.65,4.60,"Horizontal Stabilizer (Port)"],
+    ["FT12","H. Stab.",39.45,-2.65,4.60,"Horizontal Stabilizer (Starboard)"],
+    ["FT21","H. Stab.",40.25, 5.74,4.88,"Horizontal Stabilizer (Port)"],
+    ["FT22","H. Stab.",40.25,-5.74,4.88,"Horizontal Stabilizer (Starboard)"],
+    ["FT31","H. Stab.",40.68, 8.98,4.73,"Horizontal Stabilizer (Port)"],
+    ["FT32","H. Stab.",40.68,-8.98,4.73,"Horizontal Stabilizer (Starboard)"],
+
+    // Vertical Stabilizer & Tail
+    ["HT1","V. Stab.",41.47, 0.00,7.67,"Vertical Stabilizer Point"],
+    ["HT2","V. Stab.",41.47, 0.00,7.60,"Vertical Stabilizer Point"],
+    ["RD11","Rudder",42.76, 0.96,1.11,"Rudder/Ground Clearance (Port)"],
+    ["RD12","Rudder",42.76,-0.96,1.11,"Rudder/Ground Clearance (Starboard)"],
+    ["VT1","V. Tail",43.69, 0.00,7.76,"Vertical Tail Point"],
+    ["VT2","V. Tail",43.69, 0.00,7.69,"Vertical Tail Point"],
+
+    // Belly Fairing
+    ["BF11","Belly Fairing",11.00, 3.05,1.60,"Belly Fairing (Port)"],
+    ["BF12","Belly Fairing",11.00,-3.05,1.60,"Belly Fairing (Starboard)"],
+    ["BF21","Belly Fairing",17.00, 3.05,1.60,"Belly Fairing (Port)"],
+    ["BF22","Belly Fairing",17.00,-3.05,1.60,"Belly Fairing (Starboard)"],
+    ["BF31","Belly Fairing",23.50, 3.05,1.60,"Belly Fairing (Port)"],
+    ["BF32","Belly Fairing",23.50,-3.05,1.60,"Belly Fairing (Starboard)"],
+
+    // Water Lines (placeholders for demonstration)
+    ["WL11","Water Line",0,0,9.40,"Water Line 1 - Placeholder"],
+    ["WL12","Water Line",0,0,9.37,"Water Line 1 - Placeholder"],
+    ["WL21","Water Line",0,0,6.98,"Water Line 2 - Placeholder"],
+    ["WL22","Water Line",0,0,6.96,"Water Line 2 - Placeholder"],
+
+    // Cockpit
+    ["CP11","Cockpit",5.84, 1.50,2.80,"Cockpit Element (Port)"],
+    ["CP12","Cockpit",5.90,-1.50,2.80,"Cockpit Element (Starboard)"],
+
+    // Datum Line - If you want this visible, set X or Z to actual numeric values
+    ["FDL","Datum Line",-2.00, 0.00,0.00,"Fuselage Datum Line"],
+
+    // Misc. / Non-Coordinate
+    ["MRW","Misc.",0,0,0,"Maximum Ramp Weight (135,000 kg / 268,900 kg)"],
+];
+
+// --- Generate Points from Data ---
+for (i = [0 : len(measurement_points)-1]) {
+    let (
+        point_id = measurement_points[i][0],
+        section  = measurement_points[i][1],
+        x_coord  = measurement_points[i][2],
+        y_coord  = measurement_points[i][3],
+        z_coord  = measurement_points[i][4],
+        desc     = measurement_points[i][5]
+    )
+    {
+        // Skip "Misc." or placeholders that aren’t actual coordinates
+        if (section != "Misc.") {
+            point(x_coord, y_coord, z_coord, point_id);
+        }
+    }
+}
+
+// --- Draw Coordinate System Axes for Reference ---
 color("blue")
 linear_extrude(0.1)
-translate([0,0,0]) cylinder(r=0.02, h=axis_length, center=false); // X-axis as cylinder
+    translate([0,0,0]) 
+    cylinder(r=0.02, h=axis_length, center=false); // X-axis
 
 color("green")
 linear_extrude(0.1)
-rotate([0, 0, 90])  // Rotate for Y-axis
-translate([0,0,0]) cylinder(r=0.02, h=axis_length, center=false); // Y-axis as cylinder
+    rotate([0, 0, 90])
+    translate([0,0,0]) 
+    cylinder(r=0.02, h=axis_length, center=false); // Y-axis
 
 color("purple")
 linear_extrude(0.1)
-rotate([90, 0, 0]) // Rotate for Z-axis
-translate([0,0,0]) cylinder(r=0.02, h=axis_length, center=false); // Z-axis as cylinder
+    rotate([90, 0, 0])
+    translate([0,0,0]) 
+    cylinder(r=0.02, h=axis_length, center=false); // Z-axis
 
-
-// --- Origin Marker ---
+// --- Mark the Origin Clearly ---
 color("red")
-translate([0, 0, 0])
-    sphere(r = 0.2); // Mark Origin more clearly
+translate([0,0,0])
+sphere(r=0.25); // Larger sphere to highlight the origin
+```
 
+### Quick Usage Notes
+
+1. **Copy + Paste** this entire script into OpenSCAD.  
+2. **Render** (F5) or **Compile/Render** (F6).  
+3. **Examine** the layout—points should be spaced along the X-axis from \(\approx 0\) (nose) to \(\approx 43\) m (tail), with appropriate Y offsets for port/starboard, and Z offsets for vertical placement.  
+4. **Adjust `axis_length`** if your 3D view is too zoomed in or out.  
+5. **Refine placeholding values** (e.g., Water Lines, Datum Line) if you wish to place them more accurately in your model.  
+
+---
+
+## 3. Validation & Next Steps
+
+1. **Visual Check**: Spin the 3D model around in OpenSCAD. Confirm that:
+   - **AP1/AP2** appear at the intersection of the X/Y/Z axes (the origin).
+   - **Wing Root** points (C11/C12) are forward but outboard on Y-axis.  
+   - **Wing** points (C21/C22, C31/C32) move further along X and Y.  
+   - **Fuselage** and **Landing Gear** points (Dxx, Fxx) run aft along X with moderate Y offsets.  
+   - **Stabilizers** (FTxx, HTx) appear near the tail with higher Z for the vertical tail.  
+   - **Belly Fairing** points (BFxx) are relatively low in Z, somewhat broader in Y.  
+
+2. **Check Symmetry**: See that port (positive Y) and starboard (negative Y) points mirror each other about the centerline (Y=0).  
+
+3. **Incorporate into GPAM-AMPEL-0201-06-003-A**:  
+   - Update **Section 3** (Measurement Point Definitions) with these final coordinates.  
+   - Keep your **Notes** column to explain any assumptions or reference offsets you used.  
+
+4. **Further Refinements**:  
+   - **Offsets**: If you realize any points must shift (e.g., due to updated fuselage length or wingspan), simply adjust them in your table and re-render in OpenSCAD.  
+   - **CAD Integration**: You can eventually import these points or a CSV export of them into a 3D CAD tool (like Fusion 360, SolidWorks, or CATIA) to start building parametric geometry.
+
+5. **Confirm with Assembly Breakdown**:  
+   - Double-check that major fuselage section lengths and wing spans in your **Assembly Breakdown** match these new coordinates.  
+   - If you see large discrepancies (e.g., the tail is at 45m in the breakdown but your last point is near 43m in the table), decide which source is more accurate and adjust accordingly.
+
+---
+
+### Conclusion
+
+With these **refined measurement points** and the **Revision 4 OpenSCAD code**, you have a **consistent, 3D-visualizable layout** that aligns with the GAIA AIR coordinate system definitions. This table and script can serve as the **definitive reference** for AMPEL360XWLRGA geometry within **GPAM-AMPEL-0201-06-003-A** and beyond.
+
+Feel free to reach out if you need any further assistance—enjoy exploring your updated point cloud in 3D, and congratulations on reaching this milestone in defining the AMPEL360XWLRGA’s geometry!
 ## Final Notes
 
 By systematically integrating **volumes**, **lengths**, **surface areas**, **nominal weights free of payload**, and other **essential geometric parameters** into the hierarchical assembly breakdown:
