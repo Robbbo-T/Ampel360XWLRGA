@@ -1,3 +1,5 @@
+# Quantum Propulsion System
+
 ```mermaid
 graph LR
 
@@ -178,6 +180,29 @@ graph LR
 
     Q01Subsystem -. vibration feedback .-> VIBCU
     VIBCU --control loop--> S1 & S2
+```
+
+```mermaid
+graph LR
+    subgraph "Cryogenic Cooling System (CCS)"
+        R[Reservoir]
+        P[Pump]
+        HX[Heat Exchanger]
+    end
+
+    subgraph "Q-01 Engine"
+        QSM[QSM]
+        QEE[QEE]
+        V[Vent]
+    end
+
+    R --> P --> HX --> S[Supply Line] --> QSM
+    QSM --> QEE
+    QEE --> RT[Return Line] --> HX
+    QEE --> V
+
+    style S fill:#ccf,stroke:#333
+    style RT fill:#cfc,stroke:#333
 ```
 
 ### File-Level Changes
@@ -2049,11 +2074,11 @@ Para una visualización rápida de la arquitectura del QPS, se proporciona un es
 
 ```mermaid
 graph LR
-    QSM[Modulador de Estado Cuántico (QSM)]
-    QEE[Motor de Entrelazamiento Cuántico (QEE)]
+    QSM[Modulador de Estado Cuántico QSM]
+    QEE[Motor de Entrelazamiento Cuántico QEE]
     CCS[Sistema de Enfriamiento Criogénico]
-    FADEC[Sistema de Control Digital de Motor de Plena Autoridad (FADEC)]
-    AEHCS[Sistema Avanzado de Manejo y Control de Energía Atmosférica (AEHCS)]
+    FADEC[Sistema de Control Digital de Motor de Plena Autoridad FADEC]
+    AEHCS[Sistema Avanzado de Manejo y Control de Energía Atmosférica AEHCS]
     NeuronBit[NeuronBit Building Environment]
     ChatQuantum[CHATQUANTUM Interoperating System]
 
@@ -4215,7 +4240,7 @@ Supporting references and test plans are included to ensure compliance with stru
 ```mermaid
 flowchart LR
     A((Tail Cone Bulkhead))
-    B[Primary Frame<br>(MTG-FRAME-Q1-001)]
+    B[Primary Frame<br>MTG-FRAME-Q1-001]
     C[Secondary Support Beams]
     D[Q-01<br>Subsystems]
 
@@ -4404,6 +4429,155 @@ graph LR
 4. **Tolerancing**: ±0.05 mm critical, ±0.1 mm secondary.  
 5. **Cross-Disciplinary Reviews**: Structures, Avionics, Thermal, Manufacturing, Maintenance.
 
+
+# **Q01-MNT-FRM-ASM: Mounting Frame Assembly**  
+
+Below is the **final consolidated summary** of the **Q01-MNT-FRM-ASM** (Mounting Frame Assembly) **disassembly/reassembly** sequence, complete with a **Mermaid exploded-view diagram**, **fastener torque values**, **workflow steps**, and **PLM integration** considerations. This layout enables **efficient maintenance**, **revision control**, and **technical publication** within a PLM platform (e.g., **ENOVIA**, **Windchill**), ensuring **traceability**, **safety**, and **operational consistency**.
+
+---
+
+## **1. System Overview**
+
+- **Q01-MNT-FRM-ASM**  
+  - The **Mounting Frame Assembly** for the Q-01 Quantum Propulsion System (QPS).  
+  - Bolts onto the aircraft’s tail cone, supporting all Q-01 subassemblies.
+
+### **Disassembly Order**
+
+1. **Harness Guide**  
+   - Subassembly: **Q01-HARNESS-GUIDE-ASM**  
+   - **Parts**: Titanium brackets (HRS-BRKT-001), polymer clamps (HRS-CLAMP-001), M8 fasteners (HRS-FSTNR-001)  
+   - **Role**: Routes and secures electrical/data harnesses.
+
+2. **Cryogenic Brackets**  
+   - Subassembly: **Q01-CRYO-BRACKET-ASM**  
+   - **Parts**: Titanium brackets (CRYO-BRKT-001), polymer clamps (CRYO-CLAMP-001), M6 fasteners (CRYO-FSTNR-001)  
+   - **Role**: Stabilizes cryogenic lines (supply/return/vent) against vibration and movement.
+
+3. **Vibration Isolators**  
+   - Subassembly: **Q01-VIB-ISO-ASM**  
+   - **Parts**: Ti-6Al-4V baseplates (VIB-ISO-BASE-001), magnetostrictive actuators (VIB-ISO-ACTR-001), piezo sensors (VIB-ISO-SENS-001), M10 fasteners (VIB-ISO-FSTNR-001)  
+   - **Role**: Provides active damping and vibration isolation for the QPS.
+
+4. **Primary Lattice Frame**  
+   - Subassembly: **Q01-MNT-FRM-SUB1**  
+   - **Parts**: Main lattice structure (LATTICE-FRM-001), secondary brackets (FRAME-BRKT-001), M24 fasteners (FRAME-FSTNR-001)  
+   - **Role**: Core support structure attaching directly to the tail cone.
+
+---
+
+## **2. Mermaid Diagram**
+
+```mermaid
+flowchart TB
+    %% Define styling classes
+    classDef subasm fill:#FFD700,stroke:#000,stroke-width:1px,color:#000,font-weight:bold
+    classDef titanium fill:#ADD8E6,stroke:#555,stroke-width:1px,color:#000,font-weight:normal
+    classDef polymer fill:#FFC0CB,stroke:#555,stroke-width:1px,color:#000,font-weight:normal
+    classDef fastener fill:#D3D3D3,stroke:#555,stroke-width:1px,color:#000,font-weight:normal
+
+    %% Top-Level Assembly
+    A["Q01-MNT-FRM-ASM<br>Mounting Frame Assembly"]:::subasm
+    
+    %% 1) Harness Guide (1st Removed)
+    A --> B["Q01-HARNESS-GUIDE-ASM<br>(1st Removed)"]:::subasm
+    subgraph subGraph0["Harness Guide"]
+        B1["HRS-BRKT-001<br>Harness Brackets (x6)"]:::titanium
+        B2["HRS-CLAMP-001<br>Harness Clamps (x12)"]:::polymer
+        B3["HRS-FSTNR-001<br>M8 Fasteners (x24)"]:::fastener
+    end
+    style subGraph0 fill:#f0f0f0,stroke:#ccc,stroke-width:1px,stroke-dasharray: 5 5
+
+    B --> B1 & B2 & B3
+
+    %% 2) Cryogenic Brackets (2nd Removed)
+    A --> C["Q01-CRYO-BRACKET-ASM<br>(2nd Removed)"]:::subasm
+    subgraph CB["Cryogenic Brackets"]
+        C1["CRYO-BRKT-001<br>Titanium Brackets (x4)"]:::titanium
+        C2["CRYO-CLAMP-001<br>Polymer Clamps (x8)"]:::polymer
+        C3["CRYO-FSTNR-001<br>M6 Fasteners (x16)"]:::fastener
+    end
+    style CB fill:#f0f0f0,stroke:#ccc,stroke-width:1px,stroke-dasharray: 5 5
+
+    C --> C1 & C2 & C3
+
+    %% 3) Vibration Isolators (3rd Removed)
+    A --> D["Q01-VIB-ISO-ASM<br>(3rd Removed)"]:::subasm
+    subgraph VI["Vibration Isolators"]
+        D1["VIB-ISO-BASE-001<br>Baseplates (Ti-6Al-4V) (x3)"]:::titanium
+        D2["VIB-ISO-ACTR-001<br>Magnetostrictive Actuators (x3)"]
+        D3["VIB-ISO-SENS-001<br>Piezoelectric Sensors (x6)"]
+        D4["VIB-ISO-FSTNR-001<br>M10 Fasteners (x12)"]:::fastener
+    end
+    style VI fill:#f0f0f0,stroke:#ccc,stroke-width:1px,stroke-dasharray: 5 5
+
+    D --> D1 & D2 & D3 & D4
+
+    %% 4) Primary Lattice Frame (Last Removed)
+    A --> E["Q01-MNT-FRM-SUB1<br>(Last Removed)"]:::subasm
+    subgraph PLF["Primary Lattice Frame"]
+        E1["LATTICE-FRM-001<br>Main Lattice Structure"]:::titanium
+        E2["FRAME-BRKT-001<br>Secondary Brackets (x2)"]:::titanium
+        E3["FRAME-FSTNR-001<br>M24 Bolts (x4)"]:::fastener
+    end
+    style PLF fill:#f0f0f0,stroke:#ccc,stroke-width:1px,stroke-dasharray: 5 5
+
+    E --> E1 & E2 & E3
+```
+
+### **Diagram Notes**
+
+- **Gold Boxes** = subassemblies  
+- **Dashed Boxes** = grouped parts  
+- **Light Blue** = titanium  
+- **Pink** = polymer  
+- **Gray** = fasteners  
+
+---
+
+## **3. Fastener Torque Values**
+
+| **Fastener**       | **Torque**    | **Notes**                                |
+|--------------------|--------------:|-------------------------------------------|
+| **M24**            | 80 ± 5 Nm     | Lattice frame to tail cone               |
+| **M10**            | 12 ± 1 Nm     | Vibration isolator baseplates            |
+| **M8**             | 5 ± 0.5 Nm    | Harness brackets                         |
+| **M6**             | 8 ± 0.5 Nm    | Cryogenic bracket clamps                 |
+
+---
+
+## **4. Recommended Workflow**
+
+1. **Remove Harness Guide**  
+   - Loosen M8 fasteners; unclamp harnesses.  
+   - Prevent cable damage prior to further removals.
+
+2. **Detach Cryogenic Brackets**  
+   - Loosen M6 fasteners; remove polymer clamps.  
+   - Secure cryo lines safely if disconnected.
+
+3. **Extract Vibration Isolators**  
+   - Unbolt M10 fasteners; disconnect actuator/sensor wiring.  
+   - Handle magnetostrictive components carefully.
+
+4. **Unbolt Primary Lattice Frame**  
+   - Remove M24 bolts from tail cone.  
+   - Lift out the main lattice structure last.
+
+---
+
+## **5. Key Takeaways & PLM Integration**
+
+- **Hierarchical Clarity**: A top-down approach minimizes risk of damage to cables and lines.  
+- **Traceability**: Each node/part ID can be linked to revision-controlled PLM documents.  
+- **Regulatory Compliance**: Changes reflect in S1000D modules; tested against ISO 9001 & MIL-STD-461F.  
+- **Proactive Maintenance**: Sensor data from VIB-ISO can inform real-time analytics, flagging potential issues before failures occur.
+
+---
+
+### **Conclusion**
+
+This **visual + textual reference** for the **Q01-MNT-FRM-ASM** offers a succinct, **PLM-ready** overview of the assembly’s disassembly order, torque specs, and parts breakdown. Integrating these details into your PLM environment ensures **robust revision tracking**, **compliance** with industry standards, and a clear **maintenance roadmap**—ultimately boosting **operational efficiency** and **safety** of the Q-01 Quantum Propulsion System.
 ---
 
 ## **7. Structural & Thermal Analysis**
@@ -4570,7 +4744,7 @@ This section expands on Section 10.0 of the PDR (“Preliminary Design Diagrams�
 ```mermaid
 flowchart LR
     A((Tail Cone Bulkhead))
-    B["Primary Frame<br>(MTG-FRAME-Q1-001)"]
+    B["Primary Frame<br> MTG-FRAME-Q1-001"]
     C["Secondary Support Beams"]
     D["Q-01<br>Subsystems"]
 
