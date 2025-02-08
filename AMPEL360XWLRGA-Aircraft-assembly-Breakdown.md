@@ -2049,6 +2049,133 @@ The incorporated geometric and weight parameters are utilized in various aspects
 
 ---
 
+// AMPEL360XWLRGA - Preliminary Point Cloud Visualization - Revision 2
+// GAIA AIR Project - COAFI Framework
+// Document Reference: GPAM-AMPEL-0201-06-003-A - AMPEL360XWLRGA Measurement Point Definitions
+// Data Source: GPAM-AMPEL-0201-06-003-A Measurement Point Table (Estimated Values - 2025-02-16)
+
+// Coordinate System (Defined in GPAM-AMPEL-0201-06-003-A):
+// Origin: Nose Tip (AP)
+// X-axis: Positive towards Tail
+// Y-axis: Positive towards Left Wingtip (viewed from tail)
+// Z-axis: Positive Downwards
+// Units: Meters
+
+// --- Configuration ---
+point_radius = 0.05;        // Radius of the spheres representing points
+label_offset_x = 0.2;       // Offset for labels in X direction
+label_size = 0.15;          // Size of text labels
+axis_length = 30;           // Length of coordinate axes in visualization
+
+// --- Function to create a labeled point ---
+module point(x, y, z, point_id="") {
+    color("red")
+    translate([x, y, z])
+        sphere(r = point_radius);
+
+    if (point_id != "") {
+        color("black")
+        translate([x + label_offset_x, y, z])
+            linear_extrude(0.01) // Small thickness for labels
+                text(point_id, size = label_size);
+    }
+}
+
+// --- Measurement Point Data - UPDATED WITH ESTIMATED DATA (2025-02-16) ---
+// --- Data Source: GPAM-AMPEL-0201-06-003-A Measurement Point Table (Estimated Values) ---
+
+measurement_points = [
+    // Point ID  | Section     | X (m)   | Y (m)   | Z (m)   | Description
+    ["AP1",       "Nose",      6.61,    0.00,    9.40,    "Nose Tip (Origin) - AP1"],
+    ["AP2",       "Nose",      6.55,    0.00,    9.37,    "Nose Tip (Origin) - AP2"],
+    ["C11",       "Wing Root",   22.00,   2.50,    8.00,    "Wing Root Leading Edge (Port)"],
+    ["C12",       "Wing Root",   22.00,   -2.50,   8.00,    "Wing Root Leading Edge (Starboard)"],
+    ["C21",       "Wing",        3.25,    5.00,    6.98,    "Wing Point (Port)"],
+    ["C22",       "Wing",        3.22,    -5.00,   6.96,    "Wing Point (Starboard)"],
+    ["C31",       "Wing",        3.25,    5.50,    6.98,    "Wing Point (Port)"],
+    ["C32",       "Wing",        3.21,    -5.50,   6.94,    "Wing Point (Starboard)"],
+    ["D11",       "Fuselage",    5.05,    1.50,    2.00,    "Fuselage/Landing Gear Point (Port)"],
+    ["D12",       "Fuselage",    5.10,    -1.50,   2.00,    "Fuselage/Landing Gear Point (Starboard)"],
+    ["D21",       "Fuselage",    5.10,    1.60,    2.10,    "Fuselage/Landing Gear Point (Port)"],
+    ["D22",       "Fuselage",    5.12,    -1.60,   2.10,    "Fuselage/Landing Gear Point (Starboard)"],
+    ["D31",       "Fuselage",    5.17,    1.70,    2.20,    "Fuselage/Landing Gear Point (Port)"],
+    ["D32",       "Fuselage",    5.15,    -1.70,   2.20,    "Fuselage/Landing Gear Point (Starboard)"],
+    ["D41",       "Fuselage",    5.22,    1.80,    2.30,    "Fuselage/Landing Gear Point (Port)"],
+    ["D42",       "Fuselage",    5.18,    -1.80,   2.30,    "Fuselage/Landing Gear Point (Starboard)"],
+    ["D51",       "Fuselage",    7.25,    2.00,    2.50,    "Fuselage/Landing Gear Point (Port)"],
+    ["D52",       "Fuselage",    7.31,    -2.00,   2.50,    "Fuselage/Landing Gear Point (Starboard)"],
+    ["F11",       "Fuselage",    2.41,    1.00,    7.50,    "Fuselage Point (Port)"],
+    ["F12",       "Fuselage",    2.45,    -1.00,   7.50,    "Fuselage Point (Starboard)"],
+    ["F21",       "Fuselage",    2.53,    1.10,    7.60,    "Fuselage Point (Port)"],
+    ["F22",       "Fuselage",    2.50,    -1.10,   7.60,    "Fuselage Point (Starboard)"],
+    ["F31",       "Fuselage",    8.50,    1.20,    7.70,    "Aft Fuselage Point (Port)"],
+    ["F32",       "Fuselage",    8.54,    -1.20,   7.70,    "Aft Fuselage Point (Starboard)"],
+    ["F41",       "Fuselage",    8.41,    1.30,    7.80,    "Aft Fuselage Point (Port)"],
+    ["F42",       "Fuselage",    8.38,    -1.30,   7.80,    "Aft Fuselage Point (Starboard)"],
+    ["FT11",      "H. Stab.",    3.72,    2.00,    8.00,    "Horizontal Stabilizer Point (Port)"],
+    ["FT12",      "H. Stab.",    3.71,    -2.00,   8.00,    "Horizontal Stabilizer Point (Starboard)"],
+    ["FT21",      "H. Stab.",    4.53,    2.20,    8.20,    "Horizontal Stabilizer Point (Port)"],
+    ["FT22",      "H. Stab.",    4.52,    -2.20,   8.20,    "Horizontal Stabilizer Point (Starboard)"],
+    ["FT31",      "H. Stab.",    5.17,    2.40,    8.40,    "Horizontal Stabilizer Point (Port)"],
+    ["FT32",      "H. Stab.",    5.16,    -2.40,   8.40,    "Horizontal Stabilizer Point (Starboard)"],
+    ["HT1",       "V. Stab.",    7.67,    0.00,    10.00,   "Vertical Stabilizer Point"],
+    ["HT2",       "V. Stab.",    7.60,    0.00,    10.00,   "Vertical Stabilizer Point"],
+    ["RD11",      "Rudder",      3.98,    1.00,    1.00,    "Rudder/Ground Clearance Point (Port)"],
+    ["RD12",      "Rudder",      4.04,    -1.00,   1.00,    "Rudder/Ground Clearance Point (Starboard)"],
+    ["VT1",       "V. Tail",     17.17,   0.00,    11.00,   "Vertical Tail Point"],
+    ["VT2",       "V. Tail",     17.10,   0.00,    11.00,   "Vertical Tail Point"],
+    ["BF11",      "Belly Fairing",2.44,    2.00,    1.50,    "Belly Fairing (Port)"],
+    ["BF12",      "Belly Fairing",2.46,    -2.00,   1.50,    "Belly Fairing (Starboard)"],
+    ["BF21",      "Belly Fairing",1.93,    2.20,    1.40,    "Belly Fairing (Port)"],
+    ["BF22",      "Belly Fairing",1.93,    -2.20,   1.40,    "Belly Fairing (Starboard)"],
+    ["BF31",      "Belly Fairing",3.09,    2.50,    1.60,    "Belly Fairing (Port)"],
+    ["BF32",      "Belly Fairing",3.09,    -2.50,   1.60,    "Belly Fairing (Starboard)"],
+    ["WL11",      "Water Line",  9.40,    0,       9.40,    "Water Line 1 - Placeholder Point"], // Placeholder Point
+    ["WL12",      "Water Line",  9.37,    0,       9.37,    "Water Line 1 - Placeholder Point"], // Placeholder Point
+    ["WL21",      "Water Line",  6.98,    0,       6.98,    "Water Line 2 - Placeholder Point"], // Placeholder Point
+    ["WL22",      "Water Line",  6.96,    0,       6.96,    "Water Line 2 - Placeholder Point"], // Placeholder Point
+    ["CP11",      "Cockpit",     5.84,    1.2,     8.5,     "Cockpit element (Port) - Estimated"],
+    ["CP12",      "Cockpit",     5.90,    -1.2,    8.5,     "Cockpit element (Starboard) - Estimated"],
+    ["FDL",       "Datum Line", -2.00,    0.00,    0.00,    "Fuselage Datum Line"],
+    ["MRW",       "Misc.",       0,       0,       0,       "Maximum Ramp Weight (135,000 kg / 268,900 kg)"], // Not a coordinate
+];
+
+
+// --- Generate Points from Data ---
+for (i = [0 : len(measurement_points) - 1]) {
+    point_id       = measurement_points[i][0];
+    section        = measurement_points[i][1];
+    x_coord        = measurement_points[i][2];
+    y_coord        = measurement_points[i][3];
+    z_coord        = measurement_points[i][4];
+    description    = measurement_points[i][5];
+
+    if (section != "Misc.") { // Skip "Misc." section as it's not a point
+        point(x_coord, y_coord, z_coord, point_id);
+    }
+}
+
+// --- Coordinate System Axes (for visual reference) ---
+color("blue")
+linear_extrude(0.1)
+translate([0,0,0]) cylinder(r=0.02, h=axis_length, center=false); // X-axis as cylinder
+
+color("green")
+linear_extrude(0.1)
+rotate([0, 0, 90])  // Rotate for Y-axis
+translate([0,0,0]) cylinder(r=0.02, h=axis_length, center=false); // Y-axis as cylinder
+
+color("purple")
+linear_extrude(0.1)
+rotate([90, 0, 0]) // Rotate for Z-axis
+translate([0,0,0]) cylinder(r=0.02, h=axis_length, center=false); // Z-axis as cylinder
+
+
+// --- Origin Marker ---
+color("red")
+translate([0, 0, 0])
+    sphere(r = 0.2); // Mark Origin more clearly
+
 ## Final Notes
 
 By systematically integrating **volumes**, **lengths**, **surface areas**, **nominal weights free of payload**, and other **essential geometric parameters** into the hierarchical assembly breakdown:
