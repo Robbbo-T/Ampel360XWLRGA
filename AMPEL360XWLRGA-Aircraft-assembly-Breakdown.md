@@ -1,4 +1,4 @@
-```dtd
+
 # EXTENDED VERSION: AMPEL360XWLRGA Aircraft Assembly Breakdown – Product Tree Breakdown
 
 # EXTENDED VERSION: AMPEL360XWLRGA Aircraft Assembly Breakdown – Product Tree Breakdown
@@ -6,14 +6,14 @@
 **Aircraft Type Designation:** AMPEL-360-QSerie
 
 ---
-
+```dtd
 ## Product Tree Breakdown
 
 This section presents a hierarchical breakdown of the **AMPEL360XWLRGA** aircraft, organized as a product tree. Each level represents a subassembly or component, with associated **Part Numbers (P/N)** and **brief descriptions**. This structure is designed to be compatible with **Product Lifecycle Management (PLM)** systems and supports efficient **configuration management**.
 
 **Top Level Assembly:** AMPEL360XWLRGA Aircraft  
 **P/N:** GAIAPULSE-AM-ASSY-00001-Q
-
+```
 ```xml
 <details>
   <summary><b>1.0 Fuselage Assembly</b> – P/N: GPAM-AMPEL-0201-53-ASSY</summary>
@@ -810,7 +810,7 @@ This section presents a hierarchical breakdown of the **AMPEL360XWLRGA** aircraf
       </details>
    </details>
 </details>
-
+```
 ---
 
 ## 14. Feedback and Revision History
