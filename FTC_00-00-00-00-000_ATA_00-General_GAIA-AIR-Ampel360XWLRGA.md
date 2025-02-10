@@ -1244,7 +1244,7 @@ If you need any further customization, specific examples, additional visual aids
    - Archive any resulting publications (papers, white papers, technical briefs) in a dedicated folder (`docs/papers/`) and link them to the original prompt discussions.
 3. **Industry and Institutional Communication:**  
    - Record case studies and success stories in internal communications to demonstrate improvements driven by these prompts.
-   - Emphasize “Big Data dal cuore scientifico e piubblicista” by using data analytics to show scientific rigor and impact.
+   - Emphasize “Big Data dal cuore scientifico e pubblicista” by using data analytics to show scientific rigor and impact.
 4. **Implementation Monitoring:**  
    - Establish a dashboard (via GitHub Projects or an equivalent tool) to track progress and measure efficiency gains.
    - Use analytics (e.g., commit frequency, issue resolution times) and user feedback to continuously refine the prompting process.
