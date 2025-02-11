@@ -2,6 +2,8 @@ import numpy as np
 import dash
 from dash import dcc, html
 from dash.dependencies import Input, Output
+from scipy.cluster.hierarchy import dendrogram, linkage, fcluster
+import matplotlib.pyplot as plt
 
 class DigitalTwin:
     def __init__(self, model):
@@ -89,6 +91,16 @@ class DigitalTwin:
 
         return flagged_info
 
+    def hierarchical_clustering(self, data, method='ward'):
+        Z = linkage(data, method=method)
+        return Z
+
+    def plot_dendrogram(self, Z):
+        plt.figure(figsize=(10, 7))
+        plt.title("Dendrogram")
+        dendrogram(Z)
+        plt.show()
+
     def update_graphs(self, n_intervals):
         """
         Called every interval to:
@@ -99,6 +111,9 @@ class DigitalTwin:
         """
         simulated_data = self.simulate_data()
         flagged_info = self.analyze_data(simulated_data)
+
+        # Perform hierarchical clustering
+        Z = self.hierarchical_clustering(simulated_data)
 
         # Prepare the main simulation figure
         # For demonstration, plot the first two columns of the simulated data
@@ -135,6 +150,9 @@ class DigitalTwin:
             'layout': {'title': 'Flagged Correlation Events Over Time'}
         }
 
+        # Plot dendrogram
+        self.plot_dendrogram(Z)
+
         return figure_simulation, figure_flagged
 
     def visualize_results(self):
@@ -159,4 +177,3 @@ if __name__ == "__main__":
     # to push fresh sensor readings or updates.
 
     dt.visualize_results()
-
