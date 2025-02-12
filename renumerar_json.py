@@ -22,6 +22,17 @@ def validar_renumeracion(renumeracion_ids, renumeracion_numeros):
     # Verificar números de capítulos
     if len(set(renumeracion_numeros.values())) != len(renumeracion_numeros):
         raise ValueError("La renumeración de números de capítulos contiene números duplicados.")
+    
+    # Validar referencias cruzadas
+    validar_referencias_cruzadas(renumeracion_ids)
+
+def validar_referencias_cruzadas(renumeracion_ids):
+    """
+    Valida que todas las referencias cruzadas en el mapeo de renumeración sean consistentes.
+    """
+    for old_id, new_id in renumeracion_ids.items():
+        if old_id == new_id:
+            raise ValueError(f"Referencia cruzada inválida: {old_id} no puede ser igual a {new_id}.")
 
 def extraer_ids(data):
     """
@@ -45,6 +56,24 @@ def extraer_ids(data):
 
     return ids
 
+def resolver_conflictos_referencias_cruzadas(cross_references, renumeracion_ids):
+    """
+    Resuelve conflictos en las referencias cruzadas.
+    """
+    nueva_cross_ref = {}
+    for old_id, referencias in cross_references.items():
+        nuevo_id = renumeracion_ids.get(old_id, old_id)
+        
+        # Validar que todas las referencias existan en el mapeo o en los IDs existentes
+        for ref in referencias:
+            if ref not in renumeracion_ids:
+                raise ValueError(f"Referencia cruzada inválida: {ref} no está en el mapeo de renumeración.")
+        
+        # Renumerar las referencias
+        nueva_referencias = [renumeracion_ids.get(ref, ref) for ref in referencias]
+        nueva_cross_ref[nuevo_id] = nueva_referencias
+    return nueva_cross_ref
+
 def renumerar_capitulos_y_referencias(data, renumeracion_ids, renumeracion_numeros):
     """
     Renumera los capítulos y actualiza las referencias cruzadas en todo el documento JSON.
@@ -56,21 +85,8 @@ def renumerar_capitulos_y_referencias(data, renumeracion_ids, renumeracion_numer
     def procesar_seccion(seccion):
         for clave, contenido in seccion.items():
             if clave == "Cross-Reference":
-                # Actualizar referencias cruzadas
-                nueva_cross_ref = {}
-                for old_id, referencias in contenido.items():
-                    nuevo_id = renumeracion_ids.get(old_id, old_id)
-                    
-                    # Validar que todas las referencias existan en el mapeo o en los IDs existentes
-                    for ref in referencias:
-                        if ref not in renumeracion_ids and ref not in ids_existentes:
-                            raise ValueError(f"Referencia cruzada inválida: {ref} no está en el mapeo de renumeración ni existe en el documento.")
-                    
-                    # Renumerar las referencias
-                    nueva_referencias = [renumeracion_ids.get(ref, ref) for ref in referencias]
-                    nueva_cross_ref[nuevo_id] = nueva_referencias
-                # Actualizar la sección de Cross-Reference con las nuevas referencias
-                seccion["Cross-Reference"] = nueva_cross_ref
+                # Resolver conflictos en las referencias cruzadas
+                seccion["Cross-Reference"] = resolver_conflictos_referencias_cruzadas(contenido, renumeracion_ids)
             elif isinstance(contenido, list):
                 for capitulo in contenido:
                     if isinstance(capitulo, dict) and "id" in capitulo and "Chapter" in capitulo:
@@ -385,4 +401,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
