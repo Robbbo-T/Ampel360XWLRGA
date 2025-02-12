@@ -1,4 +1,3 @@
-
 site_name: 'GAIA AIR Documentation'
 theme:
   name: 'material'
@@ -71,7 +70,7 @@ nav:
       - ATA 104 - Sistemas de Gestión Térmica: especificaciones/ata104_thermal_management.md
       - ATA 105 - Optimización y Eficiencia del Sistema: especificaciones/ata105_system_optimization.md
       - Quantum State Modulator (QSM): especificaciones/qsm.md
-- FIONDA:
+  - FIONDA:
     description: "Fields Intersections Orchestrating by Nuclear Architecture"
     items:
       - [71.QP-01-01 Particle Source (PS)](especificaciones/71_QP-01-01_Particle_Source_PS.md)
@@ -94,3 +93,43 @@ nav:
       - Fuentes y Referencias: referencias/fuentes_citadas.md
   - Contacto:
       - Información de Contacto: contacto/contacto.md
+  - ATA 30 - Protección Contra Hielo y Lluvia:
+      - "30-00-00 Generalidades de Protección Contra Hielo y Lluvia": ATA_30-00-00_PROTECCION_CONTRA_HIELO_Y_LLUVIA/30-00-00_Generalidades_de_Proteccion_Contra_Hielo_y_Lluvia.md
+      - "30-10-00 Perfil": ATA_30-00-00_PROTECCION_CONTRA_HIELO_Y_LLUVIA/30-10-00_Perfil.md
+      - "30-20-00 Aspiración de Aire": ATA_30-00-00_PROTECCION_CONTRA_HIELO_Y_LLUVIA/30-20-00_Aspiracion_de_Aire.md
+      - "30-30-00 Pitot y Estática": ATA_30-00-00_PROTECCION_CONTRA_HIELO_Y_LLUVIA/30-30-00_Pitot_y_Estatica.md
+      - "30-40-00 Ventanas, Parabrisas y Puertas": ATA_30-00-00_PROTECCION_CONTRA_HIELO_Y_LLUVIA/30-40-00_Ventanas_Parabrisas_y_Puertas.md
+      - "30-50-00 Antenas y Radomos": ATA_30-00-00_PROTECCION_CONTRA_HIELO_Y_LLUVIA/30-50-00_Antenas_y_Radomos.md
+      - "30-60-00 Hélices/Rotores": ATA_30-00-00_PROTECCION_CONTRA_HIELO_Y_LLUVIA/30-60-00_Hélices_Rotores.md
+      - "30-70-00 Líneas de Agua": ATA_30-00-00_PROTECCION_CONTRA_HIELO_Y_LLUVIA/30-70-00_Líneas_de_Agua.md
+      - "30-80-00 Detección": ATA_30-00-00_PROTECCION_CONTRA_HIELO_Y_LLUVIA/30-80-00_Detección.md
+  - ATA 31 - Sistemas de Indicación y Registro:
+      - "31-00-00 Generalidades de Sistemas de Indicacion y Registro": ATA_31-00-00_SISTEMAS_DE_INDICACION_Y_REGISTRO/31-00-00_Generalidades_de_Sistemas_de_Indicacion_y_Registro.md
+      - "31-10-00 Paneles de Control e Instrumentación": ATA_31-00-00_SISTEMAS_DE_INDICACION_Y_REGISTRO/31-10-00_Paneles_de_Control_e_Instrumentacion.md
+      - "31-20-00 Instrumentos Independientes": ATA_31-00-00_SISTEMAS_DE_INDICACION_Y_REGISTRO/31-20-00_Instrumentos_Independientes.md
+      - "31-30-00 Registradoras": ATA_31-00-00_SISTEMAS_DE_INDICACION_Y_REGISTRO/31-30-00_Registradoras.md
+      - "31-40-00 Ordenadores Centrales": ATA_31-00-00_SISTEMAS_DE_INDICACION_Y_REGISTRO/31-40-00_Ordenadores_Centrales.md
+      - "31-50-00 Sistemas de Alarma Central": ATA_31-00-00_SISTEMAS_DE_INDICACION_Y_REGISTRO/31-50-00_Sistemas_de_Alarma_Central.md
+      - "31-60-00 Sistemas de Exposición Central": ATA_31-00-00_SISTEMAS_DE_INDICACION_Y_REGISTRO/31-60-00_Sistemas_de_Exposicion_Central.md
+      - "31-70-00 Sistemas de Reporte Automático de Datos": ATA_31-00-00_SISTEMAS_DE_INDICACION_Y_REGISTRO/31-70-00_Sistemas_de_Reporte_Automatico_de_Datos.md
+  - ATA 32 - Tren de Aterrizaje:
+      - "32-00-00 Tren de Aterrizaje": ATA_32-00-00_TREN_DE_ATERRIZAJE/32-00-00_Tren_de_Aterrizaje.md
+      - "32-10-00 Tren de Aterrizaje Principal y Puertas": ATA_32-00-00_TREN_DE_ATERRIZAJE/32-10-00_Tren_de_Aterrizaje_Principal_y_Puertas.md
+      - "32-20-00 Tren de Aterrizaje de Nariz": ATA_32-00-00_TREN_DE_ATERRIZAJE/32-20-00_Tren_de_Aterrizaje_de_Nariz.md
+      - "32-30-00 Sistemas de Control del Tren de Aterrizaje": ATA_32-00-00_TREN_DE_ATERRIZAJE/32-30-00_Sistemas_de_Control_del_Tren_de_Aterrizaje.md
+      - "32-40-00 Sistema de Frenado del Tren de Aterrizaje": ATA_32-00-00_TREN_DE_ATERRIZAJE/32-40-00_Sistema_de_Frenado_del_Tren_de_Aterrizaje.md
+      - "32-50-00 Sistema de Retracción del Tren de Aterrizaje": ATA_32-00-00_TREN_DE_ATERRIZAJE/32-50-00_Sistema_de_Retraccion_del_Tren_de_Aterrizaje.md
+      - "32-60-00 Puertas del Tren de Aterrizaje": ATA_32-00-00_TREN_DE_ATERRIZAJE/32-60-00_Puertas_del_Tren_de_Aterrizaje.md
+      - "32-70-00 Indicadores y Sistemas de Alerta del Tren de Aterrizaje": ATA_32-00-00_TREN_DE_ATERRIZAJE/32-70-00_Indicadores_y_Sistemas_de_Alerta_del_Tren_de_Aterrizaje.md
+      - "32-80-00 Sistemas Hidráulicos para el Tren de Aterrizaje": ATA_32-00-00_TREN_DE_ATERRIZAJE/32-80-00_Sistemas_Hidraulicos_para_el_Tren_de_Aterrizaje.md
+      - "32-90-00 Sistemas de Lubricación del Tren de Aterrizaje": ATA_32-00-00_TREN_DE_ATERRIZAJE/32-90-00_Sistemas_de_Lubricacion_del_Tren_de_Aterrizaje.md
+      - "32-100-00 Sistemas de Respaldo y Emergencia del Tren de Aterrizaje": ATA_32-00-00_TREN_DE_ATERRIZAJE/32-100-00_Sistemas_de_Respaldo_y_Emergencia_del_Tren_de_Aterrizaje.md
+      - "32-110-00 FIN, Consumibles y Expendables": ATA_32-00-00_TREN_DE_ATERRIZAJE/32-110-00_FIN_Consumibles_y_Expendables.md
+  - Manual Completo ATA 32-00-00 Tren de Aterrizaje:
+      - "Tabla de Contenidos": Manual_Completo_ATA_32-00-00_TREN_DE_ATERRIZAJE/Tabla_de_Contenidos.md
+      - "Gestion de CSN": Manual_Completo_ATA_32-00-00_TREN_DE_ATERRIZAJE/Gestion_de_CSN.md
+      - "Gestion de FIN": Manual_Completo_ATA_32-00-00_TREN_DE_ATERRIZAJE/Gestion_de_FIN.md
+      - "Consumibles y Expendables": Manual_Completo_ATA_32-00-00_TREN_DE_ATERRIZAJE/Consumibles_y_Expendables.md
+      - "Procedimientos de Mantenimiento": Manual_Completo_ATA_32-00-00_TREN_DE_ATERRIZAJE/Procedimientos_de_Mantenimiento.md
+      - "Seguridad y Precauciones": Manual_Completo_ATA_32-00-00_TREN_DE_ATERRIZAJE/Seguridad_y_Precauciones.md
+      - "Anexos": Manual_Completo_ATA_32-00-00_TREN_DE_ATERRIZAJE/Anexos.md
