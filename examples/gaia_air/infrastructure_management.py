@@ -15,12 +15,14 @@ class InfrastructureManagement:
         self.app.layout = html.Div(children=[
             html.H1(children='Infrastructure Management'),
             dcc.Graph(id='resource-allocation-graph'),
+            dcc.Graph(id='maintenance-scheduling-graph', style={'marginTop': '50px'}),
             dcc.Interval(id='interval-component', interval=1*1000, n_intervals=0)
         ])
         self.app.callback(
-            Output('resource-allocation-graph', 'figure'),
+            [Output('resource-allocation-graph', 'figure'),
+             Output('maintenance-scheduling-graph', 'figure')],
             [Input('interval-component', 'n_intervals')]
-        )(self.update_graph)
+        )(self.update_graphs)
 
     def monitor_component(self, component_id, status):
         timestamp = datetime.now().isoformat()
@@ -49,14 +51,25 @@ class InfrastructureManagement:
         print("All maintenance tasks automated.")
         return maintenance_tasks
 
-    def update_graph(self, n_intervals):
+    def ai_driven_scheduling(self, tasks):
+        # Placeholder for AI-driven scheduling logic
+        scheduled_tasks = sorted(tasks, key=lambda x: x['deadline'])
+        print("AI-driven scheduling of tasks:", scheduled_tasks)
+        return scheduled_tasks
+
+    def enhance_visualization(self, data):
+        # Placeholder for AI-driven data visualization enhancement logic
+        enhanced_visualization = {"graph_1": "Enhanced Graph 1", "graph_2": "Enhanced Graph 2"}
+        return enhanced_visualization
+
+    def update_graphs(self, n_intervals):
         resources = [
             {"id": "R1", "priority": 2},
             {"id": "R2", "priority": 1},
             {"id": "R3", "priority": 3}
         ]
         optimized_resources = self.optimize_resource_allocation(resources)
-        figure = {
+        figure_resource_allocation = {
             'data': [
                 {'x': [res['id'] for res in optimized_resources], 'y': [res['priority'] for res in optimized_resources], 'type': 'bar', 'name': 'Resource Allocation'}
             ],
@@ -64,7 +77,23 @@ class InfrastructureManagement:
                 'title': 'Optimized Resource Allocation'
             }
         }
-        return figure
+
+        tasks = [
+            {"id": "T1", "deadline": "2025-01-01"},
+            {"id": "T2", "deadline": "2024-12-31"},
+            {"id": "T3", "deadline": "2025-01-05"}
+        ]
+        scheduled_tasks = self.ai_driven_scheduling(tasks)
+        figure_maintenance_scheduling = {
+            'data': [
+                {'x': [task['id'] for task in scheduled_tasks], 'y': [task['deadline'] for task in scheduled_tasks], 'type': 'bar', 'name': 'Maintenance Scheduling'}
+            ],
+            'layout': {
+                'title': 'AI-Driven Maintenance Scheduling'
+            }
+        }
+
+        return figure_resource_allocation, figure_maintenance_scheduling
 
     def visualize_resource_allocation(self):
         self.app.run_server(debug=True)
