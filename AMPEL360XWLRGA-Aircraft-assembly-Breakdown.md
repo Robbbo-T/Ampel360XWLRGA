@@ -1,9 +1,9 @@
-
 # EXTENDED VERSION: AMPEL360XWLRGA Aircraft Assembly Breakdown – Product Tree Breakdown
 
 **Aircraft Type Designation:** AMPEL-360-QSerie
 
-http://127.0.0.1:8050/
+![AMPEL360XWLRGA](https://camo.githubusercontent.com/0ac12a49298bfa8b91eebd309bb43cea96f27e2b72d083fe5c595e0d23df8ae9/68747470733a2f2f6578616d706c652e636f6d2f72656e646572696e675f616d70656c3336302e6a7067)
+
 ---
 
 ## Product Tree Breakdown
