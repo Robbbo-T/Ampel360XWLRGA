@@ -4,6 +4,8 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
+from scipy.cluster.hierarchy import dendrogram, linkage, fcluster
+import matplotlib.pyplot as plt
 
 class MonitoringTools:
     def __init__(self):
@@ -37,8 +39,26 @@ class MonitoringTools:
             aggregated_data[source].append(data['value'])
         return aggregated_data
 
+    def hierarchical_clustering(self, data, method='ward'):
+        Z = linkage(data, method=method)
+        return Z
+
+    def plot_dendrogram(self, Z):
+        plt.figure(figsize=(10, 7))
+        plt.title("Dendrogram")
+        dendrogram(Z)
+        plt.show()
+
     def update_graph(self, n_intervals):
         aggregated_data = self.aggregate_telemetry()
+        data = np.array([values for values in aggregated_data.values()])
+
+        # Perform hierarchical clustering
+        Z = self.hierarchical_clustering(data)
+
+        # Plot dendrogram
+        self.plot_dendrogram(Z)
+
         figure = {
             'data': [
                 {'x': list(range(len(values))), 'y': values, 'type': 'line', 'name': source}
