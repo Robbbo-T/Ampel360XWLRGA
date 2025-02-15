@@ -520,7 +520,7 @@ This section presents a hierarchical breakdown of the **AMPEL360XWLRGA** aircraf
 </details>
 
 <details>
-<summary><b>4.0 Empennage Assembly</b> – P/N: GPAM-AMPEL-0201-55-ASSY - Weight: [Placeholder:Weight]</summary>
+<summary><b>4.0 Empennage Assembly</summary>
 - **Description:** Tail unit that includes horizontal and vertical stabilizers, rudder, and elevator.
 - **Unique Identifier:** EMP-001
 - **Date of Last Revision:** [Placeholder: Date]
@@ -544,7 +544,7 @@ This section presents a hierarchical breakdown of the **AMPEL360XWLRGA** aircraf
                  - **Configuration:** { "Type": "Basic" }
             </details>
             <details>
-                 <summary><b>4.1.2 Vertical Stabilizer Structure</b> – P/N: GPAM-AMPEL-0201-55-001-002</summary>
+                 <summary><b>4.1.2 Vertical Stabilizer Structure</summary>
                    - **Description**: Internal structure of the Vertical Stabilizer.
                    - **Unique Identifier**: VSS-001
                     - **Material:** [Placeholder: Material]
