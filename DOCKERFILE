@@ -1,0 +1,52 @@
+# ------------------------------
+# Etapa 1: Clonar el repositorio
+# ------------------------------
+FROM alpine/git as clone
+WORKDIR /src
+RUN git clone https://github.com/Robbbo-T/AMPEL360XWLRGA.git .
+
+# ------------------------------
+# Etapa 2: Construcción del entorno
+# ------------------------------
+FROM python:3.9-slim
+WORKDIR /app
+
+# ------------------------------
+# Optimización del caché: Copiar primero requirements.txt para evitar reinstalaciones innecesarias
+# ------------------------------
+COPY --from=clone /src/requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+# ------------------------------
+# Copiar el código de la aplicación después de instalar dependencias
+# ------------------------------
+COPY --from=clone /src ./
+
+# ------------------------------
+# Definir variables de entorno para la aplicación
+# ------------------------------
+ENV APP_ENV=production
+ENV DEBUG=false
+
+# ------------------------------
+# Exponer el puerto necesario para la aplicación
+# ------------------------------
+EXPOSE 5000
+
+# ------------------------------
+# Configurar healthcheck para verificar el estado del contenedor
+# ------------------------------
+HEALTHCHECK --interval=30s --timeout=10s --start-period=10s --retries=3 \
+  CMD curl -f http://localhost:5000/health || exit 1
+
+# ------------------------------
+# Agregar metadatos a la imagen
+# ------------------------------
+LABEL maintainer="tu_email@dominio.com" \
+      version="1.0" \
+      description="Imagen Docker para el proyecto AMPEL360XWLRGA"
+
+# ------------------------------
+# Definir el comando de inicio de la aplicación
+# ------------------------------
+CMD ["python", "app.py"]
