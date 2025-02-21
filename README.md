@@ -8,6 +8,29 @@ Below is an **interactive Markdown** version of the ATA breakdown for **AMPEL360
 
 # Part II: GAIA PULSE AIR MODULES (GPAM) – Atmospheric Operations
 
+```mermaid
+flowchart TD
+    H2["Almacenamiento H₂ Líquido\n(-253°C)"] --> |"Alimentación\nCriogénica"| FC["Celdas de Combustible\n(Generación Eléctrica)"]
+    H2 --> |"Alimentación\nde Combustible"| RDE["Motor de Detonación\nRotativa (RDE)"]
+    
+    FC --> |"Energía\nEléctrica"| MS["Motores\nSuperconductores"]
+    MS --> |"Potencia\nMecánica"| VED["Ventiladores Eléctricos\nDistribuidos (VED)"]
+    
+    RDE --> |"Empuje\nPrincipal"| MT["Turbofan Principal"]
+    
+    IA["Sistema de Control IA"] --> |"Optimización"| RDE
+    IA --> |"Control de\nEficiencia"| FC
+    IA --> |"Distribución\nde Potencia"| MS
+    
+    CA["Captación\nAtmosférica"] --> |"Recolección\nH₂O"| RG["Regeneración\nde H₂"]
+    RG --> |"H₂\nSupplementario"| H2
+
+    style H2 fill:#e6f3ff
+    style RDE fill:#ffecb3
+    style FC fill:#e8f5e9
+    style MS fill:#f3e5f5
+    style IA fill:#fce4ec
+```
 ## 2.1 AMPEL360XWLRGA (Advanced Aircraft Systems)
 
 - **Aircraft Type Designation:** **AMPEL-360**  
