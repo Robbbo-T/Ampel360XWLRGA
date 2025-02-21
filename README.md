@@ -194,9 +194,59 @@ El Sistema Propulsivo AMPEL360 representa una revolución en la aviación comerc
 
 ```mermaid
 flowchart TD
-    H2["Almacenamiento H₂ Líquido\n(-253°C)"] --> |"Alimentación\nCriogénica"| FC["Celdas de Combustible\n(Generación Eléctrica)"]
-    H2 --> |"Alimentación\nde Combustible"| RDE["Motor de Detonación\nRotativa (RDE)"]
-    FC --> |"Energía\nEléctrica"| MS["Motores\nSuperconductores"]
+    subgraph Almacenamiento
+        H2["Almacenamiento H₂ Líquido\n-253°C"]
+        RG["Sistema de\nRegeneración H₂"]
+        MC["Captación de\nHumedad Atmosférica"]
+    end
+
+    subgraph Propulsión
+        RDE["Motor de Detonación\nRotativa RDE"]
+        MT["Turbofan Principal"]
+        VED["Ventiladores Eléctricos\nDistribuidos"]
+    end
+
+    subgraph "Generación Eléctrica"
+        FC["Celdas de Combustible\nGeneración Eléctrica"]
+        MS["Motores\nSuperconductores"]
+        DC["Sistema de Distribución\ny Control"]
+    end
+
+    subgraph "Control Inteligente"
+        IA["Sistema IA\nControl Central"]
+        OC["Optimización de\nCombustión"]
+        GE["Gestión de\nEnergía"]
+    end
+
+    H2 --> |"Alimentación\nCriogénica"| FC
+    H2 --> |"Alimentación\nde Combustible"| RDE
+    FC --> |"Energía\nEléctrica"| DC
+    DC --> |"Potencia\nControlada"| MS
+    MS --> |"Energía\nMecánica"| VED
+    RDE --> |"Empuje\nPrincipal"| MT
+    
+    MC --> |"H₂O"| RG
+    RG --> |"H₂\nRegenerado"| H2
+
+    IA --> |"Control"| OC
+    IA --> |"Optimización"| GE
+    OC --> |"Parámetros"| RDE
+    GE --> |"Gestión"| DC
+
+    style H2 fill:#e6f3ff,stroke:#333
+    style RDE fill:#ffecb3,stroke:#333
+    style FC fill:#e8f5e9,stroke:#333
+    style MS fill:#f3e5f5,stroke:#333
+    style IA fill:#fce4ec,stroke:#333
+    style DC fill:#fff3e0,stroke:#333
+    style VED fill:#e3f2fd,stroke:#333
+    style MT fill:#fff8e1,stroke:#333
+    style RG fill:#f1f8e9,stroke:#333
+    style MC fill:#e8eaf6,stroke:#333
+    style OC fill:#fce4ec,stroke:#333
+    style GE fill:#f3e5f5,stroke:#333
+
+    classDef default font-size:12px
 ```
 
 ## 📊 Especificaciones Técnicas
