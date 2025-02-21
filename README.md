@@ -8,29 +8,121 @@ Below is an **interactive Markdown** version of the ATA breakdown for **AMPEL360
 
 # Part II: GAIA PULSE AIR MODULES (GPAM) – Atmospheric Operations
 
+# 🚀 Sistema Propulsivo AMPEL360
+
+[![Estado del Proyecto](https://img.shields.io/badge/Estado-En%20Desarrollo-yellow)](https://github.com/AMPEL360/propulsion-system)
+[![Licencia](https://img.shields.io/badge/Licencia-MIT-blue.svg)](LICENSE)
+[![Documentación](https://img.shields.io/badge/Docs-Wiki-green.svg)](docs/)
+
+Sistema de propulsión de aviación comercial de próxima generación basado en tecnología HYDROIAGENCY, que combina combustión de hidrógeno, propulsión eléctrica y control por IA para lograr vuelos de largo alcance con cero emisiones.
+
+## 📋 Tabla de Contenidos
+
+- [Visión General](#visión-general)
+- [Tecnologías Clave](#tecnologías-clave)
+- [Arquitectura del Sistema](#arquitectura-del-sistema)
+- [Especificaciones Técnicas](#especificaciones-técnicas)
+- [Instalación y Configuración](#instalación-y-configuración)
+- [Documentación](#documentación)
+- [Contribución](#contribución)
+- [Licencia](#licencia)
+- [Contacto](#contacto)
+
+## 🌟 Visión General
+
+El Sistema Propulsivo AMPEL360 representa una revolución en la aviación comercial, ofreciendo:
+
+- **Cero Emisiones**: Operación 100% basada en hidrógeno
+- **Alta Eficiencia**: +40% vs motores convencionales
+- **Largo Alcance**: Capacidad para vuelos de 12,000+ km
+- **Control Inteligente**: Optimización en tiempo real mediante IA
+
+## 🔧 Tecnologías Clave
+
+### 1. Sistema de Hidrógeno
+- Almacenamiento criogénico a -253°C
+- Regeneración de H₂ mediante captación atmosférica
+- Sistema de distribución de combustible optimizado por IA
+
+### 2. Propulsión Híbrida
+- Motor de Detonación Rotativa (RDE)
+- Celdas de combustible de alta eficiencia
+- Ventiladores Eléctricos Distribuidos (VED)
+- Motores superconductores
+
+### 3. Control Inteligente
+- Optimización de combustión en tiempo real
+- Gestión predictiva de mantenimiento
+- Distribución dinámica de potencia
+
+## 🏗 Arquitectura del Sistema
+
 ```mermaid
 flowchart TD
     H2["Almacenamiento H₂ Líquido\n(-253°C)"] --> |"Alimentación\nCriogénica"| FC["Celdas de Combustible\n(Generación Eléctrica)"]
     H2 --> |"Alimentación\nde Combustible"| RDE["Motor de Detonación\nRotativa (RDE)"]
-    
     FC --> |"Energía\nEléctrica"| MS["Motores\nSuperconductores"]
-    MS --> |"Potencia\nMecánica"| VED["Ventiladores Eléctricos\nDistribuidos (VED)"]
-    
-    RDE --> |"Empuje\nPrincipal"| MT["Turbofan Principal"]
-    
-    IA["Sistema de Control IA"] --> |"Optimización"| RDE
-    IA --> |"Control de\nEficiencia"| FC
-    IA --> |"Distribución\nde Potencia"| MS
-    
-    CA["Captación\nAtmosférica"] --> |"Recolección\nH₂O"| RG["Regeneración\nde H₂"]
-    RG --> |"H₂\nSupplementario"| H2
-
-    style H2 fill:#e6f3ff
-    style RDE fill:#ffecb3
-    style FC fill:#e8f5e9
-    style MS fill:#f3e5f5
-    style IA fill:#fce4ec
 ```
+
+## 📊 Especificaciones Técnicas
+
+| Característica | Especificación |
+|----------------|----------------|
+| Empuje | 350+ kN |
+| Eficiencia | +40% vs convencional |
+| Emisiones | 0 CO₂ |
+| Alcance | 12,000+ km |
+| Ruido | -50% vs turbofan actual |
+
+## 🛠 Instalación y Configuración
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/AMPEL360/propulsion-system.git
+
+# Instalar dependencias
+cd propulsion-system
+npm install
+
+# Ejecutar simulación
+npm run simulate
+```
+
+## 📚 Documentación
+
+La documentación completa está disponible en nuestra [Wiki](docs/). Incluye:
+
+- Guías de instalación detalladas
+- Documentación técnica
+- Ejemplos de implementación
+- Guías de mantenimiento
+
+## 🤝 Contribución
+
+¡Agradecemos las contribuciones! Por favor, lea nuestra [Guía de Contribución](CONTRIBUTING.md) antes de enviar pull requests.
+
+1. Fork del repositorio
+2. Crear rama de características (`git checkout -b feature/AmazingFeature`)
+3. Commit de cambios (`git commit -m 'Add: Amazing Feature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abrir Pull Request
+
+## 📄 Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para detalles.
+
+## 📧 Contacto
+
+AMPEL360 - [@AMPEL360](https://twitter.com/AMPEL360)
+
+Email Proyecto: propulsion@ampel360.com
+
+Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.com/AMPEL360/propulsion-system)
+
+---
+
+*Desarrollado con* ❤️ *por el equipo AMPEL360*
+
 ## 2.1 AMPEL360XWLRGA (Advanced Aircraft Systems)
 
 - **Aircraft Type Designation:** **AMPEL-360**  
