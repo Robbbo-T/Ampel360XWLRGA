@@ -1,347 +1,103 @@
-# 🌟 AMPEL360 - Framework de Integración Cuántica
-> "Más que analizar a las personas para venderles cosas, analicemos las máquinas y procesos para eliminar la contaminación"
+<details>ks# Part II: GAIA PULSE AIR MODULES (GPAM) - Atmospheric Operations
 
-## 📊 Estructura ATA con Integración SINCROTONE
+This section details the core identity and technical aspects of GAIA PULSE AIR. It includes the design, operation, and supporting documentation for the AMPEL360XWLRGA aircraft and associated modules. The documentation is structured following the COAFI framework, with collapsible sections for each topic.
+
+**Aircraft Type Designation:** AMPEL-360\
+**P/N (Top-Level Assembly - for documentation purposes):** GAIAPULSE-AM-ASSY-00001-Q
 
 <details>
-<summary>ATA 21 - Aire Acondicionado y Presurización</summary>
-
-### Principios de Coherencia Cuántica
-- **Resonancia Armónica**
-  - Sincronización de flujos de aire mediante patrones cuánticos
-  - Optimización energética basada en estados coherentes
-- **Machine Ingenuity**
-  - Sistemas auto-adaptativos de control térmico
-  - Análisis predictivo de patrones de presurización
-
-### Implementación SINCROTONE
-- Monitoreo cuántico de calidad del aire
-- Sistemas de filtración basados en resonancia molecular
+  <summary>🛠️ Airframe & Structures</summary>
+  - **ATA 05** - Time Limits/Maintenance Checks  
+  - **ATA 06** - Dimensions and Areas  
+  - **ATA 07** - Lifting and Shoring  
+  - **ATA 08** - Leveling and Weighing  
+  - **ATA 09** - Towing and Taxiing  
+  - **ATA 10** - Parking, Mooring, Storage, and Return to Service  
+  - **ATA 20** - Standard Practices - Airframe  
+  - **ATA 51** - Standard Practices and Structures - General  
+  - **ATA 52** - Doors  
+  - **ATA 53** - Fuselage  
+  - **ATA 54** - Nacelles/Pylons  
+  - **ATA 55** - Stabilizers  
+  - **ATA 56** - Windows  
+  - **ATA 57** - Wings  
 </details>
 
 <details>
-<summary>ATA 24 - Energía Eléctrica</summary>
-
-### Transición Cuántica
-- **Sistemas de Distribución**
-  - Redes eléctricas auto-organizadas
-  - Optimización cuántica de flujos de energía
-- **Machine Learning Avanzado**
-  - Predicción de demanda energética
-  - Balanceo dinámico de cargas
-
-### Harmonic Convergence
-- Integración de sistemas clásicos y cuánticos
-- Transición gradual hacia tecnologías de siguiente generación
+  <summary>⚡ Power & Propulsion</summary>
+  - **ATA 24** - Electrical Power  
+  - **ATA 28** - Fuel  
+  - **ATA 29** - Hydraulic Power  
+  - **ATA 49** - Airborne Auxiliary Power  
+  - **ATA 70** - Standard Practices Engine  
+  - **ATA 71** - Powerplant (Q-01 Integration)  
+  - **ATA 72** - Engine (Q-01 Details)  
+  - **ATA 73** - Engine Fuel and Control  
+  - **ATA 74** - Ignition  
+  - **ATA 75** - Air  
+  - **ATA 76** - Engine Controls  
+  - **ATA 77** - Engine Indicating  
+  - **ATA 78** - Exhaust  
+  - **ATA 79** - Oil  
+  - **ATA 80** - Starting  
 </details>
 
 <details>
-<summary>ATA 49 - Energía Auxiliar</summary>
-
-### Sistemas Híbridos Cuánticos
-- **Generación de Energía**
-  - Aprovechamiento de fluctuaciones cuánticas
-  - Sistemas de respaldo con eficiencia optimizada
-- **Control Inteligente**
-  - Algoritmos de aprendizaje profundo
-  - Optimización en tiempo real
-
-### GAIA PULSE Integration
-- Monitoreo ambiental continuo
-- Ajuste adaptativo de parámetros operativos
+  <summary>🔧 Avionics & Systems</summary>
+  - **ATA 21** - Air Conditioning  
+  - **ATA 22** - Auto Flight  
+  - **ATA 23** - Communications  
+  - **ATA 31** - Instruments  
+  - **ATA 34** - Navigation  
+  - **ATA 45** - Central Maintenance System  
+  - **ATA 46** - Information Systems  
+  - **ATA 67** - Rotors (Not Applicable)  
 </details>
 
 <details>
-<summary>ATA 71-80 - Sistema Propulsivo</summary>
-
-### Propulsión Cuántica Avanzada
-- **Motor HYDROIAGENCY**
-  - Integración de principios cuánticos en combustión
-  - Sistemas de control basados en estados coherentes
-- **Optimización Energética**
-  - Análisis de eficiencia mediante ML
-  - Reducción activa de emisiones
-
-### Implementación SINCROTONE
-- Sincronización de subsistemas propulsivos
-- Monitoreo de coherencia cuántica en tiempo real
+  <summary>🔍 Testing & Certification</summary>
+  - **ATA 91** - Charts  
+  - **ATA 92** - Electrical System Testing  
+  - **ATA 93** - Avionics Systems Testing  
+  - **ATA 94** - Propulsion System Testing  
+  - **ATA 95** - Structural and Mechanical Testing  
+  - **ATA 96** - Environmental Control and Life Support Testing  
+  - **ATA 97** - Fire Protection System Testing  
+  - **ATA 98** - Flight Test Program  
+  - **ATA 99** - Software and System Integration Testing  
+  - **ATA 100** - Certification and Documentation  
 </details>
 
-## 🔬 Principios de Machine Ingenuity
 
-### 1. Autonomía Inteligente
-- Sistemas auto-optimizantes
-- Aprendizaje continuo de patrones operativos
-- Adaptación dinámica a condiciones cambiantes
+- **Proactive Inspection:** Regular inspections using advanced diagnostic tools (ultrasonic, thermographic, eddy current testing) to detect early structural fatigue.
+- **Critical Zone Identification:** High-stress areas prioritized for maintenance focus.
+- **Repair Prioritization & Planning:** Developing a repair prioritization matrix based on safety impact, downtime, and predictive analytics.
+- **Documentation & Traceability:** Recording all inspection data into the COAFI framework for traceability and analysis.
+- **Training & Safety Protocols:** Regular training programs for personnel to stay updated on the latest repair techniques and safety standards.
 
-### 2. Análisis Predictivo
-- Monitoreo en tiempo real de eficiencia
-- Identificación proactiva de áreas de mejora
-- Optimización continua de procesos
-
-### 3. Sostenibilidad Integrada
-- Reducción activa de huella ambiental
-- Ciclos cerrados de recursos
-- Maximización de eficiencia energética
-
-## 🌍 Visión SINCROTONE
-
-### Resonancia
-- Alineación de sistemas operativos
-- Sincronización de procesos críticos
-- Optimización de flujos de energía
-
-### Sincronización
-- Coordinación entre subsistemas
-- Gestión inteligente de recursos
-- Balanceo dinámico de cargas
-
-### Coherencia Cuántica
-- Transición hacia tecnologías avanzadas
-- Integración de principios cuánticos
-- Maximización de eficiencia energética
-
-## 📈 Métricas de Éxito
-
-1. **Eficiencia Energética**
-   - Reducción de consumo
-   - Optimización de procesos
-   - Minimización de pérdidas
-
-2. **Impacto Ambiental**
-   - Emisiones reducidas
-   - Huella de carbono
-   - Gestión de recursos
-
-3. **Rendimiento Operativo**
-   - Fiabilidad del sistema
-   - Tiempo de respuesta
-   - Adaptabilidad
-
-## 🔄 Ciclo de Mejora Continua
-
-1. **Análisis**
-   - Monitoreo continuo
-   - Identificación de patrones
-   - Evaluación de rendimiento
-
-2. **Optimización**
-   - Ajuste de parámetros
-   - Mejora de procesos
-   - Implementación de soluciones
-
-3. **Validación**
-   - Verificación de resultados
-   - Medición de impacto
-   - Documentación de mejoras
 
 ---
 
-*Desarrollado con principios de Machine Ingenuity por AMPEL360*
+## 🌍 About the GAIA AIR Project
 
----
+GAIA AIR is a visionary aerospace initiative focused on sustainable, efficient, and intelligent aerospace systems. It integrates AI, quantum computing, and advanced materials to create near-zero emissions and unprecedented performance levels.
 
-# Part II: GAIA PULSE AIR MODULES (GPAM) – Atmospheric Operations
+<summary><strong>2.1.1.A ATA 05 – Time Limits / Maintenance Chec</strong></summary>
 
-# 🚀 Sistema Propulsivo AMPEL360
-
-[![Estado del Proyecto](https://img.shields.io/badge/Estado-En%20Desarrollo-yellow)](https://github.com/AMPEL360/propulsion-system)
-[![Licencia](https://img.shields.io/badge/Licencia-MIT-blue.svg)](LICENSE)
-[![Documentación](https://img.shields.io/badge/Docs-Wiki-green.svg)](docs/)
-
-Sistema de propulsión de aviación comercial de próxima generación basado en tecnología HYDROIAGENCY, que combina combustión de hidrógeno, propulsión eléctrica y control por IA para lograr vuelos de largo alcance con cero emisiones.
-
-## 📋 Tabla de Contenidos
-
-- [Visión General](#visión-general)
-- [Tecnologías Clave](#tecnologías-clave)
-- [Arquitectura del Sistema](#arquitectura-del-sistema)
-- [Especificaciones Técnicas](#especificaciones-técnicas)
-- [Instalación y Configuración](#instalación-y-configuración)
-- [Documentación](#documentación)
-- [Contribución](#contribución)
-- [Licencia](#licencia)
-- [Contacto](#contacto)
-
-## 🌟 Visión General
-
-El Sistema Propulsivo AMPEL360 representa una revolución en la aviación comercial, ofreciendo:
-
-- **Cero Emisiones**: Operación 100% basada en hidrógeno
-- **Alta Eficiencia**: +40% vs motores convencionales
-- **Largo Alcance**: Capacidad para vuelos de 12,000+ km
-- **Control Inteligente**: Optimización en tiempo real mediante IA
-
-## 🔧 Tecnologías Clave
-
-### 1. Sistema de Hidrógeno
-- Almacenamiento criogénico a -253°C
-- Regeneración de H₂ mediante captación atmosférica
-- Sistema de distribución de combustible optimizado por IA
-
-### 2. Propulsión Híbrida
-- Motor de Detonación Rotativa (RDE)
-- Celdas de combustible de alta eficiencia
-- Ventiladores Eléctricos Distribuidos (VED)
-- Motores superconductores
-
-### 3. Control Inteligente
-- Optimización de combustión en tiempo real
-- Gestión predictiva de mantenimiento
-- Distribución dinámica de potencia
-
-## 🏗 Arquitectura del Sistema
-
-```mermaid
-flowchart TD
-    subgraph Almacenamiento
-        H2["Almacenamiento H₂ Líquido\n-253°C"]
-        RG["Sistema de\nRegeneración H₂"]
-        MC["Captación de\nHumedad Atmosférica"]
-    end
-
-    subgraph Propulsión
-        RDE["Motor de Detonación\nRotativa RDE"]
-        MT["Turbofan Principal"]
-        VED["Ventiladores Eléctricos\nDistribuidos"]
-    end
-
-    subgraph "Generación Eléctrica"
-        FC["Celdas de Combustible\nGeneración Eléctrica"]
-        MS["Motores\nSuperconductores"]
-        DC["Sistema de Distribución\ny Control"]
-    end
-
-    subgraph "Control Inteligente"
-        IA["Sistema IA\nControl Central"]
-        OC["Optimización de\nCombustión"]
-        GE["Gestión de\nEnergía"]
-    end
-
-    H2 --> |"Alimentación\nCriogénica"| FC
-    H2 --> |"Alimentación\nde Combustible"| RDE
-    FC --> |"Energía\nEléctrica"| DC
-    DC --> |"Potencia\nControlada"| MS
-    MS --> |"Energía\nMecánica"| VED
-    RDE --> |"Empuje\nPrincipal"| MT
-    
-    MC --> |"H₂O"| RG
-    RG --> |"H₂\nRegenerado"| H2
-
-    IA --> |"Control"| OC
-    IA --> |"Optimización"| GE
-    OC --> |"Parámetros"| RDE
-    GE --> |"Gestión"| DC
-
-    style H2 fill:#e6f3ff,stroke:#333
-    style RDE fill:#ffecb3,stroke:#333
-    style FC fill:#e8f5e9,stroke:#333
-    style MS fill:#f3e5f5,stroke:#333
-    style IA fill:#fce4ec,stroke:#333
-    style DC fill:#fff3e0,stroke:#333
-    style VED fill:#e3f2fd,stroke:#333
-    style MT fill:#fff8e1,stroke:#333
-    style RG fill:#f1f8e9,stroke:#333
-    style MC fill:#e8eaf6,stroke:#333
-    style OC fill:#fce4ec,stroke:#333
-    style GE fill:#f3e5f5,stroke:#333
-
-    classDef default font-size:12px
-```
-
-## 📊 Especificaciones Técnicas
-
-| Característica | Especificación |
-|----------------|----------------|
-| Empuje | 350+ kN |
-| Eficiencia | +40% vs convencional |
-| Emisiones | 0 CO₂ |
-| Alcance | 12,000+ km |
-| Ruido | -50% vs turbofan actual |
-
-## 🛠 Instalación y Configuración
-
-```bash
-# Clonar el repositorio
-git clone https://github.com/AMPEL360/propulsion-system.git
-
-# Instalar dependencias
-cd propulsion-system
-npm install
-
-# Ejecutar simulación
-npm run simulate
-```
-
-## 📚 Documentación
-
-La documentación completa está disponible en nuestra [Wiki](docs/). Incluye:
-
-- Guías de instalación detalladas
-- Documentación técnica
-- Ejemplos de implementación
-- Guías de mantenimiento
-
-## 🤝 Contribución
-
-¡Agradecemos las contribuciones! Por favor, lea nuestra [Guía de Contribución](CONTRIBUTING.md) antes de enviar pull requests.
-
-1. Fork del repositorio
-2. Crear rama de características (`git checkout -b feature/AmazingFeature`)
-3. Commit de cambios (`git commit -m 'Add: Amazing Feature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abrir Pull Request
-
-## 📄 Licencia
-
-Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para detalles.
-
-## 📧 Contacto
-
-AMPEL360 - [@AMPEL360](https://twitter.com/AMPEL360)
-
-Email Proyecto: propulsion@ampel360.com
-
-Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.com/AMPEL360/propulsion-system)
-
----
-
-*Desarrollado con* ❤️ *por el equipo AMPEL360*
-
-## 2.1 AMPEL360XWLRGA (Advanced Aircraft Systems)
-
-- **Aircraft Type Designation:** **AMPEL-360**  
-- **P/N (Top-Level Assembly for documentation):** `GAIAPULSE-AM-ASSY-00001-Q`
-
----
-
-<details>
-<summary><strong>2.1.1 ATA Chapters</strong></summary>
-
-<br />
-
-### **P/N: GPAM-AMPEL-0201-ATA**  
-*(This is a general P/N for the ATA chapter breakdown itself, not a specific component.)*
-
----
-
-<details>
-<summary><strong>2.1.1.A ATA 05 – Time Limits / Maintenance Checks</strong></summary>
-
-**P/N:** `GPAM-AMPEL-0201-05`  
+**P/N:** GPAM-AMPEL-0201-05  
 *(Section P/N)*
 
-- **IN:** `GPAM-AMPEL-0201-05-001 – Scheduled Maintenance Program (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-05-001-A-001-00_EN-US – Scheduled Maintenance Program`  
-  - **Document:** `GPAM-AMPEL-0201-05-001-A – Scheduled Maintenance Program`
+- **IN:** GPAM-AMPEL-0201-05-001 – Scheduled Maintenance Program (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-05-001-A-001-00_EN-US – Scheduled Maintenance Program  
+  - **Document:** GPAM-AMPEL-0201-05-001-A – Scheduled Maintenance Program
 
-- **IN:** `GPAM-AMPEL-0201-05-002 – Maintenance Time Limits (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-05-002-A-001-00_EN-US – Maintenance Time Limits`  
-  - **Document:** `GPAM-AMPEL-0201-05-002-A – Maintenance Time Limits`
+- **IN:** GPAM-AMPEL-0201-05-002 – Maintenance Time Limits (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-05-002-A-001-00_EN-US – Maintenance Time Limits  
+  - **Document:** GPAM-AMPEL-0201-05-002-A – Maintenance Time Limits
 
-- **IN:** `GPAM-AMPEL-0201-05-003 – Airworthiness Limitations (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-05-003-A-001-00_EN-US – Airworthiness Limitations`  
-  - **Document:** `GPAM-AMPEL-0201-05-003-A – Airworthiness Limitations`
+- **IN:** GPAM-AMPEL-0201-05-003 – Airworthiness Limitations (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-05-003-A-001-00_EN-US – Airworthiness Limitations  
+  - **Document:** GPAM-AMPEL-0201-05-003-A – Airworthiness Limitations
 
 </details>
 
@@ -350,25 +106,25 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.B ATA 06 – Dimensions and Areas</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-06`  
+**P/N:** GPAM-AMPEL-0201-06  
 *(Section P/N)*
 
-- **IN:** `GPAM-AMPEL-0201-06-001 – Aircraft Dimensions and Stations (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-06-001-A-001-00_EN-US – Aircraft Dimensions and Stations`  
-  - **Document:** `GPAM-AMPEL-0201-06-001-A – Aircraft Dimensions and Stations`  
-  - **PDR:** `PDR-GAIAPULSE-AMPEL-0201-06-001`  
-  - **PBS:** `PBS-GAIAPULSE-AMPEL-0201-06-001`  
-  - **BOM:** `BOM-GAIAPULSE-AMPEL-0201-06-001`
+- **IN:** GPAM-AMPEL-0201-06-001 – Aircraft Dimensions and Stations (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-06-001-A-001-00_EN-US – Aircraft Dimensions and Stations  
+  - **Document:** GPAM-AMPEL-0201-06-001-A – Aircraft Dimensions and Stations  
+  - **PDR:** PDR-GAIAPULSE-AMPEL-0201-06-001  
+  - **PBS:** PBS-GAIAPULSE-AMPEL-0201-06-001  
+  - **BOM:** BOM-GAIAPULSE-AMPEL-0201-06-001
 
-- **IN:** `GPAM-AMPEL-0201-06-002 – Compartment Layout and Dimensions (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-06-002-A-001-00_EN-US – Compartment Layout and Dimensions`  
-  - **Document:** `GPAM-AMPEL-0201-06-002-A – Compartment Layout and Dimensions`  
-  - **PDR:** `PDR-GAIAPULSE-AMPEL-0201-06-002`  
-  - **PBS:** `PBS-GAIAPULSE-AMPEL-0201-06-002`  
-  - **BOM:** `BOM-GAIAPULSE-AMPEL-0201-06-002`
+- **IN:** GPAM-AMPEL-0201-06-002 – Compartment Layout and Dimensions (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-06-002-A-001-00_EN-US – Compartment Layout and Dimensions  
+  - **Document:** GPAM-AMPEL-0201-06-002-A – Compartment Layout and Dimensions  
+  - **PDR:** PDR-GAIAPULSE-AMPEL-0201-06-002  
+  - **PBS:** PBS-GAIAPULSE-AMPEL-0201-06-002  
+  - **BOM:** BOM-GAIAPULSE-AMPEL-0201-06-002
 
-- **IN:** `GPAM-AMPEL-0201-06-003-A – AMPEL360XWLRGA Measurement Point Definitions`  
-  - **Document:** `GPAM-AMPEL-0201-06-003-A – AMPEL360XWLRGA Measurement Point Definitions`
+- **IN:** GPAM-AMPEL-0201-06-003-A – AMPEL360XWLRGA Measurement Point Definitions  
+  - **Document:** GPAM-AMPEL-0201-06-003-A – AMPEL360XWLRGA Measurement Point Definitions
 
 </details>
 
@@ -377,22 +133,22 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.C ATA 07 – Lifting and Shoring</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-07`  
+**P/N:** GPAM-AMPEL-0201-07  
 *(Section P/N)*
 
-- **IN:** `GPAM-AMPEL-0201-07-001 – Lifting Procedures and Diagrams (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-07-001-A-001-00_EN-US – Lifting Procedures and Diagrams`  
-  - **Document:** `GPAM-AMPEL-0201-07-001-A – Lifting Procedures and Diagrams`  
-  - **PDR:** `PDR-GAIAPULSE-AMPEL-0201-07-001`  
-  - **PBS:** `PBS-GAIAPULSE-AMPEL-0201-07-001`  
-  - **BOM:** `BOM-GAIAPULSE-AMPEL-0201-07-001`
+- **IN:** GPAM-AMPEL-0201-07-001 – Lifting Procedures and Diagrams (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-07-001-A-001-00_EN-US – Lifting Procedures and Diagrams  
+  - **Document:** GPAM-AMPEL-0201-07-001-A – Lifting Procedures and Diagrams  
+  - **PDR:** PDR-GAIAPULSE-AMPEL-0201-07-001  
+  - **PBS:** PBS-GAIAPULSE-AMPEL-0201-07-001  
+  - **BOM:** BOM-GAIAPULSE-AMPEL-0201-07-001
 
-- **IN:** `GPAM-AMPEL-0201-07-002 – Shoring Procedures and Diagrams (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-07-002-A-001-00_EN-US – Shoring Procedures and Diagrams`  
-  - **Document:** `GPAM-AMPEL-0201-07-002-A – Shoring Procedures and Diagrams`  
-  - **PDR:** `PDR-GAIAPULSE-AMPEL-0201-07-002`  
-  - **PBS:** `PBS-GAIAPULSE-AMPEL-0201-07-002`  
-  - **BOM:** `BOM-GAIAPULSE-AMPEL-0201-07-002`
+- **IN:** GPAM-AMPEL-0201-07-002 – Shoring Procedures and Diagrams (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-07-002-A-001-00_EN-US – Shoring Procedures and Diagrams  
+  - **Document:** GPAM-AMPEL-0201-07-002-A – Shoring Procedures and Diagrams  
+  - **PDR:** PDR-GAIAPULSE-AMPEL-0201-07-002  
+  - **PBS:** PBS-GAIAPULSE-AMPEL-0201-07-002  
+  - **BOM:** BOM-GAIAPULSE-AMPEL-0201-07-002
 
 </details>
 
@@ -401,16 +157,16 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.D ATA 08 – Leveling and Weighing</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-08`  
+**P/N:** GPAM-AMPEL-0201-08  
 *(Section P/N)*
 
-- **IN:** `GPAM-AMPEL-0201-08-001 – Leveling Procedures (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-08-001-A-001-00_EN-US – Leveling Procedures`  
-  - **Document:** `GPAM-AMPEL-0201-08-001-A – Leveling Procedures`
+- **IN:** GPAM-AMPEL-0201-08-001 – Leveling Procedures (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-08-001-A-001-00_EN-US – Leveling Procedures  
+  - **Document:** GPAM-AMPEL-0201-08-001-A – Leveling Procedures
 
-- **IN:** `GPAM-AMPEL-0201-08-002 – Aircraft Weighing Procedures (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-08-002-A-001-00_EN-US – Aircraft Weighing Procedures`  
-  - **Document:** `GPAM-AMPEL-0201-08-002-A – Aircraft Weighing Procedures`
+- **IN:** GPAM-AMPEL-0201-08-002 – Aircraft Weighing Procedures (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-08-002-A-001-00_EN-US – Aircraft Weighing Procedures  
+  - **Document:** GPAM-AMPEL-0201-08-002-A – Aircraft Weighing Procedures
 
 </details>
 
@@ -419,15 +175,15 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.E ATA 09 – Towing and Taxiing</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-09`
+**P/N:** GPAM-AMPEL-0201-09
 
-- **IN:** `GPAM-AMPEL-0201-09-001 – Towing Procedures (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-09-001-A-001-00_EN-US – Towing Procedures`  
-  - **Document:** `GPAM-AMPEL-0201-09-001-A – Towing Procedures`
+- **IN:** GPAM-AMPEL-0201-09-001 – Towing Procedures (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-09-001-A-001-00_EN-US – Towing Procedures  
+  - **Document:** GPAM-AMPEL-0201-09-001-A – Towing Procedures
 
-- **IN:** `GPAM-AMPEL-0201-09-002 – Taxiing Procedures (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-09-002-A-001-00_EN-US – Taxiing Procedures`  
-  - **Document:** `GPAM-AMPEL-0201-09-002-A – Taxiing Procedures`
+- **IN:** GPAM-AMPEL-0201-09-002 – Taxiing Procedures (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-09-002-A-001-00_EN-US – Taxiing Procedures  
+  - **Document:** GPAM-AMPEL-0201-09-002-A – Taxiing Procedures
 
 </details>
 
@@ -436,23 +192,23 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.F ATA 10 – Parking, Mooring, Storage, and Return to Service</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-10`
+**P/N:** GPAM-AMPEL-0201-10
 
-- **IN:** `GPAM-AMPEL-0201-10-001 – Parking Procedures (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-10-001-A-001-00_EN-US – Parking Procedures`  
-  - **Document:** `GPAM-AMPEL-0201-10-001-A – Parking Procedures`
+- **IN:** GPAM-AMPEL-0201-10-001 – Parking Procedures (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-10-001-A-001-00_EN-US – Parking Procedures  
+  - **Document:** GPAM-AMPEL-0201-10-001-A – Parking Procedures
 
-- **IN:** `GPAM-AMPEL-0201-10-002 – Mooring Procedures (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-10-002-A-001-00_EN-US – Mooring Procedures`  
-  - **Document:** `GPAM-AMPEL-0201-10-002-A – Mooring Procedures`
+- **IN:** GPAM-AMPEL-0201-10-002 – Mooring Procedures (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-10-002-A-001-00_EN-US – Mooring Procedures  
+  - **Document:** GPAM-AMPEL-0201-10-002-A – Mooring Procedures
 
-- **IN:** `GPAM-AMPEL-0201-10-003 – Storage Procedures (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-10-003-A-001-00_EN-US – Storage Procedures`  
-  - **Document:** `GPAM-AMPEL-0201-10-003-A – Storage Procedures`
+- **IN:** GPAM-AMPEL-0201-10-003 – Storage Procedures (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-10-003-A-001-00_EN-US – Storage Procedures  
+  - **Document:** GPAM-AMPEL-0201-10-003-A – Storage Procedures
 
-- **IN:** `GPAM-AMPEL-0201-10-004 – Return to Service Procedures (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-10-004-A-001-00_EN-US – Return to Service Procedures`  
-  - **Document:** `GPAM-AMPEL-0201-10-004-A – Return to Service Procedures`
+- **IN:** GPAM-AMPEL-0201-10-004 – Return to Service Procedures (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-10-004-A-001-00_EN-US – Return to Service Procedures  
+  - **Document:** GPAM-AMPEL-0201-10-004-A – Return to Service Procedures
 
 </details>
 
@@ -461,19 +217,19 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.G ATA 11 – Placards and Markings</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-11`
+**P/N:** GPAM-AMPEL-0201-11
 
-- **IN:** `GPAM-AMPEL-0201-11-001 – Exterior Placard Locations (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-11-001-A-001-00_EN-US – Exterior Placard Locations`  
-  - **Document:** `GPAM-AMPEL-0201-11-001-A – Exterior Placard Locations`
+- **IN:** GPAM-AMPEL-0201-11-001 – Exterior Placard Locations (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-11-001-A-001-00_EN-US – Exterior Placard Locations  
+  - **Document:** GPAM-AMPEL-0201-11-001-A – Exterior Placard Locations
 
-- **IN:** `GPAM-AMPEL-0201-11-002 – Interior Placard Locations (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-11-002-A-001-00_EN-US – Interior Placard Locations`  
-  - **Document:** `GPAM-AMPEL-0201-11-002-A – Interior Placard Locations`
+- **IN:** GPAM-AMPEL-0201-11-002 – Interior Placard Locations (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-11-002-A-001-00_EN-US – Interior Placard Locations  
+  - **Document:** GPAM-AMPEL-0201-11-002-A – Interior Placard Locations
 
-- **IN:** `GPAM-AMPEL-0201-11-003 – Marking Specifications (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-11-003-A-001-00_EN-US – Marking Specifications`  
-  - **Document:** `GPAM-AMPEL-0201-11-003-A – Marking Specifications`
+- **IN:** GPAM-AMPEL-0201-11-003 – Marking Specifications (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-11-003-A-001-00_EN-US – Marking Specifications  
+  - **Document:** GPAM-AMPEL-0201-11-003-A – Marking Specifications
 
 </details>
 
@@ -482,23 +238,23 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.H ATA 12 – Servicing</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-12`
+**P/N:** GPAM-AMPEL-0201-12
 
-- **IN:** `GPAM-AMPEL-0201-12-001 – Fluid Servicing Procedures (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-12-001-A-001-00_EN-US – Fluid Servicing Procedures`  
-  - **Document:** `GPAM-AMPEL-0201-12-001-A – Fluid Servicing Procedures`
+- **IN:** GPAM-AMPEL-0201-12-001 – Fluid Servicing Procedures (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-12-001-A-001-00_EN-US – Fluid Servicing Procedures  
+  - **Document:** GPAM-AMPEL-0201-12-001-A – Fluid Servicing Procedures
 
-- **IN:** `GPAM-AMPEL-0201-12-002 – Nitrogen/Oxygen Servicing Procedures (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-12-002-A-001-00_EN-US – Nitrogen/Oxygen Servicing Procedures`  
-  - **Document:** `GPAM-AMPEL-0201-12-002-A – Nitrogen/Oxygen Servicing Procedures`
+- **IN:** GPAM-AMPEL-0201-12-002 – Nitrogen/Oxygen Servicing Procedures (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-12-002-A-001-00_EN-US – Nitrogen/Oxygen Servicing Procedures  
+  - **Document:** GPAM-AMPEL-0201-12-002-A – Nitrogen/Oxygen Servicing Procedures
 
-- **IN:** `GPAM-AMPEL-0201-12-003 – Lubrication Procedures (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-12-003-A-001-00_EN-US – Lubrication Procedures`  
-  - **Document:** `GPAM-AMPEL-0201-12-003-A – Lubrication Procedures`
+- **IN:** GPAM-AMPEL-0201-12-003 – Lubrication Procedures (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-12-003-A-001-00_EN-US – Lubrication Procedures  
+  - **Document:** GPAM-AMPEL-0201-12-003-A – Lubrication Procedures
 
-- **IN:** `GPAM-AMPEL-0201-12-004 – Water Servicing Procedures (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-12-004-A-001-00_EN-US – Water Servicing Procedures`  
-  - **Document:** `GPAM-AMPEL-0201-12-004-A – Water Servicing Procedures`
+- **IN:** GPAM-AMPEL-0201-12-004 – Water Servicing Procedures (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-12-004-A-001-00_EN-US – Water Servicing Procedures  
+  - **Document:** GPAM-AMPEL-0201-12-004-A – Water Servicing Procedures
 
 </details>
 
@@ -507,19 +263,19 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.I ATA 18 – Vibration and Noise Analysis</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-18`
+**P/N:** GPAM-AMPEL-0201-18
 
-- **IN:** `GPAM-AMPEL-0201-18-001 – Vibration Analysis Procedures (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-18-001-A-001-00_EN-US – Vibration Analysis Procedures`  
-  - **Document:** `GPAM-AMPEL-0201-18-001-A – Vibration Analysis Procedures`
+- **IN:** GPAM-AMPEL-0201-18-001 – Vibration Analysis Procedures (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-18-001-A-001-00_EN-US – Vibration Analysis Procedures  
+  - **Document:** GPAM-AMPEL-0201-18-001-A – Vibration Analysis Procedures
 
-- **IN:** `GPAM-AMPEL-0201-18-002 – Noise Level Measurement Procedures (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-18-002-A-001-00_EN-US – Noise Level Measurement Procedures`  
-  - **Document:** `GPAM-AMPEL-0201-18-002-A – Noise Level Measurement Procedures`
+- **IN:** GPAM-AMPEL-0201-18-002 – Noise Level Measurement Procedures (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-18-002-A-001-00_EN-US – Noise Level Measurement Procedures  
+  - **Document:** GPAM-AMPEL-0201-18-002-A – Noise Level Measurement Procedures
 
-- **IN:** `GPAM-AMPEL-0201-18-003 – Vibration and Noise Limits and Acceptability Criteria (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-18-003-A-001-00_EN-US – Vibration and Noise Limits and Acceptability Criteria`  
-  - **Document:** `GPAM-AMPEL-0201-18-003-A – Vibration and Noise Limits and Acceptability Criteria`
+- **IN:** GPAM-AMPEL-0201-18-003 – Vibration and Noise Limits and Acceptability Criteria (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-18-003-A-001-00_EN-US – Vibration and Noise Limits and Acceptability Criteria  
+  - **Document:** GPAM-AMPEL-0201-18-003-A – Vibration and Noise Limits and Acceptability Criteria
 
 </details>
 
@@ -528,19 +284,19 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.L ATA 20 – Standard Practices – Airframe</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-20`
+**P/N:** GPAM-AMPEL-0201-20
 
-- **IN:** `GPAM-AMPEL-0201-20-001 – Airframe Standard Practices Manual (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-20-001-A-001-00_EN-US – Airframe Standard Practices Manual`  
-  - **Document:** `GPAM-AMPEL-0201-20-001-A – Airframe Standard Practices Manual`
+- **IN:** GPAM-AMPEL-0201-20-001 – Airframe Standard Practices Manual (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-20-001-A-001-00_EN-US – Airframe Standard Practices Manual  
+  - **Document:** GPAM-AMPEL-0201-20-001-A – Airframe Standard Practices Manual
 
-- **IN:** `GPAM-AMPEL-0201-20-002 – Corrosion Prevention and Control (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-20-002-A-001-00_EN-US – Corrosion Prevention and Control`  
-  - **Document:** `GPAM-AMPEL-0201-20-002-A – Corrosion Prevention and Control`
+- **IN:** GPAM-AMPEL-0201-20-002 – Corrosion Prevention and Control (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-20-002-A-001-00_EN-US – Corrosion Prevention and Control  
+  - **Document:** GPAM-AMPEL-0201-20-002-A – Corrosion Prevention and Control
 
-- **IN:** `GPAM-AMPEL-0201-20-003 – Non-Destructive Testing (NDT) Procedures (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-20-003-A-001-00_EN-US – Non-Destructive Testing (NDT) Procedures`  
-  - **Document:** `GPAM-AMPEL-0201-20-003-A – Non-Destructive Testing (NDT) Procedures`
+- **IN:** GPAM-AMPEL-0201-20-003 – Non-Destructive Testing (NDT) Procedures (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-20-003-A-001-00_EN-US – Non-Destructive Testing (NDT) Procedures  
+  - **Document:** GPAM-AMPEL-0201-20-003-A – Non-Destructive Testing (NDT) Procedures
 
 </details>
 
@@ -549,19 +305,19 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.K ATA 21 – Air Conditioning and Pressurization</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-21`
+**P/N:** GPAM-AMPEL-0201-21
 
-- **IN:** `GPAM-AMPEL-0201-21-001 – Air Conditioning System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-21-001-A-001-00_EN-US – Air Conditioning System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-21-001-A – Air Conditioning System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-21-001 – Air Conditioning System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-21-001-A-001-00_EN-US – Air Conditioning System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-21-001-A – Air Conditioning System Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-21-002 – Pressurization System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-21-002-A-001-00_EN-US – Pressurization System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-21-002-A – Pressurization System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-21-002 – Pressurization System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-21-002-A-001-00_EN-US – Pressurization System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-21-002-A – Pressurization System Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-21-003 – Quantum Enhanced Air Purification System (QE-APS) Description (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-21-003-A-001-00_EN-US – Quantum Enhanced Air Purification System (QE-APS) Description`  
-  - **Document:** `GPAM-AMPEL-0201-21-003-A – Quantum Enhanced Air Purification System (QE-APS) Description`
+- **IN:** GPAM-AMPEL-0201-21-003 – Quantum Enhanced Air Purification System (QE-APS) Description (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-21-003-A-001-00_EN-US – Quantum Enhanced Air Purification System (QE-APS) Description  
+  - **Document:** GPAM-AMPEL-0201-21-003-A – Quantum Enhanced Air Purification System (QE-APS) Description
 
 </details>
 
@@ -570,19 +326,19 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.L ATA 22 – Autoflight</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-22`
+**P/N:** GPAM-AMPEL-0201-22
 
-- **IN:** `GPAM-AMPEL-0201-22-001 – Autopilot System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-22-001-A-001-00_EN-US – Autopilot System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-22-001-A – Autopilot System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-22-001 – Autopilot System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-22-001-A-001-00_EN-US – Autopilot System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-22-001-A – Autopilot System Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-22-002 – Flight Management System (FMS) Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-22-002-A-001-00_EN-US – Flight Management System (FMS) Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-22-002-A – Flight Management System (FMS) Description and Operation`
+- **IN:** GPAM-AMPEL-0201-22-002 – Flight Management System (FMS) Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-22-002-A-001-00_EN-US – Flight Management System (FMS) Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-22-002-A – Flight Management System (FMS) Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-22-003 – AI-Enhanced Flight Control System (AI-FCS) Description (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-22-003-A-001-00_EN-US – AI-Enhanced Flight Control System (AI-FCS) Description`  
-  - **Document:** `GPAM-AMPEL-0201-22-003-A – AI-Enhanced Flight Control System (AI-FCS) Description`
+- **IN:** GPAM-AMPEL-0201-22-003 – AI-Enhanced Flight Control System (AI-FCS) Description (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-22-003-A-001-00_EN-US – AI-Enhanced Flight Control System (AI-FCS) Description  
+  - **Document:** GPAM-AMPEL-0201-22-003-A – AI-Enhanced Flight Control System (AI-FCS) Description
 
 </details>
 
@@ -591,23 +347,23 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.M ATA 23 – Communications</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-23`
+**P/N:** GPAM-AMPEL-0201-23
 
-- **IN:** `GPAM-AMPEL-0201-23-001 – Communication Systems Overview (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-23-001-A-001-00_EN-US – Communication Systems Overview`  
-  - **Document:** `GPAM-AMPEL-0201-23-001-A – Communication Systems Overview`
+- **IN:** GPAM-AMPEL-0201-23-001 – Communication Systems Overview (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-23-001-A-001-00_EN-US – Communication Systems Overview  
+  - **Document:** GPAM-AMPEL-0201-23-001-A – Communication Systems Overview
 
-- **IN:** `GPAM-AMPEL-0201-23-002 – Satellite Communication (SATCOM) System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-23-002-A-001-00_EN-US – Satellite Communication (SATCOM) System)`  
-  - **Document:** `GPAM-AMPEL-0201-23-002-A – Satellite Communication (SATCOM) System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-23-002 – Satellite Communication (SATCOM) System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-23-002-A-001-00_EN-US – Satellite Communication (SATCOM) System)  
+  - **Document:** GPAM-AMPEL-0201-23-002-A – Satellite Communication (SATCOM) System Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-23-003 – Air-to-Ground Communication System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-23-003-A-001-00_EN-US – Air-to-Ground Communication System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-23-003-A – Air-to-Ground Communication System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-23-003 – Air-to-Ground Communication System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-23-003-A-001-00_EN-US – Air-to-Ground Communication System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-23-003-A – Air-to-Ground Communication System Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-23-004 – Quantum Communication System (QCS) Description (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-23-004-A-001-00_EN-US – Quantum Communication System (QCS) Description`  
-  - **Document:** `GPAM-AMPEL-0201-23-004-A – Quantum Communication System (QCS) Description`
+- **IN:** GPAM-AMPEL-0201-23-004 – Quantum Communication System (QCS) Description (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-23-004-A-001-00_EN-US – Quantum Communication System (QCS) Description  
+  - **Document:** GPAM-AMPEL-0201-23-004-A – Quantum Communication System (QCS) Description
 
 </details>
 
@@ -616,19 +372,19 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.N ATA 24 – Electrical Power</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-24`
+**P/N:** GPAM-AMPEL-0201-24
 
-- **IN:** `GPAM-AMPEL-0201-24-001 – Electrical Power Generation System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-24-001-A-001-00_EN-US – Electrical Power Generation System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-24-001-A – Electrical Power Generation System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-24-001 – Electrical Power Generation System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-24-001-A-001-00_EN-US – Electrical Power Generation System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-24-001-A – Electrical Power Generation System Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-24-002 – Electrical Power Distribution System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-24-002-A-001-00_EN-US – Electrical Power Distribution System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-24-002-A – Electrical Power Distribution System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-24-002 – Electrical Power Distribution System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-24-002-A-001-00_EN-US – Electrical Power Distribution System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-24-002-A – Electrical Power Distribution System Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-24-003 – Quantum Energy Management System (Q-EMS) Description (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-24-003-A-001-00_EN-US – Quantum Energy Management System (Q-EMS) Description`  
-  - **Document:** `GPAM-AMPEL-0201-24-003-A – Quantum Energy Management System (Q-EMS) Description`
+- **IN:** GPAM-AMPEL-0201-24-003 – Quantum Energy Management System (Q-EMS) Description (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-24-003-A-001-00_EN-US – Quantum Energy Management System (Q-EMS) Description  
+  - **Document:** GPAM-AMPEL-0201-24-003-A – Quantum Energy Management System (Q-EMS) Description
 
 </details>
 
@@ -637,19 +393,19 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.O ATA 25 – Equipment / Furnishings</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-25`
+**P/N:** GPAM-AMPEL-0201-25
 
-- **IN:** `GPAM-AMPEL-0201-25-001 – Flight Deck Equipment and Furnishings (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-25-001-A-001-00_EN-US – Flight Deck Equipment and Furnishings`  
-  - **Document:** `GPAM-AMPEL-0201-25-001-A – Flight Deck Equipment and Furnishings`
+- **IN:** GPAM-AMPEL-0201-25-001 – Flight Deck Equipment and Furnishings (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-25-001-A-001-00_EN-US – Flight Deck Equipment and Furnishings  
+  - **Document:** GPAM-AMPEL-0201-25-001-A – Flight Deck Equipment and Furnishings
 
-- **IN:** `GPAM-AMPEL-0201-25-002 – Cabin Equipment and Furnishings (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-25-002-A-001-00_EN-US – Cabin Equipment and Furnishings`  
-  - **Document:** `GPAM-AMPEL-0201-25-002-A – Cabin Equipment and Furnishings`
+- **IN:** GPAM-AMPEL-0201-25-002 – Cabin Equipment and Furnishings (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-25-002-A-001-00_EN-US – Cabin Equipment and Furnishings  
+  - **Document:** GPAM-AMPEL-0201-25-002-A – Cabin Equipment and Furnishings
 
-- **IN:** `GPAM-AMPEL-0201-25-003 – Emergency Equipment (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-25-003-A-001-00_EN-US – Emergency Equipment`  
-  - **Document:** `GPAM-AMPEL-0201-25-003-A – Emergency Equipment`
+- **IN:** GPAM-AMPEL-0201-25-003 – Emergency Equipment (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-25-003-A-001-00_EN-US – Emergency Equipment  
+  - **Document:** GPAM-AMPEL-0201-25-003-A – Emergency Equipment
 
 </details>
 
@@ -658,19 +414,19 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.P ATA 26 – Fire Protection</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-26`
+**P/N:** GPAM-AMPEL-0201-26
 
-- **IN:** `GPAM-AMPEL-0201-26-001 – Fire Detection System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-26-001-A-001-00_EN-US – Fire Detection System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-26-001-A – Fire Detection System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-26-001 – Fire Detection System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-26-001-A-001-00_EN-US – Fire Detection System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-26-001-A – Fire Detection System Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-26-002 – Fire Extinguishing System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-26-002-A-001-00_EN-US – Fire Extinguishing System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-26-002-A – Fire Extinguishing System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-26-002 – Fire Extinguishing System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-26-002-A-001-00_EN-US – Fire Extinguishing System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-26-002-A – Fire Extinguishing System Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-26-003 – Quantum Resonance Fire Suppression System (QRFSS) Description (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-26-003-A-001-00_EN-US – Quantum Resonance Fire Suppression System (QRFSS) Description`  
-  - **Document:** `GPAM-AMPEL-0201-26-003-A – Quantum Resonance Fire Suppression System (QRFSS) Description`
+- **IN:** GPAM-AMPEL-0201-26-003 – Quantum Resonance Fire Suppression System (QRFSS) Description (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-26-003-A-001-00_EN-US – Quantum Resonance Fire Suppression System (QRFSS) Description  
+  - **Document:** GPAM-AMPEL-0201-26-003-A – Quantum Resonance Fire Suppression System (QRFSS) Description
 
 </details>
 
@@ -679,19 +435,19 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.Q ATA 27 – Flight Controls</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-27`
+**P/N:** GPAM-AMPEL-0201-27
 
-- **IN:** `GPAM-AMPEL-0201-27-001 – Primary Flight Controls System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-27-001-A-001-00_EN-US – Primary Flight Controls System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-27-001-A – Primary Flight Controls System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-27-001 – Primary Flight Controls System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-27-001-A-001-00_EN-US – Primary Flight Controls System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-27-001-A – Primary Flight Controls System Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-27-002 – Secondary Flight Controls System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-27-002-A-001-00_EN-US – Secondary Flight Controls System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-27-002-A – Secondary Flight Controls System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-27-002 – Secondary Flight Controls System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-27-002-A-001-00_EN-US – Secondary Flight Controls System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-27-002-A – Secondary Flight Controls System Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-27-003 – Quantum Flight Control Augmentation System (Q-FCAS) Description (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-27-003-A-001-00_EN-US – Quantum Flight Control Augmentation System (Q-FCAS) Description`  
-  - **Document:** `GPAM-AMPEL-0201-27-003-A – Quantum Flight Control Augmentation System (Q-FCAS) Description`
+- **IN:** GPAM-AMPEL-0201-27-003 – Quantum Flight Control Augmentation System (Q-FCAS) Description (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-27-003-A-001-00_EN-US – Quantum Flight Control Augmentation System (Q-FCAS) Description  
+  - **Document:** GPAM-AMPEL-0201-27-003-A – Quantum Flight Control Augmentation System (Q-FCAS) Description
 
 </details>
 
@@ -700,19 +456,19 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.R ATA 28 – Fuel</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-28`
+**P/N:** GPAM-AMPEL-0201-28
 
-- **IN:** `GPAM-AMPEL-0201-28-001 – Fuel System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-28-001-A-001-00_EN-US – Fuel System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-28-001-A – Fuel System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-28-001 – Fuel System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-28-001-A-001-00_EN-US – Fuel System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-28-001-A – Fuel System Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-28-002 – Fuel Storage and Distribution (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-28-002-A-001-00_EN-US – Fuel Storage and Distribution`  
-  - **Document:** `GPAM-AMPEL-0201-28-002-A – Fuel Storage and Distribution`
+- **IN:** GPAM-AMPEL-0201-28-002 – Fuel Storage and Distribution (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-28-002-A-001-00_EN-US – Fuel Storage and Distribution  
+  - **Document:** GPAM-AMPEL-0201-28-002-A – Fuel Storage and Distribution
 
-- **IN:** `GPAM-AMPEL-0201-28-003 – Quantum Fuel Efficiency System (Q-FES) Description (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-28-003-A-001-00_EN-US – Quantum Fuel Efficiency System (Q-FES) Description`  
-  - **Document:** `GPAM-AMPEL-0201-28-003-A – Quantum Fuel Efficiency System (Q-FES) Description`
+- **IN:** GPAM-AMPEL-0201-28-003 – Quantum Fuel Efficiency System (Q-FES) Description (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-28-003-A-001-00_EN-US – Quantum Fuel Efficiency System (Q-FES) Description  
+  - **Document:** GPAM-AMPEL-0201-28-003-A – Quantum Fuel Efficiency System (Q-FES) Description
 
 </details>
 
@@ -721,15 +477,15 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.S ATA 29 – Hydraulic Power</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-29`
+**P/N:** GPAM-AMPEL-0201-29
 
-- **IN:** `GPAM-AMPEL-0201-29-001 – Hydraulic Power System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-29-001-A-001-00_EN-US – Hydraulic Power System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-29-001-A – Hydraulic Power System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-29-001 – Hydraulic Power System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-29-001-A-001-00_EN-US – Hydraulic Power System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-29-001-A – Hydraulic Power System Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-29-002 – Electro-Hydraulic Power System (EHPS) Integration Details (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-29-002-A-001-00_EN-US – Electro-Hydraulic Power System (EHPS) Integration Details`  
-  - **Document:** `GPAM-AMPEL-0201-29-002-A – Electro-Hydraulic Power System (EHPS) Integration Details`
+- **IN:** GPAM-AMPEL-0201-29-002 – Electro-Hydraulic Power System (EHPS) Integration Details (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-29-002-A-001-00_EN-US – Electro-Hydraulic Power System (EHPS) Integration Details  
+  - **Document:** GPAM-AMPEL-0201-29-002-A – Electro-Hydraulic Power System (EHPS) Integration Details
 
 </details>
 
@@ -738,19 +494,19 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.T ATA 30 – Ice and Rain Protection</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-30`
+**P/N:** GPAM-AMPEL-0201-30
 
-- **IN:** `GPAM-AMPEL-0201-30-001 – Ice Protection System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-30-001-A-001-00_EN-US – Ice Protection System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-30-001-A – Ice Protection System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-30-001 – Ice Protection System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-30-001-A-001-00_EN-US – Ice Protection System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-30-001-A – Ice Protection System Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-30-002 – Rain Protection System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-30-002-A-001-00_EN-US – Rain Protection System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-30-002-A – Rain Protection System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-30-002 – Rain Protection System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-30-002-A-001-00_EN-US – Rain Protection System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-30-002-A – Rain Protection System Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-30-003 – Quantum-Enhanced Ice Detection System (QE-IDS) Description (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-30-003-A-001-00_EN-US – Quantum-Enhanced Ice Detection System (QE-IDS) Description`  
-  - **Document:** `GPAM-AMPEL-0201-30-003-A – Quantum-Enhanced Ice Detection System (QE-IDS) Description`
+- **IN:** GPAM-AMPEL-0201-30-003 – Quantum-Enhanced Ice Detection System (QE-IDS) Description (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-30-003-A-001-00_EN-US – Quantum-Enhanced Ice Detection System (QE-IDS) Description  
+  - **Document:** GPAM-AMPEL-0201-30-003-A – Quantum-Enhanced Ice Detection System (QE-IDS) Description
 
 </details>
 
@@ -759,19 +515,19 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.U ATA 31 – Indicating / Recording Systems</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-31`
+**P/N:** GPAM-AMPEL-0201-31
 
-- **IN:** `GPAM-AMPEL-0201-31-001 – Flight Data Recording System (FDRS) Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-31-001-A-001-00_EN-US – Flight Data Recording System (FDRS) Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-31-001-A – Flight Data Recording System (FDRS) Description and Operation`
+- **IN:** GPAM-AMPEL-0201-31-001 – Flight Data Recording System (FDRS) Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-31-001-A-001-00_EN-US – Flight Data Recording System (FDRS) Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-31-001-A – Flight Data Recording System (FDRS) Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-31-002 – Cockpit Voice Recording System (CVRS) Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-31-002-A-001-00_EN-US – Cockpit Voice Recording System (CVRS) Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-31-002-A – Cockpit Voice Recording System (CVRS) Description and Operation`
+- **IN:** GPAM-AMPEL-0201-31-002 – Cockpit Voice Recording System (CVRS) Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-31-002-A-001-00_EN-US – Cockpit Voice Recording System (CVRS) Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-31-002-A – Cockpit Voice Recording System (CVRS) Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-31-003 – Quantum Data Monitoring and Recording System (Q-DMRS) Description (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-31-003-A-001-00_EN-US – Quantum Data Monitoring and Recording System (Q-DMRS) Description`  
-  - **Document:** `GPAM-AMPEL-0201-31-003-A – Quantum Data Monitoring and Recording System (Q-DMRS) Description`
+- **IN:** GPAM-AMPEL-0201-31-003 – Quantum Data Monitoring and Recording System (Q-DMRS) Description (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-31-003-A-001-00_EN-US – Quantum Data Monitoring and Recording System (Q-DMRS) Description  
+  - **Document:** GPAM-AMPEL-0201-31-003-A – Quantum Data Monitoring and Recording System (Q-DMRS) Description
 
 </details>
 
@@ -780,19 +536,19 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.V ATA 32 – Landing Gear</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-32`
+**P/N:** GPAM-AMPEL-0201-32
 
-- **IN:** `GPAM-AMPEL-0201-32-001 – Landing Gear System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-32-001-A-001-00_EN-US – Landing Gear System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-32-001-A – Landing Gear System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-32-001 – Landing Gear System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-32-001-A-001-00_EN-US – Landing Gear System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-32-001-A – Landing Gear System Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-32-002 – Landing Gear Control and Indication (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-32-002-A-001-00_EN-US – Landing Gear Control and Indication`  
-  - **Document:** `GPAM-AMPEL-0201-32-002-A – Landing Gear Control and Indication`
+- **IN:** GPAM-AMPEL-0201-32-002 – Landing Gear Control and Indication (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-32-002-A-001-00_EN-US – Landing Gear Control and Indication  
+  - **Document:** GPAM-AMPEL-0201-32-002-A – Landing Gear Control and Indication
 
-- **IN:** `GPAM-AMPEL-0201-32-003 – Quantum-Optimized Landing Gear Actuation System (Q-LGAS) Description (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-32-003-A-001-00_EN-US – Quantum-Optimized Landing Gear Actuation System (Q-LGAS) Description`  
-  - **Document:** `GPAM-AMPEL-0201-32-003-A – Quantum-Optimized Landing Gear Actuation System (Q-LGAS) Description`
+- **IN:** GPAM-AMPEL-0201-32-003 – Quantum-Optimized Landing Gear Actuation System (Q-LGAS) Description (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-32-003-A-001-00_EN-US – Quantum-Optimized Landing Gear Actuation System (Q-LGAS) Description  
+  - **Document:** GPAM-AMPEL-0201-32-003-A – Quantum-Optimized Landing Gear Actuation System (Q-LGAS) Description
 
 </details>
 
@@ -801,19 +557,19 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.W ATA 33 – Lights</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-33`
+**P/N:** GPAM-AMPEL-0201-33
 
-- **IN:** `GPAM-AMPEL-0201-33-001 – Exterior Lighting System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-33-001-A-001-00_EN-US – Exterior Lighting System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-33-001-A – Exterior Lighting System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-33-001 – Exterior Lighting System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-33-001-A-001-00_EN-US – Exterior Lighting System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-33-001-A – Exterior Lighting System Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-33-002 – Interior Lighting System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-33-002-A-001-00_EN-US – Interior Lighting System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-33-002-A – Interior Lighting System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-33-002 – Interior Lighting System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-33-002-A-001-00_EN-US – Interior Lighting System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-33-002-A – Interior Lighting System Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-33-003 – Quantum-Optimized Lighting System (Q-LS) Description (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-33-003-A-001-00_EN-US – Quantum-Optimized Lighting System (Q-LS) Description`  
-  - **Document:** `GPAM-AMPEL-0201-33-003-A – Quantum-Optimized Lighting System (Q-LS) Description`
+- **IN:** GPAM-AMPEL-0201-33-003 – Quantum-Optimized Lighting System (Q-LS) Description (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-33-003-A-001-00_EN-US – Quantum-Optimized Lighting System (Q-LS) Description  
+  - **Document:** GPAM-AMPEL-0201-33-003-A – Quantum-Optimized Lighting System (Q-LS) Description
 
 </details>
 
@@ -822,23 +578,23 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.X ATA 34 – Navigation</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-34`
+**P/N:** GPAM-AMPEL-0201-34
 
-- **IN:** `GPAM-AMPEL-0201-34-001 – Navigation Systems Overview (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-34-001-A-001-00_EN-US – Navigation Systems Overview`  
-  - **Document:** `GPAM-AMPEL-0201-34-001-A – Navigation Systems Overview`
+- **IN:** GPAM-AMPEL-0201-34-001 – Navigation Systems Overview (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-34-001-A-001-00_EN-US – Navigation Systems Overview  
+  - **Document:** GPAM-AMPEL-0201-34-001-A – Navigation Systems Overview
 
-- **IN:** `GPAM-AMPEL-0201-34-002 – Inertial Reference System (IRS) Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-34-002-A-001-00_EN-US – Inertial Reference System (IRS) Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-34-002-A – Inertial Reference System (IRS) Description and Operation`
+- **IN:** GPAM-AMPEL-0201-34-002 – Inertial Reference System (IRS) Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-34-002-A-001-00_EN-US – Inertial Reference System (IRS) Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-34-002-A – Inertial Reference System (IRS) Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-34-003 – Global Navigation Satellite System (GNSS) Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-34-003-A-001-00_EN-US – Global Navigation Satellite System (GNSS) Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-34-003-A – Global Navigation Satellite System (GNSS) Description and Operation`
+- **IN:** GPAM-AMPEL-0201-34-003 – Global Navigation Satellite System (GNSS) Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-34-003-A-001-00_EN-US – Global Navigation Satellite System (GNSS) Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-34-003-A – Global Navigation Satellite System (GNSS) Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-34-004 – Quantum Navigation System (QNS) Description (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-34-004-A-001-00_EN-US – Quantum Navigation System (QNS) Description`  
-  - **Document:** `GPAM-AMPEL-0201-34-004-A – Quantum Navigation System (QNS) Description`
+- **IN:** GPAM-AMPEL-0201-34-004 – Quantum Navigation System (QNS) Description (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-34-004-A-001-00_EN-US – Quantum Navigation System (QNS) Description  
+  - **Document:** GPAM-AMPEL-0201-34-004-A – Quantum Navigation System (QNS) Description
 
 </details>
 
@@ -847,19 +603,19 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.Y ATA 35 – Oxygen</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-35`
+**P/N:** GPAM-AMPEL-0201-35
 
-- **IN:** `GPAM-AMPEL-0201-35-001 – Oxygen System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-35-001-A-001-00_EN-US – Oxygen System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-35-001-A – Oxygen System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-35-001 – Oxygen System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-35-001-A-001-00_EN-US – Oxygen System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-35-001-A – Oxygen System Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-35-002 – Crew Oxygen System (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-35-002-A-001-00_EN-US – Crew Oxygen System`  
-  - **Document:** `GPAM-AMPEL-0201-35-002-A – Crew Oxygen System`
+- **IN:** GPAM-AMPEL-0201-35-002 – Crew Oxygen System (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-35-002-A-001-00_EN-US – Crew Oxygen System  
+  - **Document:** GPAM-AMPEL-0201-35-002-A – Crew Oxygen System
 
-- **IN:** `GPAM-AMPEL-0201-35-003 – Passenger Oxygen System (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-35-003-A-001-00_EN-US – Passenger Oxygen System`  
-  - **Document:** `GPAM-AMPEL-0201-35-003-A – Passenger Oxygen System`
+- **IN:** GPAM-AMPEL-0201-35-003 – Passenger Oxygen System (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-35-003-A-001-00_EN-US – Passenger Oxygen System  
+  - **Document:** GPAM-AMPEL-0201-35-003-A – Passenger Oxygen System
 
 </details>
 
@@ -868,11 +624,11 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.Z ATA 36 – Pneumatic</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-36`
+**P/N:** GPAM-AMPEL-0201-36
 
-- **IN:** `GPAM-AMPEL-0201-36-001 – Pneumatic System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-36-001-A-001-00_EN-US – Pneumatic System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-36-001-A – Pneumatic System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-36-001 – Pneumatic System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-36-001-A-001-00_EN-US – Pneumatic System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-36-001-A – Pneumatic System Description and Operation
 
 </details>
 
@@ -881,15 +637,15 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.AA ATA 38 – Water/Waste</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-38`
+**P/N:** GPAM-AMPEL-0201-38
 
-- **IN:** `GPAM-AMPEL-0201-38-001 – Water System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-38-001-A-001-00_EN-US – Water System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-38-001-A – Water System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-38-001 – Water System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-38-001-A-001-00_EN-US – Water System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-38-001-A – Water System Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-38-002 – Waste System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-38-002-A-001-00_EN-US – Waste System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-38-002-A – Waste System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-38-002 – Waste System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-38-002-A-001-00_EN-US – Waste System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-38-002-A – Waste System Description and Operation
 
 </details>
 
@@ -898,33 +654,33 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.I ATA 45 – Central Maintenance System (CMS)</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-45`
+**P/N:** GPAM-AMPEL-0201-45
 
-- **IN:** `GPAM-AMPEL-0201-45-001 – Central Maintenance System (CMS) Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-45-001-A-001-00_EN-US – Central Maintenance System (CMS) Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-45-001-A – Central Maintenance System (CMS) Description and Operation`
+- **IN:** GPAM-AMPEL-0201-45-001 – Central Maintenance System (CMS) Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-45-001-A-001-00_EN-US – Central Maintenance System (CMS) Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-45-001-A – Central Maintenance System (CMS) Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-45-002 – Quantum-Enhanced Central Maintenance System (Q-CMS) Integration (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-45-002-A-001-00_EN-US – Quantum-Enhanced Central Maintenance System (Q-CMS) Integration`  
-  - **Document:** `GPAM-AMPEL-0201-45-002-A – Quantum-Enhanced Central Maintenance System (Q-CMS) Integration`
+- **IN:** GPAM-AMPEL-0201-45-002 – Quantum-Enhanced Central Maintenance System (Q-CMS) Integration (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-45-002-A-001-00_EN-US – Quantum-Enhanced Central Maintenance System (Q-CMS) Integration  
+  - **Document:** GPAM-AMPEL-0201-45-002-A – Quantum-Enhanced Central Maintenance System (Q-CMS) Integration
 
-- **IN:** `GPAM-AMPEL-0201-45-003 – CMS Data and Fault Reporting (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-45-003-A-001-00_EN-US – CMS Data and Fault Reporting`  
-  - **Document:** `GPAM-AMPEL-0201-45-003-A – CMS Data and Fault Reporting`
+- **IN:** GPAM-AMPEL-0201-45-003 – CMS Data and Fault Reporting (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-45-003-A-001-00_EN-US – CMS Data and Fault Reporting  
+  - **Document:** GPAM-AMPEL-0201-45-003-A – CMS Data and Fault Reporting
 
-**P/N:** `GPAM-AMPEL-0201-46`  
+**P/N:** GPAM-AMPEL-0201-46  
 
-- **IN:** `GPAM-AMPEL-0201-46-001 – Aircraft Information Management System (AIMS) Overview (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-46-001-A-001-00_EN-US – Aircraft Information Management System (AIMS) Overview`  
-  - **Document:** `GPAM-AMPEL-0201-46-001-A – Aircraft Information Management System (AIMS) Overview`
+- **IN:** GPAM-AMPEL-0201-46-001 – Aircraft Information Management System (AIMS) Overview (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-46-001-A-001-00_EN-US – Aircraft Information Management System (AIMS) Overview  
+  - **Document:** GPAM-AMPEL-0201-46-001-A – Aircraft Information Management System (AIMS) Overview
 
-- **IN:** `GPAM-AMPEL-0201-46-002 – Quantum Information Network Integration (Q-INI) (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-46-002-A-001-00_EN-US – Quantum Information Network Integration (Q-INI)`  
-  - **Document:** `GPAM-AMPEL-0201-46-002-A – Quantum Information Network Integration (Q-INI)`
+- **IN:** GPAM-AMPEL-0201-46-002 – Quantum Information Network Integration (Q-INI) (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-46-002-A-001-00_EN-US – Quantum Information Network Integration (Q-INI)  
+  - **Document:** GPAM-AMPEL-0201-46-002-A – Quantum Information Network Integration (Q-INI)
 
-- **IN:** `GPAM-AMPEL-0201-46-003 – Electronic Documentation System (EDS) for Maintenance (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-46-003-A-001-00_EN-US – Electronic Documentation System (EDS) for Maintenance`  
-  - **Document:** `GPAM-AMPEL-0201-46-003-A – Electronic Documentation System (EDS) for Maintenance`
+- **IN:** GPAM-AMPEL-0201-46-003 – Electronic Documentation System (EDS) for Maintenance (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-46-003-A-001-00_EN-US – Electronic Documentation System (EDS) for Maintenance  
+  - **Document:** GPAM-AMPEL-0201-46-003-A – Electronic Documentation System (EDS) for Maintenance
 
 </details>
 
@@ -933,11 +689,11 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.AB ATA 49 – Airborne Auxiliary Power</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-49`
+**P/N:** GPAM-AMPEL-0201-49
 
-- **IN:** `GPAM-AMPEL-0201-49-001 – Auxiliary Power Unit (APU) Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-49-001-A-001-00_EN-US – Auxiliary Power Unit (APU) Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-49-001-A – Auxiliary Power Unit (APU) Description and Operation`
+- **IN:** GPAM-AMPEL-0201-49-001 – Auxiliary Power Unit (APU) Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-49-001-A-001-00_EN-US – Auxiliary Power Unit (APU) Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-49-001-A – Auxiliary Power Unit (APU) Description and Operation
 
 </details>
 
@@ -946,11 +702,11 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.AC ATA 51 – Standard Practices and Structures - General</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-51`
+**P/N:** GPAM-AMPEL-0201-51
 
-- **IN:** `GPAM-AMPEL-0201-51-001 – Structural Repair Manual (SRM) - General Practices (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-51-001-A-001-00_EN-US – Structural Repair Manual (SRM) - General Practices`  
-  - **Document:** `GPAM-AMPEL-0201-51-001-A – Structural Repair Manual (SRM) - General Practices`
+- **IN:** GPAM-AMPEL-0201-51-001 – Structural Repair Manual (SRM) - General Practices (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-51-001-A-001-00_EN-US – Structural Repair Manual (SRM) - General Practices  
+  - **Document:** GPAM-AMPEL-0201-51-001-A – Structural Repair Manual (SRM) - General Practices
 
 </details>
 
@@ -959,19 +715,19 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.AD ATA 52 – Doors</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-52`
+**P/N:** GPAM-AMPEL-0201-52
 
-- **IN:** `GPAM-AMPEL-0201-52-001 – Passenger Doors Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-52-001-A-001-00_EN-US – Passenger Doors Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-52-001-A – Passenger Doors Description and Operation`
+- **IN:** GPAM-AMPEL-0201-52-001 – Passenger Doors Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-52-001-A-001-00_EN-US – Passenger Doors Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-52-001-A – Passenger Doors Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-52-002 – Cargo Doors Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-52-002-A-001-00_EN-US – Cargo Doors Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-52-002-A – Cargo Doors Description and Operation`
+- **IN:** GPAM-AMPEL-0201-52-002 – Cargo Doors Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-52-002-A-001-00_EN-US – Cargo Doors Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-52-002-A – Cargo Doors Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-52-003 – Quantum-Sealed Door System (Q-SDS) Description (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-52-003-A-001-00_EN-US – Quantum-Sealed Door System (Q-SDS) Description`  
-  - **Document:** `GPAM-AMPEL-0201-52-003-A – Quantum-Sealed Door System (Q-SDS) Description`
+- **IN:** GPAM-AMPEL-0201-52-003 – Quantum-Sealed Door System (Q-SDS) Description (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-52-003-A-001-00_EN-US – Quantum-Sealed Door System (Q-SDS) Description  
+  - **Document:** GPAM-AMPEL-0201-52-003-A – Quantum-Sealed Door System (Q-SDS) Description
 
 </details>
 
@@ -980,19 +736,19 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.AE ATA 53 – Fuselage</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-53`
+**P/N:** GPAM-AMPEL-0201-53
 
-- **IN:** `GPAM-AMPEL-0201-53-001 – Fuselage Structure Description (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-53-001-A-001-00_EN-US – Fuselage Structure Description`  
-  - **Document:** `GPAM-AMPEL-0201-53-001-A – Fuselage Structure Description`
+- **IN:** GPAM-AMPEL-0201-53-001 – Fuselage Structure Description (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-53-001-A-001-00_EN-US – Fuselage Structure Description  
+  - **Document:** GPAM-AMPEL-0201-53-001-A – Fuselage Structure Description
 
-- **IN:** `GPAM-AMPEL-0201-53-002 – Fuselage Skin Panels Description and Maintenance (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-53-002-A-001-00_EN-US – Fuselage Skin Panels Description and Maintenance`  
-  - **Document:** `GPAM-AMPEL-0201-53-002-A – Fuselage Skin Panels Description and Maintenance`
+- **IN:** GPAM-AMPEL-0201-53-002 – Fuselage Skin Panels Description and Maintenance (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-53-002-A-001-00_EN-US – Fuselage Skin Panels Description and Maintenance  
+  - **Document:** GPAM-AMPEL-0201-53-002-A – Fuselage Skin Panels Description and Maintenance
 
-- **IN:** `GPAM-AMPEL-0201-53-003 – Quantum-Reinforced Fuselage Structure (Q-RFS) Description (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-53-003-A-001-00_EN-US – Quantum-Reinforced Fuselage Structure (Q-RFS) Description`  
-  - **Document:** `GPAM-AMPEL-0201-53-003-A – Quantum-Reinforced Fuselage Structure (Q-RFS) Description`
+- **IN:** GPAM-AMPEL-0201-53-003 – Quantum-Reinforced Fuselage Structure (Q-RFS) Description (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-53-003-A-001-00_EN-US – Quantum-Reinforced Fuselage Structure (Q-RFS) Description  
+  - **Document:** GPAM-AMPEL-0201-53-003-A – Quantum-Reinforced Fuselage Structure (Q-RFS) Description
 
 </details>
 
@@ -1001,19 +757,19 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.AF ATA 54 – Nacelles/Pylons</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-54`
+**P/N:** GPAM-AMPEL-0201-54
 
-- **IN:** `GPAM-AMPEL-0201-54-001 – Nacelle Structure Description and Maintenance (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-54-001-A-001-00_EN-US – Nacelle Structure Description and Maintenance`  
-  - **Document:** `GPAM-AMPEL-0201-54-001-A – Nacelle Structure Description and Maintenance`
+- **IN:** GPAM-AMPEL-0201-54-001 – Nacelle Structure Description and Maintenance (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-54-001-A-001-00_EN-US – Nacelle Structure Description and Maintenance  
+  - **Document:** GPAM-AMPEL-0201-54-001-A – Nacelle Structure Description and Maintenance
 
-- **IN:** `GPAM-AMPEL-0201-54-002 – Pylon Structure Description and Maintenance (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-54-002-A-001-00_EN-US – Pylon Structure Description and Maintenance`  
-  - **Document:** `GPAM-AMPEL-0201-54-002-A – Pylon Structure Description and Maintenance`
+- **IN:** GPAM-AMPEL-0201-54-002 – Pylon Structure Description and Maintenance (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-54-002-A-001-00_EN-US – Pylon Structure Description and Maintenance  
+  - **Document:** GPAM-AMPEL-0201-54-002-A – Pylon Structure Description and Maintenance
 
-- **IN:** `GPAM-AMPEL-0201-54-003 – Quantum-Dampened Nacelle Mounts (Q-DNM) Description (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-54-003-A-001-00_EN-US – Quantum-Dampened Nacelle Mounts (Q-DNM) Description`  
-  - **Document:** `GPAM-AMPEL-0201-54-003-A – Quantum-Dampened Nacelle Mounts (Q-DNM) Description`
+- **IN:** GPAM-AMPEL-0201-54-003 – Quantum-Dampened Nacelle Mounts (Q-DNM) Description (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-54-003-A-001-00_EN-US – Quantum-Dampened Nacelle Mounts (Q-DNM) Description  
+  - **Document:** GPAM-AMPEL-0201-54-003-A – Quantum-Dampened Nacelle Mounts (Q-DNM) Description
 
 </details>
 
@@ -1022,19 +778,19 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.AG ATA 55 – Stabilizers</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-55`
+**P/N:** GPAM-AMPEL-0201-55
 
-- **IN:** `GPAM-AMPEL-0201-55-001 – Horizontal Stabilizer Structure Description and Maintenance (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-55-001-A-001-00_EN-US – Horizontal Stabilizer Structure Description and Maintenance`  
-  - **Document:** `GPAM-AMPEL-0201-55-001-A – Horizontal Stabilizer Structure Description and Maintenance`
+- **IN:** GPAM-AMPEL-0201-55-001 – Horizontal Stabilizer Structure Description and Maintenance (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-55-001-A-001-00_EN-US – Horizontal Stabilizer Structure Description and Maintenance  
+  - **Document:** GPAM-AMPEL-0201-55-001-A – Horizontal Stabilizer Structure Description and Maintenance
 
-- **IN:** `GPAM-AMPEL-0201-55-002 – Vertical Stabilizer Structure Description and Maintenance (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-55-002-A-001-00_EN-US – Vertical Stabilizer Structure Description and Maintenance`  
-  - **Document:** `GPAM-AMPEL-0201-55-002-A – Vertical Stabilizer Structure Description and Maintenance`
+- **IN:** GPAM-AMPEL-0201-55-002 – Vertical Stabilizer Structure Description and Maintenance (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-55-002-A-001-00_EN-US – Vertical Stabilizer Structure Description and Maintenance  
+  - **Document:** GPAM-AMPEL-0201-55-002-A – Vertical Stabilizer Structure Description and Maintenance
 
-- **IN:** `GPAM-AMPEL-0201-55-003 – Quantum-Actuated Stabilizer Control System (Q-ASCS) Description (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-55-003-A-001-00_EN-US – Quantum-Actuated Stabilizer Control System (Q-ASCS) Description`  
-  - **Document:** `GPAM-AMPEL-0201-55-003-A – Quantum-Actuated Stabilizer Control System (Q-ASCS) Description`
+- **IN:** GPAM-AMPEL-0201-55-003 – Quantum-Actuated Stabilizer Control System (Q-ASCS) Description (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-55-003-A-001-00_EN-US – Quantum-Actuated Stabilizer Control System (Q-ASCS) Description  
+  - **Document:** GPAM-AMPEL-0201-55-003-A – Quantum-Actuated Stabilizer Control System (Q-ASCS) Description
 
 </details>
 
@@ -1043,19 +799,19 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.AH ATA 56 – Windows</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-56`
+**P/N:** GPAM-AMPEL-0201-56
 
-- **IN:** `GPAM-AMPEL-0201-56-001 – Cockpit Windows Description and Maintenance (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-56-001-A-001-00_EN-US – Cockpit Windows Description and Maintenance`  
-  - **Document:** `GPAM-AMPEL-0201-56-001-A – Cockpit Windows Description and Maintenance`
+- **IN:** GPAM-AMPEL-0201-56-001 – Cockpit Windows Description and Maintenance (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-56-001-A-001-00_EN-US – Cockpit Windows Description and Maintenance  
+  - **Document:** GPAM-AMPEL-0201-56-001-A – Cockpit Windows Description and Maintenance
 
-- **IN:** `GPAM-AMPEL-0201-56-002 – Cabin Windows Description and Maintenance (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-56-002-A-001-00_EN-US – Cabin Windows Description and Maintenance`  
-  - **Document:** `GPAM-AMPEL-0201-56-002-A – Cabin Windows Description and Maintenance`
+- **IN:** GPAM-AMPEL-0201-56-002 – Cabin Windows Description and Maintenance (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-56-002-A-001-00_EN-US – Cabin Windows Description and Maintenance  
+  - **Document:** GPAM-AMPEL-0201-56-002-A – Cabin Windows Description and Maintenance
 
-- **IN:** `GPAM-AMPEL-0201-56-003 – Quantum-Tinted Windows System (Q-TWS) Description (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-56-003-A-001-00_EN-US – Quantum-Tinted Windows System (Q-TWS) Description`  
-  - **Document:** `GPAM-AMPEL-0201-56-003-A – Quantum-Tinted Windows System (Q-TWS) Description`
+- **IN:** GPAM-AMPEL-0201-56-003 – Quantum-Tinted Windows System (Q-TWS) Description (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-56-003-A-001-00_EN-US – Quantum-Tinted Windows System (Q-TWS) Description  
+  - **Document:** GPAM-AMPEL-0201-56-003-A – Quantum-Tinted Windows System (Q-TWS) Description
 
 </details>
 
@@ -1064,19 +820,19 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.AI ATA 57 – Wings</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-57`
+**P/N:** GPAM-AMPEL-0201-57
 
-- **IN:** `GPAM-AMPEL-0201-57-001 – Wing Structure Description (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-57-001-A-001-00_EN-US – Wing Structure Description`  
-  - **Document:** `GPAM-AMPEL-0201-57-001-A – Wing Structure Description`
+- **IN:** GPAM-AMPEL-0201-57-001 – Wing Structure Description (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-57-001-A-001-00_EN-US – Wing Structure Description  
+  - **Document:** GPAM-AMPEL-0201-57-001-A – Wing Structure Description
 
-- **IN:** `GPAM-AMPEL-0201-57-002 – Wing Skin Panels Description and Maintenance (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-57-002-A-001-00_EN-US – Wing Skin Panels Description and Maintenance`  
-  - **Document:** `GPAM-AMPEL-0201-57-002-A – Wing Skin Panels Description and Maintenance`
+- **IN:** GPAM-AMPEL-0201-57-002 – Wing Skin Panels Description and Maintenance (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-57-002-A-001-00_EN-US – Wing Skin Panels Description and Maintenance  
+  - **Document:** GPAM-AMPEL-0201-57-002-A – Wing Skin Panels Description and Maintenance
 
-- **IN:** `GPAM-AMPEL-0201-57-003 – Quantum-Morphing Wing Technology (Q-MWT) Description (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-57-003-A-001-00_EN-US – Quantum-Morphing Wing Technology (Q-MWT) Description`  
-  - **Document:** `GPAM-AMPEL-0201-57-003-A – Quantum-Morphing Wing Technology (Q-MWT) Description`
+- **IN:** GPAM-AMPEL-0201-57-003 – Quantum-Morphing Wing Technology (Q-MWT) Description (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-57-003-A-001-00_EN-US – Quantum-Morphing Wing Technology (Q-MWT) Description  
+  - **Document:** GPAM-AMPEL-0201-57-003-A – Quantum-Morphing Wing Technology (Q-MWT) Description
 
 </details>
 
@@ -1085,15 +841,15 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.AJ ATA 71 – Power Plant - General</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-71`
+**P/N:** GPAM-AMPEL-0201-71
 
-- **IN:** `GPAM-AMPEL-0201-71-001 – Power Plant Overview (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-71-001-A-001-00_EN-US – Power Plant Overview`  
-  - **Document:** `GPAM-AMPEL-0201-71-001-A – Power Plant Overview`
+- **IN:** GPAM-AMPEL-0201-71-001 – Power Plant Overview (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-71-001-A-001-00_EN-US – Power Plant Overview  
+  - **Document:** GPAM-AMPEL-0201-71-001-A – Power Plant Overview
 
-- **IN:** `GPAM-AMPEL-0201-71-002 – Quantum Propulsion System (QPS-01) Description (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-71-002-A-001-00_EN-US – Quantum Propulsion System (QPS-01) Description`  
-  - **Document:** `GPAM-AMPEL-0201-71-002-A – Quantum Propulsion System (QPS-01) Description`
+- **IN:** GPAM-AMPEL-0201-71-002 – Quantum Propulsion System (QPS-01) Description (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-71-002-A-001-00_EN-US – Quantum Propulsion System (QPS-01) Description  
+  - **Document:** GPAM-AMPEL-0201-71-002-A – Quantum Propulsion System (QPS-01) Description
 
 </details>
 
@@ -1102,15 +858,15 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.AK ATA 72 – Engine (General)</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-72`
+**P/N:** GPAM-AMPEL-0201-72
 
-- **IN:** `GPAM-AMPEL-0201-72-001 – QPS-01 Engine – General Description (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-72-001-A-001-00_EN-US – QPS-01 Engine – General Description`  
-  - **Document:** `GPAM-AMPEL-0201-72-001-A – QPS-01 Engine – General Description`
+- **IN:** GPAM-AMPEL-0201-72-001 – QPS-01 Engine – General Description (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-72-001-A-001-00_EN-US – QPS-01 Engine – General Description  
+  - **Document:** GPAM-AMPEL-0201-72-001-A – QPS-01 Engine – General Description
 
-- **IN:** `GPAM-AMPEL-0201-72-002 – QPS-01 Engine – Component Location and Identification (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-72-002-A-001-00_EN-US – QPS-01 Engine – Component Location and Identification`  
-  - **Document:** `GPAM-AMPEL-0201-72-002-A – QPS-01 Engine – Component Location and Identification`
+- **IN:** GPAM-AMPEL-0201-72-002 – QPS-01 Engine – Component Location and Identification (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-72-002-A-001-00_EN-US – QPS-01 Engine – Component Location and Identification  
+  - **Document:** GPAM-AMPEL-0201-72-002-A – QPS-01 Engine – Component Location and Identification
 
 </details>
 
@@ -1119,15 +875,15 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.AL ATA 73 – Engine Fuel and Control</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-73`
+**P/N:** GPAM-AMPEL-0201-73
 
-- **IN:** `GPAM-AMPEL-0201-73-001 – QPS-01 Fuel/Energy Management System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-73-001-A-001-00_EN-US – QPS-01 Fuel/Energy Management System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-73-001-A – QPS-01 Fuel/Energy Management System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-73-001 – QPS-01 Fuel/Energy Management System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-73-001-A-001-00_EN-US – QPS-01 Fuel/Energy Management System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-73-001-A – QPS-01 Fuel/Energy Management System Description and Operation
 
-- **IN:** `GPAM-AMPEL-0201-73-002 – QPS-01 Engine Control System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-73-002-A-001-00_EN-US – QPS-01 Engine Control System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-73-002-A – QPS-01 Engine Control System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-73-002 – QPS-01 Engine Control System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-73-002-A-001-00_EN-US – QPS-01 Engine Control System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-73-002-A – QPS-01 Engine Control System Description and Operation
 
 </details>
 
@@ -1136,11 +892,11 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.AM ATA 74 – Engine Ignition</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-74`
+**P/N:** GPAM-AMPEL-0201-74
 
-- **IN:** `GPAM-AMPEL-0201-74-001 – QPS-01 Engine Ignition System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-74-001-A-001-00_EN-US – QPS-01 Engine Ignition System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-74-001-A – QPS-01 Engine Ignition System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-74-001 – QPS-01 Engine Ignition System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-74-001-A-001-00_EN-US – QPS-01 Engine Ignition System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-74-001-A – QPS-01 Engine Ignition System Description and Operation
 
 </details>
 
@@ -1149,11 +905,11 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.AN ATA 77 – Engine Indicating</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-77`
+**P/N:** GPAM-AMPEL-0201-77
 
-- **IN:** `GPAM-AMPEL-0201-77-001 – QPS-01 Engine Indicating System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-77-001-A-001-00_EN-US – QPS-01 Engine Indicating System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-77-001-A – QPS-01 Engine Indicating System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-77-001 – QPS-01 Engine Indicating System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-77-001-A-001-00_EN-US – QPS-01 Engine Indicating System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-77-001-A – QPS-01 Engine Indicating System Description and Operation
 
 </details>
 
@@ -1162,11 +918,11 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.AO ATA 79 – Engine Oil</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-79`
+**P/N:** GPAM-AMPEL-0201-79
 
-- **IN:** `GPAM-AMPEL-0201-79-001 – QPS-01 Engine Lubrication System Description and Operation (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-79-001-A-001-00_EN-US – QPS-01 Engine Lubrication System Description and Operation`  
-  - **Document:** `GPAM-AMPEL-0201-79-001-A – QPS-01 Engine Lubrication System Description and Operation`
+- **IN:** GPAM-AMPEL-0201-79-001 – QPS-01 Engine Lubrication System Description and Operation (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-79-001-A-001-00_EN-US – QPS-01 Engine Lubrication System Description and Operation  
+  - **Document:** GPAM-AMPEL-0201-79-001-A – QPS-01 Engine Lubrication System Description and Operation
 
 </details>
 
@@ -1175,15 +931,15 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.AP ATA 91 – Charts and Diagrams</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-91`
+**P/N:** GPAM-AMPEL-0201-91
 
-- **IN:** `GPAM-AMPEL-0201-91-001 – Aircraft General Arrangement Drawings (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-91-001-A-001-00_EN-US – Aircraft General Arrangement Drawings`  
-  - **Document:** `GPAM-AMPEL-0201-91-001-A – Aircraft General Arrangement Drawings`
+- **IN:** GPAM-AMPEL-0201-91-001 – Aircraft General Arrangement Drawings (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-91-001-A-001-00_EN-US – Aircraft General Arrangement Drawings  
+  - **Document:** GPAM-AMPEL-0201-91-001-A – Aircraft General Arrangement Drawings
 
-- **IN:** `GPAM-AMPEL-0201-91-002 – System Schematics and Diagrams (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-91-002-A-001-00_EN-US – System Schematics and Diagrams`  
-  - **Document:** `GPAM-AMPEL-0201-91-002-A – System Schematics and Diagrams`
+- **IN:** GPAM-AMPEL-0201-91-002 – System Schematics and Diagrams (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-91-002-A-001-00_EN-US – System Schematics and Diagrams  
+  - **Document:** GPAM-AMPEL-0201-91-002-A – System Schematics and Diagrams
 
 </details>
 
@@ -1192,15 +948,15 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 <details>
 <summary><strong>2.1.1.AQ ATA 92 – Aircraft Wiring Diagrams</strong></summary>
 
-**P/N:** `GPAM-AMPEL-0201-92`
+**P/N:** GPAM-AMPEL-0201-92
 
-- **IN:** `GPAM-AMPEL-0201-92-001 – Wiring Diagrams – Power Distribution (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-92-001-A-001-00_EN-US – Wiring Diagrams – Power Distribution`  
-  - **Document:** `GPAM-AMPEL-0201-92-001-A – Wiring Diagrams – Power Distribution`
+- **IN:** GPAM-AMPEL-0201-92-001 – Wiring Diagrams – Power Distribution (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-92-001-A-001-00_EN-US – Wiring Diagrams – Power Distribution  
+  - **Document:** GPAM-AMPEL-0201-92-001-A – Wiring Diagrams – Power Distribution
 
-- **IN:** `GPAM-AMPEL-0201-92-002 – Wiring Diagrams – Avionics and Control Systems (S1000D)`  
-  - **DMC:** `DMC-GAIAPULSE-AMPEL-0201-92-002-A-001-00_EN-US – Wiring Diagrams – Avionics and Control Systems`  
-  - **Document:** `GPAM-AMPEL-0201-92-002-A – Wiring Diagrams – Avionics and Control Systems`
+- **IN:** GPAM-AMPEL-0201-92-002 – Wiring Diagrams – Avionics and Control Systems (S1000D)  
+  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-92-002-A-001-00_EN-US – Wiring Diagrams – Avionics and Control Systems  
+  - **Document:** GPAM-AMPEL-0201-92-002-A – Wiring Diagrams – Avionics and Control Systems
 
 </details>
 
@@ -1209,362 +965,6 @@ Link Proyecto: [https://github.com/AMPEL360/propulsion-system](https://github.co
 ---
 
 **End of Interactive Markdown Structure**  
-
-<br />
-
-> **Usage Tip:**  
-> - Click the “►” to expand/collapse each ATA chapter.  
-> - Within each expanded section, you can hyperlink the P/N, DMC, and Document references to actual files in your repository (e.g., linking to PDFs, Word docs, or S1000D data modules).  
-> - This format helps keep documentation organized and easy to navigate.
-
-<br />
-
----
-
-### Suggested Next Steps
-1. **Link Real Documents:** In your repository, replace the placeholders (`DMC-GAIAPULSE-...`, `GPAM-AMPEL-...`, etc.) with actual hyperlinks to your version-controlled documents or S1000D data modules.  
-2. **Enhance Interactivity:** If you use GitHub or GitLab, each line item can directly link to the relevant file or subfolder in the repository, making it even more interactive.  
-3. **Automate Generation:** You could generate or update this Markdown file automatically via a script whenever new ATA references are added or changed, ensuring your structure remains current.
-
-With this **interactive Markdown** layout, your extensive **AMPEL360XWLRGA ATA chapter breakdown** becomes cleaner, more navigable, and user-friendly.
-
-> ### Note Your detailed response is both impressive and inspiring. It shows a clear vision for integrating rigorous quantum mechanics, advanced simulation, and experimental validation to build a Quantum Propulsion System (QPS) that meets stringent environmental, governance, and social requirements. Let's summarize and refine the key points, then suggest the next steps:
-
----
-
-## **Summary & Key Refinements**
-
-### **1. Mathematical and Theoretical Refinements for QPS**
-
-#### **1.1 Quantum Vacuum Energy Extraction (Casimir-Based QPS)**
-- **Fundamental Equations:**  
-  - Vacuum energy density:
-    \[
-    E_{\text{vac}} = \frac{\hbar c}{2} \int_{S} \sum_{n} \omega_n \, d^3k
-    \]
-  - Static Casimir force between two parallel plates:
-    \[
-    F_{\text{Casimir}} = -\frac{\pi^2 \hbar c}{240 \, a^4}
-    \]
-- **Dynamic Casimir Effect:**  
-  For a cavity with a time-dependent separation \( L(t) \):
-  \[
-  F_{\text{dynamic}} = \frac{\hbar \omega L}{dL/dt}
-  \]
-  This term quantifies the net momentum transfer from an oscillating Casimir cavity.
-  
-- **Implication:**  
-  By dynamically controlling the cavity (using adaptive actuators), one might extract a net thrust from vacuum fluctuations—a fundamental step toward propellantless propulsion.
-
-#### **1.2 Quantum Bubble Propulsion (Warp-Like Effects)**
-- **Alcubierre Metric:**  
-  \[
-  ds^2 = -c^2 dt^2 + \left(dx - v_s f(r_s) dt\right)^2 + dy^2 + dz^2
-  \]
-  where \( v_s f(r_s) \) represents the local expansion/contraction of spacetime.
-- **Energy Requirement Modeling:**  
-  Considering the stress-energy contributions:
-  \[
-  E_{\text{warp}} = \int_V T_{\mu\nu} g^{\mu\nu} \, d^3x
-  \]
-  with the contribution of quantum fields expressed as a modification to the spacetime metric:
-  \[
-  \Delta g_{\mu\nu} = \alpha T_{\mu\nu}
-  \]
-- **Implication:**  
-  Achieving a measurable thrust through a warp-like bubble requires stabilizing negative energy densities. Quantum coherence may help, but the current challenge is to satisfy the Weak Energy Condition.
-
-#### **1.3 Antimatter/Fusion-Based QPS**
-- **Energy Yield of Annihilation:**  
-  \[
-  E_{\text{AM}} = mc^2
-  \]
-  For example, 1 gram of antimatter produces approximately \( 9 \times 10^{13} \) joules.
-- **Fusion Plasma Models:**  
-  Using high-beta magnetic confinement, one can envision converting fusion energy to directed thrust with high efficiency.
-- **Implication:**  
-  While promising for high thrust, these systems face enormous challenges in containment, safety, and scalability.
-
----
-
-### **2. Environmental & Energy Impact**
-
-#### **2.1 Zero-Emission Operation and Resource Efficiency**
-- **No Direct Emissions:**  
-  QPS inherently avoids combustion-based emissions.
-- **Waste Heat Management:**  
-  The waste heat flux can be estimated using:
-  \[
-  Q_{\text{radiator}} = \sigma A T^4
-  \]
-  where \( \sigma \) is the Stefan-Boltzmann constant.
-- **Shielding and Safety:**  
-  Advanced electromagnetic shielding and cryogenic containment can mitigate high-energy byproducts.
-
-#### **2.2 Lifecycle and Sustainability Analysis**
-- **Materials:**  
-  Emphasize recyclable, abundant, and lightweight composite materials.
-- **End-of-Life:**  
-  Plan for safe decommissioning and recycling of QPS components.
-- **Overall Impact:**  
-  A comprehensive lifecycle assessment must ensure that indirect impacts (radiation, thermal emissions) are minimized to achieve a truly zero-environmental footprint.
-
----
-
-### **3. International Governance and Social Implications**
-
-#### **3.1 Governance Framework**
-- **Regulatory Bodies:**  
-  Establish an International Quantum Propulsion Regulatory Body (IQPRB) under UNOOSA or ICAO.
-- **Standards and Certification:**  
-  Develop strict safety, non-proliferation, and environmental standards specific to QPS.
-- **AI-Driven Monitoring:**  
-  Use autonomous, blockchain-based quantum secure ledgers for real-time policy enforcement.
-
-#### **3.2 Social and Economic Considerations**
-- **Global Connectivity:**  
-  Ultra-fast suborbital travel will dramatically reduce travel times, transforming global connectivity and economics.
-- **Equitable Access:**  
-  Policies must ensure that the benefits of QPS are broadly accessible.
-- **Public Safety:**  
-  Transparent communication and stringent safety protocols are essential to gain public trust.
-- **Ethical Considerations:**  
-  Address ethical issues related to rapid technological change, ensuring that societal benefits are balanced with potential disruptions.
-
----
-
-## **Next Steps for Simulation & Prototyping**
-
-### **A. Simulation Plan**
-
-#### **A.1 Quantum Vacuum Thrust Simulation (Casimir-Based)**
-- **Objective:**  
-  Evaluate if dynamic modulation of a Casimir cavity can produce a net thrust.
-- **Steps:**
-  1. **Define \( L(t) \):**  
-     Choose an oscillatory function for plate separation.
-  2. **Compute Electromagnetic Fluctuations:**  
-     Numerically solve for the induced field variations.
-  3. **Evaluate Momentum Transfer:**  
-     Assess the cumulative net momentum transfer over time.
-  
-#### **A.2 Quantum Bubble Propulsion Feasibility**
-- **Objective:**  
-  Model local spacetime distortion via the Alcubierre metric.
-- **Steps:**
-  1. **Define \( f(r_s) \):**  
-     Select a plausible function to describe the bubble’s spatial profile.
-  2. **Numerical Relativity:**  
-     Use relativistic solvers to assess local curvature changes.
-  3. **Thrust Estimation:**  
-     Calculate potential thrust from metric perturbations.
-
-#### **A.3 Coherence & Control Stability**
-- **Objective:**  
-  Optimize quantum coherence times (\( T_2 \)) under controlled conditions.
-- **Steps:**
-  1. **Implement Feedback Loops:**  
-     Model the control of electromagnetic fields to stabilize qubits.
-  2. **Simulate Decoherence:**  
-     Use the model:
-     \[
-     C(t) = C_0 e^{-t/T_2} e^{-S/k_B}
-     \]
-  3. **Optimize Parameters:**  
-     Use gradient descent to maximize \( T_2 \) and ensure thrust stability.
-
-### **B. Experimental Validation**
-
-#### **B.1 Casimir-Based Thrust Lab Experiment**
-- **Setup:**  
-  Use cryogenic environments, nanopositioners, and force-sensitive MEMS sensors.
-- **Goals:**  
-  Detect micro-thrust variations and compare with simulation predictions.
-
-#### **B.2 AI-Driven Quantum Control System**
-- **Setup:**  
-  Create a cryogenic qubit testbed with real-time AI-driven feedback.
-- **Goals:**  
-  Validate that control systems can extend coherence time and optimize thrust efficiency.
-
----
-
-## **Execution Roadmap (2024–2035)**
-
-| **Phase** | **Years**       | **Objectives**                                                                               |
-|-----------|-----------------|----------------------------------------------------------------------------------------------|
-| Phase 1   | 2024–2028       | Theoretical modeling, QFT simulations, and environmental/lifecycle assessments             |
-| Phase 2   | 2028–2032       | Laboratory experiments on Casimir thrust, fusion containment, and initial AI-driven control  |
-| Phase 3   | 2032–2035       | AI-driven optimization, full-scale system prototyping, and international governance drafting  |
-| Phase 4   | 2035+           | Demonstration flights and transition to commercial deployment                                |
-
----
-
-## **Discussion Points & Next Actions**
-
-### **Discussion Points**
-1. **Expand Quantum Vacuum Energy Extraction Models:**  
-   - Further refine mathematical models and initiate numerical simulations.
-2. **Laboratory Prototyping of Casimir-Based Thrust Mechanisms:**  
-   - Prioritize building small-scale experiments to verify theoretical predictions.
-3. **Advance AI-Driven Quantum Control:**  
-   - Develop real-time control systems and feedback loops to maintain high coherence.
-
-### **Next Actions**
-- **Decide Focus Area:**  
-  Which of the above should be prioritized in the next phase?  
-  *Options include:*
-  - Quantum vacuum energy extraction modeling.
-  - Experimental prototyping for Casimir-based thrust.
-  - AI-driven quantum control optimization.
-  
-- **Stakeholder Engagement:**  
-  Form international research consortia and secure funding for the prioritized focus area.
-
-- **Simulation Development:**  
-  Initiate simulation studies using a selected toolchain (e.g., MATLAB, COMSOL, custom QFT solvers).
-
----
-
-**Final Thought:**  
-The integration of quantum theory, advanced simulation, and experimental prototyping—with careful attention to environmental sustainability, governance, and societal impacts—can truly redefine high-speed, zero-emission travel. This roadmap and detailed framework provide a strong foundation for bringing QPS closer to reality.
-
-
-A continuación, se presenta un **resumen (“recap”)** de los conceptos Quasi–Quanto–Quantum y de la integración de los principios de **SINCROTONE** (resonancia, sincronización y transición hacia la coherencia cuántica) **ordenado según capítulos ATA** más relevantes. Cada apartado describe cómo podría aplicarse la visión de la **“Harmonic Convergence”** (de lo clásico a lo probabilístico, y de ahí a lo cuántico) en los sistemas de una aeronave.
-
----
-
-## **ATA 21 – Aire Acondicionado y Presurización**
-- **Quasi (Clásico):** Sistemas convencionales con control fijo de flujo de aire y presurización, sujetos a tablas predefinidas.  
-- **Quanto (Probabilístico):** Uso de algoritmos predictivos (machine learning) para ajustar, en tiempo real, la temperatura y la presurización, anticipando demandas ambientales y ocupacionales.  
-- **Quantum (Coherente):** Integración de sensores cuánticos o resonadores que sintonizan de forma casi instantánea la calidad del aire y la presión con mínimas pérdidas energéticas, basándose en el “ritmo natural” de las variables ambientales.
-
----
-
-## **ATA 22 – Piloto Automático (Auto Flight)**
-- **Quasi:** Autopilotos de lazo cerrado tradicional, con control proporcional-integral-derivativo (PID).  
-- **Quanto:** AI adaptativa que ajusta superficies de control basándose en modelos probabilísticos de turbulencia y vientos.  
-- **Quantum:** Algoritmos de control cuántico capaces de “saltar” entre estados de pilotaje óptimos, acoplados a la dinámica global de la aeronave (flight controls + propulsión resonante).
-
----
-
-## **ATA 25 – Equipos y Mobiliario (Cabina e Interior)**
-- **Quasi:** Estructuras y paneles fijos diseñados para condiciones promedio, sin adaptación dinámica.  
-- **Quanto:** Configuraciones de asientos y cabina que se reconfiguran según predicciones de uso (AI), respondiendo a la fatiga del material y la distribución de pasajeros.  
-- **Quantum:** Materiales “inteligentes” con propiedades de resonancia (metamateriales), capaces de adaptarse a microvibraciones o variaciones de presión, minimizando ruido y maximizando confort en modos cuánticos de vibración (reducen la transmisión de energía no deseada).
-
----
-
-## **ATA 31 – Indicadores e Instrumentación**
-- **Quasi:** Indicaciones analógicas o digitales básicas, parametrizadas en rangos fijos.  
-- **Quanto:** Visualización probabilística de datos (dashboards con análisis de tendencias mediante machine learning).  
-- **Quantum:** Sensores cuánticos (ej. SQUIDs, magnetómetros de alta precisión) capaces de medir campos electromagnéticos y fluctuaciones de vacío con altísima exactitud; integrar la información en un sistema de visualización que muestre la “coherencia” de la aeronave con su entorno.
-
----
-
-## **ATA 34 – Navegación**
-- **Quasi:** GPS/INS convencional, navegación inercial y VOR/NDB tradicionales.  
-- **Quanto:** Navegación predictiva con IA para rutas más eficientes (optimización estocástica).  
-- **Quantum:** “Navegación resonante”: uso de referencias cuánticas (posicionamiento en relación a señales de vacuum-energy states o constelaciones de sensores entrelazados) que permitirían precisión extrema y sincronización global casi instantánea (Quantum Positioning System).
-
----
-
-## **ATA 36 – Neumática**  
-*(Aunque no detallado en profundidad en el contexto SINCROTONE, se puede trazar analogía similar)*  
-- **Quasi:** Regulación de presión neumática con válvulas y actuadores fijos.  
-- **Quanto:** Control adaptativo que ajusta presiones según probabilidad de requerimientos de distintos sistemas.  
-- **Quantum:** Dispositivos neumáticos con actuadores resonantes, reduciendo pérdidas al acoplar vibraciones de la tubería con la demanda real de flujo.
-
----
-
-## **ATA 38 – Agua y Residuos**
-- **Quasi:** Sistemas de agua fijos y gestión de residuos lineal, sin optimización.  
-- **Quanto:** Distribución de agua con algoritmos predictivos de consumo, y separación de residuos con análisis de big data.  
-- **Quantum:** Posible uso de propiedades de filtrado resonante (membranas meta-materiales) para purificar y reciclar fluidos de forma extremadamente eficiente, minimizando la entropía del sistema.
-
----
-
-## **ATA 49 – APU (Auxiliary Power Unit)**
-- **Quasi:** Turbina auxiliar que abastece electricidad/neumática de forma establecida.  
-- **Quanto:** Gestión inteligente del APU (encendido/apagado) según demanda energética probabilística a lo largo del vuelo.  
-- **Quantum:** Un APU con convertidores cuánticos o con integración de energía de punto cero (ZPE) a escala pequeña, aprovechando resonancias estructuradas para suministrar potencia casi sin combustible.
-
----
-
-## **ATA 51–57 – Estructuras Aeronáuticas**
-### **ATA 51 – Estructuras en General**
-- **Quasi:** Diseño basado en márgenes clásicos (factor de seguridad) y uso de uniones remachadas.  
-- **Quanto:** Simulaciones de fatiga predictiva con AI, integración de SRM (Structural Repair Manual) para fabricar en 3D piezas optimizadas.  
-- **Quantum:** Uso de materiales cuántico-resonantes (grafeno, metamateriales superconductores) que ajustan la disipación de vibraciones internas según modos estructurales. Monitoreo estructural continuo con sensores cuánticos integrados.
-
-### **ATA 52 – Puertas**
-- **Quasi:** Sistemas de cierre mecánico (candados y barras) con inspección visual rutinaria.  
-- **Quanto:** Puertas con actuadores inteligentes y alerta anticipada de fallos, basados en analítica de mantenimiento.  
-- **Quantum:** Cierres magnético-resonantes que se ajustan de forma dinámica a la presión y vibraciones del fuselaje, reduciendo esfuerzo local y acoplando la puerta al fuselaje en fase.
-
-### **ATA 53 – Fuselaje**
-- **Quasi:** Estructura de aluminio o composites tradicionales, sujeta a remaches fijos.  
-- **Quanto:** Rediseño con piezas impresas en 3D (SRM e integración de brackets optimizados), uniones adhesivo/atornilladas predictivamente controladas.  
-- **Quantum:** Paneles inteligentes (2D metamateriales) con propiedades de resonancia que distribuyen la carga de forma cuántico-coherente. Reconfiguración mínima ante cambios de temperatura o presurización para reducir estrés.
-
-### **ATA 54 – Góndolas y Pylons**
-- **Quasi:** Uniones metálicas robustas con alto factor de seguridad por vibraciones del motor.  
-- **Quanto:** Optimización topológica con IA, partes imprimibles en titanio para reducir peso/inspecciones.  
-- **Quantum:** Estructuras “autovibrantes en fase” con el motor y el fuselaje, minimizando transferencia de vibración y maximizando la eficiencia mecánica.
-
-### **ATA 55 – Estabilizadores**
-- **Quasi:** Estabilizador vertical y horizontal con rigidez fija, sin cambio de forma.  
-- **Quanto:** Superficies adaptativas (morphing tail) accionadas por IA según condiciones de vuelo.  
-- **Quantum:** Estabilizadores que vibran a frecuencias propias en sintonía con el fuselaje, logrando sustentación y control con mínimo consumo energético.
-
-### **ATA 56 – Ventanas**
-- **Quasi:** Ventanas fijas y resistentes a la presión, laminadas para protección UV.  
-- **Quanto:** Posible laminado electrocrómico controlado por IA (oscurecimiento inteligente).  
-- **Quantum:** Vidrios con recubrimientos meta-materiales cuánticos, que varían la opacidad y el aislamiento térmico de forma resonante según condiciones externas.
-
-### **ATA 57 – Alas**
-- **Quasi:** Diseño aerodinámico clásico, con flaps y slats mecánicos.  
-- **Quanto:** Perfiles alares con control adaptativo, integración de sensores de carga y análisis big data.  
-- **Quantum:** Alas morphing con materiales superconductores y sistemas de resonancia que interactúan con la corriente de aire de forma cuántico-coherente, logrando la máxima eficiencia (Laminar flow + control de vórtices en fase).
-
----
-
-## **ATA 70–80 – Propulsión**
-### **ATA 70 – Prácticas estándar de Motor**
-- **Quasi:** Manuales tradicionales de montaje/desmontaje con tolerancias fijas.  
-- **Quanto:** Ensayos no destructivos basados en IA para estimar vida útil de piezas.  
-- **Quantum:** Uso de diagnóstico resonante cuántico, localizando microgrietas mediante acoplamiento de campos electromagnéticos de alta precisión.
-
-### **ATA 71–80 – Motores, Combustión, Control e Ignición**
-- **Quasi:** Motores turbofan convencionales, con combustión continua y rotación mecánica.  
-- **Quanto:** Hybrid-electric, IA que regula la mezcla y la ignición de acuerdo con modelos predictivos.  
-- **Quantum:** Propulsión basada en la modulación del campo de vacío (Casimir/Dinámico), o integración parcial de ZPE (Zero-Point Energy) para asistencia en empuje sin expulsión de masa. Requiere resonadores superconductores y cavidades de alta Q para “empujar” contra las fluctuaciones del vacío.
-
----
-
-## **ATA 05 y 12 – Mantenimiento Periódico y Servicios de Rutina**
-- **Quasi:** Programas de mantenimiento basados en intervalos fijos, sin flexibilidad.  
-- **Quanto:** Mantenimiento predictivo con IA, datos de sensores, y optimización de repuestos (impresión 3D on-demand).  
-- **Quantum:** Autodiagnóstico estructural con sensores cuánticos incrustados que monitorean la integridad del avión. Programas de mantenimiento “siempre en fase” con el estado real de la aeronave, no solo con promedios estadísticos.
-
----
-
-## **Conclusión en Clave ATA**
-1. **Los sistemas Quasi** (clásicos) dominan la aviación actual, confiables pero con ineficiencias.  
-2. **La aproximación Quanto** (predictiva/probabilística) mejora la adaptabilidad y reduce costes operativos y de mantenimiento, aprovechando la potencia de la IA.  
-3. **El salto a lo Quantum** (coherencia cuántica) introduce resonancias estructurales y de vacío, con un potencial disruptivo: propulsión sin propelente tradicional (Casimir/Dinámico), materiales metaestables y gobernanza de sistemas vía sensores y algoritmos cuánticos.
-
-**SINCROTONE** (el “instrumento” de la resonancia) se convierte así en el marco conceptual que guía la evolución de cada capítulo ATA — desde el acondicionamiento de cabina (ATA 21) hasta la propulsión (ATA 70–80) y la estructura (ATA 51–57)—, alineándolos progresivamente en un mismo “ritmo” de eficiencia, adaptación y, potencialmente, coherencia cuántica.
-
----
-
-### **Próximos Pasos**
-- **Validación en Proyectos Piloto:** Empezar por ATA 57 (alas) y ATA 53 (fuselaje) con sensores de fatiga resonantes y reparaciones 3D (SRM integrados).  
-- **Plan de Adopción Gradual:** Migrar sistemas de control a una IA “Quanto” y explorar submódulos “Quantum” en zonas críticas (e.g., cavidades superconductoras para propulsión experimental).  
-- **Monitoreo Regulatorio:** Adaptar normativas (EASA/FAA) para permitir certificaciones de materiales y métodos basados en resonancia y efectos cuánticos.  
-- **Difusión y Colaboración:** Publicar avances en repositorios abiertos (GitHub u otros) e invitar a expertos de diversos campos (ingeniería, física cuántica, IA, normativa aeronáutica).
-
-De esta manera, la transición de un avión **Quasi** a uno **Quantum** pasa necesariamente por la fase **Quanto** (IA adaptativa) —construyendo cimientos sólidos— y se ve reflejada en cada **capítulo ATA** como una evolución natural hacia **la armonía y la resonancia integral** de la aeronave.
 ---
 
 # **AMPEL360XWLRGA: A Revolutionary Aircraft Design for the GAIA AIR Ecosystem**
