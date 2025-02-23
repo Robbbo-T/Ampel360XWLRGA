@@ -503,6 +503,8 @@ GAIA AIR is a visionary aerospace initiative focused on sustainable, efficient, 
 
 <summary><strong>2.1.1.A ATA 05 – Time Limits / Maintenance Chec</strong></summary>
 
+Here is the data formatted in markdown for ATA 05 – Time Limits / Maintenance Checks:
+
 **P/N:** GPAM-AMPEL-0201-05  
 *(Section P/N)*
 
@@ -518,7 +520,7 @@ GAIA AIR is a visionary aerospace initiative focused on sustainable, efficient, 
   - **DMC:** DMC-GAIAPULSE-AMPEL-0201-05-003-A-001-00_EN-US – Airworthiness Limitations  
   - **Document:** GPAM-AMPEL-0201-05-003-A – Airworthiness Limitations
 
-</details>
+You can edit the [README.md](https://github.com/Robbbo-T/Ampel360XWLRGA/edit/main/README.md) file to include this information.
 
 ---
 
