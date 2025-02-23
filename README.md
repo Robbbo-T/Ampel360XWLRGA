@@ -1,25 +1,188 @@
-Your document for the Circuitos NeuronQuBit (NQB) is already very well structured and clearly conveys the innovative hybrid approach of combining neural networks with quantum processing and gravitational dynamics. Here are a few suggestions to refine the details and add depth to your technical narrative:
 
-Suggestions for Enhancements
-	1.	Experimental Validation & Simulations:
-      •   Validation Experiments:
-You might consider adding a dedicated section that describes the experimental setups used for validating the NQB circuits. For example, detail how you measure quantum coherence (T₂), the fidelity of qubit operations, and the effectiveness of the gravitational control signals.
-      •   Simulation Results:
-Include summaries or figures from simulation studies that validate the performance of the Qubit Integration and Gravitational-Qubit Hybridization layers. This could include plots showing the evolution of entanglement over time or the response of the circuits to dynamic gravitational fluctuations.
-      •   Benchmarking:
-Discuss any benchmark tests comparing classical versus quantum‑assisted performance, including any improvements in processing speed, energy efficiency, or system stability.
-	2.	Detailing the Architectural Layers:
-      •   NeuronBit Layer:
-Expand on the learning algorithms used (e.g., federated learning approaches) and how they adapt over time.
-      •   Quantum Layer:
-You might add more details on how the quantum neural networks (QNN) are implemented—mentioning the types of quantum gates used and how error mitigation is handled.
-      •   Gravitational-Qubit Hybridization:
-Elaborate on the mechanism for gravitational resonance and how fluctuations are used to modulate quantum states. Explain the theoretical background and any simulation models used.
-	3.	Roadmap and Future Directions:
-      •   Provide a clearer timeline for each implementation phase, and consider highlighting key milestones like prototype demonstrations, integration tests with digital twins, and flight simulation validations.
-      •   Mention planned collaborations or the use of advanced tools (such as neuromorphic hardware or quantum simulators) for further refining the architecture.
+```xml name=trustworthy_information_complete.xsd
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:ti="http://www.trustworthyinfo.org/schema/2025"
+           targetNamespace="http://www.trustworthyinfo.org/schema/2025"
+           elementFormDefault="qualified">
 
-Revised Document Excerpt (with additional experimental validation details)
+    <!-- Simple Types -->
+    <xs:simpleType name="URLType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="https?://.+"/>
+            <xs:maxLength value="2048"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="CredibilityRatingType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="5"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="EmailType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[^@]+@[^\.]+\..+"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="VerificationStatusType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="unverified"/>
+            <xs:enumeration value="pending"/>
+            <xs:enumeration value="verified"/>
+            <xs:enumeration value="disputed"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="ContentCategoryType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="scientific"/>
+            <xs:enumeration value="technical"/>
+            <xs:enumeration value="educational"/>
+            <xs:enumeration value="news"/>
+            <xs:enumeration value="opinion"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Complex Types -->
+    <xs:complexType name="AuthorType">
+        <xs:sequence>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element name="Email" type="EmailType" minOccurs="0"/>
+            <xs:element name="Affiliation" type="xs:string" minOccurs="0"/>
+            <xs:element name="Credentials" type="xs:string" minOccurs="0"/>
+            <xs:element name="ORCID" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="SourceType">
+        <xs:sequence>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element name="URL" type="URLType" minOccurs="0"/>
+            <xs:element name="CredibilityRating" type="CredibilityRatingType"/>
+            <xs:element name="VerificationStatus" type="VerificationStatusType"/>
+            <xs:element name="LastVerifiedDate" type="xs:dateTime"/>
+            <xs:element name="Description" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="ReferenceType">
+        <xs:sequence>
+            <xs:element name="Citation" type="xs:string"/>
+            <xs:element name="DOI" type="xs:string" minOccurs="0"/>
+            <xs:element name="URL" type="URLType" minOccurs="0"/>
+            <xs:element name="AccessDate" type="xs:dateTime"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="MetadataType">
+        <xs:sequence>
+            <xs:element name="CreatedDate" type="xs:dateTime"/>
+            <xs:element name="ModifiedDate" type="xs:dateTime"/>
+            <xs:element name="Version" type="xs:string"/>
+            <xs:element name="Language" type="xs:language"/>
+            <xs:element name="Keywords" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Keyword" type="xs:string" maxOccurs="10"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ContentType">
+        <xs:sequence>
+            <xs:element name="Title" type="xs:string"/>
+            <xs:element name="Subtitle" type="xs:string" minOccurs="0"/>
+            <xs:element name="Abstract" type="xs:string" minOccurs="0"/>
+            <xs:element name="Body" type="xs:string"/>
+            <xs:element name="Authors">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Author" type="AuthorType" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Source" type="SourceType"/>
+            <xs:element name="Category" type="ContentCategoryType"/>
+            <xs:element name="PublishedDate" type="xs:dateTime"/>
+            <xs:element name="References" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Reference" type="ReferenceType" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Metadata" type="MetadataType"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="lang" type="xs:language" use="optional" default="en"/>
+    </xs:complexType>
+
+    <!-- Main Elements -->
+    <xs:element name="TrustworthyInformation">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Content" type="ContentType" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="schemaVersion" type="xs:string" use="required" fixed="2025.1"/>
+            <xs:attribute name="generatedDate" type="xs:dateTime" use="required"/>
+            <xs:attribute name="generatedBy" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
+```
+
+This enhanced XSD includes:
+
+1. **Namespace Definition**: Proper XML namespace declarations
+2. **Additional Simple Types**:
+   - EmailType with pattern validation
+   - VerificationStatusType with enumerated values
+   - ContentCategoryType for content classification
+
+3. **Enhanced Complex Types**:
+   - AuthorType with credentials and ORCID
+   - Expanded SourceType with verification status
+   - ReferenceType for citations and references
+   - MetadataType for document metadata
+
+4. **Improved Content Structure**:
+   - Support for multiple authors
+   - References section
+   - Metadata tracking
+   - Language support
+   - Keywords
+
+5. **Attributes**:
+   - ID attributes for referencing
+   - Language attributes
+   - Schema version tracking
+   - Generation metadata
+
+This schema supports:
+- Multiple content types
+- Author verification
+- Source credibility tracking
+- Reference management
+- Metadata tracking
+- Multi-language content
+- Version control
+
+The schema is designed to be:
+- Extensible for future needs
+- Compliant with XML best practices
+- Suitable for academic and technical content
+- Easy to validate and process
+
+You can use this schema to validate XML documents containing trustworthy information, ensuring all required elements and attributes are present and properly formatted.
 
 # **Circuitos NeuronQuBit (NQB)**
 
