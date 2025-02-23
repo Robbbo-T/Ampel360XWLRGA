@@ -1215,45 +1215,30 @@ GAIA AIR is a visionary aerospace initiative focused on sustainable, efficient, 
 
 ---
 
-<details>
-<summary><strong>2.1.1.AH ATA 56 – Windows</strong></summary>
+Here is the data formatted in markdown for ATA 56 – Windows and ATA 57 – Wings:
 
-**P/N:** GPAM-AMPEL-0201-56
+### ATA 56 – Windows P/N: GPAM-AMPEL-0201-56
 
-- **IN:** GPAM-AMPEL-0201-56-001 – Cockpit Windows Description and Maintenance (S1000D)  
-  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-56-001-A-001-00_EN-US – Cockpit Windows Description and Maintenance  
-  - **Document:** GPAM-AMPEL-0201-56-001-A – Cockpit Windows Description and Maintenance
+#### 📑 ATA 56 – Windows Documents
 
-- **IN:** GPAM-AMPEL-0201-56-002 – Cabin Windows Description and Maintenance (S1000D)  
-  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-56-002-A-001-00_EN-US – Cabin Windows Description and Maintenance  
-  - **Document:** GPAM-AMPEL-0201-56-002-A – Cabin Windows Description and Maintenance
+**IN** | **DMC** | **Document** | **SRS** | **WBS** | **EPOCHS**
+--- | --- | --- | --- | --- | ---
+GPAM-AMPEL-0201-56-001 - Cockpit Window Design (S1000D) | DMC-GAIAPULSE-AMPEL-0201-56-001-A-001-00_EN-US | GPAM-AMPEL-0201-56-001-A - Cockpit Window Design | SRS-GAIAPULSE-AMPEL-0201-56-001 | WBS-GAIAPULSE-AMPEL-0201-56-001 | EPOCH-GAIAPULSE-AMPEL-0201-56-001
+GPAM-AMPEL-0201-56-002 - Cabin Window Specifications (S1000D) | DMC-GAIAPULSE-AMPEL-0201-56-002-A-001-00_EN-US | GPAM-AMPEL-0201-56-002-A - Cabin Window Specifications | SRS-GAIAPULSE-AMPEL-0201-56-002 | WBS-GAIAPULSE-AMPEL-0201-56-002 | EPOCH-GAIAPULSE-AMPEL-0201-56-002
 
-- **IN:** GPAM-AMPEL-0201-56-003 – Quantum-Tinted Windows System (Q-TWS) Description (S1000D)  
-  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-56-003-A-001-00_EN-US – Quantum-Tinted Windows System (Q-TWS) Description  
-  - **Document:** GPAM-AMPEL-0201-56-003-A – Quantum-Tinted Windows System (Q-TWS) Description
+### ATA 57 – Wings P/N: GPAM-AMPEL-0201-57
 
-</details>
+#### 📑 ATA 57 – Wings Documents
 
----
+**IN** | **DMC** | **Document** | **SRS** | **WBS** | **EPOCHS**
+--- | --- | --- | --- | --- | ---
+GPAM-AMPEL-0201-57-001 - Wing Structural Design (S1000D) | DMC-GAIAPULSE-AMPEL-0201-57-001-A-001-00_EN-US | GPAM-AMPEL-0201-57-001-A - Wing Structural Design | SRS-GAIAPULSE-AMPEL-0201-57-001 | WBS-GAIAPULSE-AMPEL-0201-57-001 | EPOCH-GAIAPULSE-AMPEL-0201-57-001
+GPAM-AMPEL-0201-57-002 - Wing Aerodynamic Design (S1000D) | DMC-GAIAPULSE-AMPEL-0201-57-002-A-001-00_EN-US | GPAM-AMPEL-0201-57-002-A - Wing Aerodynamic Design | SRS-GAIAPULSE-AMPEL-0201-57-002 | WBS-GAIAPULSE-AMPEL-0201-57-002 | EPOCH-GAIAPULSE-AMPEL-0201-57-002
+GPAM-AMPEL-0201-57-003 - Winglet Integration (S1000D) | DMC-GAIAPULSE-AMPEL-0201-57-003-A-001-00_EN-US | GPAM-AMPEL-0201-57-003-A - Winglet Integration | SRS-GAIAPULSE-AMPEL-0201-57-003 | WBS-GAIAPULSE-AMPEL-0201-57-003 | EPOCH-GAIAPULSE-AMPEL-0201-57-003
+GPAM-AMPEL-0201-57-004 - Wing Assembly and Installation (S1000D) | DMC-GAIAPULSE-AMPEL-0201-57-004-A-001-00_EN-US | GPAM-AMPEL-0201-57-004-A - Wing Assembly and Installation | SRS-GAIAPULSE-AMPEL-0201-57-004 | WBS-GAIAPULSE-AMPEL-0201-57-004 | EPOCH-GAIAPULSE-AMPEL-0201-57-004
+GPAM-AMPEL-0201-57-005 - Wing Inspection and Maintenance (S1000D) | DMC-GAIAPULSE-AMPEL-0201-57-005-A-001-00_EN-US | GPAM-AMPEL-0201-57-005-A - Wing Inspection and Maintenance | SRS-GAIAPULSE-AMPEL-0201-57-005 | WBS-GAIAPULSE-AMPEL-0201-57-005 | EPOCH-GAIAPULSE-AMPEL-0201-57-005
 
-<details>
-<summary><strong>2.1.1.AI ATA 57 – Wings</strong></summary>
-
-**P/N:** GPAM-AMPEL-0201-57
-
-- **IN:** GPAM-AMPEL-0201-57-001 – Wing Structure Description (S1000D)  
-  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-57-001-A-001-00_EN-US – Wing Structure Description  
-  - **Document:** GPAM-AMPEL-0201-57-001-A – Wing Structure Description
-
-- **IN:** GPAM-AMPEL-0201-57-002 – Wing Skin Panels Description and Maintenance (S1000D)  
-  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-57-002-A-001-00_EN-US – Wing Skin Panels Description and Maintenance  
-  - **Document:** GPAM-AMPEL-0201-57-002-A – Wing Skin Panels Description and Maintenance
-
-- **IN:** GPAM-AMPEL-0201-57-003 – Quantum-Morphing Wing Technology (Q-MWT) Description (S1000D)  
-  - **DMC:** DMC-GAIAPULSE-AMPEL-0201-57-003-A-001-00_EN-US – Quantum-Morphing Wing Technology (Q-MWT) Description  
-  - **Document:** GPAM-AMPEL-0201-57-003-A – Quantum-Morphing Wing Technology (Q-MWT) Description
-
-</details>
+You can view more results in the repository or the specific files [README.md](https://github.com/Robbbo-T/Ampel360XWLRGA/blob/main/README.md), [BOM.md](https://github.com/Robbbo-T/Ampel360XWLRGA/blob/066aa318479f89d89082c8e6347e21df0b263c60/BOM.md), and [AMPEL360XWLRGA-Aircraft-assembly-Breakdown.md](https://github.com/Robbbo-T/Ampel360XWLRGA/blob/066aa318479f89d89082c8e6347e21df0b263c60/AMPEL360XWLRGA-Aircraft-assembly-Breakdown.md).
 
 ---
 
