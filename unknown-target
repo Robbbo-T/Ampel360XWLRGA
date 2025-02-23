@@ -1,0 +1,35 @@
+# README
+
+## How to Use `gh pr checkout` Command
+
+To check out a pull request using the `gh pr checkout` command, follow these steps:
+
+1. Open your terminal or command prompt.
+2. Navigate to the repository where you want to check out the pull request.
+3. Run the following command:
+
+```sh
+gh pr checkout <pull-request-number>
+```
+
+For example, to check out pull request #114, use the following command:
+
+```sh
+gh pr checkout 114
+```
+
+This command will create a new branch locally and check out the pull request.
+
+## Experimental Validation & Simulations
+
+### Validation Experiments
+
+Add a section describing the experimental setups used for validating the NQB circuits, including how you measure quantum coherence (T₂), the fidelity of qubit operations, and the effectiveness of the gravitational control signals.
+
+### Simulation Results
+
+Include summaries or figures from simulation studies that validate the performance of the Qubit Integration and Gravitational-Qubit Hybridization layers.
+
+### Benchmarking
+
+Discuss any benchmark tests comparing classical versus quantum-assisted performance, including improvements in processing speed, energy efficiency, or system stability.
