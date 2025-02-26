@@ -1,3 +1,121 @@
+# GPAM-AMPEL-0201-28-001-A: Hydraulic System Leak Check and Component Inspection
+
+## Table of Contents
+
+1.  [Applicability](#applicability)
+2.  [Purpose](#purpose)
+3.  [Safety Precautions](#safety-precautions)
+4.  [Prerequisites](#prerequisites)
+5.  [Resources](#resources)
+    *   [Tools and Equipment](#tools-and-equipment)
+    *   [Consumables](#consumables)
+    *   [Personnel](#personnel)
+    *   [References](#references)
+6.  [Procedure](#procedure)
+    *   [Preparation](#preparation)
+    *   [Leak Check](#leak-check)
+    *   [Component Inspection](#component-inspection)
+    *   [Post-Inspection](#post-inspection)
+7.  [Acceptance Criteria](#acceptance-criteria)
+8.  [Close-Up](#close-up)
+
+## 1. Applicability <a name="applicability"></a>
+
+This procedure applies to the AMPEL hydraulic system (Part No. AMPEL-HYD-SYS-100) on GAIA-AIR-CSDB aircraft with serial numbers CSDB-1001 through CSDB-1050.
+
+## 2. Purpose <a name="purpose"></a>
+
+To provide instructions for performing a visual leak check and detailed component inspection of the AMPEL hydraulic system to ensure integrity and prevent failures.
+
+## 3. Safety Precautions <a name="safety-precautions"></a>
+
+**WARNING:** Hydraulic fluid operates at **3000 PSI** and can cause serious injection injuries. Always relieve system pressure before disassembly to prevent fluid injection. Refer to [GPAM-AMPEL-0002-01-001-A](#cross-reference-to-GPAM-AMPEL-0002-01-001-A) for depressurization procedures.
+
+**CAUTION:** Wear **ANSI Z87.1 goggles and nitrile gloves** when handling Skydrol LD-4 hydraulic fluid to prevent skin and eye irritation. Refer to the Skydrol LD-4 Material Safety Data Sheet (MSDS) for detailed safety information.
+
+Refer to [AMM-ATA12-24-001](#cross-reference-to-AMM-ATA12-24-001) for aircraft safety guidelines.
+
+## 4. Prerequisites <a name="prerequisites"></a>
+
+* Aircraft parked on a level surface and chocked. Verify chocks are properly installed per [AMM-ATA10-11-001](#cross-reference-to-AMM-ATA10-11-001).
+* Hydraulic system **depressurized** (refer to [GPAM-GEN-0001-01-001-A](#cross-reference-to-GPAM-GEN-0001-01-001-A)). Verify pressure is 0 PSI using a calibrated pressure gauge.
+* Work area clean and well-lit (min **50 foot-candles** illumination).
+* Verify proper aircraft configuration using [AMM-ATA00-00-001](#cross-reference-to-AMM-ATA00-00-001).
+
+## 5. Resources <a name="resources"></a>
+
+### 5.1 Tools and Equipment <a name="tools-and-equipment"></a>
+
+* Hydraulic pressure gauge (0-5000 psi, ±1% accuracy)
+* Torque wrench (10-50 ft-lbs, ±2%)
+* Multimeter (Fluke 87V or equivalent)
+* Hydraulic fluid drain pan (5-gallon capacity)
+* Inspection mirror and ANSI FL1-compliant LED flashlight
+
+### 5.2 Consumables <a name="consumables"></a>
+
+* Hydraulic fluid (Skydrol LD-4)
+* Cleaning solvent (Isopropyl Alcohol, 99%)
+* Safety wire (0.032-inch stainless steel)
+
+### 5.3 Personnel <a name="personnel"></a>
+
+* One (1) qualified aircraft mechanic trained on AMPEL hydraulic systems.
+
+### 5.4 References <a name="references"></a>
+
+* Aircraft Maintenance Manual (AMM), ATA Chapter 29
+* System Schematic Diagram: GAIA-AIR-CSDB-29-HYD-001
+* Component Maintenance Manuals (CMM):
+  * AMPEL-HYD-PUMP-100 (Hydraulic Pump)
+  * AMPEL-HSCU-200 (Hydraulic System Control Unit)
+  * AMPEL-ACT-FLAP-100 (Flap Actuator)
+
+## 6. Procedure <a name="procedure"></a>
+
+### 6.1 Preparation <a name="preparation"></a>
+
+1. Gather tools and PPE.
+2. Ensure aircraft configuration meets prerequisites.
+3. Open access panels 29-1A, 29-2B, and 29-3C.
+
+### 6.2 Leak Check <a name="leak-check"></a>
+
+1. Inspect hydraulic lines, fittings, and components for leaks.
+2. Use an **FAA-approved inspection mirror and LED flashlight** for hidden areas.
+3. Categorize leaks as **minor (seepage), moderate (dripping), or severe (streaming fluid loss)** (see [TSM-ATA29-00-001](#cross-reference-to-TSM-ATA29-00-001)).
+4. Record all inspection findings, including discrepancies, fluid levels, and component conditions, in the maintenance log per [AMM-ATA29-00-003](#cross-reference-to-AMM-ATA29-00-003).
+
+### 6.3 Component Inspection <a name="component-inspection"></a>
+
+#### **Hydraulic Pump (AMPEL-HYD-PUMP-100):**
+* Inspect for cracks, dents, and loose fittings. Refer to [CMM-AMPEL-HYD-PUMP-100, Section 3.2](#cross-reference-to-CMM-AMPEL-HYD-PUMP-100).
+* Verify pressure output stabilizes at **2900-3100 PSI within 10 seconds** using the hydraulic test stand per [CMM-AMPEL-HYD-PUMP-100, Section 4.1](#cross-reference-to-CMM-AMPEL-HYD-PUMP-100).
+
+#### **Hydraulic Actuators (AMPEL-ACT-FLAP-100):**
+* Check for smooth movement and no binding throughout the full range of travel.
+* Inspect actuator rods for pitting or corrosion per [CMM-AMPEL-ACT-FLAP-100, Section 2.5](#cross-reference-to-CMM-AMPEL-ACT-FLAP-100).
+* Verify full extension and retraction occur within manufacturer’s specified time limit.
+
+#### **Hydraulic Reservoir (AMPEL-HYD-RES-100):**
+* Verify fluid level between MIN and MAX marks.
+* Inspect vent lines for kinks, cracks, or obstructions that could prevent proper venting.
+
+### 6.4 Post-Inspection <a name="post-inspection"></a>
+
+1. Clean any spilled fluid.
+2. Secure all access panels.
+3. Remove Lockout/Tagout devices.
+4. Document findings and corrective actions in the maintenance log, including the date, mechanic's signature, and any work order numbers created.
+5. Create maintenance work orders in [Maintenance Tracking System Name], if needed, and ensure they include a detailed description of the discrepancy, the corrective action taken, and any parts replaced.
+
+## 7. Acceptance Criteria <a name="acceptance-criteria"></a>
+
+* No hydraulic leaks beyond **3 drops per minute per connection**.
+* Fluid level within acceptable range.
+* Properly torqued and secured components.
+* Actuator extends/retracts within manufacturer’s time limit.
+* Hydraulic pump pressure stabilizes at **2900-3100 PSI within 10 seconds**.
 
 ```xml name=trustworthy_information_complete.xsd
 <?xml version="1.0" encoding="UTF-8"?>
