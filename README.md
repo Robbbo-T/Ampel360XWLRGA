@@ -1,5 +1,5 @@
 # AMPEL360XWLRGA
-https://v0-ampel-360-xwlrga.vercel.app/
+[https://v0-ampel-360-xwlrga.vercel.app/](https://ampel360.vercel.app/)
 ---
 **System Descriotive**: Zero Impact Synthesis - AMPEL360XWLRGA
 description: Comprehensive synthesis of zero environmental impact implementation across the AMPEL360XWLRGA project.
@@ -244,7 +244,7 @@ I'll create a comprehensive visualization and explanation of how digital twins w
 
 Let's start with a high-level architecture diagram of the AMPEL360XWLRGA digital twin system:
 
-```mermaid
+[```mermaid
 AMPEL360XWLRGA Digital Twin Architecture.download-icon {
             cursor: pointer;
             transform-origin: center;
@@ -397,3 +397,4 @@ The AMPEL360XWLRGA digital twin system represents a significant advancement in e
 The interactive visualization demonstrates how the digital twin continuously monitors the physical system, predicts future states, and generates optimization recommendations. This proactive approach to system management helps organizations stay ahead of potential issues while maximizing efficiency and sustainability.
 
 As digital twin technology continues to evolve, the AMPEL360XWLRGA system will incorporate new capabilities and integrations, further enhancing its value as a comprehensive solution for environmental and operational management in the context of Industry 4.0 and beyond.
+](https://ampel360.vercel.app/)
