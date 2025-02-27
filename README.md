@@ -1,7 +1,7 @@
 # AMPEL360XWLRGA
 [https://v0-ampel-360-xwlrga.vercel.app/](https://ampel360.vercel.app/)
 ---
-**System Descriotive**: Zero Impact Synthesis - AMPEL360XWLRGA
+**System Descriptive**: Zero Impact Synthesis - AMPEL360XWLRGA
 description: Comprehensive synthesis of zero environmental impact implementation across the AMPEL360XWLRGA project.
 ---
 
