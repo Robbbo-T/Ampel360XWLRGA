@@ -1,5 +1,4 @@
 
-To ensure you can view the generated dependency graph, let's modify the script to **save the visualization as an HTML file**. This way, you can manually open the visualization in your web browser at your convenience.
 
 ---
 
