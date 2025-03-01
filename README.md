@@ -1,7 +1,7 @@
 [[# Below is a **concise summary** of **Component 1 (Version 0)** within the **AMPEL360XWLRGA** aircraft system:](https://v0-gaia-quantum-portal.vercel.app/)
 
 ---
-
+# GAIA-AMPEL MTL-QUAD-INFO-RO-PDM-PLM-CAD-ROB-IoT
 ## Overview
 
 **Component 1** is the **foundational subsystem** of the AMPEL360XWLRGA architecture, focusing on **core data integration** and **initial processing**. It ensures interoperability across the aircraft’s major subsystems.
@@ -13,7 +13,7 @@
 - **System**: AMPEL360XWLRGA Aircraft  
 - **Component Number**: 1  
 - **Version**: 0  
-
+GAIA-AMPEL MTL-QUAD-INFO-RO-PDM-PLM-CAD-ROB-IoT
 ---
 
 ## Purpose
