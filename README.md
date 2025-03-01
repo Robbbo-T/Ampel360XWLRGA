@@ -1,4 +1,4 @@
-[# Below is a **concise summary** of **Component 1 (Version 0)** within the **AMPEL360XWLRGA** aircraft system:
+[[# Below is a **concise summary** of **Component 1 (Version 0)** within the **AMPEL360XWLRGA** aircraft system:](https://v0-gaia-quantum-portal.vercel.app/)
 
 ---
 
