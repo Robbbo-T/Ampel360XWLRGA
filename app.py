@@ -46,7 +46,9 @@ app.layout = html.Div([
     dcc.Graph(id='kpi-graph'),
     html.Div(id='component-structure'),
     html.Button('Optimize Power Distribution', id='optimize-button', n_clicks=0),
-    html.Div(id='optimization-result')
+    html.Div(id='optimization-result'),
+    html.Button('Optimize Fractal Electrostatic System', id='optimize-fractal-button', n_clicks=0),
+    html.Div(id='fractal-optimization-result')
 ])
 
 # Define the callback to update the graph
@@ -93,6 +95,19 @@ def optimize_power_distribution(n_clicks):
         power_supply = [90, 210, 310, 390, 510]
         optimized_distribution = ampel_system.optimize_power_distribution(power_demand, power_supply)
         return html.Div(f"Optimized Power Distribution: {optimized_distribution}")
+    return html.Div()
+
+# Define the callback for fractal electrostatic system optimization
+@app.callback(
+    Output('fractal-optimization-result', 'children'),
+    [Input('optimize-fractal-button', 'n_clicks')]
+)
+def optimize_fractal_electrostatic_system(n_clicks):
+    if n_clicks > 0:
+        charge_patterns = [1.0, 2.0, 3.0, 4.0, 5.0]
+        resonant_frequencies = [1.1, 2.1, 3.1, 4.1, 5.1]
+        optimized_system = ampel_system.optimize_fractal_electrostatic_system(charge_patterns, resonant_frequencies)
+        return html.Div(f"Optimized Fractal Electrostatic System: {optimized_system}")
     return html.Div()
 
 def parse_ata_structure(text):

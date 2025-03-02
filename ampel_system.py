@@ -148,6 +148,16 @@ class AMPEL360System:
         self._log_action("Optimized power distribution")
         return optimized_distribution
     
+    def optimize_fractal_electrostatic_system(self, charge_patterns: List[float], resonant_frequencies: List[float]) -> List[float]:
+        """Optimize fractal electrostatic system using AI"""
+        X = np.array(charge_patterns).reshape(-1, 1)
+        y = np.array(resonant_frequencies).reshape(-1, 1)
+        model = LinearRegression()
+        model.fit(X, y)
+        optimized_system = model.predict(X).flatten().tolist()
+        self._log_action("Optimized fractal electrostatic system")
+        return optimized_system
+    
     def _log_action(self, action: str) -> None:
         """Log system actions with EPIC-ID tracking"""
         log_entry = {
@@ -198,6 +208,12 @@ def main():
         power_supply = [90, 210, 310, 390, 510]
         optimized_distribution = system.optimize_power_distribution(power_demand, power_supply)
         print(f"Optimized Power Distribution: {optimized_distribution}")
+        
+        # Optimize fractal electrostatic system
+        charge_patterns = [1.0, 2.0, 3.0, 4.0, 5.0]
+        resonant_frequencies = [1.1, 2.1, 3.1, 4.1, 5.1]
+        optimized_system = system.optimize_fractal_electrostatic_system(charge_patterns, resonant_frequencies)
+        print(f"Optimized Fractal Electrostatic System: {optimized_system}")
 
 if __name__ == "__main__":
     main()
