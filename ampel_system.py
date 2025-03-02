@@ -4,6 +4,8 @@ from datetime import datetime
 import json
 from pathlib import Path
 import uuid
+import numpy as np
+from sklearn.linear_model import LinearRegression
 
 @dataclass
 class UniversalDID:
@@ -136,6 +138,16 @@ class AMPEL360System:
         analysis["suppliers"] = list(analysis["suppliers"])
         return analysis
     
+    def optimize_power_distribution(self, power_demand: List[float], power_supply: List[float]) -> List[float]:
+        """Optimize power distribution using AI"""
+        X = np.array(power_demand).reshape(-1, 1)
+        y = np.array(power_supply).reshape(-1, 1)
+        model = LinearRegression()
+        model.fit(X, y)
+        optimized_distribution = model.predict(X).flatten().tolist()
+        self._log_action("Optimized power distribution")
+        return optimized_distribution
+    
     def _log_action(self, action: str) -> None:
         """Log system actions with EPIC-ID tracking"""
         log_entry = {
@@ -180,6 +192,12 @@ def main():
         print(f"ITAR Restricted: {analysis['itar_restricted']}")
         print(f"Total Weight: {analysis['total_weight']} kg")
         print(f"Suppliers: {', '.join(analysis['suppliers'])}")
+        
+        # Optimize power distribution
+        power_demand = [100, 200, 300, 400, 500]
+        power_supply = [90, 210, 310, 390, 510]
+        optimized_distribution = system.optimize_power_distribution(power_demand, power_supply)
+        print(f"Optimized Power Distribution: {optimized_distribution}")
 
 if __name__ == "__main__":
     main()
