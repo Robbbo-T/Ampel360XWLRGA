@@ -9,12 +9,16 @@ import plotly.graph_objs as go
 from statsmodels.tsa.arima.model import ARIMA
 import os
 import re
+from ampel_system import AMPEL360System
 
 # Initialize the Dash app
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])
 
 # Load the data
 df_kpi_extended = pd.read_csv('data/kpi_data_extended.csv')
+
+# Initialize the AMPEL360System
+ampel_system = AMPEL360System()
 
 # Define the layout
 app.layout = html.Div([
@@ -40,7 +44,9 @@ app.layout = html.Div([
         ], width=6)
     ]),
     dcc.Graph(id='kpi-graph'),
-    html.Div(id='component-structure')
+    html.Div(id='component-structure'),
+    html.Button('Optimize Power Distribution', id='optimize-button', n_clicks=0),
+    html.Div(id='optimization-result')
 ])
 
 # Define the callback to update the graph
@@ -74,6 +80,19 @@ def update_component_structure(selected_metric):
         with open('data/AMPEL360XWLRGA-Aircraft-assembly-Breakdown.md', 'r') as file:
             component_structure = file.read()
         return html.Pre(component_structure)
+    return html.Div()
+
+# Define the callback for power distribution optimization
+@app.callback(
+    Output('optimization-result', 'children'),
+    [Input('optimize-button', 'n_clicks')]
+)
+def optimize_power_distribution(n_clicks):
+    if n_clicks > 0:
+        power_demand = [100, 200, 300, 400, 500]
+        power_supply = [90, 210, 310, 390, 510]
+        optimized_distribution = ampel_system.optimize_power_distribution(power_demand, power_supply)
+        return html.Div(f"Optimized Power Distribution: {optimized_distribution}")
     return html.Div()
 
 def parse_ata_structure(text):
