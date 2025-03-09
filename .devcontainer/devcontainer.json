@@ -1,0 +1,7 @@
+{
+  "tasks": {
+    "test": "npm run test",
+    "build": "npn run build",
+    "launch": "nopm run start"
+  }
+}
