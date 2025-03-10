@@ -28,6 +28,8 @@ class Component:
     weight: float
     supplier: str
     compliance: Dict[str, bool]
+    ata_chapter: Optional[str] = None
+    ata_subchapter: Optional[str] = None
     
 class AMPEL360System:
     """Main system for managing aircraft components with EPIC-ID integration"""
@@ -67,7 +69,9 @@ class AMPEL360System:
             technologies=component_data['technologies'],
             weight=component_data.get('weight', 0.0),
             supplier=component_data['supplier'],
-            compliance=component_data['compliance']
+            compliance=component_data['compliance'],
+            ata_chapter=component_data.get('ata_chapter'),
+            ata_subchapter=component_data.get('ata_subchapter')
         )
         
         self._log_action(f"Added component {component_id}")
@@ -104,7 +108,9 @@ class AMPEL360System:
                     "technologies": c.technologies,
                     "weight": c.weight,
                     "supplier": c.supplier,
-                    "compliance": c.compliance
+                    "compliance": c.compliance,
+                    "ata_chapter": c.ata_chapter,
+                    "ata_subchapter": c.ata_subchapter
                 }
                 for cid, c in self.components.items()
             }
@@ -157,6 +163,21 @@ class AMPEL360System:
         }
         self.access_log.append(log_entry)
 
+    def add_ata_chapter(self, chapter_number: str, chapter_title: str) -> None:
+        """Add a new ATA chapter"""
+        self.ata_structure[chapter_number] = {
+            "title": chapter_title,
+            "subchapters": {}
+        }
+        self._log_action(f"Added ATA chapter {chapter_number} - {chapter_title}")
+
+    def add_ata_subchapter(self, chapter_number: str, subchapter_number: str, subchapter_title: str) -> None:
+        """Add a new ATA subchapter"""
+        if chapter_number not in self.ata_structure:
+            raise ValueError(f"ATA chapter {chapter_number} does not exist")
+        self.ata_structure[chapter_number]["subchapters"][subchapter_number] = subchapter_title
+        self._log_action(f"Added ATA subchapter {chapter_number}-{subchapter_number} - {subchapter_title}")
+
 def main():
     """Example usage of the AMPEL360 system"""
     system = AMPEL360System()
@@ -175,7 +196,9 @@ def main():
             "technologies": "Quantum Propulsion",
             "weight": 10000.0,
             "supplier": "QuantumPropulsion Ltd.",
-            "compliance": {"RoHS": True, "ITAR": True}
+            "compliance": {"RoHS": True, "ITAR": True},
+            "ata_chapter": "71",
+            "ata_subchapter": "71-00"
         }
         
         component_id = system.add_component(component_data)
