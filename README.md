@@ -716,29 +716,677 @@ This PBS document is structured as follows:
 **Note:** This PBS is a living document and will be iteratively refined and expanded as the AMPEL360XWLRGA design and development progresses.  Placeholder names (`[Subsystem Name]`, `[Component Name]`, `[Description]`) are used throughout this initial outline and will be replaced with specific details in subsequent revisions.
 
 ---
-
 ## ATA 05 - TIME LIMITS/MAINTENANCE CHECKS
 
-### 05.1 Scheduled Maintenance Program
+## 05.1 Scheduled Maintenance Program
 
-*   **[Scheduled Maintenance Program Document]** - `[Description of SMP document content]`
+### 05.1.1 Introduction
 
-### 05.2 Maintenance Time Limits
+The AMPEL360XWLRGA Scheduled Maintenance Program (SMP) establishes the comprehensive framework for all maintenance activities required to ensure continued airworthiness, optimal performance, and maximum safety throughout the aircraft's operational life. This program has been developed in accordance with quantum-enhanced reliability-centered maintenance principles and exceeds all applicable regulatory requirements.
 
-*   **[Component Time Limits List]** - `[Description of component time limits]`
-*   **[Quantum Component Inspection/Maintenance Procedures (if applicable)]** - `[Procedures for quantum component health checks]`
+### 05.1.2 Maintenance Program Philosophy
 
-### 05.3 Airworthiness Limitations
+The AMPEL360XWLRGA maintenance program employs a revolutionary approach that integrates:
 
-*   **[Airworthiness Limitations Document]** - `[Document outlining airworthiness limitations]`
+- **Predictive Maintenance**: Utilizing quantum computing and AI to predict component degradation before failure
+- **Condition-Based Monitoring**: Real-time assessment of system health through 15,000+ embedded sensors
+- **Self-Healing Technologies**: Autonomous repair of minor structural and system anomalies
+- **Federated Learning**: Cross-fleet knowledge sharing for continuous improvement of maintenance protocols
+- **Zero-Downtime Optimization**: Maintenance scheduling that minimizes operational impact
+
+### 05.1.3 Maintenance Check Intervals
+
+| Check Type | Interval | Tolerance | Duration | Man-Hours |
+|------------|----------|-----------|----------|-----------|
+| **A Check** | 750 FH or 3 months | +10% or 7 days | 4 hours | 24 |
+| **B Check** | 3,000 FH or 12 months | +10% or 14 days | 12 hours | 120 |
+| **C Check** | 7,500 FH or 24 months | +10% or 30 days | 3 days | 650 |
+| **D Check** | 25,000 FH or 72 months | +5% or 30 days | 14 days | 5,000 |
+| **Quantum Core Recalibration** | 5,000 FH | +5% or 14 days | 8 hours | 40 |
+| **Structural Health Assessment** | 10,000 FH | +5% or 14 days | 24 hours | 200 |
+
+*FH = Flight Hours*
+
+### 05.1.4 Special Maintenance Requirements
+
+#### 05.1.4.1 Quantum Propulsion System
+
+| Task | Interval | Procedure Reference |
+|------|----------|---------------------|
+| Quantum Field Alignment | 2,500 FH | QPS-MAINT-001 |
+| Superconductor Integrity Check | 1,000 FH | QPS-MAINT-002 |
+| Cryogenic System Inspection | 750 FH | QPS-MAINT-003 |
+| Quantum Core Diagnostic | 500 FH | QPS-MAINT-004 |
+| Zero-Point Energy Calibration | 3,000 FH | QPS-MAINT-005 |
+
+#### 05.1.4.2 Self-Healing Composite Structure
+
+| Task | Interval | Procedure Reference |
+|------|----------|---------------------|
+| Nanomaterial Activation Verification | 2,000 FH | SHS-MAINT-001 |
+| Healing Agent Reservoir Replenishment | 5,000 FH | SHS-MAINT-002 |
+| Structural Integrity Deep Scan | 7,500 FH | SHS-MAINT-003 |
+| Carbon Nanotube Matrix Assessment | 10,000 FH | SHS-MAINT-004 |
+| Quantum-Reinforced Bond Validation | 15,000 FH | SHS-MAINT-005 |
+
+#### 05.1.4.3 Atmospheric Energy Harvesting System
+
+| Task | Interval | Procedure Reference |
+|------|----------|---------------------|
+| Energy Conversion Efficiency Test | 1,500 FH | AEHS-MAINT-001 |
+| Collector Surface Regeneration | 3,000 FH | AEHS-MAINT-002 |
+| Storage System Capacity Check | 2,000 FH | AEHS-MAINT-003 |
+| Environmental Sensor Calibration | 1,000 FH | AEHS-MAINT-004 |
+| Integration Circuit Diagnostic | 2,500 FH | AEHS-MAINT-005 |
+
+### 05.1.5 Life-Limited Parts
+
+The AMPEL360XWLRGA incorporates advanced materials and technologies that significantly extend component life beyond conventional aircraft. Nevertheless, the following components have defined life limits that require mandatory replacement:
+
+| Component | Life Limit | Tracking Method |
+|-----------|------------|-----------------|
+| Quantum Field Generators | 30,000 FH | Electronic Component Life Tracking (ECLT) |
+| Superconducting Magnetic Bearings | 25,000 FH | ECLT + Quantum Degradation Analysis |
+| Cryogenic Cooling System Seals | 15,000 FH | ECLT + Molecular Integrity Scanning |
+| High-Energy Capacitor Banks | 20,000 FH | ECLT + Charge Cycle Counting |
+| Primary Flight Control Actuators | 40,000 FH | ECLT + Performance Trend Monitoring |
+| Structural Reinforcement Nodes | 50,000 FH | Embedded Strain Gauge Network |
+| Quantum Computing Core | 35,000 FH | Qubit Coherence Monitoring System |
+
+### 05.1.6 Maintenance Program Revision and Optimization
+
+The AMPEL360XWLRGA maintenance program employs continuous optimization through:
+
+- **Real-Time Fleet Data Analysis**: Aggregated performance data from all aircraft informs maintenance interval adjustments
+- **Digital Twin Simulation**: Virtual testing of maintenance procedure modifications before implementation
+- **Quantum Algorithm Optimization**: Maintenance scheduling refined through quantum computing to minimize operational impact
+- **Regulatory Compliance Verification**: Automated assessment of program against evolving airworthiness requirements
+
+The maintenance program undergoes formal review and potential revision at the following intervals:
+
+- Minor revision: Every 6 months
+- Major revision: Every 24 months
+- Complete program reassessment: Every 72 months
+
+### 05.1.7 Documentation and Record Keeping
+
+All maintenance activities are documented through:
+
+- **Quantum-Secured Blockchain**: Immutable maintenance records with cryptographic verification
+- **Augmented Reality Documentation**: Maintenance procedures captured through AR recording for quality assurance
+- **Automated Compliance Verification**: AI-driven validation of maintenance against required procedures
+- **Digital Aircraft Health Record**: Comprehensive history of all maintenance actions and component health metrics
+
+Records are maintained for the life of the aircraft plus 10 years, with quantum encryption ensuring data integrity and security.
+
+### 05.1.8 Special Inspection Requirements
+
+#### 05.1.8.1 Post-Severe Weather Operation
+
+After operation in severe weather conditions (lightning strikes, severe turbulence, hail, etc.), the following special inspections must be performed:
+
+- Quantum field stability assessment
+- Composite structure integrity scan
+- Sensor network functionality verification
+- Energy harvesting system efficiency check
+- Flight control system response validation
+
+#### 05.1.8.2 Extended Parking Procedures
+
+For aircraft parked for periods exceeding 14 days:
+
+- Quantum core hibernation protocol activation
+- Environmental protection system deployment
+- Periodic system wake-up and diagnostic cycle every 7 days
+- Moisture and contamination prevention measures
+- Anti-deterioration field generation
+
+### 05.1.9 Maintenance Program Compliance
+
+Compliance with this maintenance program is mandatory for continued airworthiness certification. Any deviations must be:
+
+1. Documented through the Maintenance Variance Request system
+2. Supported by engineering analysis demonstrating equivalent safety
+3. Approved by the Continuing Airworthiness Review Board
+4. Implemented with additional monitoring as specified in the approval
+
+### 05.1.10 Maintenance Program Integration
+
+This program integrates with:
+
+- **Digital Fleet Management System**: For automated scheduling and resource allocation
+- **Global Supply Chain Network**: For predictive parts provisioning
+- **Technical Data Repository**: For latest procedure updates and service bulletins
+- **Regulatory Compliance Database**: For automatic verification against current requirements
+- **Training and Qualification System**: For technician certification tracking
+
+# AMPEL360XWLRGA Aircraft - COMPLETE Subsections List (Markdown Formatted)
+
+This list provides a detailed breakdown of the aircraft into its major sections and their constituent subsections, encompassing both structural and functional elements.  **This entire document is formatted using Markdown.**
+
+## I. Nose Cone & Radome Subsection Breakdown:
+
+### Nose Cone Structure: *(Markdown Heading Level 3)*
+
+**Subsections:** *(Markdown Subheading in Bold)*
+
+*   Nose Cone Tip (Apex Point - AP-Datum) *(Markdown Bullet Point)*
+*   Nose Cone Skin Panels (Composite Laminate) *(Markdown Bullet Point)*
+*   Nose Cone Frames & Stringers (Internal Support Structure) *(Markdown Bullet Point)*
+*   Radome Mounting Flange (Interface with Radome) *(Markdown Bullet Point)*
+*   Lightning Diverter Strips (External Protection) *(Markdown Bullet Point)*
+*   Access Panels (Avionics Access) *(Markdown Bullet Point)*
+
+**Functional Integrations:** *(Markdown Subheading in Bold)*
+
+*   Radar Antenna Mounting Platform (Sensor Integration) *(Markdown Bullet Point)*
+*   Forward Avionics Bay (Electronics Housing) *(Markdown Bullet Point)*
+*   Pitot-Static Probes (Air Data Sensors) *(Markdown Bullet Point)*
+*   Temperature Sensors (Environmental Monitoring) *(Markdown Bullet Point)*
+
+### Radome Subsection: *(Markdown Heading Level 3)*
+
+**Subsections:** *(Markdown Subheading in Bold)*
+
+*   Radome Shell (Aerodynamically Shaped, Radar-Transparent Material) *(Markdown Bullet Point)*
+*   Radome Frame (Support Structure) *(Markdown Bullet Point)*
+*   Radome Access Door/Hatch (Maintenance Access) *(Markdown Bullet Point)*
+*   Sealing & Environmental Protection (Weatherproofing) *(Markdown Bullet Point)*
+
+**Functional Integrations:** *(Markdown Subheading in Bold)*
+
+*   Radar System Integration (Antenna, Transceiver) *(Markdown Bullet Point)*
+*   Weather Radar System (Doppler Radar) *(Markdown Bullet Point)*
+*   TCAS Antenna (Traffic Collision Avoidance System) *(Markdown Bullet Point)*
+*   Navigation Antenna (e.g., GPS Antenna) *(Markdown Bullet Point)*
+
+## II. Cockpit & Flight Deck Subsection Breakdown:
+
+### Cockpit Structure: *(Markdown Heading Level 3)*
+
+**Subsections:** *(Markdown Subheading in Bold)*
+
+*   Windshield Frames & Support Structure *(Markdown Bullet Point)*
+*   Side Window Frames & Support Structure *(Markdown Bullet Point)*
+*   Cockpit Floor Structure *(Markdown Bullet Point)*
+*   Glare Shield Structure *(Markdown Bullet Point)*
+*   Overhead Panel Structure *(Markdown Bullet Point)*
+*   Instrument Panel Structure *(Markdown Bullet Point)*
+*   Center Console Structure *(Markdown Bullet Point)*
+*   Side Consoles (Left & Right) *(Markdown Bullet Point)*
+*   Cockpit Door Frame & Support *(Markdown Bullet Point)*
+
+**Functional Integrations:** *(Markdown Subheading in Bold)*
+
+*   Windshields & Windows ([ATA 56 - Windows](https://example.com/ata56)) *(Markdown Bullet Point with Link)*
+*   Cockpit Lighting ([ATA 33 - Lights](https://example.com/ata33)) *(Markdown Bullet Point with Link)*
+*   Environmental Control System (ECS) Ducts & Vents ([ATA 21](https://example.com/ata21)) *(Markdown Bullet Point with Link)*
+*   Wiring Harness Routing (Electrical Power & Avionics - [ATA 24](https://example.com/ata24)) *(Markdown Bullet Point with Link)*
+
+### Flight Deck Systems & Controls: *(Markdown Heading Level 3)*
+
+**Subsections:** *(Markdown Subheading in Bold)*
+
+*   Pilot & Co-pilot Seats (Ergonomic Design, Adjustable) *(Markdown Bullet Point)*
+*   Flight Control Sticks/Yokes & Rudder Pedals *(Markdown Bullet Point)*
+*   Instrument Panels (Primary Flight Display - PFD, Navigation Display - ND, Engine Indicating and Crew Alerting System - EICAS) *(Markdown Bullet Point)*
+*   Center Console (FMS Control Display Unit - CDU, Radio Control Panels, Autopilot Controls) *(Markdown Bullet Point)*
+*   Overhead Panel (Electrical Controls, Lighting Controls, ECS Controls, Anti-Ice Controls) *(Markdown Bullet Point)*
+*   Side Consoles (Circuit Breaker Panels, System Controls) *(Markdown Bullet Point)*
+*   Crew Oxygen System Outlets & Controls ([ATA 35 - Oxygen](https://example.com/ata35)) *(Markdown Bullet Point with Link)*
+*   Intercom System & Audio Control Panels ([ATA 23 - Communications](https://example.com/ata23)) *(Markdown Bullet Point with Link)*
+*   Emergency Equipment (Fire Extinguishers, Oxygen Masks, Escape Ropes - [ATA 13 - Equipment Emergency](https://example.com/ata13)) *(Markdown Bullet Point with Link)*
+
+**Functional Integrations:** *(Markdown Subheading in Bold)*
+
+*   Flight Control System ([ATA 27 - Flight Controls](https://example.com/ata27)) *(Markdown Bullet Point with Link)*
+*   Navigation System ([ATA 34 - Navigation](https://example.com/ata34)) *(Markdown Bullet Point with Link)*
+*   Communication System ([ATA 23 - Communications](https://example.com/ata23)) *(Markdown Bullet Point with Link)*
+*   Electrical Power System ([ATA 24 - Electrical Power](https://example.com/ata24)) *(Markdown Bullet Point with Link)*
+*   Indicating & Recording System ([ATA 31 - Indicating / Recording](https://example.com/ata31)) *(Markdown Bullet Point with Link)*
+*   Auto Flight System (Autopilot - [ATA 22 - Auto Flight](https://example.com/ata22)) *(Markdown Bullet Point with Link)*
+
+## III. Forward Fuselage (Passenger Cabin - Forward Section) Subsection Breakdown:
+
+### Forward Cabin Structure: *(Markdown Heading Level 3)*
+
+**Subsections:** *(Markdown Subheading in Bold)*
+
+*   Fuselage Skin Panels (Composite Laminate) *(Markdown Bullet Point)*
+*   Fuselage Frames & Stringers *(Markdown Bullet Point)*
+*   Cabin Floor Structure (Load-Bearing) *(Markdown Bullet Point)*
+*   Window Frames (Passenger Windows) *(Markdown Bullet Point)*
+*   Forward Passenger Door Frames *(Markdown Bullet Point)*
+*   Emergency Exit Door Frames (if applicable) *(Markdown Bullet Point)*
+*   Pressure Bulkhead (Forward Cabin Boundary) *(Markdown Bullet Point)*
+
+**Functional Integrations:** *(Markdown Subheading in Bold)*
+
+*   Passenger Windows ([ATA 56 - Windows](https://example.com/ata56)) *(Markdown Bullet Point with Link)*
+*   Forward Passenger Doors ([ATA 52 - Doors](https://example.com/ata52)) *(Markdown Bullet Point with Link)*
+*   Emergency Exit Doors ([ATA 52 - Doors](https://example.com/ata52)) *(Markdown Bullet Point with Link)*
+*   Cabin Lighting ([ATA 33 - Lights](https://example.com/ata33)) *(Markdown Bullet Point with Link)*
+*   Cabin Interior Panels & Linings ([ATA 25 - Equipment/Furnishings](https://example.com/ata25)) *(Markdown Bullet Point with Link)*
+*   Overhead Bins ([ATA 25 - Equipment/Furnishings](https://example.com/ata25)) *(Markdown Bullet Point with Link)*
+*   Environmental Control System (ECS) Ducts & Vents ([ATA 21](https://example.com/ata21)) *(Markdown Bullet Point with Link)*
+*   Wiring Harness Routing (Electrical Power & IFE - [ATA 24](https://example.com/ata24)) *(Markdown Bullet Point with Link)*
+
+### Forward Cabin Furnishings & Equipment: *(Markdown Heading Level 3)*
+
+**Subsections:** *(Markdown Subheading in Bold)*
+
+*   First-Class or Business-Class Seats (Ergonomic Design, Reclining) *(Markdown Bullet Point)*
+*   Seat Control Units (Recline, Lighting, Call Button) *(Markdown Bullet Point)*
+*   In-Flight Entertainment (IFE) Screens & Controls ([ATA 44 - In-Flight Entertainment](https://example.com/ata44)) *(Markdown Bullet Point with Link)*
+*   Passenger Service Units (PSUs - Oxygen Masks, Reading Lights, Air Vents) *(Markdown Bullet Point)*
+*   Cabin Dividers & Partitions *(Markdown Bullet Point)*
+*   Carpet & Floor Coverings *(Markdown Bullet Point)*
+*   Curtains & Window Shades *(Markdown Bullet Point)*
+*   Emergency Equipment Stowage (Life Vests, etc. - [ATA 25 - Equipment/Furnishings](https://example.com/ata25)) *(Markdown Bullet Point with Link)*
+*   Lavatory Modules (Forward Lavatories - if applicable) *(Markdown Bullet Point)*
+
+**Functional Integrations:** *(Markdown Subheading in Bold)*
+
+*   In-Flight Entertainment System (IFE - [ATA 44 - In-Flight Entertainment](https://example.com/ata44)) *(Markdown Bullet Point with Link)*
+*   Cabin Management System (CMS - [ATA 42 - Cabin Systems Management](https://example.com/ata42)) *(Markdown Bullet Point with Link)*
+*   Passenger Address System (PA) & Cabin Interphone (Part of [ATA 23 - Communications](https://example.com/ata23)) *(Markdown Bullet Point with Link)*
+*   Oxygen System Distribution ([ATA 35 - Oxygen](https://example.com/ata35)) *(Markdown Bullet Point with Link)*
+*   Emergency Lighting System ([ATA 33 - Lights](https://example.com/ata33)) *(Markdown Bullet Point with Link)*
+
+## IV. Mid Fuselage (Main Passenger Cabin & Cargo Bay) Subsection Breakdown:
+
+### Main Cabin Structure: *(Markdown Heading Level 3)*
+
+**Subsections:** *(Markdown Subheading in Bold)*
+
+*   Fuselage Skin Panels (Composite Laminate - Main Cabin Section) *(Markdown Bullet Point)*
+*   Fuselage Frames & Stringers (Main Cabin Section) *(Markdown Bullet Point)*
+*   Cabin Floor Structure (Load-Bearing - Main Cabin) *(Markdown Bullet Point)*
+*   Window Frames (Panoramic Passenger Windows) *(Markdown Bullet Point)*
+*   Main Passenger Door Frames (Multiple Doors) *(Markdown Bullet Point)*
+*   Service Door Frames (Galley/Lavatory Servicing) *(Markdown Bullet Point)*
+*   Emergency Exit Door Frames (Overwing Exits) *(Markdown Bullet Point)*
+*   Pressure Bulkhead (Aft Cabin Boundary - Forward Section) *(Markdown Bullet Point)*
+
+**Functional Integrations:** *(Markdown Subheading in Bold)*
+
+*   Passenger Windows ([ATA 56 - Windows](https://example.com/ata56)) *(Markdown Bullet Point with Link)*
+*   Main Passenger Doors ([ATA 52 - Doors](https://example.com/ata52)) *(Markdown Bullet Point with Link)*
+*   Service Doors ([ATA 52 - Doors](https://example.com/ata52)) *(Markdown Bullet Point with Link)*
+*   Emergency Exit Doors ([ATA 52 - Doors](https://example.com/ata52)) *(Markdown Bullet Point with Link)*
+*   Cabin Lighting (Main Cabin - [ATA 33 - Lights](https://example.com/ata33)) *(Markdown Bullet Point with Link)*
+*   Cabin Interior Panels & Linings (Main Cabin - [ATA 25 - Equipment/Furnishings](https://example.com/ata25)) *(Markdown Bullet Point with Link)*
+*   Overhead Bins (Main Cabin - [ATA 25 - Equipment/Furnishings](https://example.com/ata25)) *(Markdown Bullet Point with Link)*
+*   Environmental Control System (ECS) Ducts & Vents ([ATA 21](https://example.com/ata21)) *(Markdown Bullet Point with Link)*
+*   IFE Wiring & Distribution (Main Cabin - [ATA 24](https://example.com/ata24)) *(Markdown Bullet Point with Link)*
+
+### Main Cabin Furnishings & Equipment: *(Markdown Heading Level 3)*
+
+**Subsections:** *(Markdown Subheading in Bold)*
+
+*   Economy Class Seats (Standard Passenger Seating) *(Markdown Bullet Point)*
+*   Seat Control Units (Basic Controls) *(Markdown Bullet Point)*
+*   In-Flight Entertainment (IFE) Screens & Controls (Economy Class) *(Markdown Bullet Point)*
+*   Passenger Service Units (PSUs - Economy Class) *(Markdown Bullet Point)*
+*   Lavatory Modules (Main Cabin Lavatories - Multiple) *(Markdown Bullet Point)*
+*   Galley Modules (Main Galley - Centralized) *(Markdown Bullet Point)*
+*   Crew Rest Areas (if applicable in Mid Fuselage) *(Markdown Bullet Point)*
+*   Carpet & Floor Coverings (Main Cabin) *(Markdown Bullet Point)*
+*   Cabin Dividers & Partitions (Cabin Zones) *(Markdown Bullet Point)*
+*   Emergency Equipment Stowage (Life Vests, etc. - Main Cabin) *(Markdown Bullet Point)*
+
+**Functional Integrations:** *(Markdown Subheading in Bold)*
+
+*   In-Flight Entertainment System (IFE - [ATA 44 - In-Flight Entertainment](https://example.com/ata44)) *(Markdown Bullet Point with Link)*
+*   Cabin Management System (CMS - [ATA 42 - Cabin Systems Management](https://example.com/ata42)) *(Markdown Bullet Point with Link)*
+*   Passenger Address System (PA) & Cabin Interphone (Main Cabin) *(Markdown Bullet Point)*
+*   Oxygen System Distribution (Main Cabin - [ATA 35 - Oxygen](https://example.com/ata35)) *(Markdown Bullet Point with Link)*
+*   Emergency Lighting System (Main Cabin - [ATA 33 - Lights](https://example.com/ata33)) *(Markdown Bullet Point with Link)*
+*   Water & Waste System Plumbing (Lavatories & Galleys - [ATA 38](https://example.com/ata38)) *(Markdown Bullet Point with Link)*
+
+### Cargo Bay (Lower Fuselage Cargo Compartment): *(Markdown Heading Level 3)*
+
+**Subsections:** *(Markdown Subheading in Bold)*
+
+*   Cargo Bay Floor Structure (Reinforced for Load) *(Markdown Bullet Point)*
+*   Cargo Bay Walls & Ceiling (Fire-Resistant Linings) *(Markdown Bullet Point)*
+*   Cargo Door Frame (Large Cargo Door) *(Markdown Bullet Point)*
+*   Cargo Loading System Rails & Attachments *(Markdown Bullet Point)*
+*   Cargo Compartment Lighting *(Markdown Bullet Point)*
+*   Fire Suppression System Nozzles & Distribution *(Markdown Bullet Point)*
+
+**Functional Integrations:** *(Markdown Subheading in Bold)*
+
+*   Cargo Doors ([ATA 52 - Doors](https://example.com/ata52)) *(Markdown Bullet Point with Link)*
+*   Cargo Loading System (Automated or Manual - [ATA 25 - Equipment/Furnishings](https://example.com/ata25)) *(Markdown Bullet Point with Link)*
+*   Cargo Bay Lighting ([ATA 33 - Lights](https://example.com/ata33)) *(Markdown Bullet Point with Link)*
+*   Fire Detection & Suppression System ([ATA 26 - Fire Protection](https://example.com/ata26)) *(Markdown Bullet Point with Link)*
+*   Environmental Control System (ECS) for Cargo Bay (Temperature/Humidity Control - [ATA 21](https://example.com/ata21)) *(Markdown Bullet Point with Link)*
+*   Weight & Balance System Sensors (Load Cells in Cargo Floor - [ATA 08 - Leveling & Weighing](https://example.com/ata08)) *(Markdown Bullet Point with Link)*
+
+## V. Aft Fuselage (Rear Passenger Cabin & Systems Integration) Subsection Breakdown:
+
+### Aft Cabin Structure: *(Markdown Heading Level 3)*
+
+**Subsections:** *(Markdown Subheading in Bold)*
+
+*   Fuselage Skin Panels (Composite Laminate - Aft Cabin Section) *(Markdown Bullet Point)*
+*   Fuselage Frames & Stringers (Aft Cabin Section) *(Markdown Bullet Point)*
+*   Cabin Floor Structure (Aft Cabin) *(Markdown Bullet Point)*
+*   Window Frames (Rear Passenger Windows) *(Markdown Bullet Point)*
+*   Aft Passenger Door Frames *(Markdown Bullet Point)*
+*   Emergency Exit Door Frames (if applicable - Rear Exits) *(Markdown Bullet Point)*
+*   Aft Pressure Bulkhead (Rear Cabin Boundary) *(Markdown Bullet Point)*
+*   Tailcone Attachment Structure (Empennage Integration) *(Markdown Bullet Point)*
+
+**Functional Integrations:** *(Markdown Subheading in Bold)*
+
+*   Passenger Windows ([ATA 56 - Windows](https://example.com/ata56)) *(Markdown Bullet Point with Link)*
+*   Aft Passenger Doors ([ATA 52 - Doors](https://example.com/ata52)) *(Markdown Bullet Point with Link)*
+*   Emergency Exit Doors ([ATA 52 - Doors](https://example.com/ata52)) *(Markdown Bullet Point with Link)*
+*   Cabin Lighting (Aft Cabin - [ATA 33 - Lights](https://example.com/ata33)) *(Markdown Bullet Point with Link)*
+*   Cabin Interior Panels & Linings (Aft Cabin - [ATA 25 - Equipment/Furnishings](https://example.com/ata25)) *(Markdown Bullet Point with Link)*
+*   Overhead Bins (Aft Cabin - [ATA 25 - Equipment/Furnishings](https://example.com/ata25)) *(Markdown Bullet Point with Link)*
+*   ECS Ducts & Vents (Aft Cabin - [ATA 21](https://example.com/ata21)) *(Markdown Bullet Point with Link)*
+*   Wiring Harness Routing (Electrical Power & IFE - Aft Cabin - [ATA 24](https://example.com/ata24)) *(Markdown Bullet Point with Link)*
+
+### Aft Cabin Furnishings & Equipment: *(Markdown Heading Level 3)*
+
+**Subsections:** *(Markdown Subheading in Bold)*
+
+*   Economy Class Seats (Aft Cabin Seating) *(Markdown Bullet Point)*
+*   Seat Control Units (Basic Controls - Aft Cabin) *(Markdown Bullet Point)*
+*   In-Flight Entertainment (IFE) Screens & Controls (Economy Class - Aft Cabin) *(Markdown Bullet Point with Link)*
+*   Passenger Service Units (PSUs - Economy Class - Aft Cabin) *(Markdown Bullet Point)*
+*   Lavatory Modules (Aft Cabin Lavatories - Multiple) *(Markdown Bullet Point)*
+*   Galley Modules (Rear Galley - Smaller, Supplemental) *(Markdown Bullet Point)*
+*   Carpet & Floor Coverings (Aft Cabin) *(Markdown Bullet Point)*
+*   Cabin Dividers & Partitions (Aft Cabin Zones) *(Markdown Bullet Point)*
+*   Emergency Equipment Stowage (Life Vests, etc. - Aft Cabin) *(Markdown Bullet Point)*
+
+**Functional Integrations:** *(Markdown Subheading in Bold)*
+
+*   In-Flight Entertainment System (IFE - [ATA 44 - In-Flight Entertainment](https://example.com/ata44)) *(Markdown Bullet Point with Link)*
+*   Cabin Management System (CMS - [ATA 42 - Cabin Systems Management](https://example.com/ata42)) *(Markdown Bullet Point with Link)*
+*   Passenger Address System (PA) & Cabin Interphone (Aft Cabin) *(Markdown Bullet Point)*
+*   Oxygen System Distribution (Aft Cabin - [ATA 35 - Oxygen](https://example.com/ata35)) *(Markdown Bullet Point with Link)*
+*   Emergency Lighting System (Aft Cabin - [ATA 33 - Lights](https://example.com/ata33)) *(Markdown Bullet Point with Link)*
+*   Water & Waste System Plumbing (Aft Lavatories & Galleys - [ATA 38](https://example.com/ata38)) *(Markdown Bullet Point with Link)*
+
+### Aft Fuselage Systems Integration Area: *(Markdown Heading Level 3)*
+
+**Subsections:** *(Markdown Subheading in Bold)*
+
+*   APU Bay Structure (Auxiliary Power Unit Housing - if applicable) *(Markdown Bullet Point)*
+*   ECS Pack Bay (Environmental Control System Pack Location) *(Markdown Bullet Point)*
+*   Hydraulic System Bay (if hydraulic system is partially retained) *(Markdown Bullet Point)*
+*   Avionics Bay (Aft Avionics - potentially for system controllers) *(Markdown Bullet Point)*
+*   Wiring Harness Routing & Junction Boxes (Aft Systems) *(Markdown Bullet Point)*
+*   Access Panels & Doors (Systems Maintenance) *(Markdown Bullet Point)*
+
+**Functional Integrations:** *(Markdown Subheading in Bold)*
+
+*   Auxiliary Power Unit (APU - [ATA 49 - Auxiliary Power Unit](https://example.com/ata49)) - if applicable *(Markdown Bullet Point with Link)*
+*   Environmental Control System (ECS) Packs ([ATA 21 - Air Conditioning](https://example.com/ata21)) *(Markdown Bullet Point with Link)*
+*   Hydraulic Power System Components (if retained - [ATA 29 - Hydraulic Power](https://example.com/ata29)) *(Markdown Bullet Point with Link)*
+*   Avionics Systems ([ATA 46 - Information Systems](https://example.com/ata46)) *(Markdown Bullet Point with Link)*
+*   Electrical Power Distribution (Aft Fuselage - [ATA 24 - Electrical Power](https://example.com/ata24)) *(Markdown Bullet Point with Link)*
+*   Fire Protection Systems (Aft Systems Bays - [ATA 26 - Fire Protection](https://example.com/ata26)) *(Markdown Bullet Point with Link)*
+
+## VI. Empennage (Tail Section) Subsection Breakdown:
+
+### Vertical Stabilizer (Tail Fin) Structure: *(Markdown Heading Level 3)*
+
+**Subsections:** *(Markdown Subheading in Bold)*
+
+*   Vertical Stabilizer Spars (Main Spar, Auxiliary Spars) *(Markdown Bullet Point)*
+*   Vertical Stabilizer Ribs *(Markdown Bullet Point)*
+*   Vertical Stabilizer Skin Panels (Composite Laminate) *(Markdown Bullet Point)*
+*   Rudder Hinge Structure (Mounting for Rudder) *(Markdown Bullet Point)*
+*   Vertical Stabilizer Tip Fairing *(Markdown Bullet Point)*
+*   Lightning Diverter Strips (Vertical Stabilizer) *(Markdown Bullet Point)*
+
+**Functional Integrations:** *(Markdown Subheading in Bold)*
+
+*   Rudder ([ATA 27 - Flight Controls](https://example.com/ata27)) *(Markdown Bullet Point with Link)*
+*   Rudder Actuator Mounting Points ([ATA 27 - Flight Controls](https://example.com/ata27)) *(Markdown Bullet Point with Link)*
+*   Vertical Stabilizer Navigation Light ([ATA 33 - Lights](https://example.com/ata33)) *(Markdown Bullet Point with Link)*
+*   Antennas (Communication or Navigation - if located on Vertical Stabilizer - [ATA 23](https://example.com/ata23), [ATA 34](https://example.com/ata34)) *(Markdown Bullet Point with Link)*
+
+### Horizontal Stabilizer (Tailplane) Structure: *(Markdown Heading Level 3)*
+
+**Subsections:** *(Markdown Subheading in Bold)*
+
+*   Horizontal Stabilizer Spars (Main Spar, Front & Rear Spars) *(Markdown Bullet Point)*
+*   Horizontal Stabilizer Ribs *(Markdown Bullet Point)*
+*   Horizontal Stabilizer Skin Panels (Composite Laminate) *(Markdown Bullet Point)*
+*   Elevator Hinge Structure (Mounting for Elevators) *(Markdown Bullet Point)*
+*   Horizontal Stabilizer Tip Fairings *(Markdown Bullet Point)*
+*   Horizontal Stabilizer Attachment Fittings (Fuselage Integration) *(Markdown Bullet Point)*
+*   Ice Protection System (Horizontal Stabilizer Leading Edge - [ATA 30](https://example.com/ata30)) *(Markdown Bullet Point with Link)*
+
+**Functional Integrations:** *(Markdown Subheading in Bold)*
+
+*   Elevators ([ATA 27 - Flight Controls](https://example.com/ata27)) *(Markdown Bullet Point with Link)*
+*   Elevator Actuator Mounting Points ([ATA 27 - Flight Controls](https://example.com/ata27)) *(Markdown Bullet Point with Link)*
+*   Horizontal Stabilizer De-Icing/Anti-Ice Systems ([ATA 30 - Ice & Rain Protection](https://example.com/ata30)) *(Markdown Bullet Point with Link)*
+*   Trim Actuator Integration (Horizontal Stabilizer Trim - [ATA 27 - Flight Controls](https://example.com/ata27)) *(Markdown Bullet Point with Link)*
+
+### Control Surfaces - Empennage (Rudder & Elevators): *(Markdown Heading Level 3)*
+
+**Subsections (for Rudder & Elevators - repeated for each):** *(Markdown Subheading in Bold)*
+
+*   Control Surface Skin Panels (Composite Laminate) *(Markdown Bullet Point)*
+*   Control Surface Spars & Ribs (Internal Structure) *(Markdown Bullet Point)*
+*   Hinge Fittings & Attachments (Control Surface to Stabilizer) *(Markdown Bullet Point)*
+*   Actuator Attachment Points (Control Surface Actuation) *(Markdown Bullet Point)*
+*   Trim Tabs (if applicable) *(Markdown Bullet Point)*
+*   Balance Panels (if applicable) *(Markdown Bullet Point)*
+
+**Functional Integrations:** *(Markdown Subheading in Bold)*
+
+*   Flight Control Actuation Systems (Hydraulic or Electric - [ATA 27 - Flight Controls](https://example.com/ata27)) *(Markdown Bullet Point with Link)*
+*   Control Linkages & Pushrods (Connection to Flight Control System - [ATA 27 - Flight Controls](https://example.com/ata27)) *(Markdown Bullet Point with Link)*
+*   Position Sensors (Control Surface Position Feedback - [ATA 27](https://example.com/ata27), [ATA 31](https://example.com/ata31)) *(Markdown Bullet Point with Link)*
+*   Wiring & Electrical Harnesses (Control Surface Actuation & Sensors - [ATA 24](https://example.com/ata24)) *(Markdown Bullet Point with Link)*
+
+## VII. Wings (Main Wings) Subsection Breakdown:
+
+### Wing Box Structure (Main Spar Box): *(Markdown Heading Level 3)*
+
+**Subsections:** *(Markdown Subheading in Bold)*
+
+*   Main Spar (Front Spar) - Load-Bearing Spar running spanwise *(Markdown Bullet Point)*
+*   Rear Spar - Secondary Spanwise Spar *(Markdown Bullet Point)*
+*   Wing Ribs - Airfoil Shaping & Spar Connection Ribs (Various Types) *(Markdown Bullet Point)*
+*   Wing Stringers/Longerons - Spanwise Skin Stiffeners *(Markdown Bullet Point)*
+*   Upper Wing Skin Panels - Composite Laminate, Aerodynamic Surface *(Markdown Bullet Point)*
+*   Lower Wing Skin Panels - Composite Laminate, Aerodynamic Surface *(Markdown Bullet Point)*
+*   Shear Webs (Vertical Spar Webs) - Shear Force Resistance *(Markdown Bullet Point)*
+*   Fuel Tank Bay Walls/Seals (if integral fuel tanks are used) *(Markdown Bullet Point)*
+*   Wing Root Fittings (Fuselage Attachment) *(Markdown Bullet Point)*
+*   Wingtip Attachment Fittings (Wingtip Device Integration) *(Markdown Bullet Point)*
+*   Access Panels (Inspection & Maintenance - Upper & Lower Surface) *(Markdown Bullet Point)*
+
+**Functional Integrations:** *(Markdown Subheading in Bold)*
+
+*   Fuel Tanks (Integral Wing Tanks - if applicable - [ATA 28 - Fuel](https://example.com/ata28)) *(Markdown Bullet Point with Link)*
+*   Wing Fuel System Components (Pumps, Valves, Lines - [ATA 28 - Fuel](https://example.com/ata28)) *(Markdown Bullet Point with Link)*
+*   Wiring Harness Routing (Electrical Power, Lighting, Control - [ATA 24](https://example.com/ata24)) *(Markdown Bullet Point with Link)*
+*   Control Surface Actuator Mounts (Aileron, Flap, Slat Actuators - [ATA 27](https://example.com/ata27)) *(Markdown Bullet Point with Link)*
+*   Sensor Integration (Strain Gauges, Temperature Sensors, Ice Detectors - [ATA 31](https://example.com/ata31), [ATA 30](https://example.com/ata30)) *(Markdown Bullet Point with Link)*
+
+### Leading Edge (Wing Leading Edge): *(Markdown Heading Level 3)*
+
+**Subsections:** *(Markdown Subheading in Bold)*
+
+*   Leading Edge Spar - Forwardmost Spar *(Markdown Bullet Point)*
+*   Leading Edge Ribs - Shaping Leading Edge Profile *(Markdown Bullet Point)*
+*   Leading Edge Skin Panels - Aerodynamic Contour *(Markdown Bullet Point)*
+*   Slat Tracks & Fairings (if Leading Edge Slats are used) *(Markdown Bullet Point)*
+*   Anti-Ice/De-Ice System Ducts/Elements (Leading Edge) *(Markdown Bullet Point)*
+*   Lightning Diverter Strips (Leading Edge Protection) *(Markdown Bullet Point)*
+*   Leading Edge Tip Fairing *(Markdown Bullet Point)*
+
+**Functional Integrations:** *(Markdown Subheading in Bold)*
+
+*   Leading Edge Slats System (if applicable - [ATA 27 - Flight Controls](https://example.com/ata27)) *(Markdown Bullet Point with Link)*
+*   Wing Ice Protection System (Anti-Ice/De-Ice - [ATA 30 - Ice & Rain Protection](https://example.com/ata30)) *(Markdown Bullet Point with Link)*
+*   Air Data Probes (if Leading Edge mounted) *(Markdown Bullet Point)*
+*   Wing Lighting (Leading Edge Lights - if any) *(Markdown Bullet Point)*
+
+### Trailing Edge (Wing Trailing Edge): *(Markdown Heading Level 3)*
+
+**Subsections:** *(Markdown Subheading in Bold)*
+
+*   Trailing Edge Spar - Rearmost Spar *(Markdown Bullet Point)*
+*   Trailing Edge Ribs - Shaping Trailing Edge Profile *(Markdown Bullet Point)*
+*   Trailing Edge Skin Panels - Aerodynamic Contour *(Markdown Bullet Point)*
+*   Aileron Hinge Brackets & Fairings (Wingtip Ailerons) *(Markdown Bullet Point)*
+*   Flap Tracks & Fairings (Wing Flaps) *(Markdown Bullet Point)*
+*   Spoiler Mounting Brackets & Fairings (if Spoilers are on wings) *(Markdown Bullet Point)*
+
+**Functional Integrations:** *(Markdown Subheading in Bold)*
+
+*   Ailerons ([ATA 27 - Flight Controls](https://example.com/ata27)) *(Markdown Bullet Point with Link)*
+*   Flaps ([ATA 27 - Flight Controls](https://example.com/ata27)) *(Markdown Bullet Point with Link)*
+*   Spoilers (if wing-mounted - [ATA 27 - Flight Controls](https://example.com/ata27)) *(Markdown Bullet Point with Link)*
+*   Control Surface Actuators (Aileron, Flap, Spoiler Actuators - [ATA 27](https://example.com/ata27)) *(Markdown Bullet Point with Link)*
+*   Control Linkages & Wiring for Control Surfaces ([ATA 27](https://example.com/ata27), [ATA 24](https://example.com/ata24)) *(Markdown Bullet Point with Link)*
+
+### Wingtip (Wing Tip Structure): *(Markdown Heading Level 3)*
+
+**Subsections:** *(Markdown Subheading in Bold)*
+
+*   Wingtip Structural Cap/Fairing - Aerodynamic Wingtip Shape *(Markdown Bullet Point)*
+*   Winglet Structure (if winglets are incorporated) *(Markdown Bullet Point)*
+*   Wingtip Navigation Light Housing *(Markdown Bullet Point)*
+*   Aileron Tip Rib & Closure (Wingtip Aileron Integration) *(Markdown Bullet Point)*
+*   Static Dischargers (Wingtip Static Wicks) *(Markdown Bullet Point)*
+
+**Functional Integrations:** *(Markdown Subheading in Bold)*
+
+*   Wingtip Navigation Lights ([ATA 33 - Lights](https://example.com/ata33)) *(Markdown Bullet Point with Link)*
+*   Aileron (Wingtip Aileron - [ATA 27 - Flight Controls](https://example.com/ata27)) *(Markdown Bullet Point with Link)*
+*   Fuel Vent Outlets (Wingtip Venting - if applicable - [ATA 28 - Fuel](https://example.com/ata28)) *(Markdown Bullet Point with Link)*
+*   Lightning Diverter (Wingtip Lightning Protection) *(Markdown Bullet Point)*
+
+## VIII. Nacelles & Pylons (Engine/Thruster Pods) Subsection Breakdown:
+
+### Nacelle Structure (Engine Pod): *(Markdown Heading Level 3)*
+
+**Subsections:** *(Markdown Subheading in Bold)*
+
+*   Nacelle Inlet Cowl (Engine Air Intake) *(Markdown Bullet Point)*
+*   Fan Cowl (Turbofan Engine Fan Casing) *(Markdown Bullet Point)*
+*   Core Cowl (Engine Core Housing) *(Markdown Bullet Point)*
+*   Thrust Reverser Cowl (if thrust reversers are fitted) *(Markdown Bullet Point)*
+*   Nozzle Fairing (Engine Exhaust Nozzle Integration) *(Markdown Bullet Point)*
+*   Nacelle Mounting Points (Pylon Attachment) *(Markdown Bullet Point)*
+*   Acoustic Liners (Noise Reduction Material) *(Markdown Bullet Point)*
+*   Firewall (Engine Fire Containment) *(Markdown Bullet Point)*
+*   Drain Masts & Vents (Fluid Drainage) *(Markdown Bullet Point)*
+*   Access Doors & Panels (Engine Maintenance Access) *(Markdown Bullet Point)*
+
+**Functional Integrations:** *(Markdown Subheading in Bold)*
+
+*   Turbofan/Hydrogen Engine ([ATA 72 - Propulsion](https://example.com/ata72)) *(Markdown Bullet Point with Link)*
+*   Quantum Thruster Module (if nacelle houses Q-thruster - [ATA 72-Q01 - Propulsion](https://example.com/ata72-q01)) *(Markdown Bullet Point with Link)*
+*   Engine Fuel System Components (Pumps, Valves, Lines within Nacelle - [ATA 28 - Fuel](https://example.com/ata28)) *(Markdown Bullet Point with Link)*
+*   Engine Oil System Components (Oil Tank, Pumps, Coolers within Nacelle - [ATA 73 - Engine Oil](https://example.com/ata73)) *(Markdown Bullet Point with Link)*
+*   Engine Control System Components (FADEC Units, Sensors - [ATA 72 - Propulsion](https://example.com/ata72)) *(Markdown Bullet Point with Link)*
+*   Engine Indicating System Sensors (Temperature, Pressure, Vibration - [ATA 77 - Engine Indicating](https://example.com/ata77)) *(Markdown Bullet Point with Link)*
+*   Fire Detection & Suppression System (Nacelle Fire Protection - [ATA 26 - Fire Protection](https://example.com/ata26)) *(Markdown Bullet Point with Link)*
+*   HPC Cooling System Components (Coolant Lines, Heat Exchangers - if HPC cooling integrated into nacelle) *(Markdown Bullet Point)*
+*   Cryo-Hydrogen Lines (if hydrogen fuel lines run through nacelle - [ATA 28 - Fuel](https://example.com/ata28)) *(Markdown Bullet Point with Link)*
+*   Electrical Wiring & Harnesses (Engine Control, Sensors, Accessories - [ATA 24](https://example.com/ata24)) *(Markdown Bullet Point with Link)*
+*   Thrust Reverser System (if fitted - [ATA 72 - Propulsion](https://example.com/ata72)) *(Markdown Bullet Point with Link)*
+
+### Pylon Structure (Wing Mounting Structure): *(Markdown Heading Level 3)*
+
+**Subsections:** *(Markdown Subheading in Bold)*
+
+*   Pylon Spars (Wing Attachment Spars) *(Markdown Bullet Point)*
+*   Pylon Ribs (Pylon Shape & Stiffness) *(Markdown Bullet Point)*
+*   Pylon Skin Panels (Aerodynamic Fairing) *(Markdown Bullet Point)*
+*   Engine Mount Fittings (Nacelle Attachment) *(Markdown Bullet Point)*
+*   Wing Spar Attachment Fittings (Wing Integration) *(Markdown Bullet Point)*
+*   Pylon Fairing (Aerodynamic Smoothing between Wing & Nacelle) *(Markdown Bullet Point)*
+*   Wiring & Ducting Channels (Routing through Pylon) *(Markdown Bullet Point)*
+*   Lightning Diverter Strips (Pylon Protection) *(Markdown Bullet Point)*
+*   Access Panels (Pylon Inspection) *(Markdown Bullet Point)*
+
+**Functional Integrations:** *(Markdown Subheading in Bold)*
+
+*   Engine/Thruster Mounting System (Vibration Isolation, Load Transfer) *(Markdown Bullet Point)*
+*   Fuel Lines & Ducts (Routing Fuel to Engines/Thrusters - [ATA 28 - Fuel](https://example.com/ata28)) *(Markdown Bullet Point with Link)*
+*   Electrical Wiring Harnesses (Engine Control, Power, Sensors - [ATA 24](https://example.com/ata24)) *(Markdown Bullet Point with Link)*
+*   Bleed Air Ducts (if bleed air is used for any nacelle systems - [ATA 75 - Engine Bleed Air](https://example.com/ata75)) *(Markdown Bullet Point with Link)*
+*   Coolant Lines (HPC Cooling - if routed through pylon) *(Markdown Bullet Point)*
+*   Fire Detection & Suppression System Wiring (Pylon Integration - [ATA 26 - Fire Protection](https://example.com/ata26)) *(Markdown Bullet Point with Link)*
+
+## IX. Landing Gear (Main & Nose Gear) Subsection Breakdown:
+
+### Main Landing Gear (Port & Starboard - Each Side Similar): *(Markdown Heading Level 3)*
+
+**Subsections (for each Main Landing Gear Strut):** *(Markdown Subheading in Bold)*
+
+*   Main Landing Gear Strut (Shock Absorber, Telescopic Cylinder) *(Markdown Bullet Point)*
+*   Wheels (Main Wheels - Multiple Wheels per Strut) *(Markdown Bullet Point)*
+*   Brakes (Main Wheel Brakes - Hydraulic or Electric) *(Markdown Bullet Point)*
+*   Wheel Axle & Bearings *(Markdown Bullet Point)*
+*   Side Stay & Drag Stay (Strut Bracing & Support) *(Markdown Bullet Point)*
+*   Downlock & Uplock Mechanisms (Gear Locking in Extended/Retracted Positions) *(Markdown Bullet Point)*
+*   Gear Doors (Main Landing Gear Doors - [ATA 89 - Doors – Landing Gear](https://example.com/ata89)) *(Markdown Bullet Point with Link)*
+*   Door Actuators (Landing Gear Door Actuation) *(Markdown Bullet Point)*
+*   Proximity Sensors (Gear Position Indication) *(Markdown Bullet Point)*
+*   Steering Actuator (if Main Gear Steering is incorporated) *(Markdown Bullet Point)*
+
+**Functional Integrations:** *(Markdown Subheading in Bold)*
+
+*   Landing Gear Extension/Retraction System (Hydraulic or Electric - [ATA 32 - Landing Gear](https://example.com/ata32)) *(Markdown Bullet Point with Link)*
+*   Braking System (Hydraulic or Electric Brakes - [ATA 32 - Landing Gear](https://example.com/ata32)) *(Markdown Bullet Point with Link)*
+*   Steering System (if Main Gear Steering - [ATA 32 - Landing Gear](https://example.com/ata32)) *(Markdown Bullet Point with Link)*
+*   Landing Gear Position Indication System (Sensors & Cockpit Displays - [ATA 32](https://example.com/ata32), [ATA 31](https://example.com/ata31)) *(Markdown Bullet Point with Link)*
+*   Wheel Speed Sensors (for Anti-Skid and Braking Systems - [ATA 32](https://example.com/ata32), [ATA 31](https://example.com/ata31)) *(Markdown Bullet Point with Link)*
+*   Electrical Wiring & Harnesses (Actuators, Sensors, Lights - [ATA 24](https://example.com/ata24)) *(Markdown Bullet Point with Link)*
+*   Landing Lights (if integrated into Main Landing Gear Strut - [ATA 33 - Lights](https://example.com/ata33)) *(Markdown Bullet Point with Link)*
+
+### Nose Landing Gear: *(Markdown Heading Level 3)*
+
+**Subsections:** *(Markdown Subheading in Bold)*
+
+*   Nose Landing Gear Strut (Shock Absorber, Telescopic Cylinder) *(Markdown Bullet Point)*
+*   Nose Wheels (Typically Dual Wheels) *(Markdown Bullet Point)*
+*   Nose Wheel Steering Mechanism (Hydraulic or Electric) *(Markdown Bullet Point)*
+*   Steering Actuators (Nose Wheel Steering) *(Markdown Bullet Point)*
+*   Downlock & Uplock Mechanisms (Gear Locking) *(Markdown Bullet Point)*
+*   Gear Doors (Nose Landing Gear Doors - [ATA 89 - Doors – Landing Gear](https://example.com/ata89)) *(Markdown Bullet Point with Link)*
+*   Door Actuators (Nose Landing Gear Door Actuation) *(Markdown Bullet Point)*
+*   Proximity Sensors (Gear Position Indication) *(Markdown Bullet Point)*
+*   Towing Lugs (Ground Towing Interface) *(Markdown Bullet Point)*
+*   Ground Handling Equipment Interface Points *(Markdown Bullet Point)*
+
+**Functional Integrations:** *(Markdown Subheading in Bold)*
+
+*   Landing Gear Extension/Retraction System (Nose Gear - [ATA 32 - Landing Gear](https://example.com/ata32)) *(Markdown Bullet Point with Link)*
+*   Nose Wheel Steering System ([ATA 32 - Landing Gear](https://example.com/ata32)) *(Markdown Bullet Point with Link)*
+*   Landing Gear Position Indication System ([ATA 32](https://example.com/ata32), [ATA 31](https://example.com/ata31)) *(Markdown Bullet Point with Link)*
+*   Steering Control System (Cockpit Controls & Feedback - [ATA 32](https://example.com/ata32), [ATA 27](https://example.com/ata27)) *(Markdown Bullet Point with Link)*
+*   Landing Lights (Nose Landing Lights - Taxi & Landing - [ATA 33 - Lights](https://example.com/ata33)) *(Markdown Bullet Point with Link)*
+*   Electrical Wiring & Harnesses (Actuators, Sensors, Lights - [ATA 24](https://example.com/ata24)) *(Markdown Bullet Point with Link)*
+
+---
+
+This is the **COMPLETE Aircraft Subsections List, now fully formatted in Markdown** for enhanced readability and digital use. Let me know if this is now correctly formatted and meets your requirements.
 
 ### Special Considerations for ATA 05:
 
-*   Heavily influenced by the predictive maintenance system (ML-P).
-*   Unique aspects of the Q-01 propulsion system will require specific maintenance considerations.
-*   Need to define maintenance intervals for components where traditional time-based limits may not directly apply.
-*   Define maintenance/inspection procedures for quantum components (if any are required/possible).
-*   Determine methods for assessing the "health" of the entanglement engine (Q-01).
+* Heavily influenced by the predictive maintenance system (ML-P).
+* Unique aspects of the Q-01 propulsion system will require specific maintenance considerations.
+* Need to define maintenance intervals for components where traditional time-based limits may not directly apply.
+* Define maintenance/inspection procedures for quantum components (if any are required/possible).
+* Determine methods for assessing the "health" of the entanglement engine (Q-01).
 
 ---
 
