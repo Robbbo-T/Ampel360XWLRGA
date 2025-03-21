@@ -39,3 +39,37 @@
 - **Risk Level:** High
 - **Status:** In Progress
 - **Technology Type:** Quantum Propulsion
+
+## ATA Chapter-Based Layout
+
+### Instructions:
+1. **ATA Chapter:** Specify the ATA chapter relevant to the issue.
+2. **Section:** Provide the section within the ATA chapter.
+3. **Sub-Section:** Provide the sub-section within the ATA chapter, if applicable.
+4. **Description:** Describe the issue or task related to the specified ATA chapter.
+
+### Example:
+- **ATA Chapter:** 32 - Landing Gear
+- **Section:** 32-10-00 - Main Landing Gear and Doors
+- **Sub-Section:** 32-10-10 - Main Landing Gear Strut
+- **Description:** Inspection and maintenance of the main landing gear strut.
+
+## Creating Issues for Specific ATA Chapters
+
+### Instructions:
+1. **Title:** Provide a clear and concise title for the issue.
+2. **ATA Chapter:** Specify the ATA chapter relevant to the issue.
+3. **Section:** Provide the section within the ATA chapter.
+4. **Sub-Section:** Provide the sub-section within the ATA chapter, if applicable.
+5. **Description:** Describe the issue or task related to the specified ATA chapter.
+6. **Milestone:** Assign the issue to a relevant milestone.
+7. **Labels:** Apply relevant labels to categorize the issue.
+
+### Example:
+- **Title:** Main Landing Gear Strut Inspection
+- **ATA Chapter:** 32 - Landing Gear
+- **Section:** 32-10-00 - Main Landing Gear and Doors
+- **Sub-Section:** 32-10-10 - Main Landing Gear Strut
+- **Description:** Conduct inspection and maintenance of the main landing gear strut.
+- **Milestone:** Landing Gear Maintenance
+- **Labels:** Inspection, Maintenance, Landing Gear
