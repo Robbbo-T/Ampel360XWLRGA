@@ -444,3 +444,366 @@ If you need further customization, specific examples, or additional sections inc
 4. **Implementation Monitoring**  
    - Use analytics (e.g., GitHub Insights, custom scripts) to measure frequency and impact of block progression prompts.
    - Gather user feedback to refine or expand prompt usage guidelines.
+
+---
+
+## **10. Standard Practices - Airframe (Prácticas Estándar - Célula - Adaptaciones para Hidrógeno)**
+
+### **10.1 Standard Practices - Airframe - General (General - Adaptaciones Hidrógeno)**
+
+#### **10.1.1 General Maintenance Practices - Hydrogen Aircraft (Prácticas Generales de Mantenimiento - Avión de Hidrógeno)**
+
+#### **10.1.2 Material Handling - Hydrogen Compatible Materials (Manejo de Materiales - Materiales Compatibles con Hidrógeno)**
+
+#### **10.1.3 Safety Procedures - Hydrogen Systems (Procedimientos de Seguridad - Sistemas de Hidrógeno)**
+
+#### **10.1.4 Tooling - Hydrogen System Specific Tools (Herramientas - Herramientas Específicas para Sistemas de Hidrógeno)**
+
+### **10.2 Ground Handling - Hydrogen Specific (Manejo en Tierra - Específico para Hidrógeno)**
+
+#### **10.2.1 Hydrogen Refueling Procedures (Procedimientos de Repostaje de Hidrógeno)**
+
+#### **10.2.2 Hydrogen Leak Detection - Ground Operations (Detección de Fugas de Hidrógeno - Operaciones en Tierra)**
+
+#### **10.2.3 Hydrogen System Purging and Venting - Ground (Purgado y Ventilación del Sistema de Hidrógeno - Tierra)**
+
+#### **10.2.4 Emergency Procedures - Hydrogen Ground Incidents (Procedimientos de Emergencia - Incidentes de Hidrógeno en Tierra)**
+
+---
+
+## **11. Air Conditioning & Pressurization (Acondicionamiento de Aire y Presurización - Adaptaciones Térmicas Hidrógeno)**
+
+### **11.1 Air Conditioning & Pressurization - General (General - Adaptaciones Hidrógeno)**
+
+#### **11.1.1 Integration with Hydrogen Boil-Off Management (Integración con Gestión de Boil-Off de Hidrógeno)**
+
+#### **11.1.2 Thermal Load Considerations - Hydrogen Systems (Consideraciones de Carga Térmica - Sistemas de Hidrógeno)**
+
+### **11.2 Air Supply (Suministro de Aire - Adaptaciones para Integración Boil-Off)**
+
+#### **11.2.1 Boil-Off Air Integration - Description (Integración de Aire de Boil-Off - Descripción)**
+
+#### **11.2.2 Boil-Off Air - Control and Distribution (Aire de Boil-Off - Control y Distribución)**
+
+#### **11.2.3 Bleed Air System - Hydrogen Engine Adaptation (Sistema de Aire Sangrado - Adaptación Motor Hidrógeno)**
+
+### **11.3 Distribution (Distribución - Aislamiento para Boil-Off)**
+
+#### **11.3.1 Insulated Ducting - Boil-Off Integration (Conductos Aislados - Integración Boil-Off)**
+
+#### **11.3.2 Air Mix Zones - Hydrogen Thermal Management (Zonas de Mezcla de Aire - Gestión Térmica Hidrógeno)**
+
+### **11.4 Pressurization Control (Control de Presurización - Consideraciones Generales Hidrógeno)**
+
+#### **11.4.1 Hydrogen System Interface Review - Pressurization (Revisión de Interfaz del Sistema de Hidrógeno - Presurización)**
+
+---
+
+## **12. Autopilot (Piloto Automático - Impacto Indirecto Mínimo)**
+
+### **12.1 Autopilot - General (General - Impacto Indirecto Mínimo)**
+
+#### **12.1.1 Autopilot System - General Review - Hydrogen Aircraft (Sistema de Piloto Automático - Revisión General - Avión de Hidrógeno)**
+
+### **12.2 Automatic Flight Control System (AFCS) (Sistema de Control Automático de Vuelo - Estándar)**
+
+#### **12.2.1 AFCS Computer - Standard**
+
+### **12.3 Autothrottle System (Sistema de Acelerador Automático - Interfaz Motor Hidrógeno)**
+
+#### **12.3.1 Autothrottle - Hydrogen Engine Interface (Interfaz Acelerador Automático - Motor Hidrógeno)**
+
+---
+
+## **13. Communications (Comunicaciones - Impacto Indirecto Mínimo)**
+
+### **13.1 Communications - General (General - Impacto Indirecto Mínimo)**
+
+#### **13.1.1 Communication Systems - General Review - Hydrogen Aircraft (Sistemas de Comunicación - Revisión General - Avión de Hidrógeno)**
+
+### **13.2 VHF Communication (Comunicación VHF - Estándar)**
+
+#### **13.2.1 VHF Transceivers - Standard**
+
+### **13.3 HF Communication (Comunicación HF - Estándar)**
+
+#### **13.3.1 HF Transceivers - Standard**
+
+### **13.4 SATCOM (Comunicación SATCOM - Estándar)**
+
+#### **13.4.1 SATCOM Units - Standard**
+
+### **13.5 Interphone System (Sistema de Interfono - Estándar)**
+
+#### **13.5.1 Interphone Control Panels - Standard**
+
+---
+
+## **14. Electrical Power (Potencia Eléctrica - Adaptaciones para Demandas de Hidrógeno)**
+
+### **14.1 Electrical Power - General (General - Adaptaciones Hidrógeno)**
+
+#### **14.1.1 Power Requirements - Hydrogen System Components (Requerimientos de Potencia - Componentes del Sistema de Hidrógeno)**
+
+#### **14.1.2 Electrical Load Analysis - Hydrogen Propulsion (Análisis de Carga Eléctrica - Propulsión de Hidrógeno)**
+
+### **14.2 Generation (Generación - Posible Integración Celdas Combustible)**
+
+#### **14.2.1 Main Generators - Hydrogen Engine Driven (Generadores Principales - Accionados por Motor de Hidrógeno)**
+
+#### **14.2.2 APU Generator - Standard or Hydrogen Fuel Cell (Generador APU - Estándar o Celda de Combustible de Hidrógeno)**
+
+#### **14.2.3 Hydrogen Fuel Cell - Power Generation (Generación de Potencia - Celda de Combustible de Hidrógeno) (Si Aplica)**
+
+### **14.3 Distribution (Distribución - Adaptaciones para Nuevas Cargas)**
+
+#### **14.3.1 Power Distribution Network - Hydrogen System Loads (Red de Distribución de Potencia - Cargas del Sistema de Hidrógeno)**
+
+#### **14.3.2 Circuit Protection - Hydrogen System Circuits (Protección de Circuito - Circuitos del Sistema de Hidrógeno)**
+
+### **14.4 Batteries (Baterías - Capacidad y Tipo - Demandas Hidrógeno)**
+
+#### **14.4.1 Main Batteries - Capacity for Hydrogen Systems (Baterías Principales - Capacidad para Sistemas de Hidrógeno)**
+
+#### **14.4.2 Emergency Batteries - Hydrogen System Backup (Baterías de Emergencia - Respaldo del Sistema de Hidrógeno)**
+
+---
+
+## **15. Equipment/Furnishings (Equipamiento/Mobiliario - Impacto Indirecto Mínimo)**
+
+### **15.1 Equipment/Furnishings - General (General - Impacto Indirecto Mínimo)**
+
+#### **15.1.1 Cabin Equipment - General Review - Hydrogen Aircraft (Equipamiento de Cabina - Revisión General - Avión de Hidrógeno)**
+
+---
+
+## **26. Fire Protection (Protección Contra Incendios - Sistema Rediseñado para Hidrógeno)**
+
+### **26.1 Fire Protection - General (General - Rediseño para Hidrógeno)**
+
+#### **26.1.1 Hydrogen Fire Hazards - Analysis (Riesgos de Incendio de Hidrógeno - Análisis)**
+
+#### **26.1.2 Fire Protection System - Hydrogen Specific Design (Sistema de Protección Contra Incendios - Diseño Específico para Hidrógeno)**
+
+### **26.2 Detection System (Sistema de Detección - Detectores de Hidrógeno Específicos)**
+
+#### **26.2.1 Hydrogen Leak Detectors - Engine Nacelle (Detectores de Fugas de Hidrógeno - Nacelle del Motor)**
+
+#### **26.2.2 Hydrogen Leak Detectors - Fuel Tank Area (Detectores de Fugas de Hidrógeno - Área del Tanque de Combustible)**
+
+#### **26.2.3 Hydrogen Flame Detectors - Combustion Zone (Detectores de Llama de Hidrógeno - Zona de Combustión)**
+
+#### **26.2.4 Cabin Hydrogen Detectors (Detectores de Hidrógeno en Cabina) (Si Aplica)**
+
+### **26.3 Extinguishing System (Sistema de Extinción - Agentes Extintores para Hidrógeno)**
+
+#### **26.3.1 Extinguishing Agents - Hydrogen Fires (Agentes Extintores - Incendios de Hidrógeno)**
+
+#### **26.3.2 Extinguishing System - Engine Nacelle - Hydrogen (Sistema de Extinción - Nacelle del Motor - Hidrógeno)**
+
+#### **26.3.3 Extinguishing System - Fuel Tank Area - Hydrogen (Sistema de Extinción - Área del Tanque de Combustible - Hidrógeno)**
+
+#### **26.3.4 Portable Extinguishers - Hydrogen Compatible (Extintores Portátiles - Compatibles con Hidrógeno)**
+
+---
+
+## **27. Flight Controls (Controles de Vuelo - Adaptaciones de Interfaz con Motor Hidrógeno)**
+
+### **27.1 Flight Controls - General (General - Interfaz Motor Hidrógeno)**
+
+#### **27.1.1 Flight Control System - Hydrogen Engine Interface (Sistema de Control de Vuelo - Interfaz Motor Hidrógeno)**
+
+#### **27.1.2 Control Laws - Hydrogen Engine Response (Leyes de Control - Respuesta del Motor de Hidrógeno)**
+
+---
+
+## **28. Fuel (Combustible - Transformación Completa a Hidrógeno)**
+
+### **28.1 Fuel - General (General - Sistema de Hidrógeno Criogénico)**
+
+#### **28.1.1 Hydrogen Fuel System - Overview (Sistema de Combustible de Hidrógeno - Visión General)**
+
+#### **28.1.2 Cryogenic Fuel System - Principles (Sistema de Combustible Criogénico - Principios)**
+
+#### **28.1.3 Hydrogen Safety - Fuel System Design (Seguridad del Hidrógeno - Diseño del Sistema de Combustible)**
+
+### **28.2 Fuel Storage (Almacenamiento de Combustible - Tanques Criogénicos en Célula)**
+
+#### **28.2.1 Hydrogen Fuel Tanks - Cryogenic Design (Tanques de Combustible de Hidrógeno - Diseño Criogénico)**
+
+#### **28.2.2 Tank Insulation System - Vacuum and MLI (Sistema de Aislamiento del Tanque - Vacío y MLI)**
+
+#### **28.2.3 Tank Venting and Purging System - Hydrogen (Sistema de Ventilación y Purgado del Tanque - Hidrógeno)**
+
+#### **28.2.4 Tank Pressure Control System - Cryogenic (Sistema de Control de Presión del Tanque - Criogénico)**
+
+#### **28.2.5 Tank Structural Integration - Airframe (Integración Estructural del Tanque - Célula)**
+
+### **28.3 Fuel Distribution (Distribución de Combustible - Sistema de Bombeo y Tuberías Criogénicas)**
+
+#### **28.3.1 Cryogenic Fuel Pumps - High Pressure (Bombas de Combustible Criogénicas - Alta Presión)**
+
+#### **28.3.2 Vacuum Jacketed Fuel Lines - Insulation (Líneas de Combustible con Aislamiento de Vacío - Aislamiento)**
+
+#### **28.3.3 Fuel Manifolds and Valves - Cryogenic Rated (Colectores y Válvulas de Combustible - Clasificación Criogénica)**
+
+#### **28.3.4 Fuel Filters - Cryogenic Compatibility (Filtros de Combustible - Compatibilidad Criogénica)**
+
+### **28.4 Fuel Indicating (Indicación de Combustible - Sensores Criogénicos y de Hidrógeno)**
+
+#### **28.4.1 Hydrogen Level Sensors - Cryogenic (Sensores de Nivel de Hidrógeno - Criogénicos)**
+
+#### **28.4.2 Hydrogen Temperature Sensors - Cryogenic (Sensores de Temperatura de Hidrógeno - Criogénicos)**
+
+#### **28.4.3 Hydrogen Pressure Sensors - Cryogenic (Sensores de Presión de Hidrógeno - Criogénicos)**
+
+#### **28.4.4 Fuel Quantity Indication - Hydrogen Specific (Indicación de Cantidad de Combustible - Específico para Hidrógeno)**
+
+---
+
+## **31. Indicating/Recording Systems (Sistemas de Indicación/Registro - Nuevos Parámetros de Hidrógeno)**
+
+### **31.1 Indicating/Recording Systems - General (General - Parámetros Hidrógeno)**
+
+#### **31.1.1 Instrumentation System - Hydrogen Parameters Integration (Sistema de Instrumentación - Integración de Parámetros de Hidrógeno)**
+
+#### **31.1.2 Recording System - Hydrogen Data Channels (Sistema de Registro - Canales de Datos de Hidrógeno)**
+
+### **31.2 Instrument Systems (Sistemas de Instrumentos - Indicadores de Hidrógeno en Cabina)**
+
+#### **31.2.1 Engine Instruments - Hydrogen Specific Parameters (Instrumentos de Motor - Parámetros Específicos de Hidrógeno)**
+
+#### **31.2.2 Fuel System Instruments - Hydrogen Levels/Pressure/Temp (Instrumentos del Sistema de Combustible - Niveles/Presión/Temp de Hidrógeno)**
+
+#### **31.2.3 Hydrogen Leak Detection Indicators - Cabin Display (Indicadores de Detección de Fugas de Hidrógeno - Display en Cabina)**
+
+### **31.3 Recording Systems (Sistemas de Registro - FDR/CVR - Canales de Datos Hidrógeno)**
+
+#### **31.3.1 Flight Data Recorder (FDR) - Hydrogen Data Channels (Registrador de Datos de Vuelo (FDR) - Canales de Datos de Hidrógeno)**
+
+---
+
+## **49. Airborne Auxiliary Power (Potencia Auxiliar en Vuelo - APU - Posible Adaptación a Hidrógeno)**
+
+### **49.1 Airborne Auxiliary Power - General (General - APU de Hidrógeno - Posible)**
+
+#### **49.1.1 APU System - Hydrogen Fuel Cell Option (Sistema APU - Opción de Celda de Combustible de Hidrógeno)**
+
+#### **49.1.2 APU System - Conventional Fuel Option (Sistema APU - Opción de Combustible Convencional)**
+
+### **49.2 APU System (Sistema APU - APU Convencional o de Hidrógeno)**
+
+#### **49.2.1 APU Engine - Conventional Turbine (APU Motor - Turbina Convencional) (Si Aplica)**
+
+#### **49.2.2 APU Fuel Cell Stack - Hydrogen (Pila de Celdas de Combustible APU - Hidrógeno) (Si Aplica)**
+
+#### **49.2.3 APU Hydrogen Fuel Supply (Suministro de Combustible de Hidrógeno APU) (Si Aplica)**
+
+### **49.3 APU Controls (Controles APU - Controles Adaptados a Tipo de APU)**
+
+#### **49.3.1 APU Control Panel - Conventional APU (Panel de Control APU - APU Convencional) (Si Aplica)**
+
+#### **49.3.2 APU Control Panel - Hydrogen Fuel Cell APU (Panel de Control APU - APU Celda de Combustible de Hidrógeno) (Si Aplica)**
+
+---
+
+## **70-80 Powerplant - Q-01 Quantum Propulsion System (Grupo Motopropulsor - Sistema de Propulsión Cuántica Q-01 - DETALLE COMPLETO)**
+
+### **71 Powerplant - Q-01 Installation (Instalación del Q-01)**
+
+#### **71.1 Powerplant - Q-01 - General (General - Q-01)**
+
+#### **71.2 QSM - Quantum State Modulator (QSM - Modulador de Estado Cuántico)**
+
+#### **71.3 QEE - Quantum Entanglement Engine (QEE - Motor de Entrelazamiento Cuántico)**
+
+#### **71.4 CCS - Cryogenic Cooling System (CCS - Sistema de Enfriamiento Criogénico)**
+
+#### **71.5 Energy Conversion System (ECS) (Sistema de Conversión de Energía) (Si Aplica)**
+
+#### **71.6 Control System - Q-01 Control (Sistema de Control - Control del Q-01)**
+
+#### **71.7 Powerplant - Q-01 - Additional Information (Información Adicional - Q-01)**
+
+---
+
+## **72 Engine - Q-01 Quantum Propulsion Engine (Motor - Motor de Propulsión Cuántica Q-01)**
+
+### **72.1 Engine - Q-01 - General (General - Q-01)**
+
+#### **72.2 Quantum State Modulator (QSM) - Engine Core (Modulador de Estado Cuántico - Núcleo del Motor)**
+
+#### **72.3 Quantum Entanglement Engine (QEE) - Propulsion Unit (Motor de Entrelazamiento Cuántico - Unidad de Propulsión)**
+
+#### **72.4 Cryogenic Cooling System (CCS) - Engine Cooling (Sistema de Enfriamiento Criogénico - Enfriamiento del Motor)**
+
+#### **72.5 Energy Conversion System (ECS) - Engine Power (Sistema de Conversión de Energía - Potencia del Motor) (Si Aplica)**
+
+---
+
+## **73 Engine Fuel & Control - Q-01 Control System (Control de Combustible y Motor - Sistema de Control Q-01)**
+
+### **73.1 Engine Fuel & Control - Q-01 - General (General - Q-01)**
+
+#### **73.2 Q-01 Thrust Control (Control de Empuje - Q-01)**
+
+#### **73.3 Q-01 Power Management (Gestión de Potencia - Q-01)**
+
+#### **73.4 Q-01 System Monitoring & Diagnostics (Monitorización y Diagnóstico del Sistema Q-01)**
+
+---
+
+## **74 Ignition/Starting System - Q-01 Activation (Sistema de Ignición/Arranque - Activación del Q-01)**
+
+### **74.1 Ignition/Starting - Q-01 - General (General - Q-01)**
+
+#### **74.2 Q-01 Activation Sequence (Secuencia de Activación del Q-01)**
+
+#### **74.3 Q-01 Deactivation Sequence (Secuencia de Desactivación del Q-01)**
+
+---
+
+## **76 Engine Controls - Q-01 System Controls (Controles de Motor - Controles del Sistema Q-01)**
+
+### **76.1 Engine Controls - Q-01 - General (General - Q-01)**
+
+#### **76.2 Thrust Control - Q-01 (Control de Empuje - Q-01)**
+
+#### **76.3 Emergency Shutdown - Q-01 (Apagado de Emergencia - Q-01)**
+
+---
+
+## **77 Engine Indicating - Q-01 System Indication (Indicación de Motor - Indicación del Sistema Q-01)**
+
+### **77.1 Engine Indicating - Q-01 - General (General - Q-01)**
+
+#### **77.2 Power Indicating - Q-01 (Indicación de Potencia - Q-01)**
+
+#### **77.3 Temperature Indicating - Q-01 (Indicación de Temperatura - Q-01)**
+
+#### **77.4 System Status Indicating - Q-01 (Indicación de Estado del Sistema - Q-01)**
+
+---
+
+## **78 Exhaust System - Q-01 Energy Release (Sistema de Escape - Liberación de Energía Q-01)**
+
+### **78.1 Exhaust System - Q-01 - General (General - Q-01)**
+
+#### **78.2 Energy Collector/Release Nozzle (Colector de Energía/Tobera de Liberación)**
+
+#### **78.3 Thrust Vectoring (Vectorización de Empuje) (Si Aplica)**
+
+---
+
+## **79 Oil System -  *No Aplica* (Sistema de Aceite - No Aplica para Q-01)**
+
+### **79.1 Oil System - Q-01 - General (General - Q-01)**
+
+---
+
+## **80 Starting System - Q-01 Activation System (Sistema de Arranque - Sistema de Activación Q-01)**
+
+### **80.1 Starting System - Q-01 - General (General - Q-01)**
+
+#### **80.2 Cranking System - Q-01 Activation (Sistema de Giro - Activación Q-01)**
+
