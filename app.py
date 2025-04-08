@@ -46,7 +46,9 @@ app.layout = html.Div([
     dcc.Graph(id='kpi-graph'),
     html.Div(id='component-structure'),
     html.Button('Optimize Power Distribution', id='optimize-button', n_clicks=0),
-    html.Div(id='optimization-result')
+    html.Div(id='optimization-result'),
+    html.Div(id='ampel-commands'),
+    html.Div(id='xai-cycle')
 ])
 
 # Define the callback to update the graph
@@ -93,6 +95,212 @@ def optimize_power_distribution(n_clicks):
         power_supply = [90, 210, 310, 390, 510]
         optimized_distribution = ampel_system.optimize_power_distribution(power_demand, power_supply)
         return html.Div(f"Optimized Power Distribution: {optimized_distribution}")
+    return html.Div()
+
+# Define the callback to display AMPEL commands with XAI annotations
+@app.callback(
+    Output('ampel-commands', 'children'),
+    [Input('metric-dropdown', 'value')]
+)
+def display_ampel_commands(selected_metric):
+    if selected_metric == 'Reducción de Fallos Estructurales (%)':
+        ampel_commands = """
+        ### AMPEL Command Examples with XAI Annotations
+
+        **Example 1: Quantum Thrust Control**
+        ```
+        # Activate quantum thrust propulsion at 75% power
+        SUBSYS:QUANTUM_THRUST(power=75)
+
+        # XAI:
+        # - Ethics: Compliant (Low emissions profile at 75% power)
+        # - Performance: Optimal choice (Balanced consumption/efficiency ratio)
+        # - Alternatives: power=60 (Energy saving mode, extended operation time, reduced thrust), 
+        #                power=90 (High performance mode, increased velocity, higher energy consumption)
+        # - Trace: QAO-TRC-0xAA17D34E
+        # - Decision basis: Quantum Algorithmic Orchestrator v4.2.1
+        ```
+
+        **Example 2: Environmental Control System**
+        ```
+        # Set cabin temperature to 21°C with 45% humidity
+        SUBSYS:ENV_CONTROL(temp=21, humidity=45)
+
+        # XAI:
+        # - Ethics: Compliant (Optimal comfort settings within energy efficiency guidelines)
+        # - Performance: Efficient operation (45% humidity minimizes energy usage while maintaining comfort)
+        # - Health: Recommended (Temperature and humidity within ideal range for passenger wellbeing)
+        # - Alternatives: temp=19 (Energy saving, may feel cool to some passengers),
+        #                temp=23 (Higher comfort for cold-sensitive passengers, increased energy usage)
+        # - Trace: QAO-TRC-0xBF29E71C
+        # - Decision basis: Cabin Comfort Optimization Algorithm v3.1.5
+        ```
+
+        **Example 3: Navigation System Waypoint**
+        ```
+        # Set navigation waypoint to KSFO with priority level 2
+        SUBSYS:NAVIGATION(waypoint="KSFO", priority=2)
+
+        # XAI:
+        # - Ethics: Compliant (Route respects airspace restrictions and noise abatement procedures)
+        # - Safety: Verified (Waypoint has been validated against current NOTAMs and weather conditions)
+        # - Performance: Fuel-optimized (Route calculated for minimal fuel consumption)
+        # - Alternatives: priority=1 (Time-optimized route, higher fuel consumption),
+        #                priority=3 (Emissions-optimized route, longer flight time)
+        # - Trace: QAO-TRC-0xC7D45A2B
+        # - Decision basis: Quantum Route Optimization Engine v2.8.3
+        ```
+
+        **Example 4: Power Distribution Management**
+        ```
+        # Allocate 35% power to life support systems
+        SUBSYS:POWER_DIST(life_support=35, propulsion=45, avionics=20)
+
+        # XAI:
+        # - Ethics: Compliant (Life support prioritization meets human-centric operation guidelines)
+        # - Safety: Critical systems protected (Minimum 30% allocation to life support required)
+        # - Performance: Balanced allocation (Sufficient power for all systems with appropriate reserves)
+        # - Risk: Low (Current allocation provides 15% buffer for emergency scenarios)
+        # - Alternatives: life_support=30 (Minimum safe level, allows more power for propulsion),
+        #                life_support=40 (Enhanced comfort, reduced power for non-essential systems)
+        # - Trace: QAO-TRC-0xD8E36F1A
+        # - Decision basis: Critical Systems Management Protocol v5.0.2
+        ```
+
+        **Example 5: Quantum Sensor Array Configuration**
+        ```
+        # Configure quantum sensor array for atmospheric analysis
+        SUBSYS:QUANTUM_SENSORS(mode="atmospheric", resolution=8, scan_rate=2.5)
+
+        # XAI:
+        # - Ethics: Compliant (Data collection respects privacy zones and restricted airspace)
+        # - Performance: Optimized for atmospheric conditions (Resolution 8 balances detail and processing load)
+        # - Resource usage: Moderate (2.5 Hz scan rate requires 18% of available quantum computing capacity)
+        # - Alternatives: resolution=6 (Faster processing, lower detail),
+        #                resolution=10 (Higher detail, increased power consumption and processing load)
+        # - Trace: QAO-TRC-0xE9F47B2D
+        # - Decision basis: Quantum Sensing Optimization Framework v1.7.4
+        ```
+
+        **Example 6: Cryogenic System Management**
+        ```
+        # Set cryogenic cooling to maintain quantum core at 4.2K
+        SUBSYS:CRYO_CONTROL(target_temp=4.2, flow_rate=12.5)
+
+        # XAI:
+        # - Ethics: Compliant (Energy usage within sustainable operation parameters)
+        # - Performance: Optimal for quantum coherence (4.2K maintains 99.97% coherence time)
+        # - Safety: Monitored (Automatic shutdown triggers if temperature exceeds 4.8K)
+        # - Alternatives: target_temp=3.8 (Extended coherence time, 15% higher energy consumption),
+        #                target_temp=4.5 (Reduced cooling load, slight decrease in quantum performance)
+        # - Trace: QAO-TRC-0xF1A58C3E
+        # - Decision basis: Quantum Core Thermal Management System v3.2.7
+        ```
+
+        **Example 7: Communication System Configuration**
+        ```
+        # Establish quantum-encrypted communication channel with ground control
+        SUBSYS:COMMS(channel="quantum_secure", bandwidth=50, encryption_level=3)
+
+        # XAI:
+        # - Ethics: Compliant (Communication respects data sovereignty and privacy regulations)
+        # - Security: Maximum protection (Level 3 encryption provides quantum-resistant security)
+        # - Performance: Balanced (50 Mbps bandwidth sufficient for telemetry and command data)
+        # - Alternatives: bandwidth=25 (Reduced data rate, lower power consumption),
+        #                bandwidth=100 (Higher data rate for enhanced telemetry, increased power usage)
+        # - Trace: QAO-TRC-0xG2B69D4F
+        # - Decision basis: Secure Communications Protocol v4.5.1
+        ```
+
+        These examples demonstrate how the XAI annotations provide transparency and explainability for AMPEL commands across different subsystems. Each annotation includes ethical considerations, performance implications, alternatives, and traceability information, enabling operators to understand the reasoning behind system recommendations and decisions.
+        """
+        return dcc.Markdown(ampel_commands)
+    return html.Div()
+
+# Define the callback to display XAI CYCLE: MASTERING INPUT PROMPTS
+@app.callback(
+    Output('xai-cycle', 'children'),
+    [Input('metric-dropdown', 'value')]
+)
+def display_xai_cycle(selected_metric):
+    if selected_metric == 'Reducción de Fallos Estructurales (%)':
+        xai_cycle = """
+        ### XAI CYCLE: MASTERING INPUT PROMPTS FOR DESIRED AIRCRAFT BEHAVIOUR
+
+        **Overview:**
+        The XAI Cycle concept consists of five main components:
+        1. **Input Formulation:** Crafting precise and effective AMPEL commands.
+        2. **XAI Processing:** Parsing and interpreting commands using the XAI Interpreter.
+        3. **Explanation Generation:** Providing transparent and explainable annotations for each command.
+        4. **Execution & Feedback:** Implementing the commands and monitoring outcomes.
+        5. **Refinement:** Continuously improving command formulation based on feedback.
+
+        **Master Protocol:**
+        The Master Prompt Protocol is a structured methodology for creating effective AMPEL commands. It includes six steps:
+        1. **Intent Declaration:** Clearly state the objective of the command.
+        2. **Subsystem Selection:** Identify the relevant subsystem(s) for the command.
+        3. **Command Specification:** Define the specific action or configuration to be implemented.
+        4. **Parameter Definition:** Specify the parameters and their values for the command.
+        5. **Constraint Specification:** Outline any constraints or conditions for the command.
+        6. **Prevention Planning:** Proactively identify potential issues and define appropriate responses.
+
+        **Prevention Planning:**
+        Prevention planning involves a framework for identifying potential issues and defining appropriate responses. It includes:
+        1. **Risk Identification:** Identify potential risks and their impact.
+        2. **Fallback Definition:** Define fallback actions in case of issues.
+        3. **Parameter Constraints:** Set boundaries for parameter values to ensure safe operation.
+        4. **Transition Logic:** Define logic for transitioning between different states or modes.
+        5. **Command Integration:** Ensure seamless integration of commands with existing systems.
+
+        **Examples:**
+        Here are three detailed examples of well-crafted AMPEL commands following the Master Prompt Protocol:
+
+        **Example 1: Precision Hover with Wind and Power Fallbacks**
+        ```
+        # Intent: Maintain precision hover with wind compensation and power fallbacks
+        SUBSYS:FLIGHT_CONTROL(mode="hover", altitude=100, wind_compensation=True)
+
+        # XAI:
+        # - Ethics: Compliant (Ensures safety and stability)
+        # - Performance: Optimal (Maintains hover with minimal drift)
+        # - Alternatives: mode="hover", altitude=90 (Lower altitude, reduced power consumption),
+        #                mode="hover", altitude=110 (Higher altitude, increased power consumption)
+        # - Trace: QAO-TRC-0xH1A2B3C4
+        # - Decision basis: Hover Stability Algorithm v2.3.1
+        ```
+
+        **Example 2: Autonomous Navigation with Traffic and Weather Contingencies**
+        ```
+        # Intent: Navigate autonomously with traffic and weather contingencies
+        SUBSYS:NAVIGATION(route="KSFO-KLAX", priority=2, traffic_avoidance=True, weather_monitoring=True)
+
+        # XAI:
+        # - Ethics: Compliant (Adheres to airspace regulations and safety protocols)
+        # - Safety: Verified (Route validated against current traffic and weather conditions)
+        # - Performance: Efficient (Optimized for minimal fuel consumption)
+        # - Alternatives: priority=1 (Time-optimized route, higher fuel consumption),
+        #                priority=3 (Emissions-optimized route, longer flight time)
+        # - Trace: QAO-TRC-0xI2B3C4D5
+        # - Decision basis: Autonomous Navigation Engine v4.1.2
+        ```
+
+        **Example 3: Quantum Propulsion Management with Thermal and Coherence Safeguards**
+        ```
+        # Intent: Manage quantum propulsion with thermal and coherence safeguards
+        SUBSYS:QUANTUM_PROPULSION(power=75, thermal_monitoring=True, coherence_optimization=True)
+
+        # XAI:
+        # - Ethics: Compliant (Ensures safe and efficient propulsion)
+        # - Performance: Optimal (Balanced power and thermal management)
+        # - Alternatives: power=60 (Energy saving mode, extended operation time, reduced thrust),
+        #                power=90 (High performance mode, increased velocity, higher energy consumption)
+        # - Trace: QAO-TRC-0xJ3C4D5E6
+        # - Decision basis: Quantum Propulsion Control Algorithm v5.0.3
+        ```
+
+        This documentation will help operators craft effective input prompts that generate predictable, safe, and optimal aircraft behavior while maintaining ethical compliance and safety standards.
+        """
+        return dcc.Markdown(xai_cycle)
     return html.Div()
 
 def parse_ata_structure(text):
