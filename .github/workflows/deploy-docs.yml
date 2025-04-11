@@ -22,6 +22,10 @@ jobs:
           pip install mkdocs-material
           # Install any other MkDocs plugins you use
 
+      - name: Build MkDocs site
+        run: |
+          mkdocs build
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:

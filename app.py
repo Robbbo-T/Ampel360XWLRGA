@@ -384,6 +384,10 @@ def create_directories_and_files(base_path, structure):
             print(f"Created directory: {dir_path}")
             create_directories_and_files(dir_path, value)
 
+@app.route('/docs/<path:filename>')
+def serve_documentation(filename):
+    return send_from_directory('docs', filename)
+
 if __name__ == "__main__":
     input_text = """
 2.1 AMPEL360XWLRGA (Advanced Aircraft
