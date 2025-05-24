@@ -1,5 +1,6 @@
 {
   "scripts": {
-    "build": "your-build-command-here"
+    "build": "npm run build",
+    "test": "npm run test"
   }
 }
