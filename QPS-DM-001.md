@@ -800,7 +800,7 @@ This document establishes a **mathematical foundation** for the **Quantum State 
 * **6.2 Major Components:**
   * **6.2.1 Nonlinear Crystal (BBO):**
     * **Description:** The Beta Barium Borate (BBO) crystal is the core optical element responsible for generating entangled photon pairs via Spontaneous Parametric Down-Conversion (SPDC).
-    * **Specifications:** Type-II BBO, cut angle 29.2°, dimensions 10mm x 10mm x 5mm, high nonlinear coefficient, high damage threshold, minimal birefringence.
+    * **Specifications:** Type-II BBO, cut angle 29.2° (tolerance ±0.1°), dimensions 10mm x 10mm x 5mm, high nonlinear coefficient, high damage threshold, minimal birefringence.
     * **Role:** Generates entangled photon pairs essential for thrust generation in the QPS.
 
   * **6.2.2 Pump Laser:**
