@@ -71,12 +71,10 @@ nav:
       - ATA 105 - Optimización y Eficiencia del Sistema: especificaciones/ata105_system_optimization.md
       - Quantum State Modulator (QSM): especificaciones/qsm.md
   - FIONDA:
-    description: "Fields Intersections Orchestrating by Nuclear Architecture"
-    items:
-      - [71.QP-01-01 Particle Source (PS)](especificaciones/71_QP-01-01_Particle_Source_PS.md)
-      - [Energy Input to Distortion Ratio (EIDR)](especificaciones/eidr.md)
-      - [Coherence Time](especificaciones/coherence_time.md)
-      - [fionda.md](especificaciones/fionda.md)
+      - 71.QP-01-01 Particle Source (PS): especificaciones/71_QP-01-01_Particle_Source_PS.md
+      - Energy Input to Distortion Ratio (EIDR): especificaciones/eidr.md
+      - Coherence Time: especificaciones/coherence_time.md
+      - Fionda: especificaciones/fionda.md
   - AQRM:
       - Resumen Conceptual: aqrm/resumen_conceptual.md
       - Detalles Técnicos: aqrm/detalles_tecnicos.md
