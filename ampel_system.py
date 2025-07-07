@@ -179,9 +179,22 @@ class AMPEL360System:
         self.ata_structure[chapter_number]["subchapters"][subchapter_number] = subchapter_title
         self._log_action(f"Added ATA subchapter {chapter_number}-{subchapter_number} - {subchapter_title}")
 
-    def xai_interpreter(self, command: str) -> Dict:
-        """XAI Interpreter implementation"""
-        # Placeholder for XAI Interpreter logic
+    def xai_interpreter(self, command: str) -> Dict[str, str | list[str]]:
+        """
+        XAI Interpreter implementation.
+        
+        Parameters:
+            command (str): The command to be interpreted by the XAI system.
+        
+        Returns:
+            Dict[str, str | list[str]]: A dictionary containing the interpretation details, including:
+                - "command" (str): The input command.
+                - "ethics" (str): Ethics compliance status.
+                - "performance" (str): Performance evaluation.
+                - "alternatives" (list[str]): Suggested alternatives.
+                - "trace" (str): Traceability information.
+                - "decision_basis" (str): Basis for the decision made.
+        """
         explanation = {
             "command": command,
             "ethics": "Compliant",
