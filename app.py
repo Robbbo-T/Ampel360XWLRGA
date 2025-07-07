@@ -103,7 +103,7 @@ def optimize_power_distribution(n_clicks):
     [Input('metric-dropdown', 'value')]
 )
 def display_ampel_commands(selected_metric):
-    if selected_metric == 'Reducción de Fallos Estructurales (%)':
+    if selected_metric == METRIC_REDUCTION_FAILURES:
         ampel_commands = """
         ### AMPEL Command Examples with XAI Annotations
 
