@@ -119,6 +119,39 @@ Q-ERS offers:
 - Duration: M1–M36
 - Deliverables: Patent filings, blockchain demos, certification roadmap
 
+  ### 3.4.1 Milestones
+
+| **Milestone ID** | **Title**                      | **Planned Date** | **Description**                                                 |
+|------------------|--------------------------------|------------------|------------------------------------------------------------------|
+| M1               | Project Kickoff                | July 2025        | Consortium setup, governance, and technical baseline established |
+| M12              | MOF & Plasma Benchmarks        | June 2026        | Completion of lab-scale validation of MOF sorbents and plasma modules |
+| M24              | QPU & Sensor Validation        | June 2027        | Deployment of QAOA control and quantum sensor integration        |
+| M36              | Full Flight Deployment         | June 2028        | Flight testing, blockchain certification, and TRL 8 achievement |
+
+---
+
+### 3.4.2 Gantt Chart Summary
+
+```mermaid
+gantt
+    title Q-ERS Project Timeline (2025-2028)
+    dateFormat YYYY-MM-DD
+    axisFormat %b %Y
+    
+    section Work Packages
+    WP1 Quantum MOF Design          :active, wp1, 2025-07-01, 365d
+    WP2 Plasma & ACCS Integration   :wp2, 2026-01-01, 365d
+    WP3 Quantum Sensor Network      :wp3, 2026-01-01, 545d
+    WP4 Flight Test & V&V           :wp4, 2027-07-01, 365d
+    WP5 Exploitation & Cert         :wp5, 2025-07-01, 1095d
+    
+    section Milestones
+    Project Kickoff                 :milestone, m1, 2025-07-01, 0d
+    MOF & Plasma Benchmarks         :milestone, m12, 2026-06-30, 0d
+    QPU & Sensor Validation         :milestone, m24, 2027-06-30, 0d
+    Full Flight Deployment          :milestone, m36, 2028-06-30, 0d
+```
+
 ### 3.2 Management Structure and Procedures
 
 - **Coordinator**: GAIA-QAO (Spain) – Technical and financial authority
